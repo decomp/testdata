@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Usage: dump_control_flow_stats.py FILE
+""" Usage: dump_control_flow_stats.py FILE...
 """
 
 import sys
@@ -22,6 +22,12 @@ def debug(node):
 		lambda n: "%s (%s)" % (n.spelling or n.displayname, str(n.kind).split(".")[1])
 	)
 	print(s)
+
+# sort_funcs sorts the given list of functions in alphabetical order.
+def sort_funcs(funcs):
+	def key(n):
+		return n.spelling
+	funcs.sort(key=key)
 
 # compound_stmt_count returns the number of compound statements present in the
 # AST starting from node.
@@ -50,9 +56,6 @@ def func_defs(node):
 		if is_func_def(n):
 			context.funcs.append(n)
 	traverse(node, record_func_def)
-	def key(n):
-		return n.spelling
-	context.funcs.sort(key=key)
 	return context.funcs
 
 # is_if_stmt reports whether the given node is an if-statement.
@@ -141,15 +144,22 @@ def control_flow_stats(node):
 	}
 	return data
 
-# Parse input file.
-index = clang.cindex.Index.create()
-tu = index.parse(sys.argv[1])
-root = tu.cursor
+if len(sys.argv[1:]) == 0:
+	print("Usage: dump_control_flow_stats.py FILE...")
+	sys.exit()
 
-# Locate function definitions.
-funcs = func_defs(root)
+# Parse input files to locate function definitions.
+funcs = []
+for path in sys.argv[1:]:
+	index = clang.cindex.Index.create()
+	tu = index.parse(sys.argv[1])
+	root = tu.cursor
+	fs = func_defs(root)
+	for f in fs:
+		funcs.append(f)
+sort_funcs(funcs)
 
-# Output control flow statistics in JSON.
+# Output control flow statistics in JSON format.
 stats = []
 for func in funcs:
 	data = control_flow_stats(func)
