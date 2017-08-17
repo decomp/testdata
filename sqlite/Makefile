@@ -16,7 +16,7 @@ testdata/%.ll: sqlite-amalgamation-$(VER)/%.bc | testdata
 	llvm-dis -o $@ $<
 
 # Produce JSON files from C source code.
-testdata/%.json: $(addprefix sqlite-amalgamation-$(VER)/,$(C)) | testdata
+testdata/shell.json: $(addprefix sqlite-amalgamation-$(VER)/,$(C)) | testdata
 	../_scripts_/dump_control_flow_stats.py $^ > $@
 
 testdata:
