@@ -119,7 +119,7 @@ GNU Coreutils version 8.27.
 
 SQLite version 3.20.0.
 
-* [sqlite3.ll](sqlite/testdata/sqlite3.ll)
+* [shell.ll](sqlite/testdata/shell.ll)
 
 ## Public domain
 

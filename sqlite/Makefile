@@ -1,24 +1,36 @@
 # SQLite version.
 VER=3200000
 
-LL=sqlite3.ll
+EXE=shell
+BC=$(addsuffix .bc,$(EXE))
+LL=$(BC:.bc=.ll)
+KEEP=$(addprefix sqlite-amalgamation-$(VER)/,$(EXE) $(BC))
 TESTDATA=$(addprefix testdata/,$(LL))
 
-all: $(TESTDATA)
+all: $(KEEP) $(TESTDATA)
 
-# Produce LLVM IR assembly files from C source code.
-testdata/%.ll: sqlite-amalgamation-$(VER)/%.c testdata
-	clang -emit-llvm -S -o $@ $<
+# Produce LLVM IR assembly files from LLVM IR bitcode.
+testdata/%.ll: sqlite-amalgamation-$(VER)/%.bc | testdata
+	llvm-dis -o $@ $<
 
 testdata:
 	mkdir -p testdata
 
-sqlite-amalgamation-$(VER)/sqlite3.c: sqlite-amalgamation-$(VER)
+# Extract LLVM IR bitcode from executables.
+sqlite-amalgamation-$(VER)/%.bc: sqlite-amalgamation-$(VER)/%
+	extract-bc $<
+
+# Compile executables using WLLVM.
+.ONESHELL:
+sqlite-amalgamation-$(VER)/$(EXE): | sqlite-amalgamation-$(VER)
+	cd sqlite-amalgamation-$(VER)
+	export LLVM_COMPILER=clang
+	wllvm -o shell shell.c sqlite3.c -lpthread -ldl
 
 # Fetch source code.
 fetch: sqlite-amalgamation-$(VER)
 
-sqlite-amalgamation-$(VER): sqlite-amalgamation-$(VER).zip
+sqlite-amalgamation-$(VER): | sqlite-amalgamation-$(VER).zip
 	unzip sqlite-amalgamation-$(VER).zip
 
 sqlite-amalgamation-$(VER).zip:

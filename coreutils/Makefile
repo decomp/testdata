@@ -13,7 +13,7 @@ TESTDATA=$(addprefix testdata/,$(LL))
 all: $(KEEP) $(TESTDATA)
 
 # Produce LLVM IR assembly files from LLVM IR bitcode.
-testdata/%.ll: coreutils-$(VER)/src/%.bc testdata
+testdata/%.ll: coreutils-$(VER)/src/%.bc | testdata
 	llvm-dis -o $@ $<
 
 testdata:
@@ -25,8 +25,8 @@ coreutils-$(VER)/src/%.bc: coreutils-$(VER)/src/%
 
 # Compile executables using WLLVM.
 .ONESHELL:
-coreutils-$(VER)/src/$(EXE): coreutils-$(VER)
-	cd $<
+coreutils-$(VER)/src/$(EXE): | coreutils-$(VER)
+	cd coreutils-$(VER)
 	export LLVM_COMPILER=clang
 	CC=wllvm ./configure
 	make
@@ -34,7 +34,7 @@ coreutils-$(VER)/src/$(EXE): coreutils-$(VER)
 # Fetch source code.
 fetch: coreutils-$(VER)
 
-coreutils-$(VER):
+coreutils-$(VER): | coreutils-$(VER).tar.xz
 	tar -xJf coreutils-$(VER).tar.xz
 
 coreutils-$(VER).tar.xz:
