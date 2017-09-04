@@ -3,8 +3,8 @@ VER=8.27
 
 # List of programs retrieved with:
 #
-#    find . -type f -executable | grep -v dcgen | sort
-EXE=[ b2sum base32 base64 basename cat chcon chgrp chmod chown chroot cksum comm cp csplit cut date dd df dir dircolors dirname du echo env expand expr factor false fmt fold getlimits ginstall groups head hostid id join kill libstdbuf.so link ln logname ls make-prime-list md5sum mkdir mkfifo mknod mktemp mv nice nl nohup nproc numfmt od paste pathchk pinky pr printenv printf ptx pwd readlink realpath rm rmdir runcon seq sha1sum sha224sum sha256sum sha384sum sha512sum shred shuf sleep sort split stat stdbuf stty sum sync tac tail tee test timeout touch tr true truncate tsort tty uname unexpand uniq unlink uptime users vdir wc who whoami yes
+#    find . -type f -executable | grep -v dcgen | grep -v "\.so" | sort
+EXE=[ b2sum base32 base64 basename cat chcon chgrp chmod chown chroot cksum comm cp csplit cut date dd df dir dircolors dirname du echo env expand expr factor false fmt fold getlimits ginstall groups head hostid id join kill link ln logname ls make-prime-list md5sum mkdir mkfifo mknod mktemp mv nice nl nohup nproc numfmt od paste pathchk pinky pr printenv printf ptx pwd readlink realpath rm rmdir runcon seq sha1sum sha224sum sha256sum sha384sum sha512sum shred shuf sleep sort split stat stdbuf stty sum sync tac tail tee test timeout touch tr true truncate tsort tty uname unexpand uniq unlink uptime users vdir wc who whoami yes
 BC=$(addsuffix .bc,$(EXE))
 LL=$(BC:.bc=.ll)
 KEEP=$(addprefix coreutils-$(VER)/src/,$(EXE) $(BC))
