@@ -45,7 +45,6 @@ GNU Coreutils version 8.27.
 * [id.ll](coreutils/testdata/id.ll)
 * [join.ll](coreutils/testdata/join.ll)
 * [kill.ll](coreutils/testdata/kill.ll)
-* [libstdbuf.so.ll](coreutils/testdata/libstdbuf.so.ll)
 * [link.ll](coreutils/testdata/link.ll)
 * [ln.ll](coreutils/testdata/ln.ll)
 * [logname.ll](coreutils/testdata/logname.ll)
@@ -120,6 +119,18 @@ GNU Coreutils version 8.27.
 SQLite version 3.20.0.
 
 * [shell.ll](sqlite/testdata/shell.ll)
+
+## Pathological
+
+* If-statements.
+    - [n=16](pathological/testdata/if_n16.ll)
+    - [n=32](pathological/testdata/if_n32.ll)
+    - [n=64](pathological/testdata/if_n64.ll)
+    - [n=128](pathological/testdata/if_n128.ll)
+    - [n=256](pathological/testdata/if_n256.ll)
+    - [n=512](pathological/testdata/if_n512.ll)
+    - [n=1024](pathological/testdata/if_n1024.ll)
+    - [n=2048](pathological/testdata/if_n2048.ll)
 
 ## Public domain
 
