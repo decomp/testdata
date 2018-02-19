@@ -1,0 +1,112 @@
+digraph rpl_fcntl {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	10;
+	16;
+	20;
+	26;
+	29;
+	33;
+	36;
+	39;
+	42;
+	48;
+	51;
+	55;
+	59;
+	60;
+	66;
+	70;
+	75;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 59 [
+		color=red
+		label=false
+	];
+	9 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 16 [
+		color=red
+		label=false
+	];
+	10 -> 20;
+	16 -> 20;
+	20 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 39 [
+		color=red
+		label=false
+	];
+	26 -> 29 [
+		color=red
+		label=false
+	];
+	26 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 36 [
+		color=red
+		label=false
+	];
+	33 -> 36 [
+		color=red
+		label=false
+	];
+	33 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 42;
+	39 -> 42;
+	42 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 75 [
+		color=red
+		label=false
+	];
+	48 -> 51 [
+		color=red
+		label=false
+	];
+	48 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 75 [
+		color=red
+		label=false
+	];
+	55 -> 75;
+	59 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 66 [
+		color=red
+		label=false
+	];
+	60 -> 70;
+	66 -> 70;
+	70 -> 75;
+}

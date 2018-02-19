@@ -1,0 +1,46 @@
+digraph blake2b_final {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	11;
+	15;
+	29;
+	31;
+	237;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 237 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 11 [
+		color=red
+		label=false
+	];
+	7 -> 237 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 237 [
+		color=red
+		label=false
+	];
+	15 -> 29 [
+		color=red
+		label=false
+	];
+	15 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 31;
+	31 -> 237;
+}

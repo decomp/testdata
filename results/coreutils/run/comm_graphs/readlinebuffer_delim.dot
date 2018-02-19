@@ -1,0 +1,88 @@
+digraph readlinebuffer_delim {
+	// Node definitions.
+	3 [label=entry];
+	11;
+	17;
+	24;
+	28;
+	31;
+	33;
+	37;
+	41;
+	44;
+	50;
+	57;
+	64;
+	65;
+
+	// Edge definitions.
+	3 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 65 [
+		color=red
+		label=false
+	];
+	11 -> 17;
+	17 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 28 [
+		color=red
+		label=false
+	];
+	24 -> 41;
+	28 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 41 [
+		color=red
+		label=false
+	];
+	31 -> 33 [
+		color=red
+		label=false
+	];
+	31 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 64 [
+		color=red
+		label=false
+	];
+	37 -> 41 [
+		color=red
+		label=false
+	];
+	37 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 50 [
+		color=red
+		label=false
+	];
+	44 -> 50;
+	50 -> 17 [
+		color=red
+		label=false
+	];
+	50 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 65;
+	64 -> 65;
+}

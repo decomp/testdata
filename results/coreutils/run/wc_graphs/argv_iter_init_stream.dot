@@ -1,0 +1,17 @@
+digraph argv_iter_init_stream {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	8;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=red
+		label=false
+	];
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 8;
+}

@@ -1,0 +1,19 @@
+digraph uid_to_name {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	9;
+	12;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=red
+		label=false
+	];
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 12;
+	9 -> 12;
+}

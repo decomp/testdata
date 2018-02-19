@@ -1,0 +1,112 @@
+digraph detect_loop {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	8;
+	9;
+	13;
+	14;
+	17;
+	24;
+	28;
+	29;
+	38;
+	42;
+	54;
+	55;
+	62;
+	63;
+	64;
+	65;
+	66;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=red
+		label=false
+	];
+	1 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 9 [
+		color=red
+		label=false
+	];
+	8 -> 66;
+	9 -> 13 [
+		color=red
+		label=false
+	];
+	9 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 17;
+	14 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 14 [
+		color=red
+		label=false
+	];
+	17 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 28 [
+		color=red
+		label=false
+	];
+	24 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 29;
+	29 -> 38 [
+		color=red
+		label=false
+	];
+	29 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 29 [
+		color=red
+		label=false
+	];
+	38 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 54 [
+		color=red
+		label=false
+	];
+	42 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 55;
+	55 -> 55 [
+		color=red
+		label=false
+	];
+	55 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 66;
+	63 -> 66;
+	64 -> 66;
+	65 -> 66;
+}

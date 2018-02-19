@@ -1,0 +1,38 @@
+digraph alloc_obuf {
+	// Node definitions.
+	0 [label=entry];
+	4;
+	8;
+	15;
+	20;
+	27;
+	29;
+
+	// Edge definitions.
+	0 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 29 [
+		color=red
+		label=false
+	];
+	4 -> 8 [
+		color=red
+		label=false
+	];
+	4 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 20 [
+		color=red
+		label=false
+	];
+	20 -> 29;
+	27 -> 29;
+}

@@ -1,0 +1,41 @@
+digraph print_long {
+	// Node definitions.
+	6 [label=entry];
+	9;
+	23;
+	35;
+	53;
+	55;
+	60;
+	61;
+
+	// Edge definitions.
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 61 [
+		color=red
+		label=false
+	];
+	9 -> 23;
+	23 -> 35 [
+		color=red
+		label=false
+	];
+	23 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 55;
+	53 -> 55;
+	55 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 60 [
+		color=red
+		label=false
+	];
+	60 -> 61;
+}

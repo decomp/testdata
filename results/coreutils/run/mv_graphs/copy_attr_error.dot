@@ -1,0 +1,11 @@
+digraph copy_attr_error {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	9;
+
+	// Edge definitions.
+	2 -> 6 [label="default case"];
+	2 -> 9 [label="case (x=61)"];
+	6 -> 9;
+}

@@ -1,0 +1,85 @@
+digraph docolon {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	16;
+	17;
+	20;
+	24;
+	29;
+	30;
+	42;
+	43;
+	54;
+	58;
+	77;
+	84;
+	85;
+	92;
+	96;
+	99;
+	102;
+	105;
+	109;
+	114;
+
+	// Edge definitions.
+	2 -> 11 [label="case (x=0)"];
+	2 -> 16 [label="default case"];
+	2 -> 17 [label="case (x=1)"];
+	11 -> 17;
+	17 -> 20 [label="case (x=1)"];
+	17 -> 24 [label="case (x=0)"];
+	17 -> 29 [label="default case"];
+	20 -> 30;
+	24 -> 30;
+	30 -> 42 [
+		color=red
+		label=false
+	];
+	30 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 84 [
+		color=red
+		label=false
+	];
+	54 -> 58 [
+		color=red
+		label=false
+	];
+	54 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 105;
+	77 -> 105;
+	84 -> 85 [label="case (x=-1)"];
+	84 -> 99 [label="case (x=-2)"];
+	84 -> 102 [label="default case"];
+	85 -> 92 [
+		color=red
+		label=false
+	];
+	85 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 105;
+	96 -> 105;
+	99 -> 102;
+	105 -> 109 [
+		color=red
+		label=false
+	];
+	105 -> 114 [
+		color=darkgreen
+		label=true
+	];
+	109 -> 114;
+}

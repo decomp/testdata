@@ -1,0 +1,28 @@
+digraph ino_map_alloc {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	9;
+	10;
+	15;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=red
+		label=false
+	];
+	1 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 10 [
+		color=red
+		label=false
+	];
+	9 -> 15;
+	10 -> 15;
+}

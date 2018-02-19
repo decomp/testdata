@@ -1,0 +1,131 @@
+digraph read_utmp {
+	// Node definitions.
+	4 [label=entry];
+	8;
+	13;
+	19;
+	24;
+	28;
+	31;
+	34;
+	37;
+	41;
+	44;
+	48;
+	50;
+	52;
+	55;
+	57;
+	58;
+	62;
+	67;
+	77;
+	78;
+	79;
+
+	// Edge definitions.
+	4 -> 8 [
+		color=red
+		label=false
+	];
+	4 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 13;
+	13 -> 19;
+	19 -> 24 [
+		color=red
+		label=false
+	];
+	19 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 28;
+	28 -> 31 [
+		color=red
+		label=false
+	];
+	28 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 19 [
+		color=red
+		label=false
+	];
+	31 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 37 [
+		color=red
+		label=false
+	];
+	34 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 48 [
+		color=red
+		label=false
+	];
+	41 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 48 [
+		color=red
+		label=false
+	];
+	44 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 48 [
+		color=red
+		label=false
+	];
+	48 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 67 [
+		color=red
+		label=false
+	];
+	50 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 55 [
+		color=red
+		label=false
+	];
+	52 -> 62;
+	55 -> 57 [
+		color=red
+		label=false
+	];
+	55 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 62;
+	62 -> 67;
+	67 -> 13 [
+		color=red
+		label=false
+	];
+	67 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 79;
+	78 -> 79;
+}

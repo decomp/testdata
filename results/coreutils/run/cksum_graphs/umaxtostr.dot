@@ -1,0 +1,17 @@
+digraph umaxtostr {
+	// Node definitions.
+	2 [label=entry];
+	4;
+	13;
+
+	// Edge definitions.
+	2 -> 4;
+	4 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 13 [
+		color=red
+		label=false
+	];
+}

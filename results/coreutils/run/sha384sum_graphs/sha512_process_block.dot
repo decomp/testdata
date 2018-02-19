@@ -1,0 +1,28 @@
+digraph sha512_process_block {
+	// Node definitions.
+	3 [label=entry];
+	34;
+	141;
+	3980;
+	3981;
+
+	// Edge definitions.
+	3 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 3981 [
+		color=red
+		label=false
+	];
+	34 -> 141;
+	141 -> 141 [
+		color=darkgreen
+		label=true
+	];
+	141 -> 3980 [
+		color=red
+		label=false
+	];
+	3980 -> 3981;
+}

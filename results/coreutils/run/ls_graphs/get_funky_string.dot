@@ -1,0 +1,132 @@
+digraph get_funky_string {
+	// Node definitions.
+	4 [label=entry];
+	7;
+	13;
+	16;
+	18;
+	20;
+	21;
+	25;
+	28;
+	30;
+	31;
+	32;
+	33;
+	34;
+	35;
+	36;
+	37;
+	38;
+	39;
+	40;
+	44;
+	48;
+	51;
+	56;
+	59;
+	64;
+	69;
+	74;
+	77;
+	82;
+	87;
+	93;
+	99;
+	101;
+	103;
+	106;
+	107;
+	109;
+
+	// Edge definitions.
+	4 -> 7;
+	7 -> 13 [label="case (x=0)"];
+	7 -> 25 [label="case (x=1)"];
+	7 -> 44 [label="case (x=2)"];
+	7 -> 56 [label="case (x=3)"];
+	7 -> 77 [label="case (x=4)"];
+	7 -> 106 [label="default case"];
+	13 -> 16 [label="case (x=92)"];
+	13 -> 18 [label="case (x=94)"];
+	13 -> 20 [label="case (x=61)"];
+	13 -> 21 [label="default case"];
+	13 -> 107 [label="case (x=0)"];
+	16 -> 93;
+	18 -> 93;
+	20 -> 21 [
+		color=red
+		label=false
+	];
+	20 -> 107 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 93;
+	25 -> 28 [label="case (x=55)"];
+	25 -> 30 [label="case (x=98)"];
+	25 -> 31 [label="case (x=101)"];
+	25 -> 32 [label="case (x=102)"];
+	25 -> 33 [label="case (x=110)"];
+	25 -> 34 [label="case (x=114)"];
+	25 -> 35 [label="case (x=116)"];
+	25 -> 36 [label="case (x=118)"];
+	25 -> 37 [label="case (x=63)"];
+	25 -> 38 [label="case (x=95)"];
+	25 -> 39 [label="default case"];
+	25 -> 40 [label="case (x=97)"];
+	25 -> 87 [label="case (x=88)"];
+	25 -> 99 [label="case (x=0)"];
+	28 -> 87;
+	30 -> 40;
+	31 -> 40;
+	32 -> 40;
+	33 -> 40;
+	34 -> 40;
+	35 -> 40;
+	36 -> 40;
+	37 -> 40;
+	38 -> 40;
+	39 -> 40;
+	40 -> 87;
+	44 -> 48 [
+		color=red
+		label=false
+	];
+	44 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 93;
+	51 -> 93;
+	56 -> 59 [label="case (x=57)"];
+	56 -> 64 [label="case (x=102)"];
+	56 -> 69 [label="case (x=70)"];
+	56 -> 74 [label="default case"];
+	59 -> 93;
+	64 -> 93;
+	69 -> 93;
+	74 -> 93;
+	77 -> 82 [
+		color=red
+		label=false
+	];
+	77 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 93;
+	87 -> 93;
+	93 -> 7;
+	99 -> 109;
+	101 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	101 -> 107 [
+		color=red
+		label=false
+	];
+	103 -> 93;
+	107 -> 109;
+}

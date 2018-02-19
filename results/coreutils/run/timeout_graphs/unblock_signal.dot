@@ -1,0 +1,17 @@
+digraph unblock_signal {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	12;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=red
+		label=false
+	];
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 12;
+}

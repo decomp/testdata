@@ -1,0 +1,179 @@
+digraph eval4 {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	12;
+	19;
+	22;
+	27;
+	30;
+	35;
+	36;
+	37;
+	40;
+	42;
+	44;
+	51;
+	57;
+	61;
+	63;
+	64;
+	67;
+	76;
+	82;
+	86;
+	89;
+	90;
+	91;
+	92;
+	94;
+	96;
+	100;
+	102;
+	105;
+	108;
+	113;
+	116;
+	118;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=red
+		label=false
+	];
+	1 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 12;
+	12 -> 19 [
+		color=red
+		label=false
+	];
+	12 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 22 [
+		color=red
+		label=false
+	];
+	19 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 27 [
+		color=red
+		label=false
+	];
+	22 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 30 [
+		color=red
+		label=false
+	];
+	27 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 35 [
+		color=red
+		label=false
+	];
+	30 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 36;
+	37 -> 40 [
+		color=red
+		label=false
+	];
+	37 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 108;
+	42 -> 44 [label="case (x=1)"];
+	42 -> 63 [label="default case"];
+	42 -> 64 [label="case (x=0)"];
+	44 -> 51;
+	51 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 91 [
+		color=red
+		label=false
+	];
+	57 -> 51 [
+		color=red
+		label=false
+	];
+	57 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 64;
+	64 -> 67 [label="case (x=1)"];
+	64 -> 89 [label="default case"];
+	64 -> 94 [label="case (x=0)"];
+	67 -> 76;
+	76 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 90 [
+		color=red
+		label=false
+	];
+	82 -> 76 [
+		color=red
+		label=false
+	];
+	82 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 94;
+	90 -> 92;
+	91 -> 92;
+	94 -> 96 [
+		color=red
+		label=false
+	];
+	94 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	96 -> 100 [
+		color=darkgreen
+		label=true
+	];
+	96 -> 102 [
+		color=red
+		label=false
+	];
+	102 -> 105;
+	105 -> 108;
+	108 -> 113 [
+		color=darkgreen
+		label=true
+	];
+	108 -> 116 [
+		color=red
+		label=false
+	];
+	113 -> 118;
+	116 -> 118;
+	118 -> 12 [
+		color=red
+		label=false
+	];
+	118 -> 35 [
+		color=darkgreen
+		label=true
+	];
+}

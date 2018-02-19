@@ -1,0 +1,41 @@
+digraph xfclose {
+	// Node definitions.
+	2 [label=entry];
+	4;
+	9;
+	10;
+	13;
+	15;
+	18;
+	20;
+
+	// Edge definitions.
+	2 -> 4 [label="case (x=0)"];
+	2 -> 10 [label="case (x=1)"];
+	2 -> 15 [label="default case"];
+	4 -> 9 [
+		color=red
+		label=false
+	];
+	4 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 20;
+	10 -> 13 [
+		color=red
+		label=false
+	];
+	10 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 18 [
+		color=red
+		label=false
+	];
+	15 -> 20 [
+		color=darkgreen
+		label=true
+	];
+}

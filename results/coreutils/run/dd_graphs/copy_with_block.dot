@@ -1,0 +1,103 @@
+digraph copy_with_block {
+	// Node definitions.
+	2 [label=entry];
+	4;
+	6;
+	14;
+	16;
+	17;
+	27;
+	29;
+	33;
+	35;
+	38;
+	40;
+	47;
+	49;
+	52;
+	53;
+	58;
+	59;
+
+	// Edge definitions.
+	2 -> 4 [
+		color=red
+		label=false
+	];
+	2 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 6;
+	6 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 33 [
+		color=red
+		label=false
+	];
+	14 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 53 [
+		color=red
+		label=false
+	];
+	16 -> 17;
+	17 -> 27 [
+		color=red
+		label=false
+	];
+	17 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 29;
+	29 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 52 [
+		color=red
+		label=false
+	];
+	33 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 38 [
+		color=red
+		label=false
+	];
+	35 -> 49;
+	38 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 49 [
+		color=red
+		label=false
+	];
+	40 -> 47 [
+		color=red
+		label=false
+	];
+	40 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 49;
+	49 -> 53;
+	52 -> 53;
+	53 -> 6 [
+		color=red
+		label=false
+	];
+	53 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 59;
+}

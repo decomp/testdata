@@ -1,0 +1,142 @@
+digraph mp_factor_using_pollard_rho {
+	// Node definitions.
+	3 [label=entry];
+	17;
+	20;
+	29;
+	31;
+	34;
+	37;
+	41;
+	44;
+	45;
+	48;
+	51;
+	52;
+	53;
+	54;
+	58;
+	59;
+	62;
+	64;
+	66;
+	69;
+	70;
+	71;
+	73;
+	74;
+	77;
+	78;
+
+	// Edge definitions.
+	3 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 20 [
+		color=red
+		label=false
+	];
+	17 -> 20;
+	20 -> 29 [
+		color=red
+		label=false
+	];
+	20 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 31;
+	31 -> 34;
+	34 -> 37;
+	37 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 45 [
+		color=red
+		label=false
+	];
+	41 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 58 [
+		color=red
+		label=false
+	];
+	44 -> 45;
+	45 -> 37 [
+		color=red
+		label=false
+	];
+	45 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 51 [
+		color=red
+		label=false
+	];
+	48 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 54;
+	52 -> 53;
+	53 -> 34;
+	54 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 54 [
+		color=red
+		label=false
+	];
+	58 -> 59;
+	59 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 62 [
+		color=red
+		label=false
+	];
+	62 -> 64 [
+		color=red
+		label=false
+	];
+	62 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 69 [
+		color=red
+		label=false
+	];
+	66 -> 69;
+	69 -> 71;
+	70 -> 71;
+	71 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 74 [
+		color=red
+		label=false
+	];
+	73 -> 78;
+	74 -> 31 [
+		color=red
+		label=false
+	];
+	74 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 78;
+}

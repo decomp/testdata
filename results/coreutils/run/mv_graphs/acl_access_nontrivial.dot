@@ -1,0 +1,42 @@
+digraph acl_access_nontrivial {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	9;
+	13;
+	15;
+	17;
+	20;
+	21;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 21 [
+		color=red
+		label=false
+	];
+	7 -> 9;
+	9 -> 13 [
+		color=red
+		label=false
+	];
+	9 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 15 [label="default case"];
+	13 -> 17 [label="case (x=1)"];
+	15 -> 21;
+	17 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 20 [
+		color=red
+		label=false
+	];
+	20 -> 21;
+}

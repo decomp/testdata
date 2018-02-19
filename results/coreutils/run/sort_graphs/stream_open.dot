@@ -1,0 +1,56 @@
+digraph stream_open {
+	// Node definitions.
+	2 [label=entry];
+	4;
+	7;
+	11;
+	13;
+	15;
+	17;
+	19;
+	22;
+	27;
+	29;
+	30;
+
+	// Edge definitions.
+	2 -> 4 [label="case (x=114)"];
+	2 -> 17 [label="case (x=119)"];
+	2 -> 29 [label="default case"];
+	4 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 13 [
+		color=red
+		label=false
+	];
+	7 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 13 [
+		color=red
+		label=false
+	];
+	11 -> 15;
+	13 -> 15;
+	15 -> 30;
+	17 -> 19 [
+		color=red
+		label=false
+	];
+	17 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 22 [
+		color=red
+		label=false
+	];
+	19 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 30;
+}

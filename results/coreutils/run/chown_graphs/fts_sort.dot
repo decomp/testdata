@@ -1,0 +1,129 @@
+digraph fts_sort {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	14;
+	19;
+	24;
+	26;
+	28;
+	33;
+	34;
+	41;
+	44;
+	50;
+	58;
+	62;
+	63;
+	76;
+	77;
+	81;
+	82;
+	111;
+	112;
+	113;
+	116;
+	119;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=red
+		label=false
+	];
+	3 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 28;
+	14 -> 19 [
+		color=red
+		label=false
+	];
+	14 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 26 [
+		color=red
+		label=false
+	];
+	24 -> 119;
+	26 -> 28;
+	28 -> 33 [
+		color=red
+		label=false
+	];
+	28 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 34;
+	34 -> 34 [
+		color=red
+		label=false
+	];
+	34 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 44;
+	44 -> 50 [
+		color=red
+		label=false
+	];
+	44 -> 116 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 58 [
+		color=red
+		label=false
+	];
+	50 -> 113 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 62 [
+		color=red
+		label=false
+	];
+	58 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 63;
+	63 -> 63 [
+		color=red
+		label=false
+	];
+	63 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 77;
+	77 -> 81 [
+		color=red
+		label=false
+	];
+	77 -> 112 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 82;
+	82 -> 82 [
+		color=red
+		label=false
+	];
+	82 -> 111 [
+		color=darkgreen
+		label=true
+	];
+	111 -> 112;
+	112 -> 113;
+	113 -> 116;
+	116 -> 119;
+}

@@ -1,0 +1,43 @@
+digraph show_date {
+	// Node definitions.
+	4 [label=entry];
+	13;
+	15;
+	22;
+	27;
+	34;
+	36;
+	38;
+	44;
+
+	// Edge definitions.
+	4 -> 13 [
+		color=red
+		label=false
+	];
+	4 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 22 [
+		color=red
+		label=false
+	];
+	15 -> 27;
+	22 -> 27;
+	27 -> 34 [
+		color=red
+		label=false
+	];
+	27 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 44;
+	36 -> 44;
+	38 -> 44;
+}

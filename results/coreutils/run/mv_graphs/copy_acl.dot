@@ -1,0 +1,14 @@
+digraph copy_acl {
+	// Node definitions.
+	5 [label=entry];
+	7;
+	11;
+	16;
+
+	// Edge definitions.
+	5 -> 7 [label="case (x=-2)"];
+	5 -> 11 [label="case (x=-1)"];
+	5 -> 16 [label="default case"];
+	7 -> 16;
+	11 -> 16;
+}

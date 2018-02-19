@@ -1,0 +1,28 @@
+digraph xlseek {
+	// Node definitions.
+	4 [label=entry];
+	9;
+	10;
+	12;
+	17;
+	22;
+	27;
+	28;
+
+	// Edge definitions.
+	4 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 10 [
+		color=red
+		label=false
+	];
+	10 -> 12 [label="case (x=0)"];
+	10 -> 17 [label="case (x=1)"];
+	10 -> 22 [label="case (x=2)"];
+	10 -> 27 [label="default case"];
+	12 -> 28;
+	17 -> 28;
+	22 -> 28;
+}

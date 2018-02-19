@@ -1,0 +1,17 @@
+digraph AD_compare {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	16;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 16 [
+		color=red
+		label=false
+	];
+	10 -> 16;
+}

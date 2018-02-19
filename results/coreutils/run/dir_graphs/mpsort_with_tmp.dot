@@ -1,0 +1,144 @@
+digraph mpsort_with_tmp {
+	// Node definitions.
+	4 [label=entry];
+	6;
+	8;
+	14;
+	15;
+	20;
+	24;
+	29;
+	39;
+	40;
+	41;
+	48;
+	50;
+	57;
+	63;
+	64;
+	65;
+	74;
+	76;
+	85;
+	86;
+	87;
+	94;
+	97;
+	105;
+	112;
+	117;
+	118;
+
+	// Edge definitions.
+	4 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 15 [
+		color=red
+		label=false
+	];
+	6 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 118 [
+		color=red
+		label=false
+	];
+	8 -> 14 [
+		color=red
+		label=false
+	];
+	8 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 118;
+	15 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 24 [
+		color=red
+		label=false
+	];
+	20 -> 74;
+	24 -> 29;
+	29 -> 39 [
+		color=red
+		label=false
+	];
+	29 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 50;
+	40 -> 41;
+	41 -> 48 [
+		color=red
+		label=false
+	];
+	41 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 29;
+	50 -> 57 [
+		color=red
+		label=false
+	];
+	50 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 50 [
+		color=red
+		label=false
+	];
+	63 -> 65;
+	64 -> 65;
+	65 -> 74;
+	74 -> 76;
+	76 -> 85 [
+		color=red
+		label=false
+	];
+	76 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 97;
+	86 -> 87;
+	87 -> 94 [
+		color=red
+		label=false
+	];
+	87 -> 117 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 76;
+	97 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 112 [
+		color=red
+		label=false
+	];
+	105 -> 118;
+	112 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	112 -> 97 [
+		color=red
+		label=false
+	];
+	117 -> 118;
+}

@@ -1,0 +1,17 @@
+digraph i_ring_push {
+	// Node definitions.
+	2 [label=entry];
+	17;
+	23;
+
+	// Edge definitions.
+	2 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 23 [
+		color=red
+		label=false
+	];
+	17 -> 23;
+}

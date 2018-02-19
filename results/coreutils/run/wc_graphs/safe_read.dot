@@ -1,0 +1,41 @@
+digraph safe_read {
+	// Node definitions.
+	3 [label=entry];
+	4;
+	6;
+	9;
+	13;
+	17;
+	18;
+	19;
+
+	// Edge definitions.
+	3 -> 4;
+	4 -> 6;
+	6 -> 9 [
+		color=red
+		label=false
+	];
+	6 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 13 [
+		color=red
+		label=false
+	];
+	13 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 18 [
+		color=red
+		label=false
+	];
+	17 -> 19;
+	18 -> 19;
+}

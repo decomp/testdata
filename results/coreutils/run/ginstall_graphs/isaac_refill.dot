@@ -1,0 +1,28 @@
+digraph isaac_refill {
+	// Node definitions.
+	2 [label=entry];
+	28;
+	115;
+	118;
+	205;
+
+	// Edge definitions.
+	2 -> 28;
+	28 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 115 [
+		color=red
+		label=false
+	];
+	115 -> 118;
+	118 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	118 -> 205 [
+		color=red
+		label=false
+	];
+}

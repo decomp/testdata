@@ -1,0 +1,19 @@
+digraph handle_line_error {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	19;
+	21;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	2 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 21;
+	19 -> 21;
+}

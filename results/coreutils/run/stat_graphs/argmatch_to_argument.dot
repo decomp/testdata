@@ -1,0 +1,37 @@
+digraph argmatch_to_argument {
+	// Node definitions.
+	4 [label=entry];
+	7;
+	8;
+	12;
+	20;
+	22;
+
+	// Edge definitions.
+	4 -> 7 [
+		color=red
+		label=false
+	];
+	4 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 12;
+	8 -> 12 [
+		color=red
+		label=false
+	];
+	8 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 8 [
+		color=red
+		label=false
+	];
+	12 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 22;
+}

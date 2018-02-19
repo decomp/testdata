@@ -1,0 +1,50 @@
+digraph exit_cleanup {
+	// Node definitions.
+	0 [label=entry];
+	6;
+	15;
+	16;
+	23;
+	24;
+	28;
+	31;
+	32;
+
+	// Edge definitions.
+	0 -> 6 [
+		color=red
+		label=false
+	];
+	0 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 15 [
+		color=red
+		label=false
+	];
+	6 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 16;
+	16 -> 16 [
+		color=red
+		label=false
+	];
+	16 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 24;
+	24 -> 28 [
+		color=red
+		label=false
+	];
+	24 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 31;
+	31 -> 32;
+}

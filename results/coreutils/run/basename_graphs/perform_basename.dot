@@ -1,0 +1,70 @@
+digraph perform_basename {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	10;
+	15;
+	21;
+	27;
+	28;
+	29;
+	30;
+	40;
+	42;
+	45;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 10 [
+		color=red
+		label=false
+	];
+	7 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 15;
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 27 [
+		color=red
+		label=false
+	];
+	21 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 29 [
+		color=red
+		label=false
+	];
+	27 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 30 [
+		color=red
+		label=false
+	];
+	28 -> 30;
+	29 -> 30;
+	30 -> 40 [
+		color=red
+		label=false
+	];
+	30 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 45;
+	42 -> 45;
+}

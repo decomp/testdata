@@ -1,0 +1,17 @@
+digraph seen_file {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	17;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 17;
+}

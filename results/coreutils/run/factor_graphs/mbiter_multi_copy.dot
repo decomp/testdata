@@ -1,0 +1,43 @@
+digraph mbiter_multi_copy {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	16;
+	18;
+	26;
+	28;
+	32;
+	42;
+	46;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=red
+		label=false
+	];
+	2 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 18;
+	16 -> 18;
+	18 -> 26 [
+		color=red
+		label=false
+	];
+	18 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 32;
+	28 -> 32;
+	32 -> 42 [
+		color=red
+		label=false
+	];
+	32 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 46;
+}

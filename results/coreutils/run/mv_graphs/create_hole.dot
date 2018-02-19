@@ -1,0 +1,40 @@
+digraph create_hole {
+	// Node definitions.
+	4 [label=entry];
+	7;
+	12;
+	13;
+	17;
+	20;
+	23;
+
+	// Edge definitions.
+	4 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 12 [
+		color=red
+		label=false
+	];
+	7 -> 23;
+	12 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 23 [
+		color=red
+		label=false
+	];
+	13 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 23 [
+		color=red
+		label=false
+	];
+	17 -> 20 [label="default case"];
+	17 -> 23 [label="case (x=38)"];
+	20 -> 23;
+}

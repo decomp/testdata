@@ -1,0 +1,81 @@
+digraph areadlink_with_size {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	9;
+	14;
+	18;
+	19;
+	21;
+	23;
+	25;
+	27;
+	31;
+	33;
+	35;
+	36;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=red
+		label=false
+	];
+	2 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 9;
+	9 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 19 [
+		color=red
+		label=false
+	];
+	14 -> 18 [
+		color=red
+		label=false
+	];
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 36;
+	19 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 23 [
+		color=red
+		label=false
+	];
+	21 -> 36;
+	23 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 31 [
+		color=red
+		label=false
+	];
+	25 -> 27;
+	27 -> 9 [
+		color=red
+		label=false
+	];
+	27 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 33 [
+		color=red
+		label=false
+	];
+	33 -> 36;
+	35 -> 36;
+}

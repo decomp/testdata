@@ -1,0 +1,49 @@
+digraph getoptarg {
+	// Node definitions.
+	4 [label=entry];
+	10;
+	13;
+	17;
+	25;
+	27;
+	30;
+	35;
+	37;
+
+	// Edge definitions.
+	4 -> 10 [
+		color=red
+		label=false
+	];
+	4 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 13;
+	13 -> 17 [
+		color=red
+		label=false
+	];
+	13 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 35 [
+		color=red
+		label=false
+	];
+	25 -> 27 [
+		color=red
+		label=false
+	];
+	25 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 30;
+	35 -> 37;
+}

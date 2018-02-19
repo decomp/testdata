@@ -1,0 +1,63 @@
+digraph init_header {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	20;
+	25;
+	28;
+	34;
+	37;
+	38;
+	42;
+	49;
+	58;
+	65;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 20 [
+		color=red
+		label=false
+	];
+	15 -> 20;
+	20 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 34 [
+		color=red
+		label=false
+	];
+	25 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 34 [
+		color=red
+		label=false
+	];
+	28 -> 42;
+	34 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 38 [
+		color=red
+		label=false
+	];
+	37 -> 38;
+	38 -> 42;
+	42 -> 49 [
+		color=red
+		label=false
+	];
+	42 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 65;
+	58 -> 65;
+}

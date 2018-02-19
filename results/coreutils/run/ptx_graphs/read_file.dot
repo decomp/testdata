@@ -1,0 +1,37 @@
+digraph read_file {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	11;
+	13;
+	15;
+	17;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=red
+		label=false
+	];
+	2 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 11 [
+		color=red
+		label=false
+	];
+	5 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 13 [
+		color=red
+		label=false
+	];
+	11 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 15;
+	15 -> 17;
+}

@@ -1,0 +1,16 @@
+digraph xmemdup {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	8;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 8 [
+		color=red
+		label=false
+	];
+}

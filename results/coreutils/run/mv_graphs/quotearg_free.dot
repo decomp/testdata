@@ -1,0 +1,50 @@
+digraph quotearg_free {
+	// Node definitions.
+	0 [label=entry];
+	4;
+	5;
+	13;
+	14;
+	18;
+	19;
+	21;
+	23;
+
+	// Edge definitions.
+	0 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 14 [
+		color=red
+		label=false
+	];
+	4 -> 5;
+	5 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 13 [
+		color=red
+		label=false
+	];
+	13 -> 14;
+	14 -> 18 [
+		color=red
+		label=false
+	];
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 19;
+	19 -> 21 [
+		color=red
+		label=false
+	];
+	19 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 23;
+}

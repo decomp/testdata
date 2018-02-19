@@ -1,0 +1,105 @@
+digraph print_sep_string {
+	// Node definitions.
+	0 [label=entry];
+	3;
+	6;
+	9;
+	10;
+	15;
+	17;
+	22;
+	25;
+	27;
+	35;
+	38;
+	40;
+	47;
+	50;
+	55;
+	56;
+	60;
+	61;
+
+	// Edge definitions.
+	0 -> 3 [
+		color=red
+		label=false
+	];
+	0 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 10;
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 61 [
+		color=red
+		label=false
+	];
+	9 -> 61;
+	10 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 50 [
+		color=red
+		label=false
+	];
+	15 -> 17;
+	17 -> 22 [
+		color=red
+		label=false
+	];
+	17 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 27 [
+		color=red
+		label=false
+	];
+	25 -> 27;
+	27 -> 35 [
+		color=red
+		label=false
+	];
+	27 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 40;
+	38 -> 40;
+	40 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 47 [
+		color=red
+		label=false
+	];
+	47 -> 50;
+	50 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 56 [
+		color=red
+		label=false
+	];
+	55 -> 56;
+	56 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 60 [
+		color=red
+		label=false
+	];
+	60 -> 61;
+}

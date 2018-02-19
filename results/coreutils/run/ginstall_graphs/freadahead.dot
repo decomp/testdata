@@ -1,0 +1,28 @@
+digraph freadahead {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	19;
+	27;
+	30;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=red
+		label=false
+	];
+	1 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 19 [
+		color=red
+		label=false
+	];
+	7 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 27;
+	27 -> 30;
+}

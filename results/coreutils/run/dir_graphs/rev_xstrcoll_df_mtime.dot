@@ -1,0 +1,59 @@
+digraph rev_xstrcoll_df_mtime {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	14;
+	17;
+	18;
+	32;
+	34;
+	38;
+	45;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 14 [label="case (x=3)"];
+	13 -> 45 [label="default case"];
+	14 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 18 [label="case (x=3)"];
+	17 -> 45 [label="default case"];
+	18 -> 32 [
+		color=red
+		label=false
+	];
+	18 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 34 [
+		color=red
+		label=false
+	];
+	32 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 45 [
+		color=red
+		label=false
+	];
+	38 -> 45;
+}

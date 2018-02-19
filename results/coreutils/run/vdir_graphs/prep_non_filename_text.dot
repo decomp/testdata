@@ -1,0 +1,19 @@
+digraph prep_non_filename_text {
+	// Node definitions.
+	0 [label=entry];
+	3;
+	4;
+	5;
+
+	// Edge definitions.
+	0 -> 3 [
+		color=red
+		label=false
+	];
+	0 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 5;
+	4 -> 5;
+}

@@ -1,0 +1,312 @@
+digraph main {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	11;
+	14;
+	17;
+	18;
+	20;
+	21;
+	24;
+	25;
+	28;
+	30;
+	38;
+	40;
+	47;
+	50;
+	51;
+	55;
+	58;
+	62;
+	65;
+	66;
+	68;
+	70;
+	71;
+	73;
+	78;
+	86;
+	89;
+	90;
+	95;
+	97;
+	99;
+	105;
+	108;
+	110;
+	113;
+	117;
+	118;
+	119;
+	121;
+	125;
+	126;
+	130;
+	132;
+	134;
+	135;
+	136;
+	137;
+	138;
+	142;
+	146;
+	148;
+	154;
+	156;
+	157;
+	160;
+	163;
+	167;
+	169;
+	171;
+	174;
+	175;
+	181;
+	183;
+
+	// Edge definitions.
+	2 -> 11;
+	10 -> 18;
+	11 -> 14;
+	14 -> 10 [label="case (x=128)"];
+	14 -> 14 [label="case (x=80)"];
+	14 -> 17 [label="case (x=112)"];
+	14 -> 20 [label="case (x=-130)"];
+	14 -> 21 [label="case (x=-131)"];
+	14 -> 24 [label="default case"];
+	14 -> 25 [label="case (x=-1)"];
+	17 -> 18;
+	18 -> 11;
+	25 -> 28 [
+		color=red
+		label=false
+	];
+	25 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 183 [
+		color=red
+		label=false
+	];
+	30 -> 40;
+	40 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 66 [
+		color=red
+		label=false
+	];
+	47 -> 50 [
+		color=red
+		label=false
+	];
+	47 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 55;
+	51 -> 55 [
+		color=red
+		label=false
+	];
+	51 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 58 [
+		color=red
+		label=false
+	];
+	55 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 51 [
+		color=red
+		label=false
+	];
+	58 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 175;
+	65 -> 66;
+	66 -> 68 [
+		color=red
+		label=false
+	];
+	66 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 86 [
+		color=red
+		label=false
+	];
+	70 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 73 [
+		color=red
+		label=false
+	];
+	71 -> 175;
+	73 -> 78 [
+		color=red
+		label=false
+	];
+	73 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 175;
+	86 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 90 [
+		color=red
+		label=false
+	];
+	89 -> 135;
+	90 -> 95 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 97 [
+		color=red
+		label=false
+	];
+	95 -> 175;
+	97 -> 99 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 118 [
+		color=red
+		label=false
+	];
+	99 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	99 -> 110 [
+		color=red
+		label=false
+	];
+	105 -> 108 [
+		color=red
+		label=false
+	];
+	105 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	108 -> 175;
+	110 -> 113 [
+		color=red
+		label=false
+	];
+	110 -> 117 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 175;
+	117 -> 118 [
+		color=red
+		label=false
+	];
+	117 -> 135 [
+		color=darkgreen
+		label=true
+	];
+	118 -> 119;
+	119 -> 121;
+	121 -> 121 [label="case (x=47)"];
+	121 -> 125 [label="default case"];
+	121 -> 134 [label="case (x=0)"];
+	125 -> 126;
+	126 -> 130 [label="default case"];
+	126 -> 132 [label="case (x=0)"];
+	130 -> 126;
+	132 -> 119 [
+		color=red
+		label=false
+	];
+	132 -> 136 [
+		color=darkgreen
+		label=true
+	];
+	134 -> 135;
+	135 -> 137 [
+		color=red
+		label=false
+	];
+	135 -> 175 [
+		color=darkgreen
+		label=true
+	];
+	136 -> 137;
+	137 -> 138;
+	138 -> 142;
+	142 -> 142 [label="case (x=47)"];
+	142 -> 146 [label="default case"];
+	142 -> 174 [label="case (x=0)"];
+	146 -> 148 [
+		color=darkgreen
+		label=true
+	];
+	146 -> 160 [
+		color=red
+		label=false
+	];
+	148 -> 154 [
+		color=red
+		label=false
+	];
+	148 -> 160 [
+		color=darkgreen
+		label=true
+	];
+	154 -> 156 [label="case (x=2)"];
+	154 -> 157 [label="default case"];
+	154 -> 160 [label="case (x=0)"];
+	156 -> 160;
+	157 -> 175;
+	160 -> 163;
+	163 -> 167 [label="default case"];
+	163 -> 169 [label="case (x=0)"];
+	167 -> 163;
+	169 -> 138 [
+		color=red
+		label=false
+	];
+	169 -> 171 [
+		color=darkgreen
+		label=true
+	];
+	171 -> 175;
+	174 -> 175;
+	175 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	175 -> 181 [
+		color=red
+		label=false
+	];
+	181 -> 183;
+}

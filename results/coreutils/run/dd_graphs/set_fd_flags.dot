@@ -1,0 +1,85 @@
+digraph set_fd_flags {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	11;
+	13;
+	16;
+	20;
+	25;
+	27;
+	30;
+	37;
+	41;
+	45;
+	50;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 11 [
+		color=red
+		label=false
+	];
+	7 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 13 [
+		color=red
+		label=false
+	];
+	11 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 16 [
+		color=red
+		label=false
+	];
+	13 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 27 [
+		color=red
+		label=false
+	];
+	20 -> 25 [
+		color=red
+		label=false
+	];
+	20 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 27;
+	27 -> 30;
+	30 -> 37 [
+		color=red
+		label=false
+	];
+	30 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 41;
+	41 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 50 [
+		color=red
+		label=false
+	];
+}

@@ -1,0 +1,30 @@
+digraph canon_host {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	14;
+	15;
+	17;
+	18;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 17 [
+		color=red
+		label=false
+	];
+	6 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 15;
+	15 -> 18;
+	17 -> 18;
+}

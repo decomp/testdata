@@ -1,0 +1,74 @@
+digraph randread {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	12;
+	15;
+	33;
+	42;
+	49;
+	55;
+	59;
+	63;
+	65;
+	66;
+	68;
+	69;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 12 [
+		color=red
+		label=false
+	];
+	7 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 15;
+	15 -> 15 [
+		color=red
+		label=false
+	];
+	15 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 49 [
+		color=red
+		label=false
+	];
+	42 -> 55;
+	49 -> 66;
+	55 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 63 [
+		color=red
+		label=false
+	];
+	59 -> 55 [
+		color=red
+		label=false
+	];
+	59 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 49;
+	65 -> 66;
+	66 -> 69;
+	68 -> 69;
+}

@@ -1,0 +1,19 @@
+digraph fallback_failure_callback {
+	// Node definitions.
+	3 [label=entry];
+	6;
+	8;
+	10;
+
+	// Edge definitions.
+	3 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 8 [
+		color=red
+		label=false
+	];
+	6 -> 10;
+	8 -> 10;
+}

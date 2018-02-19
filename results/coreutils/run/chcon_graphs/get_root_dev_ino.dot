@@ -1,0 +1,17 @@
+digraph get_root_dev_ino {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	13;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 13 [
+		color=red
+		label=false
+	];
+	6 -> 13;
+}

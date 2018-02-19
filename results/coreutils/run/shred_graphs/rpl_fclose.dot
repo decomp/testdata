@@ -1,0 +1,57 @@
+digraph rpl_fclose {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	6;
+	9;
+	13;
+	16;
+	18;
+	23;
+	24;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 6 [
+		color=red
+		label=false
+	];
+	4 -> 24;
+	6 -> 9 [
+		color=red
+		label=false
+	];
+	6 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 13 [
+		color=red
+		label=false
+	];
+	9 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 18 [
+		color=red
+		label=false
+	];
+	16 -> 24;
+	18 -> 23 [
+		color=red
+		label=false
+	];
+	18 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 24;
+}

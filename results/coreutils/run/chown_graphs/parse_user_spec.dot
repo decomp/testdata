@@ -1,0 +1,36 @@
+digraph parse_user_spec {
+	// Node definitions.
+	5 [label=entry];
+	7;
+	9;
+	17;
+	20;
+	24;
+
+	// Edge definitions.
+	5 -> 7 [
+		color=red
+		label=false
+	];
+	5 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 9;
+	9 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 24 [
+		color=red
+		label=false
+	];
+	17 -> 20 [
+		color=red
+		label=false
+	];
+	17 -> 24 [
+		color=darkgreen
+		label=true
+	];
+}

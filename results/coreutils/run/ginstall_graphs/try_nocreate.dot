@@ -1,0 +1,17 @@
+digraph try_nocreate {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	9;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 9 [
+		color=red
+		label=false
+	];
+	8 -> 9;
+}

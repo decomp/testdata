@@ -1,0 +1,48 @@
+digraph mdir_name {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	12;
+	17;
+	24;
+	25;
+	26;
+	29;
+
+	// Edge definitions.
+	1 -> 9;
+	9 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 17 [
+		color=red
+		label=false
+	];
+	12 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 17 [
+		color=red
+		label=false
+	];
+	17 -> 24 [
+		color=red
+		label=false
+	];
+	17 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 26;
+	26 -> 29;
+}

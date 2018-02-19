@@ -1,0 +1,17 @@
+digraph blake2b_init_param {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	53;
+
+	// Edge definitions.
+	2 -> 7;
+	7 -> 7 [
+		color=red
+		label=false
+	];
+	7 -> 53 [
+		color=darkgreen
+		label=true
+	];
+}

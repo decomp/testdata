@@ -1,0 +1,17 @@
+digraph savewd_errno {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	8;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 8 [
+		color=red
+		label=false
+	];
+	5 -> 8;
+}

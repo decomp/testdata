@@ -1,0 +1,11 @@
+digraph chown_failure_ok {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	8;
+
+	// Edge definitions.
+	1 -> 4 [label="case (x=22)"];
+	1 -> 8 [label="default case"];
+	4 -> 8;
+}

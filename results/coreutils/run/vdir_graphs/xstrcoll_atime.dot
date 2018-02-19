@@ -1,0 +1,35 @@
+digraph xstrcoll_atime {
+	// Node definitions.
+	2 [label=entry];
+	16;
+	18;
+	22;
+	29;
+
+	// Edge definitions.
+	2 -> 16 [
+		color=red
+		label=false
+	];
+	2 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 18 [
+		color=red
+		label=false
+	];
+	16 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 29 [
+		color=red
+		label=false
+	];
+	22 -> 29;
+}

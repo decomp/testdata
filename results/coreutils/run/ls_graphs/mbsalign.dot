@@ -1,0 +1,218 @@
+digraph mbsalign {
+	// Node definitions.
+	6 [label=entry];
+	11;
+	14;
+	17;
+	23;
+	26;
+	30;
+	31;
+	37;
+	38;
+	43;
+	46;
+	47;
+	53;
+	56;
+	58;
+	63;
+	66;
+	70;
+	71;
+	77;
+	78;
+	83;
+	87;
+	90;
+	94;
+	107;
+	108;
+	112;
+	122;
+	129;
+	141;
+	152;
+	168;
+	170;
+	173;
+
+	// Edge definitions.
+	6 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 94 [
+		color=red
+		label=false
+	];
+	11 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 94 [
+		color=red
+		label=false
+	];
+	14 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 23 [
+		color=red
+		label=false
+	];
+	17 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 26 [
+		color=red
+		label=false
+	];
+	23 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 30 [
+		color=red
+		label=false
+	];
+	26 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 31;
+	31 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 38 [
+		color=red
+		label=false
+	];
+	37 -> 38;
+	38 -> 31 [
+		color=red
+		label=false
+	];
+	38 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 94 [
+		color=red
+		label=false
+	];
+	43 -> 173 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 47;
+	47 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 56 [
+		color=red
+		label=false
+	];
+	53 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 94 [
+		color=red
+		label=false
+	];
+	56 -> 58;
+	58 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 66 [
+		color=red
+		label=false
+	];
+	63 -> 94 [
+		color=red
+		label=false
+	];
+	63 -> 173 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 70 [
+		color=red
+		label=false
+	];
+	66 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 71;
+	71 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 78 [
+		color=red
+		label=false
+	];
+	77 -> 78;
+	78 -> 83 [
+		color=red
+		label=false
+	];
+	78 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 71 [
+		color=red
+		label=false
+	];
+	83 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	87 -> 90;
+	90 -> 94;
+	94 -> 107 [label="case (x=1)"];
+	94 -> 108 [label="default case"];
+	94 -> 112 [label="case (x=0)"];
+	107 -> 112;
+	108 -> 112;
+	112 -> 122 [
+		color=red
+		label=false
+	];
+	112 -> 170 [
+		color=darkgreen
+		label=true
+	];
+	122 -> 129 [
+		color=darkgreen
+		label=true
+	];
+	122 -> 141 [
+		color=red
+		label=false
+	];
+	129 -> 141;
+	141 -> 152 [
+		color=darkgreen
+		label=true
+	];
+	141 -> 168 [
+		color=red
+		label=false
+	];
+	152 -> 168;
+	168 -> 170;
+	170 -> 173;
+}

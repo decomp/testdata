@@ -1,0 +1,72 @@
+digraph iread {
+	// Node definitions.
+	3 [label=entry];
+	4;
+	7;
+	11;
+	15;
+	16;
+	22;
+	27;
+	30;
+	32;
+	33;
+	34;
+	35;
+
+	// Edge definitions.
+	3 -> 4;
+	4 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 11 [
+		color=red
+		label=false
+	];
+	7 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 34 [
+		color=red
+		label=false
+	];
+	11 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 16 [
+		color=red
+		label=false
+	];
+	15 -> 16;
+	16 -> 22 [
+		color=red
+		label=false
+	];
+	16 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 33 [
+		color=red
+		label=false
+	];
+	27 -> 30 [
+		color=red
+		label=false
+	];
+	27 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 32;
+	32 -> 33;
+	33 -> 35;
+	34 -> 35;
+}

@@ -1,0 +1,59 @@
+digraph ino_map_insert {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	10;
+	13;
+	18;
+	26;
+	29;
+	33;
+	37;
+	40;
+
+	// Edge definitions.
+	2 -> 6 [
+		color=red
+		label=false
+	];
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 18 [
+		color=red
+		label=false
+	];
+	10 -> 40;
+	13 -> 18 [
+		color=red
+		label=false
+	];
+	13 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 26 [
+		color=red
+		label=false
+	];
+	18 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 29 [
+		color=red
+		label=false
+	];
+	26 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 37;
+	33 -> 37;
+	37 -> 40;
+}

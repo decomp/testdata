@@ -1,0 +1,150 @@
+digraph parse_additional_groups {
+	// Node definitions.
+	4 [label=entry];
+	9;
+	11;
+	23;
+	26;
+	35;
+	37;
+	40;
+	44;
+	47;
+	51;
+	52;
+	57;
+	59;
+	61;
+	64;
+	66;
+	67;
+	71;
+	76;
+	84;
+	92;
+	93;
+	94;
+	104;
+	107;
+	109;
+	110;
+
+	// Edge definitions.
+	4 -> 9 [
+		color=red
+		label=false
+	];
+	4 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 11;
+	11 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 44 [
+		color=red
+		label=false
+	];
+	23 -> 26;
+	26 -> 26 [
+		color=red
+		label=false
+	];
+	26 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 37 [
+		color=red
+		label=false
+	];
+	35 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 40 [
+		color=red
+		label=false
+	];
+	37 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 57;
+	44 -> 47 [
+		color=red
+		label=false
+	];
+	44 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 57;
+	51 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 92 [
+		color=red
+		label=false
+	];
+	52 -> 84;
+	57 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 76 [
+		color=red
+		label=false
+	];
+	59 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 64 [
+		color=red
+		label=false
+	];
+	61 -> 71;
+	64 -> 66 [
+		color=red
+		label=false
+	];
+	64 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 71;
+	71 -> 76;
+	76 -> 84;
+	84 -> 11 [
+		color=red
+		label=false
+	];
+	84 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 110;
+	93 -> 94;
+	94 -> 104 [
+		color=red
+		label=false
+	];
+	94 -> 107 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 110;
+	107 -> 109 [
+		color=darkgreen
+		label=true
+	];
+	107 -> 110 [
+		color=red
+		label=false
+	];
+	109 -> 110;
+}

@@ -1,0 +1,70 @@
+digraph fnmatch_pattern_has_wildcards {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	14;
+	15;
+	16;
+	17;
+	20;
+	24;
+	25;
+	28;
+	30;
+	31;
+	32;
+
+	// Edge definitions.
+	2 -> 9;
+	9 -> 14 [label="case (x=41)"];
+	9 -> 15 [label="case (x=92)"];
+	9 -> 24 [label="case (x=33)"];
+	9 -> 28 [label="default case"];
+	9 -> 30 [label="case (x=0)"];
+	9 -> 31 [label="case (x=91)"];
+	14 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 31 [
+		color=red
+		label=false
+	];
+	15 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 28 [
+		color=red
+		label=false
+	];
+	16 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 20 [
+		color=red
+		label=false
+	];
+	17 -> 20;
+	20 -> 28;
+	24 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 28 [
+		color=red
+		label=false
+	];
+	25 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 9;
+	30 -> 32;
+	31 -> 32;
+}

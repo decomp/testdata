@@ -1,0 +1,17 @@
+digraph stophandler {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	7;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 7 [
+		color=red
+		label=false
+	];
+	4 -> 7;
+}

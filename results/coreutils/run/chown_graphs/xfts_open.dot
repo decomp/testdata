@@ -1,0 +1,26 @@
+digraph xfts_open {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	11;
+	12;
+	13;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 13 [
+		color=red
+		label=false
+	];
+	7 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 12 [
+		color=red
+		label=false
+	];
+}

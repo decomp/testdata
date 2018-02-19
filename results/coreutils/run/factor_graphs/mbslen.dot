@@ -1,0 +1,41 @@
+digraph mbslen {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	18;
+	20;
+	31;
+	32;
+	34;
+	36;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 34 [
+		color=red
+		label=false
+	];
+	5 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 32 [
+		color=red
+		label=false
+	];
+	18 -> 20;
+	20 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 31 [
+		color=red
+		label=false
+	];
+	31 -> 32;
+	32 -> 36;
+	34 -> 36;
+}

@@ -1,0 +1,133 @@
+digraph gettext_quote {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	10;
+	16;
+	22;
+	26;
+	30;
+	34;
+	38;
+	44;
+	48;
+	52;
+	56;
+	60;
+	64;
+	68;
+	72;
+	75;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 75 [
+		color=red
+		label=false
+	];
+	5 -> 10 [label="case (x=85)"];
+	5 -> 38 [label="case (x=71)"];
+	5 -> 72 [label="default case"];
+	10 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 72 [
+		color=red
+		label=false
+	];
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 72 [
+		color=red
+		label=false
+	];
+	22 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 72 [
+		color=red
+		label=false
+	];
+	26 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 72 [
+		color=red
+		label=false
+	];
+	30 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 72 [
+		color=red
+		label=false
+	];
+	34 -> 75;
+	38 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 72 [
+		color=red
+		label=false
+	];
+	44 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 72 [
+		color=red
+		label=false
+	];
+	48 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 72 [
+		color=red
+		label=false
+	];
+	52 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 72 [
+		color=red
+		label=false
+	];
+	56 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 72 [
+		color=red
+		label=false
+	];
+	60 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 72 [
+		color=red
+		label=false
+	];
+	64 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 72 [
+		color=red
+		label=false
+	];
+	68 -> 75;
+	72 -> 75;
+}

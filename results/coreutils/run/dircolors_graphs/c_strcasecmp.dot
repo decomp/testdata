@@ -1,0 +1,41 @@
+digraph c_strcasecmp {
+	// Node definitions.
+	2 [label=entry];
+	4;
+	5;
+	22;
+	24;
+	29;
+	30;
+	34;
+
+	// Edge definitions.
+	2 -> 4 [
+		color=red
+		label=false
+	];
+	2 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 5;
+	5 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 24 [
+		color=red
+		label=false
+	];
+	22 -> 30;
+	24 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 29 [
+		color=red
+		label=false
+	];
+	29 -> 30;
+	30 -> 34;
+}

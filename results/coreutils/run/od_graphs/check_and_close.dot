@@ -1,0 +1,86 @@
+digraph check_and_close {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	9;
+	18;
+	22;
+	25;
+	31;
+	35;
+	38;
+	43;
+	45;
+	52;
+	54;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=red
+		label=false
+	];
+	1 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 9 [
+		color=red
+		label=false
+	];
+	4 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 22 [
+		color=red
+		label=false
+	];
+	18 -> 22 [
+		color=red
+		label=false
+	];
+	18 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 43;
+	25 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 35 [
+		color=red
+		label=false
+	];
+	31 -> 35 [
+		color=red
+		label=false
+	];
+	31 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 38 [
+		color=red
+		label=false
+	];
+	35 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 43;
+	43 -> 45;
+	45 -> 52 [
+		color=red
+		label=false
+	];
+	45 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 54;
+}

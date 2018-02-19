@@ -1,0 +1,30 @@
+digraph xnumtoumax {
+	// Node definitions.
+	7 [label=entry];
+	11;
+	13;
+	18;
+	22;
+	24;
+	26;
+	35;
+
+	// Edge definitions.
+	7 -> 11 [label="default case"];
+	7 -> 13 [label="case (x=0)"];
+	7 -> 22 [label="case (x=1)"];
+	7 -> 24 [label="case (x=3)"];
+	11 -> 26;
+	13 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 35 [
+		color=red
+		label=false
+	];
+	18 -> 26;
+	22 -> 26;
+	24 -> 26;
+	26 -> 35;
+}

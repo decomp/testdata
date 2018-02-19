@@ -1,0 +1,97 @@
+digraph sig2str {
+	// Node definitions.
+	2 [label=entry];
+	3;
+	9;
+	15;
+	20;
+	26;
+	31;
+	32;
+	33;
+	37;
+	41;
+	43;
+	49;
+	55;
+	62;
+
+	// Edge definitions.
+	2 -> 9;
+	3 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 43 [
+		color=red
+		label=false
+	];
+	9 -> 3 [
+		color=red
+		label=false
+	];
+	9 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 41;
+	20 -> 26 [
+		color=red
+		label=false
+	];
+	20 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 31 [
+		color=red
+		label=false
+	];
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 33;
+	32 -> 33;
+	33 -> 37 [
+		color=red
+		label=false
+	];
+	33 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 41;
+	43 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 49 [
+		color=red
+		label=false
+	];
+	49 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 55 [
+		color=red
+		label=false
+	];
+	55 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 62 [
+		color=red
+		label=false
+	];
+	62 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 20 [
+		color=red
+		label=false
+	];
+}

@@ -1,0 +1,25 @@
+digraph xmem_cd_iconv {
+	// Node definitions.
+	5 [label=entry];
+	8;
+	12;
+	13;
+
+	// Edge definitions.
+	5 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 13 [
+		color=red
+		label=false
+	];
+	8 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 13 [
+		color=red
+		label=false
+	];
+}

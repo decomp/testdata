@@ -1,0 +1,27 @@
+digraph remember_copied {
+	// Node definitions.
+	3 [label=entry];
+	14;
+	15;
+	17;
+	22;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 15 [
+		color=red
+		label=false
+	];
+	15 -> 17 [
+		color=red
+		label=false
+	];
+	15 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 22;
+}

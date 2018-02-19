@@ -1,0 +1,17 @@
+digraph sha1_finish_ctx {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	15;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	13 -> 15;
+}

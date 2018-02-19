@@ -1,0 +1,101 @@
+digraph add_line_number {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	17;
+	25;
+	26;
+	29;
+	32;
+	37;
+	39;
+	44;
+	47;
+	53;
+	59;
+	60;
+	62;
+	64;
+	68;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 26 [
+		color=red
+		label=false
+	];
+	11 -> 17;
+	17 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 25 [
+		color=red
+		label=false
+	];
+	25 -> 26;
+	26 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 47 [
+		color=red
+		label=false
+	];
+	29 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 44 [
+		color=red
+		label=false
+	];
+	32 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 60 [
+		color=red
+		label=false
+	];
+	37 -> 39;
+	39 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 59 [
+		color=red
+		label=false
+	];
+	44 -> 60;
+	47 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 60 [
+		color=red
+		label=false
+	];
+	53 -> 60;
+	59 -> 60;
+	60 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 68 [
+		color=red
+		label=false
+	];
+	62 -> 64 [
+		color=red
+		label=false
+	];
+	62 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 68;
+}

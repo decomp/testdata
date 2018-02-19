@@ -1,0 +1,55 @@
+digraph xstrtold {
+	// Node definitions.
+	4 [label=entry];
+	12;
+	14;
+	17;
+	19;
+	22;
+	25;
+	27;
+
+	// Edge definitions.
+	4 -> 12 [
+		color=red
+		label=false
+	];
+	4 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 27 [
+		color=red
+		label=false
+	];
+	17 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 22 [
+		color=red
+		label=false
+	];
+	19 -> 22;
+	22 -> 25 [
+		color=red
+		label=false
+	];
+	22 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 27;
+}

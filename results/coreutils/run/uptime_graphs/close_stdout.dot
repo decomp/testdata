@@ -1,0 +1,57 @@
+digraph close_stdout {
+	// Node definitions.
+	0 [label=entry];
+	4;
+	8;
+	11;
+	16;
+	18;
+	19;
+	21;
+	25;
+	27;
+
+	// Edge definitions.
+	0 -> 4 [
+		color=red
+		label=false
+	];
+	0 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 8 [
+		color=red
+		label=false
+	];
+	4 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 11 [
+		color=red
+		label=false
+	];
+	8 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 16 [
+		color=red
+		label=false
+	];
+	11 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 19;
+	18 -> 19;
+	21 -> 25 [
+		color=red
+		label=false
+	];
+	21 -> 27 [
+		color=darkgreen
+		label=true
+	];
+}

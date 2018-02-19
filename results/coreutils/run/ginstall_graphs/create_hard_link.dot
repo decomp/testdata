@@ -1,0 +1,28 @@
+digraph create_hard_link {
+	// Node definitions.
+	5 [label=entry];
+	9;
+	15;
+	19;
+	23;
+
+	// Edge definitions.
+	5 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 15 [
+		color=red
+		label=false
+	];
+	9 -> 23;
+	15 -> 19 [
+		color=red
+		label=false
+	];
+	15 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 23;
+}

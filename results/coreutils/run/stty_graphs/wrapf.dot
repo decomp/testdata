@@ -1,0 +1,64 @@
+digraph wrapf {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	10;
+	13;
+	23;
+	24;
+	26;
+	28;
+	29;
+	32;
+	34;
+	37;
+	39;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 10 [
+		color=red
+		label=false
+	];
+	10 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 39 [
+		color=red
+		label=false
+	];
+	13 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 28 [
+		color=red
+		label=false
+	];
+	23 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 37;
+	26 -> 37;
+	28 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 34;
+	32 -> 34;
+	34 -> 37;
+	37 -> 39;
+}

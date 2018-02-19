@@ -1,0 +1,120 @@
+digraph main {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	10;
+	12;
+	17;
+	18;
+	20;
+	21;
+	24;
+	25;
+	29;
+	32;
+	37;
+	38;
+	44;
+	45;
+	48;
+	49;
+	50;
+	51;
+	52;
+	53;
+	54;
+	55;
+	56;
+	59;
+	64;
+	67;
+	68;
+	79;
+	83;
+	86;
+
+	// Edge definitions.
+	2 -> 8;
+	8 -> 10;
+	10 -> 12 [label="case (x=100)"];
+	10 -> 17 [label="case (x=115)"];
+	10 -> 18 [label="case (x=122)"];
+	10 -> 20 [label="case (x=-130)"];
+	10 -> 21 [label="case (x=-131)"];
+	10 -> 24 [label="default case"];
+	10 -> 25 [label="case (x=-1)"];
+	12 -> 8;
+	17 -> 18;
+	18 -> 10;
+	25 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 32 [
+		color=red
+		label=false
+	];
+	29 -> 32;
+	32 -> 37 [
+		color=red
+		label=false
+	];
+	32 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 38;
+	38 -> 44 [
+		color=red
+		label=false
+	];
+	38 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 59;
+	45 -> 48 [label="case (x=48)"];
+	45 -> 49 [label="case (x=102)"];
+	45 -> 50 [label="case (x=110)"];
+	45 -> 51 [label="case (x=114)"];
+	45 -> 52 [label="case (x=116)"];
+	45 -> 53 [label="case (x=118)"];
+	45 -> 54 [label="case (x=92)"];
+	45 -> 55 [label="default case"];
+	45 -> 56 [label="case (x=98)"];
+	45 -> 64 [label="case (x=0)"];
+	48 -> 56;
+	49 -> 56;
+	50 -> 56;
+	51 -> 56;
+	52 -> 56;
+	53 -> 56;
+	54 -> 56;
+	55 -> 56;
+	56 -> 59;
+	59 -> 38 [
+		color=red
+		label=false
+	];
+	59 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 68;
+	68 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 86 [
+		color=red
+		label=false
+	];
+	79 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 86 [
+		color=red
+		label=false
+	];
+}

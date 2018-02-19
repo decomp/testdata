@@ -1,0 +1,16 @@
+digraph set_custom_quoting {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	11;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=red
+		label=false
+	];
+	3 -> 11 [
+		color=darkgreen
+		label=true
+	];
+}

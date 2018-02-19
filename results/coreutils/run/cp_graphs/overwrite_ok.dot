@@ -1,0 +1,66 @@
+digraph overwrite_ok {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	11;
+	14;
+	22;
+	26;
+	30;
+	31;
+	41;
+	47;
+
+	// Edge definitions.
+	3 -> 9 [
+		color=red
+		label=false
+	];
+	3 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 11 [
+		color=red
+		label=false
+	];
+	9 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 14 [
+		color=red
+		label=false
+	];
+	11 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 30 [
+		color=red
+		label=false
+	];
+	22 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 30 [
+		color=red
+		label=false
+	];
+	26 -> 30 [
+		color=red
+		label=false
+	];
+	26 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 31;
+	31 -> 47;
+	41 -> 47;
+}

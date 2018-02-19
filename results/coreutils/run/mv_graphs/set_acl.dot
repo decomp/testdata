@@ -1,0 +1,17 @@
+digraph set_acl {
+	// Node definitions.
+	3 [label=entry];
+	6;
+	11;
+
+	// Edge definitions.
+	3 -> 6 [
+		color=red
+		label=false
+	];
+	3 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 11;
+}

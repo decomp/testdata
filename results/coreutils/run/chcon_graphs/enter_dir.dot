@@ -1,0 +1,55 @@
+digraph enter_dir {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	10;
+	21;
+	23;
+	29;
+	35;
+	38;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=red
+		label=false
+	];
+	2 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 10 [
+		color=red
+		label=false
+	];
+	7 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 21 [
+		color=red
+		label=false
+	];
+	10 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 23 [
+		color=red
+		label=false
+	];
+	21 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 38;
+	29 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 38 [
+		color=red
+		label=false
+	];
+	35 -> 38;
+}

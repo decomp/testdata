@@ -1,0 +1,30 @@
+digraph human_time {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	13;
+	19;
+	22;
+	27;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	10 -> 13;
+	13 -> 19 [
+		color=red
+		label=false
+	];
+	13 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 27;
+	22 -> 27;
+}

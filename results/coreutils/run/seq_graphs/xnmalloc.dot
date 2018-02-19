@@ -1,0 +1,26 @@
+digraph xnmalloc {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	6;
+	12;
+	13;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 6 [
+		color=red
+		label=false
+	];
+	6 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 13 [
+		color=red
+		label=false
+	];
+}

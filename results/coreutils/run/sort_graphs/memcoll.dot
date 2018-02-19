@@ -1,0 +1,61 @@
+digraph memcoll {
+	// Node definitions.
+	4 [label=entry];
+	6;
+	9;
+	11;
+	19;
+	26;
+	34;
+	37;
+	41;
+	43;
+	45;
+
+	// Edge definitions.
+	4 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 11 [
+		color=red
+		label=false
+	];
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 11 [
+		color=red
+		label=false
+	];
+	9 -> 45;
+	11 -> 19;
+	19 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 41 [
+		color=red
+		label=false
+	];
+	26 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 37 [
+		color=red
+		label=false
+	];
+	34 -> 43;
+	37 -> 19 [
+		color=red
+		label=false
+	];
+	37 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 43;
+	43 -> 45;
+}

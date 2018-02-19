@@ -1,0 +1,25 @@
+digraph xstr_cd_iconv {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	9;
+	10;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 10 [
+		color=red
+		label=false
+	];
+	5 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 10 [
+		color=red
+		label=false
+	];
+}

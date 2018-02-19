@@ -1,0 +1,17 @@
+digraph parse_datetime {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	9;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 9;
+}

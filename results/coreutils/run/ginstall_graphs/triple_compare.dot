@@ -1,0 +1,26 @@
+digraph triple_compare {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	18;
+	24;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 24 [
+		color=red
+		label=false
+	];
+	10 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 24 [
+		color=red
+		label=false
+	];
+	18 -> 24;
+}

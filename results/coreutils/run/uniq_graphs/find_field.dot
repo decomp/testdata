@@ -1,0 +1,90 @@
+digraph find_field {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	12;
+	16;
+	19;
+	30;
+	32;
+	35;
+	38;
+	41;
+	52;
+	55;
+	57;
+	63;
+	64;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 64 [
+		color=red
+		label=false
+	];
+	11 -> 12;
+	12 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 32 [
+		color=red
+		label=false
+	];
+	16 -> 19;
+	19 -> 30 [
+		color=red
+		label=false
+	];
+	19 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 32;
+	32 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 57 [
+		color=red
+		label=false
+	];
+	35 -> 41;
+	38 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 30 [
+		color=red
+		label=false
+	];
+	41 -> 52 [
+		color=red
+		label=false
+	];
+	41 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 55 [
+		color=red
+		label=false
+	];
+	55 -> 57;
+	57 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 63 [
+		color=red
+		label=false
+	];
+	63 -> 64;
+}

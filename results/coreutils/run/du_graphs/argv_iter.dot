@@ -1,0 +1,41 @@
+digraph argv_iter {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	11;
+	16;
+	21;
+	26;
+	27;
+	31;
+
+	// Edge definitions.
+	2 -> 6 [
+		color=red
+		label=false
+	];
+	2 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 16 [
+		color=red
+		label=false
+	];
+	11 -> 31;
+	16 -> 31;
+	21 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 27 [
+		color=red
+		label=false
+	];
+	26 -> 31;
+	27 -> 31;
+}

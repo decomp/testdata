@@ -1,0 +1,112 @@
+digraph set_tz {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	8;
+	12;
+	13;
+	16;
+	26;
+	31;
+	33;
+	34;
+	37;
+	39;
+	42;
+	43;
+	47;
+	48;
+	54;
+	55;
+	56;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=red
+		label=false
+	];
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 8 [
+		color=red
+		label=false
+	];
+	7 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 13 [
+		color=red
+		label=false
+	];
+	8 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 16 [
+		color=red
+		label=false
+	];
+	12 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 16;
+	16 -> 26 [
+		color=red
+		label=false
+	];
+	16 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 33 [
+		color=red
+		label=false
+	];
+	31 -> 33;
+	33 -> 34 [
+		color=red
+		label=false
+	];
+	33 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 39;
+	37 -> 39;
+	39 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 43 [
+		color=red
+		label=false
+	];
+	42 -> 56;
+	43 -> 47 [
+		color=red
+		label=false
+	];
+	43 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 48;
+	48 -> 48 [
+		color=red
+		label=false
+	];
+	48 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 55;
+	55 -> 56;
+}

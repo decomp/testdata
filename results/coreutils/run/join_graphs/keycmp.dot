@@ -1,0 +1,83 @@
+digraph keycmp {
+	// Node definitions.
+	4 [label=entry];
+	8;
+	15;
+	21;
+	28;
+	33;
+	36;
+	37;
+	39;
+	43;
+	46;
+	48;
+	52;
+	55;
+	60;
+
+	// Edge definitions.
+	4 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 15 [
+		color=red
+		label=false
+	];
+	8 -> 15;
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 28 [
+		color=red
+		label=false
+	];
+	21 -> 28;
+	28 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 36 [
+		color=red
+		label=false
+	];
+	33 -> 60;
+	36 -> 37 [
+		color=red
+		label=false
+	];
+	36 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 43 [
+		color=red
+		label=false
+	];
+	39 -> 52;
+	43 -> 46 [
+		color=red
+		label=false
+	];
+	43 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 60;
+	48 -> 52;
+	52 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 60 [
+		color=red
+		label=false
+	];
+	55 -> 60;
+}

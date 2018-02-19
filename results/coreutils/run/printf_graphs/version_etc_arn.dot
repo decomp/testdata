@@ -1,0 +1,52 @@
+digraph version_etc_arn {
+	// Node definitions.
+	6 [label=entry];
+	8;
+	10;
+	12;
+	17;
+	18;
+	22;
+	28;
+	36;
+	46;
+	58;
+	72;
+	88;
+	106;
+	126;
+	146;
+
+	// Edge definitions.
+	6 -> 8 [
+		color=red
+		label=false
+	];
+	6 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 12;
+	10 -> 12;
+	12 -> 17 [label="case (x=0)"];
+	12 -> 18 [label="case (x=1)"];
+	12 -> 22 [label="case (x=2)"];
+	12 -> 28 [label="case (x=3)"];
+	12 -> 36 [label="case (x=4)"];
+	12 -> 46 [label="case (x=5)"];
+	12 -> 58 [label="case (x=6)"];
+	12 -> 72 [label="case (x=7)"];
+	12 -> 88 [label="case (x=8)"];
+	12 -> 106 [label="case (x=9)"];
+	12 -> 126 [label="default case"];
+	18 -> 146;
+	22 -> 146;
+	28 -> 146;
+	36 -> 146;
+	46 -> 146;
+	58 -> 146;
+	72 -> 146;
+	88 -> 146;
+	106 -> 146;
+	126 -> 146;
+}

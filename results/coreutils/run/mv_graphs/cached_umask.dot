@@ -1,0 +1,17 @@
+digraph cached_umask {
+	// Node definitions.
+	0 [label=entry];
+	3;
+	7;
+
+	// Edge definitions.
+	0 -> 3 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 7;
+}

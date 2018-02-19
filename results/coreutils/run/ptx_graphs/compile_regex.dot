@@ -1,0 +1,16 @@
+digraph compile_regex {
+	// Node definitions.
+	1 [label=entry];
+	14;
+	17;
+
+	// Edge definitions.
+	1 -> 14 [
+		color=red
+		label=false
+	];
+	1 -> 17 [
+		color=darkgreen
+		label=true
+	];
+}

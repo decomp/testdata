@@ -1,0 +1,41 @@
+digraph print_wide_uint {
+	// Node definitions.
+	3 [label=entry];
+	8;
+	11;
+	16;
+	18;
+	20;
+	22;
+	28;
+
+	// Edge definitions.
+	3 -> 8 [
+		color=red
+		label=false
+	];
+	3 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 16 [
+		color=red
+		label=false
+	];
+	11 -> 18;
+	16 -> 18;
+	18 -> 28;
+	20 -> 22 [
+		color=red
+		label=false
+	];
+	20 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 28;
+}

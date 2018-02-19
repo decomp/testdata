@@ -1,0 +1,25 @@
+digraph cleanup_file_list_stdin {
+	// Node definitions.
+	0 [label=entry];
+	2;
+	6;
+	9;
+
+	// Edge definitions.
+	0 -> 2 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 9 [
+		color=red
+		label=false
+	];
+	2 -> 6 [
+		color=red
+		label=false
+	];
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+}

@@ -1,0 +1,27 @@
+digraph last_component {
+	// Node definitions.
+	1 [label=entry];
+	2;
+	7;
+	8;
+	13;
+	18;
+	23;
+
+	// Edge definitions.
+	1 -> 2;
+	2 -> 2 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 7 [
+		color=red
+		label=false
+	];
+	7 -> 8;
+	8 -> 13 [label="default case"];
+	8 -> 18 [label="case (x=47)"];
+	8 -> 23 [label="case (x=0)"];
+	13 -> 18;
+	18 -> 8;
+}

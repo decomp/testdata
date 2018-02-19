@@ -1,0 +1,63 @@
+digraph randint_genmax {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	16;
+	17;
+	24;
+	25;
+	38;
+	39;
+	43;
+	45;
+	52;
+	55;
+
+	// Edge definitions.
+	2 -> 12;
+	12 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 39 [
+		color=red
+		label=false
+	];
+	16 -> 17;
+	17 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 24 [
+		color=red
+		label=false
+	];
+	24 -> 25;
+	25 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 38 [
+		color=red
+		label=false
+	];
+	38 -> 39;
+	39 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 45 [
+		color=red
+		label=false
+	];
+	43 -> 55;
+	45 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 52 [
+		color=red
+		label=false
+	];
+	52 -> 55;
+}

@@ -1,0 +1,24 @@
+digraph savewd_finish {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	8;
+	12;
+	13;
+	14;
+
+	// Edge definitions.
+	1 -> 4 [label="case (x=2)"];
+	1 -> 8 [label="case (x=3)"];
+	1 -> 13 [label="default case"];
+	1 -> 14 [label="case (x=4)"];
+	4 -> 14;
+	8 -> 12 [
+		color=red
+		label=false
+	];
+	8 -> 14 [
+		color=darkgreen
+		label=true
+	];
+}

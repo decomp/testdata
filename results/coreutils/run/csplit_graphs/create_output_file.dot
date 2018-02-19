@@ -1,0 +1,40 @@
+digraph create_output_file {
+	// Node definitions.
+	0 [label=entry];
+	13;
+	16;
+	19;
+	23;
+	35;
+	37;
+	41;
+
+	// Edge definitions.
+	0 -> 13 [
+		color=red
+		label=false
+	];
+	0 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 19;
+	16 -> 19;
+	19 -> 23 [
+		color=red
+		label=false
+	];
+	19 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 35 [
+		color=red
+		label=false
+	];
+	23 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 37;
+}

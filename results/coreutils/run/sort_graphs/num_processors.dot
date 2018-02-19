@@ -1,0 +1,106 @@
+digraph num_processors {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	15;
+	19;
+	23;
+	26;
+	29;
+	31;
+	34;
+	38;
+	41;
+	42;
+	44;
+	47;
+	48;
+	52;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 15 [
+		color=red
+		label=false
+	];
+	5 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 52 [
+		color=red
+		label=false
+	];
+	15 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 31 [
+		color=red
+		label=false
+	];
+	19 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 26 [
+		color=red
+		label=false
+	];
+	23 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 29 [
+		color=red
+		label=false
+	];
+	26 -> 47 [
+		color=red
+		label=false
+	];
+	26 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 48;
+	31 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 44 [
+		color=red
+		label=false
+	];
+	34 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 41 [
+		color=red
+		label=false
+	];
+	38 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 42 [
+		color=red
+		label=false
+	];
+	41 -> 48;
+	42 -> 44;
+	44 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 48 [
+		color=red
+		label=false
+	];
+	47 -> 48;
+	48 -> 52;
+}

@@ -1,0 +1,54 @@
+digraph str_days {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	11;
+	17;
+	20;
+	21;
+	25;
+	28;
+	30;
+	36;
+	45;
+
+	// Edge definitions.
+	2 -> 6 [
+		color=red
+		label=false
+	];
+	2 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 17 [
+		color=red
+		label=false
+	];
+	11 -> 21;
+	17 -> 21;
+	20 -> 21;
+	21 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 45 [
+		color=red
+		label=false
+	];
+	25 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 30 [
+		color=red
+		label=false
+	];
+	28 -> 36;
+	30 -> 36;
+	36 -> 45;
+}

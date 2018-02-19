@@ -1,0 +1,46 @@
+digraph display_window_size {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	11;
+	13;
+	14;
+	17;
+	25;
+	26;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=red
+		label=false
+	];
+	2 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 11 [
+		color=red
+		label=false
+	];
+	7 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 14 [
+		color=red
+		label=false
+	];
+	13 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 25 [
+		color=red
+		label=false
+	];
+	17 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 26;
+}

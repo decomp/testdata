@@ -1,0 +1,124 @@
+digraph parse_omp_threads {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	7;
+	8;
+	14;
+	19;
+	23;
+	26;
+	32;
+	37;
+	40;
+	41;
+	47;
+	48;
+	49;
+	54;
+	58;
+	59;
+	62;
+	63;
+	64;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=red
+		label=false
+	];
+	1 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 7 [
+		color=red
+		label=false
+	];
+	4 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 8;
+	8 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 23 [
+		color=red
+		label=false
+	];
+	14 -> 19 [
+		color=red
+		label=false
+	];
+	14 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 8 [
+		color=red
+		label=false
+	];
+	19 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 26;
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 64 [
+		color=red
+		label=false
+	];
+	32 -> 37 [
+		color=red
+		label=false
+	];
+	32 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 40 [
+		color=red
+		label=false
+	];
+	37 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 41;
+	41 -> 48 [
+		color=red
+		label=false
+	];
+	41 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 59;
+	48 -> 59;
+	49 -> 54 [
+		color=red
+		label=false
+	];
+	49 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 41 [
+		color=red
+		label=false
+	];
+	54 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 59;
+	59 -> 62 [label="case (x=44)"];
+	59 -> 63 [label="default case"];
+	62 -> 64;
+	63 -> 64;
+}

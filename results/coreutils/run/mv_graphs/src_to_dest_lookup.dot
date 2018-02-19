@@ -1,0 +1,17 @@
+digraph src_to_dest_lookup {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	14;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=red
+		label=false
+	];
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 14;
+}

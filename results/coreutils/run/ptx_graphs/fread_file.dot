@@ -1,0 +1,121 @@
+digraph fread_file {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	13;
+	16;
+	20;
+	23;
+	25;
+	27;
+	31;
+	32;
+	41;
+	46;
+	49;
+	54;
+	57;
+	59;
+	67;
+	70;
+	72;
+	75;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 27 [
+		color=red
+		label=false
+	];
+	8 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 27 [
+		color=red
+		label=false
+	];
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 27 [
+		color=red
+		label=false
+	];
+	16 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 27 [
+		color=red
+		label=false
+	];
+	20 -> 23 [
+		color=red
+		label=false
+	];
+	20 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 27;
+	25 -> 75;
+	27 -> 31 [
+		color=red
+		label=false
+	];
+	27 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 32;
+	32 -> 41 [
+		color=red
+		label=false
+	];
+	32 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 72 [
+		color=red
+		label=false
+	];
+	46 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 54 [
+		color=red
+		label=false
+	];
+	49 -> 54;
+	54 -> 75;
+	57 -> 59 [
+		color=red
+		label=false
+	];
+	57 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 32 [
+		color=red
+		label=false
+	];
+	59 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 72;
+	70 -> 72;
+	72 -> 75;
+}

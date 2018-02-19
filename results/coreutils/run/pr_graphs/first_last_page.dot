@@ -1,0 +1,69 @@
+digraph first_last_page {
+	// Node definitions.
+	3 [label=entry];
+	11;
+	12;
+	18;
+	21;
+	25;
+	26;
+	29;
+	33;
+	35;
+	40;
+	41;
+
+	// Edge definitions.
+	3 -> 11 [label="default case"];
+	3 -> 12 [label="case (x=0)"];
+	12 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 41 [
+		color=red
+		label=false
+	];
+	18 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 35 [
+		color=red
+		label=false
+	];
+	21 -> 25 [
+		color=red
+		label=false
+	];
+	21 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 29 [
+		color=red
+		label=false
+	];
+	26 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 33 [
+		color=red
+		label=false
+	];
+	29 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 35;
+	35 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 41 [
+		color=red
+		label=false
+	];
+	40 -> 41;
+}

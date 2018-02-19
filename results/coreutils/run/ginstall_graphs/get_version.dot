@@ -1,0 +1,26 @@
+digraph get_version {
+	// Node definitions.
+	2 [label=entry];
+	4;
+	7;
+	12;
+
+	// Edge definitions.
+	2 -> 4 [
+		color=red
+		label=false
+	];
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 7 [
+		color=red
+		label=false
+	];
+	4 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 12;
+}

@@ -1,0 +1,127 @@
+digraph maybe_create_temp {
+	// Node definitions.
+	2 [label=entry];
+	32;
+	34;
+	40;
+	43;
+	45;
+	48;
+	51;
+	52;
+	54;
+	58;
+	65;
+	73;
+	76;
+	77;
+	81;
+	82;
+	84;
+	92;
+	94;
+	98;
+	100;
+
+	// Edge definitions.
+	2 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 34 [
+		color=red
+		label=false
+	];
+	32 -> 34;
+	34 -> 40 [
+		color=red
+		label=false
+	];
+	34 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 43;
+	43 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 52 [
+		color=red
+		label=false
+	];
+	45 -> 48 [
+		color=red
+		label=false
+	];
+	45 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 100;
+	52 -> 54 [
+		color=red
+		label=false
+	];
+	52 -> 100 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 58 [
+		color=red
+		label=false
+	];
+	54 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 82 [
+		color=red
+		label=false
+	];
+	65 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 77 [
+		color=red
+		label=false
+	];
+	73 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 77 [
+		color=red
+		label=false
+	];
+	77 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 92 [
+		color=red
+		label=false
+	];
+	82 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 92 [
+		color=red
+		label=false
+	];
+	92 -> 94;
+	94 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 100 [
+		color=red
+		label=false
+	];
+}

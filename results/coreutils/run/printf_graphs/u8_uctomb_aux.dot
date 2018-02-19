@@ -1,0 +1,71 @@
+digraph u8_uctomb_aux {
+	// Node definitions.
+	3 [label=entry];
+	5;
+	7;
+	9;
+	12;
+	14;
+	17;
+	19;
+	26;
+	34;
+	43;
+
+	// Edge definitions.
+	3 -> 5 [
+		color=red
+		label=false
+	];
+	3 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 7 [
+		color=red
+		label=false
+	];
+	5 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 12 [
+		color=red
+		label=false
+	];
+	9 -> 14 [
+		color=red
+		label=false
+	];
+	9 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 43 [
+		color=red
+		label=false
+	];
+	14 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 19 [label="case (x=-4)"];
+	17 -> 26 [label="case (x=3)"];
+	17 -> 34 [label="case (x=2)"];
+	17 -> 43 [label="default case"];
+	19 -> 26;
+	26 -> 34;
+	34 -> 43;
+}

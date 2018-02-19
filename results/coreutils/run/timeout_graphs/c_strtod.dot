@@ -1,0 +1,39 @@
+digraph c_strtod {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	7;
+	10;
+	12;
+	13;
+	15;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 7 [
+		color=red
+		label=false
+	];
+	5 -> 7;
+	7 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 13 [
+		color=red
+		label=false
+	];
+	10 -> 12 [
+		color=red
+		label=false
+	];
+	10 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 15;
+	13 -> 15;
+}

@@ -1,0 +1,28 @@
+digraph hash_pjw {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	6;
+	18;
+	19;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=red
+		label=false
+	];
+	2 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 6;
+	6 -> 6 [
+		color=red
+		label=false
+	];
+	6 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 19;
+}

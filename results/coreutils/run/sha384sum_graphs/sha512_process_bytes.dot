@@ -1,0 +1,61 @@
+digraph sha512_process_bytes {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	17;
+	24;
+	27;
+	31;
+	35;
+	39;
+	46;
+	50;
+	52;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 24 [
+		color=red
+		label=false
+	];
+	17 -> 24;
+	24 -> 27;
+	27 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 35 [
+		color=red
+		label=false
+	];
+	31 -> 35;
+	35 -> 39 [
+		color=red
+		label=false
+	];
+	35 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 50 [
+		color=red
+		label=false
+	];
+	46 -> 50;
+	50 -> 52;
+}

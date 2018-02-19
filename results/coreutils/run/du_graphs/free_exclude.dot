@@ -1,0 +1,91 @@
+digraph free_exclude {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	6;
+	13;
+	19;
+	20;
+	28;
+	32;
+	37;
+	38;
+	41;
+	45;
+	47;
+	48;
+	52;
+	53;
+	61;
+	62;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=red
+		label=false
+	];
+	1 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 6;
+	6 -> 13 [label="case (x=1)"];
+	6 -> 41 [label="case (x=0)"];
+	6 -> 45 [label="default case"];
+	13 -> 19 [
+		color=red
+		label=false
+	];
+	13 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 20;
+	20 -> 28 [
+		color=red
+		label=false
+	];
+	20 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 32;
+	32 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 37 [
+		color=red
+		label=false
+	];
+	37 -> 38;
+	38 -> 45;
+	41 -> 45;
+	45 -> 6 [
+		color=red
+		label=false
+	];
+	45 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 48;
+	48 -> 52 [
+		color=red
+		label=false
+	];
+	48 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 53;
+	53 -> 53 [
+		color=red
+		label=false
+	];
+	53 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 62;
+}

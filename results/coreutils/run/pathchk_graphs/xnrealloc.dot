@@ -1,0 +1,37 @@
+digraph xnrealloc {
+	// Node definitions.
+	3 [label=entry];
+	6;
+	7;
+	12;
+	13;
+	18;
+	19;
+
+	// Edge definitions.
+	3 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	7 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 13 [
+		color=red
+		label=false
+	];
+	12 -> 19;
+	13 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 19 [
+		color=red
+		label=false
+	];
+}

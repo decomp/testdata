@@ -1,0 +1,85 @@
+digraph fnmatch_no_wildcards {
+	// Node definitions.
+	3 [label=entry];
+	8;
+	9;
+	11;
+	13;
+	14;
+	18;
+	24;
+	28;
+	29;
+	30;
+	32;
+	36;
+	40;
+	41;
+	43;
+
+	// Edge definitions.
+	3 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 13 [
+		color=red
+		label=false
+	];
+	8 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 11 [
+		color=red
+		label=false
+	];
+	9 -> 43;
+	11 -> 43;
+	13 -> 14 [
+		color=red
+		label=false
+	];
+	13 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 43 [
+		color=red
+		label=false
+	];
+	18 -> 43;
+	24 -> 28 [
+		color=red
+		label=false
+	];
+	24 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 32;
+	29 -> 30;
+	30 -> 41;
+	32 -> 36 [
+		color=red
+		label=false
+	];
+	32 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 32 [
+		color=red
+		label=false
+	];
+	40 -> 41;
+	41 -> 43;
+}

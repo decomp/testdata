@@ -1,0 +1,41 @@
+digraph print_long_double {
+	// Node definitions.
+	6 [label=entry];
+	10;
+	33;
+	45;
+	79;
+	81;
+	87;
+	88;
+
+	// Edge definitions.
+	6 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 88 [
+		color=red
+		label=false
+	];
+	10 -> 33;
+	33 -> 45 [
+		color=red
+		label=false
+	];
+	33 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 81;
+	79 -> 81;
+	81 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 87 [
+		color=red
+		label=false
+	];
+	87 -> 88;
+}

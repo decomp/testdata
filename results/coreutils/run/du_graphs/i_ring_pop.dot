@@ -1,0 +1,29 @@
+digraph i_ring_pop {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	6;
+	18;
+	19;
+	22;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=red
+		label=false
+	];
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 22;
+	19 -> 22;
+}

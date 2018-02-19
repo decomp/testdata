@@ -1,0 +1,28 @@
+digraph isaac_seed {
+	// Node definitions.
+	1 [label=entry];
+	2;
+	77;
+	78;
+	153;
+
+	// Edge definitions.
+	1 -> 2;
+	2 -> 2 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 77 [
+		color=red
+		label=false
+	];
+	77 -> 78;
+	78 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 153 [
+		color=red
+		label=false
+	];
+}

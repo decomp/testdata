@@ -1,0 +1,148 @@
+digraph freopen_safer {
+	// Node definitions.
+	3 [label=entry];
+	5;
+	9;
+	14;
+	19;
+	22;
+	24;
+	27;
+	30;
+	33;
+	35;
+	38;
+	41;
+	44;
+	46;
+	49;
+	54;
+	63;
+	65;
+	68;
+	70;
+	71;
+	73;
+	75;
+	76;
+
+	// Edge definitions.
+	3 -> 5 [label="default case"];
+	3 -> 9 [label="case (x=2)"];
+	3 -> 14 [label="case (x=1)"];
+	3 -> 49 [label="case (x=0)"];
+	5 -> 9;
+	9 -> 14;
+	14 -> 19 [
+		color=red
+		label=false
+	];
+	14 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 22 [
+		color=red
+		label=false
+	];
+	19 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 54 [
+		color=red
+		label=false
+	];
+	24 -> 54;
+	27 -> 30 [
+		color=red
+		label=false
+	];
+	27 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 33 [
+		color=red
+		label=false
+	];
+	30 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 54 [
+		color=red
+		label=false
+	];
+	35 -> 54;
+	38 -> 41 [
+		color=red
+		label=false
+	];
+	38 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 44 [
+		color=red
+		label=false
+	];
+	41 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 54 [
+		color=red
+		label=false
+	];
+	46 -> 54;
+	49 -> 54;
+	54 -> 63 [
+		color=red
+		label=false
+	];
+	54 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 65;
+	65 -> 68 [
+		color=red
+		label=false
+	];
+	65 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 70;
+	70 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 73 [
+		color=red
+		label=false
+	];
+	71 -> 73;
+	73 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 76 [
+		color=red
+		label=false
+	];
+	75 -> 76;
+}

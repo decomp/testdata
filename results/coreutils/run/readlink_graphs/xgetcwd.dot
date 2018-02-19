@@ -1,0 +1,25 @@
+digraph xgetcwd {
+	// Node definitions.
+	0 [label=entry];
+	3;
+	7;
+	8;
+
+	// Edge definitions.
+	0 -> 3 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 8 [
+		color=red
+		label=false
+	];
+	3 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 8 [
+		color=red
+		label=false
+	];
+}

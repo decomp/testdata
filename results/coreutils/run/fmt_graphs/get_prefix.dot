@@ -1,0 +1,128 @@
+digraph get_prefix {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	9;
+	13;
+	15;
+	17;
+	20;
+	25;
+	30;
+	32;
+	34;
+	38;
+	41;
+	46;
+	51;
+	52;
+	58;
+	64;
+	66;
+	70;
+	75;
+	76;
+	78;
+	80;
+	83;
+	88;
+	93;
+	95;
+	97;
+	101;
+	102;
+	103;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=red
+		label=false
+	];
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 13;
+	9 -> 13;
+	13 -> 15;
+	15 -> 17 [label="case (x=32)"];
+	15 -> 20 [label="case (x=9)"];
+	15 -> 38 [label="default case"];
+	17 -> 25;
+	20 -> 25;
+	25 -> 30 [
+		color=red
+		label=false
+	];
+	25 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 32;
+	32 -> 15;
+	34 -> 32;
+	38 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 46 [
+		color=red
+		label=false
+	];
+	41 -> 103;
+	46 -> 51 [
+		color=red
+		label=false
+	];
+	46 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 52;
+	52 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 102 [
+		color=red
+		label=false
+	];
+	58 -> 64 [
+		color=red
+		label=false
+	];
+	58 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 70;
+	66 -> 70;
+	70 -> 52 [
+		color=red
+		label=false
+	];
+	70 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 76;
+	76 -> 78;
+	78 -> 80 [label="case (x=32)"];
+	78 -> 83 [label="case (x=9)"];
+	78 -> 101 [label="default case"];
+	80 -> 88;
+	83 -> 88;
+	88 -> 93 [
+		color=red
+		label=false
+	];
+	88 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	93 -> 95;
+	95 -> 78;
+	97 -> 95;
+	101 -> 103;
+	102 -> 103;
+}

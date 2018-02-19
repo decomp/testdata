@@ -1,0 +1,17 @@
+digraph randint_all_new {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	10;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=red
+		label=false
+	];
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 10;
+}

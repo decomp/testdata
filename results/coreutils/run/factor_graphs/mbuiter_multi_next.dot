@@ -1,0 +1,91 @@
+digraph mbuiter_multi_next {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	11;
+	13;
+	24;
+	30;
+	34;
+	35;
+	36;
+	43;
+	45;
+	49;
+	53;
+	54;
+	57;
+	58;
+	62;
+	63;
+	64;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 64 [
+		color=red
+		label=false
+	];
+	5 -> 11 [
+		color=red
+		label=false
+	];
+	5 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 36;
+	13 -> 24 [
+		color=red
+		label=false
+	];
+	13 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 63;
+	30 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 35 [
+		color=red
+		label=false
+	];
+	35 -> 36;
+	36 -> 43 [label="case (x=-1)"];
+	36 -> 45 [label="case (x=-2)"];
+	36 -> 49 [label="case (x=0)"];
+	36 -> 58 [label="default case"];
+	43 -> 63;
+	45 -> 63;
+	49 -> 53 [
+		color=red
+		label=false
+	];
+	49 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 57 [
+		color=red
+		label=false
+	];
+	54 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 62 [
+		color=red
+		label=false
+	];
+	58 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 63;
+	63 -> 64;
+}

@@ -1,0 +1,50 @@
+digraph print_ascii {
+	// Node definitions.
+	6 [label=entry];
+	9;
+	12;
+	23;
+	34;
+	39;
+	43;
+	49;
+	50;
+
+	// Edge definitions.
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 50 [
+		color=red
+		label=false
+	];
+	9 -> 12;
+	12 -> 23 [
+		color=red
+		label=false
+	];
+	12 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 43;
+	34 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 39 [
+		color=red
+		label=false
+	];
+	39 -> 43;
+	43 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 49 [
+		color=red
+		label=false
+	];
+	49 -> 50;
+}

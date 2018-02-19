@@ -1,0 +1,106 @@
+digraph di_set_lookup {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	11;
+	14;
+	19;
+	27;
+	30;
+	34;
+	36;
+	39;
+	42;
+	45;
+	49;
+	52;
+	56;
+	62;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 19 [
+		color=red
+		label=false
+	];
+	11 -> 39;
+	14 -> 19 [
+		color=red
+		label=false
+	];
+	14 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 27 [
+		color=red
+		label=false
+	];
+	19 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 30 [
+		color=red
+		label=false
+	];
+	27 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 36;
+	34 -> 36;
+	36 -> 39;
+	39 -> 42 [
+		color=red
+		label=false
+	];
+	39 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 45 [
+		color=red
+		label=false
+	];
+	42 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 52 [
+		color=red
+		label=false
+	];
+	49 -> 52 [
+		color=red
+		label=false
+	];
+	49 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 56 [
+		color=red
+		label=false
+	];
+	52 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 62;
+}

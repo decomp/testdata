@@ -1,0 +1,32 @@
+digraph rev_strcmp_df_name {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	14;
+	17;
+	18;
+	24;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 14 [label="case (x=3)"];
+	13 -> 24 [label="default case"];
+	14 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 18 [label="case (x=3)"];
+	17 -> 24 [label="default case"];
+	18 -> 24;
+}

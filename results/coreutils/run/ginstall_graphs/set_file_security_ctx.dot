@@ -1,0 +1,28 @@
+digraph set_file_security_ctx {
+	// Node definitions.
+	4 [label=entry];
+	8;
+	12;
+	14;
+	18;
+
+	// Edge definitions.
+	4 -> 8 [
+		color=red
+		label=false
+	];
+	4 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 14 [
+		color=red
+		label=false
+	];
+	12 -> 18;
+	14 -> 18;
+}

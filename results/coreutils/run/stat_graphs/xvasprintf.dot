@@ -1,0 +1,120 @@
+digraph xvasprintf {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	10;
+	14;
+	16;
+	21;
+	26;
+	31;
+	34;
+	45;
+	47;
+	49;
+	55;
+	60;
+	65;
+	68;
+	76;
+	77;
+	80;
+	84;
+	87;
+	89;
+	92;
+	96;
+	97;
+	99;
+
+	// Edge definitions.
+	2 -> 6;
+	6 -> 10 [label="case (x=0)"];
+	6 -> 80 [label="case (x=37)"];
+	6 -> 89 [label="default case"];
+	10 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 16 [
+		color=red
+		label=false
+	];
+	14 -> 77;
+	16 -> 21;
+	21 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 31 [
+		color=red
+		label=false
+	];
+	26 -> 34;
+	31 -> 34;
+	34 -> 21 [
+		color=red
+		label=false
+	];
+	34 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 49 [
+		color=red
+		label=false
+	];
+	47 -> 87;
+	49 -> 55;
+	55 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 65 [
+		color=red
+		label=false
+	];
+	60 -> 68;
+	65 -> 68;
+	68 -> 55 [
+		color=red
+		label=false
+	];
+	68 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 77;
+	77 -> 87;
+	80 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 89 [
+		color=red
+		label=false
+	];
+	84 -> 6;
+	87 -> 99;
+	89 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	89 -> 97 [
+		color=red
+		label=false
+	];
+	92 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 99 [
+		color=red
+		label=false
+	];
+	97 -> 99;
+}

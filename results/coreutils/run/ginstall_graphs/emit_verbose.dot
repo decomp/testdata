@@ -1,0 +1,30 @@
+digraph emit_verbose {
+	// Node definitions.
+	3 [label=entry];
+	8;
+	12;
+	19;
+	21;
+	23;
+
+	// Edge definitions.
+	3 -> 8 [
+		color=red
+		label=false
+	];
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 12;
+	12 -> 19 [
+		color=red
+		label=false
+	];
+	12 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 23;
+	21 -> 23;
+}

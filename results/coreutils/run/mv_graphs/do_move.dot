@@ -1,0 +1,52 @@
+digraph do_move {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	13;
+	18;
+	31;
+	36;
+	42;
+	43;
+	44;
+	46;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 46 [
+		color=red
+		label=false
+	];
+	10 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 46 [
+		color=red
+		label=false
+	];
+	13 -> 18 [
+		color=red
+		label=false
+	];
+	13 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 36 [
+		color=red
+		label=false
+	];
+	36 -> 42 [label="default case"];
+	36 -> 43 [label="case (x=4)"];
+	36 -> 44 [label="case (x=3)"];
+	43 -> 44;
+	44 -> 46;
+}

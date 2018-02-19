@@ -1,0 +1,214 @@
+digraph extent_scan_read {
+	// Node definitions.
+	1 [label=entry];
+	19;
+	28;
+	31;
+	33;
+	36;
+	39;
+	44;
+	45;
+	49;
+	50;
+	63;
+	64;
+	75;
+	76;
+	78;
+	92;
+	94;
+	97;
+	100;
+	103;
+	107;
+	110;
+	112;
+	115;
+	123;
+	129;
+	130;
+	137;
+	138;
+	141;
+	143;
+	145;
+	151;
+	154;
+	155;
+	156;
+	158;
+	167;
+	168;
+
+	// Edge definitions.
+	1 -> 19;
+	19 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 33 [
+		color=red
+		label=false
+	];
+	28 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 156 [
+		color=red
+		label=false
+	];
+	31 -> 156;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 39 [
+		color=red
+		label=false
+	];
+	36 -> 156;
+	39 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 45 [
+		color=red
+		label=false
+	];
+	45 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 50 [
+		color=red
+		label=false
+	];
+	50 -> 63 [
+		color=red
+		label=false
+	];
+	50 -> 130 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 64;
+	64 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 76 [
+		color=red
+		label=false
+	];
+	76 -> 78 [
+		color=red
+		label=false
+	];
+	76 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 100 [
+		color=red
+		label=false
+	];
+	92 -> 123;
+	94 -> 97 [
+		color=red
+		label=false
+	];
+	94 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 115;
+	100 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	100 -> 115 [
+		color=red
+		label=false
+	];
+	103 -> 107 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 112 [
+		color=red
+		label=false
+	];
+	107 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	107 -> 156 [
+		color=red
+		label=false
+	];
+	110 -> 156;
+	112 -> 123;
+	115 -> 123;
+	123 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	123 -> 129 [
+		color=red
+		label=false
+	];
+	129 -> 130;
+	130 -> 137 [
+		color=red
+		label=false
+	];
+	130 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	137 -> 138;
+	138 -> 141 [
+		color=darkgreen
+		label=true
+	];
+	138 -> 151 [
+		color=red
+		label=false
+	];
+	141 -> 143 [
+		color=red
+		label=false
+	];
+	141 -> 145 [
+		color=darkgreen
+		label=true
+	];
+	143 -> 155;
+	145 -> 158;
+	151 -> 154 [
+		color=red
+		label=false
+	];
+	151 -> 158 [
+		color=darkgreen
+		label=true
+	];
+	154 -> 155;
+	155 -> 168;
+	156 -> 168;
+	158 -> 19 [
+		color=red
+		label=false
+	];
+	158 -> 167 [
+		color=darkgreen
+		label=true
+	];
+	167 -> 168;
+}

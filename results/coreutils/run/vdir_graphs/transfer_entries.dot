@@ -1,0 +1,136 @@
+digraph transfer_entries {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	17;
+	22;
+	26;
+	28;
+	37;
+	38;
+	45;
+	47;
+	53;
+	56;
+	58;
+	60;
+	66;
+	67;
+	72;
+	75;
+	79;
+	83;
+	91;
+	94;
+	97;
+	101;
+	103;
+
+	// Edge definitions.
+	3 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 103 [
+		color=red
+		label=false
+	];
+	9 -> 17;
+	17 -> 22 [
+		color=red
+		label=false
+	];
+	17 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 26 [
+		color=red
+		label=false
+	];
+	22 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 28;
+	28 -> 37 [
+		color=red
+		label=false
+	];
+	28 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 45 [
+		color=red
+		label=false
+	];
+	38 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 47;
+	47 -> 28 [
+		color=red
+		label=false
+	];
+	47 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 47;
+	56 -> 58;
+	58 -> 60 [
+		color=red
+		label=false
+	];
+	58 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 66 [
+		color=red
+		label=false
+	];
+	60 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 72 [
+		color=red
+		label=false
+	];
+	67 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 75 [
+		color=red
+		label=false
+	];
+	72 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 83;
+	79 -> 83 [
+		color=red
+		label=false
+	];
+	79 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 94;
+	91 -> 94;
+	94 -> 97;
+	97 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 101 [
+		color=red
+		label=false
+	];
+	101 -> 103;
+}

@@ -1,0 +1,19 @@
+digraph prog_fprintf {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	17;
+	19;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	2 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 19;
+	17 -> 19;
+}

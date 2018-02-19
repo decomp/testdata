@@ -1,0 +1,16 @@
+digraph gen_tempname {
+	// Node definitions.
+	4 [label=entry];
+	8;
+	9;
+
+	// Edge definitions.
+	4 -> 8 [
+		color=red
+		label=false
+	];
+	4 -> 9 [
+		color=darkgreen
+		label=true
+	];
+}

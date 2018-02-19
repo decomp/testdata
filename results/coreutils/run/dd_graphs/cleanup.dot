@@ -1,0 +1,26 @@
+digraph cleanup {
+	// Node definitions.
+	0 [label=entry];
+	3;
+	9;
+	12;
+	18;
+
+	// Edge definitions.
+	0 -> 3 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 9 [
+		color=red
+		label=false
+	];
+	9 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 18 [
+		color=red
+		label=false
+	];
+}

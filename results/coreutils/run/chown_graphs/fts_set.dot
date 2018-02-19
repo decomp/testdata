@@ -1,0 +1,19 @@
+digraph fts_set {
+	// Node definitions.
+	3 [label=entry];
+	5;
+	7;
+	10;
+
+	// Edge definitions.
+	3 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	5 -> 10;
+	7 -> 10;
+}

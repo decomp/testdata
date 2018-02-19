@@ -1,0 +1,113 @@
+digraph randread_new {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	17;
+	19;
+	22;
+	33;
+	37;
+	43;
+	49;
+	51;
+	61;
+	70;
+	79;
+	88;
+	95;
+	96;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 17 [
+		color=red
+		label=false
+	];
+	9 -> 96;
+	17 -> 19 [
+		color=red
+		label=false
+	];
+	17 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 22 [
+		color=red
+		label=false
+	];
+	19 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 33 [
+		color=red
+		label=false
+	];
+	22 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 96;
+	37 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 51 [
+		color=red
+		label=false
+	];
+	43 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 51 [
+		color=red
+		label=false
+	];
+	49 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 95 [
+		color=red
+		label=false
+	];
+	51 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 95 [
+		color=red
+		label=false
+	];
+	61 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 95 [
+		color=red
+		label=false
+	];
+	70 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 95 [
+		color=red
+		label=false
+	];
+	79 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 95 [
+		color=red
+		label=false
+	];
+	88 -> 95;
+	95 -> 96;
+}

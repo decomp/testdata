@@ -1,0 +1,17 @@
+digraph elseek {
+	// Node definitions.
+	4 [label=entry];
+	9;
+	17;
+
+	// Edge definitions.
+	4 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 17 [
+		color=red
+		label=false
+	];
+	9 -> 17;
+}

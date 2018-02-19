@@ -1,0 +1,173 @@
+digraph mbscasecmp {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	9;
+	12;
+	30;
+	35;
+	41;
+	44;
+	45;
+	51;
+	52;
+	56;
+	60;
+	70;
+	73;
+	85;
+	86;
+	92;
+	101;
+	103;
+	105;
+	114;
+	119;
+	121;
+	129;
+	134;
+	136;
+	140;
+	142;
+	147;
+	148;
+	152;
+
+	// Edge definitions.
+	2 -> 6 [
+		color=red
+		label=false
+	];
+	2 -> 152 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 9 [
+		color=red
+		label=false
+	];
+	6 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 105;
+	12 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 86 [
+		color=red
+		label=false
+	];
+	30 -> 35;
+	35 -> 41 [
+		color=red
+		label=false
+	];
+	35 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 44 [
+		color=red
+		label=false
+	];
+	41 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 101 [
+		color=red
+		label=false
+	];
+	45 -> 70;
+	51 -> 52 [
+		color=red
+		label=false
+	];
+	51 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 60 [
+		color=red
+		label=false
+	];
+	56 -> 70;
+	60 -> 103;
+	70 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 101 [
+		color=red
+		label=false
+	];
+	73 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 85 [
+		color=red
+		label=false
+	];
+	85 -> 86;
+	86 -> 92 [
+		color=red
+		label=false
+	];
+	86 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 103;
+	101 -> 103;
+	103 -> 152;
+	105 -> 114 [
+		color=red
+		label=false
+	];
+	105 -> 119 [
+		color=darkgreen
+		label=true
+	];
+	114 -> 121;
+	119 -> 121;
+	121 -> 129 [
+		color=red
+		label=false
+	];
+	121 -> 134 [
+		color=darkgreen
+		label=true
+	];
+	129 -> 136;
+	134 -> 136;
+	136 -> 140 [
+		color=darkgreen
+		label=true
+	];
+	136 -> 142 [
+		color=red
+		label=false
+	];
+	140 -> 148;
+	142 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	142 -> 147 [
+		color=red
+		label=false
+	];
+	147 -> 148;
+	148 -> 152;
+}

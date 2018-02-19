@@ -1,0 +1,17 @@
+digraph sha256_conclude_ctx {
+	// Node definitions.
+	1 [label=entry];
+	15;
+	17;
+
+	// Edge definitions.
+	1 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 17 [
+		color=red
+		label=false
+	];
+	15 -> 17;
+}

@@ -1,0 +1,57 @@
+digraph read_and_xlate {
+	// Node definitions.
+	2 [label=entry];
+	4;
+	8;
+	9;
+	20;
+	21;
+	24;
+	25;
+	29;
+	30;
+	31;
+	32;
+
+	// Edge definitions.
+	2 -> 4 [label="default case"];
+	2 -> 25 [label="case (x=-1)"];
+	2 -> 31 [label="case (x=0)"];
+	4 -> 8 [
+		color=red
+		label=false
+	];
+	4 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 9;
+	9 -> 9 [
+		color=red
+		label=false
+	];
+	9 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 21;
+	21 -> 24 [
+		color=red
+		label=false
+	];
+	21 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 32;
+	29 -> 30;
+	30 -> 31;
+	32 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 32 [
+		color=red
+		label=false
+	];
+}

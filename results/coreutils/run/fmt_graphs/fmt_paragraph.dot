@@ -1,0 +1,161 @@
+digraph fmt_paragraph {
+	// Node definitions.
+	0 [label=entry];
+	8;
+	14;
+	25;
+	31;
+	39;
+	48;
+	53;
+	60;
+	63;
+	64;
+	66;
+	74;
+	76;
+	81;
+	85;
+	88;
+	90;
+	95;
+	102;
+	108;
+	110;
+	113;
+	118;
+	124;
+	125;
+
+	// Edge definitions.
+	0 -> 8 [
+		color=red
+		label=false
+	];
+	0 -> 125 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 14;
+	14 -> 25;
+	25 -> 31 [
+		color=red
+		label=false
+	];
+	25 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 39 [
+		color=red
+		label=false
+	];
+	31 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 48;
+	48 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 60 [
+		color=red
+		label=false
+	];
+	53 -> 60;
+	60 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 64 [
+		color=red
+		label=false
+	];
+	63 -> 64;
+	64 -> 66 [
+		color=red
+		label=false
+	];
+	64 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 74 [
+		color=red
+		label=false
+	];
+	74 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 102 [
+		color=red
+		label=false
+	];
+	76 -> 81 [
+		color=red
+		label=false
+	];
+	76 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 102;
+	85 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 102 [
+		color=red
+		label=false
+	];
+	88 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 102 [
+		color=red
+		label=false
+	];
+	90 -> 95 [
+		color=red
+		label=false
+	];
+	90 -> 102 [
+		color=darkgreen
+		label=true
+	];
+	95 -> 102;
+	102 -> 108 [
+		color=red
+		label=false
+	];
+	102 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	108 -> 118;
+	110 -> 113 [
+		color=red
+		label=false
+	];
+	110 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 118;
+	118 -> 14 [
+		color=red
+		label=false
+	];
+	118 -> 124 [
+		color=darkgreen
+		label=true
+	];
+	124 -> 125;
+}

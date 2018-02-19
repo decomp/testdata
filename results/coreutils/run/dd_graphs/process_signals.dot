@@ -1,0 +1,52 @@
+digraph process_signals {
+	// Node definitions.
+	0 [label=entry];
+	3;
+	6;
+	9;
+	14;
+	16;
+	19;
+	21;
+	22;
+	23;
+
+	// Edge definitions.
+	0 -> 3;
+	3 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 9 [
+		color=red
+		label=false
+	];
+	6 -> 9 [
+		color=red
+		label=false
+	];
+	6 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 14 [
+		color=red
+		label=false
+	];
+	9 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 16;
+	16 -> 19 [
+		color=red
+		label=false
+	];
+	16 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 22;
+	21 -> 22;
+	22 -> 3;
+}

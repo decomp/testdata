@@ -1,0 +1,103 @@
+digraph getgidbyname {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	6;
+	7;
+	10;
+	12;
+	17;
+	20;
+	22;
+	26;
+	31;
+	34;
+	38;
+	39;
+	49;
+	56;
+	60;
+	61;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=red
+		label=false
+	];
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 12;
+	6 -> 7;
+	7 -> 10 [
+		color=red
+		label=false
+	];
+	7 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 26;
+	12 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 22 [
+		color=red
+		label=false
+	];
+	17 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 22 [
+		color=red
+		label=false
+	];
+	20 -> 61;
+	22 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 12 [
+		color=red
+		label=false
+	];
+	26 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 34 [
+		color=red
+		label=false
+	];
+	31 -> 34 [
+		color=red
+		label=false
+	];
+	31 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 26 [
+		color=red
+		label=false
+	];
+	34 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 39;
+	39 -> 49 [
+		color=red
+		label=false
+	];
+	39 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 61;
+	56 -> 61;
+	60 -> 61;
+}

@@ -1,0 +1,28 @@
+digraph sha256_process_block {
+	// Node definitions.
+	3 [label=entry];
+	39;
+	60;
+	3526;
+	3527;
+
+	// Edge definitions.
+	3 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 3527 [
+		color=red
+		label=false
+	];
+	39 -> 60;
+	60 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 3526 [
+		color=red
+		label=false
+	];
+	3526 -> 3527;
+}

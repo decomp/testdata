@@ -1,0 +1,64 @@
+digraph add_tab_stop {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	9;
+	16;
+	18;
+	21;
+	23;
+	25;
+	26;
+	30;
+	36;
+	43;
+	44;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=red
+		label=false
+	];
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 9;
+	9 -> 16 [
+		color=red
+		label=false
+	];
+	9 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 36;
+	18 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 23 [
+		color=red
+		label=false
+	];
+	21 -> 30;
+	23 -> 25 [
+		color=red
+		label=false
+	];
+	23 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 30;
+	30 -> 36;
+	36 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 44 [
+		color=red
+		label=false
+	];
+	43 -> 44;
+}

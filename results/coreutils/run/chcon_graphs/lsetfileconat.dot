@@ -1,0 +1,101 @@
+digraph lsetfileconat {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	10;
+	12;
+	17;
+	20;
+	21;
+	24;
+	27;
+	29;
+	33;
+	35;
+	39;
+	41;
+	44;
+	46;
+	47;
+	48;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 12 [
+		color=red
+		label=false
+	];
+	10 -> 48;
+	12 -> 17 [
+		color=red
+		label=false
+	];
+	12 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 20 [
+		color=red
+		label=false
+	];
+	17 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 21;
+	21 -> 24 [
+		color=red
+		label=false
+	];
+	21 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 35 [
+		color=red
+		label=false
+	];
+	29 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 35 [
+		color=red
+		label=false
+	];
+	33 -> 47;
+	35 -> 39 [
+		color=red
+		label=false
+	];
+	35 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 47;
+	41 -> 44 [
+		color=red
+		label=false
+	];
+	41 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 47;
+	47 -> 48;
+}

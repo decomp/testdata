@@ -1,0 +1,214 @@
+digraph limfield {
+	// Node definitions.
+	2 [label=entry];
+	19;
+	20;
+	21;
+	22;
+	23;
+	28;
+	30;
+	31;
+	36;
+	39;
+	44;
+	45;
+	48;
+	50;
+	53;
+	58;
+	60;
+	61;
+	68;
+	70;
+	73;
+	74;
+	77;
+	84;
+	87;
+	89;
+	91;
+	93;
+	99;
+	100;
+	107;
+	110;
+	112;
+	117;
+
+	// Edge definitions.
+	2 -> 19 [
+		color=red
+		label=false
+	];
+	2 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 91 [
+		color=red
+		label=false
+	];
+	20 -> 23;
+	21 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 91 [
+		color=red
+		label=false
+	];
+	22 -> 53;
+	23 -> 28 [
+		color=red
+		label=false
+	];
+	23 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 45 [
+		color=red
+		label=false
+	];
+	30 -> 31;
+	31 -> 36 [
+		color=red
+		label=false
+	];
+	31 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 44 [
+		color=red
+		label=false
+	];
+	39 -> 45;
+	44 -> 45;
+	45 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 89 [
+		color=red
+		label=false
+	];
+	48 -> 50;
+	50 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 87 [
+		color=red
+		label=false
+	];
+	53 -> 58 [
+		color=red
+		label=false
+	];
+	53 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 70 [
+		color=red
+		label=false
+	];
+	60 -> 61;
+	61 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 74 [
+		color=red
+		label=false
+	];
+	68 -> 70;
+	70 -> 50 [
+		color=red
+		label=false
+	];
+	70 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 77;
+	74 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 68 [
+		color=red
+		label=false
+	];
+	77 -> 48 [
+		color=red
+		label=false
+	];
+	77 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 48 [
+		color=red
+		label=false
+	];
+	84 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	87 -> 91;
+	89 -> 91;
+	91 -> 93 [
+		color=red
+		label=false
+	];
+	91 -> 117 [
+		color=darkgreen
+		label=true
+	];
+	93 -> 99 [
+		color=darkgreen
+		label=true
+	];
+	93 -> 112 [
+		color=red
+		label=false
+	];
+	99 -> 100;
+	100 -> 107 [
+		color=red
+		label=false
+	];
+	100 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	107 -> 100 [
+		color=darkgreen
+		label=true
+	];
+	107 -> 110 [
+		color=red
+		label=false
+	];
+	110 -> 112;
+	112 -> 117;
+}

@@ -1,0 +1,152 @@
+digraph dirchownmod {
+	// Node definitions.
+	7 [label=entry];
+	11;
+	13;
+	15;
+	18;
+	23;
+	25;
+	27;
+	31;
+	33;
+	37;
+	39;
+	41;
+	43;
+	45;
+	47;
+	56;
+	62;
+	68;
+	70;
+	72;
+	75;
+	78;
+	80;
+	84;
+
+	// Edge definitions.
+	7 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 13 [
+		color=red
+		label=false
+	];
+	11 -> 15;
+	13 -> 15;
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 72 [
+		color=red
+		label=false
+	];
+	18 -> 23 [
+		color=red
+		label=false
+	];
+	18 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 72;
+	25 -> 27 [
+		color=red
+		label=false
+	];
+	25 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 37 [
+		color=red
+		label=false
+	];
+	31 -> 33 [
+		color=red
+		label=false
+	];
+	31 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 37 [
+		color=red
+		label=false
+	];
+	33 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 41 [
+		color=red
+		label=false
+	];
+	39 -> 47;
+	41 -> 43 [
+		color=red
+		label=false
+	];
+	41 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 47;
+	45 -> 47;
+	47 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 72 [
+		color=red
+		label=false
+	];
+	56 -> 62 [
+		color=red
+		label=false
+	];
+	56 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 70 [
+		color=red
+		label=false
+	];
+	68 -> 75;
+	70 -> 84;
+	72 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 84 [
+		color=red
+		label=false
+	];
+	75 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 80 [
+		color=red
+		label=false
+	];
+	78 -> 84;
+	80 -> 84;
+}

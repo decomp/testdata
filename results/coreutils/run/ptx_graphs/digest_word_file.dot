@@ -1,0 +1,89 @@
+digraph digest_word_file {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	15;
+	23;
+	24;
+	28;
+	31;
+	34;
+	37;
+	39;
+	40;
+	47;
+	59;
+	70;
+	71;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 71 [
+		color=red
+		label=false
+	];
+	13 -> 15;
+	15 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 59 [
+		color=red
+		label=false
+	];
+	23 -> 24;
+	24 -> 28 [
+		color=red
+		label=false
+	];
+	24 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 31 [
+		color=red
+		label=false
+	];
+	31 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 59 [
+		color=red
+		label=false
+	];
+	34 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 47 [
+		color=red
+		label=false
+	];
+	37 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 40 [
+		color=red
+		label=false
+	];
+	40 -> 47;
+	47 -> 59;
+	59 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 70 [
+		color=red
+		label=false
+	];
+	70 -> 71;
+}

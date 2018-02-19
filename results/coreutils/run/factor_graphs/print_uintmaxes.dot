@@ -1,0 +1,61 @@
+digraph print_uintmaxes {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	14;
+	16;
+	26;
+	30;
+	33;
+	46;
+	50;
+	55;
+	61;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	5 -> 61;
+	14 -> 33;
+	16 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 30 [
+		color=red
+		label=false
+	];
+	26 -> 30;
+	30 -> 61;
+	33 -> 46 [
+		color=red
+		label=false
+	];
+	33 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 50 [
+		color=red
+		label=false
+	];
+	46 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 55;
+	55 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 33 [
+		color=red
+		label=false
+	];
+}

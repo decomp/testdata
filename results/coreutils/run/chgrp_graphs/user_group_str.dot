@@ -1,0 +1,39 @@
+digraph user_group_str {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	6;
+	18;
+	20;
+	21;
+	23;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=red
+		label=false
+	];
+	2 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 18 [
+		color=red
+		label=false
+	];
+	6 -> 23;
+	18 -> 23;
+	20 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 23 [
+		color=red
+		label=false
+	];
+	21 -> 23;
+}

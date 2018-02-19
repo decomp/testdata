@@ -1,0 +1,26 @@
+digraph rpl_mbrtowc {
+	// Node definitions.
+	4 [label=entry];
+	13;
+	15;
+	18;
+
+	// Edge definitions.
+	4 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 18 [
+		color=red
+		label=false
+	];
+	13 -> 15 [
+		color=red
+		label=false
+	];
+	13 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 18;
+}

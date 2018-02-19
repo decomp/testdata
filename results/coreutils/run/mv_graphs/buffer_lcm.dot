@@ -1,0 +1,57 @@
+digraph buffer_lcm {
+	// Node definitions.
+	3 [label=entry];
+	6;
+	8;
+	9;
+	10;
+	15;
+	19;
+	22;
+	26;
+
+	// Edge definitions.
+	3 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 8 [
+		color=red
+		label=false
+	];
+	6 -> 22;
+	8 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 22 [
+		color=red
+		label=false
+	];
+	9 -> 10;
+	10 -> 10 [
+		color=red
+		label=false
+	];
+	10 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 19 [
+		color=red
+		label=false
+	];
+	15 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 22 [
+		color=red
+		label=false
+	];
+	19 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 26;
+}

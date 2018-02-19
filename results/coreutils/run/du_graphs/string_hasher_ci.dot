@@ -1,0 +1,41 @@
+digraph string_hasher_ci {
+	// Node definitions.
+	2 [label=entry];
+	16;
+	18;
+	23;
+	26;
+	30;
+	44;
+	45;
+
+	// Edge definitions.
+	2 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 45 [
+		color=red
+		label=false
+	];
+	16 -> 18;
+	18 -> 23 [
+		color=red
+		label=false
+	];
+	18 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 30;
+	26 -> 30;
+	30 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 44 [
+		color=red
+		label=false
+	];
+	44 -> 45;
+}

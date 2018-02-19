@@ -1,0 +1,72 @@
+digraph mp_factor_insert {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	17;
+	20;
+	22;
+	23;
+	36;
+	37;
+	38;
+	44;
+	54;
+	58;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 23 [
+		color=red
+		label=false
+	];
+	11 -> 12;
+	12 -> 17 [
+		color=red
+		label=false
+	];
+	12 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 22 [
+		color=red
+		label=false
+	];
+	20 -> 23 [
+		color=red
+		label=false
+	];
+	20 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 23;
+	23 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 38 [
+		color=red
+		label=false
+	];
+	36 -> 44;
+	37 -> 38;
+	38 -> 58;
+	44 -> 37 [
+		color=red
+		label=false
+	];
+	44 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 58;
+}

@@ -1,0 +1,17 @@
+digraph hash_insert {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	11;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=red
+		label=false
+	];
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 11;
+}

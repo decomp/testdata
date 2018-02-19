@@ -1,0 +1,85 @@
+digraph put_space {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	12;
+	13;
+	21;
+	24;
+	26;
+	32;
+	33;
+	36;
+	37;
+	45;
+	48;
+	50;
+	54;
+	55;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 33 [
+		color=red
+		label=false
+	];
+	5 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 33 [
+		color=red
+		label=false
+	];
+	12 -> 13;
+	13 -> 21 [
+		color=red
+		label=false
+	];
+	13 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 26;
+	24 -> 26;
+	26 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 32 [
+		color=red
+		label=false
+	];
+	32 -> 33;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 55 [
+		color=red
+		label=false
+	];
+	36 -> 37;
+	37 -> 45 [
+		color=red
+		label=false
+	];
+	37 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 50;
+	48 -> 50;
+	50 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 54 [
+		color=red
+		label=false
+	];
+	54 -> 55;
+}

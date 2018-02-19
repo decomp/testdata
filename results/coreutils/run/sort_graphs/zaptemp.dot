@@ -1,0 +1,72 @@
+digraph zaptemp {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	13;
+	17;
+	25;
+	26;
+	29;
+	43;
+	46;
+	48;
+	51;
+	53;
+	54;
+
+	// Edge definitions.
+	1 -> 7;
+	7 -> 7 [
+		color=red
+		label=false
+	];
+	7 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 29 [
+		color=red
+		label=false
+	];
+	17 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 29;
+	26 -> 29;
+	29 -> 43 [
+		color=red
+		label=false
+	];
+	29 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 46;
+	46 -> 48 [
+		color=red
+		label=false
+	];
+	46 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 51;
+	51 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 54;
+}

@@ -1,0 +1,73 @@
+digraph heap_insert {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	12;
+	16;
+	19;
+	21;
+	22;
+	26;
+	33;
+	45;
+	46;
+	53;
+	59;
+	61;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	9 -> 33;
+	12 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 19 [
+		color=red
+		label=false
+	];
+	16 -> 26;
+	19 -> 21 [
+		color=red
+		label=false
+	];
+	19 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 26;
+	26 -> 33;
+	33 -> 45 [
+		color=red
+		label=false
+	];
+	33 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 46;
+	46 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 59 [
+		color=red
+		label=false
+	];
+	53 -> 46 [
+		color=red
+		label=false
+	];
+	53 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 61;
+}

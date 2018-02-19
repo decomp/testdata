@@ -1,0 +1,16 @@
+digraph plain_read {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	9;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 9 [
+		color=red
+		label=false
+	];
+}

@@ -1,0 +1,28 @@
+digraph free_spareline {
+	// Node definitions.
+	0 [label=entry];
+	3;
+	10;
+	13;
+	20;
+
+	// Edge definitions.
+	0 -> 3 [
+		color=red
+		label=false
+	];
+	0 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 10;
+	10 -> 13 [
+		color=red
+		label=false
+	];
+	10 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 20;
+}

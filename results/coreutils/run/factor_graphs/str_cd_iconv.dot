@@ -1,0 +1,137 @@
+digraph str_cd_iconv {
+	// Node definitions.
+	2 [label=entry];
+	16;
+	18;
+	24;
+	27;
+	30;
+	35;
+	37;
+	40;
+	44;
+	50;
+	51;
+	54;
+	55;
+	61;
+	66;
+	72;
+	73;
+	76;
+	77;
+	83;
+	84;
+	94;
+	98;
+	99;
+	100;
+	104;
+
+	// Edge definitions.
+	2 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 18 [
+		color=red
+		label=false
+	];
+	16 -> 104;
+	18 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 30 [
+		color=red
+		label=false
+	];
+	24 -> 40;
+	27 -> 30;
+	30 -> 35 [
+		color=red
+		label=false
+	];
+	30 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 84;
+	37 -> 61;
+	40 -> 27 [label="case (x=22)"];
+	40 -> 44 [label="case (x=7)"];
+	40 -> 99 [label="default case"];
+	44 -> 50 [
+		color=red
+		label=false
+	];
+	44 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 100;
+	51 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 55 [
+		color=red
+		label=false
+	];
+	54 -> 100;
+	55 -> 27 [
+		color=red
+		label=false
+	];
+	55 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 98 [
+		color=red
+		label=false
+	];
+	66 -> 72 [
+		color=red
+		label=false
+	];
+	66 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 100;
+	73 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 77 [
+		color=red
+		label=false
+	];
+	76 -> 100;
+	77 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 83 [
+		color=red
+		label=false
+	];
+	83 -> 84;
+	84 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 104 [
+		color=red
+		label=false
+	];
+	94 -> 104;
+	98 -> 100;
+	99 -> 100;
+	100 -> 104;
+}

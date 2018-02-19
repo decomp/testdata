@@ -1,0 +1,170 @@
+digraph fts_children {
+	// Node definitions.
+	2 [label=entry];
+	3;
+	5;
+	13;
+	16;
+	19;
+	23;
+	24;
+	31;
+	33;
+	36;
+	37;
+	39;
+	42;
+	47;
+	52;
+	56;
+	58;
+	67;
+	71;
+	73;
+	76;
+	77;
+	83;
+	89;
+	90;
+	94;
+	96;
+	97;
+	100;
+	103;
+	105;
+	107;
+
+	// Edge definitions.
+	2 -> 3 [label="default case"];
+	2 -> 5 [label="case (x=0)"];
+	3 -> 107;
+	5 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 107 [
+		color=red
+		label=false
+	];
+	13 -> 16 [label="case (x=9)"];
+	13 -> 19 [label="case (x=1)"];
+	13 -> 107 [label="default case"];
+	16 -> 107;
+	19 -> 23 [
+		color=red
+		label=false
+	];
+	19 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 24;
+	24 -> 31 [
+		color=red
+		label=false
+	];
+	24 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 33;
+	33 -> 24 [
+		color=red
+		label=false
+	];
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 37;
+	37 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 42 [
+		color=red
+		label=false
+	];
+	39 -> 42;
+	42 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 56 [
+		color=red
+		label=false
+	];
+	47 -> 52 [
+		color=red
+		label=false
+	];
+	47 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 56 [
+		color=red
+		label=false
+	];
+	52 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 107;
+	58 -> 67 [
+		color=red
+		label=false
+	];
+	58 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 73;
+	71 -> 73;
+	73 -> 76 [
+		color=red
+		label=false
+	];
+	73 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 107;
+	77 -> 83 [
+		color=red
+		label=false
+	];
+	77 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 89 [
+		color=red
+		label=false
+	];
+	83 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 96 [
+		color=red
+		label=false
+	];
+	94 -> 96;
+	96 -> 105;
+	97 -> 100 [
+		color=red
+		label=false
+	];
+	97 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	100 -> 107;
+	103 -> 105;
+	105 -> 107;
+}

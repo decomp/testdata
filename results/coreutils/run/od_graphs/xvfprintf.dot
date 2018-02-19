@@ -1,0 +1,26 @@
+digraph xvfprintf {
+	// Node definitions.
+	3 [label=entry];
+	6;
+	9;
+	14;
+
+	// Edge definitions.
+	3 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 14 [
+		color=red
+		label=false
+	];
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 14 [
+		color=red
+		label=false
+	];
+	9 -> 14;
+}

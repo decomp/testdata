@@ -1,0 +1,41 @@
+digraph default_format {
+	// Node definitions.
+	3 [label=entry];
+	4;
+	5;
+	7;
+	10;
+	11;
+	13;
+	23;
+
+	// Edge definitions.
+	3 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 10 [
+		color=red
+		label=false
+	];
+	4 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 7 [
+		color=red
+		label=false
+	];
+	5 -> 23;
+	7 -> 23;
+	10 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 13 [
+		color=red
+		label=false
+	];
+	11 -> 23;
+	13 -> 23;
+}

@@ -1,0 +1,118 @@
+digraph hash_print_statistics {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	23;
+	24;
+	28;
+	29;
+	36;
+	37;
+	40;
+	45;
+	46;
+	52;
+	53;
+	60;
+	63;
+	69;
+	70;
+	72;
+	82;
+	83;
+	90;
+	93;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 72 [
+		color=red
+		label=false
+	];
+	14 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 40 [
+		color=red
+		label=false
+	];
+	23 -> 24;
+	24 -> 28 [
+		color=red
+		label=false
+	];
+	24 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 29;
+	29 -> 29 [
+		color=red
+		label=false
+	];
+	29 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 37;
+	37 -> 40;
+	40 -> 45 [
+		color=red
+		label=false
+	];
+	40 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 46;
+	46 -> 52 [
+		color=red
+		label=false
+	];
+	46 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 53;
+	53 -> 53 [
+		color=red
+		label=false
+	];
+	53 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 63;
+	63 -> 82 [
+		color=red
+		label=false
+	];
+	63 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 70;
+	70 -> 72;
+	82 -> 83;
+	83 -> 83 [
+		color=red
+		label=false
+	];
+	83 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 93;
+	93 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	93 -> 69 [
+		color=red
+		label=false
+	];
+}

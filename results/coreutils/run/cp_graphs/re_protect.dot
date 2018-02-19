@@ -1,0 +1,119 @@
+digraph re_protect {
+	// Node definitions.
+	4 [label=entry];
+	11;
+	20;
+	27;
+	36;
+	41;
+	42;
+	45;
+	52;
+	54;
+	59;
+	62;
+	65;
+	70;
+	74;
+	79;
+	84;
+	90;
+	92;
+
+	// Edge definitions.
+	4 -> 11 [
+		color=red
+		label=false
+	];
+	4 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 20;
+	20 -> 27 [
+		color=red
+		label=false
+	];
+	20 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 36 [
+		color=red
+		label=false
+	];
+	27 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 92;
+	41 -> 42;
+	42 -> 45 [
+		color=red
+		label=false
+	];
+	42 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 52 [
+		color=red
+		label=false
+	];
+	45 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 54 [
+		color=red
+		label=false
+	];
+	52 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 92;
+	59 -> 62;
+	62 -> 65 [
+		color=red
+		label=false
+	];
+	62 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 90 [
+		color=red
+		label=false
+	];
+	70 -> 74 [
+		color=red
+		label=false
+	];
+	70 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 79 [
+		color=red
+		label=false
+	];
+	74 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 92;
+	84 -> 20 [
+		color=red
+		label=false
+	];
+	84 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 92;
+}

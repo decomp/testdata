@@ -1,0 +1,59 @@
+digraph reap {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	17;
+	19;
+	21;
+	27;
+	29;
+	30;
+	34;
+	38;
+	41;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 17 [
+		color=red
+		label=false
+	];
+	17 -> 19 [
+		color=red
+		label=false
+	];
+	17 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 21 [
+		color=red
+		label=false
+	];
+	19 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 27 [
+		color=red
+		label=false
+	];
+	21 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 30;
+	29 -> 41;
+	30 -> 34 [
+		color=red
+		label=false
+	];
+	30 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 41;
+}

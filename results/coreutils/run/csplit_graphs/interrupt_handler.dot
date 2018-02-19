@@ -1,0 +1,52 @@
+digraph interrupt_handler {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	7;
+	8;
+	20;
+	23;
+	26;
+	32;
+	33;
+	34;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=red
+		label=false
+	];
+	1 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 7 [
+		color=red
+		label=false
+	];
+	4 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 8;
+	8 -> 20 [
+		color=red
+		label=false
+	];
+	8 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 26;
+	23 -> 26;
+	26 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 32 [
+		color=red
+		label=false
+	];
+	32 -> 33;
+	33 -> 34;
+}

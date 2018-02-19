@@ -1,0 +1,83 @@
+digraph savewd_restore {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	10;
+	15;
+	16;
+	21;
+	24;
+	28;
+	29;
+	31;
+	33;
+	36;
+	40;
+	41;
+	45;
+	48;
+	52;
+	53;
+
+	// Edge definitions.
+	2 -> 6 [label="case (x=4)"];
+	2 -> 10 [label="case (x=2)"];
+	2 -> 24 [label="case (x=3)"];
+	2 -> 52 [label="default case"];
+	2 -> 53 [label="case (x=1)"];
+	6 -> 21;
+	10 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 16 [
+		color=red
+		label=false
+	];
+	15 -> 53;
+	16 -> 21;
+	21 -> 53;
+	24 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 29 [
+		color=red
+		label=false
+	];
+	29 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 53 [
+		color=red
+		label=false
+	];
+	31 -> 33;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 41 [
+		color=red
+		label=false
+	];
+	36 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 40 [
+		color=red
+		label=false
+	];
+	41 -> 45 [
+		color=red
+		label=false
+	];
+	41 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 48;
+	48 -> 53;
+}

@@ -1,0 +1,16 @@
+digraph quotearg_n_style {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	10;
+
+	// Edge definitions.
+	3 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 10 [
+		color=red
+		label=false
+	];
+}

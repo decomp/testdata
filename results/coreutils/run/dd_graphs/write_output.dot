@@ -1,0 +1,27 @@
+digraph write_output {
+	// Node definitions.
+	0 [label=entry];
+	8;
+	15;
+	18;
+	19;
+
+	// Edge definitions.
+	0 -> 8 [
+		color=red
+		label=false
+	];
+	0 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 15 [
+		color=red
+		label=false
+	];
+	8 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 18;
+}

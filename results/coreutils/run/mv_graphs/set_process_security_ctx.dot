@@ -1,0 +1,48 @@
+digraph set_process_security_ctx {
+	// Node definitions.
+	5 [label=entry];
+	9;
+	14;
+	17;
+	19;
+	25;
+	27;
+	33;
+
+	// Edge definitions.
+	5 -> 9 [
+		color=red
+		label=false
+	];
+	5 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 14 [
+		color=red
+		label=false
+	];
+	9 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 19 [
+		color=red
+		label=false
+	];
+	17 -> 25;
+	19 -> 25;
+	27 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 33 [
+		color=red
+		label=false
+	];
+	33 -> 25;
+}

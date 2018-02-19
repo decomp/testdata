@@ -1,0 +1,97 @@
+digraph localtime_rz {
+	// Node definitions.
+	3 [label=entry];
+	5;
+	7;
+	10;
+	13;
+	16;
+	19;
+	25;
+	28;
+	30;
+	33;
+	34;
+	36;
+	40;
+	41;
+	47;
+	48;
+	49;
+	54;
+
+	// Edge definitions.
+	3 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	5 -> 54;
+	7 -> 10 [
+		color=red
+		label=false
+	];
+	7 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 13 [
+		color=red
+		label=false
+	];
+	10 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 16;
+	16 -> 19 [
+		color=red
+		label=false
+	];
+	16 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 25 [
+		color=red
+		label=false
+	];
+	19 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 30;
+	28 -> 30;
+	30 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 34 [
+		color=red
+		label=false
+	];
+	33 -> 36;
+	34 -> 36;
+	36 -> 40 [
+		color=red
+		label=false
+	];
+	36 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 41;
+	41 -> 41 [
+		color=red
+		label=false
+	];
+	41 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 48;
+	48 -> 49;
+}

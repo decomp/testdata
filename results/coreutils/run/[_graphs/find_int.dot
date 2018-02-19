@@ -1,0 +1,69 @@
+digraph find_int {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	13;
+	24;
+	25;
+	32;
+	38;
+	40;
+	49;
+	50;
+	53;
+	54;
+
+	// Edge definitions.
+	1 -> 4;
+	4 -> 4 [
+		color=red
+		label=false
+	];
+	4 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 54 [
+		color=red
+		label=false
+	];
+	24 -> 25;
+	25 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 32 [
+		color=red
+		label=false
+	];
+	32 -> 38 [
+		color=red
+		label=false
+	];
+	32 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 40;
+	40 -> 40 [
+		color=red
+		label=false
+	];
+	40 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 50;
+	50 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 54 [
+		color=red
+		label=false
+	];
+}

@@ -1,0 +1,64 @@
+digraph skip_via_lseek {
+	// Node definitions.
+	4 [label=entry];
+	14;
+	17;
+	23;
+	29;
+	35;
+	38;
+	42;
+	44;
+
+	// Edge definitions.
+	4 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 44 [
+		color=red
+		label=false
+	];
+	14 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 44 [
+		color=red
+		label=false
+	];
+	17 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 44 [
+		color=red
+		label=false
+	];
+	23 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 44 [
+		color=red
+		label=false
+	];
+	29 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 44 [
+		color=red
+		label=false
+	];
+	35 -> 38 [
+		color=red
+		label=false
+	];
+	35 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 42;
+	42 -> 44;
+}

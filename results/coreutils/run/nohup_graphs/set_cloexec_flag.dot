@@ -1,0 +1,25 @@
+digraph set_cloexec_flag {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	10;
+	14;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	5 -> 10 [
+		color=red
+		label=false
+	];
+	5 -> 14 [
+		color=darkgreen
+		label=true
+	];
+}

@@ -1,0 +1,19 @@
+digraph can_write_any_file {
+	// Node definitions.
+	0 [label=entry];
+	2;
+	4;
+	8;
+
+	// Edge definitions.
+	0 -> 2 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 4 [
+		color=red
+		label=false
+	];
+	2 -> 8;
+	4 -> 8;
+}

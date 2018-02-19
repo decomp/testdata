@@ -1,0 +1,138 @@
+digraph sequential_sort {
+	// Node definitions.
+	4 [label=entry];
+	6;
+	11;
+	23;
+	24;
+	29;
+	37;
+	39;
+	40;
+	45;
+	49;
+	56;
+	65;
+	69;
+	73;
+	77;
+	78;
+	90;
+	91;
+	96;
+	97;
+	135;
+	136;
+	137;
+	138;
+
+	// Edge definitions.
+	4 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 29 [
+		color=red
+		label=false
+	];
+	6 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 23 [
+		color=red
+		label=false
+	];
+	11 -> 138;
+	23 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 138 [
+		color=red
+		label=false
+	];
+	24 -> 138;
+	29 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 39 [
+		color=red
+		label=false
+	];
+	37 -> 45;
+	39 -> 40 [
+		color=red
+		label=false
+	];
+	39 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 45;
+	45 -> 49;
+	49 -> 56;
+	56 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 69 [
+		color=red
+		label=false
+	];
+	65 -> 49 [
+		color=red
+		label=false
+	];
+	65 -> 137 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 56 [
+		color=red
+		label=false
+	];
+	69 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 77 [
+		color=red
+		label=false
+	];
+	73 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 78;
+	78 -> 78 [
+		color=red
+		label=false
+	];
+	78 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 91;
+	91 -> 96 [
+		color=red
+		label=false
+	];
+	91 -> 136 [
+		color=darkgreen
+		label=true
+	];
+	96 -> 97;
+	97 -> 97 [
+		color=red
+		label=false
+	];
+	97 -> 135 [
+		color=darkgreen
+		label=true
+	];
+	135 -> 136;
+	136 -> 138;
+	137 -> 138;
+}

@@ -1,0 +1,36 @@
+digraph main {
+	// Node definitions.
+	2 [label=entry];
+	4;
+	14;
+	15;
+	18;
+	21;
+
+	// Edge definitions.
+	2 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 21 [
+		color=red
+		label=false
+	];
+	4 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 15 [
+		color=red
+		label=false
+	];
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 21 [
+		color=red
+		label=false
+	];
+	18 -> 21;
+}

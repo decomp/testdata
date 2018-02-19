@@ -1,0 +1,55 @@
+digraph dump_remainder {
+	// Node definitions.
+	4 [label=entry];
+	10;
+	17;
+	21;
+	24;
+	27;
+	31;
+	34;
+	38;
+	40;
+	42;
+
+	// Edge definitions.
+	4 -> 10;
+	10 -> 17 [label="case (x=-1)"];
+	10 -> 24 [label="default case"];
+	10 -> 40 [label="case (x=0)"];
+	17 -> 21 [
+		color=red
+		label=false
+	];
+	17 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 27 [
+		color=red
+		label=false
+	];
+	24 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 31;
+	31 -> 34 [
+		color=red
+		label=false
+	];
+	31 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 38 [
+		color=red
+		label=false
+	];
+	34 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 10;
+	40 -> 42;
+}

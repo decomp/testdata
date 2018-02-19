@@ -1,0 +1,74 @@
+digraph sha1_stream {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	12;
+	13;
+	20;
+	23;
+	26;
+	27;
+	30;
+	31;
+	32;
+	34;
+	35;
+	37;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=red
+		label=false
+	];
+	2 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 12;
+	12 -> 13;
+	13 -> 20 [
+		color=red
+		label=false
+	];
+	13 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 27 [
+		color=red
+		label=false
+	];
+	23 -> 26 [
+		color=red
+		label=false
+	];
+	23 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 37;
+	27 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 31 [
+		color=red
+		label=false
+	];
+	30 -> 12;
+	31 -> 32;
+	32 -> 34 [
+		color=red
+		label=false
+	];
+	32 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 35;
+	35 -> 37;
+}

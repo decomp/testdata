@@ -1,0 +1,72 @@
+digraph cleanup {
+	// Node definitions.
+	1 [label=entry];
+	3;
+	5;
+	9;
+	12;
+	17;
+	19;
+	23;
+	26;
+	29;
+	31;
+	35;
+	37;
+
+	// Edge definitions.
+	1 -> 3 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 5 [
+		color=red
+		label=false
+	];
+	3 -> 5;
+	5 -> 9 [
+		color=red
+		label=false
+	];
+	5 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 19 [
+		color=red
+		label=false
+	];
+	12 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 19 [
+		color=red
+		label=false
+	];
+	17 -> 19;
+	19 -> 23 [
+		color=red
+		label=false
+	];
+	19 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 26 [label="default case"];
+	23 -> 37 [label="case (x=9)"];
+	26 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 31 [
+		color=red
+		label=false
+	];
+	29 -> 31;
+	31 -> 37;
+}

@@ -1,0 +1,61 @@
+digraph hash_get_entries {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	10;
+	19;
+	20;
+	24;
+	33;
+	35;
+	40;
+	41;
+	42;
+
+	// Edge definitions.
+	3 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 42 [
+		color=red
+		label=false
+	];
+	9 -> 10;
+	10 -> 19 [
+		color=red
+		label=false
+	];
+	10 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 20;
+	20 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 40 [
+		color=red
+		label=false
+	];
+	24 -> 20 [
+		color=red
+		label=false
+	];
+	24 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 35;
+	35 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 41 [
+		color=red
+		label=false
+	];
+	40 -> 42;
+	41 -> 42;
+}

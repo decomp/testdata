@@ -1,0 +1,105 @@
+digraph ignorable_failure {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	6;
+	9;
+	14;
+	17;
+	20;
+	22;
+	26;
+	27;
+	33;
+	35;
+	46;
+	49;
+	50;
+	53;
+	57;
+	60;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=red
+		label=false
+	];
+	2 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 6 [label="default case"];
+	5 -> 60 [label="case (x=17)"];
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 60 [
+		color=red
+		label=false
+	];
+	9 -> 14 [
+		color=red
+		label=false
+	];
+	9 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 22 [
+		color=red
+		label=false
+	];
+	20 -> 60;
+	22 -> 26 [
+		color=red
+		label=false
+	];
+	22 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 27;
+	27 -> 33 [
+		color=red
+		label=false
+	];
+	27 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 60;
+	35 -> 46 [label="case (x=0)"];
+	35 -> 53 [label="default case"];
+	46 -> 27 [
+		color=red
+		label=false
+	];
+	46 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 50;
+	50 -> 57;
+	53 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 60 [
+		color=red
+		label=false
+	];
+	57 -> 60;
+}

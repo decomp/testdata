@@ -1,0 +1,68 @@
+digraph openat_proc_name {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	8;
+	11;
+	14;
+	15;
+	23;
+	26;
+	30;
+	33;
+	41;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 8 [
+		color=red
+		label=false
+	];
+	7 -> 41;
+	8 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 23 [
+		color=red
+		label=false
+	];
+	11 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 41;
+	15 -> 23;
+	23 -> 26 [
+		color=red
+		label=false
+	];
+	23 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 33 [
+		color=red
+		label=false
+	];
+	30 -> 33 [
+		color=red
+		label=false
+	];
+	30 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 41;
+}

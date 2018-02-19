@@ -1,0 +1,128 @@
+digraph find_mount_point {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	14;
+	19;
+	23;
+	28;
+	35;
+	40;
+	43;
+	47;
+	52;
+	57;
+	58;
+	63;
+	67;
+	71;
+	74;
+	79;
+	80;
+	83;
+	85;
+	91;
+	94;
+	95;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=red
+		label=false
+	];
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 95;
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 28 [
+		color=red
+		label=false
+	];
+	19 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 43 [
+		color=red
+		label=false
+	];
+	23 -> 95;
+	28 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 40 [
+		color=red
+		label=false
+	];
+	35 -> 95;
+	40 -> 43 [
+		color=red
+		label=false
+	];
+	40 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 47 [
+		color=red
+		label=false
+	];
+	43 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 63;
+	52 -> 85;
+	57 -> 58;
+	58 -> 79;
+	63 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 83 [
+		color=red
+		label=false
+	];
+	67 -> 71 [
+		color=red
+		label=false
+	];
+	67 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 80 [
+		color=red
+		label=false
+	];
+	74 -> 79;
+	79 -> 85;
+	80 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 63 [
+		color=red
+		label=false
+	];
+	83 -> 85;
+	85 -> 91 [
+		color=red
+		label=false
+	];
+	85 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 95;
+}

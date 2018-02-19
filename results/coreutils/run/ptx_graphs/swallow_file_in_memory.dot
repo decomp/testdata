@@ -1,0 +1,42 @@
+digraph swallow_file_in_memory {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	8;
+	12;
+	15;
+	17;
+	22;
+	26;
+
+	// Edge definitions.
+	2 -> 6 [
+		color=red
+		label=false
+	];
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 8 [label="case (x=45)"];
+	6 -> 12 [label="case (x=0)"];
+	6 -> 15 [label="default case"];
+	8 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 15 [
+		color=red
+		label=false
+	];
+	12 -> 17;
+	15 -> 17;
+	17 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 26 [
+		color=red
+		label=false
+	];
+}

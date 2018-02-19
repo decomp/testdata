@@ -1,0 +1,63 @@
+digraph argmatch_valid {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	10;
+	17;
+	20;
+	24;
+	28;
+	34;
+	35;
+	42;
+	44;
+	46;
+
+	// Edge definitions.
+	3 -> 9 [
+		color=red
+		label=false
+	];
+	3 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 10;
+	10 -> 17 [
+		color=red
+		label=false
+	];
+	10 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 20 [
+		color=red
+		label=false
+	];
+	17 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 28;
+	24 -> 28;
+	28 -> 10 [
+		color=red
+		label=false
+	];
+	28 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 35;
+	35 -> 42 [
+		color=red
+		label=false
+	];
+	35 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 46;
+	44 -> 46;
+}

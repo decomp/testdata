@@ -1,0 +1,41 @@
+digraph format_address_paren {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	11;
+	13;
+	15;
+	22;
+	25;
+	27;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=red
+		label=false
+	];
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 13;
+	11 -> 13;
+	13 -> 15 [
+		color=red
+		label=false
+	];
+	13 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 22 [
+		color=red
+		label=false
+	];
+	15 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 27;
+	25 -> 27;
+}

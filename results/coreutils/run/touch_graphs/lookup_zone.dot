@@ -1,0 +1,88 @@
+digraph lookup_zone {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	8;
+	13;
+	18;
+	19;
+	20;
+	25;
+	30;
+	32;
+	33;
+	35;
+	38;
+	43;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=red
+		label=false
+	];
+	2 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 35 [
+		color=red
+		label=false
+	];
+	8 -> 13 [
+		color=red
+		label=false
+	];
+	8 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 8 [
+		color=red
+		label=false
+	];
+	13 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 19;
+	19 -> 20;
+	20 -> 25 [
+		color=red
+		label=false
+	];
+	20 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 20 [
+		color=red
+		label=false
+	];
+	25 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 33;
+	32 -> 33;
+	35 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 38 [
+		color=red
+		label=false
+	];
+	38 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 43 [
+		color=red
+		label=false
+	];
+	43 -> 8;
+}

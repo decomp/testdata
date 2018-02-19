@@ -1,0 +1,76 @@
+digraph parse_symbols {
+	// Node definitions.
+	4 [label=entry];
+	5;
+	9;
+	12;
+	17;
+	22;
+	24;
+	28;
+	29;
+	33;
+	35;
+	39;
+	41;
+	45;
+	50;
+
+	// Edge definitions.
+	4 -> 5;
+	5 -> 9;
+	9 -> 12;
+	12 -> 17 [
+		color=red
+		label=false
+	];
+	12 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 28 [
+		color=red
+		label=false
+	];
+	22 -> 24 [label="case (x=0)"];
+	22 -> 29 [label="default case"];
+	24 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 45 [
+		color=red
+		label=false
+	];
+	28 -> 29;
+	29 -> 9 [
+		color=red
+		label=false
+	];
+	29 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 35 [
+		color=red
+		label=false
+	];
+	33 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 41;
+	39 -> 41;
+	45 -> 5 [
+		color=red
+		label=false
+	];
+	45 -> 50 [
+		color=darkgreen
+		label=true
+	];
+}

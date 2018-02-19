@@ -1,0 +1,97 @@
+digraph get_spec_stats {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	16;
+	19;
+	22;
+	30;
+	31;
+	36;
+	43;
+	44;
+	47;
+	48;
+	60;
+	61;
+	62;
+	106;
+	110;
+	112;
+	113;
+	120;
+	122;
+
+	// Edge definitions.
+	1 -> 9;
+	9 -> 16 [
+		color=red
+		label=false
+	];
+	9 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 19 [label="case (x=3)"];
+	16 -> 22 [label="case (x=1)"];
+	16 -> 36 [label="case (x=2)"];
+	16 -> 106 [label="case (x=4)"];
+	16 -> 112 [label="default case"];
+	16 -> 113 [label="case (x=0)"];
+	19 -> 62;
+	22 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 31 [
+		color=red
+		label=false
+	];
+	31 -> 113;
+	36 -> 44;
+	43 -> 60 [label="default case"];
+	43 -> 113 [label="case (x=6)"];
+	44 -> 47 [
+		color=red
+		label=false
+	];
+	44 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 43 [
+		color=red
+		label=false
+	];
+	48 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 113;
+	61 -> 113;
+	62 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 62 [
+		color=red
+		label=false
+	];
+	106 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	106 -> 113 [
+		color=red
+		label=false
+	];
+	110 -> 113;
+	113 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 120 [
+		color=red
+		label=false
+	];
+}

@@ -1,0 +1,17 @@
+digraph sort_die {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	8;
+
+	// Edge definitions.
+	2 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 8 [
+		color=red
+		label=false
+	];
+	6 -> 8;
+}

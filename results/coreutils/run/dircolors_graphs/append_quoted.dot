@@ -1,0 +1,103 @@
+digraph append_quoted {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	5;
+	10;
+	15;
+	17;
+	24;
+	26;
+	33;
+	35;
+	38;
+	41;
+	44;
+	49;
+	51;
+	54;
+	60;
+	62;
+	69;
+	70;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=red
+		label=false
+	];
+	1 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 5;
+	5 -> 10 [label="case (x=39)"];
+	5 -> 38 [label="case (x=94)"];
+	5 -> 41 [label="case (x=61)"];
+	5 -> 54 [label="default case"];
+	10 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 17 [
+		color=red
+		label=false
+	];
+	15 -> 17;
+	17 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 26 [
+		color=red
+		label=false
+	];
+	24 -> 26;
+	26 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 35 [
+		color=red
+		label=false
+	];
+	33 -> 35;
+	35 -> 54;
+	38 -> 54;
+	41 -> 44 [
+		color=red
+		label=false
+	];
+	41 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 51 [
+		color=red
+		label=false
+	];
+	49 -> 51;
+	51 -> 54;
+	54 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 62 [
+		color=red
+		label=false
+	];
+	60 -> 62;
+	62 -> 5 [
+		color=red
+		label=false
+	];
+	62 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 70;
+}

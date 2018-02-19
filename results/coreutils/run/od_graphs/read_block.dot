@@ -1,0 +1,56 @@
+digraph read_block {
+	// Node definitions.
+	3 [label=entry];
+	7;
+	8;
+	11;
+	16;
+	17;
+	29;
+	37;
+	39;
+
+	// Edge definitions.
+	3 -> 7 [
+		color=red
+		label=false
+	];
+	3 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 11 [
+		color=red
+		label=false
+	];
+	8 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 16 [
+		color=red
+		label=false
+	];
+	11 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 17;
+	17 -> 29 [
+		color=red
+		label=false
+	];
+	17 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 17 [
+		color=red
+		label=false
+	];
+	29 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 39;
+}

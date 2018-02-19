@@ -1,0 +1,74 @@
+digraph main {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	13;
+	14;
+	16;
+	17;
+	20;
+	21;
+	25;
+	27;
+	28;
+	31;
+	43;
+	44;
+	47;
+	51;
+	55;
+
+	// Edge definitions.
+	2 -> 10;
+	10 -> 13 [label="case (x=115)"];
+	10 -> 14 [label="case (x=114)"];
+	10 -> 16 [label="case (x=-130)"];
+	10 -> 17 [label="case (x=-131)"];
+	10 -> 20 [label="default case"];
+	10 -> 21 [label="case (x=-1)"];
+	13 -> 14;
+	14 -> 10;
+	21 -> 25 [
+		color=red
+		label=false
+	];
+	21 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 44 [
+		color=red
+		label=false
+	];
+	27 -> 31;
+	28 -> 44;
+	31 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 43 [
+		color=red
+		label=false
+	];
+	43 -> 44;
+	44 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 55 [
+		color=red
+		label=false
+	];
+	47 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 55 [
+		color=red
+		label=false
+	];
+}

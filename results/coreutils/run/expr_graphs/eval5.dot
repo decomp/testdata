@@ -1,0 +1,74 @@
+digraph eval5 {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	7;
+	15;
+	17;
+	23;
+	26;
+	28;
+	30;
+	36;
+	39;
+	41;
+	46;
+	48;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=red
+		label=false
+	];
+	1 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 7;
+	7 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 46 [
+		color=red
+		label=false
+	];
+	15 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 30 [
+		color=red
+		label=false
+	];
+	17 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 26 [
+		color=red
+		label=false
+	];
+	23 -> 28;
+	26 -> 28;
+	28 -> 30;
+	30 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 39 [
+		color=red
+		label=false
+	];
+	36 -> 41;
+	39 -> 41;
+	41 -> 7 [
+		color=red
+		label=false
+	];
+	41 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 48;
+}

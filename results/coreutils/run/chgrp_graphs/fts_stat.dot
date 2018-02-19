@@ -1,0 +1,103 @@
+digraph fts_stat {
+	// Node definitions.
+	3 [label=entry];
+	8;
+	12;
+	19;
+	27;
+	32;
+	36;
+	40;
+	41;
+	48;
+	51;
+	55;
+	60;
+	73;
+	76;
+	80;
+	84;
+	85;
+	86;
+
+	// Edge definitions.
+	3 -> 8 [
+		color=red
+		label=false
+	];
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 19;
+	12 -> 19;
+	19 -> 27 [
+		color=red
+		label=false
+	];
+	19 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 32 [
+		color=red
+		label=false
+	];
+	27 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 51 [
+		color=red
+		label=false
+	];
+	36 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 51 [
+		color=red
+		label=false
+	];
+	40 -> 86;
+	41 -> 48 [
+		color=red
+		label=false
+	];
+	41 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 51;
+	51 -> 86;
+	55 -> 60 [label="case (x=16384)"];
+	55 -> 84 [label="case (x=-32768)"];
+	55 -> 85 [label="default case"];
+	55 -> 86 [label="case (x=-24576)"];
+	60 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 86 [
+		color=red
+		label=false
+	];
+	73 -> 76 [label="case (x=46)"];
+	73 -> 80 [label="case (x=0)"];
+	73 -> 86 [label="default case"];
+	76 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 86 [
+		color=red
+		label=false
+	];
+	80 -> 86;
+	84 -> 86;
+	85 -> 86;
+}

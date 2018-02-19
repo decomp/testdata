@@ -1,0 +1,27 @@
+digraph parse_field_count {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	11;
+	13;
+	17;
+	19;
+	21;
+
+	// Edge definitions.
+	3 -> 9 [label="case (x=2)"];
+	3 -> 11 [label="case (x=4)"];
+	3 -> 17 [label="case (x=3)"];
+	3 -> 19 [label="default case"];
+	9 -> 17;
+	11 -> 13 [
+		color=red
+		label=false
+	];
+	11 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 19;
+	19 -> 21;
+}

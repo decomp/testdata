@@ -1,0 +1,19 @@
+digraph restore_cwd {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	7;
+	11;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 7 [
+		color=red
+		label=false
+	];
+	5 -> 11;
+	7 -> 11;
+}

@@ -1,0 +1,114 @@
+digraph users {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	13;
+	16;
+	17;
+	23;
+	24;
+	25;
+	33;
+	37;
+	41;
+	45;
+	47;
+	49;
+	63;
+	65;
+	68;
+	71;
+	72;
+	78;
+	79;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=red
+		label=false
+	];
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 17 [
+		color=red
+		label=false
+	];
+	17 -> 23 [
+		color=red
+		label=false
+	];
+	17 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 25;
+	24 -> 79;
+	25 -> 33 [
+		color=red
+		label=false
+	];
+	25 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 41 [
+		color=red
+		label=false
+	];
+	37 -> 41;
+	41 -> 25 [
+		color=red
+		label=false
+	];
+	41 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 47 [
+		color=red
+		label=false
+	];
+	45 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 49;
+	49 -> 63 [
+		color=red
+		label=false
+	];
+	49 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 68;
+	65 -> 68;
+	68 -> 49 [
+		color=red
+		label=false
+	];
+	68 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 72;
+	72 -> 72 [
+		color=red
+		label=false
+	];
+	72 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 79;
+}

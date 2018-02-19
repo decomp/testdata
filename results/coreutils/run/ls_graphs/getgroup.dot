@@ -1,0 +1,52 @@
+digraph getgroup {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	5;
+	10;
+	14;
+	15;
+	18;
+	21;
+	35;
+	36;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=red
+		label=false
+	];
+	1 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 5;
+	5 -> 10 [
+		color=red
+		label=false
+	];
+	5 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 5 [
+		color=red
+		label=false
+	];
+	10 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 15;
+	15 -> 18 [
+		color=red
+		label=false
+	];
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 21;
+	21 -> 36;
+	35 -> 36;
+}

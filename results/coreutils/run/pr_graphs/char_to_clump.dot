@@ -1,0 +1,105 @@
+digraph char_to_clump {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	16;
+	18;
+	23;
+	24;
+	33;
+	35;
+	45;
+	47;
+	49;
+	52;
+	62;
+	66;
+	67;
+	70;
+	77;
+	82;
+	87;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 24 [
+		color=red
+		label=false
+	];
+	11 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 23 [
+		color=red
+		label=false
+	];
+	16 -> 18 [
+		color=red
+		label=false
+	];
+	16 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 70;
+	23 -> 70;
+	24 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 66 [
+		color=red
+		label=false
+	];
+	33 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 45 [
+		color=red
+		label=false
+	];
+	35 -> 67;
+	45 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 62 [
+		color=red
+		label=false
+	];
+	47 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 52 [
+		color=red
+		label=false
+	];
+	49 -> 67;
+	52 -> 67;
+	62 -> 70;
+	66 -> 67;
+	67 -> 82;
+	70 -> 77 [
+		color=red
+		label=false
+	];
+	70 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 87 [
+		color=red
+		label=false
+	];
+	82 -> 87;
+}

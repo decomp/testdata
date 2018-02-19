@@ -1,0 +1,39 @@
+digraph usage {
+	// Node definitions.
+	1 [label=entry];
+	3;
+	8;
+	53;
+	56;
+	59;
+	64;
+
+	// Edge definitions.
+	1 -> 3 [
+		color=red
+		label=false
+	];
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 64;
+	8 -> 53 [
+		color=red
+		label=false
+	];
+	8 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 56 [
+		color=red
+		label=false
+	];
+	53 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 59;
+	59 -> 64;
+}

@@ -1,0 +1,103 @@
+digraph memchr2 {
+	// Node definitions.
+	4 [label=entry];
+	8;
+	14;
+	15;
+	17;
+	25;
+	33;
+	34;
+	53;
+	54;
+	75;
+	76;
+	80;
+	82;
+	90;
+	94;
+	96;
+	97;
+
+	// Edge definitions.
+	4 -> 8 [
+		color=red
+		label=false
+	];
+	4 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 34 [
+		color=red
+		label=false
+	];
+	14 -> 17;
+	15 -> 97;
+	17 -> 25 [
+		color=red
+		label=false
+	];
+	17 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 33 [
+		color=red
+		label=false
+	];
+	33 -> 34;
+	34 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 76 [
+		color=red
+		label=false
+	];
+	53 -> 54;
+	54 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 75 [
+		color=red
+		label=false
+	];
+	75 -> 76;
+	76 -> 80 [
+		color=red
+		label=false
+	];
+	76 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 82;
+	82 -> 90 [
+		color=red
+		label=false
+	];
+	82 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 82 [
+		color=red
+		label=false
+	];
+	90 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 97;
+	96 -> 97;
+}

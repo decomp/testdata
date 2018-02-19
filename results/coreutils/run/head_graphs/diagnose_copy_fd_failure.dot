@@ -1,0 +1,15 @@
+digraph diagnose_copy_fd_failure {
+	// Node definitions.
+	2 [label=entry];
+	3;
+	8;
+	13;
+	14;
+
+	// Edge definitions.
+	2 -> 3 [label="case (x=1)"];
+	2 -> 8 [label="case (x=2)"];
+	2 -> 13 [label="default case"];
+	3 -> 14;
+	8 -> 14;
+}

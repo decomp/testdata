@@ -1,0 +1,26 @@
+digraph savedir {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	9;
+	12;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=red
+		label=false
+	];
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 9 [
+		color=red
+		label=false
+	];
+	5 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 12;
+}

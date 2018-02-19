@@ -1,0 +1,171 @@
+digraph xstrtoumax {
+	// Node definitions.
+	5 [label=entry];
+	9;
+	10;
+	15;
+	24;
+	27;
+	31;
+	33;
+	36;
+	40;
+	42;
+	43;
+	46;
+	47;
+	52;
+	56;
+	58;
+	59;
+	62;
+	66;
+	71;
+	72;
+	75;
+	80;
+	85;
+	111;
+	125;
+	131;
+	141;
+	163;
+	181;
+	187;
+	221;
+	251;
+	253;
+	262;
+	265;
+
+	// Edge definitions.
+	5 -> 9 [
+		color=red
+		label=false
+	];
+	5 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 15;
+	15 -> 15 [
+		color=red
+		label=false
+	];
+	15 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 27 [
+		color=red
+		label=false
+	];
+	24 -> 265 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 40 [
+		color=red
+		label=false
+	];
+	31 -> 33 [
+		color=red
+		label=false
+	];
+	31 -> 265 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 36 [
+		color=red
+		label=false
+	];
+	33 -> 265 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 47 [
+		color=red
+		label=false
+	];
+	36 -> 265 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 42 [label="case (x=34)"];
+	40 -> 43 [label="case (x=0)"];
+	40 -> 265 [label="default case"];
+	42 -> 43;
+	43 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 47 [
+		color=red
+		label=false
+	];
+	46 -> 265;
+	47 -> 52 [
+		color=red
+		label=false
+	];
+	47 -> 262 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 58 [
+		color=red
+		label=false
+	];
+	56 -> 265;
+	58 -> 59 [label="case (x=90)"];
+	58 -> 72 [label="default case"];
+	59 -> 62 [
+		color=red
+		label=false
+	];
+	59 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 66 [label="case (x=105)"];
+	62 -> 71 [label="case (x=68)"];
+	62 -> 72 [label="default case"];
+	66 -> 72;
+	71 -> 72;
+	72 -> 75 [label="case (x=98)"];
+	72 -> 80 [label="case (x=66)"];
+	72 -> 85 [label="case (x=69)"];
+	72 -> 111 [label="case (x=103)"];
+	72 -> 125 [label="case (x=75)"];
+	72 -> 131 [label="case (x=109)"];
+	72 -> 141 [label="case (x=80)"];
+	72 -> 163 [label="case (x=116)"];
+	72 -> 181 [label="case (x=119)"];
+	72 -> 187 [label="case (x=89)"];
+	72 -> 221 [label="case (x=90)"];
+	72 -> 251 [label="default case"];
+	72 -> 253 [label="case (x=99)"];
+	75 -> 253;
+	80 -> 253;
+	85 -> 253;
+	111 -> 253;
+	125 -> 253;
+	131 -> 253;
+	141 -> 253;
+	163 -> 253;
+	181 -> 253;
+	187 -> 253;
+	221 -> 253;
+	251 -> 265;
+	253 -> 262;
+	262 -> 265;
+}

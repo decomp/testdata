@@ -1,0 +1,91 @@
+digraph mbiter_multi_next {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	9;
+	14;
+	27;
+	33;
+	37;
+	38;
+	41;
+	53;
+	55;
+	61;
+	65;
+	66;
+	69;
+	70;
+	74;
+	75;
+	76;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 76 [
+		color=red
+		label=false
+	];
+	5 -> 9 [
+		color=red
+		label=false
+	];
+	5 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 41;
+	14 -> 27 [
+		color=red
+		label=false
+	];
+	14 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 75;
+	33 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 38 [
+		color=red
+		label=false
+	];
+	38 -> 41;
+	41 -> 53 [label="case (x=-1)"];
+	41 -> 55 [label="case (x=-2)"];
+	41 -> 61 [label="case (x=0)"];
+	41 -> 70 [label="default case"];
+	53 -> 75;
+	55 -> 75;
+	61 -> 65 [
+		color=red
+		label=false
+	];
+	61 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 69 [
+		color=red
+		label=false
+	];
+	66 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 74 [
+		color=red
+		label=false
+	];
+	70 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 75;
+	75 -> 76;
+}

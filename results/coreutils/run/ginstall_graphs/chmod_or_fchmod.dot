@@ -1,0 +1,19 @@
+digraph chmod_or_fchmod {
+	// Node definitions.
+	3 [label=entry];
+	5;
+	7;
+	9;
+
+	// Edge definitions.
+	3 -> 5 [
+		color=red
+		label=false
+	];
+	3 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 9;
+	7 -> 9;
+}

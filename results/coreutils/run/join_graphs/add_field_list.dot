@@ -1,0 +1,76 @@
+digraph add_field_list {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	8;
+	10;
+	14;
+	18;
+	21;
+	25;
+	28;
+	33;
+	34;
+	39;
+	42;
+	45;
+	48;
+	61;
+
+	// Edge definitions.
+	1 -> 4;
+	4 -> 8 [
+		color=red
+		label=false
+	];
+	4 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 10;
+	10 -> 14 [label="case (x=48)"];
+	10 -> 21 [label="case (x=50)"];
+	10 -> 45 [label="default case"];
+	14 -> 18 [
+		color=red
+		label=false
+	];
+	14 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 25 [
+		color=red
+		label=false
+	];
+	21 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 34 [
+		color=red
+		label=false
+	];
+	33 -> 42;
+	34 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 42 [
+		color=red
+		label=false
+	];
+	42 -> 48;
+	48 -> 4 [
+		color=red
+		label=false
+	];
+	48 -> 61 [
+		color=darkgreen
+		label=true
+	];
+}

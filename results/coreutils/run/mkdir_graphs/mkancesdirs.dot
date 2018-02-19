@@ -1,0 +1,156 @@
+digraph mkancesdirs {
+	// Node definitions.
+	4 [label=entry];
+	5;
+	10;
+	15;
+	16;
+	21;
+	28;
+	30;
+	34;
+	36;
+	41;
+	44;
+	45;
+	47;
+	50;
+	54;
+	57;
+	60;
+	67;
+	69;
+	72;
+	76;
+	77;
+	79;
+	80;
+	81;
+	85;
+
+	// Edge definitions.
+	4 -> 5;
+	5 -> 10;
+	10 -> 15 [
+		color=red
+		label=false
+	];
+	10 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 16;
+	16 -> 21;
+	21 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 30 [
+		color=red
+		label=false
+	];
+	28 -> 16;
+	30 -> 34 [
+		color=red
+		label=false
+	];
+	30 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 21 [
+		color=red
+		label=false
+	];
+	34 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 45 [
+		color=red
+		label=false
+	];
+	41 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 44 [
+		color=red
+		label=false
+	];
+	44 -> 54;
+	45 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 54 [
+		color=red
+		label=false
+	];
+	47 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 54 [
+		color=red
+		label=false
+	];
+	50 -> 54 [
+		color=red
+		label=false
+	];
+	50 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 60 [
+		color=red
+		label=false
+	];
+	57 -> 60;
+	60 -> 67 [
+		color=red
+		label=false
+	];
+	60 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 69 [
+		color=red
+		label=false
+	];
+	69 -> 72 [
+		color=red
+		label=false
+	];
+	69 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 77 [
+		color=red
+		label=false
+	];
+	76 -> 77;
+	77 -> 85;
+	79 -> 81;
+	80 -> 81;
+	81 -> 85;
+}

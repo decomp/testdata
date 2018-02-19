@@ -1,0 +1,41 @@
+digraph strcmp_df_size {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	14;
+	17;
+	18;
+	30;
+	36;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 14 [label="case (x=3)"];
+	13 -> 36 [label="default case"];
+	14 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 18 [label="case (x=3)"];
+	17 -> 36 [label="default case"];
+	18 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 36 [
+		color=red
+		label=false
+	];
+	30 -> 36;
+}

@@ -1,0 +1,64 @@
+digraph parse_duration {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	14;
+	17;
+	22;
+	26;
+	28;
+	29;
+	30;
+	31;
+	34;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=red
+		label=false
+	];
+	1 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 31 [
+		color=red
+		label=false
+	];
+	14 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 22 [
+		color=red
+		label=false
+	];
+	17 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 31 [
+		color=red
+		label=false
+	];
+	26 -> 28 [label="case (x=109)"];
+	26 -> 29 [label="case (x=104)"];
+	26 -> 30 [label="case (x=100)"];
+	26 -> 31 [label="default case"];
+	26 -> 34 [label="case (x=115)"];
+	28 -> 34;
+	29 -> 34;
+	30 -> 34;
+}

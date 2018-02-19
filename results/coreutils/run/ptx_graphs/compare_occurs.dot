@@ -1,0 +1,94 @@
+digraph compare_occurs {
+	// Node definitions.
+	2 [label=entry];
+	16;
+	17;
+	23;
+	24;
+	30;
+	32;
+	49;
+	51;
+	62;
+	63;
+	64;
+	69;
+	75;
+	76;
+	77;
+	80;
+
+	// Edge definitions.
+	2 -> 16 [
+		color=red
+		label=false
+	];
+	2 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 64 [
+		color=red
+		label=false
+	];
+	17 -> 51;
+	23 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 64 [
+		color=red
+		label=false
+	];
+	24 -> 32;
+	30 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 62 [
+		color=red
+		label=false
+	];
+	32 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 75 [
+		color=red
+		label=false
+	];
+	49 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 63 [
+		color=red
+		label=false
+	];
+	51 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 76 [
+		color=red
+		label=false
+	];
+	62 -> 64;
+	63 -> 64;
+	64 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 77 [
+		color=red
+		label=false
+	];
+	69 -> 80;
+	75 -> 77;
+	76 -> 77;
+	77 -> 80;
+}

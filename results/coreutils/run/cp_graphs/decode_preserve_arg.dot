@@ -1,0 +1,52 @@
+digraph decode_preserve_arg {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	22;
+	24;
+	30;
+	31;
+	32;
+	33;
+	34;
+	35;
+	36;
+	37;
+	38;
+	40;
+
+	// Edge definitions.
+	3 -> 18;
+	18 -> 22 [
+		color=red
+		label=false
+	];
+	18 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 24;
+	24 -> 30 [label="case (x=0)"];
+	24 -> 31 [label="case (x=1)"];
+	24 -> 32 [label="case (x=2)"];
+	24 -> 33 [label="case (x=3)"];
+	24 -> 34 [label="case (x=4)"];
+	24 -> 35 [label="case (x=5)"];
+	24 -> 36 [label="case (x=6)"];
+	24 -> 37 [label="default case"];
+	30 -> 38;
+	31 -> 38;
+	32 -> 38;
+	33 -> 38;
+	34 -> 38;
+	35 -> 38;
+	36 -> 38;
+	38 -> 18 [
+		color=red
+		label=false
+	];
+	38 -> 40 [
+		color=darkgreen
+		label=true
+	];
+}

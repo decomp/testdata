@@ -1,0 +1,63 @@
+digraph get_next_tab_column {
+	// Node definitions.
+	3 [label=entry];
+	6;
+	10;
+	12;
+	16;
+	21;
+	24;
+	25;
+	28;
+	32;
+	33;
+	34;
+
+	// Edge definitions.
+	3 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 12 [
+		color=red
+		label=false
+	];
+	6 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 25 [
+		color=red
+		label=false
+	];
+	10 -> 16;
+	12 -> 34;
+	16 -> 21 [
+		color=red
+		label=false
+	];
+	16 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 24 [
+		color=red
+		label=false
+	];
+	24 -> 25;
+	25 -> 28 [
+		color=red
+		label=false
+	];
+	25 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 34;
+	32 -> 34;
+	33 -> 34;
+}

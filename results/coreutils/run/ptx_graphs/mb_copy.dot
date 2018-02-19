@@ -1,0 +1,30 @@
+digraph mb_copy {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	9;
+	13;
+	23;
+	27;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=red
+		label=false
+	];
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 13;
+	9 -> 13;
+	13 -> 23 [
+		color=red
+		label=false
+	];
+	13 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 27;
+}

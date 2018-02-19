@@ -1,0 +1,74 @@
+digraph blake2b_stream {
+	// Node definitions.
+	3 [label=entry];
+	8;
+	11;
+	12;
+	19;
+	21;
+	24;
+	27;
+	29;
+	30;
+	32;
+	34;
+	36;
+	38;
+
+	// Edge definitions.
+	3 -> 8 [
+		color=red
+		label=false
+	];
+	3 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 11;
+	11 -> 12;
+	12 -> 19 [
+		color=red
+		label=false
+	];
+	12 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 24 [
+		color=red
+		label=false
+	];
+	21 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 36 [
+		color=red
+		label=false
+	];
+	24 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 29 [
+		color=red
+		label=false
+	];
+	27 -> 11;
+	29 -> 30;
+	30 -> 32 [
+		color=red
+		label=false
+	];
+	30 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 34;
+	34 -> 36;
+	36 -> 38;
+}

@@ -1,0 +1,114 @@
+digraph debug_mktime_not_ok {
+	// Node definitions.
+	4 [label=entry];
+	46;
+	54;
+	66;
+	72;
+	84;
+	91;
+	103;
+	109;
+	121;
+	132;
+	134;
+	137;
+	142;
+	146;
+	148;
+	150;
+	152;
+	154;
+	158;
+
+	// Edge definitions.
+	4 -> 46 [
+		color=red
+		label=false
+	];
+	4 -> 158 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 54 [
+		color=red
+		label=false
+	];
+	46 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 66 [
+		color=red
+		label=false
+	];
+	54 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 72;
+	72 -> 84;
+	84 -> 91 [
+		color=red
+		label=false
+	];
+	84 -> 121 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 103 [
+		color=red
+		label=false
+	];
+	91 -> 109 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 109;
+	109 -> 121;
+	121 -> 132 [
+		color=darkgreen
+		label=true
+	];
+	121 -> 146 [
+		color=red
+		label=false
+	];
+	132 -> 134;
+	134 -> 137 [
+		color=darkgreen
+		label=true
+	];
+	134 -> 142 [
+		color=red
+		label=false
+	];
+	137 -> 134 [
+		color=darkgreen
+		label=true
+	];
+	137 -> 142 [
+		color=red
+		label=false
+	];
+	142 -> 146;
+	146 -> 148 [
+		color=darkgreen
+		label=true
+	];
+	146 -> 150 [
+		color=red
+		label=false
+	];
+	148 -> 150;
+	150 -> 152 [
+		color=red
+		label=false
+	];
+	150 -> 154 [
+		color=darkgreen
+		label=true
+	];
+	152 -> 154;
+	154 -> 158;
+}

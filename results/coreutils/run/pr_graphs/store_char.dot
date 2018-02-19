@@ -1,0 +1,17 @@
+digraph store_char {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	10;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=red
+		label=false
+	];
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 10;
+}

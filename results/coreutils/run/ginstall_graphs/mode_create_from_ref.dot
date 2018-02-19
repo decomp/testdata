@@ -1,0 +1,17 @@
+digraph mode_create_from_ref {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	19;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 19 [
+		color=red
+		label=false
+	];
+	6 -> 19;
+}

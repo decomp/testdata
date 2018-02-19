@@ -1,0 +1,75 @@
+digraph is_empty_dir {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	8;
+	10;
+	14;
+	15;
+	21;
+	23;
+	34;
+	37;
+	38;
+	41;
+	45;
+	48;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=red
+		label=false
+	];
+	2 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 10 [
+		color=red
+		label=false
+	];
+	8 -> 48;
+	10 -> 14 [
+		color=red
+		label=false
+	];
+	10 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 15;
+	15 -> 21 [
+		color=red
+		label=false
+	];
+	15 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 48;
+	23 -> 34 [label="case (x=0)"];
+	23 -> 41 [label="default case"];
+	34 -> 15 [
+		color=red
+		label=false
+	];
+	34 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 38;
+	38 -> 45;
+	41 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 48 [
+		color=red
+		label=false
+	];
+	45 -> 48;
+}

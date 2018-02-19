@@ -1,0 +1,117 @@
+digraph find_bind_mount {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	8;
+	12;
+	13;
+	17;
+	20;
+	26;
+	32;
+	37;
+	42;
+	45;
+	49;
+	53;
+	54;
+	56;
+	60;
+	61;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=red
+		label=false
+	];
+	1 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 12 [
+		color=red
+		label=false
+	];
+	8 -> 12;
+	12 -> 13;
+	13 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 61 [
+		color=red
+		label=false
+	];
+	17 -> 20 [
+		color=red
+		label=false
+	];
+	17 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 26;
+	26 -> 32 [
+		color=red
+		label=false
+	];
+	26 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 56 [
+		color=red
+		label=false
+	];
+	37 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 56 [
+		color=red
+		label=false
+	];
+	42 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 53 [
+		color=red
+		label=false
+	];
+	45 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 53 [
+		color=red
+		label=false
+	];
+	49 -> 53 [
+		color=red
+		label=false
+	];
+	49 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 56;
+	54 -> 61;
+	56 -> 26 [
+		color=red
+		label=false
+	];
+	56 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 61;
+}

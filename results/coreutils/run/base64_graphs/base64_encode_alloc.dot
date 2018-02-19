@@ -1,0 +1,28 @@
+digraph base64_encode_alloc {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	10;
+	13;
+	14;
+
+	// Edge definitions.
+	3 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 10 [
+		color=red
+		label=false
+	];
+	9 -> 14;
+	10 -> 13 [
+		color=red
+		label=false
+	];
+	10 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 14;
+}

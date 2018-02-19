@@ -1,0 +1,46 @@
+digraph process_dir {
+	// Node definitions.
+	3 [label=entry];
+	11;
+	13;
+	24;
+	27;
+	30;
+	32;
+
+	// Edge definitions.
+	3 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 13 [
+		color=red
+		label=false
+	];
+	11 -> 13;
+	13 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 32 [
+		color=red
+		label=false
+	];
+	24 -> 27 [
+		color=red
+		label=false
+	];
+	24 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 30 [
+		color=red
+		label=false
+	];
+	27 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 32;
+}

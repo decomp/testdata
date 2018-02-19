@@ -1,0 +1,66 @@
+digraph dosync {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	10;
+	15;
+	17;
+	20;
+	24;
+	29;
+	31;
+	32;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=red
+		label=false
+	];
+	2 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 15 [
+		color=red
+		label=false
+	];
+	10 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 17 [
+		color=red
+		label=false
+	];
+	15 -> 32;
+	17 -> 20 [
+		color=red
+		label=false
+	];
+	17 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 29 [
+		color=red
+		label=false
+	];
+	24 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 31 [
+		color=red
+		label=false
+	];
+	29 -> 32;
+	31 -> 32;
+}

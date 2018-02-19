@@ -1,0 +1,58 @@
+digraph mode_adjust {
+	// Node definitions.
+	5 [label=entry];
+	10;
+	15;
+	29;
+	43;
+	49;
+	59;
+	68;
+	71;
+	75;
+	82;
+	83;
+	87;
+	88;
+
+	// Edge definitions.
+	5 -> 10 [
+		color=red
+		label=false
+	];
+	5 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 15;
+	15 -> 29 [label="case (x=3)"];
+	15 -> 43 [label="case (x=2)"];
+	15 -> 49 [label="default case"];
+	29 -> 49;
+	43 -> 49;
+	49 -> 59 [label="case (x=61)"];
+	49 -> 68 [label="case (x=43)"];
+	49 -> 71 [label="case (x=45)"];
+	49 -> 75 [label="default case"];
+	59 -> 75;
+	68 -> 75;
+	71 -> 75;
+	75 -> 15 [
+		color=red
+		label=false
+	];
+	75 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 83;
+	83 -> 87 [
+		color=red
+		label=false
+	];
+	83 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	87 -> 88;
+}

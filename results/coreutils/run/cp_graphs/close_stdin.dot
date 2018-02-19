@@ -1,0 +1,49 @@
+digraph close_stdin {
+	// Node definitions.
+	0 [label=entry];
+	4;
+	7;
+	11;
+	17;
+	23;
+	25;
+	26;
+	28;
+
+	// Edge definitions.
+	0 -> 4 [
+		color=red
+		label=false
+	];
+	0 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 11 [
+		color=red
+		label=false
+	];
+	7 -> 11;
+	11 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 28 [
+		color=red
+		label=false
+	];
+	17 -> 23 [
+		color=red
+		label=false
+	];
+	17 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 26;
+	25 -> 26;
+}
