@@ -13,7 +13,6 @@ ll_file=$1
 
 sar -i ', ![a-z.]+ ![0-9]+' '' ${ll_file}
 sar -i ' !dbg ![0-9]+ {[\n]' ' {\n' ${ll_file}
-sar -i '  tail call void @llvm.dbg.value[^\n]+[\n]' '' ${ll_file}
-sar -i '  call void @llvm.dbg.value[^\n]+[\n]' '' ${ll_file}
-sar -i '  tail call void @llvm.dbg.declare[^\n]+[\n]' '' ${ll_file}
+sar -i '  (tail )?call void @llvm.dbg.value[^\n]+[\n]' '' ${ll_file}
+sar -i '  (tail )?call void @llvm.dbg.declare[^\n]+[\n]' '' ${ll_file}
 sar -i '[\n]!(.|[\n])*' '' ${ll_file}
