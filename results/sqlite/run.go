@@ -1,3 +1,5 @@
+// The gen-cfa-results tool compares the source of truth against recovered
+// control flow primities.
 package main
 
 import (
