@@ -1,0 +1,118 @@
+digraph "sqlite3FinishTrigger" {
+	// Node definitions.
+	3 [label=entry];
+	30;
+	33;
+	34;
+	48;
+	51;
+	58;
+	69;
+	75;
+	76;
+	82;
+	87;
+	88;
+	123;
+	129;
+	148;
+	150;
+	158;
+	176;
+	177;
+	178;
+	179;
+
+	// Edge definitions.
+	3 -> 30 [
+		color=red
+		label=false
+	];
+	3 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 33 [
+		color=red
+		label=false
+	];
+	30 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 179;
+	34 -> 48;
+	48 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 58 [
+		color=red
+		label=false
+	];
+	51 -> 48;
+	58 -> 69 [
+		color=red
+		label=false
+	];
+	58 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 76 [
+		color=red
+		label=false
+	];
+	75 -> 179;
+	76 -> 82 [
+		color=red
+		label=false
+	];
+	76 -> 123 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 88 [
+		color=red
+		label=false
+	];
+	87 -> 179;
+	88 -> 123;
+	123 -> 129 [
+		color=darkgreen
+		label=true
+	];
+	123 -> 178 [
+		color=red
+		label=false
+	];
+	129 -> 148 [
+		color=darkgreen
+		label=true
+	];
+	129 -> 150 [
+		color=red
+		label=false
+	];
+	148 -> 177;
+	150 -> 158 [
+		color=darkgreen
+		label=true
+	];
+	150 -> 176 [
+		color=red
+		label=false
+	];
+	158 -> 176;
+	176 -> 177;
+	177 -> 178;
+	178 -> 179;
+}

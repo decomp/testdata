@@ -1,0 +1,34 @@
+digraph "sqlite3WhereGetMask" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	13;
+	22;
+	26;
+	27;
+	30;
+	31;
+
+	// Edge definitions.
+	2 -> 7;
+	7 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 30 [
+		color=red
+		label=false
+	];
+	13 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 26 [
+		color=red
+		label=false
+	];
+	22 -> 31;
+	26 -> 27;
+	27 -> 7;
+	30 -> 31;
+}

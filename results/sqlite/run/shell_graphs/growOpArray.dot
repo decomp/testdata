@@ -1,0 +1,43 @@
+digraph "growOpArray" {
+	// Node definitions.
+	2 [label=entry];
+	16;
+	21;
+	22;
+	33;
+	37;
+	52;
+	72;
+	76;
+
+	// Edge definitions.
+	2 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 21 [
+		color=red
+		label=false
+	];
+	16 -> 22;
+	21 -> 22;
+	22 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 37 [
+		color=red
+		label=false
+	];
+	33 -> 76;
+	37 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 72 [
+		color=red
+		label=false
+	];
+	52 -> 72;
+	72 -> 76;
+}

@@ -1,0 +1,52 @@
+digraph "sqlite3BinaryCompareCollSeq" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	17;
+	20;
+	26;
+	30;
+	36;
+	40;
+	41;
+	42;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 17 [
+		color=red
+		label=false
+	];
+	13 -> 42;
+	17 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 30 [
+		color=red
+		label=false
+	];
+	20 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 30 [
+		color=red
+		label=false
+	];
+	26 -> 41;
+	30 -> 36 [
+		color=red
+		label=false
+	];
+	30 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 40;
+	40 -> 41;
+	41 -> 42;
+}

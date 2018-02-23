@@ -1,0 +1,48 @@
+digraph "sqlite3DeleteTable" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	8;
+	11;
+	16;
+	22;
+	23;
+	26;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=red
+		label=false
+	];
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 26;
+	8 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 16 [
+		color=red
+		label=false
+	];
+	11 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 23 [
+		color=red
+		label=false
+	];
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 23 [
+		color=red
+		label=false
+	];
+	22 -> 26;
+	23 -> 26;
+}

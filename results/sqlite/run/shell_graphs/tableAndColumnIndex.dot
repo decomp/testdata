@@ -1,0 +1,45 @@
+digraph "tableAndColumnIndex" {
+	// Node definitions.
+	5 [label=entry];
+	14;
+	18;
+	30;
+	33;
+	38;
+	39;
+	40;
+	43;
+	44;
+
+	// Edge definitions.
+	5 -> 14;
+	14 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 43 [
+		color=red
+		label=false
+	];
+	18 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 39 [
+		color=red
+		label=false
+	];
+	30 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 38 [
+		color=red
+		label=false
+	];
+	33 -> 38;
+	38 -> 44;
+	39 -> 40;
+	40 -> 14;
+	43 -> 44;
+}

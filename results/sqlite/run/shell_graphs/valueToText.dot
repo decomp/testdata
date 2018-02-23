@@ -1,0 +1,103 @@
+digraph "valueToText" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	19;
+	23;
+	24;
+	25;
+	40;
+	46;
+	51;
+	59;
+	63;
+	64;
+	65;
+	68;
+	72;
+	81;
+	85;
+	86;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 68 [
+		color=red
+		label=false
+	];
+	12 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 23 [
+		color=red
+		label=false
+	];
+	19 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 25 [
+		color=red
+		label=false
+	];
+	23 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 86;
+	25 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 46 [
+		color=red
+		label=false
+	];
+	40 -> 46;
+	46 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 65 [
+		color=red
+		label=false
+	];
+	51 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 65 [
+		color=red
+		label=false
+	];
+	59 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 64 [
+		color=red
+		label=false
+	];
+	63 -> 86;
+	64 -> 65;
+	65 -> 72;
+	68 -> 72;
+	72 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 85 [
+		color=red
+		label=false
+	];
+	81 -> 86;
+	85 -> 86;
+}

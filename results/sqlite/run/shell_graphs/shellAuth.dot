@@ -1,0 +1,34 @@
+digraph "shellAuth" {
+	// Node definitions.
+	6 [label=entry];
+	34;
+	37;
+	47;
+	55;
+	60;
+	61;
+	64;
+
+	// Edge definitions.
+	6 -> 34;
+	34 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 64 [
+		color=red
+		label=false
+	];
+	37 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 55 [
+		color=red
+		label=false
+	];
+	47 -> 60;
+	55 -> 60;
+	60 -> 61;
+	61 -> 34;
+}

@@ -1,0 +1,85 @@
+digraph "destroyTable" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	17;
+	21;
+	23;
+	27;
+	30;
+	36;
+	40;
+	44;
+	46;
+	47;
+	51;
+	54;
+	55;
+	67;
+
+	// Edge definitions.
+	2 -> 14;
+	14 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 23 [
+		color=red
+		label=false
+	];
+	21 -> 23;
+	23 -> 27;
+	27 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 51 [
+		color=red
+		label=false
+	];
+	30 -> 36 [
+		color=red
+		label=false
+	];
+	30 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 46 [
+		color=red
+		label=false
+	];
+	40 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 46 [
+		color=red
+		label=false
+	];
+	44 -> 46;
+	46 -> 47;
+	47 -> 27;
+	51 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 55 [
+		color=red
+		label=false
+	];
+	55 -> 67;
+	67 -> 14;
+}

@@ -1,0 +1,114 @@
+digraph "sqlite3FkDropTable" {
+	// Node definitions.
+	3 [label=entry];
+	19;
+	24;
+	29;
+	35;
+	39;
+	42;
+	48;
+	54;
+	55;
+	56;
+	60;
+	63;
+	64;
+	70;
+	84;
+	91;
+	94;
+	97;
+	98;
+
+	// Edge definitions.
+	3 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 98 [
+		color=red
+		label=false
+	];
+	19 -> 24 [
+		color=red
+		label=false
+	];
+	19 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 29 [
+		color=red
+		label=false
+	];
+	24 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 70 [
+		color=red
+		label=false
+	];
+	35 -> 39;
+	39 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 60 [
+		color=red
+		label=false
+	];
+	42 -> 48 [
+		color=red
+		label=false
+	];
+	42 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 55 [
+		color=red
+		label=false
+	];
+	54 -> 60;
+	55 -> 56;
+	56 -> 39;
+	60 -> 63 [
+		color=red
+		label=false
+	];
+	60 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 98;
+	64 -> 70;
+	70 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 91 [
+		color=red
+		label=false
+	];
+	84 -> 91;
+	91 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 97 [
+		color=red
+		label=false
+	];
+	94 -> 97;
+	97 -> 98;
+}

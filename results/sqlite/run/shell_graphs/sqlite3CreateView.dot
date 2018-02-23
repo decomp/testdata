@@ -1,0 +1,85 @@
+digraph "sqlite3CreateView" {
+	// Node definitions.
+	8 [label=entry];
+	33;
+	35;
+	46;
+	51;
+	52;
+	68;
+	69;
+	84;
+	85;
+	96;
+	103;
+	117;
+	130;
+	133;
+	142;
+
+	// Edge definitions.
+	8 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 35 [
+		color=red
+		label=false
+	];
+	33 -> 142;
+	35 -> 46 [
+		color=red
+		label=false
+	];
+	35 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 52 [
+		color=red
+		label=false
+	];
+	51 -> 142;
+	52 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 69 [
+		color=red
+		label=false
+	];
+	68 -> 142;
+	69 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 85 [
+		color=red
+		label=false
+	];
+	84 -> 142;
+	85 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 103 [
+		color=red
+		label=false
+	];
+	96 -> 103;
+	103 -> 117;
+	117 -> 130 [
+		color=darkgreen
+		label=true
+	];
+	117 -> 133 [
+		color=red
+		label=false
+	];
+	130 -> 117;
+	133 -> 142;
+}

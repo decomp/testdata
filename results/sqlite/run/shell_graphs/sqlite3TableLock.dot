@@ -1,0 +1,100 @@
+digraph "sqlite3TableLock" {
+	// Node definitions.
+	5 [label=entry];
+	19;
+	23;
+	25;
+	29;
+	30;
+	43;
+	44;
+	45;
+	51;
+	63;
+	69;
+	75;
+	79;
+	85;
+	86;
+	89;
+	114;
+	136;
+	142;
+
+	// Edge definitions.
+	5 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 23 [
+		color=red
+		label=false
+	];
+	19 -> 25;
+	23 -> 25;
+	25 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 30 [
+		color=red
+		label=false
+	];
+	29 -> 142;
+	30 -> 43 [
+		color=red
+		label=false
+	];
+	30 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 142;
+	44 -> 45;
+	45 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 89 [
+		color=red
+		label=false
+	];
+	51 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 85 [
+		color=red
+		label=false
+	];
+	63 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 85 [
+		color=red
+		label=false
+	];
+	69 -> 75 [
+		color=red
+		label=false
+	];
+	69 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 79;
+	79 -> 142;
+	85 -> 86;
+	86 -> 45;
+	89 -> 114 [
+		color=darkgreen
+		label=true
+	];
+	89 -> 136 [
+		color=red
+		label=false
+	];
+	114 -> 142;
+	136 -> 142;
+}

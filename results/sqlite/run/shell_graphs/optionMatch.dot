@@ -1,0 +1,30 @@
+digraph "optionMatch" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	20;
+	23;
+	29;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	11 -> 29;
+	12 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 23 [
+		color=red
+		label=false
+	];
+	20 -> 23;
+	23 -> 29;
+}

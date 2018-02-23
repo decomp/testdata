@@ -1,0 +1,188 @@
+digraph "sqliteProcessJoin" {
+	// Node definitions.
+	2 [label=entry];
+	30;
+	37;
+	46;
+	49;
+	50;
+	66;
+	71;
+	76;
+	78;
+	79;
+	86;
+	101;
+	112;
+	113;
+	116;
+	117;
+	122;
+	127;
+	129;
+	134;
+	137;
+	144;
+	159;
+	164;
+	168;
+	174;
+	188;
+	195;
+	198;
+	209;
+	212;
+	213;
+	214;
+	221;
+	222;
+
+	// Edge definitions.
+	2 -> 30;
+	30 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 221 [
+		color=red
+		label=false
+	];
+	37 -> 46 [
+		color=red
+		label=false
+	];
+	37 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 50 [
+		color=red
+		label=false
+	];
+	49 -> 214;
+	50 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 117 [
+		color=red
+		label=false
+	];
+	66 -> 71 [
+		color=red
+		label=false
+	];
+	66 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 78 [
+		color=red
+		label=false
+	];
+	76 -> 222;
+	78 -> 79;
+	79 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 116 [
+		color=red
+		label=false
+	];
+	86 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 112 [
+		color=red
+		label=false
+	];
+	101 -> 112;
+	112 -> 113;
+	113 -> 79;
+	116 -> 117;
+	117 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	117 -> 129 [
+		color=red
+		label=false
+	];
+	122 -> 127 [
+		color=darkgreen
+		label=true
+	];
+	122 -> 129 [
+		color=red
+		label=false
+	];
+	127 -> 222;
+	129 -> 134 [
+		color=darkgreen
+		label=true
+	];
+	129 -> 159 [
+		color=red
+		label=false
+	];
+	134 -> 137 [
+		color=darkgreen
+		label=true
+	];
+	134 -> 144 [
+		color=red
+		label=false
+	];
+	137 -> 144;
+	144 -> 159;
+	159 -> 164 [
+		color=darkgreen
+		label=true
+	];
+	159 -> 213 [
+		color=red
+		label=false
+	];
+	164 -> 168;
+	168 -> 174 [
+		color=darkgreen
+		label=true
+	];
+	168 -> 212 [
+		color=red
+		label=false
+	];
+	174 -> 188 [
+		color=red
+		label=false
+	];
+	174 -> 195 [
+		color=darkgreen
+		label=true
+	];
+	188 -> 195 [
+		color=red
+		label=false
+	];
+	188 -> 198 [
+		color=darkgreen
+		label=true
+	];
+	195 -> 222;
+	198 -> 209;
+	209 -> 168;
+	212 -> 213;
+	213 -> 214;
+	214 -> 30;
+	221 -> 222;
+}

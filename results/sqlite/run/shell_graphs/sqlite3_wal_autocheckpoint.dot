@@ -1,0 +1,19 @@
+digraph "sqlite3_wal_autocheckpoint" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	13;
+	16;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	7 -> 16;
+	13 -> 16;
+}

@@ -1,0 +1,32 @@
+digraph "sqlite3_complete16" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	12;
+	20;
+	23;
+	24;
+	28;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 12 [
+		color=red
+		label=false
+	];
+	10 -> 28;
+	12 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 23 [
+		color=red
+		label=false
+	];
+	20 -> 24;
+	23 -> 24;
+	24 -> 28;
+}

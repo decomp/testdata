@@ -1,0 +1,21 @@
+digraph "sqlite3WhereExprAnalyze" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	13;
+	17;
+	20;
+
+	// Edge definitions.
+	2 -> 10;
+	10 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 20 [
+		color=red
+		label=false
+	];
+	13 -> 17;
+	17 -> 10;
+}

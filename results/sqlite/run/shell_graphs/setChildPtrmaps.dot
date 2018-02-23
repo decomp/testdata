@@ -1,0 +1,69 @@
+digraph "setChildPtrmaps" {
+	// Node definitions.
+	1 [label=entry];
+	23;
+	24;
+	27;
+	31;
+	33;
+	38;
+	42;
+	81;
+	87;
+	88;
+	91;
+	96;
+	111;
+	113;
+
+	// Edge definitions.
+	1 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 27;
+	24 -> 27;
+	27 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 33 [
+		color=red
+		label=false
+	];
+	31 -> 113;
+	33 -> 38;
+	38 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 91 [
+		color=red
+		label=false
+	];
+	42 -> 81 [
+		color=red
+		label=false
+	];
+	42 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 87;
+	87 -> 88;
+	88 -> 38;
+	91 -> 96 [
+		color=red
+		label=false
+	];
+	91 -> 111 [
+		color=darkgreen
+		label=true
+	];
+	96 -> 111;
+	111 -> 113;
+}

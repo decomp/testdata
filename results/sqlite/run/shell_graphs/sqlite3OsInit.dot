@@ -1,0 +1,19 @@
+digraph "sqlite3OsInit" {
+	// Node definitions.
+	0 [label=entry];
+	6;
+	7;
+	10;
+
+	// Edge definitions.
+	0 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 7 [
+		color=red
+		label=false
+	];
+	6 -> 10;
+	7 -> 10;
+}

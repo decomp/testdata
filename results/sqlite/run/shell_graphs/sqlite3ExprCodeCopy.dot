@@ -1,0 +1,17 @@
+digraph "sqlite3ExprCodeCopy" {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	22;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=red
+		label=false
+	];
+	3 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 22;
+}

@@ -1,0 +1,76 @@
+digraph "sqlite3TriggersExist" {
+	// Node definitions.
+	5 [label=entry];
+	21;
+	25;
+	27;
+	30;
+	37;
+	44;
+	51;
+	52;
+	56;
+	59;
+	62;
+	65;
+	67;
+	68;
+
+	// Edge definitions.
+	5 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 25 [
+		color=red
+		label=false
+	];
+	21 -> 25;
+	25 -> 27;
+	27 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 56 [
+		color=red
+		label=false
+	];
+	30 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 51 [
+		color=red
+		label=false
+	];
+	37 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 51 [
+		color=red
+		label=false
+	];
+	44 -> 51;
+	51 -> 52;
+	52 -> 27;
+	56 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 62 [
+		color=red
+		label=false
+	];
+	59 -> 62;
+	62 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 67 [
+		color=red
+		label=false
+	];
+	65 -> 68;
+	67 -> 68;
+}

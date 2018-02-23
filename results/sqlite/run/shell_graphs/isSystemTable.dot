@@ -1,0 +1,19 @@
+digraph "isSystemTable" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	12;
+	13;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	9 -> 13;
+	12 -> 13;
+}

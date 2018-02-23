@@ -1,0 +1,156 @@
+digraph "sqlite3GenerateRowDelete" {
+	// Node definitions.
+	11 [label=entry];
+	46;
+	56;
+	61;
+	64;
+	93;
+	100;
+	103;
+	106;
+	112;
+	121;
+	122;
+	125;
+	139;
+	149;
+	153;
+	158;
+	176;
+	180;
+	184;
+	186;
+	189;
+	193;
+	197;
+	201;
+	206;
+	210;
+
+	// Edge definitions.
+	11 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 56 [
+		color=red
+		label=false
+	];
+	46 -> 56;
+	56 -> 61 [
+		color=red
+		label=false
+	];
+	56 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 153 [
+		color=red
+		label=false
+	];
+	64 -> 93;
+	93 -> 100 [
+		color=darkgreen
+		label=true
+	];
+	93 -> 125 [
+		color=red
+		label=false
+	];
+	100 -> 103 [
+		color=red
+		label=false
+	];
+	100 -> 112 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 121 [
+		color=red
+		label=false
+	];
+	106 -> 112 [
+		color=darkgreen
+		label=true
+	];
+	106 -> 121 [
+		color=red
+		label=false
+	];
+	112 -> 121;
+	121 -> 122;
+	122 -> 93;
+	125 -> 139 [
+		color=darkgreen
+		label=true
+	];
+	125 -> 149 [
+		color=red
+		label=false
+	];
+	139 -> 149;
+	149 -> 153;
+	153 -> 158 [
+		color=darkgreen
+		label=true
+	];
+	153 -> 210 [
+		color=red
+		label=false
+	];
+	158 -> 176 [
+		color=darkgreen
+		label=true
+	];
+	158 -> 180 [
+		color=red
+		label=false
+	];
+	176 -> 180;
+	180 -> 184 [
+		color=darkgreen
+		label=true
+	];
+	180 -> 186 [
+		color=red
+		label=false
+	];
+	184 -> 186;
+	186 -> 189 [
+		color=darkgreen
+		label=true
+	];
+	186 -> 197 [
+		color=red
+		label=false
+	];
+	189 -> 193 [
+		color=darkgreen
+		label=true
+	];
+	189 -> 197 [
+		color=red
+		label=false
+	];
+	193 -> 197;
+	197 -> 201 [
+		color=darkgreen
+		label=true
+	];
+	197 -> 206 [
+		color=red
+		label=false
+	];
+	201 -> 206;
+	206 -> 210;
+}

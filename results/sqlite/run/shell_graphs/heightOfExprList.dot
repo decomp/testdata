@@ -1,0 +1,32 @@
+digraph "heightOfExprList" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	9;
+	15;
+	24;
+	27;
+	28;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 28 [
+		color=red
+		label=false
+	];
+	8 -> 9;
+	9 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 27 [
+		color=red
+		label=false
+	];
+	15 -> 24;
+	24 -> 9;
+	27 -> 28;
+}

@@ -1,0 +1,50 @@
+digraph "pagerPagecount" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	22;
+	29;
+	31;
+	45;
+	51;
+	55;
+	58;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 45 [
+		color=red
+		label=false
+	];
+	15 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 45 [
+		color=red
+		label=false
+	];
+	22 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 31 [
+		color=red
+		label=false
+	];
+	29 -> 58;
+	31 -> 45;
+	45 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 55 [
+		color=red
+		label=false
+	];
+	51 -> 55;
+	55 -> 58;
+}

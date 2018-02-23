@@ -1,0 +1,54 @@
+digraph "btreeHeapPull" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	14;
+	34;
+	41;
+	54;
+	57;
+	69;
+	70;
+	91;
+	92;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	13 -> 92;
+	14 -> 34;
+	34 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 91 [
+		color=red
+		label=false
+	];
+	41 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 57 [
+		color=red
+		label=false
+	];
+	54 -> 57;
+	57 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 70 [
+		color=red
+		label=false
+	];
+	69 -> 91;
+	70 -> 34;
+	91 -> 92;
+}

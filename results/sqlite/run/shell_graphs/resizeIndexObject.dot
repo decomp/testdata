@@ -1,0 +1,30 @@
+digraph "resizeIndexObject" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	17;
+	28;
+	29;
+	88;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 17 [
+		color=red
+		label=false
+	];
+	16 -> 88;
+	17 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 88;
+	29 -> 88;
+}

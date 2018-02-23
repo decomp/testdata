@@ -1,0 +1,41 @@
+digraph "pagerAddPageToRollbackJournal" {
+	// Node definitions.
+	1 [label=entry];
+	37;
+	39;
+	52;
+	54;
+	69;
+	71;
+	100;
+
+	// Edge definitions.
+	1 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 39 [
+		color=red
+		label=false
+	];
+	37 -> 100;
+	39 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 54 [
+		color=red
+		label=false
+	];
+	52 -> 100;
+	54 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 71 [
+		color=red
+		label=false
+	];
+	69 -> 100;
+	71 -> 100;
+}

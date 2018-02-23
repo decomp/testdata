@@ -1,0 +1,148 @@
+digraph "isDistinctRedundant" {
+	// Node definitions.
+	4 [label=entry];
+	19;
+	20;
+	31;
+	37;
+	51;
+	57;
+	63;
+	64;
+	65;
+	68;
+	72;
+	75;
+	81;
+	82;
+	83;
+	90;
+	97;
+	105;
+	106;
+	111;
+	112;
+	113;
+	114;
+	117;
+	124;
+	125;
+	126;
+	130;
+	131;
+
+	// Edge definitions.
+	4 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 20 [
+		color=red
+		label=false
+	];
+	19 -> 131;
+	20 -> 31;
+	31 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 68 [
+		color=red
+		label=false
+	];
+	37 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 64 [
+		color=red
+		label=false
+	];
+	51 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 64 [
+		color=red
+		label=false
+	];
+	57 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 64 [
+		color=red
+		label=false
+	];
+	63 -> 131;
+	64 -> 65;
+	65 -> 31;
+	68 -> 72;
+	72 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 130 [
+		color=red
+		label=false
+	];
+	75 -> 81 [
+		color=red
+		label=false
+	];
+	75 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 126;
+	82 -> 83;
+	83 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 117 [
+		color=red
+		label=false
+	];
+	90 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 113 [
+		color=red
+		label=false
+	];
+	97 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 106 [
+		color=red
+		label=false
+	];
+	105 -> 117;
+	106 -> 111 [
+		color=darkgreen
+		label=true
+	];
+	106 -> 112 [
+		color=red
+		label=false
+	];
+	111 -> 117;
+	112 -> 113;
+	113 -> 114;
+	114 -> 83;
+	117 -> 124 [
+		color=darkgreen
+		label=true
+	];
+	117 -> 125 [
+		color=red
+		label=false
+	];
+	124 -> 131;
+	125 -> 126;
+	126 -> 72;
+	130 -> 131;
+}

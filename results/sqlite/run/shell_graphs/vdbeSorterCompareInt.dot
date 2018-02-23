@@ -1,0 +1,174 @@
+digraph "vdbeSorterCompareInt" {
+	// Node definitions.
+	6 [label=entry];
+	47;
+	52;
+	57;
+	72;
+	84;
+	92;
+	93;
+	94;
+	97;
+	98;
+	101;
+	104;
+	108;
+	111;
+	112;
+	115;
+	116;
+	120;
+	121;
+	124;
+	130;
+	131;
+	132;
+	138;
+	139;
+	140;
+	141;
+	142;
+	145;
+	155;
+	163;
+	164;
+	175;
+	178;
+	179;
+
+	// Edge definitions.
+	6 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 98 [
+		color=red
+		label=false
+	];
+	47 -> 52;
+	52 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 97 [
+		color=red
+		label=false
+	];
+	57 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 93 [
+		color=red
+		label=false
+	];
+	72 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 92 [
+		color=red
+		label=false
+	];
+	84 -> 92;
+	92 -> 97;
+	93 -> 94;
+	94 -> 52;
+	97 -> 142;
+	98 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	98 -> 108 [
+		color=red
+		label=false
+	];
+	101 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	101 -> 108 [
+		color=red
+		label=false
+	];
+	104 -> 141;
+	108 -> 111 [
+		color=darkgreen
+		label=true
+	];
+	108 -> 112 [
+		color=red
+		label=false
+	];
+	111 -> 121;
+	112 -> 115 [
+		color=darkgreen
+		label=true
+	];
+	112 -> 116 [
+		color=red
+		label=false
+	];
+	115 -> 120;
+	116 -> 120;
+	120 -> 121;
+	121 -> 124 [
+		color=darkgreen
+		label=true
+	];
+	121 -> 132 [
+		color=red
+		label=false
+	];
+	124 -> 130 [
+		color=darkgreen
+		label=true
+	];
+	124 -> 131 [
+		color=red
+		label=false
+	];
+	130 -> 131;
+	131 -> 140;
+	132 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	132 -> 139 [
+		color=red
+		label=false
+	];
+	138 -> 139;
+	139 -> 140;
+	140 -> 141;
+	141 -> 142;
+	142 -> 145 [
+		color=darkgreen
+		label=true
+	];
+	142 -> 164 [
+		color=red
+		label=false
+	];
+	145 -> 155 [
+		color=darkgreen
+		label=true
+	];
+	145 -> 163 [
+		color=red
+		label=false
+	];
+	155 -> 163;
+	163 -> 179;
+	164 -> 175 [
+		color=darkgreen
+		label=true
+	];
+	164 -> 178 [
+		color=red
+		label=false
+	];
+	175 -> 178;
+	178 -> 179;
+}

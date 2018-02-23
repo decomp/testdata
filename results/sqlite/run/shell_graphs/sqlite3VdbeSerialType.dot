@@ -1,0 +1,140 @@
+digraph "sqlite3VdbeSerialType" {
+	// Node definitions.
+	3 [label=entry];
+	19;
+	21;
+	25;
+	32;
+	35;
+	37;
+	40;
+	45;
+	48;
+	53;
+	55;
+	58;
+	60;
+	63;
+	65;
+	68;
+	70;
+	73;
+	75;
+	77;
+	81;
+	83;
+	90;
+	97;
+	108;
+
+	// Edge definitions.
+	3 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 21 [
+		color=red
+		label=false
+	];
+	19 -> 108;
+	21 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 77 [
+		color=red
+		label=false
+	];
+	25 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 35 [
+		color=red
+		label=false
+	];
+	32 -> 37;
+	35 -> 37;
+	37 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 55 [
+		color=red
+		label=false
+	];
+	40 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 53 [
+		color=red
+		label=false
+	];
+	45 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 53 [
+		color=red
+		label=false
+	];
+	48 -> 108;
+	53 -> 108;
+	55 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 60 [
+		color=red
+		label=false
+	];
+	58 -> 108;
+	60 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 65 [
+		color=red
+		label=false
+	];
+	63 -> 108;
+	65 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 70 [
+		color=red
+		label=false
+	];
+	68 -> 108;
+	70 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 75 [
+		color=red
+		label=false
+	];
+	73 -> 108;
+	75 -> 108;
+	77 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 83 [
+		color=red
+		label=false
+	];
+	81 -> 108;
+	83 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 97 [
+		color=red
+		label=false
+	];
+	90 -> 97;
+	97 -> 108;
+}

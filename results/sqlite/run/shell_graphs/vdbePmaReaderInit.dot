@@ -1,0 +1,28 @@
+digraph "vdbePmaReaderInit" {
+	// Node definitions.
+	5 [label=entry];
+	20;
+	34;
+	37;
+	40;
+
+	// Edge definitions.
+	5 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 34 [
+		color=red
+		label=false
+	];
+	20 -> 34;
+	34 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 40 [
+		color=red
+		label=false
+	];
+	37 -> 40;
+}

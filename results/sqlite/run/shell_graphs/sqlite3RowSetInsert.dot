@@ -1,0 +1,43 @@
+digraph "sqlite3RowSetInsert" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	23;
+	29;
+	36;
+	40;
+	44;
+	48;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	11 -> 48;
+	12 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 40 [
+		color=red
+		label=false
+	];
+	23 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 36 [
+		color=red
+		label=false
+	];
+	29 -> 36;
+	36 -> 44;
+	40 -> 44;
+	44 -> 48;
+}

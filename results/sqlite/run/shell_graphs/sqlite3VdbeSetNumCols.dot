@@ -1,0 +1,30 @@
+digraph "sqlite3VdbeSetNumCols" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	28;
+	47;
+	48;
+	54;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 28 [
+		color=red
+		label=false
+	];
+	14 -> 28;
+	28 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 48 [
+		color=red
+		label=false
+	];
+	47 -> 54;
+	48 -> 54;
+}

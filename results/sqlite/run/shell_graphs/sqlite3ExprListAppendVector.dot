@@ -1,0 +1,118 @@
+digraph "sqlite3ExprListAppendVector" {
+	// Node definitions.
+	4 [label=entry];
+	20;
+	24;
+	25;
+	29;
+	30;
+	33;
+	34;
+	40;
+	47;
+	53;
+	54;
+	60;
+	71;
+	96;
+	97;
+	100;
+	105;
+	111;
+	114;
+	130;
+	131;
+
+	// Edge definitions.
+	4 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 24 [
+		color=red
+		label=false
+	];
+	20 -> 25;
+	24 -> 25;
+	25 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 30 [
+		color=red
+		label=false
+	];
+	29 -> 131;
+	30 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 34 [
+		color=red
+		label=false
+	];
+	33 -> 131;
+	34 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 53 [
+		color=red
+		label=false
+	];
+	40 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 53 [
+		color=red
+		label=false
+	];
+	47 -> 131;
+	53 -> 54;
+	54 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 100 [
+		color=red
+		label=false
+	];
+	60 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 96 [
+		color=red
+		label=false
+	];
+	71 -> 96;
+	96 -> 97;
+	97 -> 54;
+	100 -> 105 [
+		color=red
+		label=false
+	];
+	100 -> 130 [
+		color=darkgreen
+		label=true
+	];
+	105 -> 111 [
+		color=darkgreen
+		label=true
+	];
+	105 -> 130 [
+		color=red
+		label=false
+	];
+	111 -> 114 [
+		color=darkgreen
+		label=true
+	];
+	111 -> 130 [
+		color=red
+		label=false
+	];
+	114 -> 130;
+	130 -> 131;
+}

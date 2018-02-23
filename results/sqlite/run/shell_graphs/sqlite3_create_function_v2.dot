@@ -1,0 +1,50 @@
+digraph "sqlite3_create_function_v2" {
+	// Node definitions.
+	9 [label=entry];
+	26;
+	32;
+	35;
+	42;
+	55;
+	60;
+	66;
+	67;
+
+	// Edge definitions.
+	9 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 42 [
+		color=red
+		label=false
+	];
+	26 -> 32 [
+		color=red
+		label=false
+	];
+	26 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 67;
+	35 -> 42;
+	42 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 66 [
+		color=red
+		label=false
+	];
+	55 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 66 [
+		color=red
+		label=false
+	];
+	60 -> 66;
+	66 -> 67;
+}

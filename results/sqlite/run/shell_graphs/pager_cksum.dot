@@ -1,0 +1,19 @@
+digraph "pager_cksum" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	17;
+	28;
+
+	// Edge definitions.
+	2 -> 14;
+	14 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 28 [
+		color=red
+		label=false
+	];
+	17 -> 14;
+}

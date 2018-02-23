@@ -1,0 +1,32 @@
+digraph "autoIncrementEnd" {
+	// Node definitions.
+	1 [label=entry];
+	19;
+	22;
+	49;
+	50;
+	84;
+	88;
+
+	// Edge definitions.
+	1 -> 19;
+	19 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 88 [
+		color=red
+		label=false
+	];
+	22 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 50 [
+		color=red
+		label=false
+	];
+	49 -> 88;
+	50 -> 84;
+	84 -> 19;
+}

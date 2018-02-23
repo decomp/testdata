@@ -1,0 +1,87 @@
+digraph "autoIncBegin" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	24;
+	29;
+	33;
+	35;
+	40;
+	43;
+	49;
+	51;
+	55;
+	58;
+	66;
+	67;
+	96;
+	100;
+	102;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 100 [
+		color=red
+		label=false
+	];
+	16 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 100 [
+		color=red
+		label=false
+	];
+	24 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 33 [
+		color=red
+		label=false
+	];
+	29 -> 35;
+	33 -> 35;
+	35 -> 40;
+	40 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 49 [
+		color=red
+		label=false
+	];
+	43 -> 49;
+	49 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 55 [
+		color=red
+		label=false
+	];
+	51 -> 40;
+	55 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 96 [
+		color=red
+		label=false
+	];
+	58 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 67 [
+		color=red
+		label=false
+	];
+	66 -> 102;
+	67 -> 96;
+	96 -> 100;
+	100 -> 102;
+}

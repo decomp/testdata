@@ -1,0 +1,19 @@
+digraph "output_reset" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	14;
+	18;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 14 [
+		color=red
+		label=false
+	];
+	9 -> 18;
+	14 -> 18;
+}

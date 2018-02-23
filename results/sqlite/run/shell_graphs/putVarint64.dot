@@ -1,0 +1,62 @@
+digraph "putVarint64" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	20;
+	23;
+	34;
+	37;
+	38;
+	39;
+	50;
+	53;
+	61;
+	64;
+	73;
+	78;
+	80;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 38 [
+		color=red
+		label=false
+	];
+	13 -> 20;
+	20 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 37 [
+		color=red
+		label=false
+	];
+	23 -> 34;
+	34 -> 20;
+	37 -> 80;
+	38 -> 39;
+	39 -> 50;
+	50 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 53 [
+		color=red
+		label=false
+	];
+	53 -> 61;
+	61 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 78 [
+		color=red
+		label=false
+	];
+	64 -> 73;
+	73 -> 61;
+	78 -> 80;
+}

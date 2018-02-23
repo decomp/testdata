@@ -1,0 +1,35 @@
+digraph "countStep" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	19;
+	22;
+	27;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=red
+		label=false
+	];
+	3 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 27 [
+		color=red
+		label=false
+	];
+	19 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 27 [
+		color=red
+		label=false
+	];
+	22 -> 27;
+}

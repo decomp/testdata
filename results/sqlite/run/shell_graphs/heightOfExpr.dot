@@ -1,0 +1,28 @@
+digraph "heightOfExpr" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	14;
+	19;
+	20;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 20 [
+		color=red
+		label=false
+	];
+	7 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 19 [
+		color=red
+		label=false
+	];
+	14 -> 19;
+	19 -> 20;
+}

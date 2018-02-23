@@ -1,0 +1,41 @@
+digraph "sqlite3PagerWalSupported" {
+	// Node definitions.
+	1 [label=entry];
+	14;
+	15;
+	21;
+	26;
+	31;
+	33;
+	36;
+
+	// Edge definitions.
+	1 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 36;
+	15 -> 21 [
+		color=red
+		label=false
+	];
+	15 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 31 [
+		color=red
+		label=false
+	];
+	26 -> 31;
+	31 -> 33;
+	33 -> 36;
+}

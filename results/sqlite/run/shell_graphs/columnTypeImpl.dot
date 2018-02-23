@@ -1,0 +1,167 @@
+digraph "columnTypeImpl" {
+	// Node definitions.
+	3 [label=entry];
+	23;
+	28;
+	31;
+	35;
+	37;
+	41;
+	47;
+	59;
+	61;
+	62;
+	65;
+	71;
+	86;
+	90;
+	91;
+	94;
+	95;
+	98;
+	101;
+	109;
+	131;
+	132;
+	137;
+	140;
+	145;
+	148;
+	149;
+	165;
+	166;
+	167;
+	168;
+	192;
+	195;
+	198;
+
+	// Edge definitions.
+	3 -> 23 [label="case (x=152)"];
+	3 -> 168 [label="case (x=119)"];
+	3 -> 192 [label="default case"];
+	23 -> 28;
+	28 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 35 [
+		color=red
+		label=false
+	];
+	31 -> 35;
+	35 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 91 [
+		color=red
+		label=false
+	];
+	37 -> 41;
+	41 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 59 [
+		color=red
+		label=false
+	];
+	47 -> 59;
+	59 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 65 [
+		color=red
+		label=false
+	];
+	61 -> 62;
+	62 -> 41;
+	65 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 86 [
+		color=red
+		label=false
+	];
+	71 -> 90;
+	86 -> 90;
+	90 -> 28;
+	91 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 95 [
+		color=red
+		label=false
+	];
+	94 -> 192;
+	95 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	95 -> 132 [
+		color=red
+		label=false
+	];
+	98 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	98 -> 131 [
+		color=red
+		label=false
+	];
+	101 -> 109 [
+		color=darkgreen
+		label=true
+	];
+	101 -> 131 [
+		color=red
+		label=false
+	];
+	109 -> 131;
+	131 -> 167;
+	132 -> 137 [
+		color=darkgreen
+		label=true
+	];
+	132 -> 166 [
+		color=red
+		label=false
+	];
+	137 -> 140 [
+		color=darkgreen
+		label=true
+	];
+	137 -> 145 [
+		color=red
+		label=false
+	];
+	140 -> 145;
+	145 -> 148 [
+		color=darkgreen
+		label=true
+	];
+	145 -> 149 [
+		color=red
+		label=false
+	];
+	148 -> 165;
+	149 -> 165;
+	165 -> 166;
+	166 -> 167;
+	167 -> 192;
+	168 -> 192;
+	192 -> 195 [
+		color=darkgreen
+		label=true
+	];
+	192 -> 198 [
+		color=red
+		label=false
+	];
+	195 -> 198;
+}

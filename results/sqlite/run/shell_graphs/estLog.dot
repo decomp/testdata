@@ -1,0 +1,19 @@
+digraph "estLog" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	7;
+	13;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 7 [
+		color=red
+		label=false
+	];
+	6 -> 13;
+	7 -> 13;
+}

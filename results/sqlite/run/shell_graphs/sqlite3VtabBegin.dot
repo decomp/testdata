@@ -1,0 +1,118 @@
+digraph "sqlite3VtabBegin" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	19;
+	20;
+	23;
+	24;
+	34;
+	35;
+	41;
+	51;
+	52;
+	53;
+	56;
+	61;
+	71;
+	83;
+	88;
+	101;
+	102;
+	103;
+	104;
+	106;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 20 [
+		color=red
+		label=false
+	];
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 20 [
+		color=red
+		label=false
+	];
+	19 -> 106;
+	20 -> 23 [
+		color=red
+		label=false
+	];
+	20 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 106;
+	24 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 104 [
+		color=red
+		label=false
+	];
+	34 -> 35;
+	35 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 56 [
+		color=red
+		label=false
+	];
+	41 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 52 [
+		color=red
+		label=false
+	];
+	51 -> 106;
+	52 -> 53;
+	53 -> 35;
+	56 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 103 [
+		color=red
+		label=false
+	];
+	61 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 102 [
+		color=red
+		label=false
+	];
+	71 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 101 [
+		color=red
+		label=false
+	];
+	83 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 101 [
+		color=red
+		label=false
+	];
+	88 -> 101;
+	101 -> 102;
+	102 -> 103;
+	103 -> 104;
+	104 -> 106;
+}

@@ -1,0 +1,130 @@
+digraph "writeMasterJournal" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	19;
+	26;
+	27;
+	30;
+	37;
+	46;
+	49;
+	54;
+	59;
+	75;
+	85;
+	97;
+	110;
+	122;
+	124;
+	137;
+	143;
+	151;
+	153;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 26 [
+		color=red
+		label=false
+	];
+	13 -> 19 [
+		color=red
+		label=false
+	];
+	13 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 26 [
+		color=red
+		label=false
+	];
+	19 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 153;
+	27 -> 30;
+	30 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 49 [
+		color=red
+		label=false
+	];
+	37 -> 46;
+	46 -> 30;
+	49 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 59 [
+		color=red
+		label=false
+	];
+	54 -> 59;
+	59 -> 75 [
+		color=red
+		label=false
+	];
+	59 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 85 [
+		color=red
+		label=false
+	];
+	75 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 97 [
+		color=red
+		label=false
+	];
+	85 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 110 [
+		color=red
+		label=false
+	];
+	97 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	110 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	110 -> 124 [
+		color=red
+		label=false
+	];
+	122 -> 153;
+	124 -> 137 [
+		color=darkgreen
+		label=true
+	];
+	124 -> 151 [
+		color=red
+		label=false
+	];
+	137 -> 143 [
+		color=darkgreen
+		label=true
+	];
+	137 -> 151 [
+		color=red
+		label=false
+	];
+	143 -> 151;
+	151 -> 153;
+}

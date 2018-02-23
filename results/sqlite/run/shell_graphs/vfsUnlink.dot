@@ -1,0 +1,78 @@
+digraph "vfsUnlink" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	7;
+	11;
+	15;
+	18;
+	20;
+	25;
+	31;
+	33;
+	37;
+	43;
+	49;
+	50;
+	51;
+	52;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 7 [
+		color=red
+		label=false
+	];
+	6 -> 52;
+	7 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 15 [
+		color=red
+		label=false
+	];
+	11 -> 51;
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 50 [
+		color=red
+		label=false
+	];
+	18 -> 20;
+	20 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 31 [
+		color=red
+		label=false
+	];
+	25 -> 31;
+	31 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 37 [
+		color=red
+		label=false
+	];
+	33 -> 20;
+	37 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 49 [
+		color=red
+		label=false
+	];
+	43 -> 49;
+	49 -> 50;
+	50 -> 51;
+	51 -> 52;
+}

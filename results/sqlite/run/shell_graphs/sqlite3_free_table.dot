@@ -1,0 +1,43 @@
+digraph "sqlite3_free_table" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	15;
+	19;
+	26;
+	32;
+	33;
+	36;
+	39;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 39 [
+		color=red
+		label=false
+	];
+	7 -> 15;
+	15 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 36 [
+		color=red
+		label=false
+	];
+	19 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 32 [
+		color=red
+		label=false
+	];
+	26 -> 32;
+	32 -> 33;
+	33 -> 15;
+	36 -> 39;
+}

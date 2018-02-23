@@ -1,0 +1,122 @@
+digraph "pager_open_journal" {
+	// Node definitions.
+	1 [label=entry];
+	15;
+	19;
+	24;
+	30;
+	41;
+	42;
+	49;
+	55;
+	59;
+	64;
+	68;
+	71;
+	76;
+	87;
+	88;
+	89;
+	92;
+	103;
+	104;
+	107;
+	113;
+	116;
+	118;
+
+	// Edge definitions.
+	1 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 19 [
+		color=red
+		label=false
+	];
+	15 -> 118;
+	19 -> 24 [
+		color=red
+		label=false
+	];
+	19 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 104 [
+		color=red
+		label=false
+	];
+	30 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 42 [
+		color=red
+		label=false
+	];
+	41 -> 118;
+	42 -> 49 [
+		color=red
+		label=false
+	];
+	42 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 59 [
+		color=red
+		label=false
+	];
+	55 -> 88;
+	59 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 68 [
+		color=red
+		label=false
+	];
+	64 -> 71;
+	68 -> 71;
+	71 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 87 [
+		color=red
+		label=false
+	];
+	76 -> 87;
+	87 -> 88;
+	88 -> 89;
+	89 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	89 -> 103 [
+		color=red
+		label=false
+	];
+	92 -> 103;
+	103 -> 104;
+	104 -> 107 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 113 [
+		color=red
+		label=false
+	];
+	107 -> 116;
+	113 -> 116;
+	116 -> 118;
+}

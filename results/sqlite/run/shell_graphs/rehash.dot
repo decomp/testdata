@@ -1,0 +1,56 @@
+digraph "rehash" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	15;
+	21;
+	22;
+	30;
+	31;
+	57;
+	60;
+	76;
+	78;
+	79;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 15;
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 22 [
+		color=red
+		label=false
+	];
+	21 -> 79;
+	22 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 31 [
+		color=red
+		label=false
+	];
+	30 -> 79;
+	31 -> 57;
+	57 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 78 [
+		color=red
+		label=false
+	];
+	60 -> 76;
+	76 -> 57;
+	78 -> 79;
+}

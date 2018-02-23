@@ -1,0 +1,43 @@
+digraph "comparisonAffinity" {
+	// Node definitions.
+	1 [label=entry];
+	12;
+	18;
+	24;
+	37;
+	41;
+	42;
+	43;
+	44;
+
+	// Edge definitions.
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 18 [
+		color=red
+		label=false
+	];
+	12 -> 44;
+	18 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 37 [
+		color=red
+		label=false
+	];
+	24 -> 43;
+	37 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 42 [
+		color=red
+		label=false
+	];
+	41 -> 42;
+	42 -> 43;
+	43 -> 44;
+}

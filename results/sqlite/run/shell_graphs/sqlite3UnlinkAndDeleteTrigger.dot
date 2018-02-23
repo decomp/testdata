@@ -1,0 +1,43 @@
+digraph "sqlite3UnlinkAndDeleteTrigger" {
+	// Node definitions.
+	3 [label=entry];
+	26;
+	34;
+	39;
+	44;
+	45;
+	49;
+	55;
+	62;
+
+	// Edge definitions.
+	3 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 62 [
+		color=red
+		label=false
+	];
+	26 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 55 [
+		color=red
+		label=false
+	];
+	34 -> 39;
+	39 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 49 [
+		color=red
+		label=false
+	];
+	44 -> 45;
+	45 -> 39;
+	49 -> 55;
+	55 -> 62;
+}

@@ -1,0 +1,67 @@
+digraph "closeAllCursors" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	13;
+	18;
+	19;
+	23;
+	30;
+	36;
+	43;
+	44;
+	49;
+	59;
+	64;
+	70;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 30 [
+		color=red
+		label=false
+	];
+	9 -> 13;
+	13 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 23 [
+		color=red
+		label=false
+	];
+	18 -> 19;
+	19 -> 13;
+	23 -> 30;
+	30 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 43 [
+		color=red
+		label=false
+	];
+	36 -> 43;
+	43 -> 44;
+	44 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 59 [
+		color=red
+		label=false
+	];
+	49 -> 44;
+	59 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 70 [
+		color=red
+		label=false
+	];
+	64 -> 70;
+}

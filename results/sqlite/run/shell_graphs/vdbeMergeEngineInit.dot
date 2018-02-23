@@ -1,0 +1,62 @@
+digraph "vdbeMergeEngineInit" {
+	// Node definitions.
+	3 [label=entry];
+	17;
+	21;
+	24;
+	35;
+	43;
+	46;
+	48;
+	49;
+	52;
+	57;
+	60;
+	63;
+	66;
+	73;
+
+	// Edge definitions.
+	3 -> 17;
+	17 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 52 [
+		color=red
+		label=false
+	];
+	21 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 35 [
+		color=red
+		label=false
+	];
+	24 -> 43;
+	35 -> 43;
+	43 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 48 [
+		color=red
+		label=false
+	];
+	46 -> 73;
+	48 -> 49;
+	49 -> 17;
+	52 -> 57;
+	57 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 66 [
+		color=red
+		label=false
+	];
+	60 -> 63;
+	63 -> 57;
+	66 -> 73;
+}

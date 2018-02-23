@@ -1,0 +1,41 @@
+digraph "vdbeSortSubtaskCleanup" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	20;
+	25;
+	31;
+	36;
+	42;
+	47;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 20 [
+		color=red
+		label=false
+	];
+	15 -> 25;
+	20 -> 25;
+	25 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 36 [
+		color=red
+		label=false
+	];
+	31 -> 36;
+	36 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 47 [
+		color=red
+		label=false
+	];
+	42 -> 47;
+}

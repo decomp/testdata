@@ -1,0 +1,54 @@
+digraph "sqlite3SrcListAssignCursors" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	13;
+	19;
+	24;
+	25;
+	36;
+	43;
+	44;
+	49;
+	50;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 50 [
+		color=red
+		label=false
+	];
+	9 -> 13;
+	13 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 49 [
+		color=red
+		label=false
+	];
+	19 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 49;
+	25 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 43 [
+		color=red
+		label=false
+	];
+	36 -> 43;
+	43 -> 44;
+	44 -> 13;
+	49 -> 50;
+}

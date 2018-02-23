@@ -1,0 +1,56 @@
+digraph "sqlite3_vfs_find" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	11;
+	15;
+	18;
+	21;
+	22;
+	29;
+	30;
+	31;
+	35;
+	38;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 11 [
+		color=red
+		label=false
+	];
+	10 -> 38;
+	11 -> 15;
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 35 [
+		color=red
+		label=false
+	];
+	18 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 22 [
+		color=red
+		label=false
+	];
+	21 -> 35;
+	22 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 30 [
+		color=red
+		label=false
+	];
+	29 -> 35;
+	30 -> 31;
+	31 -> 15;
+	35 -> 38;
+}

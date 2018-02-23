@@ -1,0 +1,30 @@
+digraph "pcache1Rekey" {
+	// Node definitions.
+	4 [label=entry];
+	28;
+	33;
+	37;
+	71;
+	75;
+
+	// Edge definitions.
+	4 -> 28;
+	28 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 37 [
+		color=red
+		label=false
+	];
+	33 -> 28;
+	37 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 75 [
+		color=red
+		label=false
+	];
+	71 -> 75;
+}

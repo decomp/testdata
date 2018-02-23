@@ -1,0 +1,41 @@
+digraph "sqlite3ExprAttachSubtrees" {
+	// Node definitions.
+	4 [label=entry];
+	11;
+	16;
+	19;
+	31;
+	34;
+	46;
+	48;
+
+	// Edge definitions.
+	4 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 16 [
+		color=red
+		label=false
+	];
+	11 -> 48;
+	16 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 31 [
+		color=red
+		label=false
+	];
+	19 -> 31;
+	31 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 46 [
+		color=red
+		label=false
+	];
+	34 -> 46;
+	46 -> 48;
+}

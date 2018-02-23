@@ -1,0 +1,68 @@
+digraph "generateOutputSubroutine" {
+	// Node definitions.
+	8 [label=entry];
+	35;
+	75;
+	82;
+	83;
+	93;
+	125;
+	164;
+	172;
+	177;
+	190;
+	206;
+	222;
+	227;
+	234;
+	241;
+
+	// Edge definitions.
+	8 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 75 [
+		color=red
+		label=false
+	];
+	35 -> 75;
+	75 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 83 [
+		color=red
+		label=false
+	];
+	82 -> 241;
+	83 -> 93 [label="case (x=12)"];
+	83 -> 125 [label="case (x=11)"];
+	83 -> 164 [label="case (x=10)"];
+	83 -> 172 [label="case (x=13)"];
+	83 -> 206 [label="default case"];
+	93 -> 222;
+	125 -> 222;
+	164 -> 222;
+	172 -> 177 [
+		color=darkgreen
+		label=true
+	];
+	172 -> 190 [
+		color=red
+		label=false
+	];
+	177 -> 190;
+	190 -> 222;
+	206 -> 222;
+	222 -> 227 [
+		color=darkgreen
+		label=true
+	];
+	222 -> 234 [
+		color=red
+		label=false
+	];
+	227 -> 234;
+	234 -> 241;
+}

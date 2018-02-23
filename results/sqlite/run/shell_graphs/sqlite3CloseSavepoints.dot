@@ -1,0 +1,19 @@
+digraph "sqlite3CloseSavepoints" {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	9;
+	21;
+
+	// Edge definitions.
+	1 -> 4;
+	4 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 21 [
+		color=red
+		label=false
+	];
+	9 -> 4;
+}

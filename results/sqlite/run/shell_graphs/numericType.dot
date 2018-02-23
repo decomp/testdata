@@ -1,0 +1,30 @@
+digraph "numericType" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	17;
+	24;
+	27;
+	28;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 17 [
+		color=red
+		label=false
+	];
+	10 -> 28;
+	17 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 27 [
+		color=red
+		label=false
+	];
+	24 -> 28;
+	27 -> 28;
+}

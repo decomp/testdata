@@ -1,0 +1,32 @@
+digraph "tryToClone" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	14;
+	19;
+	24;
+	41;
+	44;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	10 -> 44;
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 24 [
+		color=red
+		label=false
+	];
+	19 -> 41;
+	24 -> 41;
+	41 -> 44;
+}

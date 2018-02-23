@@ -1,0 +1,17 @@
+digraph "sqlite3EndBenignMalloc" {
+	// Node definitions.
+	0 [label=entry];
+	3;
+	5;
+
+	// Edge definitions.
+	0 -> 3 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 5 [
+		color=red
+		label=false
+	];
+	3 -> 5;
+}

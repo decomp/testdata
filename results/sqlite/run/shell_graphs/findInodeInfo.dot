@@ -1,0 +1,78 @@
+digraph "findInodeInfo" {
+	// Node definitions.
+	2 [label=entry];
+	20;
+	24;
+	33;
+	36;
+	43;
+	45;
+	49;
+	52;
+	57;
+	58;
+	74;
+	78;
+	80;
+	85;
+	88;
+
+	// Edge definitions.
+	2 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 24 [
+		color=red
+		label=false
+	];
+	20 -> 88;
+	24 -> 33;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 43 [
+		color=red
+		label=false
+	];
+	36 -> 43;
+	43 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 49 [
+		color=red
+		label=false
+	];
+	45 -> 33;
+	49 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 80 [
+		color=red
+		label=false
+	];
+	52 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 58 [
+		color=red
+		label=false
+	];
+	57 -> 88;
+	58 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 78 [
+		color=red
+		label=false
+	];
+	74 -> 78;
+	78 -> 85;
+	80 -> 85;
+	85 -> 88;
+}

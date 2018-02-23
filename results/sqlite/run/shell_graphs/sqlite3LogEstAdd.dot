@@ -1,0 +1,63 @@
+digraph "sqlite3LogEstAdd" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	18;
+	20;
+	27;
+	32;
+	46;
+	53;
+	55;
+	62;
+	67;
+	81;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 46 [
+		color=red
+		label=false
+	];
+	11 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 20 [
+		color=red
+		label=false
+	];
+	18 -> 81;
+	20 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 32 [
+		color=red
+		label=false
+	];
+	27 -> 81;
+	32 -> 81;
+	46 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 55 [
+		color=red
+		label=false
+	];
+	53 -> 81;
+	55 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 67 [
+		color=red
+		label=false
+	];
+	62 -> 81;
+	67 -> 81;
+}

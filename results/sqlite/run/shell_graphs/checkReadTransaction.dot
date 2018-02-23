@@ -1,0 +1,19 @@
+digraph "checkReadTransaction" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	11;
+	12;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 11 [
+		color=red
+		label=false
+	];
+	9 -> 12;
+	11 -> 12;
+}

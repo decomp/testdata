@@ -1,0 +1,54 @@
+digraph "sqlite3_compileoption_used" {
+	// Node definitions.
+	1 [label=entry];
+	12;
+	15;
+	18;
+	22;
+	32;
+	44;
+	45;
+	46;
+	49;
+	50;
+
+	// Edge definitions.
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 15 [
+		color=red
+		label=false
+	];
+	12 -> 15;
+	15 -> 18;
+	18 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 49 [
+		color=red
+		label=false
+	];
+	22 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 45 [
+		color=red
+		label=false
+	];
+	32 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 45 [
+		color=red
+		label=false
+	];
+	44 -> 50;
+	45 -> 46;
+	46 -> 18;
+	49 -> 50;
+}

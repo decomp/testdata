@@ -1,0 +1,19 @@
+digraph "sqlite3VtabArgExtend" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	23;
+	41;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 23 [
+		color=red
+		label=false
+	];
+	12 -> 41;
+	23 -> 41;
+}

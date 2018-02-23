@@ -1,0 +1,101 @@
+digraph "isSimpleCount" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	19;
+	26;
+	35;
+	36;
+	55;
+	56;
+	62;
+	63;
+	68;
+	69;
+	81;
+	82;
+	88;
+	89;
+	91;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	2 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 19 [
+		color=red
+		label=false
+	];
+	12 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 26 [
+		color=red
+		label=false
+	];
+	19 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 36 [
+		color=red
+		label=false
+	];
+	35 -> 91;
+	36 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 56 [
+		color=red
+		label=false
+	];
+	55 -> 91;
+	56 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 63 [
+		color=red
+		label=false
+	];
+	62 -> 91;
+	63 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 69 [
+		color=red
+		label=false
+	];
+	68 -> 91;
+	69 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 82 [
+		color=red
+		label=false
+	];
+	81 -> 91;
+	82 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 89 [
+		color=red
+		label=false
+	];
+	88 -> 91;
+	89 -> 91;
+}

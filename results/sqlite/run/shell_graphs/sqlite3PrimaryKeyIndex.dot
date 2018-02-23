@@ -1,0 +1,32 @@
+digraph "sqlite3PrimaryKeyIndex" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	10;
+	18;
+	20;
+	21;
+	25;
+
+	// Edge definitions.
+	1 -> 7;
+	7 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 18 [
+		color=red
+		label=false
+	];
+	10 -> 18;
+	18 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 25 [
+		color=red
+		label=false
+	];
+	20 -> 21;
+	21 -> 7;
+}

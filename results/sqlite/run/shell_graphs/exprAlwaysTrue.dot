@@ -1,0 +1,30 @@
+digraph "exprAlwaysTrue" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	11;
+	15;
+	16;
+	20;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 11 [
+		color=red
+		label=false
+	];
+	10 -> 20;
+	11 -> 15 [
+		color=red
+		label=false
+	];
+	11 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 20;
+	16 -> 20;
+}

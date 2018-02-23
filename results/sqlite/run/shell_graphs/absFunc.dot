@@ -1,0 +1,49 @@
+digraph "absFunc" {
+	// Node definitions.
+	3 [label=entry];
+	14;
+	21;
+	24;
+	26;
+	29;
+	32;
+	34;
+	41;
+	44;
+	47;
+
+	// Edge definitions.
+	3 -> 14 [label="case (x=1)"];
+	3 -> 32 [label="case (x=5)"];
+	3 -> 34 [label="default case"];
+	14 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 29 [
+		color=red
+		label=false
+	];
+	21 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 26 [
+		color=red
+		label=false
+	];
+	24 -> 47;
+	26 -> 29;
+	29 -> 47;
+	32 -> 47;
+	34 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 44 [
+		color=red
+		label=false
+	];
+	41 -> 44;
+	44 -> 47;
+}

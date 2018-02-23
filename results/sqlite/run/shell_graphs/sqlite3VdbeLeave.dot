@@ -1,0 +1,19 @@
+digraph "sqlite3VdbeLeave" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	8;
+	10;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 8 [
+		color=red
+		label=false
+	];
+	7 -> 10;
+	8 -> 10;
+}

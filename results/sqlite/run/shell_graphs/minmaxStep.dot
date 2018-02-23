@@ -1,0 +1,94 @@
+digraph "minmaxStep" {
+	// Node definitions.
+	3 [label=entry];
+	21;
+	22;
+	28;
+	33;
+	35;
+	36;
+	41;
+	54;
+	57;
+	60;
+	63;
+	67;
+	69;
+	70;
+	78;
+	79;
+
+	// Edge definitions.
+	3 -> 21 [
+		color=red
+		label=false
+	];
+	3 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 79;
+	22 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 36 [
+		color=red
+		label=false
+	];
+	28 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 35 [
+		color=red
+		label=false
+	];
+	33 -> 35;
+	35 -> 79;
+	36 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 70 [
+		color=red
+		label=false
+	];
+	41 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 57 [
+		color=red
+		label=false
+	];
+	54 -> 57 [
+		color=red
+		label=false
+	];
+	54 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 60 [
+		color=red
+		label=false
+	];
+	57 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 67 [
+		color=red
+		label=false
+	];
+	63 -> 69;
+	67 -> 69;
+	69 -> 78;
+	70 -> 78;
+	78 -> 79;
+}

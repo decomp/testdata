@@ -1,0 +1,30 @@
+digraph "pcache1FreePage" {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	20;
+	25;
+	30;
+	37;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 20 [
+		color=red
+		label=false
+	];
+	11 -> 25;
+	20 -> 25;
+	25 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 37 [
+		color=red
+		label=false
+	];
+	30 -> 37;
+}

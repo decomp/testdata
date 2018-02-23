@@ -1,0 +1,17 @@
+digraph "dbMallocRawFinish" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	12;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=red
+		label=false
+	];
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 12;
+}

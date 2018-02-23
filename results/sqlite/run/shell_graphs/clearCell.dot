@@ -1,0 +1,138 @@
+digraph "clearCell" {
+	// Node definitions.
+	3 [label=entry];
+	32;
+	33;
+	52;
+	54;
+	81;
+	85;
+	88;
+	93;
+	95;
+	98;
+	104;
+	106;
+	107;
+	110;
+	115;
+	121;
+	123;
+	128;
+	131;
+	135;
+	138;
+	140;
+	142;
+	143;
+
+	// Edge definitions.
+	3 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 143;
+	33 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 54 [
+		color=red
+		label=false
+	];
+	52 -> 143;
+	54 -> 81;
+	81 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 142 [
+		color=red
+		label=false
+	];
+	85 -> 88 [
+		color=red
+		label=false
+	];
+	85 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 95 [
+		color=red
+		label=false
+	];
+	93 -> 143;
+	95 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	95 -> 107 [
+		color=red
+		label=false
+	];
+	98 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	98 -> 106 [
+		color=red
+		label=false
+	];
+	104 -> 143;
+	106 -> 107;
+	107 -> 110 [
+		color=red
+		label=false
+	];
+	107 -> 115 [
+		color=darkgreen
+		label=true
+	];
+	110 -> 115 [
+		color=darkgreen
+		label=true
+	];
+	110 -> 123 [
+		color=red
+		label=false
+	];
+	115 -> 121 [
+		color=darkgreen
+		label=true
+	];
+	115 -> 123 [
+		color=red
+		label=false
+	];
+	121 -> 128;
+	123 -> 128;
+	128 -> 131 [
+		color=darkgreen
+		label=true
+	];
+	128 -> 135 [
+		color=red
+		label=false
+	];
+	131 -> 135;
+	135 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	135 -> 140 [
+		color=red
+		label=false
+	];
+	138 -> 143;
+	140 -> 81;
+	142 -> 143;
+}

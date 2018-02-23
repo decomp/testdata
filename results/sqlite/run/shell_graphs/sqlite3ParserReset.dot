@@ -1,0 +1,28 @@
+digraph "sqlite3ParserReset" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	21;
+	31;
+	34;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 34 [
+		color=red
+		label=false
+	];
+	6 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 31 [
+		color=red
+		label=false
+	];
+	21 -> 31;
+	31 -> 34;
+}

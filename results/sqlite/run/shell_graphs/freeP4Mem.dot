@@ -1,0 +1,17 @@
+digraph "freeP4Mem" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	14;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	9 -> 14;
+}

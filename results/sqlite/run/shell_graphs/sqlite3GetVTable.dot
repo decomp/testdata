@@ -1,0 +1,32 @@
+digraph "sqlite3GetVTable" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	12;
+	18;
+	20;
+	21;
+	25;
+
+	// Edge definitions.
+	2 -> 9;
+	9 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 18 [
+		color=red
+		label=false
+	];
+	12 -> 18;
+	18 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 25 [
+		color=red
+		label=false
+	];
+	20 -> 21;
+	21 -> 9;
+}

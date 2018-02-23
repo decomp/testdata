@@ -1,0 +1,19 @@
+digraph "sqlite3MayAbort" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	12;
+	14;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 12 [
+		color=red
+		label=false
+	];
+	8 -> 14;
+	12 -> 14;
+}

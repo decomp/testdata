@@ -1,0 +1,52 @@
+digraph "unixGetTempname" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	15;
+	16;
+	36;
+	40;
+	41;
+	42;
+	48;
+	49;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 49;
+	15 -> 16;
+	16 -> 36 [
+		color=red
+		label=false
+	];
+	16 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 41 [
+		color=red
+		label=false
+	];
+	40 -> 49;
+	41 -> 42;
+	42 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 48 [
+		color=red
+		label=false
+	];
+	48 -> 49;
+}

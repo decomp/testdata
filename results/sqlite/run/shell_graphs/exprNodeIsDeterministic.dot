@@ -1,0 +1,28 @@
+digraph "exprNodeIsDeterministic" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	19;
+	22;
+	23;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 22 [
+		color=red
+		label=false
+	];
+	11 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 22 [
+		color=red
+		label=false
+	];
+	19 -> 23;
+	22 -> 23;
+}

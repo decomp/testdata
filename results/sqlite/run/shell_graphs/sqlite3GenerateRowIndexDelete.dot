@@ -1,0 +1,89 @@
+digraph "sqlite3GenerateRowIndexDelete" {
+	// Node definitions.
+	6 [label=entry];
+	28;
+	29;
+	32;
+	37;
+	40;
+	43;
+	50;
+	51;
+	55;
+	56;
+	62;
+	63;
+	82;
+	87;
+	92;
+	98;
+	104;
+
+	// Edge definitions.
+	6 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 32;
+	29 -> 32;
+	32 -> 37;
+	37 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 104 [
+		color=red
+		label=false
+	];
+	40 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 51 [
+		color=red
+		label=false
+	];
+	43 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 51 [
+		color=red
+		label=false
+	];
+	50 -> 98;
+	51 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 56 [
+		color=red
+		label=false
+	];
+	55 -> 98;
+	56 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 63 [
+		color=red
+		label=false
+	];
+	62 -> 98;
+	63 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 87 [
+		color=red
+		label=false
+	];
+	82 -> 92;
+	87 -> 92;
+	92 -> 98;
+	98 -> 37;
+}

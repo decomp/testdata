@@ -1,0 +1,19 @@
+digraph "transferParseError" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	25;
+	32;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 25 [
+		color=red
+		label=false
+	];
+	9 -> 32;
+	25 -> 32;
+}

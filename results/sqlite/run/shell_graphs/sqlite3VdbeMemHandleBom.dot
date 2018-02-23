@@ -1,0 +1,79 @@
+digraph "sqlite3VdbeMemHandleBom" {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	24;
+	28;
+	29;
+	33;
+	37;
+	38;
+	39;
+	42;
+	47;
+	89;
+	90;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 39 [
+		color=red
+		label=false
+	];
+	11 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 29 [
+		color=red
+		label=false
+	];
+	24 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 29;
+	29 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 38 [
+		color=red
+		label=false
+	];
+	33 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 38 [
+		color=red
+		label=false
+	];
+	37 -> 38;
+	38 -> 39;
+	39 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 90 [
+		color=red
+		label=false
+	];
+	42 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 89 [
+		color=red
+		label=false
+	];
+	47 -> 89;
+	89 -> 90;
+}

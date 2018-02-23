@@ -1,0 +1,63 @@
+digraph "sqlite3FkActions" {
+	// Node definitions.
+	6 [label=entry];
+	22;
+	25;
+	28;
+	31;
+	38;
+	46;
+	51;
+	52;
+	53;
+	57;
+	58;
+
+	// Edge definitions.
+	6 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 58 [
+		color=red
+		label=false
+	];
+	22 -> 25;
+	25 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 57 [
+		color=red
+		label=false
+	];
+	28 -> 31 [
+		color=red
+		label=false
+	];
+	28 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 52 [
+		color=red
+		label=false
+	];
+	38 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 51 [
+		color=red
+		label=false
+	];
+	46 -> 51;
+	51 -> 52;
+	52 -> 53;
+	53 -> 25;
+	57 -> 58;
+}

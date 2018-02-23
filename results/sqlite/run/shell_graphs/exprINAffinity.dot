@@ -1,0 +1,58 @@
+digraph "exprINAffinity" {
+	// Node definitions.
+	2 [label=entry];
+	22;
+	27;
+	28;
+	39;
+	40;
+	44;
+	52;
+	68;
+	74;
+	75;
+	78;
+	83;
+
+	// Edge definitions.
+	2 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 27 [
+		color=red
+		label=false
+	];
+	22 -> 28;
+	27 -> 28;
+	28 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 83 [
+		color=red
+		label=false
+	];
+	39 -> 40;
+	40 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 78 [
+		color=red
+		label=false
+	];
+	44 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 68 [
+		color=red
+		label=false
+	];
+	52 -> 74;
+	68 -> 74;
+	74 -> 75;
+	75 -> 40;
+	78 -> 83;
+}

@@ -1,0 +1,34 @@
+digraph "synthCollSeq" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	15;
+	27;
+	34;
+	35;
+	38;
+	39;
+
+	// Edge definitions.
+	2 -> 12;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 38 [
+		color=red
+		label=false
+	];
+	15 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 34 [
+		color=red
+		label=false
+	];
+	27 -> 39;
+	34 -> 35;
+	35 -> 12;
+	38 -> 39;
+}

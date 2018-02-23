@@ -1,0 +1,19 @@
+digraph "line_is_complete" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	10;
+	27;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 10 [
+		color=red
+		label=false
+	];
+	9 -> 27;
+	10 -> 27;
+}

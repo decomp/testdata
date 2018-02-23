@@ -1,0 +1,39 @@
+digraph "createModule" {
+	// Node definitions.
+	5 [label=entry];
+	20;
+	22;
+	29;
+	35;
+	38;
+	41;
+
+	// Edge definitions.
+	5 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 22 [
+		color=red
+		label=false
+	];
+	20 -> 29;
+	22 -> 29;
+	29 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 41 [
+		color=red
+		label=false
+	];
+	35 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 41 [
+		color=red
+		label=false
+	];
+	38 -> 41;
+}

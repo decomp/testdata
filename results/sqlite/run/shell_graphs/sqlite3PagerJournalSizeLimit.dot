@@ -1,0 +1,17 @@
+digraph "sqlite3PagerJournalSizeLimit" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	15;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	7 -> 15;
+}

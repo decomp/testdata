@@ -1,0 +1,39 @@
+digraph "sqlite3Utf16ByteLen" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	14;
+	28;
+	31;
+	54;
+	57;
+
+	// Edge definitions.
+	2 -> 10;
+	10 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 57 [
+		color=red
+		label=false
+	];
+	14 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 54 [
+		color=red
+		label=false
+	];
+	28 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 54 [
+		color=red
+		label=false
+	];
+	31 -> 54;
+	54 -> 10;
+}

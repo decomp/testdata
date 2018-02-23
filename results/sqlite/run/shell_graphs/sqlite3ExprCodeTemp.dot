@@ -1,0 +1,50 @@
+digraph "sqlite3ExprCodeTemp" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	22;
+	26;
+	31;
+	41;
+	44;
+	48;
+	49;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 31 [
+		color=red
+		label=false
+	];
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 31 [
+		color=red
+		label=false
+	];
+	22 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 31 [
+		color=red
+		label=false
+	];
+	26 -> 49;
+	31 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 44 [
+		color=red
+		label=false
+	];
+	41 -> 48;
+	44 -> 48;
+	48 -> 49;
+}

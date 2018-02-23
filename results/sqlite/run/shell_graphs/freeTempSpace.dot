@@ -1,0 +1,17 @@
+digraph "freeTempSpace" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	17;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 17 [
+		color=red
+		label=false
+	];
+	7 -> 17;
+}

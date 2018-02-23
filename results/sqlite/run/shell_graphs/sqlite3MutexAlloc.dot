@@ -1,0 +1,19 @@
+digraph "sqlite3MutexAlloc" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	7;
+	11;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=red
+		label=false
+	];
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 11;
+	7 -> 11;
+}

@@ -1,0 +1,30 @@
+digraph "robust_close" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	15;
+	19;
+	20;
+	24;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 24 [
+		color=red
+		label=false
+	];
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 19 [
+		color=red
+		label=false
+	];
+	15 -> 20;
+	19 -> 20;
+	20 -> 24;
+}

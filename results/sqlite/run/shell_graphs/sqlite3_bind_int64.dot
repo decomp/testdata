@@ -1,0 +1,17 @@
+digraph "sqlite3_bind_int64" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	30;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 30 [
+		color=red
+		label=false
+	];
+	16 -> 30;
+}

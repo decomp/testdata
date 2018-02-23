@@ -1,0 +1,39 @@
+digraph "sqlite3StringToId" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	11;
+	17;
+	25;
+	30;
+	31;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 11 [
+		color=red
+		label=false
+	];
+	8 -> 31;
+	11 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 30 [
+		color=red
+		label=false
+	];
+	17 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 30 [
+		color=red
+		label=false
+	];
+	25 -> 30;
+	30 -> 31;
+}

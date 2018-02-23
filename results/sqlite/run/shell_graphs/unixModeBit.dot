@@ -1,0 +1,32 @@
+digraph "unixModeBit" {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	21;
+	25;
+	35;
+	44;
+	45;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 21 [
+		color=red
+		label=false
+	];
+	10 -> 45;
+	21 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 35 [
+		color=red
+		label=false
+	];
+	25 -> 44;
+	35 -> 44;
+	44 -> 45;
+}

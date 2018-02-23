@@ -1,0 +1,132 @@
+digraph "generateWithRecursiveQuery" {
+	// Node definitions.
+	3 [label=entry];
+	45;
+	46;
+	77;
+	83;
+	96;
+	104;
+	105;
+	108;
+	118;
+	126;
+	130;
+	144;
+	159;
+	164;
+	167;
+	178;
+	191;
+	192;
+	202;
+	211;
+	216;
+	236;
+	241;
+	249;
+	251;
+	260;
+	266;
+	282;
+
+	// Edge definitions.
+	3 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 46 [
+		color=red
+		label=false
+	];
+	45 -> 282;
+	46 -> 77;
+	77 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 108 [
+		color=red
+		label=false
+	];
+	83 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 104 [
+		color=red
+		label=false
+	];
+	96 -> 108;
+	104 -> 105;
+	105 -> 77;
+	108 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	108 -> 126 [
+		color=red
+		label=false
+	];
+	118 -> 130;
+	126 -> 130;
+	130 -> 144 [
+		color=darkgreen
+		label=true
+	];
+	130 -> 159 [
+		color=red
+		label=false
+	];
+	144 -> 164;
+	159 -> 164;
+	164 -> 167 [
+		color=darkgreen
+		label=true
+	];
+	164 -> 178 [
+		color=red
+		label=false
+	];
+	167 -> 178;
+	178 -> 191 [
+		color=darkgreen
+		label=true
+	];
+	178 -> 192 [
+		color=red
+		label=false
+	];
+	191 -> 266;
+	192 -> 202 [
+		color=darkgreen
+		label=true
+	];
+	192 -> 211 [
+		color=red
+		label=false
+	];
+	202 -> 216;
+	211 -> 216;
+	216 -> 236 [
+		color=darkgreen
+		label=true
+	];
+	216 -> 241 [
+		color=red
+		label=false
+	];
+	236 -> 241;
+	241 -> 249 [
+		color=darkgreen
+		label=true
+	];
+	241 -> 251 [
+		color=red
+		label=false
+	];
+	249 -> 260;
+	251 -> 260;
+	260 -> 266;
+	266 -> 282;
+}

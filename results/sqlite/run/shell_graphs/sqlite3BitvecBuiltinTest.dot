@@ -1,0 +1,132 @@
+digraph "sqlite3BitvecBuiltinTest" {
+	// Node definitions.
+	2 [label=entry];
+	24;
+	27;
+	30;
+	31;
+	34;
+	41;
+	43;
+	64;
+	65;
+	67;
+	76;
+	77;
+	88;
+	105;
+	111;
+	112;
+	113;
+	114;
+	134;
+	135;
+	150;
+	154;
+	172;
+	174;
+	175;
+	178;
+	179;
+
+	// Edge definitions.
+	2 -> 24 [
+		color=red
+		label=false
+	];
+	2 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 27 [
+		color=red
+		label=false
+	];
+	24 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 31 [
+		color=red
+		label=false
+	];
+	30 -> 179;
+	31 -> 34;
+	34 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 135 [
+		color=red
+		label=false
+	];
+	41 -> 43 [label="case (x=5)"];
+	41 -> 64 [label="case (x=4)"];
+	41 -> 65 [label="default case"];
+	43 -> 67;
+	64 -> 65;
+	65 -> 67;
+	67 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 77 [
+		color=red
+		label=false
+	];
+	76 -> 77;
+	77 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 114 [
+		color=red
+		label=false
+	];
+	88 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 113 [
+		color=red
+		label=false
+	];
+	105 -> 111 [
+		color=darkgreen
+		label=true
+	];
+	105 -> 112 [
+		color=red
+		label=false
+	];
+	111 -> 179;
+	112 -> 113;
+	113 -> 134;
+	114 -> 134;
+	134 -> 34;
+	135 -> 150;
+	150 -> 154 [
+		color=darkgreen
+		label=true
+	];
+	150 -> 178 [
+		color=red
+		label=false
+	];
+	154 -> 172 [
+		color=darkgreen
+		label=true
+	];
+	154 -> 174 [
+		color=red
+		label=false
+	];
+	172 -> 178;
+	174 -> 175;
+	175 -> 150;
+	178 -> 179;
+}

@@ -1,0 +1,19 @@
+digraph "cachedCellSize" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	22;
+	26;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 22 [
+		color=red
+		label=false
+	];
+	14 -> 26;
+	22 -> 26;
+}

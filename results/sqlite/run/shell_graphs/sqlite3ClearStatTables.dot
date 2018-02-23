@@ -1,0 +1,32 @@
+digraph "sqlite3ClearStatTables" {
+	// Node definitions.
+	4 [label=entry];
+	22;
+	25;
+	36;
+	42;
+	43;
+	46;
+
+	// Edge definitions.
+	4 -> 22;
+	22 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 46 [
+		color=red
+		label=false
+	];
+	25 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 42 [
+		color=red
+		label=false
+	];
+	36 -> 42;
+	42 -> 43;
+	43 -> 22;
+}

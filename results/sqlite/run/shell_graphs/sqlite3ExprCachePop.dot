@@ -1,0 +1,32 @@
+digraph "sqlite3ExprCachePop" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	15;
+	27;
+	30;
+	33;
+	34;
+
+	// Edge definitions.
+	1 -> 8;
+	8 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 34 [
+		color=red
+		label=false
+	];
+	15 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 30 [
+		color=red
+		label=false
+	];
+	27 -> 33;
+	30 -> 33;
+	33 -> 8;
+}

@@ -1,0 +1,118 @@
+digraph "sqlite3Realloc" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	15;
+	18;
+	20;
+	23;
+	24;
+	34;
+	36;
+	39;
+	48;
+	55;
+	57;
+	64;
+	67;
+	74;
+	77;
+	83;
+	85;
+	90;
+	91;
+	93;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	12 -> 93;
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 20 [
+		color=red
+		label=false
+	];
+	18 -> 93;
+	20 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 93;
+	24 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 36 [
+		color=red
+		label=false
+	];
+	34 -> 91;
+	36 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 85 [
+		color=red
+		label=false
+	];
+	39 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 57 [
+		color=red
+		label=false
+	];
+	48 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 57 [
+		color=red
+		label=false
+	];
+	55 -> 57;
+	57 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 74 [
+		color=red
+		label=false
+	];
+	64 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 74 [
+		color=red
+		label=false
+	];
+	67 -> 74;
+	74 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 83 [
+		color=red
+		label=false
+	];
+	77 -> 83;
+	83 -> 90;
+	85 -> 90;
+	90 -> 91;
+	91 -> 93;
+}

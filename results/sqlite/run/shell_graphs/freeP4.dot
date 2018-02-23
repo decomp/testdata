@@ -1,0 +1,61 @@
+digraph "freeP4" {
+	// Node definitions.
+	3 [label=entry];
+	8;
+	12;
+	15;
+	20;
+	23;
+	24;
+	28;
+	33;
+	36;
+	40;
+	41;
+	46;
+	49;
+	50;
+
+	// Edge definitions.
+	3 -> 8 [label="case (x=-16)"];
+	3 -> 12 [label="case (x=-15)"];
+	3 -> 15 [label="case (x=-9)"];
+	3 -> 24 [label="case (x=-8)"];
+	3 -> 28 [label="case (x=-11)"];
+	3 -> 41 [label="case (x=-12)"];
+	3 -> 50 [label="default case"];
+	8 -> 50;
+	12 -> 50;
+	15 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 23 [
+		color=red
+		label=false
+	];
+	20 -> 23;
+	23 -> 50;
+	24 -> 50;
+	28 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 36 [
+		color=red
+		label=false
+	];
+	33 -> 40;
+	36 -> 40;
+	40 -> 50;
+	41 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 49 [
+		color=red
+		label=false
+	];
+	46 -> 49;
+	49 -> 50;
+}

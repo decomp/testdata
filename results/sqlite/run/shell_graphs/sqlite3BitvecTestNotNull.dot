@@ -1,0 +1,78 @@
+digraph "sqlite3BitvecTestNotNull" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	16;
+	17;
+	22;
+	42;
+	43;
+	44;
+	50;
+	66;
+	73;
+	82;
+	92;
+	93;
+	99;
+	100;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 16 [
+		color=red
+		label=false
+	];
+	15 -> 100;
+	16 -> 17;
+	17 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 44 [
+		color=red
+		label=false
+	];
+	22 -> 42 [
+		color=red
+		label=false
+	];
+	22 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 100;
+	43 -> 17;
+	44 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 66 [
+		color=red
+		label=false
+	];
+	50 -> 100;
+	66 -> 73;
+	73 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 99 [
+		color=red
+		label=false
+	];
+	82 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 93 [
+		color=red
+		label=false
+	];
+	92 -> 100;
+	93 -> 73;
+	99 -> 100;
+}

@@ -1,0 +1,16 @@
+digraph "sqliteErrorFromPosixError" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	8;
+	9;
+	11;
+
+	// Edge definitions.
+	2 -> 7 [label="case (x=37)"];
+	2 -> 8 [label="case (x=1)"];
+	2 -> 9 [label="default case"];
+	7 -> 11;
+	8 -> 11;
+	9 -> 11;
+}

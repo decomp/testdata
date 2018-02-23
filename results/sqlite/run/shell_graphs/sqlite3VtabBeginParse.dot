@@ -1,0 +1,28 @@
+digraph "sqlite3VtabBeginParse" {
+	// Node definitions.
+	5 [label=entry];
+	23;
+	24;
+	70;
+	91;
+
+	// Edge definitions.
+	5 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 91;
+	24 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 91 [
+		color=red
+		label=false
+	];
+	70 -> 91;
+}

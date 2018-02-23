@@ -1,0 +1,76 @@
+digraph "sqlite3SrcListAppend" {
+	// Node definitions.
+	4 [label=entry];
+	13;
+	19;
+	20;
+	33;
+	40;
+	45;
+	48;
+	59;
+	64;
+	65;
+	68;
+	79;
+	87;
+	89;
+
+	// Edge definitions.
+	4 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 33 [
+		color=red
+		label=false
+	];
+	13 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 20 [
+		color=red
+		label=false
+	];
+	19 -> 89;
+	20 -> 40;
+	33 -> 40;
+	40 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 48 [
+		color=red
+		label=false
+	];
+	45 -> 89;
+	48 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 65 [
+		color=red
+		label=false
+	];
+	59 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 65 [
+		color=red
+		label=false
+	];
+	64 -> 65;
+	65 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 79 [
+		color=red
+		label=false
+	];
+	68 -> 87;
+	79 -> 87;
+	87 -> 89;
+}

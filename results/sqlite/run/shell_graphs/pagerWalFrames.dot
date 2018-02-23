@@ -1,0 +1,91 @@
+digraph "pagerWalFrames" {
+	// Node definitions.
+	4 [label=entry];
+	15;
+	17;
+	21;
+	27;
+	32;
+	33;
+	37;
+	38;
+	39;
+	50;
+	52;
+	69;
+	74;
+	76;
+	79;
+	89;
+	93;
+	94;
+
+	// Edge definitions.
+	4 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 38 [
+		color=red
+		label=false
+	];
+	15 -> 17;
+	17 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 37 [
+		color=red
+		label=false
+	];
+	21 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 32 [
+		color=red
+		label=false
+	];
+	27 -> 32;
+	32 -> 33;
+	33 -> 17;
+	37 -> 39;
+	38 -> 39;
+	39 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 52 [
+		color=red
+		label=false
+	];
+	50 -> 52;
+	52 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 94 [
+		color=red
+		label=false
+	];
+	69 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 94 [
+		color=red
+		label=false
+	];
+	74 -> 76;
+	76 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 93 [
+		color=red
+		label=false
+	];
+	79 -> 89;
+	89 -> 76;
+	93 -> 94;
+}

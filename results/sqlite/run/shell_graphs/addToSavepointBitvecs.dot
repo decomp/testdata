@@ -1,0 +1,32 @@
+digraph "addToSavepointBitvecs" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	14;
+	26;
+	34;
+	35;
+	38;
+
+	// Edge definitions.
+	2 -> 8;
+	8 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 38 [
+		color=red
+		label=false
+	];
+	14 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 34 [
+		color=red
+		label=false
+	];
+	26 -> 34;
+	34 -> 35;
+	35 -> 8;
+}

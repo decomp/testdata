@@ -1,0 +1,61 @@
+digraph "sqlite3VdbeCursorMoveto" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	20;
+	25;
+	36;
+	44;
+	47;
+	54;
+	57;
+	58;
+	59;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 58 [
+		color=red
+		label=false
+	];
+	15 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 47 [
+		color=red
+		label=false
+	];
+	20 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 44 [
+		color=red
+		label=false
+	];
+	25 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 44 [
+		color=red
+		label=false
+	];
+	36 -> 59;
+	44 -> 59;
+	47 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 57 [
+		color=red
+		label=false
+	];
+	54 -> 59;
+	57 -> 58;
+	58 -> 59;
+}

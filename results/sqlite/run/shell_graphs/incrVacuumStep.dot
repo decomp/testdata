@@ -1,0 +1,199 @@
+digraph "incrVacuumStep" {
+	// Node definitions.
+	4 [label=entry];
+	26;
+	35;
+	45;
+	46;
+	52;
+	54;
+	58;
+	60;
+	64;
+	67;
+	73;
+	75;
+	77;
+	78;
+	84;
+	86;
+	89;
+	91;
+	92;
+	99;
+	102;
+	104;
+	107;
+	111;
+	113;
+	124;
+	126;
+	127;
+	128;
+	131;
+	132;
+	135;
+	144;
+	150;
+	152;
+	158;
+	159;
+
+	// Edge definitions.
+	4 -> 26 [
+		color=red
+		label=false
+	];
+	4 -> 128 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 128 [
+		color=red
+		label=false
+	];
+	35 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 46 [
+		color=red
+		label=false
+	];
+	45 -> 159;
+	46 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 54 [
+		color=red
+		label=false
+	];
+	52 -> 159;
+	54 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 60 [
+		color=red
+		label=false
+	];
+	58 -> 159;
+	60 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 78 [
+		color=red
+		label=false
+	];
+	64 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 77 [
+		color=red
+		label=false
+	];
+	67 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 75 [
+		color=red
+		label=false
+	];
+	73 -> 159;
+	75 -> 77;
+	77 -> 127;
+	78 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 86 [
+		color=red
+		label=false
+	];
+	84 -> 159;
+	86 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 91 [
+		color=red
+		label=false
+	];
+	89 -> 91;
+	91 -> 92;
+	92 -> 99 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 102 [
+		color=red
+		label=false
+	];
+	99 -> 159;
+	102 -> 104;
+	104 -> 107 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 111 [
+		color=red
+		label=false
+	];
+	107 -> 111;
+	111 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	111 -> 113 [
+		color=red
+		label=false
+	];
+	113 -> 124 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 126 [
+		color=red
+		label=false
+	];
+	124 -> 159;
+	126 -> 127;
+	127 -> 128;
+	128 -> 131 [
+		color=darkgreen
+		label=true
+	];
+	128 -> 158 [
+		color=red
+		label=false
+	];
+	131 -> 132;
+	132 -> 135;
+	135 -> 144 [
+		color=red
+		label=false
+	];
+	135 -> 150 [
+		color=darkgreen
+		label=true
+	];
+	144 -> 150;
+	150 -> 132 [
+		color=darkgreen
+		label=true
+	];
+	150 -> 152 [
+		color=red
+		label=false
+	];
+	152 -> 158;
+	158 -> 159;
+}

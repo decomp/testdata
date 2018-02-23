@@ -1,0 +1,17 @@
+digraph "sqlite3BtreeClearTable" {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	25;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 25 [
+		color=red
+		label=false
+	];
+	18 -> 25;
+}

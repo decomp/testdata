@@ -1,0 +1,61 @@
+digraph "doWalCallbacks" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	13;
+	24;
+	34;
+	37;
+	40;
+	58;
+	59;
+	60;
+	63;
+
+	// Edge definitions.
+	1 -> 7;
+	7 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 63 [
+		color=red
+		label=false
+	];
+	13 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 59 [
+		color=red
+		label=false
+	];
+	24 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 58 [
+		color=red
+		label=false
+	];
+	34 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 58 [
+		color=red
+		label=false
+	];
+	37 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 58 [
+		color=red
+		label=false
+	];
+	40 -> 58;
+	58 -> 59;
+	59 -> 60;
+	60 -> 7;
+}

@@ -1,0 +1,107 @@
+digraph "sqlite3VdbeIdxRowid" {
+	// Node definitions.
+	3 [label=entry];
+	25;
+	27;
+	33;
+	38;
+	43;
+	48;
+	53;
+	54;
+	64;
+	73;
+	82;
+	87;
+	90;
+	93;
+	94;
+	106;
+	107;
+	122;
+	124;
+
+	// Edge definitions.
+	3 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 27 [
+		color=red
+		label=false
+	];
+	25 -> 124;
+	27 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 38 [
+		color=red
+		label=false
+	];
+	33 -> 43;
+	38 -> 43;
+	43 -> 48 [
+		color=red
+		label=false
+	];
+	43 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 122;
+	54 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 73 [
+		color=red
+		label=false
+	];
+	64 -> 82;
+	73 -> 82;
+	82 -> 87 [
+		color=red
+		label=false
+	];
+	82 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	87 -> 90 [
+		color=red
+		label=false
+	];
+	87 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 94 [
+		color=red
+		label=false
+	];
+	93 -> 122;
+	94 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 107 [
+		color=red
+		label=false
+	];
+	106 -> 122;
+	107 -> 124;
+	122 -> 124;
+}

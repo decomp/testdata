@@ -1,0 +1,17 @@
+digraph "whereLoopClear" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	18;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 18 [
+		color=red
+		label=false
+	];
+	12 -> 18;
+}

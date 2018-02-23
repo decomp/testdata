@@ -1,0 +1,41 @@
+digraph "havingToWhereExprCb" {
+	// Node definitions.
+	2 [label=entry];
+	16;
+	30;
+	40;
+	63;
+	64;
+	65;
+	66;
+
+	// Edge definitions.
+	2 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 65 [
+		color=red
+		label=false
+	];
+	16 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 64 [
+		color=red
+		label=false
+	];
+	30 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 63 [
+		color=red
+		label=false
+	];
+	40 -> 63;
+	63 -> 64;
+	64 -> 66;
+	65 -> 66;
+}

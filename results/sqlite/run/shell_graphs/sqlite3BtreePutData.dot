@@ -1,0 +1,54 @@
+digraph "sqlite3BtreePutData" {
+	// Node definitions.
+	4 [label=entry];
+	16;
+	19;
+	20;
+	24;
+	26;
+	32;
+	33;
+	48;
+	49;
+	55;
+
+	// Edge definitions.
+	4 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 19 [
+		color=red
+		label=false
+	];
+	16 -> 20;
+	19 -> 20;
+	20 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 26 [
+		color=red
+		label=false
+	];
+	24 -> 55;
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 55;
+	33 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 49 [
+		color=red
+		label=false
+	];
+	48 -> 55;
+	49 -> 55;
+}

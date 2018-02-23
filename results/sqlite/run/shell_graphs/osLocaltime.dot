@@ -1,0 +1,28 @@
+digraph "osLocaltime" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	15;
+	18;
+	23;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 15;
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 23 [
+		color=red
+		label=false
+	];
+	18 -> 23;
+}

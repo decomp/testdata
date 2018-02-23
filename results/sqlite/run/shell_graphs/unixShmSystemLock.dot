@@ -1,0 +1,17 @@
+digraph "unixShmSystemLock" {
+	// Node definitions.
+	4 [label=entry];
+	21;
+	42;
+
+	// Edge definitions.
+	4 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 42 [
+		color=red
+		label=false
+	];
+	21 -> 42;
+}

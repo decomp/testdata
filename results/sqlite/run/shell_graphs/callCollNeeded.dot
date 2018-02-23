@@ -1,0 +1,50 @@
+digraph "callCollNeeded" {
+	// Node definitions.
+	3 [label=entry];
+	14;
+	20;
+	21;
+	33;
+	38;
+	47;
+	60;
+	62;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 33 [
+		color=red
+		label=false
+	];
+	14 -> 20 [
+		color=red
+		label=false
+	];
+	14 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 62;
+	21 -> 33;
+	33 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 62 [
+		color=red
+		label=false
+	];
+	38 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 60 [
+		color=red
+		label=false
+	];
+	47 -> 60;
+	60 -> 62;
+}

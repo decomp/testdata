@@ -1,0 +1,52 @@
+digraph "explainSimpleCount" {
+	// Node definitions.
+	3 [label=entry];
+	14;
+	17;
+	23;
+	31;
+	33;
+	47;
+	51;
+	52;
+	63;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 63 [
+		color=red
+		label=false
+	];
+	14 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 33 [
+		color=red
+		label=false
+	];
+	17 -> 23 [
+		color=red
+		label=false
+	];
+	17 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 31;
+	31 -> 33;
+	33 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 51 [
+		color=red
+		label=false
+	];
+	47 -> 52;
+	51 -> 52;
+	52 -> 63;
+}

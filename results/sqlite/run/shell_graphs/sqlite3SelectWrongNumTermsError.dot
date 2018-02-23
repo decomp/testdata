@@ -1,0 +1,19 @@
+digraph "sqlite3SelectWrongNumTermsError" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	12;
+	19;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	10 -> 19;
+	12 -> 19;
+}

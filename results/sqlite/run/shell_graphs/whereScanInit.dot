@@ -1,0 +1,69 @@
+digraph "whereScanInit" {
+	// Node definitions.
+	6 [label=entry];
+	29;
+	41;
+	62;
+	71;
+	72;
+	75;
+	97;
+	98;
+	99;
+	100;
+	103;
+	104;
+	105;
+	126;
+
+	// Edge definitions.
+	6 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 100 [
+		color=red
+		label=false
+	];
+	29 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 62 [
+		color=red
+		label=false
+	];
+	41 -> 99;
+	62 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 72 [
+		color=red
+		label=false
+	];
+	71 -> 98;
+	72 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 97 [
+		color=red
+		label=false
+	];
+	75 -> 97;
+	97 -> 98;
+	98 -> 99;
+	99 -> 105;
+	100 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	100 -> 104 [
+		color=red
+		label=false
+	];
+	103 -> 126;
+	104 -> 105;
+	105 -> 126;
+}

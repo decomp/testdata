@@ -1,0 +1,92 @@
+digraph "sqlite3ExprAffinity" {
+	// Node definitions.
+	1 [label=entry];
+	12;
+	13;
+	20;
+	32;
+	35;
+	40;
+	43;
+	49;
+	52;
+	55;
+	60;
+	69;
+	72;
+	90;
+	94;
+
+	// Edge definitions.
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 13 [
+		color=red
+		label=false
+	];
+	12 -> 94;
+	13 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 32 [
+		color=red
+		label=false
+	];
+	20 -> 94;
+	32 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 40 [
+		color=red
+		label=false
+	];
+	35 -> 40;
+	40 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 49 [
+		color=red
+		label=false
+	];
+	43 -> 94;
+	49 -> 52 [
+		color=red
+		label=false
+	];
+	49 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 69 [
+		color=red
+		label=false
+	];
+	55 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 69 [
+		color=red
+		label=false
+	];
+	60 -> 94;
+	69 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 90 [
+		color=red
+		label=false
+	];
+	72 -> 94;
+	90 -> 94;
+}

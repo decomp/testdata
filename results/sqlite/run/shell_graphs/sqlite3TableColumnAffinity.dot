@@ -1,0 +1,19 @@
+digraph "sqlite3TableColumnAffinity" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	17;
+	18;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 17 [
+		color=red
+		label=false
+	];
+	7 -> 18;
+	17 -> 18;
+}

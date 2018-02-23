@@ -1,0 +1,114 @@
+digraph "pagerStress" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	15;
+	21;
+	28;
+	35;
+	36;
+	43;
+	48;
+	52;
+	53;
+	60;
+	66;
+	69;
+	72;
+	76;
+	77;
+	80;
+	82;
+	86;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 86;
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 36 [
+		color=red
+		label=false
+	];
+	21 -> 28 [
+		color=red
+		label=false
+	];
+	21 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 36 [
+		color=red
+		label=false
+	];
+	35 -> 86;
+	36 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 53 [
+		color=red
+		label=false
+	];
+	43 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 52 [
+		color=red
+		label=false
+	];
+	48 -> 52;
+	52 -> 77;
+	53 -> 60 [
+		color=red
+		label=false
+	];
+	53 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 69 [
+		color=red
+		label=false
+	];
+	66 -> 69;
+	69 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 76 [
+		color=red
+		label=false
+	];
+	72 -> 76;
+	76 -> 77;
+	77 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 82 [
+		color=red
+		label=false
+	];
+	80 -> 82;
+	82 -> 86;
+}

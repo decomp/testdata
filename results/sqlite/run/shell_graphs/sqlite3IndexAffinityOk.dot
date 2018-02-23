@@ -1,0 +1,16 @@
+digraph "sqlite3IndexAffinityOk" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	17;
+	22;
+
+	// Edge definitions.
+	2 -> 11 [label="case (x=65)"];
+	2 -> 12 [label="case (x=66)"];
+	2 -> 17 [label="default case"];
+	11 -> 22;
+	12 -> 22;
+	17 -> 22;
+}

@@ -1,0 +1,21 @@
+digraph "rowSetListToTree" {
+	// Node definitions.
+	1 [label=entry];
+	14;
+	17;
+	30;
+	33;
+
+	// Edge definitions.
+	1 -> 14;
+	14 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 33 [
+		color=red
+		label=false
+	];
+	17 -> 30;
+	30 -> 14;
+}

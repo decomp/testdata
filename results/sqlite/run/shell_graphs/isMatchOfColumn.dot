@@ -1,0 +1,85 @@
+digraph "isMatchOfColumn" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	15;
+	22;
+	27;
+	28;
+	39;
+	46;
+	47;
+	48;
+	51;
+	63;
+	70;
+	71;
+	74;
+	75;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 75;
+	15 -> 22 [
+		color=red
+		label=false
+	];
+	15 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 28 [
+		color=red
+		label=false
+	];
+	27 -> 75;
+	28 -> 39 [
+		color=red
+		label=false
+	];
+	28 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 46 [
+		color=red
+		label=false
+	];
+	39 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 75;
+	47 -> 48;
+	48 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 74 [
+		color=red
+		label=false
+	];
+	51 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 70 [
+		color=red
+		label=false
+	];
+	63 -> 75;
+	70 -> 71;
+	71 -> 48;
+	74 -> 75;
+}

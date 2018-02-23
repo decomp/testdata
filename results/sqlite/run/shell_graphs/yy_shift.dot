@@ -1,0 +1,30 @@
+digraph "yy_shift" {
+	// Node definitions.
+	5 [label=entry];
+	25;
+	31;
+	34;
+	37;
+	54;
+
+	// Edge definitions.
+	5 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 31 [
+		color=red
+		label=false
+	];
+	25 -> 54;
+	31 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 37 [
+		color=red
+		label=false
+	];
+	34 -> 37;
+	37 -> 54;
+}

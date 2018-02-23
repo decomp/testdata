@@ -1,0 +1,28 @@
+digraph "sqlite3VtabCreateModule" {
+	// Node definitions.
+	5 [label=entry];
+	26;
+	58;
+	63;
+	64;
+
+	// Edge definitions.
+	5 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 64 [
+		color=red
+		label=false
+	];
+	26 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 63 [
+		color=red
+		label=false
+	];
+	58 -> 63;
+	63 -> 64;
+}

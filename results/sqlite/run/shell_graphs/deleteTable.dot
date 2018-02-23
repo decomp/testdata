@@ -1,0 +1,50 @@
+digraph "deleteTable" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	14;
+	20;
+	25;
+	30;
+	40;
+	43;
+	45;
+
+	// Edge definitions.
+	2 -> 11;
+	11 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 45 [
+		color=red
+		label=false
+	];
+	14 -> 20 [
+		color=red
+		label=false
+	];
+	14 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 40 [
+		color=red
+		label=false
+	];
+	25 -> 30 [
+		color=red
+		label=false
+	];
+	25 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 40;
+	40 -> 43;
+	43 -> 11;
+}

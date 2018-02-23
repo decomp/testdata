@@ -1,0 +1,30 @@
+digraph "sqlite3NestedParse" {
+	// Node definitions.
+	2 [label=entry];
+	17;
+	18;
+	29;
+	30;
+	57;
+
+	// Edge definitions.
+	2 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 18 [
+		color=red
+		label=false
+	];
+	17 -> 57;
+	18 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 30 [
+		color=red
+		label=false
+	];
+	29 -> 57;
+	30 -> 57;
+}

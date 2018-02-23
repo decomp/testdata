@@ -1,0 +1,61 @@
+digraph "sqlite3PagerWrite" {
+	// Node definitions.
+	1 [label=entry];
+	14;
+	22;
+	27;
+	30;
+	31;
+	36;
+	40;
+	48;
+	51;
+	54;
+
+	// Edge definitions.
+	1 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 31 [
+		color=red
+		label=false
+	];
+	14 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 31 [
+		color=red
+		label=false
+	];
+	22 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 30 [
+		color=red
+		label=false
+	];
+	27 -> 54;
+	30 -> 54;
+	31 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 40 [
+		color=red
+		label=false
+	];
+	36 -> 54;
+	40 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 51 [
+		color=red
+		label=false
+	];
+	48 -> 54;
+	51 -> 54;
+}

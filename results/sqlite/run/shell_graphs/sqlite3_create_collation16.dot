@@ -1,0 +1,17 @@
+digraph "sqlite3_create_collation16" {
+	// Node definitions.
+	5 [label=entry];
+	21;
+	31;
+
+	// Edge definitions.
+	5 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 31 [
+		color=red
+		label=false
+	];
+	21 -> 31;
+}

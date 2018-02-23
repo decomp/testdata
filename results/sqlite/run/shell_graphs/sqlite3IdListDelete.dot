@@ -1,0 +1,34 @@
+digraph "sqlite3IdListDelete" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	9;
+	10;
+	16;
+	26;
+	29;
+	38;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 9 [
+		color=red
+		label=false
+	];
+	8 -> 38;
+	9 -> 10;
+	10 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 29 [
+		color=red
+		label=false
+	];
+	16 -> 26;
+	26 -> 10;
+	29 -> 38;
+}

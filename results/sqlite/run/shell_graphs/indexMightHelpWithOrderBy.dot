@@ -1,0 +1,152 @@
+digraph "indexMightHelpWithOrderBy" {
+	// Node definitions.
+	3 [label=entry];
+	20;
+	21;
+	28;
+	29;
+	30;
+	36;
+	50;
+	56;
+	62;
+	63;
+	64;
+	71;
+	85;
+	86;
+	87;
+	90;
+	91;
+	96;
+	97;
+	104;
+	114;
+	115;
+	127;
+	128;
+	129;
+	132;
+	133;
+	134;
+	135;
+	138;
+	139;
+
+	// Edge definitions.
+	3 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 21 [
+		color=red
+		label=false
+	];
+	20 -> 139;
+	21 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 139;
+	29 -> 30;
+	30 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 138 [
+		color=red
+		label=false
+	];
+	36 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 91 [
+		color=red
+		label=false
+	];
+	50 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 91 [
+		color=red
+		label=false
+	];
+	56 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 63 [
+		color=red
+		label=false
+	];
+	62 -> 139;
+	63 -> 64;
+	64 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 90 [
+		color=red
+		label=false
+	];
+	71 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 86 [
+		color=red
+		label=false
+	];
+	85 -> 139;
+	86 -> 87;
+	87 -> 64;
+	90 -> 134;
+	91 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 133 [
+		color=red
+		label=false
+	];
+	96 -> 97;
+	97 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 132 [
+		color=red
+		label=false
+	];
+	104 -> 114 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 115 [
+		color=red
+		label=false
+	];
+	114 -> 129;
+	115 -> 127 [
+		color=darkgreen
+		label=true
+	];
+	115 -> 128 [
+		color=red
+		label=false
+	];
+	127 -> 139;
+	128 -> 129;
+	129 -> 97;
+	132 -> 133;
+	133 -> 134;
+	134 -> 135;
+	135 -> 30;
+	138 -> 139;
+}

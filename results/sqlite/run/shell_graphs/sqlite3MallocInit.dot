@@ -1,0 +1,103 @@
+digraph "sqlite3MallocInit" {
+	// Node definitions.
+	0 [label=entry];
+	8;
+	9;
+	13;
+	16;
+	19;
+	28;
+	33;
+	45;
+	48;
+	54;
+	55;
+	58;
+	61;
+	64;
+	65;
+	71;
+	72;
+
+	// Edge definitions.
+	0 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 9 [
+		color=red
+		label=false
+	];
+	8 -> 9;
+	9 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 54 [
+		color=red
+		label=false
+	];
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 54 [
+		color=red
+		label=false
+	];
+	16 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 54 [
+		color=red
+		label=false
+	];
+	19 -> 28;
+	28 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 48 [
+		color=red
+		label=false
+	];
+	33 -> 45;
+	45 -> 28;
+	48 -> 55;
+	54 -> 55;
+	55 -> 58 [
+		color=red
+		label=false
+	];
+	55 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 61 [
+		color=red
+		label=false
+	];
+	58 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 65 [
+		color=red
+		label=false
+	];
+	64 -> 65;
+	65 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 72 [
+		color=red
+		label=false
+	];
+	71 -> 72;
+}

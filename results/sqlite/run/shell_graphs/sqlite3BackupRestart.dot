@@ -1,0 +1,21 @@
+digraph "sqlite3BackupRestart" {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	8;
+	11;
+	15;
+
+	// Edge definitions.
+	1 -> 5;
+	5 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 15 [
+		color=red
+		label=false
+	];
+	8 -> 11;
+	11 -> 5;
+}

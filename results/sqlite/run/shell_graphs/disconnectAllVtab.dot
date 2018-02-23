@@ -1,0 +1,84 @@
+digraph "disconnectAllVtab" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	15;
+	33;
+	38;
+	41;
+	50;
+	53;
+	54;
+	58;
+	59;
+	60;
+	63;
+	68;
+	71;
+	80;
+	85;
+	86;
+	90;
+
+	// Edge definitions.
+	1 -> 9;
+	9 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 63 [
+		color=red
+		label=false
+	];
+	15 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 59 [
+		color=red
+		label=false
+	];
+	33 -> 38;
+	38 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 58 [
+		color=red
+		label=false
+	];
+	41 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 53 [
+		color=red
+		label=false
+	];
+	50 -> 53;
+	53 -> 54;
+	54 -> 38;
+	58 -> 59;
+	59 -> 60;
+	60 -> 9;
+	63 -> 68;
+	68 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 90 [
+		color=red
+		label=false
+	];
+	71 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 85 [
+		color=red
+		label=false
+	];
+	80 -> 85;
+	85 -> 86;
+	86 -> 68;
+}

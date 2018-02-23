@@ -1,0 +1,28 @@
+digraph "pagerSyncHotJournal" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	13;
+	16;
+	23;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=red
+		label=false
+	];
+	1 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 13;
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 23 [
+		color=red
+		label=false
+	];
+	16 -> 23;
+}

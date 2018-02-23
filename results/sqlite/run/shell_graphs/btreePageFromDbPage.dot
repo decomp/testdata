@@ -1,0 +1,17 @@
+digraph "btreePageFromDbPage" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	36;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 36 [
+		color=red
+		label=false
+	];
+	16 -> 36;
+}

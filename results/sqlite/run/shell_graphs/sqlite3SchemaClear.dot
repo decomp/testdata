@@ -1,0 +1,47 @@
+digraph "sqlite3SchemaClear" {
+	// Node definitions.
+	1 [label=entry];
+	24;
+	27;
+	32;
+	36;
+	41;
+	44;
+	50;
+	54;
+	65;
+	76;
+
+	// Edge definitions.
+	1 -> 24;
+	24 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 36 [
+		color=red
+		label=false
+	];
+	27 -> 32;
+	32 -> 24;
+	36 -> 41;
+	41 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 54 [
+		color=red
+		label=false
+	];
+	44 -> 50;
+	50 -> 41;
+	54 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 76 [
+		color=red
+		label=false
+	];
+	65 -> 76;
+}

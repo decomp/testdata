@@ -1,0 +1,30 @@
+digraph "sqlite3AddDefaultValue" {
+	// Node definitions.
+	2 [label=entry];
+	17;
+	37;
+	42;
+	80;
+	81;
+
+	// Edge definitions.
+	2 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 81 [
+		color=red
+		label=false
+	];
+	17 -> 37 [
+		color=red
+		label=false
+	];
+	17 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 80;
+	42 -> 80;
+	80 -> 81;
+}

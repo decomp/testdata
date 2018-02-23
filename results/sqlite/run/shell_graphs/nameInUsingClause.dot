@@ -1,0 +1,45 @@
+digraph "nameInUsingClause" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	10;
+	16;
+	28;
+	29;
+	30;
+	33;
+	34;
+	35;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 34 [
+		color=red
+		label=false
+	];
+	9 -> 10;
+	10 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 33 [
+		color=red
+		label=false
+	];
+	16 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 35;
+	29 -> 30;
+	30 -> 10;
+	33 -> 34;
+	34 -> 35;
+}

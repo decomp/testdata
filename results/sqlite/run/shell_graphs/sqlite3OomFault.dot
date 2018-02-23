@@ -1,0 +1,37 @@
+digraph "sqlite3OomFault" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	14;
+	21;
+	25;
+	31;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 31 [
+		color=red
+		label=false
+	];
+	8 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 31 [
+		color=red
+		label=false
+	];
+	14 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 25 [
+		color=red
+		label=false
+	];
+	21 -> 25;
+	25 -> 31;
+}

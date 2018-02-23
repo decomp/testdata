@@ -1,0 +1,26 @@
+digraph "pager_error" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	13;
+	20;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=red
+		label=false
+	];
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 20 [
+		color=red
+		label=false
+	];
+	13 -> 20;
+}

@@ -1,0 +1,41 @@
+digraph "releaseAllSavepoints" {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	10;
+	19;
+	22;
+	27;
+	33;
+	37;
+
+	// Edge definitions.
+	1 -> 4;
+	4 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 22 [
+		color=red
+		label=false
+	];
+	10 -> 19;
+	19 -> 4;
+	22 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 33 [
+		color=red
+		label=false
+	];
+	27 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 37 [
+		color=red
+		label=false
+	];
+	33 -> 37;
+}

@@ -1,0 +1,41 @@
+digraph "sqlite3VdbeRealValue" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	15;
+	22;
+	28;
+	35;
+	38;
+	39;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 15 [
+		color=red
+		label=false
+	];
+	10 -> 39;
+	15 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 28 [
+		color=red
+		label=false
+	];
+	22 -> 39;
+	28 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 38 [
+		color=red
+		label=false
+	];
+	35 -> 39;
+	38 -> 39;
+}

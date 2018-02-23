@@ -1,0 +1,32 @@
+digraph "sqlite3ResetAllSchemasOfConnection" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	12;
+	23;
+	28;
+	29;
+	32;
+
+	// Edge definitions.
+	1 -> 6;
+	6 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 32 [
+		color=red
+		label=false
+	];
+	12 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 28 [
+		color=red
+		label=false
+	];
+	23 -> 28;
+	28 -> 29;
+	29 -> 6;
+}

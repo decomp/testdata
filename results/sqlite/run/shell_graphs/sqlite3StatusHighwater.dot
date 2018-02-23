@@ -1,0 +1,17 @@
+digraph "sqlite3StatusHighwater" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	19;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 19 [
+		color=red
+		label=false
+	];
+	14 -> 19;
+}

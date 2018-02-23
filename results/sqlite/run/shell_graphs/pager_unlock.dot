@@ -1,0 +1,118 @@
+digraph "pager_unlock" {
+	// Node definitions.
+	1 [label=entry];
+	15;
+	21;
+	26;
+	33;
+	38;
+	39;
+	44;
+	51;
+	55;
+	60;
+	66;
+	69;
+	74;
+	75;
+	80;
+	86;
+	92;
+	103;
+	108;
+	113;
+	117;
+
+	// Edge definitions.
+	1 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 21 [
+		color=red
+		label=false
+	];
+	15 -> 75;
+	21 -> 26 [
+		color=red
+		label=false
+	];
+	21 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 38 [
+		color=red
+		label=false
+	];
+	33 -> 39;
+	38 -> 39;
+	39 -> 44 [
+		color=red
+		label=false
+	];
+	39 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 55 [
+		color=red
+		label=false
+	];
+	51 -> 55;
+	55 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 69 [
+		color=red
+		label=false
+	];
+	60 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 69 [
+		color=red
+		label=false
+	];
+	66 -> 69;
+	69 -> 74;
+	74 -> 75;
+	75 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 117 [
+		color=red
+		label=false
+	];
+	80 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 92 [
+		color=red
+		label=false
+	];
+	86 -> 103;
+	92 -> 103;
+	103 -> 108 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 113 [
+		color=red
+		label=false
+	];
+	108 -> 113;
+	113 -> 117;
+}

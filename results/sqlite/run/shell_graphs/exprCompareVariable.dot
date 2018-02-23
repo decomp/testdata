@@ -1,0 +1,39 @@
+digraph "exprCompareVariable" {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	34;
+	38;
+	41;
+	47;
+	50;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 50 [
+		color=red
+		label=false
+	];
+	18 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 47 [
+		color=red
+		label=false
+	];
+	34 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 41 [
+		color=red
+		label=false
+	];
+	38 -> 41;
+	41 -> 47;
+	47 -> 50;
+}

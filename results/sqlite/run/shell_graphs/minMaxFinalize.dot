@@ -1,0 +1,28 @@
+digraph "minMaxFinalize" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	14;
+	17;
+	19;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 19 [
+		color=red
+		label=false
+	];
+	9 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 17;
+	17 -> 19;
+}

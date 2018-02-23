@@ -1,0 +1,19 @@
+digraph "sqlite3VdbeAllocUnpackedRecord" {
+	// Node definitions.
+	1 [label=entry];
+	24;
+	25;
+	44;
+
+	// Edge definitions.
+	1 -> 24 [
+		color=red
+		label=false
+	];
+	1 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 44;
+	25 -> 44;
+}

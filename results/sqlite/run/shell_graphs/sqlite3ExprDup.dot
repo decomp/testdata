@@ -1,0 +1,19 @@
+digraph "sqlite3ExprDup" {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	14;
+	15;
+
+	// Edge definitions.
+	3 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 14 [
+		color=red
+		label=false
+	];
+	9 -> 15;
+	14 -> 15;
+}

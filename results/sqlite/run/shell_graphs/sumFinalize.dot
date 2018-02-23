@@ -1,0 +1,52 @@
+digraph "sumFinalize" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	14;
+	19;
+	21;
+	26;
+	31;
+	36;
+	37;
+	38;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 38 [
+		color=red
+		label=false
+	];
+	9 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 38 [
+		color=red
+		label=false
+	];
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 21 [
+		color=red
+		label=false
+	];
+	19 -> 37;
+	21 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 31 [
+		color=red
+		label=false
+	];
+	26 -> 36;
+	31 -> 36;
+	36 -> 37;
+	37 -> 38;
+}

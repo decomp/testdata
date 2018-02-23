@@ -1,0 +1,43 @@
+digraph "sqlite3_blob_reopen" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	16;
+	27;
+	28;
+	34;
+	43;
+	44;
+	52;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 16 [
+		color=red
+		label=false
+	];
+	14 -> 52;
+	16 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 28 [
+		color=red
+		label=false
+	];
+	27 -> 44;
+	28 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 43 [
+		color=red
+		label=false
+	];
+	34 -> 43;
+	43 -> 44;
+	44 -> 52;
+}

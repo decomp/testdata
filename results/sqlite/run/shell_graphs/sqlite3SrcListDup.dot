@@ -1,0 +1,91 @@
+digraph "sqlite3SrcListDup" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	17;
+	22;
+	29;
+	30;
+	41;
+	42;
+	50;
+	56;
+	122;
+	132;
+	146;
+	157;
+	165;
+	170;
+	199;
+	202;
+	204;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 17 [
+		color=red
+		label=false
+	];
+	16 -> 204;
+	17 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 29 [
+		color=red
+		label=false
+	];
+	22 -> 30;
+	29 -> 30;
+	30 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 42 [
+		color=red
+		label=false
+	];
+	41 -> 204;
+	42 -> 50;
+	50 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 202 [
+		color=red
+		label=false
+	];
+	56 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 132 [
+		color=red
+		label=false
+	];
+	122 -> 132;
+	132 -> 146 [
+		color=darkgreen
+		label=true
+	];
+	132 -> 157 [
+		color=red
+		label=false
+	];
+	146 -> 157;
+	157 -> 165 [
+		color=darkgreen
+		label=true
+	];
+	157 -> 170 [
+		color=red
+		label=false
+	];
+	165 -> 170;
+	170 -> 199;
+	199 -> 50;
+	202 -> 204;
+}

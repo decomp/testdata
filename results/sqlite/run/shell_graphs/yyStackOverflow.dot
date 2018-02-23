@@ -1,0 +1,19 @@
+digraph "yyStackOverflow" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	15;
+	17;
+
+	// Edge definitions.
+	1 -> 7;
+	7 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 17 [
+		color=red
+		label=false
+	];
+	15 -> 7;
+}

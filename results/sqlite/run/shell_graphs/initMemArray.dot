@@ -1,0 +1,19 @@
+digraph "initMemArray" {
+	// Node definitions.
+	4 [label=entry];
+	9;
+	13;
+	24;
+
+	// Edge definitions.
+	4 -> 9;
+	9 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 24 [
+		color=red
+		label=false
+	];
+	13 -> 9;
+}

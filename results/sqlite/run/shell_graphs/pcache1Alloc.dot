@@ -1,0 +1,50 @@
+digraph "pcache1Alloc" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	15;
+	26;
+	28;
+	31;
+	37;
+	44;
+	45;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 28 [
+		color=red
+		label=false
+	];
+	8 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 26 [
+		color=red
+		label=false
+	];
+	15 -> 26;
+	26 -> 28;
+	28 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 45 [
+		color=red
+		label=false
+	];
+	31 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 44 [
+		color=red
+		label=false
+	];
+	37 -> 44;
+	44 -> 45;
+}

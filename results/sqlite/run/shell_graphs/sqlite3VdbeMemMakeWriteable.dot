@@ -1,0 +1,79 @@
+digraph "sqlite3VdbeMemMakeWriteable" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	17;
+	21;
+	22;
+	23;
+	28;
+	36;
+	44;
+	45;
+	69;
+	70;
+	77;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 70 [
+		color=red
+		label=false
+	];
+	10 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 21 [
+		color=red
+		label=false
+	];
+	17 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 23 [
+		color=red
+		label=false
+	];
+	21 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 23 [
+		color=red
+		label=false
+	];
+	22 -> 77;
+	23 -> 28 [
+		color=red
+		label=false
+	];
+	23 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 69 [
+		color=red
+		label=false
+	];
+	36 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 45 [
+		color=red
+		label=false
+	];
+	44 -> 77;
+	45 -> 69;
+	69 -> 70;
+	70 -> 77;
+}

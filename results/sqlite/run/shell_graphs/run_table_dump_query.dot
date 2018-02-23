@@ -1,0 +1,159 @@
+digraph "run_table_dump_query" {
+	// Node definitions.
+	3 [label=entry];
+	20;
+	23;
+	36;
+	41;
+	43;
+	48;
+	51;
+	54;
+	60;
+	68;
+	72;
+	80;
+	83;
+	86;
+	87;
+	88;
+	94;
+	100;
+	106;
+	108;
+	110;
+	113;
+	118;
+	123;
+	128;
+	131;
+	136;
+	149;
+	154;
+	155;
+	157;
+
+	// Edge definitions.
+	3 -> 20 [
+		color=red
+		label=false
+	];
+	3 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 23 [
+		color=red
+		label=false
+	];
+	20 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 41 [
+		color=red
+		label=false
+	];
+	36 -> 41;
+	41 -> 157;
+	43 -> 48;
+	48 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 131 [
+		color=red
+		label=false
+	];
+	51 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 60 [
+		color=red
+		label=false
+	];
+	54 -> 60;
+	60 -> 68;
+	68 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 83 [
+		color=red
+		label=false
+	];
+	72 -> 80;
+	80 -> 68;
+	83 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 87 [
+		color=red
+		label=false
+	];
+	86 -> 87;
+	87 -> 88;
+	88 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 108 [
+		color=red
+		label=false
+	];
+	94 -> 100 [
+		color=red
+		label=false
+	];
+	94 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	100 -> 106;
+	106 -> 108;
+	108 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	108 -> 113 [
+		color=red
+		label=false
+	];
+	110 -> 88;
+	113 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 123 [
+		color=red
+		label=false
+	];
+	118 -> 128;
+	123 -> 128;
+	128 -> 48;
+	131 -> 136 [
+		color=darkgreen
+		label=true
+	];
+	131 -> 155 [
+		color=red
+		label=false
+	];
+	136 -> 149 [
+		color=darkgreen
+		label=true
+	];
+	136 -> 154 [
+		color=red
+		label=false
+	];
+	149 -> 154;
+	154 -> 155;
+	155 -> 157;
+}

@@ -1,0 +1,67 @@
+digraph "sqlite3DefaultRowEst" {
+	// Node definitions.
+	1 [label=entry];
+	16;
+	17;
+	22;
+	35;
+	42;
+	48;
+	51;
+	62;
+	69;
+	74;
+	77;
+	83;
+	90;
+
+	// Edge definitions.
+	1 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 17 [
+		color=red
+		label=false
+	];
+	16 -> 22;
+	17 -> 22;
+	22 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 42 [
+		color=red
+		label=false
+	];
+	35 -> 42;
+	42 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 51 [
+		color=red
+		label=false
+	];
+	48 -> 51;
+	51 -> 62;
+	62 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 77 [
+		color=red
+		label=false
+	];
+	69 -> 74;
+	74 -> 62;
+	77 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 90 [
+		color=red
+		label=false
+	];
+	83 -> 90;
+}

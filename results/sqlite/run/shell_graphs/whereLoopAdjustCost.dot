@@ -1,0 +1,78 @@
+digraph "whereLoopAdjustCost" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	11;
+	12;
+	15;
+	25;
+	26;
+	32;
+	33;
+	38;
+	52;
+	57;
+	71;
+	72;
+	73;
+	77;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 11 [
+		color=red
+		label=false
+	];
+	10 -> 77;
+	11 -> 12;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 77 [
+		color=red
+		label=false
+	];
+	15 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 73;
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 73;
+	33 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 52 [
+		color=red
+		label=false
+	];
+	38 -> 72;
+	52 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 71 [
+		color=red
+		label=false
+	];
+	57 -> 71;
+	71 -> 72;
+	72 -> 73;
+	73 -> 12;
+}

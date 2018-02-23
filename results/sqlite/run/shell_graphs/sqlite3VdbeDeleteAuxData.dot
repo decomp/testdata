@@ -1,0 +1,79 @@
+digraph "sqlite3VdbeDeleteAuxData" {
+	// Node definitions.
+	4 [label=entry];
+	10;
+	14;
+	19;
+	25;
+	30;
+	35;
+	43;
+	48;
+	55;
+	63;
+	66;
+	67;
+
+	// Edge definitions.
+	4 -> 10;
+	10 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 67 [
+		color=red
+		label=false
+	];
+	14 -> 19 [
+		color=red
+		label=false
+	];
+	14 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 63 [
+		color=red
+		label=false
+	];
+	25 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 63 [
+		color=red
+		label=false
+	];
+	30 -> 35 [
+		color=red
+		label=false
+	];
+	30 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 43 [
+		color=red
+		label=false
+	];
+	35 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 55 [
+		color=red
+		label=false
+	];
+	48 -> 55;
+	55 -> 66;
+	63 -> 66;
+	66 -> 10;
+}

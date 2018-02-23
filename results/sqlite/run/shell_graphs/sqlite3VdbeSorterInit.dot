@@ -1,0 +1,177 @@
+digraph "sqlite3VdbeSorterInit" {
+	// Node definitions.
+	3 [label=entry];
+	21;
+	24;
+	25;
+	30;
+	60;
+	61;
+	82;
+	85;
+	102;
+	134;
+	141;
+	150;
+	153;
+	157;
+	175;
+	178;
+	183;
+	186;
+	188;
+	189;
+	197;
+	201;
+	204;
+	210;
+	225;
+	226;
+	227;
+	228;
+	239;
+	245;
+	254;
+	257;
+	258;
+
+	// Edge definitions.
+	3 -> 21 [
+		color=red
+		label=false
+	];
+	3 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 30;
+	25 -> 30;
+	30 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 61 [
+		color=red
+		label=false
+	];
+	60 -> 258;
+	61 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 102 [
+		color=red
+		label=false
+	];
+	82 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 102 [
+		color=red
+		label=false
+	];
+	85 -> 102;
+	102 -> 134;
+	134 -> 141 [
+		color=darkgreen
+		label=true
+	];
+	134 -> 153 [
+		color=red
+		label=false
+	];
+	141 -> 150;
+	150 -> 134;
+	153 -> 157 [
+		color=red
+		label=false
+	];
+	153 -> 228 [
+		color=darkgreen
+		label=true
+	];
+	157 -> 175 [
+		color=darkgreen
+		label=true
+	];
+	157 -> 178 [
+		color=red
+		label=false
+	];
+	175 -> 183;
+	178 -> 183;
+	183 -> 186 [
+		color=darkgreen
+		label=true
+	];
+	183 -> 188 [
+		color=red
+		label=false
+	];
+	186 -> 189;
+	188 -> 189;
+	189 -> 197 [
+		color=darkgreen
+		label=true
+	];
+	189 -> 201 [
+		color=red
+		label=false
+	];
+	197 -> 204;
+	201 -> 204;
+	204 -> 210 [
+		color=darkgreen
+		label=true
+	];
+	204 -> 227 [
+		color=red
+		label=false
+	];
+	210 -> 225 [
+		color=red
+		label=false
+	];
+	210 -> 226 [
+		color=darkgreen
+		label=true
+	];
+	225 -> 226;
+	226 -> 227;
+	227 -> 228;
+	228 -> 239 [
+		color=darkgreen
+		label=true
+	];
+	228 -> 257 [
+		color=red
+		label=false
+	];
+	239 -> 245 [
+		color=red
+		label=false
+	];
+	239 -> 254 [
+		color=darkgreen
+		label=true
+	];
+	245 -> 254 [
+		color=darkgreen
+		label=true
+	];
+	245 -> 257 [
+		color=red
+		label=false
+	];
+	254 -> 257;
+	257 -> 258;
+}

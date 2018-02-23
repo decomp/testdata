@@ -1,0 +1,67 @@
+digraph "sqlite3AddCollateType" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	15;
+	29;
+	30;
+	35;
+	56;
+	59;
+	68;
+	81;
+	82;
+	86;
+	87;
+	90;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 90;
+	15 -> 29 [
+		color=red
+		label=false
+	];
+	15 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 90;
+	30 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 87 [
+		color=red
+		label=false
+	];
+	35 -> 56;
+	56 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 86 [
+		color=red
+		label=false
+	];
+	59 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 81 [
+		color=red
+		label=false
+	];
+	68 -> 81;
+	81 -> 82;
+	82 -> 56;
+	86 -> 90;
+	87 -> 90;
+}

@@ -1,0 +1,28 @@
+digraph "sqlite3BtreeUpdateMeta" {
+	// Node definitions.
+	3 [label=entry];
+	27;
+	37;
+	42;
+	43;
+
+	// Edge definitions.
+	3 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 43 [
+		color=red
+		label=false
+	];
+	27 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 42 [
+		color=red
+		label=false
+	];
+	37 -> 42;
+	42 -> 43;
+}

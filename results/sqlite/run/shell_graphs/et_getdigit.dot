@@ -1,0 +1,19 @@
+digraph "et_getdigit" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	31;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	11 -> 31;
+	12 -> 31;
+}

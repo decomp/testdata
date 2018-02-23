@@ -1,0 +1,32 @@
+digraph "sqlite3SrcListShiftJoinType" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	11;
+	14;
+	31;
+	34;
+	40;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 40 [
+		color=red
+		label=false
+	];
+	6 -> 11;
+	11 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 34 [
+		color=red
+		label=false
+	];
+	14 -> 31;
+	31 -> 11;
+	34 -> 40;
+}

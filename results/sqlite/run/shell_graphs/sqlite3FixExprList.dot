@@ -1,0 +1,45 @@
+digraph "sqlite3FixExprList" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	11;
+	15;
+	21;
+	28;
+	29;
+	30;
+	35;
+	36;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 11 [
+		color=red
+		label=false
+	];
+	10 -> 36;
+	11 -> 15;
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 35 [
+		color=red
+		label=false
+	];
+	21 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 36;
+	29 -> 30;
+	30 -> 15;
+	35 -> 36;
+}

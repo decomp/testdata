@@ -1,0 +1,81 @@
+digraph "sqlite3_backup_init" {
+	// Node definitions.
+	4 [label=entry];
+	19;
+	21;
+	26;
+	28;
+	29;
+	32;
+	59;
+	64;
+	71;
+	74;
+	75;
+	78;
+	85;
+
+	// Edge definitions.
+	4 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 21 [
+		color=red
+		label=false
+	];
+	19 -> 29;
+	21 -> 26 [
+		color=red
+		label=false
+	];
+	21 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 28;
+	28 -> 29;
+	29 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 75 [
+		color=red
+		label=false
+	];
+	32 -> 59 [
+		color=red
+		label=false
+	];
+	32 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 64 [
+		color=red
+		label=false
+	];
+	59 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 74 [
+		color=red
+		label=false
+	];
+	71 -> 74;
+	74 -> 75;
+	75 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 85 [
+		color=red
+		label=false
+	];
+	78 -> 85;
+}

@@ -1,0 +1,41 @@
+digraph "applyNumericAffinity" {
+	// Node definitions.
+	2 [label=entry];
+	20;
+	21;
+	31;
+	42;
+	55;
+	57;
+	58;
+
+	// Edge definitions.
+	2 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 21 [
+		color=red
+		label=false
+	];
+	20 -> 58;
+	21 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 42 [
+		color=red
+		label=false
+	];
+	31 -> 58;
+	42 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 57 [
+		color=red
+		label=false
+	];
+	55 -> 57;
+	57 -> 58;
+}

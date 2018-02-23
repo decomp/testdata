@@ -1,0 +1,17 @@
+digraph "sqlite3ExprCheckHeight" {
+	// Node definitions.
+	2 [label=entry];
+	16;
+	19;
+
+	// Edge definitions.
+	2 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 19 [
+		color=red
+		label=false
+	];
+	16 -> 19;
+}

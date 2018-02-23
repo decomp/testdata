@@ -1,0 +1,19 @@
+digraph "selectOpName" {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	6;
+	7;
+	8;
+	9;
+
+	// Edge definitions.
+	1 -> 5 [label="case (x=116)"];
+	1 -> 6 [label="case (x=118)"];
+	1 -> 7 [label="case (x=117)"];
+	1 -> 8 [label="default case"];
+	5 -> 9;
+	6 -> 9;
+	7 -> 9;
+	8 -> 9;
+}

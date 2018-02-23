@@ -1,0 +1,19 @@
+digraph "sqlite3DbMallocRaw" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	13;
+	17;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	9 -> 17;
+	13 -> 17;
+}

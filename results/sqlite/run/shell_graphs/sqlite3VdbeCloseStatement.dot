@@ -1,0 +1,28 @@
+digraph "sqlite3VdbeCloseStatement" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	17;
+	21;
+	22;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 21 [
+		color=red
+		label=false
+	];
+	12 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 21 [
+		color=red
+		label=false
+	];
+	17 -> 22;
+	21 -> 22;
+}

@@ -1,0 +1,30 @@
+digraph "unixAccess" {
+	// Node definitions.
+	4 [label=entry];
+	13;
+	19;
+	23;
+	27;
+	35;
+
+	// Edge definitions.
+	4 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 27 [
+		color=red
+		label=false
+	];
+	13 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 23 [
+		color=red
+		label=false
+	];
+	19 -> 23;
+	23 -> 35;
+	27 -> 35;
+}

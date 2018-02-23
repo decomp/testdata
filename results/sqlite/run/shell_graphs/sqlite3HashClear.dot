@@ -1,0 +1,19 @@
+digraph "sqlite3HashClear" {
+	// Node definitions.
+	1 [label=entry];
+	18;
+	21;
+	28;
+
+	// Edge definitions.
+	1 -> 18;
+	18 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 28 [
+		color=red
+		label=false
+	];
+	21 -> 18;
+}

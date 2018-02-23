@@ -1,0 +1,76 @@
+digraph "vdbeSorterListToPMA" {
+	// Node definitions.
+	2 [label=entry];
+	21;
+	27;
+	30;
+	46;
+	49;
+	53;
+	56;
+	81;
+	84;
+	103;
+	106;
+	107;
+	109;
+	117;
+
+	// Edge definitions.
+	2 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 27 [
+		color=red
+		label=false
+	];
+	21 -> 27;
+	27 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 46 [
+		color=red
+		label=false
+	];
+	30 -> 46;
+	46 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 53 [
+		color=red
+		label=false
+	];
+	49 -> 53;
+	53 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 117 [
+		color=red
+		label=false
+	];
+	56 -> 81;
+	81 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 109 [
+		color=red
+		label=false
+	];
+	84 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 106 [
+		color=red
+		label=false
+	];
+	103 -> 106;
+	106 -> 107;
+	107 -> 81;
+	109 -> 117;
+}

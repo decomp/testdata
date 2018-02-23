@@ -1,0 +1,157 @@
+digraph "whereLoopFindLesser" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	12;
+	22;
+	32;
+	33;
+	39;
+	45;
+	51;
+	57;
+	69;
+	70;
+	82;
+	92;
+	102;
+	112;
+	113;
+	125;
+	135;
+	145;
+	146;
+	147;
+	152;
+	154;
+
+	// Edge definitions.
+	2 -> 9;
+	9 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 152 [
+		color=red
+		label=false
+	];
+	12 -> 22 [
+		color=red
+		label=false
+	];
+	12 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 147;
+	33 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 70 [
+		color=red
+		label=false
+	];
+	39 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 70 [
+		color=red
+		label=false
+	];
+	45 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 70 [
+		color=red
+		label=false
+	];
+	51 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 70 [
+		color=red
+		label=false
+	];
+	57 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 70 [
+		color=red
+		label=false
+	];
+	69 -> 152;
+	70 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 113 [
+		color=red
+		label=false
+	];
+	82 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 113 [
+		color=red
+		label=false
+	];
+	92 -> 102 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 113 [
+		color=red
+		label=false
+	];
+	102 -> 112 [
+		color=darkgreen
+		label=true
+	];
+	102 -> 113 [
+		color=red
+		label=false
+	];
+	112 -> 154;
+	113 -> 125 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 146 [
+		color=red
+		label=false
+	];
+	125 -> 135 [
+		color=darkgreen
+		label=true
+	];
+	125 -> 146 [
+		color=red
+		label=false
+	];
+	135 -> 145 [
+		color=darkgreen
+		label=true
+	];
+	135 -> 146 [
+		color=red
+		label=false
+	];
+	145 -> 152;
+	146 -> 147;
+	147 -> 9;
+	152 -> 154;
+}

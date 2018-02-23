@@ -1,0 +1,30 @@
+digraph "cellSizePtrNoPayload" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	19;
+	23;
+	25;
+	26;
+
+	// Edge definitions.
+	2 -> 12;
+	12 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 23 [
+		color=red
+		label=false
+	];
+	19 -> 23;
+	23 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 12;
+}

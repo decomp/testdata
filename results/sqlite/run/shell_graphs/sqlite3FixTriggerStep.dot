@@ -1,0 +1,54 @@
+digraph "sqlite3FixTriggerStep" {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	9;
+	16;
+	17;
+	24;
+	25;
+	32;
+	33;
+	37;
+	38;
+
+	// Edge definitions.
+	2 -> 6;
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 37 [
+		color=red
+		label=false
+	];
+	9 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 17 [
+		color=red
+		label=false
+	];
+	16 -> 38;
+	17 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 38;
+	25 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 38;
+	33 -> 6;
+	37 -> 38;
+}

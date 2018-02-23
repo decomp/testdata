@@ -1,0 +1,19 @@
+digraph "walEncodeFrame" {
+	// Node definitions.
+	5 [label=entry];
+	27;
+	63;
+	66;
+
+	// Edge definitions.
+	5 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 63 [
+		color=red
+		label=false
+	];
+	27 -> 66;
+	63 -> 66;
+}

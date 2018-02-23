@@ -1,0 +1,19 @@
+digraph "sqlite3VdbeSorterRowkey" {
+	// Node definitions.
+	2 [label=entry];
+	19;
+	20;
+	39;
+
+	// Edge definitions.
+	2 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 20 [
+		color=red
+		label=false
+	];
+	19 -> 39;
+	20 -> 39;
+}

@@ -1,0 +1,61 @@
+digraph "walIndexTryHdr" {
+	// Node definitions.
+	2 [label=entry];
+	25;
+	26;
+	31;
+	32;
+	41;
+	48;
+	49;
+	56;
+	78;
+	79;
+
+	// Edge definitions.
+	2 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 79;
+	26 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 32 [
+		color=red
+		label=false
+	];
+	31 -> 79;
+	32 -> 41 [
+		color=red
+		label=false
+	];
+	32 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 49 [
+		color=red
+		label=false
+	];
+	48 -> 79;
+	49 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 78 [
+		color=red
+		label=false
+	];
+	56 -> 78;
+	78 -> 79;
+}

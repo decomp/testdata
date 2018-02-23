@@ -1,0 +1,19 @@
+digraph "walUnlockShared" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	10;
+	16;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 10 [
+		color=red
+		label=false
+	];
+	9 -> 16;
+	10 -> 16;
+}

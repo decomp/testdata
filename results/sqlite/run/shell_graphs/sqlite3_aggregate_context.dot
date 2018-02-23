@@ -1,0 +1,19 @@
+digraph "sqlite3_aggregate_context" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	18;
+	24;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 18 [
+		color=red
+		label=false
+	];
+	14 -> 24;
+	18 -> 24;
+}

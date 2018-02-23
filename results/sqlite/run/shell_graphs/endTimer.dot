@@ -1,0 +1,17 @@
+digraph "endTimer" {
+	// Node definitions.
+	0 [label=entry];
+	5;
+	18;
+
+	// Edge definitions.
+	0 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 18 [
+		color=red
+		label=false
+	];
+	5 -> 18;
+}

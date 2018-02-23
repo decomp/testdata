@@ -1,0 +1,17 @@
+digraph "sqlite3TriggerUpdateStep" {
+	// Node definitions.
+	5 [label=entry];
+	17;
+	31;
+
+	// Edge definitions.
+	5 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 31 [
+		color=red
+		label=false
+	];
+	17 -> 31;
+}

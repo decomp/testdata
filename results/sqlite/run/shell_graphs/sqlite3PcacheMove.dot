@@ -1,0 +1,26 @@
+digraph "sqlite3PcacheMove" {
+	// Node definitions.
+	2 [label=entry];
+	29;
+	36;
+	38;
+
+	// Edge definitions.
+	2 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 38 [
+		color=red
+		label=false
+	];
+	29 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 38 [
+		color=red
+		label=false
+	];
+	36 -> 38;
+}

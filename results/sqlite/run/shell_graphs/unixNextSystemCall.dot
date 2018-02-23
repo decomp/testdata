@@ -1,0 +1,71 @@
+digraph "unixNextSystemCall" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	11;
+	14;
+	23;
+	24;
+	25;
+	28;
+	29;
+	32;
+	35;
+	42;
+	48;
+	49;
+	52;
+	53;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 29 [
+		color=red
+		label=false
+	];
+	10 -> 11;
+	11 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 28 [
+		color=red
+		label=false
+	];
+	14 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 28;
+	24 -> 25;
+	25 -> 11;
+	28 -> 29;
+	29 -> 32;
+	32 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 52 [
+		color=red
+		label=false
+	];
+	35 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 48 [
+		color=red
+		label=false
+	];
+	42 -> 53;
+	48 -> 49;
+	49 -> 32;
+	52 -> 53;
+}

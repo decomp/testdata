@@ -1,0 +1,111 @@
+digraph "tryToCloneSchema" {
+	// Node definitions.
+	4 [label=entry];
+	24;
+	36;
+	37;
+	41;
+	55;
+	61;
+	64;
+	69;
+	71;
+	74;
+	87;
+	99;
+	100;
+	104;
+	118;
+	124;
+	127;
+	132;
+	134;
+	135;
+	136;
+
+	// Edge definitions.
+	4 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 36 [
+		color=red
+		label=false
+	];
+	24 -> 136;
+	36 -> 37;
+	37 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 71 [
+		color=red
+		label=false
+	];
+	41 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 61 [
+		color=red
+		label=false
+	];
+	55 -> 61;
+	61 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 69 [
+		color=red
+		label=false
+	];
+	64 -> 69;
+	69 -> 37;
+	71 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 135 [
+		color=red
+		label=false
+	];
+	74 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 99 [
+		color=red
+		label=false
+	];
+	87 -> 136;
+	99 -> 100;
+	100 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	100 -> 134 [
+		color=red
+		label=false
+	];
+	104 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 124 [
+		color=red
+		label=false
+	];
+	118 -> 124;
+	124 -> 127 [
+		color=darkgreen
+		label=true
+	];
+	124 -> 132 [
+		color=red
+		label=false
+	];
+	127 -> 132;
+	132 -> 100;
+	134 -> 135;
+	135 -> 136;
+}

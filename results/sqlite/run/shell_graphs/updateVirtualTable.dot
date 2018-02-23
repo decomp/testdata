@@ -1,0 +1,134 @@
+digraph "updateVirtualTable" {
+	// Node definitions.
+	8 [label=entry];
+	82;
+	83;
+	90;
+	95;
+	101;
+	102;
+	109;
+	116;
+	133;
+	142;
+	143;
+	146;
+	152;
+	160;
+	163;
+	164;
+	179;
+	182;
+	187;
+	191;
+	199;
+	202;
+	203;
+	214;
+	215;
+	217;
+	223;
+	234;
+	236;
+
+	// Edge definitions.
+	8 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 83 [
+		color=red
+		label=false
+	];
+	82 -> 236;
+	83 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 95 [
+		color=red
+		label=false
+	];
+	90 -> 101;
+	95 -> 101;
+	101 -> 102;
+	102 -> 109 [
+		color=darkgreen
+		label=true
+	];
+	102 -> 146 [
+		color=red
+		label=false
+	];
+	109 -> 116 [
+		color=darkgreen
+		label=true
+	];
+	109 -> 133 [
+		color=red
+		label=false
+	];
+	116 -> 142;
+	133 -> 142;
+	142 -> 143;
+	143 -> 102;
+	146 -> 152 [
+		color=darkgreen
+		label=true
+	];
+	146 -> 164 [
+		color=red
+		label=false
+	];
+	152 -> 160 [
+		color=darkgreen
+		label=true
+	];
+	152 -> 163 [
+		color=red
+		label=false
+	];
+	160 -> 163;
+	163 -> 179;
+	164 -> 179;
+	179 -> 182 [
+		color=darkgreen
+		label=true
+	];
+	179 -> 203 [
+		color=red
+		label=false
+	];
+	182 -> 187;
+	187 -> 191 [
+		color=darkgreen
+		label=true
+	];
+	187 -> 202 [
+		color=red
+		label=false
+	];
+	191 -> 199;
+	199 -> 187;
+	202 -> 203;
+	203 -> 214 [
+		color=darkgreen
+		label=true
+	];
+	203 -> 215 [
+		color=red
+		label=false
+	];
+	214 -> 217;
+	215 -> 217;
+	217 -> 223 [
+		color=darkgreen
+		label=true
+	];
+	217 -> 234 [
+		color=red
+		label=false
+	];
+	223 -> 236;
+	234 -> 236;
+}

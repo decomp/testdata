@@ -1,0 +1,52 @@
+digraph "sqlite3_uri_parameter" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	12;
+	13;
+	20;
+	25;
+	37;
+	39;
+	46;
+	47;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=red
+		label=false
+	];
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 13 [
+		color=red
+		label=false
+	];
+	12 -> 47;
+	13 -> 20;
+	20 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 46 [
+		color=red
+		label=false
+	];
+	25 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 39 [
+		color=red
+		label=false
+	];
+	37 -> 47;
+	39 -> 20;
+	46 -> 47;
+}

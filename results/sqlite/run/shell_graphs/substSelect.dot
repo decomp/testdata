@@ -1,0 +1,67 @@
+digraph "substSelect" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	13;
+	14;
+	50;
+	53;
+	66;
+	72;
+	73;
+	78;
+	79;
+	82;
+	87;
+	89;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=red
+		label=false
+	];
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 89;
+	13 -> 14;
+	14 -> 50;
+	50 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 78 [
+		color=red
+		label=false
+	];
+	53 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 72 [
+		color=red
+		label=false
+	];
+	66 -> 72;
+	72 -> 73;
+	73 -> 50;
+	78 -> 79;
+	79 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 87 [
+		color=red
+		label=false
+	];
+	82 -> 87;
+	87 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	87 -> 89 [
+		color=red
+		label=false
+	];
+}

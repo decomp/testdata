@@ -1,0 +1,50 @@
+digraph "btreeRestoreCursorPosition" {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	15;
+	28;
+	43;
+	49;
+	52;
+	53;
+	55;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 15 [
+		color=red
+		label=false
+	];
+	11 -> 55;
+	15 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 53 [
+		color=red
+		label=false
+	];
+	28 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 52 [
+		color=red
+		label=false
+	];
+	43 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 52 [
+		color=red
+		label=false
+	];
+	49 -> 52;
+	52 -> 53;
+	53 -> 55;
+}

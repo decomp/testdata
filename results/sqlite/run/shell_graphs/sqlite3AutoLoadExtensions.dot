@@ -1,0 +1,65 @@
+digraph "sqlite3AutoLoadExtensions" {
+	// Node definitions.
+	1 [label=entry];
+	12;
+	13;
+	14;
+	17;
+	23;
+	24;
+	31;
+	35;
+	41;
+	45;
+	47;
+	50;
+
+	// Edge definitions.
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 13 [
+		color=red
+		label=false
+	];
+	12 -> 50;
+	13 -> 14;
+	14 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 50 [
+		color=red
+		label=false
+	];
+	17 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 31;
+	24 -> 31;
+	31 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 45 [
+		color=red
+		label=false
+	];
+	35 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 45 [
+		color=red
+		label=false
+	];
+	41 -> 45;
+	45 -> 47;
+	47 -> 14;
+}

@@ -1,0 +1,46 @@
+digraph "sqlite3VdbeCheckFk" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	21;
+	24;
+	29;
+	35;
+	36;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 21 [
+		color=red
+		label=false
+	];
+	12 -> 21 [
+		color=red
+		label=false
+	];
+	12 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 24 [
+		color=red
+		label=false
+	];
+	21 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 35 [
+		color=red
+		label=false
+	];
+	29 -> 36;
+	35 -> 36;
+}

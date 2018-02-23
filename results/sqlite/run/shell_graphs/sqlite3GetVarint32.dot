@@ -1,0 +1,43 @@
+digraph "sqlite3GetVarint32" {
+	// Node definitions.
+	2 [label=entry];
+	21;
+	30;
+	43;
+	54;
+	63;
+	65;
+	69;
+	71;
+
+	// Edge definitions.
+	2 -> 21 [
+		color=red
+		label=false
+	];
+	2 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 71;
+	30 -> 43 [
+		color=red
+		label=false
+	];
+	30 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 71;
+	54 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 65 [
+		color=red
+		label=false
+	];
+	63 -> 69;
+	65 -> 69;
+	69 -> 71;
+}

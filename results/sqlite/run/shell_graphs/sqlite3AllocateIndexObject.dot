@@ -1,0 +1,17 @@
+digraph "sqlite3AllocateIndexObject" {
+	// Node definitions.
+	4 [label=entry];
+	44;
+	97;
+
+	// Edge definitions.
+	4 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 97 [
+		color=red
+		label=false
+	];
+	44 -> 97;
+}

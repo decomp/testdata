@@ -1,0 +1,94 @@
+digraph "sqlite3VdbeChangeP4" {
+	// Node definitions.
+	4 [label=entry];
+	18;
+	21;
+	25;
+	26;
+	29;
+	34;
+	43;
+	49;
+	54;
+	57;
+	66;
+	69;
+	80;
+	83;
+	84;
+	85;
+
+	// Edge definitions.
+	4 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 26 [
+		color=red
+		label=false
+	];
+	18 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 25 [
+		color=red
+		label=false
+	];
+	21 -> 25;
+	25 -> 85;
+	26 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 34 [
+		color=red
+		label=false
+	];
+	29 -> 34;
+	34 -> 43 [
+		color=red
+		label=false
+	];
+	34 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 54 [
+		color=red
+		label=false
+	];
+	49 -> 85;
+	54 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 66 [
+		color=red
+		label=false
+	];
+	57 -> 85;
+	66 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 84 [
+		color=red
+		label=false
+	];
+	69 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 83 [
+		color=red
+		label=false
+	];
+	80 -> 83;
+	83 -> 84;
+	84 -> 85;
+}

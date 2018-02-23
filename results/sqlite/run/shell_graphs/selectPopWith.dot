@@ -1,0 +1,37 @@
+digraph "selectPopWith" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	19;
+	26;
+	32;
+	33;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 33 [
+		color=red
+		label=false
+	];
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 33 [
+		color=red
+		label=false
+	];
+	19 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 32 [
+		color=red
+		label=false
+	];
+	26 -> 32;
+	32 -> 33;
+}

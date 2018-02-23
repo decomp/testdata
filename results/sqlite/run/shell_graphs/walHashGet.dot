@@ -1,0 +1,30 @@
+digraph "walHashGet" {
+	// Node definitions.
+	5 [label=entry];
+	20;
+	26;
+	29;
+	36;
+	44;
+
+	// Edge definitions.
+	5 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 44 [
+		color=red
+		label=false
+	];
+	20 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 29 [
+		color=red
+		label=false
+	];
+	26 -> 36;
+	29 -> 36;
+	36 -> 44;
+}

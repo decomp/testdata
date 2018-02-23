@@ -1,0 +1,34 @@
+digraph "sqlite3PCachePercentDirty" {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	14;
+	17;
+	21;
+	24;
+	32;
+	33;
+
+	// Edge definitions.
+	1 -> 11;
+	11 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 21 [
+		color=red
+		label=false
+	];
+	14 -> 17;
+	17 -> 11;
+	21 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 32 [
+		color=red
+		label=false
+	];
+	24 -> 33;
+	32 -> 33;
+}

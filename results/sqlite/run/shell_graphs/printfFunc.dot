@@ -1,0 +1,26 @@
+digraph "printfFunc" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	22;
+	42;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 42 [
+		color=red
+		label=false
+	];
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 42 [
+		color=red
+		label=false
+	];
+	22 -> 42;
+}

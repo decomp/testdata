@@ -1,0 +1,30 @@
+digraph "resolveAttachExpr" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	14;
+	18;
+	21;
+	22;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 22 [
+		color=red
+		label=false
+	];
+	8 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 18 [
+		color=red
+		label=false
+	];
+	14 -> 21;
+	18 -> 21;
+	21 -> 22;
+}

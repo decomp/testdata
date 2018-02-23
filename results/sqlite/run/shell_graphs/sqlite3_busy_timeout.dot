@@ -1,0 +1,19 @@
+digraph "sqlite3_busy_timeout" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	15;
+	18;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	7 -> 18;
+	15 -> 18;
+}

@@ -1,0 +1,41 @@
+digraph "btreeEnterAll" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	12;
+	23;
+	29;
+	31;
+	32;
+	35;
+
+	// Edge definitions.
+	1 -> 6;
+	6 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 35 [
+		color=red
+		label=false
+	];
+	12 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 31 [
+		color=red
+		label=false
+	];
+	23 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 31 [
+		color=red
+		label=false
+	];
+	29 -> 31;
+	31 -> 32;
+	32 -> 6;
+}

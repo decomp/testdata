@@ -1,0 +1,17 @@
+digraph "sqlite3VMPrintf" {
+	// Node definitions.
+	3 [label=entry];
+	24;
+	26;
+
+	// Edge definitions.
+	3 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 26 [
+		color=red
+		label=false
+	];
+	24 -> 26;
+}

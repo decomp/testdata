@@ -1,0 +1,28 @@
+digraph "sqlite3SrcListLookup" {
+	// Node definitions.
+	2 [label=entry];
+	24;
+	29;
+	34;
+	35;
+
+	// Edge definitions.
+	2 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 29 [
+		color=red
+		label=false
+	];
+	24 -> 29;
+	29 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 35 [
+		color=red
+		label=false
+	];
+	34 -> 35;
+}

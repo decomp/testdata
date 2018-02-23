@@ -1,0 +1,54 @@
+digraph "multiSelectValues" {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	15;
+	16;
+	22;
+	23;
+	24;
+	27;
+	42;
+	43;
+	51;
+
+	// Edge definitions.
+	3 -> 10;
+	10 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 16 [
+		color=red
+		label=false
+	];
+	15 -> 23;
+	16 -> 22;
+	22 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 23 [
+		color=red
+		label=false
+	];
+	23 -> 24;
+	24 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 51 [
+		color=red
+		label=false
+	];
+	27 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 43 [
+		color=red
+		label=false
+	];
+	42 -> 51;
+	43 -> 24;
+}

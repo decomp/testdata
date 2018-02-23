@@ -1,0 +1,50 @@
+digraph "sqlite3CodeRowTrigger" {
+	// Node definitions.
+	9 [label=entry];
+	21;
+	24;
+	31;
+	38;
+	45;
+	52;
+	53;
+	57;
+
+	// Edge definitions.
+	9 -> 21;
+	21 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 57 [
+		color=red
+		label=false
+	];
+	24 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 52 [
+		color=red
+		label=false
+	];
+	31 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 52 [
+		color=red
+		label=false
+	];
+	38 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 52 [
+		color=red
+		label=false
+	];
+	45 -> 52;
+	52 -> 53;
+	53 -> 21;
+}

@@ -1,0 +1,30 @@
+digraph "robust_ftruncate" {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	12;
+	15;
+	19;
+	21;
+
+	// Edge definitions.
+	2 -> 6;
+	6 -> 12;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 19 [
+		color=red
+		label=false
+	];
+	15 -> 19;
+	19 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 21 [
+		color=red
+		label=false
+	];
+}

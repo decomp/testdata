@@ -1,0 +1,32 @@
+digraph "vdbeSorterJoinAll" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	18;
+	28;
+	30;
+	31;
+	34;
+
+	// Edge definitions.
+	2 -> 15;
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 34 [
+		color=red
+		label=false
+	];
+	18 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 30 [
+		color=red
+		label=false
+	];
+	28 -> 30;
+	30 -> 31;
+	31 -> 15;
+}

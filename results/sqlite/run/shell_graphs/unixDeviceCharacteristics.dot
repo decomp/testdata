@@ -1,0 +1,17 @@
+digraph "unixDeviceCharacteristics" {
+	// Node definitions.
+	1 [label=entry];
+	13;
+	16;
+
+	// Edge definitions.
+	1 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 16 [
+		color=red
+		label=false
+	];
+	13 -> 16;
+}

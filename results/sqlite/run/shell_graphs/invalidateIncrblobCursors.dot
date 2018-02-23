@@ -1,0 +1,72 @@
+digraph "invalidateIncrblobCursors" {
+	// Node definitions.
+	4 [label=entry];
+	15;
+	16;
+	24;
+	27;
+	34;
+	42;
+	45;
+	52;
+	55;
+	56;
+	57;
+	61;
+
+	// Edge definitions.
+	4 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 16 [
+		color=red
+		label=false
+	];
+	15 -> 61;
+	16 -> 24;
+	24 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 61 [
+		color=red
+		label=false
+	];
+	27 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 56 [
+		color=red
+		label=false
+	];
+	34 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 55 [
+		color=red
+		label=false
+	];
+	42 -> 45 [
+		color=red
+		label=false
+	];
+	42 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 55 [
+		color=red
+		label=false
+	];
+	52 -> 55;
+	55 -> 56;
+	56 -> 57;
+	57 -> 24;
+}

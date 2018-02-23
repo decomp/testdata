@@ -1,0 +1,19 @@
+digraph "sqlite3ColumnType" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	14;
+	24;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	12 -> 24;
+	14 -> 24;
+}

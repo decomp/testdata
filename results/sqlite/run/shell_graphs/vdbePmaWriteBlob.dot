@@ -1,0 +1,52 @@
+digraph "vdbePmaWriteBlob" {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	13;
+	18;
+	20;
+	31;
+	39;
+	68;
+	110;
+	114;
+
+	// Edge definitions.
+	3 -> 10;
+	10 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 18 [
+		color=red
+		label=false
+	];
+	13 -> 18;
+	18 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 114 [
+		color=red
+		label=false
+	];
+	20 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 39 [
+		color=red
+		label=false
+	];
+	31 -> 39;
+	39 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 110 [
+		color=red
+		label=false
+	];
+	68 -> 110;
+	110 -> 10;
+}

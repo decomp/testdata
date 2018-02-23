@@ -1,0 +1,48 @@
+digraph "sqlite3DropTriggerPtr" {
+	// Node definitions.
+	2 [label=entry];
+	37;
+	38;
+	50;
+	56;
+	57;
+	61;
+	82;
+
+	// Edge definitions.
+	2 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 38 [
+		color=red
+		label=false
+	];
+	37 -> 38;
+	38 -> 50 [
+		color=red
+		label=false
+	];
+	38 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 57 [
+		color=red
+		label=false
+	];
+	56 -> 82;
+	57 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 82 [
+		color=red
+		label=false
+	];
+	61 -> 82;
+}

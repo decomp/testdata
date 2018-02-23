@@ -1,0 +1,48 @@
+digraph "findCollSeqEntry" {
+	// Node definitions.
+	3 [label=entry];
+	17;
+	20;
+	32;
+	79;
+	84;
+	85;
+	86;
+
+	// Edge definitions.
+	3 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 86 [
+		color=red
+		label=false
+	];
+	17 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 86 [
+		color=red
+		label=false
+	];
+	20 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 85 [
+		color=red
+		label=false
+	];
+	32 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 84 [
+		color=red
+		label=false
+	];
+	79 -> 84;
+	84 -> 85;
+	85 -> 86;
+}

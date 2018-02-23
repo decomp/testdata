@@ -1,0 +1,64 @@
+digraph "lengthFunc" {
+	// Node definitions.
+	3 [label=entry];
+	14;
+	20;
+	27;
+	28;
+	29;
+	33;
+	41;
+	42;
+	48;
+	51;
+	52;
+	53;
+	56;
+	58;
+
+	// Edge definitions.
+	3 -> 14 [label="case (x=2)"];
+	3 -> 20 [label="case (x=3)"];
+	3 -> 56 [label="default case"];
+	14 -> 58;
+	20 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 28 [
+		color=red
+		label=false
+	];
+	27 -> 58;
+	28 -> 29;
+	29 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 53 [
+		color=red
+		label=false
+	];
+	33 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 52 [
+		color=red
+		label=false
+	];
+	41 -> 42;
+	42 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 51 [
+		color=red
+		label=false
+	];
+	48 -> 42;
+	51 -> 52;
+	52 -> 29;
+	53 -> 58;
+	56 -> 58;
+}

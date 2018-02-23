@@ -1,0 +1,41 @@
+digraph "getLockingMode" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	10;
+	11;
+	15;
+	16;
+	17;
+	18;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 17 [
+		color=red
+		label=false
+	];
+	6 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 11 [
+		color=red
+		label=false
+	];
+	10 -> 18;
+	11 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 16 [
+		color=red
+		label=false
+	];
+	15 -> 18;
+	16 -> 17;
+	17 -> 18;
+}

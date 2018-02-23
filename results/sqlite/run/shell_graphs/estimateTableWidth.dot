@@ -1,0 +1,32 @@
+digraph "estimateTableWidth" {
+	// Node definitions.
+	1 [label=entry];
+	13;
+	16;
+	23;
+	28;
+	34;
+	37;
+
+	// Edge definitions.
+	1 -> 13;
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 28 [
+		color=red
+		label=false
+	];
+	16 -> 23;
+	23 -> 13;
+	28 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 37 [
+		color=red
+		label=false
+	];
+	34 -> 37;
+}

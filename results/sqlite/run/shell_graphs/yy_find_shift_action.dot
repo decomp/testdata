@@ -1,0 +1,117 @@
+digraph "yy_find_shift_action" {
+	// Node definitions.
+	2 [label=entry];
+	18;
+	20;
+	21;
+	33;
+	36;
+	45;
+	49;
+	56;
+	58;
+	66;
+	69;
+	76;
+	80;
+	86;
+	92;
+	98;
+	99;
+
+	// Edge definitions.
+	2 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 20 [
+		color=red
+		label=false
+	];
+	18 -> 99;
+	20 -> 21;
+	21 -> 33 [
+		color=red
+		label=false
+	];
+	21 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 36 [
+		color=red
+		label=false
+	];
+	33 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 92 [
+		color=red
+		label=false
+	];
+	45 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 58 [
+		color=red
+		label=false
+	];
+	49 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 58 [
+		color=red
+		label=false
+	];
+	56 -> 98;
+	58 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 86 [
+		color=red
+		label=false
+	];
+	66 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 86 [
+		color=red
+		label=false
+	];
+	69 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 86 [
+		color=red
+		label=false
+	];
+	76 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 86 [
+		color=red
+		label=false
+	];
+	80 -> 99;
+	86 -> 99;
+	92 -> 99;
+	98 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	98 -> 99 [
+		color=red
+		label=false
+	];
+}

@@ -1,0 +1,21 @@
+digraph "generateColumnTypes" {
+	// Node definitions.
+	3 [label=entry];
+	20;
+	26;
+	40;
+	43;
+
+	// Edge definitions.
+	3 -> 20;
+	20 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 43 [
+		color=red
+		label=false
+	];
+	26 -> 40;
+	40 -> 20;
+}

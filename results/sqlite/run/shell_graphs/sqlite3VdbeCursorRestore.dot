@@ -1,0 +1,19 @@
+digraph "sqlite3VdbeCursorRestore" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	13;
+	14;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 13 [
+		color=red
+		label=false
+	];
+	10 -> 14;
+	13 -> 14;
+}

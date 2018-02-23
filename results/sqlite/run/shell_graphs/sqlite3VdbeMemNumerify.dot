@@ -1,0 +1,30 @@
+digraph "sqlite3VdbeMemNumerify" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	24;
+	34;
+	50;
+	51;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 51 [
+		color=red
+		label=false
+	];
+	9 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 34 [
+		color=red
+		label=false
+	];
+	24 -> 50;
+	34 -> 50;
+	50 -> 51;
+}

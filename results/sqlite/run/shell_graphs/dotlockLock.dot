@@ -1,0 +1,54 @@
+digraph "dotlockLock" {
+	// Node definitions.
+	2 [label=entry];
+	20;
+	27;
+	34;
+	39;
+	40;
+	45;
+	48;
+	49;
+	51;
+	57;
+
+	// Edge definitions.
+	2 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 27 [
+		color=red
+		label=false
+	];
+	20 -> 57;
+	27 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 51 [
+		color=red
+		label=false
+	];
+	34 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 40 [
+		color=red
+		label=false
+	];
+	39 -> 49;
+	40 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 48 [
+		color=red
+		label=false
+	];
+	45 -> 48;
+	48 -> 49;
+	49 -> 57;
+	51 -> 57;
+}

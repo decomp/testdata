@@ -1,0 +1,80 @@
+digraph "openDirectory" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	18;
+	25;
+	27;
+	28;
+	31;
+	34;
+	38;
+	43;
+	45;
+	47;
+	52;
+	53;
+	58;
+	59;
+	63;
+
+	// Edge definitions.
+	2 -> 15;
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 25 [
+		color=red
+		label=false
+	];
+	18 -> 25;
+	25 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 31 [
+		color=red
+		label=false
+	];
+	27 -> 28;
+	28 -> 15;
+	31 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 38 [
+		color=red
+		label=false
+	];
+	34 -> 47;
+	38 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 45 [
+		color=red
+		label=false
+	];
+	43 -> 45;
+	45 -> 47;
+	47 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 53 [
+		color=red
+		label=false
+	];
+	52 -> 53;
+	53 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 59 [
+		color=red
+		label=false
+	];
+	58 -> 63;
+	59 -> 63;
+}

@@ -1,0 +1,17 @@
+digraph "freePage" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	18;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 18 [
+		color=red
+		label=false
+	];
+	8 -> 18;
+}

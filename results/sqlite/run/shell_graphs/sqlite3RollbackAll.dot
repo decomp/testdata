@@ -1,0 +1,103 @@
+digraph "sqlite3RollbackAll" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	22;
+	25;
+	31;
+	42;
+	46;
+	47;
+	55;
+	56;
+	59;
+	67;
+	74;
+	77;
+	91;
+	94;
+	99;
+	106;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 22 [
+		color=red
+		label=false
+	];
+	15 -> 22;
+	22 -> 25;
+	25 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 59 [
+		color=red
+		label=false
+	];
+	31 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 55 [
+		color=red
+		label=false
+	];
+	42 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 47 [
+		color=red
+		label=false
+	];
+	46 -> 47;
+	47 -> 55;
+	55 -> 56;
+	56 -> 25;
+	59 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 77 [
+		color=red
+		label=false
+	];
+	67 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 77 [
+		color=red
+		label=false
+	];
+	74 -> 77;
+	77 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 106 [
+		color=red
+		label=false
+	];
+	91 -> 94 [
+		color=red
+		label=false
+	];
+	91 -> 99 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 99 [
+		color=red
+		label=false
+	];
+	94 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	99 -> 106;
+}

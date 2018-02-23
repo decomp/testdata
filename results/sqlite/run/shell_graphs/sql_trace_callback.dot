@@ -1,0 +1,41 @@
+digraph "sql_trace_callback" {
+	// Node definitions.
+	4 [label=entry];
+	18;
+	23;
+	26;
+	35;
+	37;
+	40;
+	45;
+
+	// Edge definitions.
+	4 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 45 [
+		color=red
+		label=false
+	];
+	18 -> 23;
+	23 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 35 [
+		color=red
+		label=false
+	];
+	26 -> 35;
+	35 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 40 [
+		color=red
+		label=false
+	];
+	37 -> 23;
+	40 -> 45;
+}

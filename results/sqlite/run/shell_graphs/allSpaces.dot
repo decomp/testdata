@@ -1,0 +1,30 @@
+digraph "allSpaces" {
+	// Node definitions.
+	2 [label=entry];
+	5;
+	8;
+	17;
+	19;
+	22;
+
+	// Edge definitions.
+	2 -> 5;
+	5 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 17 [
+		color=red
+		label=false
+	];
+	8 -> 17;
+	17 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 22 [
+		color=red
+		label=false
+	];
+	19 -> 5;
+}

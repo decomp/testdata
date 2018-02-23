@@ -1,0 +1,56 @@
+digraph "output_file_open" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	9;
+	13;
+	15;
+	19;
+	20;
+	25;
+	29;
+	30;
+	31;
+	32;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 9 [
+		color=red
+		label=false
+	];
+	7 -> 32;
+	9 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 15 [
+		color=red
+		label=false
+	];
+	13 -> 31;
+	15 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 20 [
+		color=red
+		label=false
+	];
+	19 -> 30;
+	20 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 29 [
+		color=red
+		label=false
+	];
+	25 -> 29;
+	29 -> 30;
+	30 -> 31;
+	31 -> 32;
+}

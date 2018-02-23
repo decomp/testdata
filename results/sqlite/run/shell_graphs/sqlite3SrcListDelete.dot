@@ -1,0 +1,56 @@
+digraph "sqlite3SrcListDelete" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	10;
+	14;
+	20;
+	41;
+	47;
+	56;
+	62;
+	79;
+	84;
+	88;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 10 [
+		color=red
+		label=false
+	];
+	9 -> 88;
+	10 -> 14;
+	14 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 84 [
+		color=red
+		label=false
+	];
+	20 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 47 [
+		color=red
+		label=false
+	];
+	41 -> 47;
+	47 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 62 [
+		color=red
+		label=false
+	];
+	56 -> 62;
+	62 -> 79;
+	79 -> 14;
+	84 -> 88;
+}

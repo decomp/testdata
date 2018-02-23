@@ -1,0 +1,28 @@
+digraph "setSectorSize" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	15;
+	18;
+	25;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=red
+		label=false
+	];
+	1 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 18 [
+		color=red
+		label=false
+	];
+	15 -> 25;
+	18 -> 25;
+}

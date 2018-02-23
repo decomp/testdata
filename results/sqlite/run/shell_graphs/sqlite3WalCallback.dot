@@ -1,0 +1,17 @@
+digraph "sqlite3WalCallback" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	12;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 12 [
+		color=red
+		label=false
+	];
+	6 -> 12;
+}

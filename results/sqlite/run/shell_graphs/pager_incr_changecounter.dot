@@ -1,0 +1,48 @@
+digraph "pager_incr_changecounter" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	17;
+	22;
+	25;
+	28;
+	32;
+	34;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	2 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 34 [
+		color=red
+		label=false
+	];
+	17 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 25 [
+		color=red
+		label=false
+	];
+	22 -> 25;
+	25 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 32 [
+		color=red
+		label=false
+	];
+	28 -> 32;
+	32 -> 34;
+}

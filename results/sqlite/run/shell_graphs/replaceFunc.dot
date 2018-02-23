@@ -1,0 +1,122 @@
+digraph "replaceFunc" {
+	// Node definitions.
+	3 [label=entry];
+	27;
+	28;
+	39;
+	40;
+	46;
+	51;
+	62;
+	63;
+	76;
+	77;
+	81;
+	85;
+	97;
+	107;
+	118;
+	135;
+	138;
+	147;
+	150;
+	165;
+	166;
+	169;
+	194;
+
+	// Edge definitions.
+	3 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 28 [
+		color=red
+		label=false
+	];
+	27 -> 194;
+	28 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 40 [
+		color=red
+		label=false
+	];
+	39 -> 194;
+	40 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 51 [
+		color=red
+		label=false
+	];
+	46 -> 194;
+	51 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 63 [
+		color=red
+		label=false
+	];
+	62 -> 194;
+	63 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 77 [
+		color=red
+		label=false
+	];
+	76 -> 194;
+	77 -> 81;
+	81 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 169 [
+		color=red
+		label=false
+	];
+	85 -> 97 [
+		color=red
+		label=false
+	];
+	85 -> 107 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 107 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 118 [
+		color=red
+		label=false
+	];
+	107 -> 165;
+	118 -> 135 [
+		color=darkgreen
+		label=true
+	];
+	118 -> 138 [
+		color=red
+		label=false
+	];
+	135 -> 194;
+	138 -> 147 [
+		color=darkgreen
+		label=true
+	];
+	138 -> 150 [
+		color=red
+		label=false
+	];
+	147 -> 194;
+	150 -> 165;
+	165 -> 166;
+	166 -> 81;
+	169 -> 194;
+}

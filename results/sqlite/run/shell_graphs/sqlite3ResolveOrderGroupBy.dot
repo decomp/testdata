@@ -1,0 +1,76 @@
+digraph "sqlite3ResolveOrderGroupBy" {
+	// Node definitions.
+	4 [label=entry];
+	19;
+	27;
+	28;
+	37;
+	40;
+	47;
+	53;
+	60;
+	71;
+	79;
+	93;
+	94;
+	99;
+	100;
+
+	// Edge definitions.
+	4 -> 19 [
+		color=red
+		label=false
+	];
+	4 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 28 [
+		color=red
+		label=false
+	];
+	27 -> 100;
+	28 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 40 [
+		color=red
+		label=false
+	];
+	37 -> 100;
+	40 -> 47;
+	47 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 99 [
+		color=red
+		label=false
+	];
+	53 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 93 [
+		color=red
+		label=false
+	];
+	60 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 79 [
+		color=red
+		label=false
+	];
+	71 -> 100;
+	79 -> 93;
+	93 -> 94;
+	94 -> 47;
+	99 -> 100;
+}

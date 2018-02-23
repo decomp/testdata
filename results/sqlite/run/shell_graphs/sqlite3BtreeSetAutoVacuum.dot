@@ -1,0 +1,28 @@
+digraph "sqlite3BtreeSetAutoVacuum" {
+	// Node definitions.
+	2 [label=entry];
+	20;
+	30;
+	31;
+	46;
+
+	// Edge definitions.
+	2 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 31 [
+		color=red
+		label=false
+	];
+	20 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 31 [
+		color=red
+		label=false
+	];
+	30 -> 46;
+	31 -> 46;
+}

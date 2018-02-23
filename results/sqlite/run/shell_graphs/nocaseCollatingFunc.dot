@@ -1,0 +1,30 @@
+digraph "nocaseCollatingFunc" {
+	// Node definitions.
+	5 [label=entry];
+	17;
+	19;
+	21;
+	27;
+	31;
+
+	// Edge definitions.
+	5 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 19 [
+		color=red
+		label=false
+	];
+	17 -> 21;
+	19 -> 21;
+	21 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 31 [
+		color=red
+		label=false
+	];
+	27 -> 31;
+}

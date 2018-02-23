@@ -1,0 +1,21 @@
+digraph "analyzeDatabase" {
+	// Node definitions.
+	2 [label=entry];
+	46;
+	49;
+	59;
+	63;
+
+	// Edge definitions.
+	2 -> 46;
+	46 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 63 [
+		color=red
+		label=false
+	];
+	49 -> 59;
+	59 -> 46;
+}

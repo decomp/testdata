@@ -1,0 +1,30 @@
+digraph "sqlite3_bind_text64" {
+	// Node definitions.
+	6 [label=entry];
+	16;
+	20;
+	24;
+	25;
+	34;
+
+	// Edge definitions.
+	6 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 20 [
+		color=red
+		label=false
+	];
+	16 -> 34;
+	20 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 25;
+	25 -> 34;
+}

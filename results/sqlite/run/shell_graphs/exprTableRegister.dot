@@ -1,0 +1,50 @@
+digraph "exprTableRegister" {
+	// Node definitions.
+	4 [label=entry];
+	20;
+	24;
+	32;
+	56;
+	62;
+	67;
+	73;
+	74;
+
+	// Edge definitions.
+	4 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 74 [
+		color=red
+		label=false
+	];
+	20 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 67 [
+		color=red
+		label=false
+	];
+	24 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 67 [
+		color=red
+		label=false
+	];
+	32 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 62 [
+		color=red
+		label=false
+	];
+	56 -> 62;
+	62 -> 73;
+	67 -> 73;
+	73 -> 74;
+}

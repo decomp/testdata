@@ -1,0 +1,30 @@
+digraph "computeNumericType" {
+	// Node definitions.
+	1 [label=entry];
+	18;
+	19;
+	34;
+	35;
+	36;
+
+	// Edge definitions.
+	1 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 36;
+	19 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 35 [
+		color=red
+		label=false
+	];
+	34 -> 36;
+	35 -> 36;
+}

@@ -1,0 +1,52 @@
+digraph "readfileFunc" {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	19;
+	24;
+	25;
+	36;
+	42;
+	47;
+	49;
+	52;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 52;
+	19 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 52;
+	25 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 47 [
+		color=red
+		label=false
+	];
+	36 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 47 [
+		color=red
+		label=false
+	];
+	42 -> 49;
+	47 -> 49;
+	49 -> 52;
+}

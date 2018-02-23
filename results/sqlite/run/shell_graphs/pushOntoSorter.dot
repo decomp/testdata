@@ -1,0 +1,155 @@
+digraph "pushOntoSorter" {
+	// Node definitions.
+	7 [label=entry];
+	62;
+	68;
+	78;
+	83;
+	88;
+	92;
+	112;
+	121;
+	124;
+	127;
+	136;
+	148;
+	169;
+	175;
+	181;
+	200;
+	201;
+	268;
+	275;
+	286;
+	293;
+	294;
+	295;
+	311;
+	324;
+	336;
+	346;
+	358;
+	361;
+
+	// Edge definitions.
+	7 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 68 [
+		color=red
+		label=false
+	];
+	62 -> 78;
+	68 -> 78;
+	78 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 88 [
+		color=red
+		label=false
+	];
+	83 -> 92;
+	88 -> 92;
+	92 -> 112 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 121 [
+		color=red
+		label=false
+	];
+	112 -> 121;
+	121 -> 124 [
+		color=darkgreen
+		label=true
+	];
+	121 -> 136 [
+		color=red
+		label=false
+	];
+	124 -> 127 [
+		color=darkgreen
+		label=true
+	];
+	124 -> 136 [
+		color=red
+		label=false
+	];
+	127 -> 136;
+	136 -> 148 [
+		color=darkgreen
+		label=true
+	];
+	136 -> 286 [
+		color=red
+		label=false
+	];
+	148 -> 169 [
+		color=darkgreen
+		label=true
+	];
+	148 -> 175 [
+		color=red
+		label=false
+	];
+	169 -> 181;
+	175 -> 181;
+	181 -> 200 [
+		color=darkgreen
+		label=true
+	];
+	181 -> 201 [
+		color=red
+		label=false
+	];
+	200 -> 361;
+	201 -> 268 [
+		color=darkgreen
+		label=true
+	];
+	201 -> 275 [
+		color=red
+		label=false
+	];
+	268 -> 275;
+	275 -> 286;
+	286 -> 293 [
+		color=darkgreen
+		label=true
+	];
+	286 -> 294 [
+		color=red
+		label=false
+	];
+	293 -> 295;
+	294 -> 295;
+	295 -> 311 [
+		color=darkgreen
+		label=true
+	];
+	295 -> 361 [
+		color=red
+		label=false
+	];
+	311 -> 324 [
+		color=darkgreen
+		label=true
+	];
+	311 -> 336 [
+		color=red
+		label=false
+	];
+	324 -> 336;
+	336 -> 346 [
+		color=darkgreen
+		label=true
+	];
+	336 -> 358 [
+		color=red
+		label=false
+	];
+	346 -> 358;
+	358 -> 361;
+}

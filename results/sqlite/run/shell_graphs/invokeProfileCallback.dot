@@ -1,0 +1,28 @@
+digraph "invokeProfileCallback" {
+	// Node definitions.
+	2 [label=entry];
+	21;
+	32;
+	39;
+	50;
+
+	// Edge definitions.
+	2 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 32 [
+		color=red
+		label=false
+	];
+	21 -> 32;
+	32 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 50 [
+		color=red
+		label=false
+	];
+	39 -> 50;
+}

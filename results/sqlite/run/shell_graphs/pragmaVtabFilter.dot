@@ -1,0 +1,89 @@
+digraph "pragmaVtabFilter" {
+	// Node definitions.
+	5 [label=entry];
+	38;
+	42;
+	51;
+	66;
+	67;
+	68;
+	69;
+	74;
+	86;
+	91;
+	102;
+	107;
+	111;
+	112;
+	123;
+	133;
+	136;
+
+	// Edge definitions.
+	5 -> 38;
+	38 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 74 [
+		color=red
+		label=false
+	];
+	42 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 68 [
+		color=red
+		label=false
+	];
+	51 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 67 [
+		color=red
+		label=false
+	];
+	66 -> 136;
+	67 -> 68;
+	68 -> 69;
+	69 -> 38;
+	74 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 91 [
+		color=red
+		label=false
+	];
+	86 -> 91;
+	91 -> 102 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 107 [
+		color=red
+		label=false
+	];
+	102 -> 107;
+	107 -> 111 [
+		color=darkgreen
+		label=true
+	];
+	107 -> 112 [
+		color=red
+		label=false
+	];
+	111 -> 136;
+	112 -> 123 [
+		color=darkgreen
+		label=true
+	];
+	112 -> 133 [
+		color=red
+		label=false
+	];
+	123 -> 136;
+	133 -> 136;
+}

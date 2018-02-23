@@ -1,0 +1,19 @@
+digraph "analyzeTable" {
+	// Node definitions.
+	3 [label=entry];
+	27;
+	34;
+	41;
+
+	// Edge definitions.
+	3 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 34 [
+		color=red
+		label=false
+	];
+	27 -> 41;
+	34 -> 41;
+}

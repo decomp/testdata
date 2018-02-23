@@ -1,0 +1,61 @@
+digraph "unixCheckReservedLock" {
+	// Node definitions.
+	2 [label=entry];
+	18;
+	19;
+	22;
+	29;
+	44;
+	48;
+	53;
+	54;
+	55;
+	56;
+
+	// Edge definitions.
+	2 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 19;
+	19 -> 22 [
+		color=red
+		label=false
+	];
+	19 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 29 [
+		color=red
+		label=false
+	];
+	22 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 48 [
+		color=red
+		label=false
+	];
+	44 -> 55;
+	48 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 54;
+	54 -> 55;
+	55 -> 56;
+}

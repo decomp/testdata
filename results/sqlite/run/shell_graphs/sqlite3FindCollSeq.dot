@@ -1,0 +1,30 @@
+digraph "sqlite3FindCollSeq" {
+	// Node definitions.
+	4 [label=entry];
+	12;
+	17;
+	21;
+	24;
+	31;
+
+	// Edge definitions.
+	4 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 17 [
+		color=red
+		label=false
+	];
+	12 -> 21;
+	17 -> 21;
+	21 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 31 [
+		color=red
+		label=false
+	];
+	24 -> 31;
+}

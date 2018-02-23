@@ -1,0 +1,43 @@
+digraph "unixRandomness" {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	24;
+	25;
+	34;
+	37;
+	41;
+	43;
+	45;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 24 [
+		color=red
+		label=false
+	];
+	18 -> 45;
+	24 -> 25;
+	25 -> 34;
+	34 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 41 [
+		color=red
+		label=false
+	];
+	37 -> 41;
+	41 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 43 [
+		color=red
+		label=false
+	];
+	43 -> 45;
+}

@@ -1,0 +1,32 @@
+digraph "hexFunc" {
+	// Node definitions.
+	3 [label=entry];
+	30;
+	31;
+	35;
+	55;
+	60;
+	66;
+
+	// Edge definitions.
+	3 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 66 [
+		color=red
+		label=false
+	];
+	30 -> 31;
+	31 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 60 [
+		color=red
+		label=false
+	];
+	35 -> 55;
+	55 -> 31;
+	60 -> 66;
+}

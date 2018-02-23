@@ -1,0 +1,32 @@
+digraph "sqlite3ExprCachePinRegister" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	17;
+	23;
+	26;
+	27;
+	32;
+
+	// Edge definitions.
+	2 -> 10;
+	10 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 32 [
+		color=red
+		label=false
+	];
+	17 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 26 [
+		color=red
+		label=false
+	];
+	23 -> 26;
+	26 -> 27;
+	27 -> 10;
+}

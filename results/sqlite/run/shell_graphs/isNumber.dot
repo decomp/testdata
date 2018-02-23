@@ -1,0 +1,184 @@
+digraph "isNumber" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	15;
+	18;
+	30;
+	31;
+	36;
+	38;
+	39;
+	51;
+	54;
+	59;
+	73;
+	74;
+	75;
+	87;
+	90;
+	93;
+	95;
+	96;
+	101;
+	106;
+	113;
+	118;
+	121;
+	133;
+	134;
+	135;
+	147;
+	150;
+	153;
+	155;
+	156;
+	162;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=red
+		label=false
+	];
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 18 [
+		color=red
+		label=false
+	];
+	15 -> 18;
+	18 -> 30 [
+		color=red
+		label=false
+	];
+	18 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 162;
+	31 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 38 [
+		color=red
+		label=false
+	];
+	36 -> 38;
+	38 -> 39;
+	39 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 54 [
+		color=red
+		label=false
+	];
+	51 -> 39;
+	54 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 96 [
+		color=red
+		label=false
+	];
+	59 -> 73 [
+		color=red
+		label=false
+	];
+	59 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 162;
+	74 -> 75;
+	75 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 90 [
+		color=red
+		label=false
+	];
+	87 -> 75;
+	90 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 95 [
+		color=red
+		label=false
+	];
+	93 -> 95;
+	95 -> 96;
+	96 -> 101 [
+		color=red
+		label=false
+	];
+	96 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	101 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	101 -> 156 [
+		color=red
+		label=false
+	];
+	106 -> 113 [
+		color=red
+		label=false
+	];
+	106 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 121 [
+		color=red
+		label=false
+	];
+	118 -> 121;
+	121 -> 133 [
+		color=red
+		label=false
+	];
+	121 -> 134 [
+		color=darkgreen
+		label=true
+	];
+	133 -> 162;
+	134 -> 135;
+	135 -> 147 [
+		color=darkgreen
+		label=true
+	];
+	135 -> 150 [
+		color=red
+		label=false
+	];
+	147 -> 135;
+	150 -> 153 [
+		color=darkgreen
+		label=true
+	];
+	150 -> 155 [
+		color=red
+		label=false
+	];
+	153 -> 155;
+	155 -> 156;
+	156 -> 162;
+}

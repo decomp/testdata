@@ -1,0 +1,169 @@
+digraph "sqlite3PagerSetJournalMode" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	18;
+	21;
+	24;
+	25;
+	30;
+	39;
+	44;
+	48;
+	57;
+	65;
+	72;
+	75;
+	81;
+	84;
+	87;
+	95;
+	98;
+	101;
+	104;
+	107;
+	109;
+	110;
+	111;
+	112;
+	115;
+	119;
+	120;
+	121;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 25 [
+		color=red
+		label=false
+	];
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 24 [
+		color=red
+		label=false
+	];
+	18 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 24 [
+		color=red
+		label=false
+	];
+	21 -> 24;
+	24 -> 25;
+	25 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 121 [
+		color=red
+		label=false
+	];
+	30 -> 39 [
+		color=red
+		label=false
+	];
+	30 -> 112 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 112 [
+		color=red
+		label=false
+	];
+	44 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 112 [
+		color=red
+		label=false
+	];
+	48 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 65 [
+		color=red
+		label=false
+	];
+	57 -> 111;
+	65 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 75 [
+		color=red
+		label=false
+	];
+	72 -> 75;
+	75 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 84 [
+		color=red
+		label=false
+	];
+	81 -> 84;
+	84 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 95 [
+		color=red
+		label=false
+	];
+	87 -> 95;
+	95 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	95 -> 104 [
+		color=red
+		label=false
+	];
+	98 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	98 -> 104 [
+		color=red
+		label=false
+	];
+	101 -> 110;
+	104 -> 107 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 109 [
+		color=red
+		label=false
+	];
+	107 -> 109;
+	109 -> 110;
+	110 -> 111;
+	111 -> 120;
+	112 -> 115 [
+		color=darkgreen
+		label=true
+	];
+	112 -> 119 [
+		color=red
+		label=false
+	];
+	115 -> 119;
+	119 -> 120;
+	120 -> 121;
+}

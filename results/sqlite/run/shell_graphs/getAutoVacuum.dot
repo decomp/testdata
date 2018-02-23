@@ -1,0 +1,63 @@
+digraph "getAutoVacuum" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	9;
+	13;
+	14;
+	18;
+	19;
+	24;
+	27;
+	29;
+	30;
+	34;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 9 [
+		color=red
+		label=false
+	];
+	8 -> 34;
+	9 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 14 [
+		color=red
+		label=false
+	];
+	13 -> 34;
+	14 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 34;
+	19 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 29 [
+		color=red
+		label=false
+	];
+	24 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 29 [
+		color=red
+		label=false
+	];
+	27 -> 30;
+	29 -> 30;
+	30 -> 34;
+}

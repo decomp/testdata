@@ -1,0 +1,65 @@
+digraph "sqlite3FindIndex" {
+	// Node definitions.
+	3 [label=entry];
+	11;
+	17;
+	20;
+	23;
+	25;
+	37;
+	49;
+	50;
+	58;
+	59;
+	60;
+	63;
+
+	// Edge definitions.
+	3 -> 11;
+	11 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 63 [
+		color=red
+		label=false
+	];
+	17 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 23 [
+		color=red
+		label=false
+	];
+	20 -> 25;
+	23 -> 25;
+	25 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 50 [
+		color=red
+		label=false
+	];
+	37 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 50 [
+		color=red
+		label=false
+	];
+	49 -> 60;
+	50 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 59 [
+		color=red
+		label=false
+	];
+	58 -> 63;
+	59 -> 60;
+	60 -> 11;
+}

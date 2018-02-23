@@ -1,0 +1,19 @@
+digraph "strAccumFinishRealloc" {
+	// Node definitions.
+	1 [label=entry];
+	18;
+	36;
+	38;
+
+	// Edge definitions.
+	1 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 36 [
+		color=red
+		label=false
+	];
+	18 -> 38;
+	36 -> 38;
+}

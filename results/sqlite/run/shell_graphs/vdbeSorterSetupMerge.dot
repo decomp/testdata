@@ -1,0 +1,163 @@
+digraph "vdbeSorterSetupMerge" {
+	// Node definitions.
+	1 [label=entry];
+	24;
+	31;
+	39;
+	42;
+	47;
+	52;
+	66;
+	75;
+	76;
+	77;
+	80;
+	88;
+	92;
+	100;
+	110;
+	112;
+	113;
+	116;
+	117;
+	120;
+	127;
+	129;
+	138;
+	141;
+	142;
+	143;
+	146;
+	149;
+	150;
+	157;
+	158;
+	161;
+	163;
+
+	// Edge definitions.
+	1 -> 24;
+	24 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 42 [
+		color=red
+		label=false
+	];
+	31 -> 39;
+	39 -> 24;
+	42 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 158 [
+		color=red
+		label=false
+	];
+	47 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 150 [
+		color=red
+		label=false
+	];
+	52 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 77 [
+		color=red
+		label=false
+	];
+	66 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 76 [
+		color=red
+		label=false
+	];
+	75 -> 76;
+	76 -> 77;
+	77 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 143 [
+		color=red
+		label=false
+	];
+	80 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 142 [
+		color=red
+		label=false
+	];
+	88 -> 92;
+	92 -> 100 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 116 [
+		color=red
+		label=false
+	];
+	100 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	100 -> 112 [
+		color=red
+		label=false
+	];
+	110 -> 112;
+	112 -> 113;
+	113 -> 92;
+	116 -> 117;
+	117 -> 120 [
+		color=darkgreen
+		label=true
+	];
+	117 -> 127 [
+		color=red
+		label=false
+	];
+	120 -> 127;
+	127 -> 129 [
+		color=darkgreen
+		label=true
+	];
+	127 -> 141 [
+		color=red
+		label=false
+	];
+	129 -> 138;
+	138 -> 117;
+	141 -> 142;
+	142 -> 143;
+	143 -> 146 [
+		color=darkgreen
+		label=true
+	];
+	143 -> 149 [
+		color=red
+		label=false
+	];
+	146 -> 149;
+	149 -> 157;
+	150 -> 157;
+	157 -> 158;
+	158 -> 161 [
+		color=darkgreen
+		label=true
+	];
+	158 -> 163 [
+		color=red
+		label=false
+	];
+	161 -> 163;
+}

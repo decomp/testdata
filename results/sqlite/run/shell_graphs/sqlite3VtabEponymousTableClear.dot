@@ -1,0 +1,17 @@
+digraph "sqlite3VtabEponymousTableClear" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	20;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 20 [
+		color=red
+		label=false
+	];
+	11 -> 20;
+}

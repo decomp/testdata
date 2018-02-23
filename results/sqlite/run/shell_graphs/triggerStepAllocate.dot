@@ -1,0 +1,17 @@
+digraph "triggerStepAllocate" {
+	// Node definitions.
+	3 [label=entry];
+	20;
+	39;
+
+	// Edge definitions.
+	3 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 39 [
+		color=red
+		label=false
+	];
+	20 -> 39;
+}

@@ -1,0 +1,19 @@
+digraph "out2Prerelease" {
+	// Node definitions.
+	2 [label=entry];
+	21;
+	24;
+	28;
+
+	// Edge definitions.
+	2 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 24 [
+		color=red
+		label=false
+	];
+	21 -> 28;
+	24 -> 28;
+}

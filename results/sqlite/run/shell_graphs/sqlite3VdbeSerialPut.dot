@@ -1,0 +1,76 @@
+digraph "sqlite3VdbeSerialPut" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	16;
+	19;
+	25;
+	30;
+	36;
+	47;
+	50;
+	52;
+	55;
+	61;
+	68;
+	70;
+	71;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 52 [
+		color=red
+		label=false
+	];
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 52 [
+		color=red
+		label=false
+	];
+	16 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 25 [
+		color=red
+		label=false
+	];
+	19 -> 30;
+	25 -> 30;
+	30 -> 36;
+	36 -> 47;
+	47 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 50 [
+		color=red
+		label=false
+	];
+	50 -> 71;
+	52 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 70 [
+		color=red
+		label=false
+	];
+	55 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 68 [
+		color=red
+		label=false
+	];
+	61 -> 68;
+	68 -> 71;
+	70 -> 71;
+}

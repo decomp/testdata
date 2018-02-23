@@ -1,0 +1,41 @@
+digraph "checkConstraintExprNode" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	16;
+	28;
+	35;
+	36;
+	43;
+	44;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 44 [
+		color=red
+		label=false
+	];
+	10 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 36 [
+		color=red
+		label=false
+	];
+	16 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 35 [
+		color=red
+		label=false
+	];
+	28 -> 35;
+	35 -> 43;
+	36 -> 43;
+	43 -> 44;
+}

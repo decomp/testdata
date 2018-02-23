@@ -1,0 +1,56 @@
+digraph "sqlite3_value_blob" {
+	// Node definitions.
+	1 [label=entry];
+	12;
+	19;
+	22;
+	23;
+	26;
+	27;
+	38;
+	42;
+	43;
+	45;
+	48;
+
+	// Edge definitions.
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 45 [
+		color=red
+		label=false
+	];
+	12 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 22 [
+		color=red
+		label=false
+	];
+	19 -> 23;
+	22 -> 23;
+	23 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 27 [
+		color=red
+		label=false
+	];
+	26 -> 48;
+	27 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 42 [
+		color=red
+		label=false
+	];
+	38 -> 43;
+	42 -> 43;
+	43 -> 48;
+	45 -> 48;
+}

@@ -1,0 +1,21 @@
+digraph "sqlite3PcacheDirtyList" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	10;
+	16;
+	20;
+
+	// Edge definitions.
+	1 -> 7;
+	7 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 20 [
+		color=red
+		label=false
+	];
+	10 -> 16;
+	16 -> 7;
+}

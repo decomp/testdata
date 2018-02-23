@@ -1,0 +1,52 @@
+digraph "sqlite3ScratchFree" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	13;
+	19;
+	30;
+	33;
+	42;
+	45;
+	46;
+	47;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 47 [
+		color=red
+		label=false
+	];
+	7 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 30 [
+		color=red
+		label=false
+	];
+	13 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 30 [
+		color=red
+		label=false
+	];
+	19 -> 46;
+	30 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 42 [
+		color=red
+		label=false
+	];
+	33 -> 45;
+	42 -> 45;
+	45 -> 46;
+	46 -> 47;
+}

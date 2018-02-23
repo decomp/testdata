@@ -1,0 +1,68 @@
+digraph "sqlite3VtabCallCreate" {
+	// Node definitions.
+	4 [label=entry];
+	36;
+	43;
+	50;
+	55;
+	66;
+	69;
+	74;
+	79;
+	84;
+	85;
+
+	// Edge definitions.
+	4 -> 36 [
+		color=red
+		label=false
+	];
+	4 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 43 [
+		color=red
+		label=false
+	];
+	36 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 55 [
+		color=red
+		label=false
+	];
+	50 -> 66;
+	55 -> 66;
+	66 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 85 [
+		color=red
+		label=false
+	];
+	69 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 85 [
+		color=red
+		label=false
+	];
+	74 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 84 [
+		color=red
+		label=false
+	];
+	79 -> 84;
+	84 -> 85;
+}

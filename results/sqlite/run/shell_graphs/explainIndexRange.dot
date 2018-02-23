@@ -1,0 +1,76 @@
+digraph "explainIndexRange" {
+	// Node definitions.
+	2 [label=entry];
+	27;
+	33;
+	34;
+	36;
+	41;
+	47;
+	49;
+	57;
+	60;
+	67;
+	78;
+	84;
+	95;
+	97;
+
+	// Edge definitions.
+	2 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 34 [
+		color=red
+		label=false
+	];
+	27 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 34 [
+		color=red
+		label=false
+	];
+	33 -> 97;
+	34 -> 36;
+	36 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 60 [
+		color=red
+		label=false
+	];
+	41 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 49 [
+		color=red
+		label=false
+	];
+	47 -> 49;
+	49 -> 57;
+	57 -> 36;
+	60 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 78 [
+		color=red
+		label=false
+	];
+	67 -> 78;
+	78 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 95 [
+		color=red
+		label=false
+	];
+	84 -> 95;
+	95 -> 97;
+}

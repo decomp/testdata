@@ -1,0 +1,19 @@
+digraph "statInit" {
+	// Node definitions.
+	3 [label=entry];
+	43;
+	45;
+	76;
+
+	// Edge definitions.
+	3 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 45 [
+		color=red
+		label=false
+	];
+	43 -> 76;
+	45 -> 76;
+}

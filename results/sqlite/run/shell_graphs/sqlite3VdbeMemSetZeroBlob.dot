@@ -1,0 +1,17 @@
+digraph "sqlite3VdbeMemSetZeroBlob" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	13;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	12 -> 13;
+}

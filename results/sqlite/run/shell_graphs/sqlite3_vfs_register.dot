@@ -1,0 +1,41 @@
+digraph "sqlite3_vfs_register" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	13;
+	19;
+	22;
+	27;
+	36;
+	38;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	11 -> 38;
+	13 -> 19 [
+		color=red
+		label=false
+	];
+	13 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 27 [
+		color=red
+		label=false
+	];
+	22 -> 36;
+	27 -> 36;
+	36 -> 38;
+}

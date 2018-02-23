@@ -1,0 +1,17 @@
+digraph "sqlite3PcacheShutdown" {
+	// Node definitions.
+	0 [label=entry];
+	3;
+	6;
+
+	// Edge definitions.
+	0 -> 3 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 6 [
+		color=red
+		label=false
+	];
+	3 -> 6;
+}

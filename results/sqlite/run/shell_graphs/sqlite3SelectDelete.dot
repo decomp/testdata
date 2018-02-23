@@ -1,0 +1,17 @@
+digraph "sqlite3SelectDelete" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	10;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 10 [
+		color=red
+		label=false
+	];
+	7 -> 10;
+}

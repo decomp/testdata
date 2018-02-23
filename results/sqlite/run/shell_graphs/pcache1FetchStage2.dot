@@ -1,0 +1,150 @@
+digraph "pcache1FetchStage2" {
+	// Node definitions.
+	3 [label=entry];
+	25;
+	31;
+	37;
+	41;
+	47;
+	48;
+	56;
+	58;
+	63;
+	71;
+	80;
+	84;
+	102;
+	104;
+	116;
+	117;
+	120;
+	126;
+	129;
+	177;
+	181;
+	182;
+	184;
+
+	// Edge definitions.
+	3 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 48 [
+		color=red
+		label=false
+	];
+	25 -> 31 [
+		color=red
+		label=false
+	];
+	25 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 37 [
+		color=red
+		label=false
+	];
+	31 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 48 [
+		color=red
+		label=false
+	];
+	41 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 48 [
+		color=red
+		label=false
+	];
+	47 -> 184;
+	48 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 58 [
+		color=red
+		label=false
+	];
+	56 -> 58;
+	58 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 117 [
+		color=red
+		label=false
+	];
+	63 -> 71 [
+		color=red
+		label=false
+	];
+	63 -> 117 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 80 [
+		color=red
+		label=false
+	];
+	71 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 117 [
+		color=red
+		label=false
+	];
+	84 -> 102 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 104 [
+		color=red
+		label=false
+	];
+	102 -> 116;
+	104 -> 116;
+	116 -> 117;
+	117 -> 120 [
+		color=red
+		label=false
+	];
+	117 -> 126 [
+		color=darkgreen
+		label=true
+	];
+	120 -> 126;
+	126 -> 129 [
+		color=darkgreen
+		label=true
+	];
+	126 -> 182 [
+		color=red
+		label=false
+	];
+	129 -> 177 [
+		color=darkgreen
+		label=true
+	];
+	129 -> 181 [
+		color=red
+		label=false
+	];
+	177 -> 181;
+	181 -> 182;
+	182 -> 184;
+}

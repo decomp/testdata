@@ -1,0 +1,43 @@
+digraph "writefileFunc" {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	19;
+	24;
+	25;
+	32;
+	33;
+	42;
+	47;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 47;
+	19 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 47;
+	25 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 42;
+	33 -> 42;
+	42 -> 47;
+}

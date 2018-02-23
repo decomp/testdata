@@ -1,0 +1,41 @@
+digraph "sqlite3WalBeginWriteTransaction" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	10;
+	15;
+	17;
+	28;
+	32;
+	34;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 10 [
+		color=red
+		label=false
+	];
+	9 -> 34;
+	10 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 17 [
+		color=red
+		label=false
+	];
+	15 -> 34;
+	17 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 32 [
+		color=red
+		label=false
+	];
+	28 -> 32;
+	32 -> 34;
+}

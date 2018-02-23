@@ -1,0 +1,159 @@
+digraph "sqlite3CompleteInsertion" {
+	// Node definitions.
+	9 [label=entry];
+	31;
+	34;
+	41;
+	42;
+	47;
+	58;
+	69;
+	75;
+	86;
+	109;
+	114;
+	119;
+	125;
+	131;
+	137;
+	138;
+	153;
+	162;
+	167;
+	168;
+	171;
+	173;
+	174;
+	180;
+	183;
+	188;
+	191;
+	196;
+	206;
+	210;
+	214;
+
+	// Edge definitions.
+	9 -> 31;
+	31 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 131 [
+		color=red
+		label=false
+	];
+	34 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 42 [
+		color=red
+		label=false
+	];
+	41 -> 125;
+	42 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 58 [
+		color=red
+		label=false
+	];
+	47 -> 58;
+	58 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 86 [
+		color=red
+		label=false
+	];
+	69 -> 75 [
+		color=red
+		label=false
+	];
+	69 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 86;
+	86 -> 109 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 114 [
+		color=red
+		label=false
+	];
+	109 -> 119;
+	114 -> 119;
+	119 -> 125;
+	125 -> 31;
+	131 -> 137 [
+		color=red
+		label=false
+	];
+	131 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	137 -> 214;
+	138 -> 153 [
+		color=red
+		label=false
+	];
+	138 -> 162 [
+		color=darkgreen
+		label=true
+	];
+	153 -> 162;
+	162 -> 167 [
+		color=darkgreen
+		label=true
+	];
+	162 -> 168 [
+		color=red
+		label=false
+	];
+	167 -> 180;
+	168 -> 171 [
+		color=darkgreen
+		label=true
+	];
+	168 -> 173 [
+		color=red
+		label=false
+	];
+	171 -> 174;
+	173 -> 174;
+	174 -> 180;
+	180 -> 183 [
+		color=darkgreen
+		label=true
+	];
+	180 -> 188 [
+		color=red
+		label=false
+	];
+	183 -> 188;
+	188 -> 191 [
+		color=darkgreen
+		label=true
+	];
+	188 -> 196 [
+		color=red
+		label=false
+	];
+	191 -> 196;
+	196 -> 206 [
+		color=red
+		label=false
+	];
+	196 -> 210 [
+		color=darkgreen
+		label=true
+	];
+	206 -> 210;
+	210 -> 214;
+}

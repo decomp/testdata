@@ -1,0 +1,185 @@
+digraph "sqlite3BitvecSet" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	14;
+	17;
+	23;
+	28;
+	30;
+	49;
+	68;
+	69;
+	70;
+	78;
+	84;
+	99;
+	114;
+	120;
+	121;
+	122;
+	123;
+	133;
+	134;
+	140;
+	141;
+	142;
+	151;
+	152;
+	158;
+	163;
+	164;
+	190;
+	194;
+	201;
+	211;
+	212;
+	215;
+	219;
+	220;
+	232;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	13 -> 232;
+	14 -> 17;
+	17 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 28 [
+		color=red
+		label=false
+	];
+	23 -> 28;
+	28 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 78 [
+		color=red
+		label=false
+	];
+	30 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 70 [
+		color=red
+		label=false
+	];
+	49 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 69 [
+		color=red
+		label=false
+	];
+	68 -> 232;
+	69 -> 70;
+	70 -> 17;
+	78 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 99 [
+		color=red
+		label=false
+	];
+	84 -> 232;
+	99 -> 114 [
+		color=red
+		label=false
+	];
+	99 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	114 -> 120 [
+		color=darkgreen
+		label=true
+	];
+	114 -> 121 [
+		color=red
+		label=false
+	];
+	120 -> 220;
+	121 -> 152;
+	122 -> 123;
+	123 -> 133 [
+		color=darkgreen
+		label=true
+	];
+	123 -> 134 [
+		color=red
+		label=false
+	];
+	133 -> 232;
+	134 -> 140 [
+		color=darkgreen
+		label=true
+	];
+	134 -> 141 [
+		color=red
+		label=false
+	];
+	140 -> 141;
+	141 -> 142;
+	142 -> 123 [
+		color=darkgreen
+		label=true
+	];
+	142 -> 151 [
+		color=red
+		label=false
+	];
+	151 -> 152;
+	152 -> 158 [
+		color=darkgreen
+		label=true
+	];
+	152 -> 219 [
+		color=red
+		label=false
+	];
+	158 -> 163 [
+		color=darkgreen
+		label=true
+	];
+	158 -> 164 [
+		color=red
+		label=false
+	];
+	163 -> 232;
+	164 -> 190;
+	190 -> 194 [
+		color=darkgreen
+		label=true
+	];
+	190 -> 215 [
+		color=red
+		label=false
+	];
+	194 -> 201 [
+		color=darkgreen
+		label=true
+	];
+	194 -> 211 [
+		color=red
+		label=false
+	];
+	201 -> 211;
+	211 -> 212;
+	212 -> 190;
+	215 -> 232;
+	219 -> 220;
+	220 -> 232;
+}

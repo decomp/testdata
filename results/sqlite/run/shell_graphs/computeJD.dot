@@ -1,0 +1,92 @@
+digraph "computeJD" {
+	// Node definitions.
+	1 [label=entry];
+	14;
+	15;
+	20;
+	30;
+	31;
+	34;
+	37;
+	43;
+	45;
+	48;
+	53;
+	88;
+	113;
+	129;
+	130;
+
+	// Edge definitions.
+	1 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 130;
+	15 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 30 [
+		color=red
+		label=false
+	];
+	20 -> 31;
+	30 -> 31;
+	31 -> 34 [
+		color=red
+		label=false
+	];
+	31 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 37 [
+		color=red
+		label=false
+	];
+	34 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 45 [
+		color=red
+		label=false
+	];
+	43 -> 130;
+	45 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 53 [
+		color=red
+		label=false
+	];
+	48 -> 53;
+	53 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 130 [
+		color=red
+		label=false
+	];
+	88 -> 113 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 129 [
+		color=red
+		label=false
+	];
+	113 -> 129;
+	129 -> 130;
+}

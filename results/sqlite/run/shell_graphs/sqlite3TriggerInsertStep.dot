@@ -1,0 +1,19 @@
+digraph "sqlite3TriggerInsertStep" {
+	// Node definitions.
+	5 [label=entry];
+	17;
+	29;
+	32;
+
+	// Edge definitions.
+	5 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 29 [
+		color=red
+		label=false
+	];
+	17 -> 32;
+	29 -> 32;
+}

@@ -1,0 +1,39 @@
+digraph "sqlite3PcacheSetSpillsize" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	11;
+	25;
+	29;
+	37;
+	41;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 29 [
+		color=red
+		label=false
+	];
+	8 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 25 [
+		color=red
+		label=false
+	];
+	11 -> 25;
+	25 -> 29;
+	29 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 41 [
+		color=red
+		label=false
+	];
+	37 -> 41;
+}

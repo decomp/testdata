@@ -1,0 +1,67 @@
+digraph "findCreateFileMode" {
+	// Node definitions.
+	5 [label=entry];
+	21;
+	25;
+	33;
+	36;
+	49;
+	53;
+	55;
+	59;
+	64;
+	70;
+	71;
+	72;
+	73;
+
+	// Edge definitions.
+	5 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 49 [
+		color=red
+		label=false
+	];
+	21 -> 25;
+	25 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 36 [
+		color=red
+		label=false
+	];
+	33 -> 25;
+	36 -> 73;
+	49 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 55 [
+		color=red
+		label=false
+	];
+	53 -> 72;
+	55 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 71 [
+		color=red
+		label=false
+	];
+	59 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 70 [
+		color=red
+		label=false
+	];
+	64 -> 70;
+	70 -> 71;
+	71 -> 72;
+	72 -> 73;
+}

@@ -1,0 +1,61 @@
+digraph "ptrmapGet" {
+	// Node definitions.
+	4 [label=entry];
+	25;
+	27;
+	37;
+	40;
+	49;
+	57;
+	63;
+	68;
+	70;
+	71;
+
+	// Edge definitions.
+	4 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 27 [
+		color=red
+		label=false
+	];
+	25 -> 71;
+	27 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 40 [
+		color=red
+		label=false
+	];
+	37 -> 71;
+	40 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 57 [
+		color=red
+		label=false
+	];
+	49 -> 57;
+	57 -> 63 [
+		color=red
+		label=false
+	];
+	57 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 70 [
+		color=red
+		label=false
+	];
+	68 -> 71;
+	70 -> 71;
+}

@@ -1,0 +1,28 @@
+digraph "allocateTempSpace" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	18;
+	26;
+	27;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=red
+		label=false
+	];
+	1 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 26 [
+		color=red
+		label=false
+	];
+	18 -> 26;
+	26 -> 27;
+}

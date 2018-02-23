@@ -1,0 +1,201 @@
+digraph "btreeCreateTable" {
+	// Node definitions.
+	3 [label=entry];
+	24;
+	29;
+	35;
+	44;
+	46;
+	49;
+	55;
+	57;
+	61;
+	67;
+	69;
+	75;
+	77;
+	84;
+	88;
+	90;
+	93;
+	96;
+	106;
+	108;
+	114;
+	116;
+	123;
+	126;
+	127;
+	129;
+	134;
+	137;
+	143;
+	146;
+	147;
+	152;
+	154;
+	155;
+	159;
+	160;
+	161;
+	169;
+
+	// Edge definitions.
+	3 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 147 [
+		color=red
+		label=false
+	];
+	24 -> 29;
+	29 -> 35 [
+		color=red
+		label=false
+	];
+	29 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 44;
+	44 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 49 [
+		color=red
+		label=false
+	];
+	46 -> 29;
+	49 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 57 [
+		color=red
+		label=false
+	];
+	55 -> 169;
+	57 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 127 [
+		color=red
+		label=false
+	];
+	61 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 69 [
+		color=red
+		label=false
+	];
+	67 -> 169;
+	69 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 77 [
+		color=red
+		label=false
+	];
+	75 -> 169;
+	77 -> 84 [
+		color=red
+		label=false
+	];
+	77 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 90 [
+		color=red
+		label=false
+	];
+	88 -> 90;
+	90 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 96 [
+		color=red
+		label=false
+	];
+	93 -> 169;
+	96 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	96 -> 108 [
+		color=red
+		label=false
+	];
+	106 -> 169;
+	108 -> 114 [
+		color=darkgreen
+		label=true
+	];
+	108 -> 116 [
+		color=red
+		label=false
+	];
+	114 -> 169;
+	116 -> 123 [
+		color=darkgreen
+		label=true
+	];
+	116 -> 126 [
+		color=red
+		label=false
+	];
+	123 -> 169;
+	126 -> 129;
+	127 -> 129;
+	129 -> 134 [
+		color=darkgreen
+		label=true
+	];
+	129 -> 137 [
+		color=red
+		label=false
+	];
+	134 -> 169;
+	137 -> 143 [
+		color=darkgreen
+		label=true
+	];
+	137 -> 146 [
+		color=red
+		label=false
+	];
+	143 -> 169;
+	146 -> 155;
+	147 -> 152 [
+		color=darkgreen
+		label=true
+	];
+	147 -> 154 [
+		color=red
+		label=false
+	];
+	152 -> 169;
+	154 -> 155;
+	155 -> 159 [
+		color=darkgreen
+		label=true
+	];
+	155 -> 160 [
+		color=red
+		label=false
+	];
+	159 -> 161;
+	160 -> 161;
+	161 -> 169;
+}

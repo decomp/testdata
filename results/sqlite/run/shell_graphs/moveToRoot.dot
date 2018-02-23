@@ -1,0 +1,150 @@
+digraph "moveToRoot" {
+	// Node definitions.
+	1 [label=entry];
+	12;
+	18;
+	22;
+	24;
+	30;
+	35;
+	36;
+	46;
+	51;
+	52;
+	53;
+	58;
+	61;
+	80;
+	84;
+	95;
+	96;
+	106;
+	117;
+	119;
+	120;
+	141;
+	144;
+	149;
+	154;
+	156;
+	173;
+	176;
+	177;
+	179;
+
+	// Edge definitions.
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 24 [
+		color=red
+		label=false
+	];
+	12 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 22 [
+		color=red
+		label=false
+	];
+	18 -> 179;
+	22 -> 24;
+	24 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 53 [
+		color=red
+		label=false
+	];
+	30 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 52 [
+		color=red
+		label=false
+	];
+	35 -> 36;
+	36 -> 46;
+	46 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 51 [
+		color=red
+		label=false
+	];
+	51 -> 120;
+	52 -> 96;
+	53 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 61 [
+		color=red
+		label=false
+	];
+	58 -> 179;
+	61 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 84 [
+		color=red
+		label=false
+	];
+	80 -> 179;
+	84 -> 95;
+	95 -> 96;
+	96 -> 106 [
+		color=red
+		label=false
+	];
+	96 -> 117 [
+		color=darkgreen
+		label=true
+	];
+	106 -> 117 [
+		color=darkgreen
+		label=true
+	];
+	106 -> 119 [
+		color=red
+		label=false
+	];
+	117 -> 179;
+	119 -> 120;
+	120 -> 141 [
+		color=darkgreen
+		label=true
+	];
+	120 -> 144 [
+		color=red
+		label=false
+	];
+	141 -> 177;
+	144 -> 149 [
+		color=red
+		label=false
+	];
+	144 -> 173 [
+		color=darkgreen
+		label=true
+	];
+	149 -> 154 [
+		color=darkgreen
+		label=true
+	];
+	149 -> 156 [
+		color=red
+		label=false
+	];
+	154 -> 179;
+	156 -> 176;
+	173 -> 176;
+	176 -> 177;
+	177 -> 179;
+}

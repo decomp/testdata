@@ -1,0 +1,70 @@
+digraph "exprMightBeIndexed" {
+	// Node definitions.
+	5 [label=entry];
+	17;
+	20;
+	23;
+	32;
+	38;
+	50;
+	53;
+	54;
+	60;
+	61;
+	67;
+
+	// Edge definitions.
+	5 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 32 [
+		color=red
+		label=false
+	];
+	17 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 32 [
+		color=red
+		label=false
+	];
+	20 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 32 [
+		color=red
+		label=false
+	];
+	23 -> 32;
+	32 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 50 [
+		color=red
+		label=false
+	];
+	38 -> 67;
+	50 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 67;
+	54 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 61 [
+		color=red
+		label=false
+	];
+	60 -> 67;
+	61 -> 67;
+}

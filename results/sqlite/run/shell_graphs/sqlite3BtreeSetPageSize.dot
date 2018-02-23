@@ -1,0 +1,70 @@
+digraph "sqlite3BtreeSetPageSize" {
+	// Node definitions.
+	4 [label=entry];
+	22;
+	24;
+	27;
+	35;
+	38;
+	41;
+	47;
+	52;
+	71;
+	78;
+	81;
+
+	// Edge definitions.
+	4 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 24 [
+		color=red
+		label=false
+	];
+	22 -> 81;
+	24 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 35 [
+		color=red
+		label=false
+	];
+	27 -> 35;
+	35 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 52 [
+		color=red
+		label=false
+	];
+	38 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 52 [
+		color=red
+		label=false
+	];
+	41 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 52 [
+		color=red
+		label=false
+	];
+	47 -> 52;
+	52 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 78 [
+		color=red
+		label=false
+	];
+	71 -> 78;
+	78 -> 81;
+}

@@ -1,0 +1,114 @@
+digraph "sqlite3VdbeMemGrow" {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	11;
+	14;
+	19;
+	27;
+	41;
+	46;
+	53;
+	62;
+	67;
+	73;
+	83;
+	86;
+	91;
+	99;
+	110;
+	117;
+	124;
+	136;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 11 [
+		color=red
+		label=false
+	];
+	10 -> 11;
+	11 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 41 [
+		color=red
+		label=false
+	];
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 41 [
+		color=red
+		label=false
+	];
+	19 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 41 [
+		color=red
+		label=false
+	];
+	27 -> 62;
+	41 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 53 [
+		color=red
+		label=false
+	];
+	46 -> 53;
+	53 -> 62;
+	62 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 73 [
+		color=red
+		label=false
+	];
+	67 -> 136;
+	73 -> 83;
+	83 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 110 [
+		color=red
+		label=false
+	];
+	86 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 110 [
+		color=red
+		label=false
+	];
+	91 -> 99 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 110 [
+		color=red
+		label=false
+	];
+	99 -> 110;
+	110 -> 117 [
+		color=darkgreen
+		label=true
+	];
+	110 -> 124 [
+		color=red
+		label=false
+	];
+	117 -> 124;
+	124 -> 136;
+}

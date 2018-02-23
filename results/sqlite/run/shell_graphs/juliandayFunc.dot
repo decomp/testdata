@@ -1,0 +1,17 @@
+digraph "juliandayFunc" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	19;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 19 [
+		color=red
+		label=false
+	];
+	13 -> 19;
+}

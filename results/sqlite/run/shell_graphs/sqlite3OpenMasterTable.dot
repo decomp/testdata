@@ -1,0 +1,17 @@
+digraph "sqlite3OpenMasterTable" {
+	// Node definitions.
+	2 [label=entry];
+	17;
+	20;
+
+	// Edge definitions.
+	2 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 20 [
+		color=red
+		label=false
+	];
+	17 -> 20;
+}

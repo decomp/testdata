@@ -1,0 +1,30 @@
+digraph "btreeHeapInsert" {
+	// Node definitions.
+	2 [label=entry];
+	16;
+	20;
+	32;
+	34;
+	55;
+
+	// Edge definitions.
+	2 -> 16;
+	16 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 32 [
+		color=red
+		label=false
+	];
+	20 -> 32;
+	32 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 55 [
+		color=red
+		label=false
+	];
+	34 -> 16;
+}

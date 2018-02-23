@@ -1,0 +1,45 @@
+digraph "sqliteViewResetAll" {
+	// Node definitions.
+	2 [label=entry];
+	20;
+	21;
+	33;
+	36;
+	45;
+	52;
+	53;
+	57;
+	71;
+
+	// Edge definitions.
+	2 -> 20 [
+		color=red
+		label=false
+	];
+	2 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 71;
+	21 -> 33;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 57 [
+		color=red
+		label=false
+	];
+	36 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 52 [
+		color=red
+		label=false
+	];
+	45 -> 52;
+	52 -> 53;
+	53 -> 33;
+	57 -> 71;
+}

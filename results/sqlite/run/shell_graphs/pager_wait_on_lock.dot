@@ -1,0 +1,30 @@
+digraph "pager_wait_on_lock" {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	10;
+	13;
+	22;
+	24;
+
+	// Edge definitions.
+	2 -> 6;
+	6 -> 10;
+	10 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 22 [
+		color=red
+		label=false
+	];
+	13 -> 22;
+	22 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 24 [
+		color=red
+		label=false
+	];
+}

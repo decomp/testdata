@@ -1,0 +1,72 @@
+digraph "sqlite3VtabEponymousTableInit" {
+	// Node definitions.
+	2 [label=entry];
+	21;
+	22;
+	27;
+	35;
+	36;
+	42;
+	43;
+	55;
+	59;
+	100;
+	107;
+	108;
+
+	// Edge definitions.
+	2 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 22 [
+		color=red
+		label=false
+	];
+	21 -> 108;
+	22 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 36 [
+		color=red
+		label=false
+	];
+	27 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 36 [
+		color=red
+		label=false
+	];
+	35 -> 108;
+	36 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 43 [
+		color=red
+		label=false
+	];
+	42 -> 108;
+	43 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 59 [
+		color=red
+		label=false
+	];
+	55 -> 108;
+	59 -> 100 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 107 [
+		color=red
+		label=false
+	];
+	100 -> 108;
+	107 -> 108;
+}

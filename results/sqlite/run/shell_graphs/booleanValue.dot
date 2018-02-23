@@ -1,0 +1,131 @@
+digraph "booleanValue" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	16;
+	17;
+	25;
+	26;
+	29;
+	30;
+	31;
+	39;
+	47;
+	49;
+	50;
+	53;
+	54;
+	57;
+	65;
+	70;
+	74;
+	78;
+	79;
+	83;
+	87;
+	88;
+	92;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 30 [
+		color=red
+		label=false
+	];
+	10 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 30 [
+		color=red
+		label=false
+	];
+	16 -> 17;
+	17 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 29 [
+		color=red
+		label=false
+	];
+	25 -> 26;
+	26 -> 17;
+	29 -> 54;
+	30 -> 31;
+	31 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 47 [
+		color=red
+		label=false
+	];
+	39 -> 47;
+	47 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 53 [
+		color=red
+		label=false
+	];
+	49 -> 50;
+	50 -> 31;
+	53 -> 54;
+	54 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 70 [
+		color=red
+		label=false
+	];
+	57 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 70 [
+		color=red
+		label=false
+	];
+	65 -> 92;
+	70 -> 74 [
+		color=red
+		label=false
+	];
+	70 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 79 [
+		color=red
+		label=false
+	];
+	78 -> 92;
+	79 -> 83 [
+		color=red
+		label=false
+	];
+	79 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 88 [
+		color=red
+		label=false
+	];
+	87 -> 92;
+	88 -> 92;
+}

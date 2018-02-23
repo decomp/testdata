@@ -1,0 +1,68 @@
+digraph "pagerLockDb" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	18;
+	24;
+	25;
+	31;
+	35;
+	41;
+	44;
+	49;
+	50;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	2 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 50 [
+		color=red
+		label=false
+	];
+	18 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 31;
+	25 -> 31;
+	31 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 49 [
+		color=red
+		label=false
+	];
+	35 -> 41 [
+		color=red
+		label=false
+	];
+	35 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 49 [
+		color=red
+		label=false
+	];
+	44 -> 49;
+	49 -> 50;
+}

@@ -1,0 +1,141 @@
+digraph "sqlite3PagerSetPagesize" {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	23;
+	29;
+	32;
+	38;
+	44;
+	51;
+	56;
+	59;
+	64;
+	65;
+	66;
+	69;
+	76;
+	79;
+	100;
+	102;
+	103;
+	110;
+	113;
+	118;
+	124;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=red
+		label=false
+	];
+	3 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 103 [
+		color=red
+		label=false
+	];
+	23 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 103 [
+		color=red
+		label=false
+	];
+	29 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 103 [
+		color=red
+		label=false
+	];
+	32 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 103 [
+		color=red
+		label=false
+	];
+	38 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 56 [
+		color=red
+		label=false
+	];
+	44 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 56 [
+		color=red
+		label=false
+	];
+	51 -> 56;
+	56 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 66 [
+		color=red
+		label=false
+	];
+	59 -> 64 [
+		color=red
+		label=false
+	];
+	59 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 65;
+	65 -> 66;
+	66 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 76 [
+		color=red
+		label=false
+	];
+	69 -> 76;
+	76 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 100 [
+		color=red
+		label=false
+	];
+	79 -> 102;
+	100 -> 102;
+	102 -> 103;
+	103 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 124 [
+		color=red
+		label=false
+	];
+	110 -> 113 [
+		color=darkgreen
+		label=true
+	];
+	110 -> 118 [
+		color=red
+		label=false
+	];
+	113 -> 118;
+	118 -> 124;
+}

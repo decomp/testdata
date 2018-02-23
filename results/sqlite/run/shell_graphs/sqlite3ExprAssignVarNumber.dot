@@ -1,0 +1,142 @@
+digraph "sqlite3ExprAssignVarNumber" {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	19;
+	29;
+	34;
+	40;
+	43;
+	50;
+	58;
+	61;
+	64;
+	72;
+	78;
+	88;
+	94;
+	102;
+	103;
+	104;
+	105;
+	116;
+	121;
+	122;
+	125;
+	137;
+	138;
+	149;
+	151;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 151;
+	19 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 34 [
+		color=red
+		label=false
+	];
+	29 -> 138;
+	34 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 105 [
+		color=red
+		label=false
+	];
+	40 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 50 [
+		color=red
+		label=false
+	];
+	43 -> 58;
+	50 -> 58;
+	58 -> 61 [
+		color=red
+		label=false
+	];
+	58 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 64 [
+		color=red
+		label=false
+	];
+	61 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 78 [
+		color=red
+		label=false
+	];
+	72 -> 151;
+	78 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 94 [
+		color=red
+		label=false
+	];
+	88 -> 104;
+	94 -> 102 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 103 [
+		color=red
+		label=false
+	];
+	102 -> 103;
+	103 -> 104;
+	104 -> 122;
+	105 -> 116 [
+		color=darkgreen
+		label=true
+	];
+	105 -> 121 [
+		color=red
+		label=false
+	];
+	116 -> 121;
+	121 -> 122;
+	122 -> 125 [
+		color=darkgreen
+		label=true
+	];
+	122 -> 137 [
+		color=red
+		label=false
+	];
+	125 -> 137;
+	137 -> 138;
+	138 -> 149 [
+		color=darkgreen
+		label=true
+	];
+	138 -> 151 [
+		color=red
+		label=false
+	];
+	149 -> 151;
+}

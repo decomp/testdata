@@ -1,0 +1,34 @@
+digraph "functionSearch" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	14;
+	21;
+	23;
+	24;
+	29;
+	30;
+
+	// Edge definitions.
+	2 -> 11;
+	11 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 29 [
+		color=red
+		label=false
+	];
+	14 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 23 [
+		color=red
+		label=false
+	];
+	21 -> 30;
+	23 -> 24;
+	24 -> 11;
+	29 -> 30;
+}

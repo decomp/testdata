@@ -1,0 +1,71 @@
+digraph "pcache1TruncateUnsafe" {
+	// Node definitions.
+	2 [label=entry];
+	18;
+	31;
+	38;
+	39;
+	46;
+	50;
+	56;
+	69;
+	72;
+	74;
+	77;
+	78;
+	82;
+	83;
+	90;
+
+	// Edge definitions.
+	2 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 31 [
+		color=red
+		label=false
+	];
+	18 -> 38;
+	31 -> 38;
+	38 -> 39;
+	39 -> 46;
+	46 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 78 [
+		color=red
+		label=false
+	];
+	50 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 74 [
+		color=red
+		label=false
+	];
+	56 -> 69 [
+		color=red
+		label=false
+	];
+	56 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 72;
+	72 -> 77;
+	74 -> 77;
+	77 -> 46;
+	78 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 83 [
+		color=red
+		label=false
+	];
+	82 -> 90;
+	83 -> 39;
+}

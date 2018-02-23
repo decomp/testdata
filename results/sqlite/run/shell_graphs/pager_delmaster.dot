@@ -1,0 +1,155 @@
+digraph "pager_delmaster" {
+	// Node definitions.
+	2 [label=entry];
+	38;
+	39;
+	44;
+	47;
+	48;
+	53;
+	54;
+	67;
+	68;
+	80;
+	81;
+	86;
+	94;
+	100;
+	101;
+	104;
+	112;
+	113;
+	121;
+	122;
+	128;
+	133;
+	138;
+	139;
+	140;
+	147;
+	152;
+	156;
+	160;
+
+	// Edge definitions.
+	2 -> 38 [
+		color=red
+		label=false
+	];
+	2 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 44;
+	39 -> 44;
+	44 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 48 [
+		color=red
+		label=false
+	];
+	47 -> 152;
+	48 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 152;
+	54 -> 67 [
+		color=red
+		label=false
+	];
+	54 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 152;
+	68 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 81 [
+		color=red
+		label=false
+	];
+	80 -> 152;
+	81 -> 86;
+	86 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 147 [
+		color=red
+		label=false
+	];
+	94 -> 100 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 101 [
+		color=red
+		label=false
+	];
+	100 -> 152;
+	101 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	101 -> 140 [
+		color=red
+		label=false
+	];
+	104 -> 112 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 113 [
+		color=red
+		label=false
+	];
+	112 -> 152;
+	113 -> 121 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 122 [
+		color=red
+		label=false
+	];
+	121 -> 152;
+	122 -> 128 [
+		color=darkgreen
+		label=true
+	];
+	122 -> 133 [
+		color=red
+		label=false
+	];
+	128 -> 133;
+	133 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	133 -> 139 [
+		color=red
+		label=false
+	];
+	138 -> 152;
+	139 -> 140;
+	140 -> 86;
+	147 -> 152;
+	152 -> 156 [
+		color=darkgreen
+		label=true
+	];
+	152 -> 160 [
+		color=red
+		label=false
+	];
+	156 -> 160;
+}

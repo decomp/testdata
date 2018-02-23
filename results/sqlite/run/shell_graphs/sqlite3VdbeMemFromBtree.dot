@@ -1,0 +1,19 @@
+digraph "sqlite3VdbeMemFromBtree" {
+	// Node definitions.
+	4 [label=entry];
+	19;
+	31;
+	37;
+
+	// Edge definitions.
+	4 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 31 [
+		color=red
+		label=false
+	];
+	19 -> 37;
+	31 -> 37;
+}

@@ -1,0 +1,41 @@
+digraph "sqlite3ExprVectorSize" {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	15;
+	19;
+	26;
+	30;
+	39;
+	40;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 15 [
+		color=red
+		label=false
+	];
+	11 -> 15;
+	15 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 26 [
+		color=red
+		label=false
+	];
+	19 -> 40;
+	26 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 39 [
+		color=red
+		label=false
+	];
+	30 -> 40;
+	39 -> 40;
+}

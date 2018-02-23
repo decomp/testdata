@@ -1,0 +1,52 @@
+digraph "dbReallocFinish" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	18;
+	24;
+	34;
+	35;
+	41;
+	43;
+	44;
+	45;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 45 [
+		color=red
+		label=false
+	];
+	13 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 35 [
+		color=red
+		label=false
+	];
+	18 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 34 [
+		color=red
+		label=false
+	];
+	24 -> 34;
+	34 -> 44;
+	35 -> 41 [
+		color=red
+		label=false
+	];
+	35 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 43;
+	43 -> 44;
+	44 -> 45;
+}

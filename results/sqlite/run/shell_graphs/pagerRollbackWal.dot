@@ -1,0 +1,30 @@
+digraph "pagerRollbackWal" {
+	// Node definitions.
+	1 [label=entry];
+	21;
+	24;
+	27;
+	29;
+	40;
+
+	// Edge definitions.
+	1 -> 21;
+	21 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 27 [
+		color=red
+		label=false
+	];
+	24 -> 27;
+	27 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 40 [
+		color=red
+		label=false
+	];
+	29 -> 21;
+}

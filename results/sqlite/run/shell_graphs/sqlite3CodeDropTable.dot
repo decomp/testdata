@@ -1,0 +1,72 @@
+digraph "sqlite3CodeDropTable" {
+	// Node definitions.
+	4 [label=entry];
+	30;
+	33;
+	37;
+	40;
+	46;
+	52;
+	60;
+	70;
+	75;
+	78;
+	83;
+	90;
+
+	// Edge definitions.
+	4 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 33 [
+		color=red
+		label=false
+	];
+	30 -> 33;
+	33 -> 37;
+	37 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 46 [
+		color=red
+		label=false
+	];
+	40 -> 37;
+	46 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 60 [
+		color=red
+		label=false
+	];
+	52 -> 60;
+	60 -> 70 [
+		color=red
+		label=false
+	];
+	60 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 75 [
+		color=red
+		label=false
+	];
+	70 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 78;
+	78 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 90 [
+		color=red
+		label=false
+	];
+	83 -> 90;
+}

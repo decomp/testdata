@@ -1,0 +1,52 @@
+digraph "vdbeIncrPopulate" {
+	// Node definitions.
+	1 [label=entry];
+	35;
+	38;
+	62;
+	63;
+	80;
+	81;
+	92;
+	98;
+	100;
+
+	// Edge definitions.
+	1 -> 35;
+	35 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 92 [
+		color=red
+		label=false
+	];
+	38 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 63 [
+		color=red
+		label=false
+	];
+	62 -> 92;
+	63 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 81 [
+		color=red
+		label=false
+	];
+	80 -> 92;
+	81 -> 35;
+	92 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 100 [
+		color=red
+		label=false
+	];
+	98 -> 100;
+}

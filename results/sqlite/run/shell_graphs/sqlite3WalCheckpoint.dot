@@ -1,0 +1,204 @@
+digraph "sqlite3WalCheckpoint" {
+	// Node definitions.
+	10 [label=entry];
+	32;
+	33;
+	38;
+	40;
+	45;
+	52;
+	55;
+	58;
+	59;
+	60;
+	61;
+	64;
+	69;
+	78;
+	83;
+	84;
+	87;
+	93;
+	98;
+	100;
+	109;
+	112;
+	115;
+	118;
+	124;
+	127;
+	133;
+	134;
+	135;
+	138;
+	142;
+	150;
+	154;
+	155;
+	157;
+	159;
+
+	// Edge definitions.
+	10 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 159;
+	33 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 40 [
+		color=red
+		label=false
+	];
+	38 -> 159;
+	40 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 61 [
+		color=red
+		label=false
+	];
+	45 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 55 [
+		color=red
+		label=false
+	];
+	52 -> 60;
+	55 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 59 [
+		color=red
+		label=false
+	];
+	58 -> 59;
+	59 -> 60;
+	60 -> 61;
+	61 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 84 [
+		color=red
+		label=false
+	];
+	64 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 83 [
+		color=red
+		label=false
+	];
+	69 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 83 [
+		color=red
+		label=false
+	];
+	78 -> 83;
+	83 -> 84;
+	84 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 135 [
+		color=red
+		label=false
+	];
+	87 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	87 -> 100 [
+		color=red
+		label=false
+	];
+	93 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	93 -> 100 [
+		color=red
+		label=false
+	];
+	98 -> 109;
+	100 -> 109;
+	109 -> 112 [
+		color=red
+		label=false
+	];
+	109 -> 115 [
+		color=darkgreen
+		label=true
+	];
+	112 -> 115 [
+		color=darkgreen
+		label=true
+	];
+	112 -> 134 [
+		color=red
+		label=false
+	];
+	115 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	115 -> 124 [
+		color=red
+		label=false
+	];
+	118 -> 124;
+	124 -> 127 [
+		color=darkgreen
+		label=true
+	];
+	124 -> 133 [
+		color=red
+		label=false
+	];
+	127 -> 133;
+	133 -> 134;
+	134 -> 135;
+	135 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	135 -> 142 [
+		color=red
+		label=false
+	];
+	138 -> 142;
+	142 -> 150 [
+		color=darkgreen
+		label=true
+	];
+	142 -> 155 [
+		color=red
+		label=false
+	];
+	150 -> 154 [
+		color=darkgreen
+		label=true
+	];
+	150 -> 155 [
+		color=red
+		label=false
+	];
+	154 -> 157;
+	155 -> 157;
+	157 -> 159;
+}

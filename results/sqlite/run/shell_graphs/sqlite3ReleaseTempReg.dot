@@ -1,0 +1,52 @@
+digraph "sqlite3ReleaseTempReg" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	15;
+	19;
+	26;
+	32;
+	35;
+	36;
+	41;
+	51;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 51 [
+		color=red
+		label=false
+	];
+	9 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 51 [
+		color=red
+		label=false
+	];
+	15 -> 19;
+	19 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 41 [
+		color=red
+		label=false
+	];
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 35 [
+		color=red
+		label=false
+	];
+	32 -> 51;
+	35 -> 36;
+	36 -> 19;
+	41 -> 51;
+}

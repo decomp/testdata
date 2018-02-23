@@ -1,0 +1,37 @@
+digraph "sqlite3BtreePrevious" {
+	// Node definitions.
+	2 [label=entry];
+	21;
+	27;
+	40;
+	43;
+	48;
+
+	// Edge definitions.
+	2 -> 21 [
+		color=red
+		label=false
+	];
+	2 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 27 [
+		color=red
+		label=false
+	];
+	21 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 43 [
+		color=red
+		label=false
+	];
+	40 -> 48;
+	43 -> 48;
+}

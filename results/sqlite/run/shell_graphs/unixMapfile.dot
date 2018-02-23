@@ -1,0 +1,63 @@
+digraph "unixMapfile" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	15;
+	23;
+	24;
+	27;
+	33;
+	37;
+	43;
+	46;
+	47;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	11 -> 47;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 27 [
+		color=red
+		label=false
+	];
+	15 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 47;
+	24 -> 27;
+	27 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 37 [
+		color=red
+		label=false
+	];
+	33 -> 37;
+	37 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 46 [
+		color=red
+		label=false
+	];
+	43 -> 46;
+	46 -> 47;
+}

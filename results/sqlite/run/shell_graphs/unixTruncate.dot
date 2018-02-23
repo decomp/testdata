@@ -1,0 +1,41 @@
+digraph "unixTruncate" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	32;
+	40;
+	48;
+	54;
+	58;
+	59;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 32 [
+		color=red
+		label=false
+	];
+	14 -> 32;
+	32 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 48 [
+		color=red
+		label=false
+	];
+	40 -> 59;
+	48 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 58 [
+		color=red
+		label=false
+	];
+	54 -> 58;
+	58 -> 59;
+}

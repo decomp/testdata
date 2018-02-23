@@ -1,0 +1,67 @@
+digraph "unixDelete" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	20;
+	21;
+	24;
+	26;
+	30;
+	37;
+	41;
+	44;
+	46;
+	47;
+	48;
+	50;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 26 [
+		color=red
+		label=false
+	];
+	16 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 21 [
+		color=red
+		label=false
+	];
+	20 -> 24;
+	21 -> 24;
+	24 -> 50;
+	26 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 48 [
+		color=red
+		label=false
+	];
+	30 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 46 [
+		color=red
+		label=false
+	];
+	37 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 44 [
+		color=red
+		label=false
+	];
+	41 -> 44;
+	44 -> 47;
+	46 -> 47;
+	47 -> 48;
+	48 -> 50;
+}

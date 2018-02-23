@@ -1,0 +1,32 @@
+digraph "accessPayloadChecked" {
+	// Node definitions.
+	4 [label=entry];
+	16;
+	17;
+	22;
+	24;
+	30;
+	32;
+
+	// Edge definitions.
+	4 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 17 [
+		color=red
+		label=false
+	];
+	16 -> 32;
+	17 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 24 [
+		color=red
+		label=false
+	];
+	22 -> 30;
+	24 -> 30;
+	30 -> 32;
+}

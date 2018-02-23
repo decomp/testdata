@@ -1,0 +1,28 @@
+digraph "sqlite3CodeRowTriggerDirect" {
+	// Node definitions.
+	6 [label=entry];
+	25;
+	30;
+	38;
+	57;
+
+	// Edge definitions.
+	6 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 57 [
+		color=red
+		label=false
+	];
+	25 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 38 [
+		color=red
+		label=false
+	];
+	30 -> 38;
+	38 -> 57;
+}

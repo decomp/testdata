@@ -1,0 +1,17 @@
+digraph "whereLikeOptimizationStringFixup" {
+	// Node definitions.
+	3 [label=entry];
+	14;
+	31;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 31 [
+		color=red
+		label=false
+	];
+	14 -> 31;
+}

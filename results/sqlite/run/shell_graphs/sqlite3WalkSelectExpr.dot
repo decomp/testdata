@@ -1,0 +1,85 @@
+digraph "sqlite3WalkSelectExpr" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	13;
+	20;
+	21;
+	28;
+	29;
+	36;
+	37;
+	44;
+	45;
+	52;
+	53;
+	60;
+	61;
+	62;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	12 -> 62;
+	13 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 21 [
+		color=red
+		label=false
+	];
+	20 -> 62;
+	21 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 62;
+	29 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 37 [
+		color=red
+		label=false
+	];
+	36 -> 62;
+	37 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 45 [
+		color=red
+		label=false
+	];
+	44 -> 62;
+	45 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 53 [
+		color=red
+		label=false
+	];
+	52 -> 62;
+	53 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 61 [
+		color=red
+		label=false
+	];
+	60 -> 62;
+	61 -> 62;
+}

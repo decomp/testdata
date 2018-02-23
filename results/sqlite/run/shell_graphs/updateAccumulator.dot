@@ -1,0 +1,161 @@
+digraph "updateAccumulator" {
+	// Node definitions.
+	2 [label=entry];
+	26;
+	32;
+	41;
+	52;
+	53;
+	58;
+	67;
+	76;
+	80;
+	83;
+	87;
+	89;
+	95;
+	100;
+	103;
+	109;
+	112;
+	117;
+	122;
+	128;
+	152;
+	156;
+	157;
+	162;
+	165;
+	169;
+	174;
+	180;
+	188;
+	193;
+	199;
+	202;
+
+	// Edge definitions.
+	2 -> 26;
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 162 [
+		color=red
+		label=false
+	];
+	32 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 52 [
+		color=red
+		label=false
+	];
+	41 -> 53;
+	52 -> 53;
+	53 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 67 [
+		color=red
+		label=false
+	];
+	58 -> 67;
+	67 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 128 [
+		color=red
+		label=false
+	];
+	76 -> 80;
+	80 -> 83 [
+		color=red
+		label=false
+	];
+	80 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 87;
+	87 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	87 -> 100 [
+		color=red
+		label=false
+	];
+	89 -> 95;
+	95 -> 80;
+	100 -> 103 [
+		color=red
+		label=false
+	];
+	100 -> 109 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 109;
+	109 -> 112 [
+		color=darkgreen
+		label=true
+	];
+	109 -> 122 [
+		color=red
+		label=false
+	];
+	112 -> 117 [
+		color=darkgreen
+		label=true
+	];
+	112 -> 122 [
+		color=red
+		label=false
+	];
+	117 -> 122;
+	122 -> 128;
+	128 -> 152 [
+		color=darkgreen
+		label=true
+	];
+	128 -> 156 [
+		color=red
+		label=false
+	];
+	152 -> 156;
+	156 -> 157;
+	157 -> 26;
+	162 -> 165 [
+		color=darkgreen
+		label=true
+	];
+	162 -> 169 [
+		color=red
+		label=false
+	];
+	165 -> 169;
+	169 -> 174;
+	174 -> 180 [
+		color=darkgreen
+		label=true
+	];
+	174 -> 193 [
+		color=red
+		label=false
+	];
+	180 -> 188;
+	188 -> 174;
+	193 -> 199 [
+		color=darkgreen
+		label=true
+	];
+	193 -> 202 [
+		color=red
+		label=false
+	];
+	199 -> 202;
+}

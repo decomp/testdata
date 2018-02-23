@@ -1,0 +1,151 @@
+digraph "completionFilter" {
+	// Node definitions.
+	5 [label=entry];
+	23;
+	36;
+	50;
+	51;
+	52;
+	55;
+	59;
+	72;
+	86;
+	87;
+	88;
+	91;
+	96;
+	101;
+	105;
+	108;
+	126;
+	137;
+	139;
+	141;
+	144;
+	156;
+	173;
+	174;
+	175;
+	176;
+	183;
+
+	// Edge definitions.
+	5 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 55 [
+		color=red
+		label=false
+	];
+	23 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 52 [
+		color=red
+		label=false
+	];
+	36 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 51 [
+		color=red
+		label=false
+	];
+	50 -> 183;
+	51 -> 52;
+	52 -> 55;
+	55 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 91 [
+		color=red
+		label=false
+	];
+	59 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 88 [
+		color=red
+		label=false
+	];
+	72 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 87 [
+		color=red
+		label=false
+	];
+	86 -> 183;
+	87 -> 88;
+	88 -> 91;
+	91 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 176 [
+		color=red
+		label=false
+	];
+	96 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	96 -> 176 [
+		color=red
+		label=false
+	];
+	101 -> 105;
+	105 -> 108 [
+		color=darkgreen
+		label=true
+	];
+	105 -> 139 [
+		color=red
+		label=false
+	];
+	108 -> 126 [
+		color=red
+		label=false
+	];
+	108 -> 137 [
+		color=darkgreen
+		label=true
+	];
+	126 -> 137;
+	137 -> 139;
+	139 -> 141 [
+		color=darkgreen
+		label=true
+	];
+	139 -> 144 [
+		color=red
+		label=false
+	];
+	141 -> 105;
+	144 -> 156 [
+		color=darkgreen
+		label=true
+	];
+	144 -> 175 [
+		color=red
+		label=false
+	];
+	156 -> 173 [
+		color=darkgreen
+		label=true
+	];
+	156 -> 174 [
+		color=red
+		label=false
+	];
+	173 -> 183;
+	174 -> 175;
+	175 -> 176;
+	176 -> 183;
+}

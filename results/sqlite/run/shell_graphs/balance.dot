@@ -1,0 +1,160 @@
+digraph "balance" {
+	// Node definitions.
+	1 [label=entry];
+	19;
+	32;
+	37;
+	45;
+	53;
+	54;
+	55;
+	56;
+	62;
+	69;
+	70;
+	92;
+	98;
+	104;
+	115;
+	120;
+	127;
+	132;
+	153;
+	155;
+	157;
+	158;
+	166;
+	167;
+	168;
+	171;
+	174;
+	176;
+
+	// Edge definitions.
+	1 -> 19;
+	19 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 56 [
+		color=red
+		label=false
+	];
+	32 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 54 [
+		color=red
+		label=false
+	];
+	37 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 53 [
+		color=red
+		label=false
+	];
+	45 -> 53;
+	53 -> 55;
+	54 -> 171;
+	55 -> 167;
+	56 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 70 [
+		color=red
+		label=false
+	];
+	62 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 70 [
+		color=red
+		label=false
+	];
+	69 -> 171;
+	70 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 158 [
+		color=red
+		label=false
+	];
+	92 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 132 [
+		color=red
+		label=false
+	];
+	98 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	98 -> 132 [
+		color=red
+		label=false
+	];
+	104 -> 115 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 132 [
+		color=red
+		label=false
+	];
+	115 -> 120 [
+		color=darkgreen
+		label=true
+	];
+	115 -> 132 [
+		color=red
+		label=false
+	];
+	120 -> 127 [
+		color=darkgreen
+		label=true
+	];
+	120 -> 132 [
+		color=red
+		label=false
+	];
+	127 -> 157;
+	132 -> 153 [
+		color=darkgreen
+		label=true
+	];
+	132 -> 155 [
+		color=red
+		label=false
+	];
+	153 -> 155;
+	155 -> 157;
+	157 -> 158;
+	158 -> 166;
+	166 -> 167;
+	167 -> 168;
+	168 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	168 -> 171 [
+		color=red
+		label=false
+	];
+	171 -> 174 [
+		color=darkgreen
+		label=true
+	];
+	171 -> 176 [
+		color=red
+		label=false
+	];
+	174 -> 176;
+}

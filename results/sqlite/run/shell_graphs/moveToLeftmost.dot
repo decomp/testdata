@@ -1,0 +1,30 @@
+digraph "moveToLeftmost" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	9;
+	22;
+	24;
+	67;
+
+	// Edge definitions.
+	1 -> 6;
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 22 [
+		color=red
+		label=false
+	];
+	9 -> 22;
+	22 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 67 [
+		color=red
+		label=false
+	];
+	24 -> 6;
+}

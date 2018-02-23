@@ -1,0 +1,19 @@
+digraph "setDateTimeToCurrent" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	17;
+	18;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 17 [
+		color=red
+		label=false
+	];
+	14 -> 18;
+	17 -> 18;
+}

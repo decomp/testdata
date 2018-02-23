@@ -1,0 +1,41 @@
+digraph "vdbeSorterOpenTempFile" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	13;
+	21;
+	27;
+	32;
+	33;
+	35;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 13 [
+		color=red
+		label=false
+	];
+	12 -> 35;
+	13 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 33 [
+		color=red
+		label=false
+	];
+	21 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 32 [
+		color=red
+		label=false
+	];
+	27 -> 32;
+	32 -> 33;
+	33 -> 35;
+}

@@ -1,0 +1,81 @@
+digraph "walMerge" {
+	// Node definitions.
+	6 [label=entry];
+	24;
+	28;
+	32;
+	34;
+	38;
+	42;
+	62;
+	69;
+	76;
+	91;
+	103;
+	106;
+	107;
+
+	// Edge definitions.
+	6 -> 24;
+	24 -> 28 [
+		color=red
+		label=false
+	];
+	24 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 32;
+	32 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 107 [
+		color=red
+		label=false
+	];
+	34 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 69 [
+		color=red
+		label=false
+	];
+	38 -> 42 [
+		color=red
+		label=false
+	];
+	38 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 69 [
+		color=red
+		label=false
+	];
+	62 -> 76;
+	69 -> 76;
+	76 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 106 [
+		color=red
+		label=false
+	];
+	91 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 106 [
+		color=red
+		label=false
+	];
+	103 -> 106;
+	106 -> 24;
+}

@@ -1,0 +1,26 @@
+digraph "unicodeFunc" {
+	// Node definitions.
+	3 [label=entry];
+	15;
+	21;
+	24;
+
+	// Edge definitions.
+	3 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 24 [
+		color=red
+		label=false
+	];
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 24 [
+		color=red
+		label=false
+	];
+	21 -> 24;
+}

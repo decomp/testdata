@@ -1,0 +1,30 @@
+digraph "growVTrans" {
+	// Node definitions.
+	1 [label=entry];
+	12;
+	31;
+	32;
+	43;
+	44;
+
+	// Edge definitions.
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 43 [
+		color=red
+		label=false
+	];
+	12 -> 31 [
+		color=red
+		label=false
+	];
+	12 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 44;
+	32 -> 43;
+	43 -> 44;
+}

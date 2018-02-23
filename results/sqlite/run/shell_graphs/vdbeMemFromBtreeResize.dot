@@ -1,0 +1,30 @@
+digraph "vdbeMemFromBtreeResize" {
+	// Node definitions.
+	4 [label=entry];
+	17;
+	27;
+	46;
+	48;
+	49;
+
+	// Edge definitions.
+	4 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 49 [
+		color=red
+		label=false
+	];
+	17 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 46 [
+		color=red
+		label=false
+	];
+	27 -> 48;
+	46 -> 48;
+	48 -> 49;
+}

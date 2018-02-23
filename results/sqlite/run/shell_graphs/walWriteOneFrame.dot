@@ -1,0 +1,19 @@
+digraph "walWriteOneFrame" {
+	// Node definitions.
+	4 [label=entry];
+	31;
+	33;
+	43;
+
+	// Edge definitions.
+	4 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 33 [
+		color=red
+		label=false
+	];
+	31 -> 43;
+	33 -> 43;
+}

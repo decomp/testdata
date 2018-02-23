@@ -1,0 +1,78 @@
+digraph "sqlite3_strnicmp" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	16;
+	19;
+	20;
+	21;
+	24;
+	28;
+	33;
+	47;
+	49;
+	54;
+	57;
+	58;
+	72;
+	74;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 16 [
+		color=red
+		label=false
+	];
+	12 -> 74;
+	16 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 20 [
+		color=red
+		label=false
+	];
+	19 -> 74;
+	20 -> 21;
+	21 -> 24;
+	24 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 47 [
+		color=red
+		label=false
+	];
+	28 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 47 [
+		color=red
+		label=false
+	];
+	33 -> 47;
+	47 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 54 [
+		color=red
+		label=false
+	];
+	49 -> 24;
+	54 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 58 [
+		color=red
+		label=false
+	];
+	57 -> 72;
+	58 -> 72;
+	72 -> 74;
+}

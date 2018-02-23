@@ -1,0 +1,83 @@
+digraph "saveCursorsOnList" {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	13;
+	16;
+	22;
+	28;
+	34;
+	39;
+	41;
+	42;
+	44;
+	45;
+	49;
+	52;
+	53;
+
+	// Edge definitions.
+	3 -> 9;
+	9 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 45 [
+		color=red
+		label=false
+	];
+	13 -> 16 [
+		color=red
+		label=false
+	];
+	13 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 45 [
+		color=red
+		label=false
+	];
+	22 -> 28 [
+		color=red
+		label=false
+	];
+	22 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 42 [
+		color=red
+		label=false
+	];
+	34 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 41 [
+		color=red
+		label=false
+	];
+	39 -> 53;
+	41 -> 44;
+	42 -> 44;
+	44 -> 45;
+	45 -> 49;
+	49 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 52 [
+		color=red
+		label=false
+	];
+	52 -> 53;
+}

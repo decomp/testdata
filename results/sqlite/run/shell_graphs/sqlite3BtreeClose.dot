@@ -1,0 +1,92 @@
+digraph "sqlite3BtreeClose" {
+	// Node definitions.
+	1 [label=entry];
+	13;
+	16;
+	26;
+	29;
+	30;
+	38;
+	42;
+	54;
+	59;
+	66;
+	73;
+	78;
+	86;
+	91;
+	99;
+
+	// Edge definitions.
+	1 -> 13;
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 30 [
+		color=red
+		label=false
+	];
+	16 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 29 [
+		color=red
+		label=false
+	];
+	26 -> 29;
+	29 -> 13;
+	30 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 42 [
+		color=red
+		label=false
+	];
+	38 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 73 [
+		color=red
+		label=false
+	];
+	42 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 66 [
+		color=red
+		label=false
+	];
+	54 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 66 [
+		color=red
+		label=false
+	];
+	59 -> 66;
+	66 -> 73;
+	73 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 86 [
+		color=red
+		label=false
+	];
+	78 -> 86;
+	86 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 99 [
+		color=red
+		label=false
+	];
+	91 -> 99;
+}

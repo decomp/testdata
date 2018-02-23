@@ -1,0 +1,88 @@
+digraph "shellAddSchemaName" {
+	// Node definitions.
+	3 [label=entry];
+	23;
+	24;
+	25;
+	28;
+	32;
+	33;
+	36;
+	52;
+	61;
+	66;
+	77;
+	88;
+	91;
+	92;
+	95;
+	96;
+	101;
+
+	// Edge definitions.
+	3 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 25;
+	25 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 96 [
+		color=red
+		label=false
+	];
+	28 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 96 [
+		color=red
+		label=false
+	];
+	32 -> 33;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 95 [
+		color=red
+		label=false
+	];
+	36 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 91 [
+		color=red
+		label=false
+	];
+	52 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 91 [
+		color=red
+		label=false
+	];
+	61 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 77 [
+		color=red
+		label=false
+	];
+	66 -> 88;
+	77 -> 88;
+	88 -> 101;
+	91 -> 92;
+	92 -> 33;
+	95 -> 96;
+	96 -> 101;
+}

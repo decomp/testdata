@@ -1,0 +1,26 @@
+digraph "whereSortingCost" {
+	// Node definitions.
+	4 [label=entry];
+	35;
+	43;
+	47;
+
+	// Edge definitions.
+	4 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 47 [
+		color=red
+		label=false
+	];
+	35 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 47 [
+		color=red
+		label=false
+	];
+	43 -> 47;
+}

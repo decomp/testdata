@@ -1,0 +1,37 @@
+digraph "openSubJournal" {
+	// Node definitions.
+	1 [label=entry];
+	12;
+	19;
+	25;
+	26;
+	35;
+
+	// Edge definitions.
+	1 -> 12 [
+		color=red
+		label=false
+	];
+	1 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 19 [
+		color=red
+		label=false
+	];
+	12 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 26;
+	26 -> 35;
+}

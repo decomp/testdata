@@ -1,0 +1,21 @@
+digraph "memjrnlFreeChunks" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	11;
+	17;
+	19;
+
+	// Edge definitions.
+	1 -> 8;
+	8 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 19 [
+		color=red
+		label=false
+	];
+	11 -> 17;
+	17 -> 8;
+}

@@ -1,0 +1,32 @@
+digraph "identLength" {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	8;
+	13;
+	16;
+	17;
+	22;
+
+	// Edge definitions.
+	1 -> 4;
+	4 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 22 [
+		color=red
+		label=false
+	];
+	8 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 16 [
+		color=red
+		label=false
+	];
+	13 -> 16;
+	16 -> 17;
+	17 -> 4;
+}

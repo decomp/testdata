@@ -1,0 +1,30 @@
+digraph "sqlite3VtabUnlockList" {
+	// Node definitions.
+	1 [label=entry];
+	12;
+	14;
+	20;
+	23;
+	24;
+
+	// Edge definitions.
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 24 [
+		color=red
+		label=false
+	];
+	12 -> 14;
+	14 -> 20;
+	20 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 23 [
+		color=red
+		label=false
+	];
+	23 -> 24;
+}

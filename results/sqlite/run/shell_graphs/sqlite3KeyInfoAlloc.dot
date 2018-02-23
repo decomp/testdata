@@ -1,0 +1,19 @@
+digraph "sqlite3KeyInfoAlloc" {
+	// Node definitions.
+	3 [label=entry];
+	24;
+	58;
+	60;
+
+	// Edge definitions.
+	3 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 58 [
+		color=red
+		label=false
+	];
+	24 -> 60;
+	58 -> 60;
+}

@@ -1,0 +1,88 @@
+digraph "sqlite3ExprImpliesExpr" {
+	// Node definitions.
+	4 [label=entry];
+	17;
+	18;
+	24;
+	33;
+	42;
+	43;
+	49;
+	55;
+	61;
+	74;
+	75;
+	76;
+	77;
+
+	// Edge definitions.
+	4 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 18 [
+		color=red
+		label=false
+	];
+	17 -> 77;
+	18 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 43 [
+		color=red
+		label=false
+	];
+	24 -> 33 [
+		color=red
+		label=false
+	];
+	24 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 43 [
+		color=red
+		label=false
+	];
+	42 -> 77;
+	43 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 76 [
+		color=red
+		label=false
+	];
+	49 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 76 [
+		color=red
+		label=false
+	];
+	55 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 76 [
+		color=red
+		label=false
+	];
+	61 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 75 [
+		color=red
+		label=false
+	];
+	74 -> 77;
+	75 -> 76;
+	76 -> 77;
+}

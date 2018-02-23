@@ -1,0 +1,30 @@
+digraph "sqlite3StrICmp" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	26;
+	31;
+	32;
+	37;
+
+	// Edge definitions.
+	2 -> 10;
+	10 -> 26 [
+		color=red
+		label=false
+	];
+	10 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 32 [
+		color=red
+		label=false
+	];
+	31 -> 37;
+	32 -> 10;
+}

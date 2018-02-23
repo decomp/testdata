@@ -1,0 +1,96 @@
+digraph "sqlite3ExprListCompare" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	16;
+	17;
+	20;
+	23;
+	24;
+	32;
+	33;
+	34;
+	40;
+	72;
+	73;
+	79;
+	80;
+	81;
+	84;
+	85;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 17 [
+		color=red
+		label=false
+	];
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 17 [
+		color=red
+		label=false
+	];
+	16 -> 85;
+	17 -> 20 [
+		color=red
+		label=false
+	];
+	17 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 85;
+	24 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 85;
+	33 -> 34;
+	34 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 84 [
+		color=red
+		label=false
+	];
+	40 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 73 [
+		color=red
+		label=false
+	];
+	72 -> 85;
+	73 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 80 [
+		color=red
+		label=false
+	];
+	79 -> 85;
+	80 -> 81;
+	81 -> 34;
+	84 -> 85;
+}

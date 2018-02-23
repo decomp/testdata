@@ -1,0 +1,17 @@
+digraph "sqlite3VdbeSorterClose" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	25;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 25 [
+		color=red
+		label=false
+	];
+	12 -> 25;
+}

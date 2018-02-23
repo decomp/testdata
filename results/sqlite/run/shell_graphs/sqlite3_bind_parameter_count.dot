@@ -1,0 +1,19 @@
+digraph "sqlite3_bind_parameter_count" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	13;
+	14;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 13 [
+		color=red
+		label=false
+	];
+	8 -> 14;
+	13 -> 14;
+}

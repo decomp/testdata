@@ -1,0 +1,72 @@
+digraph "getSafetyLevel" {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	22;
+	25;
+	28;
+	36;
+	47;
+	50;
+	57;
+	62;
+	63;
+	66;
+	68;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 22 [
+		color=red
+		label=false
+	];
+	18 -> 68;
+	22 -> 25;
+	25 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 66 [
+		color=red
+		label=false
+	];
+	28 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 62 [
+		color=red
+		label=false
+	];
+	36 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 62 [
+		color=red
+		label=false
+	];
+	47 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 57 [
+		color=red
+		label=false
+	];
+	50 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 62 [
+		color=red
+		label=false
+	];
+	57 -> 68;
+	62 -> 63;
+	63 -> 25;
+	66 -> 68;
+}

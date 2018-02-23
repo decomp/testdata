@@ -1,0 +1,43 @@
+digraph "whereIndexExprTrans" {
+	// Node definitions.
+	4 [label=entry];
+	18;
+	19;
+	28;
+	34;
+	44;
+	45;
+	68;
+	71;
+
+	// Edge definitions.
+	4 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 71;
+	19 -> 28;
+	28 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 71 [
+		color=red
+		label=false
+	];
+	34 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 45 [
+		color=red
+		label=false
+	];
+	44 -> 68;
+	45 -> 68;
+	68 -> 28;
+}

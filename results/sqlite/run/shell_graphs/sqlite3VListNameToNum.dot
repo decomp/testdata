@@ -1,0 +1,52 @@
+digraph "sqlite3VListNameToNum" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	14;
+	18;
+	31;
+	39;
+	45;
+	54;
+	58;
+	59;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 14 [
+		color=red
+		label=false
+	];
+	13 -> 59;
+	14 -> 18;
+	18 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 45 [
+		color=red
+		label=false
+	];
+	31 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 45 [
+		color=red
+		label=false
+	];
+	39 -> 59;
+	45 -> 54;
+	54 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 58 [
+		color=red
+		label=false
+	];
+	58 -> 59;
+}

@@ -1,0 +1,30 @@
+digraph "exprSetHeight" {
+	// Node definitions.
+	1 [label=entry];
+	15;
+	20;
+	26;
+	41;
+	42;
+
+	// Edge definitions.
+	1 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 20 [
+		color=red
+		label=false
+	];
+	15 -> 42;
+	20 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 41 [
+		color=red
+		label=false
+	];
+	26 -> 41;
+	41 -> 42;
+}

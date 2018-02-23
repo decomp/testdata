@@ -1,0 +1,56 @@
+digraph "sqlite3BeginTransaction" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	15;
+	20;
+	21;
+	24;
+	25;
+	31;
+	41;
+	44;
+	45;
+	48;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 48;
+	15 -> 20 [
+		color=red
+		label=false
+	];
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 48;
+	21 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 45 [
+		color=red
+		label=false
+	];
+	24 -> 25;
+	25 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 44 [
+		color=red
+		label=false
+	];
+	31 -> 41;
+	41 -> 25;
+	44 -> 45;
+	45 -> 48;
+}

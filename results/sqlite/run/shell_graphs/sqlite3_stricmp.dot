@@ -1,0 +1,32 @@
+digraph "sqlite3_stricmp" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	12;
+	15;
+	16;
+	17;
+	21;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	8 -> 21;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 16 [
+		color=red
+		label=false
+	];
+	15 -> 21;
+	16 -> 17;
+	17 -> 21;
+}

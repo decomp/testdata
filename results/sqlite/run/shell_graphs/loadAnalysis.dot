@@ -1,0 +1,17 @@
+digraph "loadAnalysis" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	14;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	10 -> 14;
+}

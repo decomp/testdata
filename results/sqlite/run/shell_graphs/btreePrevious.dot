@@ -1,0 +1,146 @@
+digraph "btreePrevious" {
+	// Node definitions.
+	1 [label=entry];
+	12;
+	18;
+	21;
+	22;
+	26;
+	28;
+	34;
+	35;
+	40;
+	47;
+	50;
+	53;
+	54;
+	67;
+	109;
+	111;
+	114;
+	115;
+	121;
+	127;
+	130;
+	132;
+	150;
+	155;
+	158;
+	159;
+	160;
+	162;
+
+	// Edge definitions.
+	1 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 54 [
+		color=red
+		label=false
+	];
+	12 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 21 [
+		color=red
+		label=false
+	];
+	18 -> 22;
+	21 -> 22;
+	22 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 28 [
+		color=red
+		label=false
+	];
+	26 -> 162;
+	28 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 35 [
+		color=red
+		label=false
+	];
+	34 -> 162;
+	35 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 53 [
+		color=red
+		label=false
+	];
+	40 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 50 [
+		color=red
+		label=false
+	];
+	47 -> 162;
+	50 -> 53;
+	53 -> 54;
+	54 -> 67 [
+		color=red
+		label=false
+	];
+	54 -> 114 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 109 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 111 [
+		color=red
+		label=false
+	];
+	109 -> 162;
+	111 -> 160;
+	114 -> 115;
+	115 -> 121 [
+		color=darkgreen
+		label=true
+	];
+	115 -> 132 [
+		color=red
+		label=false
+	];
+	121 -> 127 [
+		color=darkgreen
+		label=true
+	];
+	121 -> 130 [
+		color=red
+		label=false
+	];
+	127 -> 162;
+	130 -> 115;
+	132 -> 150 [
+		color=darkgreen
+		label=true
+	];
+	132 -> 158 [
+		color=red
+		label=false
+	];
+	150 -> 155 [
+		color=red
+		label=false
+	];
+	150 -> 158 [
+		color=darkgreen
+		label=true
+	];
+	155 -> 159;
+	158 -> 159;
+	159 -> 160;
+	160 -> 162;
+}

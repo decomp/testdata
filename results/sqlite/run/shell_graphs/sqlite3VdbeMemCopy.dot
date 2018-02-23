@@ -1,0 +1,39 @@
+digraph "sqlite3VdbeMemCopy" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	14;
+	31;
+	38;
+	47;
+	48;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	12 -> 14;
+	14 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 48 [
+		color=red
+		label=false
+	];
+	31 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 47 [
+		color=red
+		label=false
+	];
+	38 -> 47;
+	47 -> 48;
+}

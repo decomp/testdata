@@ -1,0 +1,83 @@
+digraph "sqlite3VdbeSorterNext" {
+	// Node definitions.
+	2 [label=entry];
+	17;
+	22;
+	29;
+	36;
+	37;
+	38;
+	45;
+	48;
+	49;
+	50;
+	51;
+	71;
+	74;
+	81;
+
+	// Edge definitions.
+	2 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 51 [
+		color=red
+		label=false
+	];
+	17 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 38 [
+		color=red
+		label=false
+	];
+	22 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 37 [
+		color=red
+		label=false
+	];
+	29 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 37 [
+		color=red
+		label=false
+	];
+	36 -> 37;
+	37 -> 50;
+	38 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 49 [
+		color=red
+		label=false
+	];
+	45 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 49 [
+		color=red
+		label=false
+	];
+	48 -> 49;
+	49 -> 50;
+	50 -> 81;
+	51 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 74 [
+		color=red
+		label=false
+	];
+	71 -> 74;
+	74 -> 81;
+}

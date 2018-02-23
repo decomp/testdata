@@ -1,0 +1,50 @@
+digraph "loadExt" {
+	// Node definitions.
+	3 [label=entry];
+	22;
+	24;
+	27;
+	32;
+	33;
+	36;
+	42;
+	46;
+
+	// Edge definitions.
+	3 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 24 [
+		color=red
+		label=false
+	];
+	22 -> 46;
+	24 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 32 [
+		color=red
+		label=false
+	];
+	27 -> 33;
+	32 -> 33;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 46 [
+		color=red
+		label=false
+	];
+	36 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 46 [
+		color=red
+		label=false
+	];
+	42 -> 46;
+}

@@ -1,0 +1,52 @@
+digraph "sqlite3_status64" {
+	// Node definitions.
+	4 [label=entry];
+	13;
+	16;
+	18;
+	25;
+	27;
+	29;
+	44;
+	52;
+	55;
+
+	// Edge definitions.
+	4 -> 13 [
+		color=red
+		label=false
+	];
+	4 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 18 [
+		color=red
+		label=false
+	];
+	16 -> 55;
+	18 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 27 [
+		color=red
+		label=false
+	];
+	25 -> 29;
+	27 -> 29;
+	29 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 52 [
+		color=red
+		label=false
+	];
+	44 -> 52;
+	52 -> 55;
+}

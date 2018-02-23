@@ -1,0 +1,26 @@
+digraph "vdbeSorterExtendFile" {
+	// Node definitions.
+	3 [label=entry];
+	15;
+	22;
+	34;
+
+	// Edge definitions.
+	3 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 34 [
+		color=red
+		label=false
+	];
+	15 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 34 [
+		color=red
+		label=false
+	];
+	22 -> 34;
+}

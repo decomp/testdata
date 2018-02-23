@@ -1,0 +1,34 @@
+digraph "statGet" {
+	// Node definitions.
+	3 [label=entry];
+	27;
+	29;
+	41;
+	47;
+	75;
+	78;
+	82;
+
+	// Edge definitions.
+	3 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 29 [
+		color=red
+		label=false
+	];
+	27 -> 82;
+	29 -> 41;
+	41 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 78 [
+		color=red
+		label=false
+	];
+	47 -> 75;
+	75 -> 41;
+	78 -> 82;
+}

@@ -1,0 +1,19 @@
+digraph "strHash" {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	11;
+	21;
+
+	// Edge definitions.
+	1 -> 5;
+	5 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 21 [
+		color=red
+		label=false
+	];
+	11 -> 5;
+}

@@ -1,0 +1,19 @@
+digraph "sqlite3WalReadFrame" {
+	// Node definitions.
+	4 [label=entry];
+	38;
+	40;
+	42;
+
+	// Edge definitions.
+	4 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 40 [
+		color=red
+		label=false
+	];
+	38 -> 42;
+	40 -> 42;
+}

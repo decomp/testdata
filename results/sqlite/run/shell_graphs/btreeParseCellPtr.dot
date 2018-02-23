@@ -1,0 +1,102 @@
+digraph "btreeParseCellPtr" {
+	// Node definitions.
+	3 [label=entry];
+	18;
+	23;
+	32;
+	37;
+	41;
+	43;
+	44;
+	52;
+	57;
+	71;
+	72;
+	76;
+	84;
+	85;
+	86;
+	104;
+	122;
+	125;
+	130;
+	134;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 44 [
+		color=red
+		label=false
+	];
+	18 -> 23;
+	23 -> 32;
+	32 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 41 [
+		color=red
+		label=false
+	];
+	37 -> 41;
+	41 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 43 [
+		color=red
+		label=false
+	];
+	43 -> 44;
+	44 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 86 [
+		color=red
+		label=false
+	];
+	52 -> 57;
+	57 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 72 [
+		color=red
+		label=false
+	];
+	71 -> 85;
+	72 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 84 [
+		color=red
+		label=false
+	];
+	76 -> 85;
+	84 -> 57;
+	85 -> 86;
+	86 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 130 [
+		color=red
+		label=false
+	];
+	104 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 125 [
+		color=red
+		label=false
+	];
+	122 -> 125;
+	125 -> 134;
+	130 -> 134;
+}

@@ -1,0 +1,19 @@
+digraph "sqlite3NameFromToken" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	19;
+	20;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 19 [
+		color=red
+		label=false
+	];
+	8 -> 20;
+	19 -> 20;
+}

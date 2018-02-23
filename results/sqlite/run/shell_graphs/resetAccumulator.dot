@@ -1,0 +1,65 @@
+digraph "resetAccumulator" {
+	// Node definitions.
+	2 [label=entry];
+	23;
+	24;
+	36;
+	42;
+	47;
+	56;
+	64;
+	68;
+	82;
+	83;
+	84;
+	89;
+
+	// Edge definitions.
+	2 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 89;
+	24 -> 36;
+	36 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 89 [
+		color=red
+		label=false
+	];
+	42 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 83 [
+		color=red
+		label=false
+	];
+	47 -> 56 [
+		color=red
+		label=false
+	];
+	47 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 68 [
+		color=red
+		label=false
+	];
+	64 -> 82;
+	68 -> 82;
+	82 -> 83;
+	83 -> 84;
+	84 -> 36;
+}

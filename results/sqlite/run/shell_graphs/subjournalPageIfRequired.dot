@@ -1,0 +1,19 @@
+digraph "subjournalPageIfRequired" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	10;
+	11;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 10 [
+		color=red
+		label=false
+	];
+	7 -> 11;
+	10 -> 11;
+}

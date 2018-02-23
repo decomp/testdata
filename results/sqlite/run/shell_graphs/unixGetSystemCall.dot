@@ -1,0 +1,34 @@
+digraph "unixGetSystemCall" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	12;
+	21;
+	27;
+	28;
+	31;
+	32;
+
+	// Edge definitions.
+	2 -> 8;
+	8 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 31 [
+		color=red
+		label=false
+	];
+	12 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 27 [
+		color=red
+		label=false
+	];
+	21 -> 32;
+	27 -> 28;
+	28 -> 8;
+	31 -> 32;
+}

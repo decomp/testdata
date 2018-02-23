@@ -1,0 +1,32 @@
+digraph "sqlite3_cancel_auto_extension" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	13;
+	21;
+	35;
+	36;
+	39;
+
+	// Edge definitions.
+	1 -> 10;
+	10 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 39 [
+		color=red
+		label=false
+	];
+	13 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 35 [
+		color=red
+		label=false
+	];
+	21 -> 39;
+	35 -> 36;
+	36 -> 10;
+}

@@ -1,0 +1,30 @@
+digraph "sqlite3MutexInit" {
+	// Node definitions.
+	0 [label=entry];
+	6;
+	9;
+	11;
+	13;
+	59;
+
+	// Edge definitions.
+	0 -> 6 [
+		color=red
+		label=false
+	];
+	0 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 11 [
+		color=red
+		label=false
+	];
+	9 -> 13;
+	11 -> 13;
+	13 -> 59;
+}

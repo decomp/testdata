@@ -1,0 +1,19 @@
+digraph "sqlite3FaultSim" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	11;
+	12;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 11 [
+		color=red
+		label=false
+	];
+	7 -> 12;
+	11 -> 12;
+}

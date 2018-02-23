@@ -1,0 +1,17 @@
+digraph "fkTriggerDelete" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	31;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 31 [
+		color=red
+		label=false
+	];
+	8 -> 31;
+}

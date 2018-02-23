@@ -1,0 +1,106 @@
+digraph "parseYyyyMmDd" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	18;
+	19;
+	23;
+	24;
+	27;
+	36;
+	41;
+	43;
+	46;
+	51;
+	52;
+	57;
+	60;
+	61;
+	62;
+	69;
+	72;
+	74;
+	88;
+	90;
+	91;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 18 [
+		color=red
+		label=false
+	];
+	15 -> 19;
+	18 -> 19;
+	19 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 91;
+	24 -> 27;
+	27 -> 36 [
+		color=red
+		label=false
+	];
+	27 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 41;
+	41 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 46 [
+		color=red
+		label=false
+	];
+	43 -> 27;
+	46 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 52 [
+		color=red
+		label=false
+	];
+	51 -> 62;
+	52 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 60 [
+		color=red
+		label=false
+	];
+	57 -> 61;
+	60 -> 91;
+	61 -> 62;
+	62 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 72 [
+		color=red
+		label=false
+	];
+	69 -> 74;
+	72 -> 74;
+	74 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 90 [
+		color=red
+		label=false
+	];
+	88 -> 90;
+	90 -> 91;
+}

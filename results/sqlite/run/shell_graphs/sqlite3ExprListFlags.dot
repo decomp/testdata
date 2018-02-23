@@ -1,0 +1,32 @@
+digraph "sqlite3ExprListFlags" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	9;
+	15;
+	28;
+	31;
+	32;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 32 [
+		color=red
+		label=false
+	];
+	8 -> 9;
+	9 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 31 [
+		color=red
+		label=false
+	];
+	15 -> 28;
+	28 -> 9;
+	31 -> 32;
+}

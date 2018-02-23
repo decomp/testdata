@@ -1,0 +1,358 @@
+digraph "substrFunc" {
+	// Node definitions.
+	3 [label=entry];
+	19;
+	22;
+	28;
+	29;
+	41;
+	52;
+	53;
+	54;
+	61;
+	62;
+	65;
+	67;
+	71;
+	77;
+	78;
+	84;
+	87;
+	88;
+	89;
+	92;
+	93;
+	94;
+	97;
+	105;
+	108;
+	109;
+	116;
+	119;
+	126;
+	132;
+	133;
+	134;
+	135;
+	138;
+	141;
+	144;
+	147;
+	148;
+	149;
+	152;
+	158;
+	162;
+	163;
+	166;
+	167;
+	172;
+	175;
+	177;
+	183;
+	184;
+	190;
+	193;
+	194;
+	197;
+	199;
+	204;
+	207;
+	209;
+	215;
+	216;
+	222;
+	225;
+	226;
+	227;
+	230;
+	238;
+	245;
+	252;
+	253;
+	254;
+	260;
+
+	// Edge definitions.
+	3 -> 19 [
+		color=red
+		label=false
+	];
+	3 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 29 [
+		color=red
+		label=false
+	];
+	22 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 260;
+	29 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 54 [
+		color=red
+		label=false
+	];
+	41 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 53 [
+		color=red
+		label=false
+	];
+	52 -> 260;
+	53 -> 94;
+	54 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 62 [
+		color=red
+		label=false
+	];
+	61 -> 260;
+	62 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 93 [
+		color=red
+		label=false
+	];
+	65 -> 67;
+	67 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 92 [
+		color=red
+		label=false
+	];
+	71 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 88 [
+		color=red
+		label=false
+	];
+	77 -> 78;
+	78 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 87 [
+		color=red
+		label=false
+	];
+	84 -> 78;
+	87 -> 88;
+	88 -> 89;
+	89 -> 67;
+	92 -> 93;
+	93 -> 94;
+	94 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 109 [
+		color=red
+		label=false
+	];
+	97 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 108 [
+		color=red
+		label=false
+	];
+	105 -> 108;
+	108 -> 116;
+	109 -> 116;
+	116 -> 119 [
+		color=darkgreen
+		label=true
+	];
+	116 -> 135 [
+		color=red
+		label=false
+	];
+	119 -> 126 [
+		color=darkgreen
+		label=true
+	];
+	119 -> 134 [
+		color=red
+		label=false
+	];
+	126 -> 132 [
+		color=darkgreen
+		label=true
+	];
+	126 -> 133 [
+		color=red
+		label=false
+	];
+	132 -> 133;
+	133 -> 134;
+	134 -> 149;
+	135 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	135 -> 141 [
+		color=red
+		label=false
+	];
+	138 -> 148;
+	141 -> 144 [
+		color=darkgreen
+		label=true
+	];
+	141 -> 147 [
+		color=red
+		label=false
+	];
+	144 -> 147;
+	147 -> 148;
+	148 -> 149;
+	149 -> 152 [
+		color=darkgreen
+		label=true
+	];
+	149 -> 163 [
+		color=red
+		label=false
+	];
+	152 -> 158 [
+		color=darkgreen
+		label=true
+	];
+	152 -> 162 [
+		color=red
+		label=false
+	];
+	158 -> 162;
+	162 -> 163;
+	163 -> 166 [
+		color=darkgreen
+		label=true
+	];
+	163 -> 238 [
+		color=red
+		label=false
+	];
+	166 -> 167;
+	167 -> 172 [
+		color=darkgreen
+		label=true
+	];
+	167 -> 175 [
+		color=red
+		label=false
+	];
+	172 -> 175;
+	175 -> 177 [
+		color=darkgreen
+		label=true
+	];
+	175 -> 197 [
+		color=red
+		label=false
+	];
+	177 -> 183 [
+		color=darkgreen
+		label=true
+	];
+	177 -> 194 [
+		color=red
+		label=false
+	];
+	183 -> 184;
+	184 -> 190 [
+		color=darkgreen
+		label=true
+	];
+	184 -> 193 [
+		color=red
+		label=false
+	];
+	190 -> 184;
+	193 -> 194;
+	194 -> 167;
+	197 -> 199;
+	199 -> 204 [
+		color=darkgreen
+		label=true
+	];
+	199 -> 207 [
+		color=red
+		label=false
+	];
+	204 -> 207;
+	207 -> 209 [
+		color=darkgreen
+		label=true
+	];
+	207 -> 230 [
+		color=red
+		label=false
+	];
+	209 -> 215 [
+		color=darkgreen
+		label=true
+	];
+	209 -> 226 [
+		color=red
+		label=false
+	];
+	215 -> 216;
+	216 -> 222 [
+		color=darkgreen
+		label=true
+	];
+	216 -> 225 [
+		color=red
+		label=false
+	];
+	222 -> 216;
+	225 -> 226;
+	226 -> 227;
+	227 -> 199;
+	230 -> 260;
+	238 -> 245 [
+		color=darkgreen
+		label=true
+	];
+	238 -> 254 [
+		color=red
+		label=false
+	];
+	245 -> 252 [
+		color=darkgreen
+		label=true
+	];
+	245 -> 253 [
+		color=red
+		label=false
+	];
+	252 -> 253;
+	253 -> 254;
+	254 -> 260;
+}

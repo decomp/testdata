@@ -1,0 +1,48 @@
+digraph "sqlite3AddCheckConstraint" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	20;
+	34;
+	48;
+	55;
+	56;
+	61;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 56 [
+		color=red
+		label=false
+	];
+	15 -> 20 [
+		color=red
+		label=false
+	];
+	15 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 34 [
+		color=red
+		label=false
+	];
+	20 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 55 [
+		color=red
+		label=false
+	];
+	48 -> 55;
+	55 -> 61;
+	56 -> 61;
+}

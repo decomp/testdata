@@ -1,0 +1,26 @@
+digraph "sqlite3VdbeMemRelease" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	14;
+	16;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=red
+		label=false
+	];
+	1 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 16 [
+		color=red
+		label=false
+	];
+	14 -> 16;
+}

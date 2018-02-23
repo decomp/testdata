@@ -1,0 +1,19 @@
+digraph "sqlite3MemRealloc" {
+	// Node definitions.
+	2 [label=entry];
+	19;
+	26;
+	30;
+
+	// Edge definitions.
+	2 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 26 [
+		color=red
+		label=false
+	];
+	19 -> 30;
+	26 -> 30;
+}

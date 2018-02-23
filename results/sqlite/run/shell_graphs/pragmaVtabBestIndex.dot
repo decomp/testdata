@@ -1,0 +1,89 @@
+digraph "pragmaVtabBestIndex" {
+	// Node definitions.
+	2 [label=entry];
+	20;
+	21;
+	27;
+	33;
+	39;
+	40;
+	46;
+	47;
+	56;
+	57;
+	71;
+	76;
+	80;
+	85;
+	106;
+	107;
+	129;
+
+	// Edge definitions.
+	2 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 21 [
+		color=red
+		label=false
+	];
+	20 -> 129;
+	21 -> 27;
+	27 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 76 [
+		color=red
+		label=false
+	];
+	33 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 40 [
+		color=red
+		label=false
+	];
+	39 -> 71;
+	40 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 47 [
+		color=red
+		label=false
+	];
+	46 -> 71;
+	47 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 57 [
+		color=red
+		label=false
+	];
+	56 -> 71;
+	57 -> 71;
+	71 -> 27;
+	76 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 85 [
+		color=red
+		label=false
+	];
+	80 -> 129;
+	85 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 107 [
+		color=red
+		label=false
+	];
+	106 -> 129;
+	107 -> 129;
+}

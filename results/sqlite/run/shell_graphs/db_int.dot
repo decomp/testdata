@@ -1,0 +1,26 @@
+digraph "db_int" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	18;
+	21;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 21 [
+		color=red
+		label=false
+	];
+	14 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 21 [
+		color=red
+		label=false
+	];
+	18 -> 21;
+}

@@ -1,0 +1,89 @@
+digraph "sqlite3WhereTabFuncArgs" {
+	// Node definitions.
+	3 [label=entry];
+	21;
+	22;
+	32;
+	33;
+	34;
+	40;
+	41;
+	48;
+	60;
+	62;
+	65;
+	72;
+	78;
+	85;
+	86;
+	117;
+	120;
+
+	// Edge definitions.
+	3 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 22 [
+		color=red
+		label=false
+	];
+	21 -> 120;
+	22 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 120;
+	33 -> 34;
+	34 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 120 [
+		color=red
+		label=false
+	];
+	40 -> 41;
+	41 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 60 [
+		color=red
+		label=false
+	];
+	48 -> 60;
+	60 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 65 [
+		color=red
+		label=false
+	];
+	62 -> 41;
+	65 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 78 [
+		color=red
+		label=false
+	];
+	72 -> 120;
+	78 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 86 [
+		color=red
+		label=false
+	];
+	85 -> 120;
+	86 -> 117;
+	117 -> 34;
+}

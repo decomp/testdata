@@ -1,0 +1,72 @@
+digraph "findIndexCol" {
+	// Node definitions.
+	5 [label=entry];
+	23;
+	29;
+	43;
+	57;
+	63;
+	75;
+	82;
+	84;
+	85;
+	86;
+	89;
+	90;
+
+	// Edge definitions.
+	5 -> 23;
+	23 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 89 [
+		color=red
+		label=false
+	];
+	29 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 85 [
+		color=red
+		label=false
+	];
+	43 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 85 [
+		color=red
+		label=false
+	];
+	57 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 85 [
+		color=red
+		label=false
+	];
+	63 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 84 [
+		color=red
+		label=false
+	];
+	75 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 84 [
+		color=red
+		label=false
+	];
+	82 -> 90;
+	84 -> 85;
+	85 -> 86;
+	86 -> 23;
+	89 -> 90;
+}

@@ -1,0 +1,129 @@
+digraph "allocateSpace" {
+	// Node definitions.
+	3 [label=entry];
+	52;
+	55;
+	62;
+	63;
+	65;
+	66;
+	75;
+	84;
+	89;
+	95;
+	103;
+	106;
+	108;
+	109;
+	110;
+	117;
+	127;
+	128;
+	136;
+	141;
+	143;
+	165;
+	188;
+
+	// Edge definitions.
+	3 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 66 [
+		color=red
+		label=false
+	];
+	52 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 63 [
+		color=red
+		label=false
+	];
+	55 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 63 [
+		color=red
+		label=false
+	];
+	62 -> 65;
+	63 -> 188;
+	65 -> 66;
+	66 -> 75 [
+		color=red
+		label=false
+	];
+	66 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 110 [
+		color=red
+		label=false
+	];
+	84 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 110 [
+		color=red
+		label=false
+	];
+	89 -> 95 [
+		color=darkgreen
+		label=true
+	];
+	89 -> 103 [
+		color=red
+		label=false
+	];
+	95 -> 188;
+	103 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 108 [
+		color=red
+		label=false
+	];
+	106 -> 188;
+	108 -> 109;
+	109 -> 110;
+	110 -> 117 [
+		color=darkgreen
+		label=true
+	];
+	110 -> 165 [
+		color=red
+		label=false
+	];
+	117 -> 127 [
+		color=darkgreen
+		label=true
+	];
+	117 -> 128 [
+		color=red
+		label=false
+	];
+	127 -> 136;
+	128 -> 136;
+	136 -> 141 [
+		color=darkgreen
+		label=true
+	];
+	136 -> 143 [
+		color=red
+		label=false
+	];
+	141 -> 188;
+	143 -> 165;
+	165 -> 188;
+}

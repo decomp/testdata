@@ -1,0 +1,50 @@
+digraph "sqlite3_limit" {
+	// Node definitions.
+	3 [label=entry];
+	11;
+	14;
+	15;
+	24;
+	31;
+	36;
+	43;
+	45;
+
+	// Edge definitions.
+	3 -> 11 [
+		color=red
+		label=false
+	];
+	3 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 45;
+	15 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 43 [
+		color=red
+		label=false
+	];
+	24 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 36 [
+		color=red
+		label=false
+	];
+	31 -> 36;
+	36 -> 43;
+	43 -> 45;
+}

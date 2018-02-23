@@ -1,0 +1,30 @@
+digraph "indexColumnNotNull" {
+	// Node definitions.
+	2 [label=entry];
+	17;
+	29;
+	32;
+	33;
+	34;
+
+	// Edge definitions.
+	2 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 29 [
+		color=red
+		label=false
+	];
+	17 -> 34;
+	29 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 34;
+	33 -> 34;
+}

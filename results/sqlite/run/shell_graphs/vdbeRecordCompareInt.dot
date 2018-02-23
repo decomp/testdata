@@ -1,0 +1,78 @@
+digraph "vdbeRecordCompareInt" {
+	// Node definitions.
+	3 [label=entry];
+	27;
+	32;
+	44;
+	62;
+	87;
+	128;
+	183;
+	184;
+	185;
+	190;
+	195;
+	206;
+	211;
+	215;
+	220;
+	226;
+	231;
+	238;
+	239;
+	240;
+	242;
+
+	// Edge definitions.
+	3 -> 27 [label="case (x=1)"];
+	3 -> 32 [label="case (x=2)"];
+	3 -> 44 [label="case (x=3)"];
+	3 -> 62 [label="case (x=4)"];
+	3 -> 87 [label="case (x=5)"];
+	3 -> 128 [label="case (x=6)"];
+	3 -> 183 [label="case (x=8)"];
+	3 -> 184 [label="case (x=9)"];
+	3 -> 185 [label="case (x=7)"];
+	3 -> 190 [label="default case"];
+	27 -> 195;
+	32 -> 195;
+	44 -> 195;
+	62 -> 195;
+	87 -> 195;
+	128 -> 195;
+	183 -> 195;
+	184 -> 195;
+	185 -> 242;
+	190 -> 242;
+	195 -> 206 [
+		color=darkgreen
+		label=true
+	];
+	195 -> 211 [
+		color=red
+		label=false
+	];
+	206 -> 240;
+	211 -> 215 [
+		color=darkgreen
+		label=true
+	];
+	211 -> 220 [
+		color=red
+		label=false
+	];
+	215 -> 239;
+	220 -> 226 [
+		color=darkgreen
+		label=true
+	];
+	220 -> 231 [
+		color=red
+		label=false
+	];
+	226 -> 238;
+	231 -> 238;
+	238 -> 239;
+	239 -> 240;
+	240 -> 242;
+}

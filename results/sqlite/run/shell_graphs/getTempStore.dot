@@ -1,0 +1,50 @@
+digraph "getTempStore" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	15;
+	21;
+	25;
+	26;
+	30;
+	31;
+	32;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 21 [
+		color=red
+		label=false
+	];
+	9 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 21 [
+		color=red
+		label=false
+	];
+	15 -> 32;
+	21 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 32;
+	26 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 31 [
+		color=red
+		label=false
+	];
+	30 -> 32;
+	31 -> 32;
+}

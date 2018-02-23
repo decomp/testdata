@@ -1,0 +1,39 @@
+digraph "sqlite3StrAccumFinish" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	21;
+	28;
+	31;
+	32;
+	36;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 32 [
+		color=red
+		label=false
+	];
+	8 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 31 [
+		color=red
+		label=false
+	];
+	21 -> 28 [
+		color=red
+		label=false
+	];
+	21 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 36;
+	31 -> 32;
+	32 -> 36;
+}

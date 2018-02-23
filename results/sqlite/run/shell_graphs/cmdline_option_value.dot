@@ -1,0 +1,16 @@
+digraph "cmdline_option_value" {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	22;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 22 [
+		color=red
+		label=false
+	];
+}

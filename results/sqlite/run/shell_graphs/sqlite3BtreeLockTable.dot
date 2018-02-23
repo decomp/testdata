@@ -1,0 +1,28 @@
+digraph "sqlite3BtreeLockTable" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	25;
+	30;
+	32;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 32 [
+		color=red
+		label=false
+	];
+	13 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 30 [
+		color=red
+		label=false
+	];
+	25 -> 30;
+	30 -> 32;
+}

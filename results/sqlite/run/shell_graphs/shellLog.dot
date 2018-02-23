@@ -1,0 +1,19 @@
+digraph "shellLog" {
+	// Node definitions.
+	3 [label=entry];
+	14;
+	15;
+	26;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 26;
+	15 -> 26;
+}

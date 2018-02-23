@@ -1,0 +1,30 @@
+digraph "sqlite3PutVarint" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	14;
+	17;
+	30;
+	34;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	8 -> 34;
+	14 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 30 [
+		color=red
+		label=false
+	];
+	17 -> 34;
+	30 -> 34;
+}

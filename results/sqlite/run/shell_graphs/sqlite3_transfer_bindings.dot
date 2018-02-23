@@ -1,0 +1,41 @@
+digraph "sqlite3_transfer_bindings" {
+	// Node definitions.
+	2 [label=entry];
+	21;
+	22;
+	27;
+	33;
+	38;
+	44;
+	48;
+
+	// Edge definitions.
+	2 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 22 [
+		color=red
+		label=false
+	];
+	21 -> 48;
+	22 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 33 [
+		color=red
+		label=false
+	];
+	27 -> 33;
+	33 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 44 [
+		color=red
+		label=false
+	];
+	38 -> 44;
+	44 -> 48;
+}

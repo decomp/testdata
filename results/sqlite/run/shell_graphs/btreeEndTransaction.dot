@@ -1,0 +1,50 @@
+digraph "btreeEndTransaction" {
+	// Node definitions.
+	1 [label=entry];
+	18;
+	23;
+	27;
+	33;
+	43;
+	46;
+	47;
+	51;
+
+	// Edge definitions.
+	1 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 27 [
+		color=red
+		label=false
+	];
+	18 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 27 [
+		color=red
+		label=false
+	];
+	23 -> 51;
+	27 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 47 [
+		color=red
+		label=false
+	];
+	33 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 46 [
+		color=red
+		label=false
+	];
+	43 -> 46;
+	46 -> 47;
+	47 -> 51;
+}

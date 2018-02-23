@@ -1,0 +1,61 @@
+digraph "corruptSchema" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	22;
+	25;
+	26;
+	32;
+	37;
+	47;
+	53;
+	54;
+	56;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=red
+		label=false
+	];
+	3 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 47 [
+		color=red
+		label=false
+	];
+	22 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 26;
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 37 [
+		color=red
+		label=false
+	];
+	32 -> 37;
+	37 -> 47;
+	47 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 56;
+	54 -> 56;
+}

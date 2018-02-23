@@ -1,0 +1,85 @@
+digraph "sqlite3Checkpoint" {
+	// Node definitions.
+	5 [label=entry];
+	14;
+	20;
+	23;
+	25;
+	29;
+	32;
+	47;
+	48;
+	49;
+	50;
+	53;
+	56;
+	59;
+	60;
+	62;
+
+	// Edge definitions.
+	5 -> 14;
+	14 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 23 [
+		color=red
+		label=false
+	];
+	20 -> 23;
+	23 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 53 [
+		color=red
+		label=false
+	];
+	25 -> 29 [
+		color=red
+		label=false
+	];
+	25 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 49 [
+		color=red
+		label=false
+	];
+	32 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 48 [
+		color=red
+		label=false
+	];
+	47 -> 48;
+	48 -> 49;
+	49 -> 50;
+	50 -> 14;
+	53 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 60 [
+		color=red
+		label=false
+	];
+	56 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 60 [
+		color=red
+		label=false
+	];
+	59 -> 62;
+	60 -> 62;
+}

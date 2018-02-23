@@ -1,0 +1,45 @@
+digraph "saveCursorKey" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	14;
+	26;
+	36;
+	40;
+	42;
+	43;
+	44;
+	45;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 14 [
+		color=red
+		label=false
+	];
+	9 -> 45;
+	14 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 43 [
+		color=red
+		label=false
+	];
+	26 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 40 [
+		color=red
+		label=false
+	];
+	36 -> 42;
+	40 -> 42;
+	42 -> 44;
+	43 -> 44;
+	44 -> 45;
+}

@@ -1,0 +1,17 @@
+digraph "randomFunc" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	17;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 17 [
+		color=red
+		label=false
+	];
+	13 -> 17;
+}

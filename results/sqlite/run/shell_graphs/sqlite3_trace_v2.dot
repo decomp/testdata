@@ -1,0 +1,28 @@
+digraph "sqlite3_trace_v2" {
+	// Node definitions.
+	4 [label=entry];
+	14;
+	15;
+	18;
+	19;
+
+	// Edge definitions.
+	4 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 15;
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 19;
+}

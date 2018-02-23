@@ -1,0 +1,125 @@
+digraph "termIsEquivalence" {
+	// Node definitions.
+	2 [label=entry];
+	19;
+	20;
+	26;
+	32;
+	33;
+	39;
+	40;
+	54;
+	58;
+	62;
+	63;
+	74;
+	80;
+	81;
+	89;
+	93;
+	94;
+	103;
+	107;
+	108;
+	115;
+
+	// Edge definitions.
+	2 -> 19 [
+		color=red
+		label=false
+	];
+	2 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 115;
+	20 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 33 [
+		color=red
+		label=false
+	];
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 115;
+	33 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 40 [
+		color=red
+		label=false
+	];
+	39 -> 115;
+	40 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 63 [
+		color=red
+		label=false
+	];
+	54 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 62 [
+		color=red
+		label=false
+	];
+	58 -> 62 [
+		color=red
+		label=false
+	];
+	58 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 115;
+	63 -> 74 [
+		color=red
+		label=false
+	];
+	63 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 81 [
+		color=red
+		label=false
+	];
+	80 -> 115;
+	81 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 93 [
+		color=red
+		label=false
+	];
+	89 -> 94;
+	93 -> 94;
+	94 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 107 [
+		color=red
+		label=false
+	];
+	103 -> 108;
+	107 -> 108;
+	108 -> 115;
+}

@@ -1,0 +1,37 @@
+digraph "sqlite3SafetyCheckSickOrOk" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	13;
+	16;
+	17;
+	18;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 17 [
+		color=red
+		label=false
+	];
+	10 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 17 [
+		color=red
+		label=false
+	];
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 17 [
+		color=red
+		label=false
+	];
+	16 -> 18;
+	17 -> 18;
+}

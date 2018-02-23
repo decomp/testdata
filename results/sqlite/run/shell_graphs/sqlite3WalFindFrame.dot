@@ -1,0 +1,120 @@
+digraph "sqlite3WalFindFrame" {
+	// Node definitions.
+	3 [label=entry];
+	25;
+	31;
+	33;
+	40;
+	44;
+	47;
+	49;
+	55;
+	57;
+	60;
+	67;
+	79;
+	85;
+	97;
+	99;
+	103;
+	105;
+	106;
+	109;
+	110;
+	113;
+	116;
+
+	// Edge definitions.
+	3 -> 25 [
+		color=red
+		label=false
+	];
+	3 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 33 [
+		color=red
+		label=false
+	];
+	31 -> 116;
+	33 -> 40;
+	40 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 47 [
+		color=red
+		label=false
+	];
+	44 -> 47;
+	47 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 113 [
+		color=red
+		label=false
+	];
+	49 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 57 [
+		color=red
+		label=false
+	];
+	55 -> 116;
+	57 -> 60;
+	60 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 109 [
+		color=red
+		label=false
+	];
+	67 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 99 [
+		color=red
+		label=false
+	];
+	79 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 99 [
+		color=red
+		label=false
+	];
+	85 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 99 [
+		color=red
+		label=false
+	];
+	97 -> 99;
+	99 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	99 -> 105 [
+		color=red
+		label=false
+	];
+	103 -> 116;
+	105 -> 106;
+	106 -> 60;
+	109 -> 110;
+	110 -> 40;
+	113 -> 116;
+}

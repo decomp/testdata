@@ -1,0 +1,32 @@
+digraph "sqlite3_clear_bindings" {
+	// Node definitions.
+	1 [label=entry];
+	16;
+	23;
+	37;
+	40;
+	45;
+	51;
+
+	// Edge definitions.
+	1 -> 16;
+	16 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 40 [
+		color=red
+		label=false
+	];
+	23 -> 37;
+	37 -> 16;
+	40 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 51 [
+		color=red
+		label=false
+	];
+	45 -> 51;
+}

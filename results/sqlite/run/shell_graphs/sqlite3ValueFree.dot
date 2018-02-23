@@ -1,0 +1,19 @@
+digraph "sqlite3ValueFree" {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	6;
+	13;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=red
+		label=false
+	];
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 13;
+	6 -> 13;
+}

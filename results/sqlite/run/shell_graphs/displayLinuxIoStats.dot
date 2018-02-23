@@ -1,0 +1,58 @@
+digraph "displayLinuxIoStats" {
+	// Node definitions.
+	1 [label=entry];
+	14;
+	15;
+	16;
+	21;
+	22;
+	25;
+	43;
+	54;
+	55;
+	58;
+	59;
+	62;
+
+	// Edge definitions.
+	1 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 62;
+	15 -> 16;
+	16 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 59 [
+		color=red
+		label=false
+	];
+	21 -> 22;
+	22 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 58 [
+		color=red
+		label=false
+	];
+	25 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 54 [
+		color=red
+		label=false
+	];
+	43 -> 58;
+	54 -> 55;
+	55 -> 22;
+	58 -> 16;
+	59 -> 62;
+}

@@ -1,0 +1,120 @@
+digraph "pcacheManageDirtyList" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	19;
+	25;
+	30;
+	38;
+	44;
+	49;
+	57;
+	67;
+	70;
+	71;
+	76;
+	81;
+	91;
+	97;
+	105;
+	108;
+	109;
+	117;
+	124;
+	128;
+	129;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 76 [
+		color=red
+		label=false
+	];
+	13 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 25 [
+		color=red
+		label=false
+	];
+	19 -> 25;
+	25 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 38 [
+		color=red
+		label=false
+	];
+	30 -> 44;
+	38 -> 44;
+	44 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 57 [
+		color=red
+		label=false
+	];
+	49 -> 71;
+	57 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 70 [
+		color=red
+		label=false
+	];
+	67 -> 70;
+	70 -> 71;
+	71 -> 76;
+	76 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 129 [
+		color=red
+		label=false
+	];
+	81 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 97 [
+		color=red
+		label=false
+	];
+	91 -> 109;
+	97 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 108 [
+		color=red
+		label=false
+	];
+	105 -> 108;
+	108 -> 109;
+	109 -> 117 [
+		color=red
+		label=false
+	];
+	109 -> 128 [
+		color=darkgreen
+		label=true
+	];
+	117 -> 124 [
+		color=darkgreen
+		label=true
+	];
+	117 -> 128 [
+		color=red
+		label=false
+	];
+	124 -> 128;
+	128 -> 129;
+}

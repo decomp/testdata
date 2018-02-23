@@ -1,0 +1,50 @@
+digraph "pcache1EnforceMaxPage" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	16;
+	25;
+	27;
+	31;
+	36;
+	41;
+	49;
+
+	// Edge definitions.
+	1 -> 8;
+	8 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 25 [
+		color=red
+		label=false
+	];
+	16 -> 25;
+	25 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 31 [
+		color=red
+		label=false
+	];
+	27 -> 8;
+	31 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 49 [
+		color=red
+		label=false
+	];
+	36 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 49 [
+		color=red
+		label=false
+	];
+	41 -> 49;
+}

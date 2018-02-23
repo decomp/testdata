@@ -1,0 +1,46 @@
+digraph "sqlite3CheckObjectName" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	19;
+	27;
+	31;
+	34;
+	35;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	2 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 34 [
+		color=red
+		label=false
+	];
+	19 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 34 [
+		color=red
+		label=false
+	];
+	27 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 34 [
+		color=red
+		label=false
+	];
+	31 -> 35;
+	34 -> 35;
+}

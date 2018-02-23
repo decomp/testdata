@@ -1,0 +1,45 @@
+digraph "sqlite3ResolveExprListNames" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	10;
+	16;
+	27;
+	28;
+	29;
+	32;
+	33;
+	34;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 33 [
+		color=red
+		label=false
+	];
+	9 -> 10;
+	10 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 32 [
+		color=red
+		label=false
+	];
+	16 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 28 [
+		color=red
+		label=false
+	];
+	27 -> 34;
+	28 -> 29;
+	29 -> 10;
+	32 -> 33;
+	33 -> 34;
+}

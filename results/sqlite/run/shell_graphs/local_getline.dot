@@ -1,0 +1,109 @@
+digraph "local_getline" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	16;
+	26;
+	27;
+	28;
+	39;
+	42;
+	44;
+	49;
+	50;
+	57;
+	60;
+	63;
+	72;
+	77;
+	86;
+	89;
+	94;
+	95;
+	97;
+
+	// Edge definitions.
+	2 -> 11;
+	11 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 28 [
+		color=red
+		label=false
+	];
+	16 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 27 [
+		color=red
+		label=false
+	];
+	26 -> 97;
+	27 -> 28;
+	28 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 49 [
+		color=red
+		label=false
+	];
+	39 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 44 [
+		color=red
+		label=false
+	];
+	42 -> 97;
+	44 -> 95;
+	49 -> 50;
+	50 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 60 [
+		color=red
+		label=false
+	];
+	57 -> 50;
+	60 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 94 [
+		color=red
+		label=false
+	];
+	63 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 94 [
+		color=red
+		label=false
+	];
+	72 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 89 [
+		color=red
+		label=false
+	];
+	77 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 89 [
+		color=red
+		label=false
+	];
+	86 -> 89;
+	89 -> 95;
+	94 -> 11;
+	95 -> 97;
+}

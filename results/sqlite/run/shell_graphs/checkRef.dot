@@ -1,0 +1,41 @@
+digraph "checkRef" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	9;
+	15;
+	18;
+	23;
+	26;
+	29;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 9 [
+		color=red
+		label=false
+	];
+	8 -> 29;
+	9 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 18 [
+		color=red
+		label=false
+	];
+	15 -> 29;
+	18 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 26 [
+		color=red
+		label=false
+	];
+	23 -> 29;
+	26 -> 29;
+}

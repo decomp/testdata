@@ -1,0 +1,140 @@
+digraph "sqlite3ExprCodeExprList" {
+	// Node definitions.
+	5 [label=entry];
+	36;
+	41;
+	45;
+	49;
+	57;
+	65;
+	70;
+	75;
+	87;
+	88;
+	93;
+	97;
+	104;
+	116;
+	120;
+	127;
+	138;
+	151;
+	156;
+	165;
+	166;
+	167;
+	168;
+	169;
+	174;
+
+	// Edge definitions.
+	5 -> 36 [
+		color=red
+		label=false
+	];
+	5 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 41;
+	41 -> 45;
+	45 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 174 [
+		color=red
+		label=false
+	];
+	49 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 88 [
+		color=red
+		label=false
+	];
+	57 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 88 [
+		color=red
+		label=false
+	];
+	65 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 75 [
+		color=red
+		label=false
+	];
+	70 -> 87;
+	75 -> 87;
+	87 -> 168;
+	88 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 104 [
+		color=red
+		label=false
+	];
+	93 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	93 -> 104 [
+		color=red
+		label=false
+	];
+	97 -> 167;
+	104 -> 116 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 166 [
+		color=red
+		label=false
+	];
+	116 -> 120 [
+		color=darkgreen
+		label=true
+	];
+	116 -> 156 [
+		color=red
+		label=false
+	];
+	120 -> 127 [
+		color=darkgreen
+		label=true
+	];
+	120 -> 156 [
+		color=red
+		label=false
+	];
+	127 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	127 -> 156 [
+		color=red
+		label=false
+	];
+	138 -> 151 [
+		color=darkgreen
+		label=true
+	];
+	138 -> 156 [
+		color=red
+		label=false
+	];
+	151 -> 165;
+	156 -> 165;
+	165 -> 166;
+	166 -> 167;
+	167 -> 168;
+	168 -> 169;
+	169 -> 45;
+}

@@ -1,0 +1,17 @@
+digraph "heightOfSelect" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	40;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 40 [
+		color=red
+		label=false
+	];
+	7 -> 40;
+}

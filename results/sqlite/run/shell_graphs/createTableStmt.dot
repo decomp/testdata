@@ -1,0 +1,62 @@
+digraph "createTableStmt" {
+	// Node definitions.
+	2 [label=entry];
+	19;
+	26;
+	34;
+	39;
+	48;
+	49;
+	50;
+	64;
+	66;
+	84;
+	91;
+	133;
+	138;
+	149;
+
+	// Edge definitions.
+	2 -> 19;
+	19 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 39 [
+		color=red
+		label=false
+	];
+	26 -> 34;
+	34 -> 19;
+	39 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 49 [
+		color=red
+		label=false
+	];
+	48 -> 50;
+	49 -> 50;
+	50 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 66 [
+		color=red
+		label=false
+	];
+	64 -> 149;
+	66 -> 84;
+	84 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 138 [
+		color=red
+		label=false
+	];
+	91 -> 133;
+	133 -> 84;
+	138 -> 149;
+}

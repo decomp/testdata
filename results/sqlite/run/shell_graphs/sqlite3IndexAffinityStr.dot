@@ -1,0 +1,82 @@
+digraph "sqlite3IndexAffinityStr" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	31;
+	33;
+	34;
+	41;
+	52;
+	67;
+	71;
+	78;
+	92;
+	93;
+	101;
+	102;
+	103;
+	106;
+	113;
+	117;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	2 -> 113 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 31 [
+		color=red
+		label=false
+	];
+	14 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 117;
+	33 -> 34;
+	34 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 106 [
+		color=red
+		label=false
+	];
+	41 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 67 [
+		color=red
+		label=false
+	];
+	52 -> 102;
+	67 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 78 [
+		color=red
+		label=false
+	];
+	71 -> 101;
+	78 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 93 [
+		color=red
+		label=false
+	];
+	92 -> 93;
+	93 -> 101;
+	101 -> 102;
+	102 -> 103;
+	103 -> 34;
+	106 -> 113;
+	113 -> 117;
+}

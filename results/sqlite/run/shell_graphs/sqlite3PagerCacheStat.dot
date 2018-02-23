@@ -1,0 +1,17 @@
+digraph "sqlite3PagerCacheStat" {
+	// Node definitions.
+	4 [label=entry];
+	21;
+	28;
+
+	// Edge definitions.
+	4 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 28 [
+		color=red
+		label=false
+	];
+	21 -> 28;
+}

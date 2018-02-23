@@ -1,0 +1,39 @@
+digraph "copyNodeContent" {
+	// Node definitions.
+	3 [label=entry];
+	17;
+	93;
+	96;
+	101;
+	105;
+	106;
+
+	// Edge definitions.
+	3 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 106 [
+		color=red
+		label=false
+	];
+	17 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 96 [
+		color=red
+		label=false
+	];
+	93 -> 106;
+	96 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	96 -> 105 [
+		color=red
+		label=false
+	];
+	101 -> 105;
+	105 -> 106;
+}

@@ -1,0 +1,47 @@
+digraph "open_db" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	24;
+	30;
+	42;
+	43;
+	44;
+	65;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 65 [
+		color=red
+		label=false
+	];
+	9 -> 24 [
+		color=red
+		label=false
+	];
+	9 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 44 [
+		color=red
+		label=false
+	];
+	30 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 43 [
+		color=red
+		label=false
+	];
+	42 -> 65;
+	44 -> 65;
+}

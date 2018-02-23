@@ -1,0 +1,41 @@
+digraph "pagerFlushOnCommit" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	15;
+	16;
+	23;
+	24;
+	31;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	11 -> 31;
+	12 -> 15 [
+		color=red
+		label=false
+	];
+	12 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 31;
+	16 -> 23 [
+		color=red
+		label=false
+	];
+	16 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 31;
+	24 -> 31;
+}

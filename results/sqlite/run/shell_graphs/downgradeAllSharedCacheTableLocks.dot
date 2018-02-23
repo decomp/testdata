@@ -1,0 +1,32 @@
+digraph "downgradeAllSharedCacheTableLocks" {
+	// Node definitions.
+	1 [label=entry];
+	13;
+	25;
+	28;
+	31;
+	35;
+	36;
+
+	// Edge definitions.
+	1 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 36 [
+		color=red
+		label=false
+	];
+	13 -> 25;
+	25 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 35 [
+		color=red
+		label=false
+	];
+	28 -> 31;
+	31 -> 25;
+	35 -> 36;
+}

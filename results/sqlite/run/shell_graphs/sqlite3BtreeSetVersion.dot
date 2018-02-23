@@ -1,0 +1,70 @@
+digraph "sqlite3BtreeSetVersion" {
+	// Node definitions.
+	2 [label=entry];
+	19;
+	26;
+	31;
+	45;
+	54;
+	59;
+	68;
+	77;
+	78;
+	79;
+	80;
+
+	// Edge definitions.
+	2 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 26 [
+		color=red
+		label=false
+	];
+	19 -> 26;
+	26 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 80 [
+		color=red
+		label=false
+	];
+	31 -> 45 [
+		color=red
+		label=false
+	];
+	31 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 79 [
+		color=red
+		label=false
+	];
+	54 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 78 [
+		color=red
+		label=false
+	];
+	59 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 77 [
+		color=red
+		label=false
+	];
+	68 -> 77;
+	77 -> 78;
+	78 -> 79;
+	79 -> 80;
+}

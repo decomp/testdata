@@ -1,0 +1,19 @@
+digraph "vdbeSorterTreeDepth" {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	10;
+	15;
+
+	// Edge definitions.
+	1 -> 5;
+	5 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 15 [
+		color=red
+		label=false
+	];
+	10 -> 5;
+}

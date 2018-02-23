@@ -1,0 +1,21 @@
+digraph "codeTableLocks" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	15;
+	38;
+	41;
+
+	// Edge definitions.
+	1 -> 9;
+	9 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 41 [
+		color=red
+		label=false
+	];
+	15 -> 38;
+	38 -> 9;
+}

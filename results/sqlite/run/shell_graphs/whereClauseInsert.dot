@@ -1,0 +1,74 @@
+digraph "whereClauseInsert" {
+	// Node definitions.
+	3 [label=entry];
+	19;
+	45;
+	50;
+	53;
+	57;
+	74;
+	78;
+	90;
+	102;
+	108;
+	119;
+	122;
+	139;
+
+	// Edge definitions.
+	3 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 90 [
+		color=red
+		label=false
+	];
+	19 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 57 [
+		color=red
+		label=false
+	];
+	45 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 53 [
+		color=red
+		label=false
+	];
+	50 -> 53;
+	53 -> 139;
+	57 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 78 [
+		color=red
+		label=false
+	];
+	74 -> 78;
+	78 -> 90;
+	90 -> 102 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 119 [
+		color=red
+		label=false
+	];
+	102 -> 108 [
+		color=darkgreen
+		label=true
+	];
+	102 -> 119 [
+		color=red
+		label=false
+	];
+	108 -> 122;
+	119 -> 122;
+	122 -> 139;
+}

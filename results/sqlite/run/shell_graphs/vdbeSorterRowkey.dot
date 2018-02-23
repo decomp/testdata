@@ -1,0 +1,32 @@
+digraph "vdbeSorterRowkey" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	16;
+	20;
+	35;
+	43;
+	57;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 43 [
+		color=red
+		label=false
+	];
+	11 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 20 [
+		color=red
+		label=false
+	];
+	16 -> 35;
+	20 -> 35;
+	35 -> 57;
+	43 -> 57;
+}

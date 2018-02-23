@@ -1,0 +1,150 @@
+digraph "vdbePmaReadBlob" {
+	// Node definitions.
+	3 [label=entry];
+	22;
+	37;
+	49;
+	62;
+	66;
+	75;
+	89;
+	91;
+	92;
+	101;
+	115;
+	121;
+	127;
+	128;
+	133;
+	135;
+	139;
+	142;
+	151;
+	152;
+	159;
+	180;
+	183;
+	190;
+	194;
+	200;
+	202;
+	217;
+	222;
+	223;
+
+	// Edge definitions.
+	3 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 37 [
+		color=red
+		label=false
+	];
+	22 -> 223;
+	37 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 92 [
+		color=red
+		label=false
+	];
+	49 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 66 [
+		color=red
+		label=false
+	];
+	62 -> 75;
+	66 -> 75;
+	75 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 91 [
+		color=red
+		label=false
+	];
+	89 -> 223;
+	91 -> 92;
+	92 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 115 [
+		color=red
+		label=false
+	];
+	101 -> 222;
+	115 -> 121 [
+		color=darkgreen
+		label=true
+	];
+	115 -> 159 [
+		color=red
+		label=false
+	];
+	121 -> 127 [
+		color=darkgreen
+		label=true
+	];
+	121 -> 128 [
+		color=red
+		label=false
+	];
+	127 -> 133;
+	128 -> 133;
+	133 -> 135;
+	135 -> 139 [
+		color=darkgreen
+		label=true
+	];
+	135 -> 142 [
+		color=red
+		label=false
+	];
+	139 -> 135;
+	142 -> 151 [
+		color=red
+		label=false
+	];
+	142 -> 152 [
+		color=darkgreen
+		label=true
+	];
+	151 -> 223;
+	152 -> 159;
+	159 -> 180;
+	180 -> 183 [
+		color=darkgreen
+		label=true
+	];
+	180 -> 217 [
+		color=red
+		label=false
+	];
+	183 -> 190 [
+		color=darkgreen
+		label=true
+	];
+	183 -> 194 [
+		color=red
+		label=false
+	];
+	190 -> 194;
+	194 -> 200 [
+		color=darkgreen
+		label=true
+	];
+	194 -> 202 [
+		color=red
+		label=false
+	];
+	200 -> 223;
+	202 -> 180;
+	217 -> 222;
+	222 -> 223;
+}

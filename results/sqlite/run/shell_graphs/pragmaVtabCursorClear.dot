@@ -1,0 +1,21 @@
+digraph "pragmaVtabCursorClear" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	13;
+	25;
+	28;
+
+	// Edge definitions.
+	1 -> 10;
+	10 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 28 [
+		color=red
+		label=false
+	];
+	13 -> 25;
+	25 -> 10;
+}

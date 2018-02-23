@@ -1,0 +1,28 @@
+digraph "ptrmapPutOvflPtr" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	13;
+	25;
+	42;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 13 [
+		color=red
+		label=false
+	];
+	12 -> 42;
+	13 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 42 [
+		color=red
+		label=false
+	];
+	25 -> 42;
+}

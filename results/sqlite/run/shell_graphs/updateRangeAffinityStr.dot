@@ -1,0 +1,41 @@
+digraph "updateRangeAffinityStr" {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	13;
+	26;
+	35;
+	40;
+	41;
+	44;
+
+	// Edge definitions.
+	3 -> 9;
+	9 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 44 [
+		color=red
+		label=false
+	];
+	13 -> 26 [
+		color=red
+		label=false
+	];
+	13 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 40 [
+		color=red
+		label=false
+	];
+	35 -> 40;
+	40 -> 41;
+	41 -> 9;
+}

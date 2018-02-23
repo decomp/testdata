@@ -1,0 +1,70 @@
+digraph "unixRemapfile" {
+	// Node definitions.
+	2 [label=entry];
+	24;
+	34;
+	42;
+	51;
+	54;
+	60;
+	61;
+	64;
+	71;
+	74;
+	82;
+
+	// Edge definitions.
+	2 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 61 [
+		color=red
+		label=false
+	];
+	24 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 42 [
+		color=red
+		label=false
+	];
+	34 -> 42;
+	42 -> 51 [
+		color=red
+		label=false
+	];
+	42 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 60 [
+		color=red
+		label=false
+	];
+	54 -> 60;
+	60 -> 61;
+	61 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 71 [
+		color=red
+		label=false
+	];
+	64 -> 71;
+	71 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 82 [
+		color=red
+		label=false
+	];
+	74 -> 82;
+}

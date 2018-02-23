@@ -1,0 +1,32 @@
+digraph "pcache1RemoveFromHash" {
+	// Node definitions.
+	2 [label=entry];
+	24;
+	29;
+	30;
+	34;
+	46;
+	48;
+
+	// Edge definitions.
+	2 -> 24;
+	24 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 34 [
+		color=red
+		label=false
+	];
+	29 -> 30;
+	30 -> 24;
+	34 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 48 [
+		color=red
+		label=false
+	];
+	46 -> 48;
+}

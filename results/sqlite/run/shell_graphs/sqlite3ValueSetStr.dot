@@ -1,0 +1,17 @@
+digraph "sqlite3ValueSetStr" {
+	// Node definitions.
+	5 [label=entry];
+	13;
+	20;
+
+	// Edge definitions.
+	5 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 20 [
+		color=red
+		label=false
+	];
+	13 -> 20;
+}

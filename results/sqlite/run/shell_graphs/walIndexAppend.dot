@@ -1,0 +1,67 @@
+digraph "walIndexAppend" {
+	// Node definitions.
+	3 [label=entry];
+	22;
+	28;
+	44;
+	51;
+	53;
+	57;
+	64;
+	68;
+	70;
+	71;
+	74;
+	86;
+	88;
+
+	// Edge definitions.
+	3 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 86 [
+		color=red
+		label=false
+	];
+	22 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 44 [
+		color=red
+		label=false
+	];
+	28 -> 44;
+	44 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 53 [
+		color=red
+		label=false
+	];
+	51 -> 53;
+	53 -> 57;
+	57 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 74 [
+		color=red
+		label=false
+	];
+	64 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 70 [
+		color=red
+		label=false
+	];
+	68 -> 88;
+	70 -> 71;
+	71 -> 57;
+	74 -> 86;
+	86 -> 88;
+}

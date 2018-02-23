@@ -1,0 +1,120 @@
+digraph "sqlite3ViewGetColumnNames" {
+	// Node definitions.
+	2 [label=entry];
+	19;
+	20;
+	25;
+	26;
+	32;
+	33;
+	39;
+	44;
+	52;
+	85;
+	100;
+	105;
+	116;
+	120;
+	121;
+	124;
+	139;
+	144;
+	145;
+	155;
+	158;
+	168;
+
+	// Edge definitions.
+	2 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 20 [
+		color=red
+		label=false
+	];
+	19 -> 168;
+	20 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 168;
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 168;
+	33 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 44 [
+		color=red
+		label=false
+	];
+	39 -> 168;
+	44 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 155 [
+		color=red
+		label=false
+	];
+	52 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 121 [
+		color=red
+		label=false
+	];
+	85 -> 100 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 120 [
+		color=red
+		label=false
+	];
+	100 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	100 -> 120 [
+		color=red
+		label=false
+	];
+	105 -> 116 [
+		color=darkgreen
+		label=true
+	];
+	105 -> 120 [
+		color=red
+		label=false
+	];
+	116 -> 120;
+	120 -> 145;
+	121 -> 124 [
+		color=darkgreen
+		label=true
+	];
+	121 -> 139 [
+		color=red
+		label=false
+	];
+	124 -> 144;
+	139 -> 144;
+	144 -> 145;
+	145 -> 158;
+	155 -> 158;
+	158 -> 168;
+}

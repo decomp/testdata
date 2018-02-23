@@ -1,0 +1,65 @@
+digraph "sqlite3IndexedByLookup" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	22;
+	33;
+	36;
+	43;
+	45;
+	46;
+	50;
+	53;
+	58;
+	62;
+	63;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 62 [
+		color=red
+		label=false
+	];
+	13 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 62 [
+		color=red
+		label=false
+	];
+	22 -> 33;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 43 [
+		color=red
+		label=false
+	];
+	36 -> 43;
+	43 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 50 [
+		color=red
+		label=false
+	];
+	45 -> 46;
+	46 -> 33;
+	50 -> 53 [
+		color=red
+		label=false
+	];
+	50 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 63;
+	58 -> 62;
+	62 -> 63;
+}

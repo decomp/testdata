@@ -1,0 +1,32 @@
+digraph "sqlite3DeleteColumnNames" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	19;
+	32;
+	37;
+	43;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 43 [
+		color=red
+		label=false
+	];
+	11 -> 12;
+	12 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 37 [
+		color=red
+		label=false
+	];
+	19 -> 32;
+	32 -> 12;
+	37 -> 43;
+}

@@ -1,0 +1,43 @@
+digraph "rowSetNDeepTree" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	15;
+	24;
+	26;
+	40;
+	51;
+	53;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	11 -> 53;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 40 [
+		color=red
+		label=false
+	];
+	15 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 26 [
+		color=red
+		label=false
+	];
+	24 -> 53;
+	26 -> 51;
+	40 -> 51;
+	51 -> 53;
+}

@@ -1,0 +1,69 @@
+digraph "insertElement" {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	15;
+	19;
+	20;
+	29;
+	30;
+	33;
+	46;
+	52;
+	56;
+	60;
+	70;
+	76;
+	82;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 29 [
+		color=red
+		label=false
+	];
+	10 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 19 [
+		color=red
+		label=false
+	];
+	15 -> 20;
+	19 -> 20;
+	20 -> 30;
+	29 -> 30;
+	30 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 60 [
+		color=red
+		label=false
+	];
+	33 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 52 [
+		color=red
+		label=false
+	];
+	46 -> 56;
+	52 -> 56;
+	56 -> 82;
+	60 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 76 [
+		color=red
+		label=false
+	];
+	70 -> 76;
+	76 -> 82;
+}

@@ -1,0 +1,110 @@
+digraph "sqlite3ExprIfTrue" {
+	// Node definitions.
+	4 [label=entry];
+	23;
+	24;
+	27;
+	28;
+	34;
+	54;
+	69;
+	76;
+	80;
+	86;
+	87;
+	111;
+	122;
+	127;
+	132;
+	134;
+	136;
+	147;
+	148;
+	152;
+	156;
+	160;
+	161;
+	172;
+	173;
+	174;
+	179;
+
+	// Edge definitions.
+	4 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 179;
+	24 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 28 [
+		color=red
+		label=false
+	];
+	27 -> 179;
+	28 -> 34 [label="case (x=71)"];
+	28 -> 54 [label="case (x=70)"];
+	28 -> 69 [label="case (x=19)"];
+	28 -> 76 [label="case (x=148)"];
+	28 -> 80 [label="case (x=78)"];
+	28 -> 111 [label="case (x=76)"];
+	28 -> 122 [label="case (x=73)"];
+	28 -> 127 [label="case (x=74)"];
+	28 -> 147 [label="default case"];
+	34 -> 174;
+	54 -> 174;
+	69 -> 174;
+	76 -> 80;
+	80 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 87 [
+		color=red
+		label=false
+	];
+	86 -> 148;
+	87 -> 174;
+	111 -> 174;
+	122 -> 174;
+	127 -> 132 [
+		color=darkgreen
+		label=true
+	];
+	127 -> 134 [
+		color=red
+		label=false
+	];
+	132 -> 136;
+	134 -> 136;
+	136 -> 174;
+	147 -> 148;
+	148 -> 152 [
+		color=darkgreen
+		label=true
+	];
+	148 -> 156 [
+		color=red
+		label=false
+	];
+	152 -> 173;
+	156 -> 160 [
+		color=darkgreen
+		label=true
+	];
+	156 -> 161 [
+		color=red
+		label=false
+	];
+	160 -> 172;
+	161 -> 172;
+	172 -> 173;
+	173 -> 174;
+	174 -> 179;
+}

@@ -1,0 +1,56 @@
+digraph "walIteratorNext" {
+	// Node definitions.
+	3 [label=entry];
+	19;
+	22;
+	28;
+	36;
+	55;
+	59;
+	76;
+	77;
+	82;
+	83;
+	86;
+
+	// Edge definitions.
+	3 -> 19;
+	19 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 86 [
+		color=red
+		label=false
+	];
+	22 -> 28;
+	28 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 82 [
+		color=red
+		label=false
+	];
+	36 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 77 [
+		color=red
+		label=false
+	];
+	55 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 76 [
+		color=red
+		label=false
+	];
+	59 -> 76;
+	76 -> 82;
+	77 -> 28;
+	82 -> 83;
+	83 -> 19;
+}

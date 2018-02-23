@@ -1,0 +1,17 @@
+digraph "explainTempTable" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	27;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 27 [
+		color=red
+		label=false
+	];
+	12 -> 27;
+}

@@ -1,0 +1,19 @@
+digraph "whereOrName" {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	14;
+	21;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=red
+		label=false
+	];
+	3 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 21;
+	14 -> 21;
+}

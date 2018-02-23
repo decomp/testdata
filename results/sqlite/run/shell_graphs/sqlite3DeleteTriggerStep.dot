@@ -1,0 +1,19 @@
+digraph "sqlite3DeleteTriggerStep" {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	9;
+	33;
+
+	// Edge definitions.
+	2 -> 6;
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 33 [
+		color=red
+		label=false
+	];
+	9 -> 6;
+}

@@ -1,0 +1,74 @@
+digraph "groupConcatStep" {
+	// Node definitions.
+	3 [label=entry];
+	19;
+	20;
+	26;
+	42;
+	45;
+	54;
+	55;
+	58;
+	62;
+	63;
+	74;
+	78;
+	79;
+
+	// Edge definitions.
+	3 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 20 [
+		color=red
+		label=false
+	];
+	19 -> 79;
+	20 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 79 [
+		color=red
+		label=false
+	];
+	26 -> 42 [
+		color=red
+		label=false
+	];
+	26 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 54 [
+		color=red
+		label=false
+	];
+	45 -> 55;
+	54 -> 55;
+	55 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 62 [
+		color=red
+		label=false
+	];
+	58 -> 62;
+	62 -> 63;
+	63 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 78 [
+		color=red
+		label=false
+	];
+	74 -> 78;
+	78 -> 79;
+}

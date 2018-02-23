@@ -1,0 +1,19 @@
+digraph "sqlite3PcacheCleanAll" {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	9;
+	11;
+
+	// Edge definitions.
+	1 -> 4;
+	4 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 11 [
+		color=red
+		label=false
+	];
+	9 -> 4;
+}

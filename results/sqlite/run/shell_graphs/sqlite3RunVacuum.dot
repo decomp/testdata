@@ -1,0 +1,230 @@
+digraph "sqlite3RunVacuum" {
+	// Node definitions.
+	3 [label=entry];
+	26;
+	29;
+	34;
+	37;
+	87;
+	88;
+	125;
+	126;
+	131;
+	132;
+	137;
+	140;
+	147;
+	150;
+	158;
+	164;
+	165;
+	172;
+	177;
+	180;
+	194;
+	195;
+	202;
+	203;
+	217;
+	218;
+	225;
+	226;
+	227;
+	230;
+	254;
+	255;
+	256;
+	259;
+	265;
+	266;
+	271;
+	272;
+	282;
+	304;
+	313;
+	316;
+
+	// Edge definitions.
+	3 -> 26 [
+		color=red
+		label=false
+	];
+	3 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 316;
+	29 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 37 [
+		color=red
+		label=false
+	];
+	34 -> 316;
+	37 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 88 [
+		color=red
+		label=false
+	];
+	87 -> 282;
+	88 -> 125 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 126 [
+		color=red
+		label=false
+	];
+	125 -> 282;
+	126 -> 131 [
+		color=darkgreen
+		label=true
+	];
+	126 -> 132 [
+		color=red
+		label=false
+	];
+	131 -> 282;
+	132 -> 137 [
+		color=darkgreen
+		label=true
+	];
+	132 -> 140 [
+		color=red
+		label=false
+	];
+	137 -> 140;
+	140 -> 147 [
+		color=red
+		label=false
+	];
+	140 -> 164 [
+		color=darkgreen
+		label=true
+	];
+	147 -> 150 [
+		color=red
+		label=false
+	];
+	147 -> 158 [
+		color=darkgreen
+		label=true
+	];
+	150 -> 158 [
+		color=red
+		label=false
+	];
+	150 -> 164 [
+		color=darkgreen
+		label=true
+	];
+	158 -> 164 [
+		color=darkgreen
+		label=true
+	];
+	158 -> 165 [
+		color=red
+		label=false
+	];
+	164 -> 282;
+	165 -> 172 [
+		color=darkgreen
+		label=true
+	];
+	165 -> 177 [
+		color=red
+		label=false
+	];
+	172 -> 180;
+	177 -> 180;
+	180 -> 194 [
+		color=darkgreen
+		label=true
+	];
+	180 -> 195 [
+		color=red
+		label=false
+	];
+	194 -> 282;
+	195 -> 202 [
+		color=darkgreen
+		label=true
+	];
+	195 -> 203 [
+		color=red
+		label=false
+	];
+	202 -> 282;
+	203 -> 217 [
+		color=darkgreen
+		label=true
+	];
+	203 -> 218 [
+		color=red
+		label=false
+	];
+	217 -> 282;
+	218 -> 225 [
+		color=darkgreen
+		label=true
+	];
+	218 -> 226 [
+		color=red
+		label=false
+	];
+	225 -> 282;
+	226 -> 227;
+	227 -> 230 [
+		color=darkgreen
+		label=true
+	];
+	227 -> 259 [
+		color=red
+		label=false
+	];
+	230 -> 254 [
+		color=darkgreen
+		label=true
+	];
+	230 -> 255 [
+		color=red
+		label=false
+	];
+	254 -> 282;
+	255 -> 256;
+	256 -> 227;
+	259 -> 265 [
+		color=darkgreen
+		label=true
+	];
+	259 -> 266 [
+		color=red
+		label=false
+	];
+	265 -> 282;
+	266 -> 271 [
+		color=darkgreen
+		label=true
+	];
+	266 -> 272 [
+		color=red
+		label=false
+	];
+	271 -> 282;
+	272 -> 282;
+	282 -> 304 [
+		color=darkgreen
+		label=true
+	];
+	282 -> 313 [
+		color=red
+		label=false
+	];
+	304 -> 313;
+	313 -> 316;
+}

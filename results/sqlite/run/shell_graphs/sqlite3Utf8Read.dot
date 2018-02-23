@@ -1,0 +1,59 @@
+digraph "sqlite3Utf8Read" {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	18;
+	25;
+	35;
+	38;
+	42;
+	46;
+	47;
+	48;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 48 [
+		color=red
+		label=false
+	];
+	11 -> 18;
+	18 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 35 [
+		color=red
+		label=false
+	];
+	25 -> 18;
+	35 -> 38 [
+		color=red
+		label=false
+	];
+	35 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 42 [
+		color=red
+		label=false
+	];
+	38 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 47 [
+		color=red
+		label=false
+	];
+	46 -> 47;
+	47 -> 48;
+}

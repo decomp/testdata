@@ -1,0 +1,87 @@
+digraph "parseHhMmSs" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	15;
+	22;
+	28;
+	29;
+	36;
+	46;
+	49;
+	58;
+	71;
+	75;
+	76;
+	77;
+	100;
+	101;
+	110;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	14 -> 110;
+	15 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 76 [
+		color=red
+		label=false
+	];
+	22 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 110;
+	29 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 75 [
+		color=red
+		label=false
+	];
+	36 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 75 [
+		color=red
+		label=false
+	];
+	46 -> 49;
+	49 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 71 [
+		color=red
+		label=false
+	];
+	58 -> 49;
+	71 -> 75;
+	75 -> 77;
+	76 -> 77;
+	77 -> 100 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 101 [
+		color=red
+		label=false
+	];
+	100 -> 110;
+	101 -> 110;
+}

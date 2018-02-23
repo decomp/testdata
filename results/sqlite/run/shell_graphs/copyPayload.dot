@@ -1,0 +1,32 @@
+digraph "copyPayload" {
+	// Node definitions.
+	5 [label=entry];
+	15;
+	20;
+	22;
+	27;
+	32;
+	33;
+
+	// Edge definitions.
+	5 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 27 [
+		color=red
+		label=false
+	];
+	15 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 22 [
+		color=red
+		label=false
+	];
+	20 -> 33;
+	22 -> 32;
+	27 -> 32;
+	32 -> 33;
+}

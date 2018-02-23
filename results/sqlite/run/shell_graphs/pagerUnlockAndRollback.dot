@@ -1,0 +1,50 @@
+digraph "pagerUnlockAndRollback" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	14;
+	20;
+	23;
+	28;
+	31;
+	32;
+	33;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 33 [
+		color=red
+		label=false
+	];
+	8 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 33 [
+		color=red
+		label=false
+	];
+	14 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 23 [
+		color=red
+		label=false
+	];
+	20 -> 32;
+	23 -> 28 [
+		color=red
+		label=false
+	];
+	23 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 31;
+	31 -> 32;
+	32 -> 33;
+}

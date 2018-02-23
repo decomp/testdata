@@ -1,0 +1,199 @@
+digraph "sqlite3PagerCommitPhaseOne" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	20;
+	23;
+	24;
+	30;
+	31;
+	35;
+	39;
+	44;
+	51;
+	57;
+	60;
+	67;
+	71;
+	75;
+	76;
+	81;
+	82;
+	88;
+	89;
+	94;
+	95;
+	104;
+	105;
+	116;
+	137;
+	138;
+	139;
+	142;
+	146;
+	147;
+	148;
+	149;
+	152;
+	157;
+	160;
+	162;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 20 [
+		color=red
+		label=false
+	];
+	16 -> 162;
+	20 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 24 [
+		color=red
+		label=false
+	];
+	23 -> 162;
+	24 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 31 [
+		color=red
+		label=false
+	];
+	30 -> 162;
+	31 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 39 [
+		color=red
+		label=false
+	];
+	35 -> 148;
+	39 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 76 [
+		color=red
+		label=false
+	];
+	44 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 57 [
+		color=red
+		label=false
+	];
+	51 -> 57;
+	57 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 67 [
+		color=red
+		label=false
+	];
+	60 -> 67;
+	67 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 75 [
+		color=red
+		label=false
+	];
+	71 -> 75;
+	75 -> 147;
+	76 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 82 [
+		color=red
+		label=false
+	];
+	81 -> 149;
+	82 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 89 [
+		color=red
+		label=false
+	];
+	88 -> 149;
+	89 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	89 -> 95 [
+		color=red
+		label=false
+	];
+	94 -> 149;
+	95 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	95 -> 105 [
+		color=red
+		label=false
+	];
+	104 -> 149;
+	105 -> 116 [
+		color=darkgreen
+		label=true
+	];
+	105 -> 139 [
+		color=red
+		label=false
+	];
+	116 -> 137 [
+		color=darkgreen
+		label=true
+	];
+	116 -> 138 [
+		color=red
+		label=false
+	];
+	137 -> 149;
+	138 -> 139;
+	139 -> 142 [
+		color=red
+		label=false
+	];
+	139 -> 146 [
+		color=darkgreen
+		label=true
+	];
+	142 -> 146;
+	146 -> 147;
+	147 -> 148;
+	148 -> 149;
+	149 -> 152 [
+		color=darkgreen
+		label=true
+	];
+	149 -> 160 [
+		color=red
+		label=false
+	];
+	152 -> 157 [
+		color=red
+		label=false
+	];
+	152 -> 160 [
+		color=darkgreen
+		label=true
+	];
+	157 -> 160;
+	160 -> 162;
+}

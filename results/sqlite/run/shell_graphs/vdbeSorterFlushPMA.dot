@@ -1,0 +1,113 @@
+digraph "vdbeSorterFlushPMA" {
+	// Node definitions.
+	1 [label=entry];
+	18;
+	22;
+	41;
+	44;
+	47;
+	52;
+	53;
+	54;
+	57;
+	60;
+	64;
+	73;
+	105;
+	114;
+	120;
+	134;
+	135;
+	136;
+	137;
+	141;
+	142;
+	144;
+
+	// Edge definitions.
+	1 -> 18;
+	18 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 57 [
+		color=red
+		label=false
+	];
+	22 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 44 [
+		color=red
+		label=false
+	];
+	41 -> 44;
+	44 -> 47 [
+		color=red
+		label=false
+	];
+	44 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 53 [
+		color=red
+		label=false
+	];
+	52 -> 57;
+	53 -> 54;
+	54 -> 18;
+	57 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 142 [
+		color=red
+		label=false
+	];
+	60 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 73 [
+		color=red
+		label=false
+	];
+	64 -> 141;
+	73 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 114 [
+		color=red
+		label=false
+	];
+	105 -> 137;
+	114 -> 120 [
+		color=darkgreen
+		label=true
+	];
+	114 -> 136 [
+		color=red
+		label=false
+	];
+	120 -> 134 [
+		color=red
+		label=false
+	];
+	120 -> 135 [
+		color=darkgreen
+		label=true
+	];
+	134 -> 144;
+	135 -> 136;
+	136 -> 137;
+	137 -> 141;
+	141 -> 142;
+	142 -> 144;
+}

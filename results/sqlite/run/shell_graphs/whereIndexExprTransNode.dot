@@ -1,0 +1,19 @@
+digraph "whereIndexExprTransNode" {
+	// Node definitions.
+	2 [label=entry];
+	20;
+	36;
+	37;
+
+	// Edge definitions.
+	2 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 36 [
+		color=red
+		label=false
+	];
+	20 -> 37;
+	36 -> 37;
+}

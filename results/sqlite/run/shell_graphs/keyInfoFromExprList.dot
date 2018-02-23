@@ -1,0 +1,43 @@
+digraph "keyInfoFromExprList" {
+	// Node definitions.
+	4 [label=entry];
+	30;
+	38;
+	42;
+	50;
+	54;
+	74;
+	79;
+	80;
+
+	// Edge definitions.
+	4 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 80 [
+		color=red
+		label=false
+	];
+	30 -> 38;
+	38 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 79 [
+		color=red
+		label=false
+	];
+	42 -> 50 [
+		color=red
+		label=false
+	];
+	42 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 54;
+	54 -> 74;
+	74 -> 38;
+	79 -> 80;
+}

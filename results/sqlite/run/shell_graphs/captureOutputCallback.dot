@@ -1,0 +1,54 @@
+digraph "captureOutputCallback" {
+	// Node definitions.
+	4 [label=entry];
+	18;
+	20;
+	21;
+	25;
+	28;
+	30;
+	37;
+	44;
+	45;
+	48;
+
+	// Edge definitions.
+	4 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 20 [
+		color=red
+		label=false
+	];
+	18 -> 20;
+	20 -> 21;
+	21 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 48 [
+		color=red
+		label=false
+	];
+	25 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 30 [
+		color=red
+		label=false
+	];
+	28 -> 30;
+	30 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 44 [
+		color=red
+		label=false
+	];
+	37 -> 44;
+	44 -> 45;
+	45 -> 21;
+}

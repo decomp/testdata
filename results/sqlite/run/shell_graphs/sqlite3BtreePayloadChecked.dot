@@ -1,0 +1,19 @@
+digraph "sqlite3BtreePayloadChecked" {
+	// Node definitions.
+	4 [label=entry];
+	15;
+	21;
+	27;
+
+	// Edge definitions.
+	4 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 21 [
+		color=red
+		label=false
+	];
+	15 -> 27;
+	21 -> 27;
+}

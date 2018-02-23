@@ -1,0 +1,178 @@
+digraph "tryToCloneData" {
+	// Node definitions.
+	3 [label=entry];
+	31;
+	43;
+	55;
+	58;
+	67;
+	71;
+	78;
+	81;
+	91;
+	99;
+	100;
+	103;
+	104;
+	108;
+	109;
+	113;
+	117;
+	122;
+	130;
+	138;
+	146;
+	157;
+	158;
+	161;
+	166;
+	169;
+	172;
+	179;
+	187;
+	198;
+	199;
+	202;
+	203;
+	216;
+	220;
+	221;
+	224;
+	225;
+
+	// Edge definitions.
+	3 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 43 [
+		color=red
+		label=false
+	];
+	31 -> 225;
+	43 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 58 [
+		color=red
+		label=false
+	];
+	55 -> 225;
+	58 -> 67;
+	67 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 81 [
+		color=red
+		label=false
+	];
+	71 -> 78;
+	78 -> 67;
+	81 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 99 [
+		color=red
+		label=false
+	];
+	91 -> 225;
+	99 -> 100;
+	100 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	100 -> 224 [
+		color=red
+		label=false
+	];
+	103 -> 104;
+	104 -> 108 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 199 [
+		color=red
+		label=false
+	];
+	108 -> 109;
+	109 -> 113 [
+		color=darkgreen
+		label=true
+	];
+	109 -> 161 [
+		color=red
+		label=false
+	];
+	113 -> 117 [label="case (x=5)"];
+	113 -> 122 [label="case (x=1)"];
+	113 -> 130 [label="case (x=2)"];
+	113 -> 138 [label="case (x=3)"];
+	113 -> 146 [label="case (x=4)"];
+	113 -> 157 [label="default case"];
+	117 -> 157;
+	122 -> 157;
+	130 -> 157;
+	138 -> 157;
+	146 -> 157;
+	157 -> 158;
+	158 -> 109;
+	161 -> 166 [
+		color=darkgreen
+		label=true
+	];
+	161 -> 179 [
+		color=red
+		label=false
+	];
+	166 -> 169 [
+		color=darkgreen
+		label=true
+	];
+	166 -> 179 [
+		color=red
+		label=false
+	];
+	169 -> 172 [
+		color=darkgreen
+		label=true
+	];
+	169 -> 179 [
+		color=red
+		label=false
+	];
+	172 -> 179;
+	179 -> 187 [
+		color=darkgreen
+		label=true
+	];
+	179 -> 198 [
+		color=red
+		label=false
+	];
+	187 -> 198;
+	198 -> 104;
+	199 -> 202 [
+		color=darkgreen
+		label=true
+	];
+	199 -> 203 [
+		color=red
+		label=false
+	];
+	202 -> 224;
+	203 -> 216 [
+		color=darkgreen
+		label=true
+	];
+	203 -> 220 [
+		color=red
+		label=false
+	];
+	216 -> 224;
+	220 -> 221;
+	221 -> 100;
+	224 -> 225;
+}

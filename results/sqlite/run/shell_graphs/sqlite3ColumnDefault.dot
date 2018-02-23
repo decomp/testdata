@@ -1,0 +1,39 @@
+digraph "sqlite3ColumnDefault" {
+	// Node definitions.
+	4 [label=entry];
+	16;
+	39;
+	43;
+	44;
+	55;
+	59;
+
+	// Edge definitions.
+	4 -> 16 [
+		color=red
+		label=false
+	];
+	4 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 43 [
+		color=red
+		label=false
+	];
+	39 -> 43;
+	43 -> 44;
+	44 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 59 [
+		color=red
+		label=false
+	];
+	55 -> 59;
+}

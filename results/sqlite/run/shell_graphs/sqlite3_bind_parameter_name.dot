@@ -1,0 +1,19 @@
+digraph "sqlite3_bind_parameter_name" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	18;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	11 -> 18;
+	12 -> 18;
+}

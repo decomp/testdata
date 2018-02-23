@@ -1,0 +1,28 @@
+digraph "vdbeRecordDecodeInt" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	14;
+	26;
+	44;
+	69;
+	110;
+	165;
+	169;
+
+	// Edge definitions.
+	2 -> 9 [label="case (x=1)"];
+	2 -> 14 [label="case (x=2)"];
+	2 -> 26 [label="case (x=3)"];
+	2 -> 44 [label="case (x=4)"];
+	2 -> 69 [label="case (x=5)"];
+	2 -> 110 [label="case (x=6)"];
+	2 -> 165 [label="default case"];
+	9 -> 169;
+	14 -> 169;
+	26 -> 169;
+	44 -> 169;
+	69 -> 169;
+	110 -> 169;
+	165 -> 169;
+}

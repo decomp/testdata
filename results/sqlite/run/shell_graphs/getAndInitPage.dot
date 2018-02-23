@@ -1,0 +1,94 @@
+digraph "getAndInitPage" {
+	// Node definitions.
+	5 [label=entry];
+	18;
+	20;
+	29;
+	30;
+	41;
+	51;
+	54;
+	55;
+	58;
+	65;
+	76;
+	80;
+	81;
+	84;
+	89;
+	91;
+
+	// Edge definitions.
+	5 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 20 [
+		color=red
+		label=false
+	];
+	18 -> 81;
+	20 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 30 [
+		color=red
+		label=false
+	];
+	29 -> 81;
+	30 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 55 [
+		color=red
+		label=false
+	];
+	41 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 54 [
+		color=red
+		label=false
+	];
+	51 -> 81;
+	54 -> 55;
+	55 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 80 [
+		color=red
+		label=false
+	];
+	58 -> 65 [
+		color=red
+		label=false
+	];
+	58 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 80 [
+		color=red
+		label=false
+	];
+	76 -> 81;
+	80 -> 91;
+	81 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 89 [
+		color=red
+		label=false
+	];
+	84 -> 89;
+	89 -> 91;
+}

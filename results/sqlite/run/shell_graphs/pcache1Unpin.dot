@@ -1,0 +1,28 @@
+digraph "pcache1Unpin" {
+	// Node definitions.
+	3 [label=entry];
+	20;
+	28;
+	30;
+	52;
+
+	// Edge definitions.
+	3 -> 20 [
+		color=red
+		label=false
+	];
+	3 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 30 [
+		color=red
+		label=false
+	];
+	28 -> 52;
+	30 -> 52;
+}

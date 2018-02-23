@@ -1,0 +1,17 @@
+digraph "isLookaside" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	22;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 22 [
+		color=red
+		label=false
+	];
+	13 -> 22;
+}

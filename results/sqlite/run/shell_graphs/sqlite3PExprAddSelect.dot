@@ -1,0 +1,19 @@
+digraph "sqlite3PExprAddSelect" {
+	// Node definitions.
+	3 [label=entry];
+	9;
+	20;
+	25;
+
+	// Edge definitions.
+	3 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 20 [
+		color=red
+		label=false
+	];
+	9 -> 25;
+	20 -> 25;
+}

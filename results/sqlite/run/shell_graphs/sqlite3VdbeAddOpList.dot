@@ -1,0 +1,63 @@
+digraph "sqlite3VdbeAddOpList" {
+	// Node definitions.
+	4 [label=entry];
+	24;
+	29;
+	30;
+	39;
+	43;
+	70;
+	76;
+	84;
+	99;
+	106;
+	113;
+
+	// Edge definitions.
+	4 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 30 [
+		color=red
+		label=false
+	];
+	24 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 30 [
+		color=red
+		label=false
+	];
+	29 -> 113;
+	30 -> 39;
+	39 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 106 [
+		color=red
+		label=false
+	];
+	43 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 84 [
+		color=red
+		label=false
+	];
+	70 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 84 [
+		color=red
+		label=false
+	];
+	76 -> 84;
+	84 -> 99;
+	99 -> 39;
+	106 -> 113;
+}

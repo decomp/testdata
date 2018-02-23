@@ -1,0 +1,76 @@
+digraph "codeDeferredSeek" {
+	// Node definitions.
+	4 [label=entry];
+	30;
+	35;
+	39;
+	41;
+	46;
+	64;
+	71;
+	79;
+	89;
+	104;
+	105;
+	108;
+	112;
+	113;
+
+	// Edge definitions.
+	4 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 113 [
+		color=red
+		label=false
+	];
+	30 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 39 [
+		color=red
+		label=false
+	];
+	35 -> 41;
+	39 -> 41;
+	41 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 113 [
+		color=red
+		label=false
+	];
+	46 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 112 [
+		color=red
+		label=false
+	];
+	64 -> 71;
+	71 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 108 [
+		color=red
+		label=false
+	];
+	79 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 104 [
+		color=red
+		label=false
+	];
+	89 -> 104;
+	104 -> 105;
+	105 -> 71;
+	108 -> 112;
+	112 -> 113;
+}

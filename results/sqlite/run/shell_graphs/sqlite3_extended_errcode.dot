@@ -1,0 +1,48 @@
+digraph "sqlite3_extended_errcode" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	10;
+	12;
+	15;
+	21;
+	22;
+	26;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 12 [
+		color=red
+		label=false
+	];
+	6 -> 10 [
+		color=red
+		label=false
+	];
+	6 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 26;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 21 [
+		color=red
+		label=false
+	];
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 22 [
+		color=red
+		label=false
+	];
+	21 -> 26;
+	22 -> 26;
+}

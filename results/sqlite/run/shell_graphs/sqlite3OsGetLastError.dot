@@ -1,0 +1,19 @@
+digraph "sqlite3OsGetLastError" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	13;
+	14;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 13 [
+		color=red
+		label=false
+	];
+	7 -> 14;
+	13 -> 14;
+}

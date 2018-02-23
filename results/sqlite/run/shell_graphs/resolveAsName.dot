@@ -1,0 +1,54 @@
+digraph "resolveAsName" {
+	// Node definitions.
+	3 [label=entry];
+	17;
+	22;
+	28;
+	38;
+	43;
+	46;
+	47;
+	50;
+	51;
+	52;
+
+	// Edge definitions.
+	3 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 51 [
+		color=red
+		label=false
+	];
+	17 -> 22;
+	22 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 50 [
+		color=red
+		label=false
+	];
+	28 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 46 [
+		color=red
+		label=false
+	];
+	38 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 46 [
+		color=red
+		label=false
+	];
+	43 -> 52;
+	46 -> 47;
+	47 -> 22;
+	50 -> 51;
+	51 -> 52;
+}

@@ -1,0 +1,76 @@
+digraph "blobReadWrite" {
+	// Node definitions.
+	5 [label=entry];
+	20;
+	22;
+	35;
+	38;
+	49;
+	50;
+	53;
+	54;
+	75;
+	80;
+	84;
+	85;
+	86;
+	96;
+
+	// Edge definitions.
+	5 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 22 [
+		color=red
+		label=false
+	];
+	20 -> 96;
+	22 -> 35 [
+		color=red
+		label=false
+	];
+	22 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 38 [
+		color=red
+		label=false
+	];
+	35 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 50 [
+		color=red
+		label=false
+	];
+	49 -> 86;
+	50 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 85;
+	54 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 80 [
+		color=red
+		label=false
+	];
+	75 -> 84;
+	80 -> 84;
+	84 -> 85;
+	85 -> 86;
+	86 -> 96;
+}

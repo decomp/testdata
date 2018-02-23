@@ -1,0 +1,43 @@
+digraph "vdbeFreeOpArray" {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	16;
+	20;
+	26;
+	36;
+	37;
+	40;
+	44;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 44 [
+		color=red
+		label=false
+	];
+	10 -> 16;
+	16 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 40 [
+		color=red
+		label=false
+	];
+	20 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 36 [
+		color=red
+		label=false
+	];
+	26 -> 36;
+	36 -> 37;
+	37 -> 16;
+	40 -> 44;
+}

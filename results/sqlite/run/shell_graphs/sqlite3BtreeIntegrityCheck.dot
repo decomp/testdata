@@ -1,0 +1,215 @@
+digraph "sqlite3BtreeIntegrityCheck" {
+	// Node definitions.
+	5 [label=entry];
+	52;
+	53;
+	64;
+	66;
+	76;
+	78;
+	89;
+	91;
+	114;
+	118;
+	122;
+	124;
+	131;
+	132;
+	138;
+	145;
+	151;
+	158;
+	161;
+	167;
+	172;
+	176;
+	178;
+	182;
+	188;
+	193;
+	195;
+	199;
+	205;
+	211;
+	213;
+	214;
+	217;
+	218;
+	227;
+	232;
+	239;
+	241;
+
+	// Edge definitions.
+	5 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 53 [
+		color=red
+		label=false
+	];
+	52 -> 218;
+	53 -> 64 [
+		color=red
+		label=false
+	];
+	53 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 218;
+	66 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 78 [
+		color=red
+		label=false
+	];
+	76 -> 218;
+	78 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 91 [
+		color=red
+		label=false
+	];
+	89 -> 91;
+	91 -> 114;
+	114 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	114 -> 122 [
+		color=red
+		label=false
+	];
+	118 -> 122;
+	122 -> 124 [
+		color=darkgreen
+		label=true
+	];
+	122 -> 161 [
+		color=red
+		label=false
+	];
+	124 -> 131 [
+		color=darkgreen
+		label=true
+	];
+	124 -> 132 [
+		color=red
+		label=false
+	];
+	131 -> 158;
+	132 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	132 -> 151 [
+		color=red
+		label=false
+	];
+	138 -> 145 [
+		color=darkgreen
+		label=true
+	];
+	138 -> 151 [
+		color=red
+		label=false
+	];
+	145 -> 151;
+	151 -> 158;
+	158 -> 114;
+	161 -> 167;
+	167 -> 172 [
+		color=darkgreen
+		label=true
+	];
+	167 -> 176 [
+		color=red
+		label=false
+	];
+	172 -> 176;
+	176 -> 178 [
+		color=darkgreen
+		label=true
+	];
+	176 -> 217 [
+		color=red
+		label=false
+	];
+	178 -> 182 [
+		color=darkgreen
+		label=true
+	];
+	178 -> 195 [
+		color=red
+		label=false
+	];
+	182 -> 188 [
+		color=red
+		label=false
+	];
+	182 -> 193 [
+		color=darkgreen
+		label=true
+	];
+	188 -> 193 [
+		color=red
+		label=false
+	];
+	188 -> 195 [
+		color=darkgreen
+		label=true
+	];
+	193 -> 195;
+	195 -> 199 [
+		color=darkgreen
+		label=true
+	];
+	195 -> 213 [
+		color=red
+		label=false
+	];
+	199 -> 205 [
+		color=darkgreen
+		label=true
+	];
+	199 -> 213 [
+		color=red
+		label=false
+	];
+	205 -> 211 [
+		color=darkgreen
+		label=true
+	];
+	205 -> 213 [
+		color=red
+		label=false
+	];
+	211 -> 213;
+	213 -> 214;
+	214 -> 167;
+	217 -> 218;
+	218 -> 227 [
+		color=darkgreen
+		label=true
+	];
+	218 -> 232 [
+		color=red
+		label=false
+	];
+	227 -> 232;
+	232 -> 239 [
+		color=darkgreen
+		label=true
+	];
+	232 -> 241 [
+		color=red
+		label=false
+	];
+	239 -> 241;
+}

@@ -1,0 +1,65 @@
+digraph "sqlite3VtabCallDestroy" {
+	// Node definitions.
+	3 [label=entry];
+	25;
+	30;
+	34;
+	37;
+	44;
+	45;
+	46;
+	50;
+	68;
+	74;
+	75;
+	77;
+
+	// Edge definitions.
+	3 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 75 [
+		color=red
+		label=false
+	];
+	25 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 75 [
+		color=red
+		label=false
+	];
+	30 -> 34;
+	34 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 50 [
+		color=red
+		label=false
+	];
+	37 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 45 [
+		color=red
+		label=false
+	];
+	44 -> 77;
+	45 -> 46;
+	46 -> 34;
+	50 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 74 [
+		color=red
+		label=false
+	];
+	68 -> 74;
+	74 -> 75;
+	75 -> 77;
+}

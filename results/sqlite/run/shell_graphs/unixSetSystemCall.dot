@@ -1,0 +1,93 @@
+digraph "unixSetSystemCall" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	13;
+	17;
+	24;
+	34;
+	35;
+	38;
+	39;
+	40;
+	44;
+	53;
+	60;
+	70;
+	73;
+	79;
+	85;
+	86;
+	89;
+	90;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 39 [
+		color=red
+		label=false
+	];
+	12 -> 13;
+	13 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 38 [
+		color=red
+		label=false
+	];
+	17 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 34 [
+		color=red
+		label=false
+	];
+	24 -> 34;
+	34 -> 35;
+	35 -> 13;
+	38 -> 90;
+	39 -> 40;
+	40 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 89 [
+		color=red
+		label=false
+	];
+	44 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 85 [
+		color=red
+		label=false
+	];
+	53 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 70 [
+		color=red
+		label=false
+	];
+	60 -> 70;
+	70 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 79 [
+		color=red
+		label=false
+	];
+	73 -> 79;
+	79 -> 89;
+	85 -> 86;
+	86 -> 40;
+	89 -> 90;
+}

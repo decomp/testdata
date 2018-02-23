@@ -1,0 +1,32 @@
+digraph "vtabDisconnectAll" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	17;
+	27;
+	34;
+	43;
+	45;
+
+	// Edge definitions.
+	2 -> 14;
+	14 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 45 [
+		color=red
+		label=false
+	];
+	17 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 34 [
+		color=red
+		label=false
+	];
+	27 -> 43;
+	34 -> 43;
+	43 -> 14;
+}

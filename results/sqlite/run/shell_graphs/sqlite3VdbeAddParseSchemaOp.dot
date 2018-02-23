@@ -1,0 +1,21 @@
+digraph "sqlite3VdbeAddParseSchemaOp" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	20;
+	23;
+	26;
+
+	// Edge definitions.
+	3 -> 12;
+	12 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 26 [
+		color=red
+		label=false
+	];
+	20 -> 23;
+	23 -> 12;
+}

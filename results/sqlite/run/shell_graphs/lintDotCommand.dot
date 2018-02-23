@@ -1,0 +1,43 @@
+digraph "lintDotCommand" {
+	// Node definitions.
+	3 [label=entry];
+	11;
+	17;
+	18;
+	22;
+	29;
+	30;
+	35;
+	45;
+
+	// Edge definitions.
+	3 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 17 [
+		color=red
+		label=false
+	];
+	11 -> 18;
+	17 -> 18;
+	18 -> 22 [
+		color=red
+		label=false
+	];
+	18 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 30 [
+		color=red
+		label=false
+	];
+	29 -> 35;
+	30 -> 45;
+	35 -> 45;
+}

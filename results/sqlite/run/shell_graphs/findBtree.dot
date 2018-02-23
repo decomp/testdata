@@ -1,0 +1,52 @@
+digraph "findBtree" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	22;
+	28;
+	34;
+	35;
+	36;
+	39;
+	42;
+	51;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 36 [
+		color=red
+		label=false
+	];
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 28 [
+		color=red
+		label=false
+	];
+	22 -> 28;
+	28 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 35 [
+		color=red
+		label=false
+	];
+	34 -> 51;
+	35 -> 36;
+	36 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 42 [
+		color=red
+		label=false
+	];
+	39 -> 51;
+	42 -> 51;
+}

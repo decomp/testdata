@@ -1,0 +1,41 @@
+digraph "reindexTable" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	15;
+	18;
+	23;
+	35;
+	36;
+	40;
+
+	// Edge definitions.
+	3 -> 12;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 40 [
+		color=red
+		label=false
+	];
+	15 -> 18 [
+		color=red
+		label=false
+	];
+	15 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 35 [
+		color=red
+		label=false
+	];
+	23 -> 35;
+	35 -> 36;
+	36 -> 12;
+}

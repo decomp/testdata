@@ -1,0 +1,28 @@
+digraph "sqlite3PagerReadFileheader" {
+	// Node definitions.
+	3 [label=entry];
+	17;
+	26;
+	27;
+	28;
+
+	// Edge definitions.
+	3 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 28 [
+		color=red
+		label=false
+	];
+	17 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 27 [
+		color=red
+		label=false
+	];
+	26 -> 27;
+	27 -> 28;
+}

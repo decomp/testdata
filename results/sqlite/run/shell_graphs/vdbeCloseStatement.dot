@@ -1,0 +1,109 @@
+digraph "vdbeCloseStatement" {
+	// Node definitions.
+	2 [label=entry];
+	18;
+	24;
+	35;
+	38;
+	42;
+	45;
+	49;
+	52;
+	54;
+	55;
+	56;
+	59;
+	68;
+	71;
+	75;
+	78;
+	82;
+	83;
+	86;
+	97;
+
+	// Edge definitions.
+	2 -> 18;
+	18 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 59 [
+		color=red
+		label=false
+	];
+	24 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 55 [
+		color=red
+		label=false
+	];
+	35 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 42 [
+		color=red
+		label=false
+	];
+	38 -> 42;
+	42 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 49 [
+		color=red
+		label=false
+	];
+	45 -> 49;
+	49 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 54 [
+		color=red
+		label=false
+	];
+	52 -> 54;
+	54 -> 55;
+	55 -> 56;
+	56 -> 18;
+	59 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 83 [
+		color=red
+		label=false
+	];
+	68 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 75 [
+		color=red
+		label=false
+	];
+	71 -> 75;
+	75 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 82 [
+		color=red
+		label=false
+	];
+	78 -> 82;
+	82 -> 83;
+	83 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 97 [
+		color=red
+		label=false
+	];
+	86 -> 97;
+}

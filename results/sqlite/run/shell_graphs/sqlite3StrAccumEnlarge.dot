@@ -1,0 +1,115 @@
+digraph "sqlite3StrAccumEnlarge" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	14;
+	19;
+	30;
+	37;
+	41;
+	42;
+	64;
+	71;
+	78;
+	81;
+	86;
+	91;
+	101;
+	108;
+	111;
+	118;
+	123;
+	132;
+	149;
+	152;
+	153;
+	155;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	13 -> 155;
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 30 [
+		color=red
+		label=false
+	];
+	19 -> 155;
+	30 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 41 [
+		color=red
+		label=false
+	];
+	37 -> 42;
+	41 -> 42;
+	42 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 71 [
+		color=red
+		label=false
+	];
+	64 -> 71;
+	71 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 81 [
+		color=red
+		label=false
+	];
+	78 -> 155;
+	81 -> 86;
+	86 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 101 [
+		color=red
+		label=false
+	];
+	91 -> 108;
+	101 -> 108;
+	108 -> 111 [
+		color=darkgreen
+		label=true
+	];
+	108 -> 149 [
+		color=red
+		label=false
+	];
+	111 -> 118 [
+		color=red
+		label=false
+	];
+	111 -> 132 [
+		color=darkgreen
+		label=true
+	];
+	118 -> 123 [
+		color=darkgreen
+		label=true
+	];
+	118 -> 132 [
+		color=red
+		label=false
+	];
+	123 -> 132;
+	132 -> 152;
+	149 -> 155;
+	152 -> 153;
+	153 -> 155;
+}

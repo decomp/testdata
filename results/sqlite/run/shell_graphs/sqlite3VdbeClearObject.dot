@@ -1,0 +1,32 @@
+digraph "sqlite3VdbeClearObject" {
+	// Node definitions.
+	2 [label=entry];
+	18;
+	21;
+	35;
+	37;
+	42;
+	59;
+
+	// Edge definitions.
+	2 -> 18;
+	18 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 37 [
+		color=red
+		label=false
+	];
+	21 -> 35;
+	35 -> 18;
+	37 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 59 [
+		color=red
+		label=false
+	];
+	42 -> 59;
+}

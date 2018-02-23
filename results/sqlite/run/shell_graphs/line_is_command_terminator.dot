@@ -1,0 +1,70 @@
+digraph "line_is_command_terminator" {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	17;
+	20;
+	26;
+	31;
+	32;
+	41;
+	50;
+	55;
+	56;
+	57;
+
+	// Edge definitions.
+	1 -> 4;
+	4 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 20 [
+		color=red
+		label=false
+	];
+	17 -> 4;
+	20 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 32 [
+		color=red
+		label=false
+	];
+	26 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 32 [
+		color=red
+		label=false
+	];
+	31 -> 57;
+	32 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 56 [
+		color=red
+		label=false
+	];
+	41 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 56 [
+		color=red
+		label=false
+	];
+	50 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 56 [
+		color=red
+		label=false
+	];
+	55 -> 57;
+	56 -> 57;
+}

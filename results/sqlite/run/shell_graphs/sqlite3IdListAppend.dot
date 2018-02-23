@@ -1,0 +1,41 @@
+digraph "sqlite3IdListAppend" {
+	// Node definitions.
+	3 [label=entry];
+	11;
+	17;
+	18;
+	19;
+	33;
+	36;
+	48;
+
+	// Edge definitions.
+	3 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 19 [
+		color=red
+		label=false
+	];
+	11 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 18 [
+		color=red
+		label=false
+	];
+	17 -> 48;
+	18 -> 19;
+	19 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 36 [
+		color=red
+		label=false
+	];
+	33 -> 48;
+	36 -> 48;
+}

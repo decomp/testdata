@@ -1,0 +1,97 @@
+digraph "pcacheSortDirtyList" {
+	// Node definitions.
+	1 [label=entry];
+	8;
+	11;
+	18;
+	21;
+	27;
+	32;
+	42;
+	43;
+	46;
+	49;
+	59;
+	60;
+	63;
+	66;
+	72;
+	73;
+	76;
+	83;
+	88;
+	90;
+	93;
+
+	// Edge definitions.
+	1 -> 8;
+	8 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 60 [
+		color=red
+		label=false
+	];
+	11 -> 18;
+	18 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 46 [
+		color=red
+		label=false
+	];
+	21 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 32 [
+		color=red
+		label=false
+	];
+	27 -> 46;
+	32 -> 42;
+	42 -> 43;
+	43 -> 18;
+	46 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 59 [
+		color=red
+		label=false
+	];
+	49 -> 59;
+	59 -> 8;
+	60 -> 63;
+	63 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 93 [
+		color=red
+		label=false
+	];
+	66 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 73 [
+		color=red
+		label=false
+	];
+	72 -> 90;
+	73 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 83 [
+		color=red
+		label=false
+	];
+	76 -> 88;
+	83 -> 88;
+	88 -> 90;
+	90 -> 63;
+}

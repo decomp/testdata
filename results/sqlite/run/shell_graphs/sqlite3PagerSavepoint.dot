@@ -1,0 +1,118 @@
+digraph "sqlite3PagerSavepoint" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	22;
+	29;
+	35;
+	44;
+	47;
+	53;
+	56;
+	63;
+	69;
+	74;
+	77;
+	78;
+	83;
+	90;
+	93;
+	94;
+	102;
+	107;
+	108;
+	109;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 109 [
+		color=red
+		label=false
+	];
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 109 [
+		color=red
+		label=false
+	];
+	22 -> 29;
+	29 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 47 [
+		color=red
+		label=false
+	];
+	35 -> 44;
+	44 -> 29;
+	47 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 78 [
+		color=red
+		label=false
+	];
+	53 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 77 [
+		color=red
+		label=false
+	];
+	56 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 77 [
+		color=red
+		label=false
+	];
+	63 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 74 [
+		color=red
+		label=false
+	];
+	69 -> 74;
+	74 -> 77;
+	77 -> 108;
+	78 -> 83 [
+		color=red
+		label=false
+	];
+	78 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 107 [
+		color=red
+		label=false
+	];
+	90 -> 93 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 94 [
+		color=red
+		label=false
+	];
+	93 -> 102;
+	94 -> 102;
+	102 -> 107;
+	107 -> 108;
+	108 -> 109;
+}

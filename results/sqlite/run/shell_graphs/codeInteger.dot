@@ -1,0 +1,116 @@
+digraph "codeInteger" {
+	// Node definitions.
+	4 [label=entry];
+	22;
+	29;
+	32;
+	37;
+	46;
+	49;
+	52;
+	55;
+	58;
+	62;
+	68;
+	73;
+	74;
+	77;
+	80;
+	81;
+	84;
+	86;
+	91;
+	92;
+
+	// Edge definitions.
+	4 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 37 [
+		color=red
+		label=false
+	];
+	22 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 32 [
+		color=red
+		label=false
+	];
+	29 -> 32;
+	32 -> 92;
+	37 -> 46 [
+		color=red
+		label=false
+	];
+	37 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 52 [
+		color=red
+		label=false
+	];
+	49 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 58 [
+		color=red
+		label=false
+	];
+	52 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 74 [
+		color=red
+		label=false
+	];
+	55 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 74 [
+		color=red
+		label=false
+	];
+	58 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 68 [
+		color=red
+		label=false
+	];
+	62 -> 73;
+	68 -> 73;
+	73 -> 91;
+	74 -> 77 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 86 [
+		color=red
+		label=false
+	];
+	77 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 81 [
+		color=red
+		label=false
+	];
+	80 -> 84;
+	81 -> 84;
+	84 -> 86;
+	86 -> 91;
+	91 -> 92;
+}

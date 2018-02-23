@@ -1,0 +1,19 @@
+digraph "sqlite3ExprCodeLoadIndexColumn" {
+	// Node definitions.
+	5 [label=entry];
+	22;
+	40;
+	51;
+
+	// Edge definitions.
+	5 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 40 [
+		color=red
+		label=false
+	];
+	22 -> 51;
+	40 -> 51;
+}

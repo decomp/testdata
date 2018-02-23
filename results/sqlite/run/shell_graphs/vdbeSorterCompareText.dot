@@ -1,0 +1,91 @@
+digraph "vdbeSorterCompareText" {
+	// Node definitions.
+	6 [label=entry];
+	39;
+	44;
+	49;
+	57;
+	62;
+	67;
+	75;
+	77;
+	79;
+	87;
+	91;
+	94;
+	104;
+	112;
+	113;
+	124;
+	127;
+	128;
+
+	// Edge definitions.
+	6 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 44 [
+		color=red
+		label=false
+	];
+	39 -> 49;
+	44 -> 49;
+	49 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 62 [
+		color=red
+		label=false
+	];
+	57 -> 67;
+	62 -> 67;
+	67 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 77 [
+		color=red
+		label=false
+	];
+	75 -> 79;
+	77 -> 79;
+	79 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 91 [
+		color=red
+		label=false
+	];
+	87 -> 91;
+	91 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 113 [
+		color=red
+		label=false
+	];
+	94 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 112 [
+		color=red
+		label=false
+	];
+	104 -> 112;
+	112 -> 128;
+	113 -> 124 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 127 [
+		color=red
+		label=false
+	];
+	124 -> 127;
+	127 -> 128;
+}

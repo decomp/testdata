@@ -1,0 +1,98 @@
+digraph "releaseMemArray" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	12;
+	24;
+	25;
+	30;
+	35;
+	36;
+	41;
+	42;
+	43;
+	50;
+	52;
+	57;
+	64;
+	65;
+	68;
+	73;
+	74;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 74 [
+		color=red
+		label=false
+	];
+	9 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 74 [
+		color=red
+		label=false
+	];
+	12 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 42 [
+		color=red
+		label=false
+	];
+	24 -> 25;
+	25 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 35 [
+		color=red
+		label=false
+	];
+	30 -> 35;
+	35 -> 36;
+	36 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 41 [
+		color=red
+		label=false
+	];
+	41 -> 74;
+	42 -> 43;
+	43 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 52 [
+		color=red
+		label=false
+	];
+	50 -> 65;
+	52 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 64 [
+		color=red
+		label=false
+	];
+	57 -> 64;
+	64 -> 65;
+	65 -> 68;
+	68 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 73 [
+		color=red
+		label=false
+	];
+	73 -> 74;
+}

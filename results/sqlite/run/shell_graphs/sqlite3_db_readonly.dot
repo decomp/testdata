@@ -1,0 +1,19 @@
+digraph "sqlite3_db_readonly" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	14;
+	15;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	11 -> 15;
+	14 -> 15;
+}

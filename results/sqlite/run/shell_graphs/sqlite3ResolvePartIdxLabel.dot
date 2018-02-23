@@ -1,0 +1,17 @@
+digraph "sqlite3ResolvePartIdxLabel" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	13;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	7 -> 13;
+}

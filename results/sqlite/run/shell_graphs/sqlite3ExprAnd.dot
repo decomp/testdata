@@ -1,0 +1,50 @@
+digraph "sqlite3ExprAnd" {
+	// Node definitions.
+	3 [label=entry];
+	11;
+	13;
+	16;
+	18;
+	22;
+	26;
+	33;
+	41;
+
+	// Edge definitions.
+	3 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 13 [
+		color=red
+		label=false
+	];
+	11 -> 41;
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 18 [
+		color=red
+		label=false
+	];
+	16 -> 41;
+	18 -> 22 [
+		color=red
+		label=false
+	];
+	18 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 33 [
+		color=red
+		label=false
+	];
+	26 -> 41;
+	33 -> 41;
+}

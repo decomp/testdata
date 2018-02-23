@@ -1,0 +1,37 @@
+digraph "sqlite3SystemError" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	8;
+	13;
+	16;
+	23;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 8 [
+		color=red
+		label=false
+	];
+	7 -> 23;
+	8 -> 13 [
+		color=red
+		label=false
+	];
+	8 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 23 [
+		color=red
+		label=false
+	];
+	16 -> 23;
+}

@@ -1,0 +1,73 @@
+digraph "sqlite3ExprCanBeNull" {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	11;
+	17;
+	19;
+	23;
+	30;
+	34;
+	37;
+	38;
+	44;
+	50;
+	65;
+	67;
+	70;
+	71;
+
+	// Edge definitions.
+	1 -> 5;
+	5 -> 11 [
+		color=red
+		label=false
+	];
+	5 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 17;
+	17 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 23 [
+		color=red
+		label=false
+	];
+	19 -> 5;
+	23 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 34 [
+		color=red
+		label=false
+	];
+	30 -> 34;
+	34 -> 37 [label="case (x=133)"];
+	34 -> 38 [label="case (x=152)"];
+	34 -> 70 [label="default case"];
+	37 -> 71;
+	38 -> 44 [
+		color=red
+		label=false
+	];
+	38 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 65 [
+		color=red
+		label=false
+	];
+	50 -> 65;
+	65 -> 67;
+	67 -> 71;
+	70 -> 71;
+}

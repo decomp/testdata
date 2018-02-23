@@ -1,0 +1,28 @@
+digraph "sqlite3DbMallocSize" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	13;
+	17;
+	23;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=red
+		label=false
+	];
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 13 [
+		color=red
+		label=false
+	];
+	8 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 23;
+	17 -> 23;
+}

@@ -1,0 +1,156 @@
+digraph "sqlite3FindFunction" {
+	// Node definitions.
+	5 [label=entry];
+	27;
+	30;
+	38;
+	41;
+	45;
+	48;
+	51;
+	57;
+	71;
+	74;
+	82;
+	85;
+	89;
+	90;
+	94;
+	97;
+	106;
+	140;
+	145;
+	149;
+	150;
+	153;
+	158;
+	162;
+	164;
+	165;
+
+	// Edge definitions.
+	5 -> 27;
+	27 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 45 [
+		color=red
+		label=false
+	];
+	30 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 41 [
+		color=red
+		label=false
+	];
+	38 -> 41;
+	41 -> 27;
+	45 -> 48 [
+		color=red
+		label=false
+	];
+	45 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 51 [
+		color=red
+		label=false
+	];
+	48 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 90 [
+		color=red
+		label=false
+	];
+	57 -> 71;
+	71 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 89 [
+		color=red
+		label=false
+	];
+	74 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 85 [
+		color=red
+		label=false
+	];
+	82 -> 85;
+	85 -> 71;
+	89 -> 90;
+	90 -> 94 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 150 [
+		color=red
+		label=false
+	];
+	94 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 150 [
+		color=red
+		label=false
+	];
+	97 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 150 [
+		color=red
+		label=false
+	];
+	106 -> 140 [
+		color=darkgreen
+		label=true
+	];
+	106 -> 145 [
+		color=red
+		label=false
+	];
+	140 -> 165;
+	145 -> 149;
+	149 -> 150;
+	150 -> 153 [
+		color=darkgreen
+		label=true
+	];
+	150 -> 164 [
+		color=red
+		label=false
+	];
+	153 -> 158 [
+		color=red
+		label=false
+	];
+	153 -> 162 [
+		color=darkgreen
+		label=true
+	];
+	158 -> 162 [
+		color=darkgreen
+		label=true
+	];
+	158 -> 164 [
+		color=red
+		label=false
+	];
+	162 -> 165;
+	164 -> 165;
+}

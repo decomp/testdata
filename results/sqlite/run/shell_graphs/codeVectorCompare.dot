@@ -1,0 +1,126 @@
+digraph "codeVectorCompare" {
+	// Node definitions.
+	5 [label=entry];
+	44;
+	46;
+	54;
+	55;
+	59;
+	60;
+	67;
+	68;
+	71;
+	73;
+	101;
+	103;
+	108;
+	109;
+	113;
+	122;
+	126;
+	135;
+	143;
+	145;
+	146;
+	147;
+	148;
+	151;
+	154;
+
+	// Edge definitions.
+	5 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 46 [
+		color=red
+		label=false
+	];
+	44 -> 154;
+	46 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 55 [
+		color=red
+		label=false
+	];
+	54 -> 55;
+	55 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 60 [
+		color=red
+		label=false
+	];
+	59 -> 60;
+	60 -> 67;
+	67 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 151 [
+		color=red
+		label=false
+	];
+	68 -> 71 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 73 [
+		color=red
+		label=false
+	];
+	71 -> 73;
+	73 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 103 [
+		color=red
+		label=false
+	];
+	101 -> 103;
+	103 -> 108 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 109 [
+		color=red
+		label=false
+	];
+	108 -> 151;
+	109 -> 113 [
+		color=darkgreen
+		label=true
+	];
+	109 -> 122 [
+		color=red
+		label=false
+	];
+	113 -> 147;
+	122 -> 126 [
+		color=darkgreen
+		label=true
+	];
+	122 -> 135 [
+		color=red
+		label=false
+	];
+	126 -> 146;
+	135 -> 143 [
+		color=darkgreen
+		label=true
+	];
+	135 -> 145 [
+		color=red
+		label=false
+	];
+	143 -> 145;
+	145 -> 146;
+	146 -> 147;
+	147 -> 148;
+	148 -> 67;
+	151 -> 154;
+}

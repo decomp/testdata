@@ -1,0 +1,39 @@
+digraph "sqlite3CheckCollSeq" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	16;
+	32;
+	33;
+	34;
+	35;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 34 [
+		color=red
+		label=false
+	];
+	11 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 34 [
+		color=red
+		label=false
+	];
+	16 -> 32 [
+		color=red
+		label=false
+	];
+	16 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 35;
+	33 -> 34;
+	34 -> 35;
+}

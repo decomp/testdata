@@ -1,0 +1,43 @@
+digraph "sqlite3VdbeSorterReset" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	24;
+	30;
+	37;
+	48;
+	51;
+	57;
+	62;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 24 [
+		color=red
+		label=false
+	];
+	13 -> 24;
+	24 -> 30;
+	30 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 51 [
+		color=red
+		label=false
+	];
+	37 -> 48;
+	48 -> 30;
+	51 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 62 [
+		color=red
+		label=false
+	];
+	57 -> 62;
+}

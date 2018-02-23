@@ -1,0 +1,17 @@
+digraph "unixDlError" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	17;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 17 [
+		color=red
+		label=false
+	];
+	12 -> 17;
+}

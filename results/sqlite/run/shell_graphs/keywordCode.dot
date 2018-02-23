@@ -1,0 +1,78 @@
+digraph "keywordCode" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	42;
+	45;
+	53;
+	54;
+	61;
+	65;
+	80;
+	82;
+	85;
+	89;
+	90;
+	97;
+	104;
+	105;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 105 [
+		color=red
+		label=false
+	];
+	12 -> 42;
+	42 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 104 [
+		color=red
+		label=false
+	];
+	45 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 97;
+	54 -> 61;
+	61 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 80 [
+		color=red
+		label=false
+	];
+	65 -> 80;
+	80 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 85 [
+		color=red
+		label=false
+	];
+	82 -> 61;
+	85 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 90 [
+		color=red
+		label=false
+	];
+	89 -> 97;
+	90 -> 104;
+	97 -> 42;
+	104 -> 105;
+}

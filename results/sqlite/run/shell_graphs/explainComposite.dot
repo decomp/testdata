@@ -1,0 +1,17 @@
+digraph "explainComposite" {
+	// Node definitions.
+	5 [label=entry];
+	18;
+	39;
+
+	// Edge definitions.
+	5 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 39 [
+		color=red
+		label=false
+	];
+	18 -> 39;
+}

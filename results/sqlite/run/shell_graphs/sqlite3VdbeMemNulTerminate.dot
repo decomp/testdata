@@ -1,0 +1,19 @@
+digraph "sqlite3VdbeMemNulTerminate" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	11;
+	14;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 11 [
+		color=red
+		label=false
+	];
+	10 -> 14;
+	11 -> 14;
+}

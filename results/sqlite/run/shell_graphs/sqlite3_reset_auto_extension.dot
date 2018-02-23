@@ -1,0 +1,17 @@
+digraph "sqlite3_reset_auto_extension" {
+	// Node definitions.
+	0 [label=entry];
+	4;
+	10;
+
+	// Edge definitions.
+	0 -> 4 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 10 [
+		color=red
+		label=false
+	];
+	4 -> 10;
+}

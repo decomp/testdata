@@ -1,0 +1,67 @@
+digraph "vdbePmaReadVarint" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	30;
+	42;
+	49;
+	63;
+	64;
+	69;
+	71;
+	80;
+	87;
+	91;
+	92;
+	93;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 30 [
+		color=red
+		label=false
+	];
+	15 -> 92;
+	30 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 63 [
+		color=red
+		label=false
+	];
+	42 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 63 [
+		color=red
+		label=false
+	];
+	49 -> 91;
+	63 -> 64;
+	64 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 71 [
+		color=red
+		label=false
+	];
+	69 -> 93;
+	71 -> 80;
+	80 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 87 [
+		color=red
+		label=false
+	];
+	87 -> 91;
+	91 -> 92;
+	92 -> 93;
+}

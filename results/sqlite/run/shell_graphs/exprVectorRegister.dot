@@ -1,0 +1,30 @@
+digraph "exprVectorRegister" {
+	// Node definitions.
+	6 [label=entry];
+	21;
+	31;
+	35;
+	52;
+	69;
+
+	// Edge definitions.
+	6 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 31 [
+		color=red
+		label=false
+	];
+	21 -> 69;
+	31 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 52 [
+		color=red
+		label=false
+	];
+	35 -> 69;
+	52 -> 69;
+}

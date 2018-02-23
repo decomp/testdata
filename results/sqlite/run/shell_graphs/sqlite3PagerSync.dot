@@ -1,0 +1,48 @@
+digraph "sqlite3PagerSync" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	22;
+	23;
+	24;
+	27;
+	32;
+	41;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 24 [
+		color=red
+		label=false
+	];
+	13 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 23 [
+		color=red
+		label=false
+	];
+	22 -> 23;
+	23 -> 24;
+	24 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 41 [
+		color=red
+		label=false
+	];
+	27 -> 32 [
+		color=red
+		label=false
+	];
+	27 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 41;
+}

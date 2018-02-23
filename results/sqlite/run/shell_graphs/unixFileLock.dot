@@ -1,0 +1,45 @@
+digraph "unixFileLock" {
+	// Node definitions.
+	2 [label=entry];
+	18;
+	24;
+	40;
+	42;
+	49;
+	50;
+	51;
+	59;
+	61;
+
+	// Edge definitions.
+	2 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 51 [
+		color=red
+		label=false
+	];
+	18 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 49 [
+		color=red
+		label=false
+	];
+	24 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 42 [
+		color=red
+		label=false
+	];
+	40 -> 61;
+	42 -> 50;
+	49 -> 50;
+	50 -> 59;
+	51 -> 59;
+	59 -> 61;
+}

@@ -1,0 +1,34 @@
+digraph "columnIndex" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	14;
+	26;
+	28;
+	29;
+	32;
+	33;
+
+	// Edge definitions.
+	2 -> 7;
+	7 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 32 [
+		color=red
+		label=false
+	];
+	14 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 28 [
+		color=red
+		label=false
+	];
+	26 -> 33;
+	28 -> 29;
+	29 -> 7;
+	32 -> 33;
+}

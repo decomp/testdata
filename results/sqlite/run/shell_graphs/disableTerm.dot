@@ -1,0 +1,101 @@
+digraph "disableTerm" {
+	// Node definitions.
+	2 [label=entry];
+	6;
+	9;
+	16;
+	21;
+	29;
+	38;
+	40;
+	43;
+	50;
+	57;
+	64;
+	69;
+	70;
+	90;
+	91;
+	94;
+
+	// Edge definitions.
+	2 -> 6;
+	6 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 38 [
+		color=red
+		label=false
+	];
+	9 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 38 [
+		color=red
+		label=false
+	];
+	16 -> 21 [
+		color=red
+		label=false
+	];
+	16 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 38 [
+		color=red
+		label=false
+	];
+	29 -> 38;
+	38 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 94 [
+		color=red
+		label=false
+	];
+	40 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 57 [
+		color=red
+		label=false
+	];
+	43 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 57 [
+		color=red
+		label=false
+	];
+	50 -> 64;
+	57 -> 64;
+	64 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 70 [
+		color=red
+		label=false
+	];
+	69 -> 94;
+	70 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 91 [
+		color=red
+		label=false
+	];
+	90 -> 94;
+	91 -> 6;
+}

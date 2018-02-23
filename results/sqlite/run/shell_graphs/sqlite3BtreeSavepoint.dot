@@ -1,0 +1,79 @@
+digraph "sqlite3BtreeSavepoint" {
+	// Node definitions.
+	3 [label=entry];
+	11;
+	17;
+	24;
+	27;
+	30;
+	37;
+	40;
+	43;
+	50;
+	53;
+	65;
+	67;
+
+	// Edge definitions.
+	3 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 67 [
+		color=red
+		label=false
+	];
+	11 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 67 [
+		color=red
+		label=false
+	];
+	17 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 27 [
+		color=red
+		label=false
+	];
+	24 -> 27;
+	27 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 37 [
+		color=red
+		label=false
+	];
+	30 -> 37;
+	37 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 65 [
+		color=red
+		label=false
+	];
+	40 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 53 [
+		color=red
+		label=false
+	];
+	43 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 53 [
+		color=red
+		label=false
+	];
+	50 -> 53;
+	53 -> 65;
+	65 -> 67;
+}

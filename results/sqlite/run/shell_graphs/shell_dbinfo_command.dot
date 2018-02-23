@@ -1,0 +1,177 @@
+digraph "shell_dbinfo_command" {
+	// Node definitions.
+	3 [label=entry];
+	19;
+	23;
+	24;
+	31;
+	32;
+	41;
+	46;
+	53;
+	54;
+	65;
+	68;
+	74;
+	75;
+	102;
+	105;
+	127;
+	130;
+	135;
+	138;
+	143;
+	146;
+	151;
+	152;
+	157;
+	160;
+	163;
+	165;
+	169;
+	171;
+	174;
+	175;
+	176;
+	179;
+	201;
+	204;
+	206;
+
+	// Edge definitions.
+	3 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 23 [
+		color=red
+		label=false
+	];
+	19 -> 24;
+	23 -> 24;
+	24 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 32 [
+		color=red
+		label=false
+	];
+	31 -> 206;
+	32 -> 41 [
+		color=red
+		label=false
+	];
+	32 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 46 [
+		color=red
+		label=false
+	];
+	41 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 206;
+	54 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 68 [
+		color=red
+		label=false
+	];
+	65 -> 206;
+	68 -> 74 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 75 [
+		color=red
+		label=false
+	];
+	74 -> 75;
+	75 -> 102;
+	102 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	102 -> 160 [
+		color=red
+		label=false
+	];
+	105 -> 127 [label="case (x=56)"];
+	105 -> 152 [label="default case"];
+	127 -> 130 [
+		color=darkgreen
+		label=true
+	];
+	127 -> 135 [
+		color=red
+		label=false
+	];
+	130 -> 135;
+	135 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	135 -> 143 [
+		color=red
+		label=false
+	];
+	138 -> 143;
+	143 -> 146 [
+		color=darkgreen
+		label=true
+	];
+	143 -> 151 [
+		color=red
+		label=false
+	];
+	146 -> 151;
+	151 -> 152;
+	152 -> 157;
+	157 -> 102;
+	160 -> 163 [
+		color=darkgreen
+		label=true
+	];
+	160 -> 165 [
+		color=red
+		label=false
+	];
+	163 -> 175;
+	165 -> 169 [
+		color=darkgreen
+		label=true
+	];
+	165 -> 171 [
+		color=red
+		label=false
+	];
+	169 -> 174;
+	171 -> 174;
+	174 -> 175;
+	175 -> 176;
+	176 -> 179 [
+		color=darkgreen
+		label=true
+	];
+	176 -> 204 [
+		color=red
+		label=false
+	];
+	179 -> 201;
+	201 -> 176;
+	204 -> 206;
+}

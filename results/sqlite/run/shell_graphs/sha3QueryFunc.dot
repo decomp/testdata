@@ -1,0 +1,180 @@
+digraph "sha3QueryFunc" {
+	// Node definitions.
+	3 [label=entry];
+	39;
+	40;
+	47;
+	50;
+	53;
+	56;
+	58;
+	59;
+	62;
+	63;
+	65;
+	70;
+	76;
+	86;
+	90;
+	99;
+	110;
+	114;
+	115;
+	119;
+	123;
+	124;
+	130;
+	133;
+	142;
+	145;
+	148;
+	154;
+	157;
+	166;
+	169;
+	172;
+	182;
+	192;
+	193;
+	196;
+	197;
+	200;
+	205;
+
+	// Edge definitions.
+	3 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 40 [
+		color=red
+		label=false
+	];
+	39 -> 59;
+	40 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 58 [
+		color=red
+		label=false
+	];
+	47 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 58 [
+		color=red
+		label=false
+	];
+	50 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 58 [
+		color=red
+		label=false
+	];
+	53 -> 56 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 58 [
+		color=red
+		label=false
+	];
+	56 -> 205;
+	58 -> 59;
+	59 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 63 [
+		color=red
+		label=false
+	];
+	62 -> 205;
+	63 -> 65;
+	65 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	65 -> 200 [
+		color=red
+		label=false
+	];
+	70 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 86 [
+		color=red
+		label=false
+	];
+	76 -> 205;
+	86 -> 90 [
+		color=red
+		label=false
+	];
+	86 -> 99 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 205;
+	99 -> 110;
+	110 -> 114 [
+		color=darkgreen
+		label=true
+	];
+	110 -> 197 [
+		color=red
+		label=false
+	];
+	114 -> 115;
+	115 -> 119 [
+		color=darkgreen
+		label=true
+	];
+	115 -> 196 [
+		color=red
+		label=false
+	];
+	119 -> 123 [label="case (x=5)"];
+	119 -> 124 [label="case (x=1)"];
+	119 -> 148 [label="case (x=2)"];
+	119 -> 172 [label="case (x=3)"];
+	119 -> 182 [label="case (x=4)"];
+	119 -> 192 [label="default case"];
+	123 -> 192;
+	124 -> 130;
+	130 -> 133 [
+		color=darkgreen
+		label=true
+	];
+	130 -> 145 [
+		color=red
+		label=false
+	];
+	133 -> 142;
+	142 -> 130;
+	145 -> 192;
+	148 -> 154;
+	154 -> 157 [
+		color=darkgreen
+		label=true
+	];
+	154 -> 169 [
+		color=red
+		label=false
+	];
+	157 -> 166;
+	166 -> 154;
+	169 -> 192;
+	172 -> 192;
+	182 -> 192;
+	192 -> 193;
+	193 -> 115;
+	196 -> 110;
+	197 -> 65;
+	200 -> 205;
+}

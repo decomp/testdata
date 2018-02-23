@@ -1,0 +1,67 @@
+digraph "parseDateOrTime" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	14;
+	19;
+	20;
+	24;
+	28;
+	32;
+	38;
+	41;
+	42;
+	43;
+	44;
+	45;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 14 [
+		color=red
+		label=false
+	];
+	13 -> 45;
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 20 [
+		color=red
+		label=false
+	];
+	19 -> 45;
+	20 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 32 [
+		color=red
+		label=false
+	];
+	24 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 32 [
+		color=red
+		label=false
+	];
+	28 -> 45;
+	32 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 41 [
+		color=red
+		label=false
+	];
+	38 -> 45;
+	41 -> 42;
+	42 -> 43;
+	43 -> 44;
+	44 -> 45;
+}

@@ -1,0 +1,17 @@
+digraph "pragmaVtabNext" {
+	// Node definitions.
+	1 [label=entry];
+	16;
+	24;
+
+	// Edge definitions.
+	1 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 24 [
+		color=red
+		label=false
+	];
+	16 -> 24;
+}

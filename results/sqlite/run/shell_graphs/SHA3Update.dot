@@ -1,0 +1,78 @@
+digraph "SHA3Update" {
+	// Node definitions.
+	3 [label=entry];
+	13;
+	19;
+	20;
+	25;
+	54;
+	58;
+	59;
+	62;
+	63;
+	64;
+	68;
+	98;
+	102;
+	103;
+	106;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 63 [
+		color=red
+		label=false
+	];
+	13 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 63 [
+		color=red
+		label=false
+	];
+	19 -> 20;
+	20 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 62 [
+		color=red
+		label=false
+	];
+	25 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 58 [
+		color=red
+		label=false
+	];
+	54 -> 58;
+	58 -> 59;
+	59 -> 20;
+	62 -> 63;
+	63 -> 64;
+	64 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 106 [
+		color=red
+		label=false
+	];
+	68 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 102 [
+		color=red
+		label=false
+	];
+	98 -> 102;
+	102 -> 103;
+	103 -> 64;
+}

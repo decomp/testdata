@@ -1,0 +1,52 @@
+digraph "sqlite3_get_auxdata" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	15;
+	21;
+	29;
+	32;
+	36;
+	37;
+	41;
+	42;
+
+	// Edge definitions.
+	2 -> 12;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 41 [
+		color=red
+		label=false
+	];
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 36 [
+		color=red
+		label=false
+	];
+	21 -> 29 [
+		color=red
+		label=false
+	];
+	21 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 36 [
+		color=red
+		label=false
+	];
+	32 -> 42;
+	36 -> 37;
+	37 -> 12;
+	41 -> 42;
+}

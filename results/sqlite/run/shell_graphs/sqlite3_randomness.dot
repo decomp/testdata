@@ -1,0 +1,93 @@
+digraph "sqlite3_randomness" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	14;
+	19;
+	22;
+	24;
+	27;
+	31;
+	34;
+	40;
+	43;
+	44;
+	47;
+	78;
+	81;
+	82;
+	83;
+	122;
+	126;
+	128;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 14 [
+		color=red
+		label=false
+	];
+	13 -> 128;
+	14 -> 19 [
+		color=red
+		label=false
+	];
+	14 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 24 [
+		color=red
+		label=false
+	];
+	22 -> 128;
+	24 -> 27 [
+		color=red
+		label=false
+	];
+	24 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 31;
+	31 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 43 [
+		color=red
+		label=false
+	];
+	34 -> 40;
+	40 -> 31;
+	43 -> 44;
+	44 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 81 [
+		color=red
+		label=false
+	];
+	47 -> 78;
+	78 -> 44;
+	81 -> 82;
+	82 -> 83;
+	83 -> 122;
+	122 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	122 -> 126 [
+		color=red
+		label=false
+	];
+	126 -> 128;
+}

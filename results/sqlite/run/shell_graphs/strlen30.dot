@@ -1,0 +1,19 @@
+digraph "strlen30" {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	9;
+	12;
+
+	// Edge definitions.
+	1 -> 5;
+	5 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 12 [
+		color=red
+		label=false
+	];
+	9 -> 5;
+}

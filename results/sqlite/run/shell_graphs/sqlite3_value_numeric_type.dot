@@ -1,0 +1,17 @@
+digraph "sqlite3_value_numeric_type" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	14;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 14 [
+		color=red
+		label=false
+	];
+	9 -> 14;
+}

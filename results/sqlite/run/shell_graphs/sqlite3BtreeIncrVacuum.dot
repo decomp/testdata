@@ -1,0 +1,67 @@
+digraph "sqlite3BtreeIncrVacuum" {
+	// Node definitions.
+	1 [label=entry];
+	16;
+	17;
+	34;
+	36;
+	39;
+	44;
+	50;
+	53;
+	69;
+	70;
+	71;
+	72;
+	73;
+
+	// Edge definitions.
+	1 -> 16 [
+		color=red
+		label=false
+	];
+	1 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 73;
+	17 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 36 [
+		color=red
+		label=false
+	];
+	34 -> 72;
+	36 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 70 [
+		color=red
+		label=false
+	];
+	39 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 50 [
+		color=red
+		label=false
+	];
+	44 -> 50;
+	50 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 69 [
+		color=red
+		label=false
+	];
+	53 -> 69;
+	69 -> 71;
+	70 -> 71;
+	71 -> 72;
+	72 -> 73;
+}

@@ -1,0 +1,17 @@
+digraph "setResultStrOrError" {
+	// Node definitions.
+	5 [label=entry];
+	20;
+	22;
+
+	// Edge definitions.
+	5 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 22 [
+		color=red
+		label=false
+	];
+	20 -> 22;
+}

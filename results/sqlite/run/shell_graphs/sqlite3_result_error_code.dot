@@ -1,0 +1,17 @@
+digraph "sqlite3_result_error_code" {
+	// Node definitions.
+	2 [label=entry];
+	18;
+	25;
+
+	// Edge definitions.
+	2 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 25 [
+		color=red
+		label=false
+	];
+	18 -> 25;
+}

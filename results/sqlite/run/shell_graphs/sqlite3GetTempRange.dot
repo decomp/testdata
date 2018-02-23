@@ -1,0 +1,32 @@
+digraph "sqlite3GetTempRange" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	13;
+	23;
+	34;
+	44;
+	46;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	10 -> 46;
+	13 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	13 -> 34 [
+		color=red
+		label=false
+	];
+	23 -> 44;
+	34 -> 44;
+	44 -> 46;
+}

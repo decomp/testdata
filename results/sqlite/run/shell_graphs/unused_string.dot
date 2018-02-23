@@ -1,0 +1,43 @@
+digraph "unused_string" {
+	// Node definitions.
+	4 [label=entry];
+	15;
+	17;
+	22;
+	24;
+	25;
+	31;
+	36;
+	38;
+
+	// Edge definitions.
+	4 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 17 [
+		color=red
+		label=false
+	];
+	15 -> 38;
+	17 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 24 [
+		color=red
+		label=false
+	];
+	22 -> 38;
+	24 -> 25;
+	25 -> 31;
+	31 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 36 [
+		color=red
+		label=false
+	];
+	36 -> 38;
+}

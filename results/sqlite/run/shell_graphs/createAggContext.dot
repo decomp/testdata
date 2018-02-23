@@ -1,0 +1,30 @@
+digraph "createAggContext" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	15;
+	31;
+	37;
+	38;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 15 [
+		color=red
+		label=false
+	];
+	11 -> 38;
+	15 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 37 [
+		color=red
+		label=false
+	];
+	31 -> 37;
+	37 -> 38;
+}

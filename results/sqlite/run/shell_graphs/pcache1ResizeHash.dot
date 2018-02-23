@@ -1,0 +1,78 @@
+digraph "pcache1ResizeHash" {
+	// Node definitions.
+	1 [label=entry];
+	15;
+	16;
+	21;
+	22;
+	32;
+	33;
+	36;
+	37;
+	43;
+	51;
+	54;
+	75;
+	76;
+	79;
+	90;
+
+	// Edge definitions.
+	1 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 16 [
+		color=red
+		label=false
+	];
+	15 -> 16;
+	16 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 22 [
+		color=red
+		label=false
+	];
+	21 -> 22;
+	22 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 33;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 90 [
+		color=red
+		label=false
+	];
+	36 -> 37;
+	37 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 79 [
+		color=red
+		label=false
+	];
+	43 -> 51;
+	51 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 75 [
+		color=red
+		label=false
+	];
+	54 -> 51;
+	75 -> 76;
+	76 -> 37;
+	79 -> 90;
+}

@@ -1,0 +1,17 @@
+digraph "sqlite3_status" {
+	// Node definitions.
+	4 [label=entry];
+	17;
+	24;
+
+	// Edge definitions.
+	4 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 24 [
+		color=red
+		label=false
+	];
+	17 -> 24;
+}

@@ -1,0 +1,30 @@
+digraph "sqlite3BtreeFirst" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	16;
+	18;
+	22;
+	23;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 23 [
+		color=red
+		label=false
+	];
+	10 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 18 [
+		color=red
+		label=false
+	];
+	16 -> 22;
+	18 -> 22;
+	22 -> 23;
+}

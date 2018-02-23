@@ -1,0 +1,113 @@
+digraph "sqlite3DropTrigger" {
+	// Node definitions.
+	3 [label=entry];
+	20;
+	21;
+	25;
+	26;
+	37;
+	43;
+	46;
+	49;
+	51;
+	55;
+	67;
+	68;
+	83;
+	84;
+	85;
+	88;
+	91;
+	94;
+	97;
+	100;
+	103;
+	106;
+
+	// Edge definitions.
+	3 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 21 [
+		color=red
+		label=false
+	];
+	20 -> 106;
+	21 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 106;
+	26 -> 37;
+	37 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 88 [
+		color=red
+		label=false
+	];
+	43 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 49 [
+		color=red
+		label=false
+	];
+	46 -> 51;
+	49 -> 51;
+	51 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 68 [
+		color=red
+		label=false
+	];
+	55 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 68 [
+		color=red
+		label=false
+	];
+	67 -> 85;
+	68 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 84 [
+		color=red
+		label=false
+	];
+	83 -> 88;
+	84 -> 85;
+	85 -> 37;
+	88 -> 91 [
+		color=red
+		label=false
+	];
+	88 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 94 [
+		color=red
+		label=false
+	];
+	91 -> 97 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 100;
+	97 -> 100;
+	100 -> 106;
+	103 -> 106;
+}

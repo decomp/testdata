@@ -1,0 +1,30 @@
+digraph "sqlite3SubInt64" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	12;
+	13;
+	18;
+	23;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 18 [
+		color=red
+		label=false
+	];
+	8 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 13 [
+		color=red
+		label=false
+	];
+	12 -> 23;
+	13 -> 23;
+	18 -> 23;
+}

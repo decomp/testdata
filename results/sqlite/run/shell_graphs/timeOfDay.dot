@@ -1,0 +1,39 @@
+digraph "timeOfDay" {
+	// Node definitions.
+	0 [label=entry];
+	5;
+	7;
+	12;
+	17;
+	23;
+	32;
+
+	// Edge definitions.
+	0 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	0 -> 7 [
+		color=red
+		label=false
+	];
+	5 -> 7;
+	7 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 23 [
+		color=red
+		label=false
+	];
+	12 -> 17 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 23 [
+		color=red
+		label=false
+	];
+	17 -> 32;
+	23 -> 32;
+}

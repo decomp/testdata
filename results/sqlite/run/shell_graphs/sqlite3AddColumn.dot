@@ -1,0 +1,102 @@
+digraph "sqlite3AddColumn" {
+	// Node definitions.
+	3 [label=entry];
+	21;
+	22;
+	33;
+	38;
+	52;
+	53;
+	69;
+	76;
+	88;
+	93;
+	94;
+	97;
+	104;
+	121;
+	124;
+	128;
+	146;
+	151;
+	185;
+	193;
+
+	// Edge definitions.
+	3 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 22 [
+		color=red
+		label=false
+	];
+	21 -> 193;
+	22 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 38 [
+		color=red
+		label=false
+	];
+	33 -> 193;
+	38 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 53 [
+		color=red
+		label=false
+	];
+	52 -> 193;
+	53 -> 69;
+	69 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 97 [
+		color=red
+		label=false
+	];
+	76 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 93 [
+		color=red
+		label=false
+	];
+	88 -> 193;
+	93 -> 94;
+	94 -> 69;
+	97 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 128 [
+		color=red
+		label=false
+	];
+	104 -> 121 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 124 [
+		color=red
+		label=false
+	];
+	121 -> 193;
+	124 -> 128;
+	128 -> 146 [
+		color=darkgreen
+		label=true
+	];
+	128 -> 151 [
+		color=red
+		label=false
+	];
+	146 -> 185;
+	151 -> 185;
+	185 -> 193;
+}

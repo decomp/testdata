@@ -1,0 +1,113 @@
+digraph "vdbeMergeEngineStep" {
+	// Node definitions.
+	2 [label=entry];
+	30;
+	51;
+	54;
+	59;
+	60;
+	65;
+	66;
+	84;
+	85;
+	88;
+	91;
+	95;
+	124;
+	129;
+	130;
+	159;
+	160;
+	163;
+	179;
+	182;
+	189;
+	191;
+
+	// Edge definitions.
+	2 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 179 [
+		color=red
+		label=false
+	];
+	30 -> 51;
+	51 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 163 [
+		color=red
+		label=false
+	];
+	54 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 60 [
+		color=red
+		label=false
+	];
+	59 -> 85;
+	60 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 66 [
+		color=red
+		label=false
+	];
+	65 -> 84;
+	66 -> 84;
+	84 -> 85;
+	85 -> 88 [
+		color=red
+		label=false
+	];
+	85 -> 95 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 91 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 124 [
+		color=red
+		label=false
+	];
+	91 -> 95 [
+		color=darkgreen
+		label=true
+	];
+	91 -> 124 [
+		color=red
+		label=false
+	];
+	95 -> 159;
+	124 -> 129 [
+		color=darkgreen
+		label=true
+	];
+	124 -> 130 [
+		color=red
+		label=false
+	];
+	129 -> 130;
+	130 -> 159;
+	159 -> 160;
+	160 -> 51;
+	163 -> 179;
+	179 -> 182 [
+		color=darkgreen
+		label=true
+	];
+	179 -> 189 [
+		color=red
+		label=false
+	];
+	182 -> 191;
+	189 -> 191;
+}

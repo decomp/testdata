@@ -1,0 +1,41 @@
+digraph "sqlite3ExprCacheClear" {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	11;
+	21;
+	27;
+	43;
+	44;
+	47;
+
+	// Edge definitions.
+	1 -> 4;
+	4 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 47 [
+		color=red
+		label=false
+	];
+	11 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 43 [
+		color=red
+		label=false
+	];
+	21 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 43 [
+		color=red
+		label=false
+	];
+	27 -> 43;
+	43 -> 44;
+	44 -> 4;
+}

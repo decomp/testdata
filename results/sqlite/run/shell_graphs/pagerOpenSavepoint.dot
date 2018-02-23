@@ -1,0 +1,78 @@
+digraph "pagerOpenSavepoint" {
+	// Node definitions.
+	2 [label=entry];
+	24;
+	25;
+	40;
+	44;
+	59;
+	64;
+	73;
+	83;
+	108;
+	109;
+	114;
+	124;
+	129;
+	132;
+	134;
+
+	// Edge definitions.
+	2 -> 24 [
+		color=red
+		label=false
+	];
+	2 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 134;
+	25 -> 40;
+	40 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 132 [
+		color=red
+		label=false
+	];
+	44 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 73 [
+		color=red
+		label=false
+	];
+	59 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 73 [
+		color=red
+		label=false
+	];
+	64 -> 83;
+	73 -> 83;
+	83 -> 108 [
+		color=red
+		label=false
+	];
+	83 -> 109 [
+		color=darkgreen
+		label=true
+	];
+	108 -> 134;
+	109 -> 114 [
+		color=darkgreen
+		label=true
+	];
+	109 -> 124 [
+		color=red
+		label=false
+	];
+	114 -> 124;
+	124 -> 129;
+	129 -> 40;
+	132 -> 134;
+}

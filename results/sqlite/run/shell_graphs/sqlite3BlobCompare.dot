@@ -1,0 +1,87 @@
+digraph "sqlite3BlobCompare" {
+	// Node definitions.
+	2 [label=entry];
+	26;
+	38;
+	48;
+	55;
+	64;
+	65;
+	72;
+	81;
+	82;
+	89;
+	99;
+	101;
+	103;
+	109;
+	111;
+	115;
+
+	// Edge definitions.
+	2 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 89 [
+		color=red
+		label=false
+	];
+	26 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 48 [
+		color=red
+		label=false
+	];
+	38 -> 115;
+	48 -> 55 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 72 [
+		color=red
+		label=false
+	];
+	55 -> 64 [
+		color=red
+		label=false
+	];
+	55 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 115;
+	65 -> 115;
+	72 -> 81 [
+		color=red
+		label=false
+	];
+	72 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 115;
+	82 -> 115;
+	89 -> 99 [
+		color=darkgreen
+		label=true
+	];
+	89 -> 101 [
+		color=red
+		label=false
+	];
+	99 -> 103;
+	101 -> 103;
+	103 -> 109 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 111 [
+		color=red
+		label=false
+	];
+	109 -> 115;
+	111 -> 115;
+}

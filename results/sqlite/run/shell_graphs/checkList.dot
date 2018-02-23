@@ -1,0 +1,166 @@
+digraph "checkList" {
+	// Node definitions.
+	4 [label=entry];
+	18;
+	22;
+	27;
+	29;
+	32;
+	38;
+	43;
+	44;
+	51;
+	54;
+	59;
+	69;
+	72;
+	82;
+	87;
+	88;
+	92;
+	106;
+	109;
+	113;
+	116;
+	120;
+	121;
+	129;
+	132;
+	138;
+	139;
+	145;
+	151;
+	153;
+	154;
+
+	// Edge definitions.
+	4 -> 18;
+	18 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 27 [
+		color=red
+		label=false
+	];
+	22 -> 27;
+	27 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 154 [
+		color=red
+		label=false
+	];
+	29 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 38 [
+		color=red
+		label=false
+	];
+	32 -> 154;
+	38 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 44 [
+		color=red
+		label=false
+	];
+	43 -> 154;
+	44 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 54 [
+		color=red
+		label=false
+	];
+	51 -> 154;
+	54 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 121 [
+		color=red
+		label=false
+	];
+	59 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 72 [
+		color=red
+		label=false
+	];
+	69 -> 72;
+	72 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 87 [
+		color=red
+		label=false
+	];
+	82 -> 120;
+	87 -> 88;
+	88 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 116 [
+		color=red
+		label=false
+	];
+	92 -> 106 [
+		color=darkgreen
+		label=true
+	];
+	92 -> 109 [
+		color=red
+		label=false
+	];
+	106 -> 109;
+	109 -> 113;
+	113 -> 88;
+	116 -> 120;
+	120 -> 139;
+	121 -> 129 [
+		color=darkgreen
+		label=true
+	];
+	121 -> 138 [
+		color=red
+		label=false
+	];
+	129 -> 132 [
+		color=darkgreen
+		label=true
+	];
+	129 -> 138 [
+		color=red
+		label=false
+	];
+	132 -> 138;
+	138 -> 139;
+	139 -> 145 [
+		color=darkgreen
+		label=true
+	];
+	139 -> 153 [
+		color=red
+		label=false
+	];
+	145 -> 151 [
+		color=darkgreen
+		label=true
+	];
+	145 -> 153 [
+		color=red
+		label=false
+	];
+	151 -> 153;
+	153 -> 18;
+}

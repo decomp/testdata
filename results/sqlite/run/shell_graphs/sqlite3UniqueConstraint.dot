@@ -1,0 +1,45 @@
+digraph "sqlite3UniqueConstraint" {
+	// Node definitions.
+	3 [label=entry];
+	22;
+	26;
+	27;
+	34;
+	51;
+	52;
+	57;
+	60;
+	61;
+
+	// Edge definitions.
+	3 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 26 [
+		color=red
+		label=false
+	];
+	22 -> 61;
+	26 -> 27;
+	27 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 60 [
+		color=red
+		label=false
+	];
+	34 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 52 [
+		color=red
+		label=false
+	];
+	51 -> 52;
+	52 -> 57;
+	57 -> 27;
+	60 -> 61;
+}

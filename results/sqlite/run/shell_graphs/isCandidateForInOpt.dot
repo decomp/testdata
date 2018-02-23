@@ -1,0 +1,133 @@
+digraph "isCandidateForInOpt" {
+	// Node definitions.
+	1 [label=entry];
+	15;
+	16;
+	22;
+	23;
+	32;
+	33;
+	39;
+	40;
+	45;
+	46;
+	51;
+	52;
+	60;
+	61;
+	68;
+	69;
+	79;
+	80;
+	84;
+	90;
+	103;
+	104;
+	105;
+	108;
+	110;
+
+	// Edge definitions.
+	1 -> 15 [
+		color=red
+		label=false
+	];
+	1 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 110;
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 23 [
+		color=red
+		label=false
+	];
+	22 -> 110;
+	23 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 33 [
+		color=red
+		label=false
+	];
+	32 -> 110;
+	33 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 40 [
+		color=red
+		label=false
+	];
+	39 -> 110;
+	40 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 46 [
+		color=red
+		label=false
+	];
+	45 -> 110;
+	46 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 52 [
+		color=red
+		label=false
+	];
+	51 -> 110;
+	52 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	52 -> 61 [
+		color=red
+		label=false
+	];
+	60 -> 110;
+	61 -> 68 [
+		color=darkgreen
+		label=true
+	];
+	61 -> 69 [
+		color=red
+		label=false
+	];
+	68 -> 110;
+	69 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	69 -> 80 [
+		color=red
+		label=false
+	];
+	79 -> 110;
+	80 -> 84;
+	84 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 108 [
+		color=red
+		label=false
+	];
+	90 -> 103 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 104 [
+		color=red
+		label=false
+	];
+	103 -> 110;
+	104 -> 105;
+	105 -> 84;
+	108 -> 110;
+}

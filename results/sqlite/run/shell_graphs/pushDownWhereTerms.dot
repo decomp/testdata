@@ -1,0 +1,104 @@
+digraph "pushDownWhereTerms" {
+	// Node definitions.
+	4 [label=entry];
+	16;
+	17;
+	19;
+	22;
+	28;
+	29;
+	30;
+	34;
+	39;
+	40;
+	41;
+	47;
+	60;
+	66;
+	67;
+	72;
+	75;
+	78;
+	110;
+	111;
+	113;
+
+	// Edge definitions.
+	4 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 17 [
+		color=red
+		label=false
+	];
+	16 -> 113;
+	17 -> 19;
+	19 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 34 [
+		color=red
+		label=false
+	];
+	22 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 29 [
+		color=red
+		label=false
+	];
+	28 -> 113;
+	29 -> 30;
+	30 -> 19;
+	34 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 40 [
+		color=red
+		label=false
+	];
+	39 -> 113;
+	40 -> 41;
+	41 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 60 [
+		color=red
+		label=false
+	];
+	47 -> 41;
+	60 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 67 [
+		color=red
+		label=false
+	];
+	66 -> 113;
+	67 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 111 [
+		color=red
+		label=false
+	];
+	72 -> 75;
+	75 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 110 [
+		color=red
+		label=false
+	];
+	78 -> 75;
+	110 -> 111;
+	111 -> 113;
+}

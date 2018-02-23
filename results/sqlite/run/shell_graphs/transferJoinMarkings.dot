@@ -1,0 +1,17 @@
+digraph "transferJoinMarkings" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	21;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 21 [
+		color=red
+		label=false
+	];
+	7 -> 21;
+}

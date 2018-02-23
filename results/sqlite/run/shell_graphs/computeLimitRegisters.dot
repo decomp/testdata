@@ -1,0 +1,85 @@
+digraph "computeLimitRegisters" {
+	// Node definitions.
+	3 [label=entry];
+	15;
+	16;
+	22;
+	36;
+	43;
+	47;
+	50;
+	60;
+	70;
+	71;
+	72;
+	85;
+	90;
+	115;
+	116;
+
+	// Edge definitions.
+	3 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 16 [
+		color=red
+		label=false
+	];
+	15 -> 116;
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 116 [
+		color=red
+		label=false
+	];
+	22 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 72 [
+		color=red
+		label=false
+	];
+	36 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 47 [
+		color=red
+		label=false
+	];
+	43 -> 71;
+	47 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 70 [
+		color=red
+		label=false
+	];
+	50 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 70 [
+		color=red
+		label=false
+	];
+	60 -> 70;
+	70 -> 71;
+	71 -> 85;
+	72 -> 85;
+	85 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 115 [
+		color=red
+		label=false
+	];
+	90 -> 115;
+	115 -> 116;
+}

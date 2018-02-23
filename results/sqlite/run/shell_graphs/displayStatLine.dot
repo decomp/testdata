@@ -1,0 +1,45 @@
+digraph "displayStatLine" {
+	// Node definitions.
+	5 [label=entry];
+	19;
+	26;
+	34;
+	37;
+	38;
+	41;
+	44;
+	50;
+	55;
+
+	// Edge definitions.
+	5 -> 19;
+	19 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 41 [
+		color=red
+		label=false
+	];
+	26 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 37 [
+		color=red
+		label=false
+	];
+	34 -> 37;
+	37 -> 38;
+	38 -> 19;
+	41 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 50 [
+		color=red
+		label=false
+	];
+	44 -> 55;
+	50 -> 55;
+}

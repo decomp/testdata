@@ -1,0 +1,78 @@
+digraph "sqlite3FkDelete" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	15;
+	18;
+	23;
+	28;
+	36;
+	43;
+	49;
+	53;
+	62;
+	67;
+	75;
+	76;
+	93;
+	95;
+
+	// Edge definitions.
+	2 -> 12;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 95 [
+		color=red
+		label=false
+	];
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 23 [
+		color=red
+		label=false
+	];
+	18 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 76 [
+		color=red
+		label=false
+	];
+	23 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 36 [
+		color=red
+		label=false
+	];
+	28 -> 62;
+	36 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 49 [
+		color=red
+		label=false
+	];
+	43 -> 53;
+	49 -> 53;
+	53 -> 62;
+	62 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	62 -> 75 [
+		color=red
+		label=false
+	];
+	67 -> 75;
+	75 -> 76;
+	76 -> 93;
+	93 -> 12;
+}

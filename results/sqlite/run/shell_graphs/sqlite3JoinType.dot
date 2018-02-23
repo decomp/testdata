@@ -1,0 +1,131 @@
+digraph "sqlite3JoinType" {
+	// Node definitions.
+	4 [label=entry];
+	21;
+	24;
+	30;
+	32;
+	37;
+	40;
+	51;
+	67;
+	76;
+	77;
+	80;
+	83;
+	86;
+	87;
+	90;
+	94;
+	98;
+	101;
+	104;
+	110;
+	114;
+	118;
+	120;
+	121;
+
+	// Edge definitions.
+	4 -> 21;
+	21 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 30 [
+		color=red
+		label=false
+	];
+	24 -> 30;
+	30 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 90 [
+		color=red
+		label=false
+	];
+	32 -> 37;
+	37 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 80 [
+		color=red
+		label=false
+	];
+	40 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 76 [
+		color=red
+		label=false
+	];
+	51 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 76 [
+		color=red
+		label=false
+	];
+	67 -> 80;
+	76 -> 77;
+	77 -> 37;
+	80 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 86 [
+		color=red
+		label=false
+	];
+	83 -> 90;
+	86 -> 87;
+	87 -> 21;
+	90 -> 94 [
+		color=red
+		label=false
+	];
+	90 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 110 [
+		color=red
+		label=false
+	];
+	98 -> 101 [
+		color=darkgreen
+		label=true
+	];
+	98 -> 104 [
+		color=red
+		label=false
+	];
+	101 -> 104;
+	104 -> 121;
+	110 -> 114 [
+		color=darkgreen
+		label=true
+	];
+	110 -> 120 [
+		color=red
+		label=false
+	];
+	114 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	114 -> 120 [
+		color=red
+		label=false
+	];
+	118 -> 120;
+	120 -> 121;
+}

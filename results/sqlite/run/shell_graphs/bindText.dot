@@ -1,0 +1,81 @@
+digraph "bindText" {
+	// Node definitions.
+	6 [label=entry];
+	23;
+	26;
+	42;
+	46;
+	55;
+	58;
+	68;
+	69;
+	75;
+	78;
+	81;
+	84;
+	85;
+
+	// Edge definitions.
+	6 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 75 [
+		color=red
+		label=false
+	];
+	23 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 69 [
+		color=red
+		label=false
+	];
+	26 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 55 [
+		color=red
+		label=false
+	];
+	42 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 55 [
+		color=red
+		label=false
+	];
+	46 -> 55;
+	55 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 68 [
+		color=red
+		label=false
+	];
+	58 -> 68;
+	68 -> 69;
+	69 -> 85;
+	75 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 84 [
+		color=red
+		label=false
+	];
+	78 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 84 [
+		color=red
+		label=false
+	];
+	81 -> 84;
+	84 -> 85;
+}

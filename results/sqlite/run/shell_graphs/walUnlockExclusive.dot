@@ -1,0 +1,19 @@
+digraph "walUnlockExclusive" {
+	// Node definitions.
+	3 [label=entry];
+	11;
+	12;
+	19;
+
+	// Edge definitions.
+	3 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 12 [
+		color=red
+		label=false
+	];
+	11 -> 19;
+	12 -> 19;
+}

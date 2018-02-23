@@ -1,0 +1,32 @@
+digraph "moveToRightmost" {
+	// Node definitions.
+	1 [label=entry];
+	7;
+	20;
+	42;
+	44;
+	45;
+	54;
+
+	// Edge definitions.
+	1 -> 7;
+	7 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	7 -> 45 [
+		color=red
+		label=false
+	];
+	20 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 44 [
+		color=red
+		label=false
+	];
+	42 -> 54;
+	44 -> 7;
+	45 -> 54;
+}

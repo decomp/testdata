@@ -1,0 +1,19 @@
+digraph "cannotBeFunction" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	19;
+	20;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 19 [
+		color=red
+		label=false
+	];
+	14 -> 20;
+	19 -> 20;
+}

@@ -1,0 +1,39 @@
+digraph "walBusyLock" {
+	// Node definitions.
+	5 [label=entry];
+	12;
+	17;
+	20;
+	23;
+	28;
+	30;
+
+	// Edge definitions.
+	5 -> 12;
+	12 -> 17;
+	17 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 28 [
+		color=red
+		label=false
+	];
+	20 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 28 [
+		color=red
+		label=false
+	];
+	23 -> 28;
+	28 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 30 [
+		color=red
+		label=false
+	];
+}

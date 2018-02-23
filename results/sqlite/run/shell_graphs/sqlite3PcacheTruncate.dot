@@ -1,0 +1,74 @@
+digraph "sqlite3PcacheTruncate" {
+	// Node definitions.
+	2 [label=entry];
+	12;
+	16;
+	19;
+	28;
+	30;
+	31;
+	33;
+	36;
+	41;
+	49;
+	57;
+	58;
+	65;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 65 [
+		color=red
+		label=false
+	];
+	12 -> 16;
+	16 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 33 [
+		color=red
+		label=false
+	];
+	19 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 30 [
+		color=red
+		label=false
+	];
+	28 -> 30;
+	30 -> 31;
+	31 -> 16;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 58 [
+		color=red
+		label=false
+	];
+	36 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 58 [
+		color=red
+		label=false
+	];
+	41 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 57 [
+		color=red
+		label=false
+	];
+	49 -> 57;
+	57 -> 58;
+	58 -> 65;
+}

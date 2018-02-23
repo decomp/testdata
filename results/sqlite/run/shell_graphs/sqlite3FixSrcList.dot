@@ -1,0 +1,87 @@
+digraph "sqlite3FixSrcList" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	12;
+	19;
+	25;
+	30;
+	35;
+	42;
+	55;
+	71;
+	78;
+	79;
+	86;
+	87;
+	88;
+	93;
+	94;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	11 -> 94;
+	12 -> 19;
+	19 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 93 [
+		color=red
+		label=false
+	];
+	25 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 71 [
+		color=red
+		label=false
+	];
+	30 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 55 [
+		color=red
+		label=false
+	];
+	35 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 55 [
+		color=red
+		label=false
+	];
+	42 -> 94;
+	55 -> 71;
+	71 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 79 [
+		color=red
+		label=false
+	];
+	78 -> 94;
+	79 -> 86 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 87 [
+		color=red
+		label=false
+	];
+	86 -> 94;
+	87 -> 88;
+	88 -> 19;
+	93 -> 94;
+}

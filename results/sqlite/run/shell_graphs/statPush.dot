@@ -1,0 +1,64 @@
+digraph "statPush" {
+	// Node definitions.
+	3 [label=entry];
+	25;
+	26;
+	32;
+	40;
+	43;
+	44;
+	47;
+	51;
+	61;
+	64;
+	66;
+	72;
+	89;
+	92;
+	93;
+
+	// Edge definitions.
+	3 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 44 [
+		color=red
+		label=false
+	];
+	25 -> 26;
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 43 [
+		color=red
+		label=false
+	];
+	32 -> 40;
+	40 -> 26;
+	43 -> 93;
+	44 -> 47;
+	47 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	47 -> 64 [
+		color=red
+		label=false
+	];
+	51 -> 61;
+	61 -> 47;
+	64 -> 66;
+	66 -> 72 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 92 [
+		color=red
+		label=false
+	];
+	72 -> 89;
+	89 -> 66;
+	92 -> 93;
+}

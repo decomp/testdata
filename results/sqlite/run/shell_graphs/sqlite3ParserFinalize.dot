@@ -1,0 +1,19 @@
+digraph "sqlite3ParserFinalize" {
+	// Node definitions.
+	1 [label=entry];
+	6;
+	14;
+	16;
+
+	// Edge definitions.
+	1 -> 6;
+	6 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 16 [
+		color=red
+		label=false
+	];
+	14 -> 6;
+}

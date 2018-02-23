@@ -1,0 +1,17 @@
+digraph "sqlite3MaterializeView" {
+	// Node definitions.
+	4 [label=entry];
+	29;
+	53;
+
+	// Edge definitions.
+	4 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 53 [
+		color=red
+		label=false
+	];
+	29 -> 53;
+}

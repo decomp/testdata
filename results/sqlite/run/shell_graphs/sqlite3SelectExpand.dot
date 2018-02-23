@@ -1,0 +1,17 @@
+digraph "sqlite3SelectExpand" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	18;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 18 [
+		color=red
+		label=false
+	];
+	13 -> 18;
+}

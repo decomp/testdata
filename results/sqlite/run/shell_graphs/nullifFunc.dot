@@ -1,0 +1,17 @@
+digraph "nullifFunc" {
+	// Node definitions.
+	3 [label=entry];
+	20;
+	25;
+
+	// Edge definitions.
+	3 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 25 [
+		color=red
+		label=false
+	];
+	20 -> 25;
+}

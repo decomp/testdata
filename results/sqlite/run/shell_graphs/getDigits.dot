@@ -1,0 +1,96 @@
+digraph "getDigits" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	38;
+	42;
+	51;
+	52;
+	62;
+	67;
+	72;
+	76;
+	83;
+	84;
+	90;
+	96;
+	101;
+	110;
+	113;
+	114;
+
+	// Edge definitions.
+	2 -> 14;
+	14 -> 38;
+	38 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 62 [
+		color=red
+		label=false
+	];
+	42 -> 51 [
+		color=red
+		label=false
+	];
+	42 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 114;
+	52 -> 38;
+	62 -> 67 [
+		color=red
+		label=false
+	];
+	62 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 72 [
+		color=red
+		label=false
+	];
+	67 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	72 -> 84 [
+		color=red
+		label=false
+	];
+	76 -> 83 [
+		color=darkgreen
+		label=true
+	];
+	76 -> 84 [
+		color=red
+		label=false
+	];
+	83 -> 114;
+	84 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 96 [
+		color=red
+		label=false
+	];
+	90 -> 101;
+	96 -> 101;
+	101 -> 110;
+	110 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	110 -> 113 [
+		color=red
+		label=false
+	];
+	113 -> 114;
+}

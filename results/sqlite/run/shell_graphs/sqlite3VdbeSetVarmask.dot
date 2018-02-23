@@ -1,0 +1,19 @@
+digraph "sqlite3VdbeSetVarmask" {
+	// Node definitions.
+	2 [label=entry];
+	7;
+	12;
+	20;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 12 [
+		color=red
+		label=false
+	];
+	7 -> 20;
+	12 -> 20;
+}

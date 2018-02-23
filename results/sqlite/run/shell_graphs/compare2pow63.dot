@@ -1,0 +1,43 @@
+digraph "compare2pow63" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	11;
+	14;
+	16;
+	33;
+	36;
+	39;
+	48;
+
+	// Edge definitions.
+	2 -> 8;
+	8 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 14 [
+		color=red
+		label=false
+	];
+	11 -> 14;
+	14 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 36 [
+		color=red
+		label=false
+	];
+	16 -> 33;
+	33 -> 8;
+	36 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 48 [
+		color=red
+		label=false
+	];
+	39 -> 48;
+}

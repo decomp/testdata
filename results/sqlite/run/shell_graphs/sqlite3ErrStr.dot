@@ -1,0 +1,42 @@
+digraph "sqlite3ErrStr" {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	6;
+	11;
+	14;
+	20;
+	25;
+	26;
+
+	// Edge definitions.
+	1 -> 5 [label="case (x=516)"];
+	1 -> 6 [label="default case"];
+	5 -> 26;
+	6 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	6 -> 25 [
+		color=red
+		label=false
+	];
+	11 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 25 [
+		color=red
+		label=false
+	];
+	14 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 25 [
+		color=red
+		label=false
+	];
+	20 -> 25;
+	25 -> 26;
+}

@@ -1,0 +1,30 @@
+digraph "sqlite3PagerCheckpoint" {
+	// Node definitions.
+	5 [label=entry];
+	16;
+	24;
+	25;
+	29;
+	47;
+
+	// Edge definitions.
+	5 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 47 [
+		color=red
+		label=false
+	];
+	16 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 29;
+	25 -> 29;
+	29 -> 47;
+}

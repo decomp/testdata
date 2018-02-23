@@ -1,0 +1,94 @@
+digraph "querySharedCacheTableLock" {
+	// Node definitions.
+	3 [label=entry];
+	17;
+	18;
+	24;
+	31;
+	32;
+	36;
+	39;
+	45;
+	51;
+	59;
+	63;
+	70;
+	71;
+	72;
+	76;
+	77;
+
+	// Edge definitions.
+	3 -> 17 [
+		color=red
+		label=false
+	];
+	3 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 77;
+	18 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	18 -> 32 [
+		color=red
+		label=false
+	];
+	24 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 32 [
+		color=red
+		label=false
+	];
+	31 -> 77;
+	32 -> 36;
+	36 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 76 [
+		color=red
+		label=false
+	];
+	39 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 71 [
+		color=red
+		label=false
+	];
+	45 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 71 [
+		color=red
+		label=false
+	];
+	51 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 71 [
+		color=red
+		label=false
+	];
+	59 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	59 -> 70 [
+		color=red
+		label=false
+	];
+	63 -> 70;
+	70 -> 77;
+	71 -> 72;
+	72 -> 36;
+	76 -> 77;
+}

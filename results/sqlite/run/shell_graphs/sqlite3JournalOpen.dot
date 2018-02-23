@@ -1,0 +1,32 @@
+digraph "sqlite3JournalOpen" {
+	// Node definitions.
+	5 [label=entry];
+	19;
+	25;
+	28;
+	32;
+	35;
+	50;
+
+	// Edge definitions.
+	5 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 25 [
+		color=red
+		label=false
+	];
+	19 -> 50;
+	25 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 32 [
+		color=red
+		label=false
+	];
+	28 -> 35;
+	32 -> 35;
+	35 -> 50;
+}

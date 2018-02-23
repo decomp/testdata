@@ -1,0 +1,75 @@
+digraph "sqlite3IsReadOnly" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	25;
+	31;
+	39;
+	45;
+	50;
+	53;
+	58;
+	63;
+	64;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 25 [
+		color=red
+		label=false
+	];
+	12 -> 25 [
+		color=red
+		label=false
+	];
+	12 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 50 [
+		color=red
+		label=false
+	];
+	31 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 50 [
+		color=red
+		label=false
+	];
+	39 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 50 [
+		color=red
+		label=false
+	];
+	45 -> 64;
+	50 -> 53 [
+		color=red
+		label=false
+	];
+	50 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 63 [
+		color=red
+		label=false
+	];
+	58 -> 64;
+	63 -> 64;
+}

@@ -1,0 +1,65 @@
+digraph "pcache1FetchNoMutex" {
+	// Node definitions.
+	3 [label=entry];
+	23;
+	26;
+	32;
+	34;
+	38;
+	41;
+	46;
+	49;
+	51;
+	54;
+	59;
+	60;
+
+	// Edge definitions.
+	3 -> 23;
+	23 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 32 [
+		color=red
+		label=false
+	];
+	26 -> 32;
+	32 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 38 [
+		color=red
+		label=false
+	];
+	34 -> 23;
+	38 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 51 [
+		color=red
+		label=false
+	];
+	41 -> 46 [
+		color=red
+		label=false
+	];
+	41 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 60;
+	49 -> 60;
+	51 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 59 [
+		color=red
+		label=false
+	];
+	54 -> 60;
+	59 -> 60;
+}

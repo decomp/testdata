@@ -1,0 +1,17 @@
+digraph "sqlite3VtabImportErrmsg" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	30;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 30 [
+		color=red
+		label=false
+	];
+	10 -> 30;
+}

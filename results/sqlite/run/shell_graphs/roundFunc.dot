@@ -1,0 +1,136 @@
+digraph "roundFunc" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	18;
+	19;
+	26;
+	27;
+	30;
+	31;
+	32;
+	38;
+	39;
+	46;
+	49;
+	52;
+	57;
+	60;
+	63;
+	67;
+	74;
+	80;
+	82;
+	88;
+	89;
+	92;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 32 [
+		color=red
+		label=false
+	];
+	12 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 92;
+	19 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 27 [
+		color=red
+		label=false
+	];
+	26 -> 27;
+	27 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 31 [
+		color=red
+		label=false
+	];
+	30 -> 31;
+	31 -> 32;
+	32 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 39 [
+		color=red
+		label=false
+	];
+	38 -> 92;
+	39 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 57 [
+		color=red
+		label=false
+	];
+	46 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	46 -> 57 [
+		color=red
+		label=false
+	];
+	49 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 57 [
+		color=red
+		label=false
+	];
+	52 -> 89;
+	57 -> 60 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 74 [
+		color=red
+		label=false
+	];
+	60 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 74 [
+		color=red
+		label=false
+	];
+	63 -> 67 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 74 [
+		color=red
+		label=false
+	];
+	67 -> 88;
+	74 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 82 [
+		color=red
+		label=false
+	];
+	80 -> 92;
+	82 -> 88;
+	88 -> 89;
+	89 -> 92;
+}

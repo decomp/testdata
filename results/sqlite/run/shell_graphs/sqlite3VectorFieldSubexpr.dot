@@ -1,0 +1,39 @@
+digraph "sqlite3VectorFieldSubexpr" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	15;
+	21;
+	34;
+	45;
+	47;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 45 [
+		color=red
+		label=false
+	];
+	9 -> 15 [
+		color=red
+		label=false
+	];
+	9 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 34 [
+		color=red
+		label=false
+	];
+	21 -> 47;
+	34 -> 47;
+	45 -> 47;
+}

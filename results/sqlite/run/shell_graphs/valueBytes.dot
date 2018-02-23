@@ -1,0 +1,19 @@
+digraph "valueBytes" {
+	// Node definitions.
+	2 [label=entry];
+	9;
+	13;
+	14;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	9 -> 14;
+	13 -> 14;
+}

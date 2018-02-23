@@ -1,0 +1,19 @@
+digraph "sqlite3_progress_handler" {
+	// Node definitions.
+	4 [label=entry];
+	14;
+	24;
+	31;
+
+	// Edge definitions.
+	4 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 24 [
+		color=red
+		label=false
+	];
+	14 -> 31;
+	24 -> 31;
+}

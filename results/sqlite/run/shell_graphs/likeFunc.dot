@@ -1,0 +1,72 @@
+digraph "likeFunc" {
+	// Node definitions.
+	3 [label=entry];
+	37;
+	39;
+	42;
+	49;
+	50;
+	54;
+	56;
+	58;
+	63;
+	66;
+	69;
+	78;
+
+	// Edge definitions.
+	3 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 39 [
+		color=red
+		label=false
+	];
+	37 -> 78;
+	39 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 58 [
+		color=red
+		label=false
+	];
+	42 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 50 [
+		color=red
+		label=false
+	];
+	49 -> 78;
+	50 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 56 [
+		color=red
+		label=false
+	];
+	54 -> 78;
+	56 -> 63;
+	58 -> 63;
+	63 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 78 [
+		color=red
+		label=false
+	];
+	66 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 78 [
+		color=red
+		label=false
+	];
+	69 -> 78;
+}

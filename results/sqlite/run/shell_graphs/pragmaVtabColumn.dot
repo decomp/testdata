@@ -1,0 +1,19 @@
+digraph "pragmaVtabColumn" {
+	// Node definitions.
+	3 [label=entry];
+	21;
+	28;
+	41;
+
+	// Edge definitions.
+	3 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 28 [
+		color=red
+		label=false
+	];
+	21 -> 41;
+	28 -> 41;
+}

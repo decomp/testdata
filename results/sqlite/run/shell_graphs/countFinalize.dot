@@ -1,0 +1,19 @@
+digraph "countFinalize" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	14;
+	15;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 14 [
+		color=red
+		label=false
+	];
+	10 -> 15;
+	14 -> 15;
+}

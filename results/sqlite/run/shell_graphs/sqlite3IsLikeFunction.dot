@@ -1,0 +1,57 @@
+digraph "sqlite3IsLikeFunction" {
+	// Node definitions.
+	4 [label=entry];
+	16;
+	22;
+	30;
+	31;
+	40;
+	47;
+	48;
+	61;
+
+	// Edge definitions.
+	4 -> 16 [
+		color=red
+		label=false
+	];
+	4 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 30 [
+		color=red
+		label=false
+	];
+	22 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 31 [
+		color=red
+		label=false
+	];
+	30 -> 61;
+	31 -> 40 [
+		color=red
+		label=false
+	];
+	31 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 48 [
+		color=red
+		label=false
+	];
+	47 -> 61;
+	48 -> 61;
+}

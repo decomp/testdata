@@ -1,0 +1,19 @@
+digraph "growOp3" {
+	// Node definitions.
+	5 [label=entry];
+	15;
+	16;
+	23;
+
+	// Edge definitions.
+	5 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 16 [
+		color=red
+		label=false
+	];
+	15 -> 23;
+	16 -> 23;
+}

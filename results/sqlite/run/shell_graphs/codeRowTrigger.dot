@@ -1,0 +1,118 @@
+digraph "codeRowTrigger" {
+	// Node definitions.
+	4 [label=entry];
+	23;
+	27;
+	29;
+	39;
+	40;
+	56;
+	57;
+	79;
+	80;
+	112;
+	123;
+	132;
+	138;
+	144;
+	147;
+	156;
+	159;
+	169;
+	178;
+	206;
+	212;
+
+	// Edge definitions.
+	4 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 27 [
+		color=red
+		label=false
+	];
+	23 -> 29;
+	27 -> 29;
+	29 -> 39 [
+		color=red
+		label=false
+	];
+	29 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	39 -> 212;
+	40 -> 56 [
+		color=red
+		label=false
+	];
+	40 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	56 -> 212;
+	57 -> 79 [
+		color=red
+		label=false
+	];
+	57 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 212;
+	80 -> 112 [
+		color=darkgreen
+		label=true
+	];
+	80 -> 206 [
+		color=red
+		label=false
+	];
+	112 -> 123 [
+		color=darkgreen
+		label=true
+	];
+	112 -> 147 [
+		color=red
+		label=false
+	];
+	123 -> 132 [
+		color=darkgreen
+		label=true
+	];
+	123 -> 144 [
+		color=red
+		label=false
+	];
+	132 -> 138 [
+		color=darkgreen
+		label=true
+	];
+	132 -> 144 [
+		color=red
+		label=false
+	];
+	138 -> 144;
+	144 -> 147;
+	147 -> 156 [
+		color=darkgreen
+		label=true
+	];
+	147 -> 159 [
+		color=red
+		label=false
+	];
+	156 -> 159;
+	159 -> 169 [
+		color=darkgreen
+		label=true
+	];
+	159 -> 178 [
+		color=red
+		label=false
+	];
+	169 -> 178;
+	178 -> 206;
+	206 -> 212;
+}

@@ -1,0 +1,91 @@
+digraph "sqlite3TableAffinity" {
+	// Node definitions.
+	3 [label=entry];
+	15;
+	27;
+	29;
+	30;
+	37;
+	50;
+	53;
+	54;
+	60;
+	63;
+	71;
+	73;
+	77;
+	82;
+	85;
+	92;
+	96;
+	97;
+
+	// Edge definitions.
+	3 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 77 [
+		color=red
+		label=false
+	];
+	15 -> 27 [
+		color=red
+		label=false
+	];
+	15 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 97;
+	29 -> 30;
+	30 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 53 [
+		color=red
+		label=false
+	];
+	37 -> 50;
+	50 -> 30;
+	53 -> 54;
+	54 -> 60;
+	60 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	60 -> 71 [
+		color=red
+		label=false
+	];
+	63 -> 71;
+	71 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 73 [
+		color=red
+		label=false
+	];
+	73 -> 77;
+	77 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	77 -> 97 [
+		color=red
+		label=false
+	];
+	82 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 92 [
+		color=red
+		label=false
+	];
+	85 -> 96;
+	92 -> 96;
+	96 -> 97;
+}

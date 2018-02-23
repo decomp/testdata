@@ -1,0 +1,74 @@
+digraph "find_home_dir" {
+	// Node definitions.
+	1 [label=entry];
+	10;
+	12;
+	15;
+	17;
+	22;
+	26;
+	29;
+	31;
+	34;
+	43;
+	48;
+	50;
+	52;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 12 [
+		color=red
+		label=false
+	];
+	10 -> 52;
+	12 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 17 [
+		color=red
+		label=false
+	];
+	15 -> 52;
+	17 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 26 [
+		color=red
+		label=false
+	];
+	22 -> 26;
+	26 -> 29 [
+		color=red
+		label=false
+	];
+	26 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 31;
+	31 -> 34 [
+		color=darkgreen
+		label=true
+	];
+	31 -> 50 [
+		color=red
+		label=false
+	];
+	34 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 48 [
+		color=red
+		label=false
+	];
+	43 -> 48;
+	48 -> 50;
+	50 -> 52;
+}

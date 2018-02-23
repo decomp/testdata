@@ -1,0 +1,39 @@
+digraph "multiSelectCollSeq" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	19;
+	20;
+	23;
+	31;
+	43;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 19 [
+		color=red
+		label=false
+	];
+	12 -> 20;
+	19 -> 20;
+	20 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 43 [
+		color=red
+		label=false
+	];
+	23 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 43 [
+		color=red
+		label=false
+	];
+	31 -> 43;
+}

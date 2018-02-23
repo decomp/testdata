@@ -1,0 +1,39 @@
+digraph "sqlite3DbRealloc" {
+	// Node definitions.
+	3 [label=entry];
+	10;
+	14;
+	19;
+	27;
+	29;
+	34;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 14 [
+		color=red
+		label=false
+	];
+	10 -> 34;
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 29 [
+		color=red
+		label=false
+	];
+	19 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 29 [
+		color=red
+		label=false
+	];
+	27 -> 34;
+	29 -> 34;
+}

@@ -1,0 +1,63 @@
+digraph "sqlite3VdbeFindCompare" {
+	// Node definitions.
+	1 [label=entry];
+	19;
+	35;
+	40;
+	45;
+	49;
+	50;
+	54;
+	62;
+	63;
+	64;
+	65;
+
+	// Edge definitions.
+	1 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 64 [
+		color=red
+		label=false
+	];
+	19 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 40 [
+		color=red
+		label=false
+	];
+	35 -> 45;
+	40 -> 45;
+	45 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 50 [
+		color=red
+		label=false
+	];
+	49 -> 65;
+	50 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	50 -> 63 [
+		color=red
+		label=false
+	];
+	54 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 63 [
+		color=red
+		label=false
+	];
+	62 -> 65;
+	63 -> 64;
+	64 -> 65;
+}

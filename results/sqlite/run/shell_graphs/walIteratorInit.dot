@@ -1,0 +1,119 @@
+digraph "walIteratorInit" {
+	// Node definitions.
+	2 [label=entry];
+	42;
+	43;
+	53;
+	54;
+	56;
+	64;
+	65;
+	66;
+	69;
+	73;
+	75;
+	81;
+	88;
+	92;
+	101;
+	115;
+	119;
+	126;
+	129;
+	161;
+	162;
+	165;
+	170;
+	172;
+	176;
+
+	// Edge definitions.
+	2 -> 42 [
+		color=red
+		label=false
+	];
+	2 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 176;
+	43 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 56;
+	54 -> 56;
+	56 -> 64 [
+		color=red
+		label=false
+	];
+	56 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 65;
+	65 -> 66;
+	66 -> 69 [
+		color=darkgreen
+		label=true
+	];
+	66 -> 73 [
+		color=red
+		label=false
+	];
+	69 -> 73;
+	73 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 165 [
+		color=red
+		label=false
+	];
+	75 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 161 [
+		color=red
+		label=false
+	];
+	81 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	81 -> 92 [
+		color=red
+		label=false
+	];
+	88 -> 101;
+	92 -> 101;
+	101 -> 115;
+	115 -> 119 [
+		color=darkgreen
+		label=true
+	];
+	115 -> 129 [
+		color=red
+		label=false
+	];
+	119 -> 126;
+	126 -> 115;
+	129 -> 161;
+	161 -> 162;
+	162 -> 66;
+	165 -> 170 [
+		color=darkgreen
+		label=true
+	];
+	165 -> 172 [
+		color=red
+		label=false
+	];
+	170 -> 172;
+	172 -> 176;
+}

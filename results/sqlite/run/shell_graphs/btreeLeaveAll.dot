@@ -1,0 +1,32 @@
+digraph "btreeLeaveAll" {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	11;
+	22;
+	24;
+	25;
+	28;
+
+	// Edge definitions.
+	1 -> 5;
+	5 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 28 [
+		color=red
+		label=false
+	];
+	11 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 24 [
+		color=red
+		label=false
+	];
+	22 -> 24;
+	24 -> 25;
+	25 -> 5;
+}

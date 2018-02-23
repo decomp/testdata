@@ -1,0 +1,43 @@
+digraph "groupConcatFinalize" {
+	// Node definitions.
+	1 [label=entry];
+	9;
+	15;
+	17;
+	23;
+	25;
+	29;
+	30;
+	31;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 31 [
+		color=red
+		label=false
+	];
+	9 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	9 -> 17 [
+		color=red
+		label=false
+	];
+	15 -> 30;
+	17 -> 23 [
+		color=darkgreen
+		label=true
+	];
+	17 -> 25 [
+		color=red
+		label=false
+	];
+	23 -> 29;
+	25 -> 29;
+	29 -> 30;
+	30 -> 31;
+}

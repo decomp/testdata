@@ -1,0 +1,41 @@
+digraph "sqlite3VdbeTransferError" {
+	// Node definitions.
+	1 [label=entry];
+	15;
+	24;
+	29;
+	40;
+	45;
+	49;
+	50;
+
+	// Edge definitions.
+	1 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 40 [
+		color=red
+		label=false
+	];
+	15 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 29 [
+		color=red
+		label=false
+	];
+	24 -> 29;
+	29 -> 50;
+	40 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	40 -> 49 [
+		color=red
+		label=false
+	];
+	45 -> 49;
+	49 -> 50;
+}

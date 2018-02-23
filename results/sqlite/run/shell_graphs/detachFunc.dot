@@ -1,0 +1,111 @@
+digraph "detachFunc" {
+	// Node definitions.
+	3 [label=entry];
+	21;
+	22;
+	23;
+	29;
+	40;
+	41;
+	48;
+	49;
+	50;
+	53;
+	59;
+	63;
+	66;
+	70;
+	75;
+	78;
+	84;
+	90;
+	94;
+	104;
+	107;
+
+	// Edge definitions.
+	3 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 22 [
+		color=red
+		label=false
+	];
+	21 -> 22;
+	22 -> 23;
+	23 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 53 [
+		color=red
+		label=false
+	];
+	29 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 41 [
+		color=red
+		label=false
+	];
+	40 -> 50;
+	41 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 49 [
+		color=red
+		label=false
+	];
+	48 -> 53;
+	49 -> 50;
+	50 -> 23;
+	53 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 63 [
+		color=red
+		label=false
+	];
+	59 -> 104;
+	63 -> 66 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 70 [
+		color=red
+		label=false
+	];
+	66 -> 104;
+	70 -> 75 [
+		color=red
+		label=false
+	];
+	70 -> 78 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 104;
+	78 -> 84 [
+		color=red
+		label=false
+	];
+	78 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 94 [
+		color=red
+		label=false
+	];
+	90 -> 104;
+	94 -> 107;
+	104 -> 107;
+}

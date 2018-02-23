@@ -1,0 +1,54 @@
+digraph "rebuildPage" {
+	// Node definitions.
+	4 [label=entry];
+	75;
+	79;
+	90;
+	96;
+	104;
+	137;
+	139;
+	148;
+	151;
+	222;
+
+	// Edge definitions.
+	4 -> 75;
+	75 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	75 -> 151 [
+		color=red
+		label=false
+	];
+	79 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 104 [
+		color=red
+		label=false
+	];
+	90 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 104 [
+		color=red
+		label=false
+	];
+	96 -> 104;
+	104 -> 137 [
+		color=darkgreen
+		label=true
+	];
+	104 -> 139 [
+		color=red
+		label=false
+	];
+	137 -> 222;
+	139 -> 148;
+	148 -> 75;
+	151 -> 222;
+}

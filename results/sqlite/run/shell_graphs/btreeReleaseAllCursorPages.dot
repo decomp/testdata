@@ -1,0 +1,21 @@
+digraph "btreeReleaseAllCursorPages" {
+	// Node definitions.
+	1 [label=entry];
+	4;
+	11;
+	23;
+	26;
+
+	// Edge definitions.
+	1 -> 4;
+	4 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 26 [
+		color=red
+		label=false
+	];
+	11 -> 23;
+	23 -> 4;
+}

@@ -1,0 +1,137 @@
+digraph "convertCompoundSelectToSubquery" {
+	// Node definitions.
+	2 [label=entry];
+	18;
+	19;
+	24;
+	25;
+	27;
+	30;
+	36;
+	42;
+	44;
+	46;
+	47;
+	51;
+	54;
+	55;
+	67;
+	70;
+	81;
+	82;
+	83;
+	86;
+	89;
+	90;
+	102;
+	103;
+	110;
+	111;
+	158;
+
+	// Edge definitions.
+	2 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 19 [
+		color=red
+		label=false
+	];
+	18 -> 158;
+	19 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 25 [
+		color=red
+		label=false
+	];
+	24 -> 158;
+	25 -> 27;
+	27 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 44 [
+		color=red
+		label=false
+	];
+	30 -> 36 [
+		color=red
+		label=false
+	];
+	30 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 42;
+	42 -> 44;
+	44 -> 46 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 51 [
+		color=red
+		label=false
+	];
+	46 -> 47;
+	47 -> 27;
+	51 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	51 -> 55 [
+		color=red
+		label=false
+	];
+	54 -> 158;
+	55 -> 67;
+	67 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 86 [
+		color=red
+		label=false
+	];
+	70 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 82 [
+		color=red
+		label=false
+	];
+	81 -> 86;
+	82 -> 83;
+	83 -> 67;
+	86 -> 89 [
+		color=darkgreen
+		label=true
+	];
+	86 -> 90 [
+		color=red
+		label=false
+	];
+	89 -> 158;
+	90 -> 102 [
+		color=darkgreen
+		label=true
+	];
+	90 -> 103 [
+		color=red
+		label=false
+	];
+	102 -> 158;
+	103 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	103 -> 111 [
+		color=red
+		label=false
+	];
+	110 -> 158;
+	111 -> 158;
+}

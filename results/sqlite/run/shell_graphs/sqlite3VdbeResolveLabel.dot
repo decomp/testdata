@@ -1,0 +1,17 @@
+digraph "sqlite3VdbeResolveLabel" {
+	// Node definitions.
+	2 [label=entry];
+	16;
+	26;
+
+	// Edge definitions.
+	2 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 26 [
+		color=red
+		label=false
+	];
+	16 -> 26;
+}

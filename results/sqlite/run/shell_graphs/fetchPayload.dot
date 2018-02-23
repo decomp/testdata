@@ -1,0 +1,17 @@
+digraph "fetchPayload" {
+	// Node definitions.
+	2 [label=entry];
+	31;
+	37;
+
+	// Edge definitions.
+	2 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 37 [
+		color=red
+		label=false
+	];
+	31 -> 37;
+}

@@ -1,0 +1,107 @@
+digraph "pager_write" {
+	// Node definitions.
+	1 [label=entry];
+	14;
+	19;
+	21;
+	22;
+	28;
+	37;
+	45;
+	50;
+	52;
+	53;
+	59;
+	66;
+	67;
+	68;
+	79;
+	82;
+	90;
+	96;
+	98;
+
+	// Edge definitions.
+	1 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 22 [
+		color=red
+		label=false
+	];
+	14 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 21 [
+		color=red
+		label=false
+	];
+	19 -> 98;
+	21 -> 22;
+	22 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 68 [
+		color=red
+		label=false
+	];
+	28 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 68 [
+		color=red
+		label=false
+	];
+	37 -> 45 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 53 [
+		color=red
+		label=false
+	];
+	45 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	45 -> 52 [
+		color=red
+		label=false
+	];
+	50 -> 98;
+	52 -> 67;
+	53 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 66 [
+		color=red
+		label=false
+	];
+	59 -> 66;
+	66 -> 67;
+	67 -> 68;
+	68 -> 79 [
+		color=darkgreen
+		label=true
+	];
+	68 -> 82 [
+		color=red
+		label=false
+	];
+	79 -> 82;
+	82 -> 90 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 96 [
+		color=red
+		label=false
+	];
+	90 -> 96;
+	96 -> 98;
+}

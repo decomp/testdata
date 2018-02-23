@@ -1,0 +1,98 @@
+digraph "analysisLoader" {
+	// Node definitions.
+	4 [label=entry];
+	23;
+	28;
+	33;
+	34;
+	47;
+	48;
+	53;
+	54;
+	63;
+	66;
+	77;
+	78;
+	84;
+	110;
+	122;
+	123;
+	139;
+	140;
+
+	// Edge definitions.
+	4 -> 23 [
+		color=red
+		label=false
+	];
+	4 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 28 [
+		color=red
+		label=false
+	];
+	23 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 34 [
+		color=red
+		label=false
+	];
+	33 -> 140;
+	34 -> 47 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 48 [
+		color=red
+		label=false
+	];
+	47 -> 140;
+	48 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 54 [
+		color=red
+		label=false
+	];
+	53 -> 78;
+	54 -> 63 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 66 [
+		color=red
+		label=false
+	];
+	63 -> 77;
+	66 -> 77;
+	77 -> 78;
+	78 -> 84 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 123 [
+		color=red
+		label=false
+	];
+	84 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	84 -> 122 [
+		color=red
+		label=false
+	];
+	110 -> 122;
+	122 -> 139;
+	123 -> 139;
+	139 -> 140;
+}

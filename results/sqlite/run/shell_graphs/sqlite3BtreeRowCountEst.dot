@@ -1,0 +1,45 @@
+digraph "sqlite3BtreeRowCountEst" {
+	// Node definitions.
+	1 [label=entry];
+	11;
+	12;
+	25;
+	26;
+	27;
+	35;
+	47;
+	50;
+	52;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 12 [
+		color=red
+		label=false
+	];
+	11 -> 52;
+	12 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 26 [
+		color=red
+		label=false
+	];
+	25 -> 52;
+	26 -> 27;
+	27 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 50 [
+		color=red
+		label=false
+	];
+	35 -> 47;
+	47 -> 27;
+	50 -> 52;
+}

@@ -1,0 +1,61 @@
+digraph "binCollFunc" {
+	// Node definitions.
+	5 [label=entry];
+	16;
+	18;
+	20;
+	29;
+	32;
+	42;
+	52;
+	53;
+	57;
+	58;
+
+	// Edge definitions.
+	5 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	5 -> 18 [
+		color=red
+		label=false
+	];
+	16 -> 20;
+	18 -> 20;
+	20 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 58 [
+		color=red
+		label=false
+	];
+	29 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	29 -> 53 [
+		color=red
+		label=false
+	];
+	32 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 53 [
+		color=red
+		label=false
+	];
+	42 -> 52 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 53 [
+		color=red
+		label=false
+	];
+	52 -> 57;
+	53 -> 57;
+	57 -> 58;
+}

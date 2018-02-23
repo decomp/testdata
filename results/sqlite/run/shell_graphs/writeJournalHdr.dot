@@ -1,0 +1,100 @@
+digraph "writeJournalHdr" {
+	// Node definitions.
+	1 [label=entry];
+	19;
+	23;
+	24;
+	30;
+	40;
+	51;
+	52;
+	55;
+	67;
+	73;
+	80;
+	84;
+	86;
+	115;
+	118;
+	124;
+	126;
+	142;
+	146;
+
+	// Edge definitions.
+	1 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 23 [
+		color=red
+		label=false
+	];
+	19 -> 23;
+	23 -> 24;
+	24 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 55 [
+		color=red
+		label=false
+	];
+	30 -> 40 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 51 [
+		color=red
+		label=false
+	];
+	40 -> 51;
+	51 -> 52;
+	52 -> 24;
+	55 -> 67 [
+		color=red
+		label=false
+	];
+	55 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 73 [
+		color=red
+		label=false
+	];
+	67 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 80 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 84 [
+		color=red
+		label=false
+	];
+	80 -> 86;
+	84 -> 86;
+	86 -> 115;
+	115 -> 118 [
+		color=darkgreen
+		label=true
+	];
+	115 -> 124 [
+		color=red
+		label=false
+	];
+	118 -> 124;
+	124 -> 126 [
+		color=darkgreen
+		label=true
+	];
+	124 -> 146 [
+		color=red
+		label=false
+	];
+	126 -> 142;
+	142 -> 115;
+}

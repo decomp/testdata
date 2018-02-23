@@ -1,0 +1,150 @@
+digraph "clearDatabasePage" {
+	// Node definitions.
+	4 [label=entry];
+	20;
+	22;
+	28;
+	30;
+	35;
+	37;
+	44;
+	51;
+	88;
+	96;
+	97;
+	98;
+	104;
+	105;
+	106;
+	109;
+	114;
+	128;
+	129;
+	130;
+	133;
+	141;
+	142;
+	145;
+	147;
+	153;
+	164;
+	165;
+	166;
+	171;
+
+	// Edge definitions.
+	4 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 22 [
+		color=red
+		label=false
+	];
+	20 -> 171;
+	22 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 30 [
+		color=red
+		label=false
+	];
+	28 -> 171;
+	30 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 37 [
+		color=red
+		label=false
+	];
+	35 -> 166;
+	37 -> 44;
+	44 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 109 [
+		color=red
+		label=false
+	];
+	51 -> 88 [
+		color=red
+		label=false
+	];
+	51 -> 98 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 97 [
+		color=red
+		label=false
+	];
+	96 -> 166;
+	97 -> 98;
+	98 -> 104 [
+		color=darkgreen
+		label=true
+	];
+	98 -> 105 [
+		color=red
+		label=false
+	];
+	104 -> 166;
+	105 -> 106;
+	106 -> 44;
+	109 -> 114 [
+		color=red
+		label=false
+	];
+	109 -> 130 [
+		color=darkgreen
+		label=true
+	];
+	114 -> 128 [
+		color=darkgreen
+		label=true
+	];
+	114 -> 129 [
+		color=red
+		label=false
+	];
+	128 -> 166;
+	129 -> 142;
+	130 -> 133 [
+		color=darkgreen
+		label=true
+	];
+	130 -> 141 [
+		color=red
+		label=false
+	];
+	133 -> 141;
+	141 -> 142;
+	142 -> 145 [
+		color=darkgreen
+		label=true
+	];
+	142 -> 147 [
+		color=red
+		label=false
+	];
+	145 -> 165;
+	147 -> 153 [
+		color=darkgreen
+		label=true
+	];
+	147 -> 164 [
+		color=red
+		label=false
+	];
+	153 -> 164;
+	164 -> 165;
+	165 -> 166;
+	166 -> 171;
+}

@@ -1,0 +1,52 @@
+digraph "sqlite3VtabSync" {
+	// Node definitions.
+	2 [label=entry];
+	15;
+	18;
+	24;
+	26;
+	36;
+	43;
+	49;
+	50;
+	53;
+
+	// Edge definitions.
+	2 -> 15;
+	15 -> 18 [
+		color=darkgreen
+		label=true
+	];
+	15 -> 24 [
+		color=red
+		label=false
+	];
+	18 -> 24;
+	24 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 53 [
+		color=red
+		label=false
+	];
+	26 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 49 [
+		color=red
+		label=false
+	];
+	36 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	36 -> 49 [
+		color=red
+		label=false
+	];
+	43 -> 49;
+	49 -> 50;
+	50 -> 15;
+}

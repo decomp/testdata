@@ -1,0 +1,95 @@
+digraph "vdbeSorterAddToTree" {
+	// Node definitions.
+	5 [label=entry];
+	23;
+	27;
+	30;
+	33;
+	34;
+	38;
+	41;
+	43;
+	58;
+	62;
+	63;
+	69;
+	70;
+	73;
+	81;
+	82;
+	85;
+	88;
+	98;
+	100;
+
+	// Edge definitions.
+	5 -> 23;
+	23 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 33 [
+		color=red
+		label=false
+	];
+	27 -> 30;
+	30 -> 23;
+	33 -> 34;
+	34 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 41 [
+		color=red
+		label=false
+	];
+	38 -> 41;
+	41 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	41 -> 85 [
+		color=red
+		label=false
+	];
+	43 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 70 [
+		color=red
+		label=false
+	];
+	58 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 63 [
+		color=red
+		label=false
+	];
+	62 -> 69;
+	63 -> 69;
+	69 -> 70;
+	70 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 81 [
+		color=red
+		label=false
+	];
+	73 -> 81;
+	81 -> 82;
+	82 -> 34;
+	85 -> 88 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 98 [
+		color=red
+		label=false
+	];
+	88 -> 100;
+	98 -> 100;
+}

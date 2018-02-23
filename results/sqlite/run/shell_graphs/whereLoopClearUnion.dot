@@ -1,0 +1,59 @@
+digraph "whereLoopClearUnion" {
+	// Node definitions.
+	2 [label=entry];
+	10;
+	16;
+	24;
+	38;
+	44;
+	51;
+	71;
+	72;
+	73;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 73 [
+		color=red
+		label=false
+	];
+	10 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	10 -> 38 [
+		color=red
+		label=false
+	];
+	16 -> 24 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 38 [
+		color=red
+		label=false
+	];
+	24 -> 72;
+	38 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 71 [
+		color=red
+		label=false
+	];
+	44 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 71 [
+		color=red
+		label=false
+	];
+	51 -> 71;
+	71 -> 72;
+	72 -> 73;
+}

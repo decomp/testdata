@@ -1,0 +1,19 @@
+digraph "walFramePgno" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	23;
+	38;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 23 [
+		color=red
+		label=false
+	];
+	11 -> 38;
+	23 -> 38;
+}

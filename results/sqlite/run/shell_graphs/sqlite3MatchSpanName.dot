@@ -1,0 +1,138 @@
+digraph "sqlite3MatchSpanName" {
+	// Node definitions.
+	4 [label=entry];
+	11;
+	19;
+	27;
+	29;
+	30;
+	33;
+	36;
+	42;
+	50;
+	51;
+	57;
+	65;
+	73;
+	75;
+	76;
+	79;
+	82;
+	88;
+	96;
+	97;
+	105;
+	110;
+	111;
+	112;
+
+	// Edge definitions.
+	4 -> 11;
+	11 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	11 -> 27 [
+		color=red
+		label=false
+	];
+	19 -> 27;
+	27 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 33 [
+		color=red
+		label=false
+	];
+	29 -> 30;
+	30 -> 11;
+	33 -> 36 [
+		color=darkgreen
+		label=true
+	];
+	33 -> 51 [
+		color=red
+		label=false
+	];
+	36 -> 42 [
+		color=red
+		label=false
+	];
+	36 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 51 [
+		color=red
+		label=false
+	];
+	50 -> 112;
+	51 -> 57;
+	57 -> 65 [
+		color=darkgreen
+		label=true
+	];
+	57 -> 73 [
+		color=red
+		label=false
+	];
+	65 -> 73;
+	73 -> 75 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 79 [
+		color=red
+		label=false
+	];
+	75 -> 76;
+	76 -> 57;
+	79 -> 82 [
+		color=darkgreen
+		label=true
+	];
+	79 -> 97 [
+		color=red
+		label=false
+	];
+	82 -> 88 [
+		color=red
+		label=false
+	];
+	82 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 96 [
+		color=darkgreen
+		label=true
+	];
+	88 -> 97 [
+		color=red
+		label=false
+	];
+	96 -> 112;
+	97 -> 105 [
+		color=darkgreen
+		label=true
+	];
+	97 -> 111 [
+		color=red
+		label=false
+	];
+	105 -> 110 [
+		color=darkgreen
+		label=true
+	];
+	105 -> 111 [
+		color=red
+		label=false
+	];
+	110 -> 112;
+	111 -> 112;
+}

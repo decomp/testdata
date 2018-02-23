@@ -1,0 +1,63 @@
+digraph "sqlite3VtabClear" {
+	// Node definitions.
+	2 [label=entry];
+	8;
+	13;
+	16;
+	21;
+	22;
+	28;
+	31;
+	40;
+	41;
+	44;
+	50;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 13 [
+		color=red
+		label=false
+	];
+	8 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	8 -> 16 [
+		color=red
+		label=false
+	];
+	13 -> 16;
+	16 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 50 [
+		color=red
+		label=false
+	];
+	21 -> 22;
+	22 -> 28 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 44 [
+		color=red
+		label=false
+	];
+	28 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 40 [
+		color=red
+		label=false
+	];
+	31 -> 40;
+	40 -> 41;
+	41 -> 22;
+	44 -> 50;
+}

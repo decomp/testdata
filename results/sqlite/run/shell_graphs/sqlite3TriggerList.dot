@@ -1,0 +1,91 @@
+digraph "sqlite3TriggerList" {
+	// Node definitions.
+	2 [label=entry];
+	22;
+	23;
+	29;
+	34;
+	37;
+	49;
+	58;
+	61;
+	63;
+	67;
+	72;
+	73;
+	77;
+	78;
+	81;
+	83;
+	87;
+	89;
+
+	// Edge definitions.
+	2 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 23 [
+		color=red
+		label=false
+	];
+	22 -> 89;
+	23 -> 29 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 78 [
+		color=red
+		label=false
+	];
+	29 -> 34;
+	34 -> 37 [
+		color=darkgreen
+		label=true
+	];
+	34 -> 77 [
+		color=red
+		label=false
+	];
+	37 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	37 -> 72 [
+		color=red
+		label=false
+	];
+	49 -> 58 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 72 [
+		color=red
+		label=false
+	];
+	58 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	58 -> 63 [
+		color=red
+		label=false
+	];
+	61 -> 67;
+	63 -> 67;
+	67 -> 72;
+	72 -> 73;
+	73 -> 34;
+	77 -> 78;
+	78 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 83 [
+		color=red
+		label=false
+	];
+	81 -> 87;
+	83 -> 87;
+	87 -> 89;
+}

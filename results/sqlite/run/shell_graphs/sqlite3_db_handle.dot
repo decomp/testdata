@@ -1,0 +1,19 @@
+digraph "sqlite3_db_handle" {
+	// Node definitions.
+	1 [label=entry];
+	5;
+	10;
+	11;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 10 [
+		color=red
+		label=false
+	];
+	5 -> 11;
+	10 -> 11;
+}

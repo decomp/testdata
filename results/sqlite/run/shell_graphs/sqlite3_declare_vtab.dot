@@ -1,0 +1,143 @@
+digraph "sqlite3_declare_vtab" {
+	// Node definitions.
+	2 [label=entry];
+	21;
+	26;
+	32;
+	41;
+	42;
+	54;
+	59;
+	64;
+	71;
+	78;
+	83;
+	114;
+	125;
+	126;
+	132;
+	141;
+	142;
+	145;
+	153;
+	160;
+	165;
+	174;
+	182;
+
+	// Edge definitions.
+	2 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 26 [
+		color=red
+		label=false
+	];
+	21 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	21 -> 32 [
+		color=red
+		label=false
+	];
+	26 -> 182;
+	32 -> 41 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 42 [
+		color=red
+		label=false
+	];
+	41 -> 174;
+	42 -> 54 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 145 [
+		color=red
+		label=false
+	];
+	54 -> 59 [
+		color=darkgreen
+		label=true
+	];
+	54 -> 145 [
+		color=red
+		label=false
+	];
+	59 -> 64 [
+		color=red
+		label=false
+	];
+	59 -> 145 [
+		color=darkgreen
+		label=true
+	];
+	64 -> 71 [
+		color=red
+		label=false
+	];
+	64 -> 145 [
+		color=darkgreen
+		label=true
+	];
+	71 -> 78 [
+		color=red
+		label=false
+	];
+	71 -> 145 [
+		color=darkgreen
+		label=true
+	];
+	78 -> 83 [
+		color=red
+		label=false
+	];
+	78 -> 142 [
+		color=darkgreen
+		label=true
+	];
+	83 -> 114 [
+		color=red
+		label=false
+	];
+	83 -> 126 [
+		color=darkgreen
+		label=true
+	];
+	114 -> 125 [
+		color=darkgreen
+		label=true
+	];
+	114 -> 126 [
+		color=red
+		label=false
+	];
+	125 -> 126;
+	126 -> 132 [
+		color=darkgreen
+		label=true
+	];
+	126 -> 141 [
+		color=red
+		label=false
+	];
+	132 -> 141;
+	141 -> 142;
+	142 -> 153;
+	145 -> 153;
+	153 -> 160 [
+		color=darkgreen
+		label=true
+	];
+	153 -> 165 [
+		color=red
+		label=false
+	];
+	160 -> 165;
+	165 -> 174;
+	174 -> 182;
+}

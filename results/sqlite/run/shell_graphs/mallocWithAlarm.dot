@@ -1,0 +1,41 @@
+digraph "mallocWithAlarm" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	22;
+	24;
+	25;
+	26;
+	32;
+	36;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 26 [
+		color=red
+		label=false
+	];
+	14 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 24 [
+		color=red
+		label=false
+	];
+	22 -> 25;
+	24 -> 25;
+	25 -> 26;
+	26 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 36 [
+		color=red
+		label=false
+	];
+	32 -> 36;
+}

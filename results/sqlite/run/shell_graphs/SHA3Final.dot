@@ -1,0 +1,34 @@
+digraph "SHA3Final" {
+	// Node definitions.
+	1 [label=entry];
+	15;
+	17;
+	26;
+	27;
+	33;
+	55;
+	58;
+
+	// Edge definitions.
+	1 -> 15 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 17 [
+		color=red
+		label=false
+	];
+	15 -> 26;
+	17 -> 26;
+	26 -> 27;
+	27 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 58 [
+		color=red
+		label=false
+	];
+	33 -> 55;
+	55 -> 27;
+}

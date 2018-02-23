@@ -1,0 +1,115 @@
+digraph "sqlite3AuthRead" {
+	// Node definitions.
+	4 [label=entry];
+	22;
+	23;
+	31;
+	32;
+	38;
+	42;
+	43;
+	49;
+	61;
+	69;
+	70;
+	73;
+	74;
+	81;
+	82;
+	85;
+	94;
+	100;
+	111;
+	112;
+	113;
+	122;
+	125;
+
+	// Edge definitions.
+	4 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	4 -> 23 [
+		color=red
+		label=false
+	];
+	22 -> 125;
+	23 -> 31 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 32 [
+		color=red
+		label=false
+	];
+	31 -> 125;
+	32 -> 38 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 42 [
+		color=red
+		label=false
+	];
+	38 -> 74;
+	42 -> 43;
+	43 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 73 [
+		color=red
+		label=false
+	];
+	49 -> 61 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 69 [
+		color=red
+		label=false
+	];
+	61 -> 73;
+	69 -> 70;
+	70 -> 43;
+	73 -> 74;
+	74 -> 81 [
+		color=darkgreen
+		label=true
+	];
+	74 -> 82 [
+		color=red
+		label=false
+	];
+	81 -> 125;
+	82 -> 85 [
+		color=darkgreen
+		label=true
+	];
+	82 -> 94 [
+		color=red
+		label=false
+	];
+	85 -> 113;
+	94 -> 100 [
+		color=darkgreen
+		label=true
+	];
+	94 -> 111 [
+		color=red
+		label=false
+	];
+	100 -> 112;
+	111 -> 112;
+	112 -> 113;
+	113 -> 122 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 125 [
+		color=red
+		label=false
+	];
+	122 -> 125;
+}

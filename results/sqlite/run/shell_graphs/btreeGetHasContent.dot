@@ -1,0 +1,28 @@
+digraph "btreeGetHasContent" {
+	// Node definitions.
+	2 [label=entry];
+	11;
+	16;
+	21;
+	23;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 23 [
+		color=red
+		label=false
+	];
+	11 -> 16 [
+		color=red
+		label=false
+	];
+	11 -> 21 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 21;
+	21 -> 23;
+}

@@ -1,0 +1,39 @@
+digraph "sqlite3ErrorWithMsg" {
+	// Node definitions.
+	3 [label=entry];
+	16;
+	19;
+	24;
+	30;
+	43;
+	44;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 19 [
+		color=red
+		label=false
+	];
+	16 -> 44;
+	19 -> 24 [
+		color=red
+		label=false
+	];
+	19 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 30 [
+		color=darkgreen
+		label=true
+	];
+	24 -> 43 [
+		color=red
+		label=false
+	];
+	30 -> 43;
+	43 -> 44;
+}

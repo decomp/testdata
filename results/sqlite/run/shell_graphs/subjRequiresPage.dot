@@ -1,0 +1,43 @@
+digraph "subjRequiresPage" {
+	// Node definitions.
+	1 [label=entry];
+	14;
+	20;
+	32;
+	39;
+	40;
+	41;
+	44;
+	45;
+
+	// Edge definitions.
+	1 -> 14;
+	14 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 44 [
+		color=red
+		label=false
+	];
+	20 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	20 -> 40 [
+		color=red
+		label=false
+	];
+	32 -> 39 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 40 [
+		color=red
+		label=false
+	];
+	39 -> 45;
+	40 -> 41;
+	41 -> 14;
+	44 -> 45;
+}

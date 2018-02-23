@@ -1,0 +1,19 @@
+digraph "exprListDeleteNN" {
+	// Node definitions.
+	2 [label=entry];
+	13;
+	28;
+	32;
+
+	// Edge definitions.
+	2 -> 13;
+	13 -> 28;
+	28 -> 13 [
+		color=darkgreen
+		label=true
+	];
+	28 -> 32 [
+		color=red
+		label=false
+	];
+}

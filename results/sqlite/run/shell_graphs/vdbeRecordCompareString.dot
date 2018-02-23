@@ -1,0 +1,136 @@
+digraph "vdbeRecordCompareString" {
+	// Node definitions.
+	3 [label=entry];
+	20;
+	25;
+	30;
+	35;
+	40;
+	44;
+	49;
+	62;
+	67;
+	76;
+	83;
+	85;
+	102;
+	113;
+	119;
+	124;
+	131;
+	132;
+	135;
+	140;
+	145;
+	146;
+	147;
+	150;
+	155;
+	160;
+	161;
+	162;
+	163;
+	165;
+
+	// Edge definitions.
+	3 -> 20 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 25 [
+		color=red
+		label=false
+	];
+	20 -> 30;
+	25 -> 30;
+	30 -> 35 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 40 [
+		color=red
+		label=false
+	];
+	35 -> 163;
+	40 -> 44 [
+		color=red
+		label=false
+	];
+	40 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 162;
+	49 -> 62 [
+		color=darkgreen
+		label=true
+	];
+	49 -> 67 [
+		color=red
+		label=false
+	];
+	62 -> 165;
+	67 -> 76 [
+		color=darkgreen
+		label=true
+	];
+	67 -> 83 [
+		color=red
+		label=false
+	];
+	76 -> 85;
+	83 -> 85;
+	85 -> 102 [
+		color=darkgreen
+		label=true
+	];
+	85 -> 147 [
+		color=red
+		label=false
+	];
+	102 -> 113 [
+		color=darkgreen
+		label=true
+	];
+	102 -> 132 [
+		color=red
+		label=false
+	];
+	113 -> 119 [
+		color=darkgreen
+		label=true
+	];
+	113 -> 124 [
+		color=red
+		label=false
+	];
+	119 -> 131;
+	124 -> 131;
+	131 -> 146;
+	132 -> 135 [
+		color=darkgreen
+		label=true
+	];
+	132 -> 140 [
+		color=red
+		label=false
+	];
+	135 -> 145;
+	140 -> 145;
+	145 -> 146;
+	146 -> 161;
+	147 -> 150 [
+		color=darkgreen
+		label=true
+	];
+	147 -> 155 [
+		color=red
+		label=false
+	];
+	150 -> 160;
+	155 -> 160;
+	160 -> 161;
+	161 -> 162;
+	162 -> 163;
+	163 -> 165;
+}

@@ -1,0 +1,70 @@
+digraph "minMaxQuery" {
+	// Node definitions.
+	2 [label=entry];
+	14;
+	27;
+	32;
+	42;
+	50;
+	53;
+	57;
+	60;
+	61;
+	62;
+	63;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 63 [
+		color=red
+		label=false
+	];
+	14 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	14 -> 62 [
+		color=red
+		label=false
+	];
+	27 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	27 -> 62 [
+		color=red
+		label=false
+	];
+	32 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	32 -> 62 [
+		color=red
+		label=false
+	];
+	42 -> 50 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 53 [
+		color=red
+		label=false
+	];
+	50 -> 61;
+	53 -> 57 [
+		color=darkgreen
+		label=true
+	];
+	53 -> 60 [
+		color=red
+		label=false
+	];
+	57 -> 60;
+	60 -> 61;
+	61 -> 62;
+	62 -> 63;
+}

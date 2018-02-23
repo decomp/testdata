@@ -1,0 +1,138 @@
+digraph "createCollation" {
+	// Node definitions.
+	6 [label=entry];
+	23;
+	26;
+	27;
+	30;
+	33;
+	35;
+	43;
+	48;
+	53;
+	55;
+	64;
+	70;
+	73;
+	87;
+	92;
+	99;
+	102;
+	103;
+	106;
+	107;
+	108;
+	116;
+	117;
+	136;
+
+	// Edge definitions.
+	6 -> 23 [
+		color=red
+		label=false
+	];
+	6 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	23 -> 27 [
+		color=red
+		label=false
+	];
+	26 -> 27;
+	27 -> 30 [
+		color=red
+		label=false
+	];
+	27 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	30 -> 35 [
+		color=red
+		label=false
+	];
+	33 -> 136;
+	35 -> 43 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 108 [
+		color=red
+		label=false
+	];
+	43 -> 48 [
+		color=darkgreen
+		label=true
+	];
+	43 -> 108 [
+		color=red
+		label=false
+	];
+	48 -> 53 [
+		color=darkgreen
+		label=true
+	];
+	48 -> 55 [
+		color=red
+		label=false
+	];
+	53 -> 136;
+	55 -> 64 [
+		color=darkgreen
+		label=true
+	];
+	55 -> 107 [
+		color=red
+		label=false
+	];
+	64 -> 70;
+	70 -> 73 [
+		color=darkgreen
+		label=true
+	];
+	70 -> 106 [
+		color=red
+		label=false
+	];
+	73 -> 87 [
+		color=darkgreen
+		label=true
+	];
+	73 -> 102 [
+		color=red
+		label=false
+	];
+	87 -> 92 [
+		color=darkgreen
+		label=true
+	];
+	87 -> 99 [
+		color=red
+		label=false
+	];
+	92 -> 99;
+	99 -> 102;
+	102 -> 103;
+	103 -> 70;
+	106 -> 107;
+	107 -> 108;
+	108 -> 116 [
+		color=darkgreen
+		label=true
+	];
+	108 -> 117 [
+		color=red
+		label=false
+	];
+	116 -> 136;
+	117 -> 136;
+}

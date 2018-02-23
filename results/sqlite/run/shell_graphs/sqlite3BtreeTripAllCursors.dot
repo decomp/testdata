@@ -1,0 +1,100 @@
+digraph "sqlite3BtreeTripAllCursors" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	19;
+	22;
+	25;
+	32;
+	38;
+	44;
+	49;
+	53;
+	54;
+	55;
+	62;
+	63;
+	70;
+	82;
+	85;
+	86;
+	90;
+	92;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 92 [
+		color=red
+		label=false
+	];
+	12 -> 19;
+	19 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 90 [
+		color=red
+		label=false
+	];
+	22 -> 25 [
+		color=darkgreen
+		label=true
+	];
+	22 -> 55 [
+		color=red
+		label=false
+	];
+	25 -> 32 [
+		color=darkgreen
+		label=true
+	];
+	25 -> 55 [
+		color=red
+		label=false
+	];
+	32 -> 38 [
+		color=red
+		label=false
+	];
+	32 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 44 [
+		color=darkgreen
+		label=true
+	];
+	38 -> 54 [
+		color=red
+		label=false
+	];
+	44 -> 49 [
+		color=darkgreen
+		label=true
+	];
+	44 -> 53 [
+		color=red
+		label=false
+	];
+	49 -> 90;
+	53 -> 54;
+	54 -> 62;
+	55 -> 62;
+	62 -> 63;
+	63 -> 70 [
+		color=darkgreen
+		label=true
+	];
+	63 -> 85 [
+		color=red
+		label=false
+	];
+	70 -> 82;
+	82 -> 63;
+	85 -> 86;
+	86 -> 19;
+	90 -> 92;
+}

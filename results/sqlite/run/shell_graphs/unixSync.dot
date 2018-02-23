@@ -1,0 +1,43 @@
+digraph "unixSync" {
+	// Node definitions.
+	2 [label=entry];
+	27;
+	35;
+	42;
+	51;
+	56;
+	57;
+	64;
+	66;
+
+	// Edge definitions.
+	2 -> 27 [
+		color=darkgreen
+		label=true
+	];
+	2 -> 35 [
+		color=red
+		label=false
+	];
+	27 -> 66;
+	35 -> 42 [
+		color=darkgreen
+		label=true
+	];
+	35 -> 64 [
+		color=red
+		label=false
+	];
+	42 -> 51 [
+		color=darkgreen
+		label=true
+	];
+	42 -> 56 [
+		color=red
+		label=false
+	];
+	51 -> 57;
+	56 -> 57;
+	57 -> 64;
+	64 -> 66;
+}

@@ -1,0 +1,41 @@
+digraph "sqlite3VdbeGetBoundValue" {
+	// Node definitions.
+	3 [label=entry];
+	12;
+	26;
+	33;
+	39;
+	41;
+	42;
+	43;
+
+	// Edge definitions.
+	3 -> 12 [
+		color=darkgreen
+		label=true
+	];
+	3 -> 42 [
+		color=red
+		label=false
+	];
+	12 -> 26 [
+		color=darkgreen
+		label=true
+	];
+	12 -> 41 [
+		color=red
+		label=false
+	];
+	26 -> 33 [
+		color=darkgreen
+		label=true
+	];
+	26 -> 39 [
+		color=red
+		label=false
+	];
+	33 -> 39;
+	39 -> 43;
+	41 -> 42;
+	42 -> 43;
+}

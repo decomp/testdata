@@ -1,0 +1,35 @@
+digraph "sqlite3VdbeIntegerAffinity" {
+	// Node definitions.
+	1 [label=entry];
+	16;
+	19;
+	22;
+	36;
+
+	// Edge definitions.
+	1 -> 16 [
+		color=darkgreen
+		label=true
+	];
+	1 -> 36 [
+		color=red
+		label=false
+	];
+	16 -> 19 [
+		color=darkgreen
+		label=true
+	];
+	16 -> 36 [
+		color=red
+		label=false
+	];
+	19 -> 22 [
+		color=darkgreen
+		label=true
+	];
+	19 -> 36 [
+		color=red
+		label=false
+	];
+	22 -> 36;
+}
