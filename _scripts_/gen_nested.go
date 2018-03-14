@@ -1,3 +1,5 @@
+//+build ignore
+
 // gen_nested is a tool which generates C programs with a given number of nested
 // if-statements. These programs are intended to stress test the
 // implementations of various decompilation components and give an approximation

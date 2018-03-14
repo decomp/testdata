@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-""" Usage: dump_control_flow_stats.py FILE...
+""" Usage: dump_control_flow_stats.py FILE.json
 """
 
 import sys
 import clang.cindex
 import asciitree
 import json
+from os import path
+from pprint import pprint
 
 # traverse traverses the AST starting from node, invoking f(n) for each visited
 # node n.
@@ -144,25 +146,47 @@ def control_flow_stats(node):
 	}
 	return data
 
-if len(sys.argv[1:]) == 0:
-	print("Usage: dump_control_flow_stats.py FILE...")
+if len(sys.argv[1:]) != 1:
+	print("Usage: dump_control_flow_stats.py FILE.json")
 	sys.exit()
 
+jsonPath = sys.argv[1]
+data = json.load(open(jsonPath))
+cFuncs = {}
+for fn in data:
+	cPath = path.normpath(path.join(fn['Dir'], fn['Filename']))
+	x = []
+	if cPath in cFuncs:
+		x = cFuncs[cPath]
+	x.append(fn['CName'])
+	cFuncs[cPath] = x
+
+clang_flags = ['-I', '/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27', '-I', '/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib', '-I', '/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/src']
+
 # Parse input files to locate function definitions.
-funcs = []
-for path in sys.argv[1:]:
+rows = {}
+for cPath in cFuncs:
+	if cPath.endswith(".y") or cPath.endswith("parse-datetime.c"):
+		continue
 	index = clang.cindex.Index.create()
-	tu = index.parse(sys.argv[1])
+	tu = index.parse(cPath, args=clang_flags)
 	root = tu.cursor
 	fs = func_defs(root)
+	cFuncList = cFuncs[cPath]
+	funcs = {}
 	for f in fs:
-		funcs.append(f)
-sort_funcs(funcs)
+		if f.spelling in cFuncList:
+			funcs[f.spelling] = f
+	fs = []
+	for name in funcs:
+		fs.append(funcs[name])
+	sort_funcs(fs)
 
-# Output control flow statistics in JSON format.
-stats = []
-for func in funcs:
-	data = control_flow_stats(func)
-	stats.append('\t' + json.dumps(data, sort_keys=True))
-output = ',\n'.join(stats)
-print("[\n%s\n]" % (output))
+	# Output control flow statistics in JSON format.
+	stats = []
+	for f in fs:
+		data = control_flow_stats(f)
+		stats.append(data)
+	rows[cPath] = stats
+
+print(json.dumps(rows, indent="\t", sort_keys=True))
