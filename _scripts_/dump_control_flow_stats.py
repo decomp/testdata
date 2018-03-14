@@ -31,24 +31,11 @@ def sort_funcs(funcs):
 		return n.spelling
 	funcs.sort(key=key)
 
-# compound_stmt_count returns the number of compound statements present in the
-# AST starting from node.
-def compound_stmt_count(node):
-	# In Python 3 `nonlocal` may be used for closures. For compatability with
-	# both Python 2 and 3, classes and dictionaries may be used as a workaround.
-	class context:
-		total = 0
-	def f(n):
-		if n.kind == clang.cindex.CursorKind.COMPOUND_STMT:
-			context.total += 1
-	traverse(node, f)
-	return context.total
-
 # is_func_def reports whether the given node is a function definition.
 def is_func_def(node):
 	if node.kind != clang.cindex.CursorKind.FUNCTION_DECL:
 		return False
-	return compound_stmt_count(node) > 0
+	return node.is_definition()
 
 # func_defs returns the function definitions present in the AST.
 def func_defs(node):
@@ -60,23 +47,30 @@ def func_defs(node):
 	traverse(node, record_func_def)
 	return context.funcs
 
+# nchildren returns the number of direct children of the node.
+def nchildren(node):
+	total = 0
+	for c in node.get_children():
+		total += 1
+	return total
+
 # is_if_stmt reports whether the given node is an if-statement.
 #
 #    if-stmt (1-way conditional)
-#       IF_STMT (1 COMPOUND_STMT)
+#       IF_STMT (2 children)
 def is_if_stmt(node):
 	if node.kind != clang.cindex.CursorKind.IF_STMT:
 		return False
-	return compound_stmt_count(node) == 1
+	return nchildren(node) == 2
 
 # is_if_else_stmt reports whether the given node is an if-else-statement.
 #
 #    if-else-stmt (2-way conditional)
-#       IF_STMT (2 COMPOUND_STMT)
+#       IF_STMT (3 children)
 def is_if_else_stmt(node):
 	if node.kind != clang.cindex.CursorKind.IF_STMT:
 		return False
-	return compound_stmt_count(node) == 2
+	return nchildren(node) == 3
 
 # is_switch_stmt reports whether the given node is a switch-statement.
 #
