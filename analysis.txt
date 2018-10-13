@@ -1,0 +1,52 @@
+```c
+// switch: &main.CFAStats{Name:"shell_dbinfo_command", falseNegative2WayConditional:-7, falseNegativeNWayConditional:1, falseNegativePreTest:0, falseNegativePostTest:0}
+// falseNegativeNWayConditional:1
+// shell_dbinfo_command
+    switch( ofst ){
+      case 56: {
+        if( val==1 ) raw_printf(p->out, " (utf8)");
+        if( val==2 ) raw_printf(p->out, " (utf16le)");
+        if( val==3 ) raw_printf(p->out, " (utf16be)");
+      }
+    }
+```
+
+```c
+// switch: &main.CFAStats{Name:"sqlite3ErrStr", falseNegative2WayConditional:-1, falseNegativeNWayConditional:1, falseNegativePreTest:0, falseNegativePostTest:0}
+// falseNegativeNWayConditional:1
+// sqlite3ErrStr
+  switch( rc ){
+    case SQLITE_ABORT_ROLLBACK: {
+      zErr = "abort due to ROLLBACK";
+      break;
+    }
+    default: {
+      rc &= 0xff;
+      if( ALWAYS(rc>=0) && rc<ArraySize(aMsg) && aMsg[rc]!=0 ){
+        zErr = aMsg[rc];
+      }
+      break;
+    }
+  }
+```
+
+```c
+// switch: &main.CFAStats{Name:"sqlite3_vtab_config", falseNegative2WayConditional:-3, falseNegativeNWayConditional:1, falseNegativePreTest:0, falseNegativePostTest:0}
+// sqlite3_vtab_config
+// falseNegativeNWayConditional:1
+  switch( op ){
+    case SQLITE_VTAB_CONSTRAINT_SUPPORT: {
+      VtabCtx *p = db->pVtabCtx;
+      if( !p ){
+        rc = SQLITE_MISUSE_BKPT;
+      }else{
+        assert( p->pTab==0 || IsVirtual(p->pTab) );
+        p->pVTable->bConstraint = (u8)va_arg(ap, int);
+      }
+      break;
+    }
+    default:
+      rc = SQLITE_MISUSE_BKPT;
+      break;
+  }
+```
