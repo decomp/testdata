@@ -129,77 +129,83 @@ func compareResults(truth map[string]*SourceFunc, results map[string]*primitive.
 		stats = append(stats, stat)
 	}
 
-	fmt.Println("=== [ False negatives ] =====================================")
-	fmt.Println()
 	for _, stat := range stats {
-		if stat.falseNegative2WayConditional() != 0 {
-			fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.got2WayConditional, stat.want2WayConditional)
-		}
+		fmt.Printf("%s\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n", stat.Name, stat.want2WayConditional, stat.got2WayConditional, stat.wantNWayConditional, stat.gotNWayConditional, stat.wantPreTestLoop, stat.gotPreTestLoop, stat.wantPostTestLoop, stat.gotPostTestLoop)
 	}
-	for _, stat := range stats {
-		if stat.falseNegativeNWayConditional() != 0 {
-			fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.gotNWayConditional, stat.wantNWayConditional)
-		}
-	}
-	for _, stat := range stats {
-		if stat.falseNegativePreTestLoop() != 0 {
-			fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPreTestLoop, stat.wantPreTestLoop)
-		}
-	}
-	for _, stat := range stats {
-		if stat.falseNegativePostTestLoop() != 0 {
-			fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPostTestLoop, stat.wantPostTestLoop)
-		}
-	}
-	fmt.Println()
 
-	fmt.Println("=== [ False positives ] =====================================")
-	fmt.Println()
-	for _, stat := range stats {
-		if stat.falsePositive2WayConditional() != 0 {
-			fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.got2WayConditional, stat.want2WayConditional)
+	/*
+		fmt.Println("=== [ False negatives ] =====================================")
+		fmt.Println()
+		for _, stat := range stats {
+			if stat.falseNegative2WayConditional() != 0 {
+				fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.got2WayConditional, stat.want2WayConditional)
+			}
 		}
-	}
-	for _, stat := range stats {
-		if stat.falsePositiveNWayConditional() != 0 {
-			fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.gotNWayConditional, stat.wantNWayConditional)
+		for _, stat := range stats {
+			if stat.falseNegativeNWayConditional() != 0 {
+				fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.gotNWayConditional, stat.wantNWayConditional)
+			}
 		}
-	}
-	for _, stat := range stats {
-		if stat.falsePositivePreTestLoop() != 0 {
-			fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPreTestLoop, stat.wantPreTestLoop)
+		for _, stat := range stats {
+			if stat.falseNegativePreTestLoop() != 0 {
+				fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPreTestLoop, stat.wantPreTestLoop)
+			}
 		}
-	}
-	for _, stat := range stats {
-		if stat.falsePositivePostTestLoop() != 0 {
-			fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPostTestLoop, stat.wantPostTestLoop)
+		for _, stat := range stats {
+			if stat.falseNegativePostTestLoop() != 0 {
+				fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPostTestLoop, stat.wantPostTestLoop)
+			}
 		}
-	}
-	fmt.Println()
+		fmt.Println()
 
-	fmt.Println("=== [ True positives ] =====================================")
-	fmt.Println()
-	for _, stat := range stats {
-		if stat.got2WayConditional == stat.want2WayConditional && stat.got2WayConditional > 0 {
-			fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.got2WayConditional, stat.want2WayConditional)
+		fmt.Println("=== [ False positives ] =====================================")
+		fmt.Println()
+		for _, stat := range stats {
+			if stat.falsePositive2WayConditional() != 0 {
+				fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.got2WayConditional, stat.want2WayConditional)
+			}
 		}
-	}
-	for _, stat := range stats {
-		if stat.gotNWayConditional == stat.wantNWayConditional && stat.gotNWayConditional > 0 {
-			fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.gotNWayConditional, stat.wantNWayConditional)
+		for _, stat := range stats {
+			if stat.falsePositiveNWayConditional() != 0 {
+				fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.gotNWayConditional, stat.wantNWayConditional)
+			}
 		}
-	}
-	for _, stat := range stats {
-		if stat.gotPreTestLoop == stat.wantPreTestLoop && stat.gotPreTestLoop > 0 {
-			fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPreTestLoop, stat.wantPreTestLoop)
+		for _, stat := range stats {
+			if stat.falsePositivePreTestLoop() != 0 {
+				fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPreTestLoop, stat.wantPreTestLoop)
+			}
 		}
-	}
-	for _, stat := range stats {
-		if stat.gotPostTestLoop == stat.wantPostTestLoop && stat.gotPostTestLoop > 0 {
-			fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPostTestLoop, stat.wantPostTestLoop)
+		for _, stat := range stats {
+			if stat.falsePositivePostTestLoop() != 0 {
+				fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPostTestLoop, stat.wantPostTestLoop)
+			}
 		}
-	}
-	fmt.Println()
+		fmt.Println()
+
+		fmt.Println("=== [ True positives ] =====================================")
+		fmt.Println()
+		for _, stat := range stats {
+			if stat.got2WayConditional == stat.want2WayConditional && stat.got2WayConditional > 0 {
+				fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.got2WayConditional, stat.want2WayConditional)
+			}
+		}
+		for _, stat := range stats {
+			if stat.gotNWayConditional == stat.wantNWayConditional && stat.gotNWayConditional > 0 {
+				fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.gotNWayConditional, stat.wantNWayConditional)
+			}
+		}
+		for _, stat := range stats {
+			if stat.gotPreTestLoop == stat.wantPreTestLoop && stat.gotPreTestLoop > 0 {
+				fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPreTestLoop, stat.wantPreTestLoop)
+			}
+		}
+		for _, stat := range stats {
+			if stat.gotPostTestLoop == stat.wantPostTestLoop && stat.gotPostTestLoop > 0 {
+				fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPostTestLoop, stat.wantPostTestLoop)
+			}
+		}
+		fmt.Println()
+	*/
 
 	return nil
 }
