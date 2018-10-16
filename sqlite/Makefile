@@ -1,7 +1,8 @@
 # SQLite version.
-VER=3200000
+VER=3250200
 
 EXE=shell
+C=shell.c sqlite3.c
 BC=$(addsuffix .bc,$(EXE))
 LL=$(BC:.bc=.ll)
 JSON=$(LL:.ll=.json)
@@ -44,6 +45,6 @@ sqlite-amalgamation-$(VER): | sqlite-amalgamation-$(VER).zip
 	unzip sqlite-amalgamation-$(VER).zip
 
 sqlite-amalgamation-$(VER).zip:
-	wget https://www.sqlite.org/2017/sqlite-amalgamation-$(VER).zip
+	wget https://www.sqlite.org/2018/sqlite-amalgamation-$(VER).zip
 
 .PHONY: all fetch
