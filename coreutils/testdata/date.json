@@ -1,6 +1,6 @@
 {
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/anytostr.c": [],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/argmatch.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/anytostr.c": [],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/argmatch.c": [
 		{
 			"name": "__argmatch_die",
 			"stats": {
@@ -31,7 +31,7 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
+				"if_else_stmts": 1,
 				"if_stmts": 0,
 				"switch_stmts": 0,
 				"while_loops": 0
@@ -74,21 +74,21 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/calloc.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/calloc.c": [
 		{
 			"name": "rpl_calloc",
 			"stats": {
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
+				"if_else_stmts": 1,
 				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/close-stream.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/close-stream.c": [
 		{
 			"name": "close_stream",
 			"stats": {
@@ -102,7 +102,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/closeout.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/closeout.c": [
 		{
 			"name": "close_stdout",
 			"stats": {
@@ -140,7 +140,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/fclose.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fclose.c": [
 		{
 			"name": "rpl_fclose",
 			"stats": {
@@ -154,7 +154,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/fflush.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fflush.c": [
 		{
 			"name": "rpl_fflush",
 			"stats": {
@@ -162,27 +162,14 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 3,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/fseeko.c": [
-		{
-			"name": "rpl_fseeko",
-			"stats": {
-				"do_while_loops": 0,
-				"for_loops": 0,
-				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 1,
-				"switch_stmts": 0,
-				"while_loops": 0
-			}
-		}
-	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/gettime.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fseeko.c": [],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/gettime.c": [
 		{
 			"name": "gettime",
 			"stats": {
@@ -190,41 +177,41 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/hard-locale.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/hard-locale.c": [
 		{
 			"name": "hard_locale",
 			"stats": {
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_else_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/localcharset.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/localcharset.c": [
 		{
 			"name": "locale_charset",
 			"stats": {
 				"do_while_loops": 0,
-				"for_loops": 1,
+				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/mbrtowc.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/mbrtowc.c": [
 		{
 			"name": "rpl_mbrtowc",
 			"stats": {
@@ -238,21 +225,21 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/mktime.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/nstrftime.c": [
 		{
-			"name": "mktime_internal",
+			"name": "__strftime_internal",
 			"stats": {
-				"do_while_loops": 0,
+				"do_while_loops": 38,
 				"for_loops": 3,
-				"goto_stmts": 2,
-				"if_else_stmts": 1,
-				"if_stmts": 3,
-				"switch_stmts": 0,
-				"while_loops": 0
+				"goto_stmts": 69,
+				"if_else_stmts": 7,
+				"if_stmts": 98,
+				"switch_stmts": 4,
+				"while_loops": 1
 			}
 		},
 		{
-			"name": "rpl_mktime",
+			"name": "nstrftime",
 			"stats": {
 				"do_while_loops": 0,
 				"for_loops": 0,
@@ -264,7 +251,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/posixtm.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/posixtm.c": [
 		{
 			"name": "posixtime",
 			"stats": {
@@ -278,21 +265,21 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/progname.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/progname.c": [
 		{
 			"name": "set_program_name",
 			"stats": {
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 2,
+				"if_else_stmts": 0,
+				"if_stmts": 3,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/quotearg.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/quotearg.c": [
 		{
 			"name": "clone_quoting_options",
 			"stats": {
@@ -324,7 +311,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 3,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -432,7 +419,7 @@
 				"for_loops": 2,
 				"goto_stmts": 2,
 				"if_else_stmts": 1,
-				"if_stmts": 7,
+				"if_stmts": 9,
 				"switch_stmts": 1,
 				"while_loops": 0
 			}
@@ -588,7 +575,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 2,
+				"if_stmts": 5,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -672,7 +659,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -684,7 +671,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -702,7 +689,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/settime.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/settime.c": [
 		{
 			"name": "settime",
 			"stats": {
@@ -710,39 +697,13 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/strftime.c": [
-		{
-			"name": "__strftime_internal",
-			"stats": {
-				"do_while_loops": 38,
-				"for_loops": 3,
-				"goto_stmts": 69,
-				"if_else_stmts": 13,
-				"if_stmts": 26,
-				"switch_stmts": 4,
-				"while_loops": 1
-			}
-		},
-		{
-			"name": "nstrftime",
-			"stats": {
-				"do_while_loops": 0,
-				"for_loops": 0,
-				"goto_stmts": 0,
-				"if_else_stmts": 0,
-				"if_stmts": 0,
-				"switch_stmts": 0,
-				"while_loops": 0
-			}
-		}
-	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/time_rz.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/time_rz.c": [
 		{
 			"name": "localtime_rz",
 			"stats": {
@@ -750,7 +711,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 1,
-				"if_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -762,7 +723,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 1,
-				"if_stmts": 1,
+				"if_stmts": 3,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -774,7 +735,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 1,
-				"if_stmts": 2,
+				"if_stmts": 4,
 				"switch_stmts": 0,
 				"while_loops": 1
 			}
@@ -810,13 +771,13 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 0,
 				"switch_stmts": 0,
-				"while_loops": 1
+				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/version-etc.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/version-etc.c": [
 		{
 			"name": "emit_bug_reporting_address",
 			"stats": {
@@ -878,7 +839,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/xalloc-die.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/xalloc-die.c": [
 		{
 			"name": "xalloc_die",
 			"stats": {
@@ -892,8 +853,8 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/xalloc.h": [],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/xmalloc.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/xalloc.h": [],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/xmalloc.c": [
 		{
 			"name": "x2realloc",
 			"stats": {
@@ -913,7 +874,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -925,7 +886,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -949,7 +910,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -979,7 +940,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/src/date.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/src/date.c": [
 		{
 			"name": "main",
 			"stats": {
@@ -987,9 +948,9 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 5,
-				"if_stmts": 7,
+				"if_stmts": 10,
 				"switch_stmts": 0,
-				"while_loops": 1
+				"while_loops": 0
 			}
 		},
 		{
@@ -1007,7 +968,7 @@
 		{
 			"name": "usage",
 			"stats": {
-				"do_while_loops": 1,
+				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 1,

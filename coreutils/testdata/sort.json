@@ -1,6 +1,6 @@
 {
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/anytostr.c": [],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/argmatch.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/anytostr.c": [],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/argmatch.c": [
 		{
 			"name": "__argmatch_die",
 			"stats": {
@@ -31,7 +31,7 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
+				"if_else_stmts": 1,
 				"if_stmts": 0,
 				"switch_stmts": 0,
 				"while_loops": 0
@@ -74,22 +74,22 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/c-ctype.h": [],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/calloc.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/c-ctype.h": [],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/calloc.c": [
 		{
 			"name": "rpl_calloc",
 			"stats": {
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
+				"if_else_stmts": 1,
 				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/close-stream.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/close-stream.c": [
 		{
 			"name": "close_stream",
 			"stats": {
@@ -103,7 +103,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/closeout.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/closeout.c": [
 		{
 			"name": "close_stdout",
 			"stats": {
@@ -141,7 +141,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/dtotimespec.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/dtotimespec.c": [
 		{
 			"name": "dtotimespec",
 			"stats": {
@@ -155,7 +155,21 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/dup-safer.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/dup-safer-flag.c": [
+		{
+			"name": "dup_safer_flag",
+			"stats": {
+				"do_while_loops": 0,
+				"for_loops": 0,
+				"goto_stmts": 0,
+				"if_else_stmts": 0,
+				"if_stmts": 0,
+				"switch_stmts": 0,
+				"while_loops": 0
+			}
+		}
+	],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/dup-safer.c": [
 		{
 			"name": "dup_safer",
 			"stats": {
@@ -169,7 +183,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/fadvise.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fadvise.c": [
 		{
 			"name": "fadvise",
 			"stats": {
@@ -195,7 +209,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/fclose.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fclose.c": [
 		{
 			"name": "rpl_fclose",
 			"stats": {
@@ -209,7 +223,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/fcntl.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fcntl.c": [
 		{
 			"name": "rpl_fcntl",
 			"stats": {
@@ -217,13 +231,27 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 2,
-				"if_stmts": 1,
+				"if_stmts": 3,
 				"switch_stmts": 1,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/fd-safer.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fd-safer-flag.c": [
+		{
+			"name": "fd_safer_flag",
+			"stats": {
+				"do_while_loops": 0,
+				"for_loops": 0,
+				"goto_stmts": 0,
+				"if_else_stmts": 0,
+				"if_stmts": 1,
+				"switch_stmts": 0,
+				"while_loops": 0
+			}
+		}
+	],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fd-safer.c": [
 		{
 			"name": "fd_safer",
 			"stats": {
@@ -237,7 +265,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/fflush.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fflush.c": [
 		{
 			"name": "rpl_fflush",
 			"stats": {
@@ -245,13 +273,13 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 3,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/filevercmp.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/filevercmp.c": [
 		{
 			"name": "filevercmp",
 			"stats": {
@@ -259,13 +287,13 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 2,
+				"if_stmts": 11,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/fopen-safer.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fopen-safer.c": [
 		{
 			"name": "fopen_safer",
 			"stats": {
@@ -273,49 +301,36 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 2,
+				"if_stmts": 4,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/fseeko.c": [
-		{
-			"name": "rpl_fseeko",
-			"stats": {
-				"do_while_loops": 0,
-				"for_loops": 0,
-				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 1,
-				"switch_stmts": 0,
-				"while_loops": 0
-			}
-		}
-	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/hard-locale.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/fseeko.c": [],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/hard-locale.c": [
 		{
 			"name": "hard_locale",
 			"stats": {
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_else_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/hash.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/hash.c": [
 		{
 			"name": "hash_clear",
 			"stats": {
 				"do_while_loops": 0,
 				"for_loops": 2,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 0,
+				"if_else_stmts": 0,
+				"if_stmts": 3,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -326,8 +341,8 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 0,
+				"if_else_stmts": 0,
+				"if_stmts": 4,
 				"switch_stmts": 0,
 				"while_loops": 1
 			}
@@ -338,8 +353,8 @@
 				"do_while_loops": 0,
 				"for_loops": 2,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 0,
+				"if_else_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -351,7 +366,7 @@
 				"for_loops": 5,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -362,8 +377,8 @@
 				"do_while_loops": 0,
 				"for_loops": 2,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 0,
+				"if_else_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -374,8 +389,8 @@
 				"do_while_loops": 0,
 				"for_loops": 1,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_else_stmts": 1,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -431,11 +446,11 @@
 		{
 			"name": "hash_get_next",
 			"stats": {
-				"do_while_loops": 1,
+				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 1
 			}
@@ -447,7 +462,7 @@
 				"for_loops": 0,
 				"goto_stmts": 3,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 4,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -470,8 +485,8 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 3,
+				"if_else_stmts": 0,
+				"if_stmts": 10,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -483,7 +498,7 @@
 				"for_loops": 1,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -507,7 +522,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -579,13 +594,13 @@
 				"for_loops": 2,
 				"goto_stmts": 0,
 				"if_else_stmts": 2,
-				"if_stmts": 0,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/heap.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/heap.c": [
 		{
 			"name": "heap_alloc",
 			"stats": {
@@ -647,21 +662,21 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/localcharset.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/localcharset.c": [
 		{
 			"name": "locale_charset",
 			"stats": {
 				"do_while_loops": 0,
-				"for_loops": 1,
+				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/mbrtowc.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/mbrtowc.c": [
 		{
 			"name": "rpl_mbrtowc",
 			"stats": {
@@ -675,7 +690,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/mbswidth.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/mbswidth.c": [
 		{
 			"name": "gnu_mbswidth",
 			"stats": {
@@ -691,17 +706,17 @@
 		{
 			"name": "mbsnwidth",
 			"stats": {
-				"do_while_loops": 1,
+				"do_while_loops": 0,
 				"for_loops": 0,
-				"goto_stmts": 4,
-				"if_else_stmts": 4,
+				"goto_stmts": 2,
+				"if_else_stmts": 2,
 				"if_stmts": 4,
 				"switch_stmts": 1,
 				"while_loops": 2
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/md5.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/md5.c": [
 		{
 			"name": "md5_buffer",
 			"stats": {
@@ -741,13 +756,13 @@
 		{
 			"name": "md5_process_block",
 			"stats": {
-				"do_while_loops": 64,
+				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
 				"if_stmts": 0,
 				"switch_stmts": 0,
-				"while_loops": 1
+				"while_loops": 0
 			}
 		},
 		{
@@ -756,8 +771,8 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 3,
-				"if_stmts": 3,
+				"if_else_stmts": 1,
+				"if_stmts": 5,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -780,14 +795,14 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 2,
-				"if_else_stmts": 1,
-				"if_stmts": 1,
+				"if_else_stmts": 0,
+				"if_stmts": 5,
 				"switch_stmts": 0,
 				"while_loops": 2
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/memcoll.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/memcoll.c": [
 		{
 			"name": "memcoll",
 			"stats": {
@@ -806,14 +821,26 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_else_stmts": 1,
+				"if_stmts": 0,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/mkstemp-safer.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/mkstemp-safer.c": [
+		{
+			"name": "mkostemp_safer",
+			"stats": {
+				"do_while_loops": 0,
+				"for_loops": 0,
+				"goto_stmts": 0,
+				"if_else_stmts": 0,
+				"if_stmts": 0,
+				"switch_stmts": 0,
+				"while_loops": 0
+			}
+		},
 		{
 			"name": "mkstemp_safer",
 			"stats": {
@@ -827,21 +854,8 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/nanosleep.c": [
-		{
-			"name": "rpl_nanosleep",
-			"stats": {
-				"do_while_loops": 0,
-				"for_loops": 0,
-				"goto_stmts": 0,
-				"if_else_stmts": 0,
-				"if_stmts": 2,
-				"switch_stmts": 0,
-				"while_loops": 1
-			}
-		}
-	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/nproc.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/nanosleep.c": [],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/nproc.c": [
 		{
 			"name": "num_processors",
 			"stats": {
@@ -849,13 +863,13 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/obstack.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/obstack.c": [
 		{
 			"name": "_obstack_allocated_p",
 			"stats": {
@@ -898,7 +912,7 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
+				"if_else_stmts": 1,
 				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 1
@@ -923,7 +937,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -941,7 +955,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/physmem.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/physmem.c": [
 		{
 			"name": "physmem_available",
 			"stats": {
@@ -967,7 +981,8 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/posixver.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/pipe2.c": [],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/posixver.c": [
 		{
 			"name": "posix2_version",
 			"stats": {
@@ -975,27 +990,27 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
-				"switch_stmts": 0,
-				"while_loops": 0
-			}
-		}
-	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/progname.c": [
-		{
-			"name": "set_program_name",
-			"stats": {
-				"do_while_loops": 0,
-				"for_loops": 0,
-				"goto_stmts": 0,
-				"if_else_stmts": 1,
 				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/quotearg.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/progname.c": [
+		{
+			"name": "set_program_name",
+			"stats": {
+				"do_while_loops": 0,
+				"for_loops": 0,
+				"goto_stmts": 0,
+				"if_else_stmts": 0,
+				"if_stmts": 3,
+				"switch_stmts": 0,
+				"while_loops": 0
+			}
+		}
+	],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/quotearg.c": [
 		{
 			"name": "clone_quoting_options",
 			"stats": {
@@ -1027,7 +1042,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 3,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1135,7 +1150,7 @@
 				"for_loops": 2,
 				"goto_stmts": 2,
 				"if_else_stmts": 1,
-				"if_stmts": 7,
+				"if_stmts": 9,
 				"switch_stmts": 1,
 				"while_loops": 0
 			}
@@ -1291,7 +1306,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 2,
+				"if_stmts": 5,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1375,7 +1390,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1387,7 +1402,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1405,7 +1420,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/rand-isaac.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/rand-isaac.c": [
 		{
 			"name": "isaac_refill",
 			"stats": {
@@ -1431,7 +1446,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/randread.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/randread.c": [
 		{
 			"name": "randread",
 			"stats": {
@@ -1474,8 +1489,8 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 1,
+				"if_else_stmts": 2,
+				"if_stmts": 0,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1505,15 +1520,15 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/readtokens0.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/readtokens0.c": [
 		{
 			"name": "readtokens0",
 			"stats": {
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 0,
+				"if_else_stmts": 0,
+				"if_stmts": 3,
 				"switch_stmts": 0,
 				"while_loops": 1
 			}
@@ -1555,7 +1570,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/strnumcmp.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/strnumcmp.c": [
 		{
 			"name": "strnumcmp",
 			"stats": {
@@ -1569,7 +1584,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/version-etc.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/version-etc.c": [
 		{
 			"name": "emit_bug_reporting_address",
 			"stats": {
@@ -1631,7 +1646,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/xalloc-die.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/xalloc-die.c": [
 		{
 			"name": "xalloc_die",
 			"stats": {
@@ -1645,8 +1660,8 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/xalloc.h": [],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/xmalloc.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/xalloc.h": [],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/xmalloc.c": [
 		{
 			"name": "x2realloc",
 			"stats": {
@@ -1666,7 +1681,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1678,7 +1693,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1702,7 +1717,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1732,7 +1747,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/xmemcoll.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/xmemcoll.c": [
 		{
 			"name": "xmemcoll",
 			"stats": {
@@ -1758,7 +1773,7 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/xnanosleep.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/xnanosleep.c": [
 		{
 			"name": "xnanosleep",
 			"stats": {
@@ -1766,13 +1781,25 @@
 				"for_loops": 1,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/xstrtol-error.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/xstrtol-error.c": [
+		{
+			"name": "xstrtol_error",
+			"stats": {
+				"do_while_loops": 0,
+				"for_loops": 0,
+				"goto_stmts": 0,
+				"if_else_stmts": 1,
+				"if_stmts": 0,
+				"switch_stmts": 1,
+				"while_loops": 0
+			}
+		},
 		{
 			"name": "xstrtol_fatal",
 			"stats": {
@@ -1786,8 +1813,8 @@
 			}
 		}
 	],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/lib/xstrtol.c": [],
-	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.27/src/sort.c": [
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/lib/xstrtol.c": [],
+	"/home/u/Desktop/go/src/github.com/decomp/testdata/coreutils/coreutils-8.30/src/sort.c": [
 		{
 			"name": "async_safe_die",
 			"stats": {
@@ -1795,7 +1822,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 1,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1830,8 +1857,8 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
-				"if_stmts": 4,
+				"if_else_stmts": 3,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1897,6 +1924,18 @@
 			}
 		},
 		{
+			"name": "key_to_opts",
+			"stats": {
+				"do_while_loops": 0,
+				"for_loops": 0,
+				"goto_stmts": 0,
+				"if_else_stmts": 0,
+				"if_stmts": 11,
+				"switch_stmts": 0,
+				"while_loops": 0
+			}
+		},
+		{
 			"name": "limfield",
 			"stats": {
 				"do_while_loops": 0,
@@ -1912,10 +1951,10 @@
 			"name": "main",
 			"stats": {
 				"do_while_loops": 0,
-				"for_loops": 2,
+				"for_loops": 1,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 11,
+				"if_else_stmts": 3,
+				"if_stmts": 18,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1927,7 +1966,7 @@
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 1,
-				"if_stmts": 1,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -1936,28 +1975,28 @@
 			"name": "merge",
 			"stats": {
 				"do_while_loops": 0,
-				"for_loops": 1,
+				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 1,
+				"if_stmts": 0,
 				"switch_stmts": 0,
-				"while_loops": 1
+				"while_loops": 0
 			}
 		},
 		{
 			"name": "mergefps",
 			"stats": {
 				"do_while_loops": 0,
-				"for_loops": 3,
+				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 6,
+				"if_stmts": 1,
 				"switch_stmts": 0,
-				"while_loops": 1
+				"while_loops": 0
 			}
 		},
 		{
-			"name": "move_fd_or_die",
+			"name": "move_fd",
 			"stats": {
 				"do_while_loops": 0,
 				"for_loops": 0,
@@ -1972,7 +2011,7 @@
 			"name": "open_input_files",
 			"stats": {
 				"do_while_loops": 0,
-				"for_loops": 1,
+				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
 				"if_stmts": 0,
@@ -1988,7 +2027,7 @@
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
 				"if_stmts": 0,
-				"switch_stmts": 1,
+				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		},
@@ -1998,10 +2037,10 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 2,
+				"if_else_stmts": 0,
+				"if_stmts": 0,
 				"switch_stmts": 0,
-				"while_loops": 1
+				"while_loops": 0
 			}
 		},
 		{
@@ -2034,7 +2073,7 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
+				"if_else_stmts": 1,
 				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
@@ -2046,8 +2085,8 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 2,
-				"if_stmts": 1,
+				"if_else_stmts": 4,
+				"if_stmts": 2,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
@@ -2106,19 +2145,7 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 1,
-				"if_stmts": 1,
-				"switch_stmts": 0,
-				"while_loops": 0
-			}
-		},
-		{
-			"name": "struct_month_cmp",
-			"stats": {
-				"do_while_loops": 0,
-				"for_loops": 0,
-				"goto_stmts": 0,
-				"if_else_stmts": 0,
+				"if_else_stmts": 3,
 				"if_stmts": 0,
 				"switch_stmts": 0,
 				"while_loops": 0
@@ -2127,7 +2154,7 @@
 		{
 			"name": "usage",
 			"stats": {
-				"do_while_loops": 1,
+				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 1,
@@ -2142,8 +2169,8 @@
 				"do_while_loops": 0,
 				"for_loops": 0,
 				"goto_stmts": 0,
-				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_else_stmts": 2,
+				"if_stmts": 3,
 				"switch_stmts": 0,
 				"while_loops": 1
 			}
@@ -2156,7 +2183,7 @@
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
 				"if_stmts": 0,
-				"switch_stmts": 1,
+				"switch_stmts": 0,
 				"while_loops": 0
 			}
 		},
@@ -2176,10 +2203,10 @@
 			"name": "zaptemp",
 			"stats": {
 				"do_while_loops": 0,
-				"for_loops": 1,
+				"for_loops": 0,
 				"goto_stmts": 0,
 				"if_else_stmts": 0,
-				"if_stmts": 0,
+				"if_stmts": 3,
 				"switch_stmts": 0,
 				"while_loops": 0
 			}
