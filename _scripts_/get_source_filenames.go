@@ -9,8 +9,8 @@ import (
 	"log"
 	"sort"
 
-	"github.com/mewmew/l/asm"
-	"github.com/mewmew/l/ir/metadata"
+	"github.com/llir/llvm/asm"
+	"github.com/llir/llvm/ir/metadata"
 	"github.com/pkg/errors"
 )
 
@@ -48,11 +48,11 @@ func getFuncs(llPath string) ([]*Func, error) {
 	}
 	m := make(map[string]*Func)
 	for _, f := range module.Funcs {
-		if f.FunctionBody == nil {
+		if f.Blocks == nil {
 			continue
 		}
 		fn := &Func{
-			LLName: f.Name,
+			LLName: f.GlobalName,
 		}
 		for _, md := range f.Metadata {
 			switch node := md.Node.(type) {
@@ -71,7 +71,7 @@ func getFuncs(llPath string) ([]*Func, error) {
 				}
 			}
 		}
-		m[f.Name] = fn
+		m[f.GlobalName] = fn
 	}
 	var keys []string
 	for key := range m {
