@@ -116,7 +116,7 @@ func genResults(llPath string, dotPaths []string) error {
 
 func compareResults(truth map[string]*SourceFunc, results map[string]*primitive.Primitives) error {
 	if len(truth) != len(results) {
-		return errors.WithStack(fmt.Errorf("mismatch between number of results (%d) and number of entities in truth table (%d)", len(results), len(truth)))
+		log.Printf("mismatch between number of results (%d) and number of entities in truth table (%d)", len(results), len(truth))
 	}
 	var funcNames []string
 	for funcName := range truth {

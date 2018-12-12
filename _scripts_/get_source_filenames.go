@@ -56,12 +56,12 @@ func getFuncs(llPath string) ([]*Func, error) {
 		}
 		for _, md := range f.Metadata {
 			switch node := md.Node.(type) {
-			case *metadata.MetadataDef:
+			case *metadata.Def:
 				switch node := node.Node.(type) {
 				case *metadata.DISubprogram:
 					fn.CName = node.Name
 					switch file := node.File.(type) {
-					case *metadata.MetadataDef:
+					case *metadata.Def:
 						switch file := file.Node.(type) {
 						case *metadata.DIFile:
 							fn.Filename = file.Filename
