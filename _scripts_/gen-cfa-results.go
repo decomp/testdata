@@ -14,12 +14,11 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/graphism/exp/cfg"
 	"github.com/kr/pretty"
 	"github.com/mewkiz/pkg/osutil"
 	"github.com/mewkiz/pkg/pathutil"
 	"github.com/mewkiz/pkg/term"
-	"github.com/mewmew/cfa/primitive"
+	"github.com/mewmew/lnp/pkg/cfa/primitive"
 	"github.com/pkg/errors"
 )
 
@@ -91,7 +90,7 @@ func genResults(llPath string, dotPaths []string) error {
 	}
 	pretty.Println("truth", truth)
 	// Load and index results.
-	results := make(map[string]*primitive.Primitives)
+	results := make(map[string][]*primitive.Primitive)
 	for _, dotPath := range dotPaths {
 		funcName := pathutil.FileName(dotPath)
 		dbg.Printf("structuring %q", funcName)
@@ -114,7 +113,7 @@ func genResults(llPath string, dotPaths []string) error {
 	return nil
 }
 
-func compareResults(truth map[string]*SourceFunc, results map[string]*primitive.Primitives) error {
+func compareResults(truth map[string]*SourceFunc, results map[string][]*primitive.Primitive) error {
 	if len(truth) != len(results) {
 		log.Printf("mismatch between number of results (%d) and number of entities in truth table (%d)", len(results), len(truth))
 	}
@@ -284,32 +283,32 @@ func (stats *CFAStats) falsePositivePostTestLoop() int {
 	return x
 }
 
-func compareFunc(truth *SourceFunc, result *primitive.Primitives) *CFAStats {
+func compareFunc(truth *SourceFunc, result []*primitive.Primitive) *CFAStats {
 	stats := &CFAStats{
 		Name: truth.Name,
 	}
 	stats.want2WayConditional = truth.Stats.IfStmts + truth.Stats.IfElseStmts
-	for range result.Ifs {
-		stats.got2WayConditional++
-	}
-	stats.wantNWayConditional = truth.Stats.SwitchStmts
-	for range result.Switches {
-		stats.gotNWayConditional++
-	}
-	stats.wantPreTestLoop = truth.Stats.ForLoops + truth.Stats.WhileLoops
-	stats.wantPostTestLoop = truth.Stats.DoWhileLoops
-	for _, loop := range result.Loops {
-		switch loop.Type {
-		case cfg.LoopTypePreTest:
+	for _, prim := range result {
+		switch prim.Prim {
+		case "if":
+			stats.got2WayConditional++
+		case "switch":
+			stats.gotNWayConditional++
+		case "pre_loop":
 			stats.gotPreTestLoop++
-		case cfg.LoopTypePostTest:
+		case "post_loop":
 			stats.gotPostTestLoop++
-		case cfg.LoopTypeEndless:
+		case "inf_loop":
 			// TODO: Check whether to consider endless loops as pre-test or post-
 			// test, or another category altogether? Consider as pre-test for now.
 			stats.gotPreTestLoop++
+		default:
+			panic(fmt.Errorf("support for primitive %q not yet implemented", prim.Prim))
 		}
 	}
+	stats.wantNWayConditional = truth.Stats.SwitchStmts
+	stats.wantPreTestLoop = truth.Stats.ForLoops + truth.Stats.WhileLoops
+	stats.wantPostTestLoop = truth.Stats.DoWhileLoops
 	return stats
 }
 
@@ -398,16 +397,16 @@ type Stats struct {
 //       ]
 //    }
 
-func restructure(dotPath string) (*primitive.Primitives, error) {
+func restructure(dotPath string) ([]*primitive.Primitive, error) {
 	// Load JSON files if present.
 	jsonPath := pathutil.TrimExt(dotPath) + ".restructure_interval.json"
 	if osutil.Exists(jsonPath) {
-		dbg.Printf("loading `restructure_interval` output from %q.", jsonPath)
+		dbg.Printf("loading `restructure2` output from %q.", jsonPath)
 		buf, err := ioutil.ReadFile(jsonPath)
 		if err != nil {
 			return nil, errors.WithStack(err)
 		}
-		var prims *primitive.Primitives
+		var prims []*primitive.Primitive
 		if err := json.Unmarshal(buf, &prims); err != nil {
 			return nil, errors.WithStack(err)
 		}
@@ -416,18 +415,19 @@ func restructure(dotPath string) (*primitive.Primitives, error) {
 
 	// Restructure DOT file.
 	buf := &bytes.Buffer{}
-	cmd := exec.Command("restructure_interval", dotPath)
+	cmd := exec.Command("restructure2", "-method", "interval", dotPath)
 	cmd.Stdout = buf
+	cmd.Stderr = os.Stderr
 	if err := cmd.Run(); err != nil {
 		return nil, errors.WithStack(err)
 	}
-	prims := &primitive.Primitives{}
-	if err := json.Unmarshal(buf.Bytes(), prims); err != nil {
+	var prims []*primitive.Primitive
+	if err := json.Unmarshal(buf.Bytes(), &prims); err != nil {
 		return nil, errors.WithStack(err)
 	}
 
 	// Store results for the future.
-	dbg.Printf("storing `restructure_interval` output to %q.", jsonPath)
+	dbg.Printf("storing `restructure2` output to %q.", jsonPath)
 	if err := ioutil.WriteFile(jsonPath, buf.Bytes(), 0644); err != nil {
 		return nil, errors.WithStack(err)
 	}
