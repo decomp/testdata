@@ -1,27 +1,27 @@
-digraph "sqlite3WithPush" {
+strict digraph "sqlite3WithPush" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
+	25;
 	20;
 	24;
-	25;
 
 	// Edge definitions.
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 24;
 	24 -> 25;

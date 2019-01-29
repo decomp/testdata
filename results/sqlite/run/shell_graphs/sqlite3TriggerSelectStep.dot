@@ -1,19 +1,19 @@
-digraph "sqlite3TriggerSelectStep" {
+strict digraph "sqlite3TriggerSelectStep" {
 	// Node definitions.
-	2 [label=entry];
-	12;
-	15;
-	24;
+	4 [entry=true];
+	16;
+	19;
+	34;
 
 	// Edge definitions.
-	2 -> 12 [
+	4 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 15 [
+	4 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
-	12 -> 24;
-	15 -> 24;
+	16 -> 34;
+	19 -> 34;
 }

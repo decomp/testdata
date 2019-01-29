@@ -1,109 +1,109 @@
-digraph "sqlite3DropIndex" {
+strict digraph "sqlite3DropIndex" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	22;
 	23;
+	151;
 	27;
 	28;
 	43;
-	46;
-	49;
-	56;
 	59;
+	49;
+	46;
+	56;
 	66;
 	68;
-	93;
 	94;
-	97;
+	95;
 	98;
-	110;
+	99;
 	111;
-	116;
-	149;
+	112;
+	117;
 	150;
 
 	// Edge definitions.
 	3 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 150;
+	22 -> 151;
 	23 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 150;
+	27 -> 151;
 	28 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 59 [
 		color=red
-		label=false
-	];
-	43 -> 46 [
-		color=red
-		label=false
+		cond=false
 	];
 	43 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	46 -> 56;
-	49 -> 56;
-	56 -> 150;
+	43 -> 46 [
+		color=red
+		cond=false
+	];
 	59 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	59 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
-	66 -> 150;
-	68 -> 93 [
-		color=darkgreen
-		label=true
-	];
+	49 -> 56;
+	46 -> 56;
+	56 -> 151;
+	66 -> 151;
 	68 -> 94 [
-		color=red
-		label=false
-	];
-	93 -> 150;
-	94 -> 97 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	94 -> 98 [
+	68 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
-	97 -> 98;
-	98 -> 110 [
+	94 -> 151;
+	95 -> 98 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	98 -> 111 [
+	95 -> 99 [
 		color=red
-		label=false
+		cond=false
 	];
-	110 -> 150;
-	111 -> 116 [
+	98 -> 99;
+	99 -> 111 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	111 -> 149 [
+	99 -> 112 [
 		color=red
-		label=false
+		cond=false
 	];
-	116 -> 149;
-	149 -> 150;
+	111 -> 151;
+	112 -> 117 [
+		color=darkgreen
+		cond=true
+	];
+	112 -> 150 [
+		color=red
+		cond=false
+	];
+	117 -> 150;
+	150 -> 151;
 }

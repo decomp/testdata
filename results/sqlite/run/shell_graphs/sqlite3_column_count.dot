@@ -1,6 +1,6 @@
-digraph "sqlite3_column_count" {
+strict digraph "sqlite3_column_count" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	13;
 	14;
@@ -8,11 +8,11 @@ digraph "sqlite3_column_count" {
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 14;
 	13 -> 14;

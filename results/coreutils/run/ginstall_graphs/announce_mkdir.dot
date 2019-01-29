@@ -1,17 +1,17 @@
-digraph "announce_mkdir" {
+strict digraph "announce_mkdir" {
 	// Node definitions.
-	2 [label=entry];
-	6;
+	2 [entry=true];
 	10;
+	6;
 
 	// Edge definitions.
-	2 -> 6 [
-		color=red
-		label=false
-	];
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 6 [
+		color=red
+		cond=false
 	];
 	6 -> 10;
 }

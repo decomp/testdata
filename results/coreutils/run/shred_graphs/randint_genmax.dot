@@ -1,63 +1,63 @@
-digraph "randint_genmax" {
+strict digraph "randint_genmax" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
 	16;
+	39;
 	17;
 	24;
 	25;
 	38;
-	39;
 	43;
 	45;
-	52;
 	55;
+	54;
 
 	// Edge definitions.
 	2 -> 12;
 	12 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 17;
+	39 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 45 [
+		color=red
+		cond=false
+	];
 	17 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 25;
 	25 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 39;
-	39 -> 43 [
-		color=darkgreen
-		label=true
-	];
-	39 -> 45 [
-		color=red
-		label=false
-	];
 	43 -> 55;
 	45 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	45 -> 52 [
+	45 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
-	52 -> 55;
+	54 -> 55;
 }

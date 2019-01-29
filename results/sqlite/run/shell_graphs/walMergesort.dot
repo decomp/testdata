@@ -1,60 +1,60 @@
-digraph "walMergesort" {
+strict digraph "walMergesort" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	21;
 	25;
+	65;
 	30;
 	36;
-	48;
 	51;
+	48;
 	62;
-	65;
 	68;
 	71;
+	93;
 	77;
 	89;
 	90;
-	93;
 
 	// Edge definitions.
 	4 -> 21;
 	21 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 65 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 30;
+	65 -> 68;
 	30 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 48;
-	48 -> 30;
 	51 -> 62;
+	48 -> 30;
 	62 -> 21;
-	65 -> 68;
 	68 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 93 [
 		color=red
-		label=false
+		cond=false
 	];
 	71 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	71 -> 89 [
 		color=red
-		label=false
+		cond=false
 	];
 	77 -> 89;
 	89 -> 90;

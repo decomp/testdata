@@ -1,0 +1,17 @@
+strict digraph "idxPrepareStmt" {
+	// Node definitions.
+	4 [entry=true];
+	16;
+	20;
+
+	// Edge definitions.
+	4 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 20 [
+		color=red
+		cond=false
+	];
+	16 -> 20;
+}

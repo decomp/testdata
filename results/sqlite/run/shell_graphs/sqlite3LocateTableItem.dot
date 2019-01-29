@@ -1,6 +1,6 @@
-digraph "sqlite3LocateTableItem" {
+strict digraph "sqlite3LocateTableItem" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	13;
 	31;
 	35;
@@ -8,11 +8,11 @@ digraph "sqlite3LocateTableItem" {
 	// Edge definitions.
 	3 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 35;
 	31 -> 35;

@@ -1,142 +1,142 @@
-digraph "sqlite3ExprAssignVarNumber" {
+strict digraph "sqlite3ExprAssignVarNumber" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	18;
 	19;
+	151;
 	29;
 	34;
+	138;
 	40;
+	105;
 	43;
 	50;
 	58;
+	72;
 	61;
 	64;
-	72;
 	78;
 	88;
 	94;
+	104;
 	102;
 	103;
-	104;
-	105;
+	122;
 	116;
 	121;
-	122;
 	125;
 	137;
-	138;
 	149;
-	151;
 
 	// Edge definitions.
 	3 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 151;
 	19 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 138;
 	34 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 105 [
 		color=red
-		label=false
+		cond=false
+	];
+	138 -> 151 [
+		color=red
+		cond=false
+	];
+	138 -> 149 [
+		color=darkgreen
+		cond=true
 	];
 	40 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 50 [
 		color=red
-		label=false
+		cond=false
+	];
+	105 -> 116 [
+		color=darkgreen
+		cond=true
+	];
+	105 -> 121 [
+		color=red
+		cond=false
 	];
 	43 -> 58;
 	50 -> 58;
-	58 -> 61 [
-		color=red
-		label=false
-	];
 	58 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	58 -> 61 [
+		color=red
+		cond=false
+	];
+	72 -> 151;
+	61 -> 72 [
+		color=darkgreen
+		cond=true
 	];
 	61 -> 64 [
 		color=red
-		label=false
-	];
-	61 -> 72 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	64 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	64 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
-	72 -> 151;
 	78 -> 88 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	78 -> 94 [
 		color=red
-		label=false
+		cond=false
 	];
 	88 -> 104;
 	94 -> 102 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	94 -> 103 [
 		color=red
-		label=false
+		cond=false
 	];
+	104 -> 122;
 	102 -> 103;
 	103 -> 104;
-	104 -> 122;
-	105 -> 116 [
-		color=darkgreen
-		label=true
-	];
-	105 -> 121 [
-		color=red
-		label=false
-	];
-	116 -> 121;
-	121 -> 122;
 	122 -> 125 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	122 -> 137 [
 		color=red
-		label=false
+		cond=false
 	];
+	116 -> 121;
+	121 -> 122;
 	125 -> 137;
 	137 -> 138;
-	138 -> 149 [
-		color=darkgreen
-		label=true
-	];
-	138 -> 151 [
-		color=red
-		label=false
-	];
 	149 -> 151;
 }

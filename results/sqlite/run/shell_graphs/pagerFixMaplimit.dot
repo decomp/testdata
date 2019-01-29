@@ -1,26 +1,26 @@
-digraph "pagerFixMaplimit" {
+strict digraph "pagerFixMaplimit" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	12;
-	19;
 	34;
+	19;
 
 	// Edge definitions.
 	1 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 34 [
 		color=red
-		label=false
-	];
-	12 -> 19 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	12 -> 34 [
 		color=red
-		label=false
+		cond=false
+	];
+	12 -> 19 [
+		color=darkgreen
+		cond=true
 	];
 	19 -> 34;
 }

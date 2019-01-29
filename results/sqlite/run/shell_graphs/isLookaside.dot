@@ -1,17 +1,17 @@
-digraph "isLookaside" {
+strict digraph "isLookaside" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
 	22;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 22;
 }

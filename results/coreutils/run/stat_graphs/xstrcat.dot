@@ -1,0 +1,87 @@
+strict digraph "xstrcat" {
+	// Node definitions.
+	2 [entry=true];
+	7;
+	9;
+	70;
+	14;
+	19;
+	24;
+	27;
+	38;
+	40;
+	42;
+	73;
+	45;
+	49;
+	54;
+	59;
+	62;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 9 [
+		color=red
+		cond=false
+	];
+	7 -> 70;
+	9 -> 14;
+	70 -> 73;
+	14 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 24 [
+		color=red
+		cond=false
+	];
+	19 -> 27;
+	24 -> 27;
+	27 -> 14 [
+		color=red
+		cond=false
+	];
+	27 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 42 [
+		color=red
+		cond=false
+	];
+	40 -> 73;
+	42 -> 70 [
+		color=darkgreen
+		cond=true
+	];
+	42 -> 45 [
+		color=red
+		cond=false
+	];
+	45 -> 49;
+	49 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 59 [
+		color=red
+		cond=false
+	];
+	54 -> 62;
+	59 -> 62;
+	62 -> 70 [
+		color=darkgreen
+		cond=true
+	];
+	62 -> 49 [
+		color=red
+		cond=false
+	];
+}

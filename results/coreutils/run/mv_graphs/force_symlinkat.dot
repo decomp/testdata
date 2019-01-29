@@ -1,99 +1,90 @@
-digraph "force_symlinkat" {
+strict digraph "force_symlinkat" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
+	54;
 	11;
 	15;
-	23;
 	26;
-	31;
-	37;
-	39;
-	42;
-	45;
-	48;
-	49;
-	51;
+	23;
 	52;
-	54;
-	56;
+	37;
+	35;
+	43;
+	40;
+	47;
+	46;
+	50;
+	49;
 
 	// Edge definitions.
+	4 -> 54 [
+		color=darkgreen
+		cond=true
+	];
 	4 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	4 -> 56 [
-		color=darkgreen
-		label=true
+	11 -> 54 [
+		color=red
+		cond=false
 	];
 	11 -> 15 [
 		color=darkgreen
-		label=true
-	];
-	11 -> 56 [
-		color=red
-		label=false
-	];
-	15 -> 23 [
-		color=red
-		label=false
+		cond=true
 	];
 	15 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	15 -> 23 [
+		color=red
+		cond=false
+	];
+	26 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 35 [
+		color=red
+		cond=false
 	];
 	23 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 54 [
+	23 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 31 [
-		color=red
-		label=false
-	];
-	26 -> 54 [
-		color=darkgreen
-		label=true
-	];
-	31 -> 37 [
-		color=red
-		label=false
-	];
-	31 -> 39 [
-		color=darkgreen
-		label=true
-	];
-	37 -> 45;
-	39 -> 42 [
-		color=red
-		label=false
-	];
-	39 -> 45 [
-		color=darkgreen
-		label=true
-	];
-	42 -> 45;
-	45 -> 48 [
-		color=red
-		label=false
-	];
-	45 -> 49 [
-		color=darkgreen
-		label=true
-	];
-	48 -> 49;
-	49 -> 51 [
-		color=red
-		label=false
-	];
-	49 -> 52 [
-		color=darkgreen
-		label=true
-	];
-	51 -> 52;
 	52 -> 54;
-	54 -> 56;
+	37 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 40 [
+		color=red
+		cond=false
+	];
+	35 -> 43;
+	43 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 46 [
+		color=red
+		cond=false
+	];
+	40 -> 43;
+	47 -> 50 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 49 [
+		color=red
+		cond=false
+	];
+	46 -> 47;
+	50 -> 52;
+	49 -> 50;
 }

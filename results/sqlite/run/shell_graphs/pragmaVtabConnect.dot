@@ -1,10 +1,10 @@
-digraph "pragmaVtabConnect" {
+strict digraph "pragmaVtabConnect" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	30;
 	37;
-	44;
 	49;
+	44;
 	52;
 	58;
 	65;
@@ -12,69 +12,69 @@ digraph "pragmaVtabConnect" {
 	75;
 	78;
 	85;
+	109;
 	90;
 	91;
 	108;
-	109;
 	114;
 
 	// Edge definitions.
 	6 -> 30;
 	30 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 44;
-	44 -> 30;
 	49 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
+	44 -> 30;
 	52 -> 58;
 	58 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	58 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
 	65 -> 68;
 	68 -> 75 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
 	75 -> 78;
 	78 -> 85 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	78 -> 109 [
 		color=red
-		label=false
+		cond=false
 	];
 	85 -> 90 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	85 -> 91 [
 		color=red
-		label=false
+		cond=false
 	];
+	109 -> 114;
 	90 -> 108;
 	91 -> 108;
 	108 -> 114;
-	109 -> 114;
 }

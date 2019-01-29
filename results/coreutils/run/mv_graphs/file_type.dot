@@ -1,24 +1,48 @@
-digraph "file_type" {
+strict digraph "file_type" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
+	19;
 	13;
 	14;
 	15;
 	16;
 	17;
 	18;
-	19;
 
 	// Edge definitions.
-	1 -> 8 [label="case (x=7)"];
-	1 -> 13 [label="case (x=9)"];
-	1 -> 14 [label="case (x=5)"];
-	1 -> 15 [label="case (x=1)"];
-	1 -> 16 [label="case (x=0)"];
-	1 -> 17 [label="case (x=11)"];
-	1 -> 18 [label="default case"];
-	1 -> 19 [label="case (x=3)"];
+	1 -> 8 [
+		cond="case (x=7)"
+		label="case (x=7)"
+	];
+	1 -> 19 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	1 -> 13 [
+		cond="case (x=9)"
+		label="case (x=9)"
+	];
+	1 -> 14 [
+		cond="case (x=5)"
+		label="case (x=5)"
+	];
+	1 -> 15 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	1 -> 16 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	1 -> 17 [
+		cond="case (x=11)"
+		label="case (x=11)"
+	];
+	1 -> 18 [
+		cond="default case"
+		label="default case"
+	];
 	8 -> 19;
 	13 -> 19;
 	14 -> 19;

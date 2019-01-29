@@ -1,177 +1,165 @@
-digraph "shell_dbinfo_command" {
+strict digraph "shell_dbinfo_command" {
 	// Node definitions.
-	3 [label=entry];
-	19;
-	23;
+	3 [entry=true];
+	20;
 	24;
-	31;
+	25;
 	32;
-	41;
-	46;
-	53;
+	33;
+	208;
+	44;
 	54;
+	48;
+	59;
 	65;
-	68;
-	74;
-	75;
-	102;
-	105;
-	127;
-	130;
-	135;
-	138;
-	143;
-	146;
+	66;
+	93;
+	96;
 	151;
-	152;
-	157;
+	118;
+	143;
+	121;
+	126;
+	129;
+	134;
+	137;
+	142;
+	148;
+	154;
+	156;
+	166;
 	160;
-	163;
+	162;
 	165;
-	169;
-	171;
-	174;
-	175;
-	176;
-	179;
-	201;
-	204;
-	206;
+	167;
+	170;
+	195;
+	192;
 
 	// Edge definitions.
-	3 -> 19 [
+	3 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 23 [
+	3 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 24;
-	23 -> 24;
-	24 -> 31 [
+	20 -> 25;
+	24 -> 25;
+	25 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 32 [
+	25 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 206;
-	32 -> 41 [
-		color=red
-		label=false
-	];
-	32 -> 53 [
+	32 -> 208;
+	33 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 46 [
+	33 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 53 [
-		color=darkgreen
-		label=true
-	];
-	46 -> 53 [
-		color=darkgreen
-		label=true
-	];
-	46 -> 54 [
+	44 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 206;
-	54 -> 65 [
+	44 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	54 -> 68 [
-		color=red
-		label=false
-	];
-	65 -> 206;
-	68 -> 74 [
+	54 -> 208;
+	48 -> 59;
+	59 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	68 -> 75 [
+	59 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
-	74 -> 75;
-	75 -> 102;
-	102 -> 105 [
+	65 -> 66;
+	66 -> 93;
+	93 -> 96 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	102 -> 160 [
+	93 -> 151 [
 		color=red
-		label=false
+		cond=false
 	];
-	105 -> 127 [label="case (x=56)"];
-	105 -> 152 [label="default case"];
-	127 -> 130 [
+	96 -> 118 [
+		cond="case (x=56)"
+		label="case (x=56)"
+	];
+	96 -> 143 [
+		cond="default case"
+		label="default case"
+	];
+	151 -> 154 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	127 -> 135 [
+	151 -> 156 [
 		color=red
-		label=false
+		cond=false
 	];
-	130 -> 135;
-	135 -> 138 [
+	118 -> 121 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	135 -> 143 [
+	118 -> 126 [
 		color=red
-		label=false
+		cond=false
 	];
-	138 -> 143;
-	143 -> 146 [
+	143 -> 148;
+	121 -> 126;
+	126 -> 129 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	143 -> 151 [
+	126 -> 134 [
 		color=red
-		label=false
+		cond=false
 	];
-	146 -> 151;
-	151 -> 152;
-	152 -> 157;
-	157 -> 102;
-	160 -> 163 [
+	129 -> 134;
+	134 -> 137 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	160 -> 165 [
+	134 -> 142 [
 		color=red
-		label=false
+		cond=false
 	];
-	163 -> 175;
-	165 -> 169 [
+	137 -> 142;
+	142 -> 143;
+	148 -> 93;
+	154 -> 166;
+	156 -> 160 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	165 -> 171 [
+	156 -> 162 [
 		color=red
-		label=false
+		cond=false
 	];
-	169 -> 174;
-	171 -> 174;
-	174 -> 175;
-	175 -> 176;
-	176 -> 179 [
+	166 -> 167;
+	160 -> 165;
+	162 -> 165;
+	165 -> 166;
+	167 -> 170 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	176 -> 204 [
+	167 -> 195 [
 		color=red
-		label=false
+		cond=false
 	];
-	179 -> 201;
-	201 -> 176;
-	204 -> 206;
+	170 -> 192;
+	195 -> 208;
+	192 -> 167;
 }

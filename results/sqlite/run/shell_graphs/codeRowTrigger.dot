@@ -1,118 +1,138 @@
-digraph "codeRowTrigger" {
+strict digraph "codeRowTrigger" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	23;
 	27;
 	29;
-	39;
 	40;
-	56;
+	39;
+	223;
 	57;
-	79;
+	56;
 	80;
+	79;
 	112;
-	123;
-	132;
+	217;
+	117;
+	124;
+	129;
+	153;
 	138;
+	150;
 	144;
-	147;
-	156;
-	159;
-	169;
-	178;
-	206;
-	212;
+	162;
+	165;
+	175;
+	189;
+	180;
 
 	// Edge definitions.
 	4 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 29;
 	27 -> 29;
-	29 -> 39 [
-		color=red
-		label=false
-	];
 	29 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 212;
-	40 -> 56 [
+	29 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	40 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	56 -> 212;
-	57 -> 79 [
+	40 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
+	39 -> 223;
 	57 -> 80 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	79 -> 212;
+	57 -> 79 [
+		color=red
+		cond=false
+	];
+	56 -> 223;
 	80 -> 112 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	80 -> 206 [
+	80 -> 217 [
 		color=red
-		label=false
+		cond=false
 	];
-	112 -> 123 [
+	79 -> 223;
+	112 -> 117 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	112 -> 147 [
+	112 -> 124 [
 		color=red
-		label=false
+		cond=false
 	];
-	123 -> 132 [
+	217 -> 223;
+	117 -> 124;
+	124 -> 129 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	123 -> 144 [
+	124 -> 153 [
 		color=red
-		label=false
+		cond=false
 	];
-	132 -> 138 [
+	129 -> 138 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	132 -> 144 [
+	129 -> 150 [
 		color=red
-		label=false
+		cond=false
 	];
-	138 -> 144;
-	144 -> 147;
-	147 -> 156 [
+	153 -> 162 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	147 -> 159 [
+	153 -> 165 [
 		color=red
-		label=false
+		cond=false
 	];
-	156 -> 159;
-	159 -> 169 [
+	138 -> 150 [
+		color=red
+		cond=false
+	];
+	138 -> 144 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	159 -> 178 [
+	150 -> 153;
+	144 -> 150;
+	162 -> 165;
+	165 -> 175 [
+		color=darkgreen
+		cond=true
+	];
+	165 -> 189 [
 		color=red
-		label=false
+		cond=false
 	];
-	169 -> 178;
-	178 -> 206;
-	206 -> 212;
+	175 -> 189 [
+		color=red
+		cond=false
+	];
+	175 -> 180 [
+		color=darkgreen
+		cond=true
+	];
+	189 -> 217;
+	180 -> 189;
 }

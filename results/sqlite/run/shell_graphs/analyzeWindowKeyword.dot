@@ -1,0 +1,30 @@
+strict digraph "analyzeWindowKeyword" {
+	// Node definitions.
+	1 [entry=true];
+	8;
+	9;
+	15;
+	13;
+	14;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 9 [
+		color=red
+		cond=false
+	];
+	8 -> 15;
+	9 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	9 -> 14 [
+		color=red
+		cond=false
+	];
+	13 -> 15;
+	14 -> 15;
+}

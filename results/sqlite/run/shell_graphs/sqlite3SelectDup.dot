@@ -1,32 +1,32 @@
-digraph "sqlite3SelectDup" {
+strict digraph "sqlite3SelectDup" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	13;
 	16;
+	141;
 	22;
 	23;
-	131;
-	135;
+	137;
 
 	// Edge definitions.
 	3 -> 13;
 	13 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 135 [
+	13 -> 141 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 135;
-	23 -> 131;
-	131 -> 13;
+	22 -> 141;
+	23 -> 137;
+	137 -> 13;
 }

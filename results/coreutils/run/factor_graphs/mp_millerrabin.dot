@@ -1,55 +1,51 @@
-digraph "mp_millerrabin" {
+strict digraph "mp_millerrabin" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
+	24;
 	9;
 	12;
 	14;
-	15;
-	19;
-	25;
-	27;
+	18;
 
 	// Edge definitions.
+	6 -> 24 [
+		color=darkgreen
+		cond=true
+	];
 	6 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
-	6 -> 27 [
+	9 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 27 [
-		color=darkgreen
-		label=true
+	12 -> 24 [
+		color=red
+		cond=false
 	];
 	12 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 27 [
-		color=red
-		label=false
-	];
-	14 -> 15;
-	15 -> 19 [
-		color=red
-		label=false
-	];
-	15 -> 25 [
+	14 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 15 [
-		color=darkgreen
-		label=true
-	];
-	19 -> 25 [
+	14 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 27;
+	18 -> 24 [
+		color=red
+		cond=false
+	];
+	18 -> 14 [
+		color=darkgreen
+		cond=true
+	];
 }

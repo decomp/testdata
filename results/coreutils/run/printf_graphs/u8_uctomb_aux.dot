@@ -1,70 +1,82 @@
-digraph "u8_uctomb_aux" {
+strict digraph "u8_uctomb_aux" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	43;
 	5;
+	14;
 	7;
 	9;
 	12;
-	14;
 	17;
 	19;
 	26;
 	34;
-	43;
 
 	// Edge definitions.
-	3 -> 5 [
-		color=red
-		label=false
-	];
 	3 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 7 [
+	3 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 9 [
-		color=darkgreen
-		label=true
-	];
-	7 -> 12 [
+	5 -> 7 [
 		color=red
-		label=false
-	];
-	9 -> 14 [
-		color=red
-		label=false
-	];
-	9 -> 43 [
-		color=darkgreen
-		label=true
-	];
-	12 -> 14 [
-		color=darkgreen
-		label=true
-	];
-	12 -> 43 [
-		color=red
-		label=false
-	];
-	14 -> 17 [
-		color=red
-		label=false
+		cond=false
 	];
 	14 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 19 [label="case (x=-4)"];
-	17 -> 26 [label="case (x=3)"];
-	17 -> 34 [label="case (x=2)"];
-	17 -> 43 [label="default case"];
+	14 -> 17 [
+		color=red
+		cond=false
+	];
+	7 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	7 -> 12 [
+		color=red
+		cond=false
+	];
+	9 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	9 -> 14 [
+		color=red
+		cond=false
+	];
+	12 -> 43 [
+		color=red
+		cond=false
+	];
+	12 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	17 -> 43 [
+		cond="default case"
+		label="default case"
+	];
+	17 -> 19 [
+		cond="case (x=-4)"
+		label="case (x=-4)"
+	];
+	17 -> 26 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	17 -> 34 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
 	19 -> 26;
 	26 -> 34;
 	34 -> 43;

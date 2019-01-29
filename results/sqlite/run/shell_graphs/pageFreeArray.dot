@@ -1,89 +1,89 @@
-digraph "pageFreeArray" {
+strict digraph "pageFreeArray" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	48;
 	52;
+	123;
 	65;
+	119;
 	71;
 	86;
+	111;
 	89;
 	100;
 	109;
 	110;
-	111;
+	139;
 	116;
-	119;
 	120;
-	123;
 	126;
 	137;
-	139;
 
 	// Edge definitions.
 	4 -> 48;
 	48 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	48 -> 123 [
 		color=red
-		label=false
+		cond=false
 	];
 	52 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	52 -> 119 [
 		color=red
-		label=false
+		cond=false
 	];
-	65 -> 71 [
-		color=darkgreen
-		label=true
-	];
-	65 -> 119 [
-		color=red
-		label=false
-	];
-	71 -> 86 [
-		color=darkgreen
-		label=true
-	];
-	71 -> 111 [
-		color=red
-		label=false
-	];
-	86 -> 89 [
-		color=darkgreen
-		label=true
-	];
-	86 -> 100 [
-		color=red
-		label=false
-	];
-	89 -> 100;
-	100 -> 109 [
-		color=darkgreen
-		label=true
-	];
-	100 -> 110 [
-		color=red
-		label=false
-	];
-	109 -> 139;
-	110 -> 116;
-	111 -> 116;
-	116 -> 119;
-	119 -> 120;
-	120 -> 48;
 	123 -> 126 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	123 -> 137 [
 		color=red
-		label=false
+		cond=false
 	];
+	65 -> 119 [
+		color=red
+		cond=false
+	];
+	65 -> 71 [
+		color=darkgreen
+		cond=true
+	];
+	119 -> 120;
+	71 -> 86 [
+		color=darkgreen
+		cond=true
+	];
+	71 -> 111 [
+		color=red
+		cond=false
+	];
+	86 -> 89 [
+		color=darkgreen
+		cond=true
+	];
+	86 -> 100 [
+		color=red
+		cond=false
+	];
+	111 -> 116;
+	89 -> 100;
+	100 -> 109 [
+		color=darkgreen
+		cond=true
+	];
+	100 -> 110 [
+		color=red
+		cond=false
+	];
+	109 -> 139;
+	110 -> 116;
+	116 -> 119;
+	120 -> 48;
 	126 -> 137;
 	137 -> 139;
 }

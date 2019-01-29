@@ -1,70 +1,70 @@
-digraph "sqlite3ExprCodeGetColumnOfTable" {
+strict digraph "sqlite3ExprCodeGetColumnOfTable" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	15;
 	21;
-	24;
+	76;
 	31;
+	24;
 	36;
-	48;
-	53;
-	60;
-	67;
-	70;
-	75;
+	68;
+	61;
+	49;
+	54;
+	71;
 
 	// Edge definitions.
 	5 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 75;
-	21 -> 24 [
-		color=red
-		label=false
-	];
+	15 -> 76;
 	21 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	21 -> 24 [
+		color=red
+		cond=false
+	];
+	31 -> 68;
 	24 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 67;
-	36 -> 48 [
-		color=red
-		label=false
-	];
-	36 -> 60 [
+	36 -> 61 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	48 -> 53 [
+	36 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 60 [
-		color=darkgreen
-		label=true
-	];
-	53 -> 60;
-	60 -> 67;
-	67 -> 70 [
-		color=darkgreen
-		label=true
-	];
-	67 -> 75 [
+	68 -> 76 [
 		color=red
-		label=false
+		cond=false
 	];
-	70 -> 75;
+	68 -> 71 [
+		color=darkgreen
+		cond=true
+	];
+	61 -> 68;
+	49 -> 61 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 54 [
+		color=red
+		cond=false
+	];
+	54 -> 61;
+	71 -> 76;
 }

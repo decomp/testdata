@@ -1,17 +1,17 @@
-digraph "dateFunc" {
+strict digraph "dateFunc" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	14;
 	25;
 
 	// Edge definitions.
 	3 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 25;
 }

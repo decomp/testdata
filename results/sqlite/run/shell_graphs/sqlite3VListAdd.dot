@@ -1,63 +1,63 @@
-digraph "sqlite3VListAdd" {
+strict digraph "sqlite3VListAdd" {
 	// Node definitions.
-	5 [label=entry];
-	22;
+	5 [entry=true];
 	32;
+	22;
+	68;
 	35;
 	40;
 	41;
 	55;
 	57;
+	103;
 	60;
 	63;
-	68;
-	103;
 
 	// Edge definitions.
-	5 -> 22 [
-		color=red
-		label=false
-	];
 	5 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 32 [
-		color=darkgreen
-		label=true
-	];
-	22 -> 68 [
+	5 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	32 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
+	22 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 68 [
+		color=red
+		cond=false
+	];
+	68 -> 103;
 	35 -> 41;
 	40 -> 41;
 	41 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
 	55 -> 103;
 	57 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	57 -> 63 [
 		color=red
-		label=false
+		cond=false
 	];
 	60 -> 63;
 	63 -> 68;
-	68 -> 103;
 }

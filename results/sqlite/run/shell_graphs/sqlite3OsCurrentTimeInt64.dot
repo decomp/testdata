@@ -1,28 +1,28 @@
-digraph "sqlite3OsCurrentTimeInt64" {
+strict digraph "sqlite3OsCurrentTimeInt64" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	11;
-	16;
 	23;
+	16;
 	33;
 
 	// Edge definitions.
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 23 [
 		color=red
-		label=false
-	];
-	11 -> 16 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	11 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 33;
+	11 -> 16 [
+		color=darkgreen
+		cond=true
+	];
 	23 -> 33;
+	16 -> 33;
 }

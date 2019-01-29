@@ -1,6 +1,6 @@
-digraph "sqlite3_uri_boolean" {
+strict digraph "sqlite3_uri_boolean" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
 	22;
 	24;
@@ -8,11 +8,11 @@ digraph "sqlite3_uri_boolean" {
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 24;
 	22 -> 24;

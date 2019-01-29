@@ -1,41 +1,41 @@
-digraph "sql_trace_callback" {
+strict digraph "sql_trace_callback" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	18;
-	23;
-	26;
-	35;
-	37;
-	40;
-	45;
+	44;
+	22;
+	25;
+	34;
+	36;
+	39;
 
 	// Edge definitions.
 	4 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 45 [
+	4 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 23;
-	23 -> 26 [
+	18 -> 22;
+	22 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 35 [
+	22 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 35;
-	35 -> 37 [
+	25 -> 34;
+	34 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 40 [
+	34 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 23;
-	40 -> 45;
+	36 -> 22;
+	39 -> 44;
 }

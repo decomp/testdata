@@ -1,6 +1,6 @@
-digraph "sqlite3ErrorMsg" {
+strict digraph "sqlite3ErrorMsg" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	23;
 	26;
 	40;
@@ -8,11 +8,11 @@ digraph "sqlite3ErrorMsg" {
 	// Edge definitions.
 	2 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 40;
 	26 -> 40;

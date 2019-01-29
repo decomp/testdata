@@ -1,41 +1,41 @@
-digraph "verify_numeric" {
+strict digraph "verify_numeric" {
 	// Node definitions.
-	2 [label=entry];
-	6;
+	2 [entry=true];
 	8;
+	6;
+	19;
+	20;
 	11;
 	13;
 	16;
-	19;
-	20;
 
 	// Edge definitions.
-	2 -> 6 [
-		color=red
-		label=false
-	];
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	6 -> 19;
-	8 -> 11 [
+	2 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	8 -> 11 [
+		color=red
+		cond=false
+	];
+	6 -> 19;
+	19 -> 20;
 	11 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 19;
 	16 -> 19;
-	19 -> 20;
 }

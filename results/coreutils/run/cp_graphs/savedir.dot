@@ -1,26 +1,26 @@
-digraph "savedir" {
+strict digraph "savedir" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	12;
 	5;
 	9;
-	12;
 
 	// Edge definitions.
-	2 -> 5 [
-		color=red
-		label=false
-	];
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 9 [
+	2 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	5 -> 9 [
+		color=red
+		cond=false
 	];
 	9 -> 12;
 }

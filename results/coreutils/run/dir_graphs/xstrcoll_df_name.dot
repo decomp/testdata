@@ -1,32 +1,44 @@
-digraph "xstrcoll_df_name" {
+strict digraph "xstrcoll_df_name" {
 	// Node definitions.
-	2 [label=entry];
-	13;
-	14;
-	17;
-	18;
-	25;
+	2 [entry=true];
+	9;
+	10;
+	11;
+	19;
+	12;
 
 	// Edge definitions.
-	2 -> 13 [
-		color=red
-		label=false
+	2 -> 9 [
+		cond="case (x=3)"
+		label="case (x=3)"
 	];
-	2 -> 14 [
-		color=darkgreen
-		label=true
+	2 -> 10 [
+		cond="default case"
+		label="default case"
 	];
-	13 -> 14 [label="case (x=3)"];
-	13 -> 25 [label="default case"];
-	14 -> 17 [
-		color=red
-		label=false
+	9 -> 11 [
+		cond="case (x=3)"
+		label="case (x=3)"
 	];
-	14 -> 18 [
-		color=darkgreen
-		label=true
+	9 -> 19 [
+		cond="default case"
+		label="default case"
 	];
-	17 -> 18 [label="case (x=3)"];
-	17 -> 25 [label="default case"];
-	18 -> 25;
+	10 -> 11 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	10 -> 12 [
+		cond="default case"
+		label="default case"
+	];
+	11 -> 19 [
+		cond="default case"
+		label="default case"
+	];
+	11 -> 12 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	12 -> 19;
 }

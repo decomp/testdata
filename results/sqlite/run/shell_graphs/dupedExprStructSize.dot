@@ -1,50 +1,59 @@
-digraph "dupedExprStructSize" {
+strict digraph "dupedExprStructSize" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	19;
 	8;
 	14;
-	15;
 	20;
-	26;
-	27;
-	28;
-	29;
+	34;
+	31;
+	25;
+	32;
+	33;
 
 	// Edge definitions.
+	2 -> 19 [
+		color=darkgreen
+		cond=true
+	];
 	2 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
-	2 -> 14 [
+	19 -> 34;
+	8 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 14 [
-		color=darkgreen
-		label=true
-	];
-	8 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 29;
-	15 -> 20 [
-		color=red
-		label=false
-	];
-	15 -> 26 [
+	14 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 26 [
-		color=darkgreen
-		label=true
-	];
-	20 -> 27 [
+	14 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 28;
-	27 -> 28;
-	28 -> 29;
+	20 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	20 -> 25 [
+		color=red
+		cond=false
+	];
+	31 -> 33;
+	25 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 32 [
+		color=red
+		cond=false
+	];
+	32 -> 33;
+	33 -> 34;
 }

@@ -1,40 +1,40 @@
-digraph "vdbeChangeP4Full" {
+strict digraph "vdbeChangeP4Full" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	13;
 	30;
 	33;
 	46;
+	65;
 	49;
 	52;
-	65;
 
 	// Edge definitions.
 	4 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 30;
 	30 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
 	33 -> 65;
 	46 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	46 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 52;
 	52 -> 65;

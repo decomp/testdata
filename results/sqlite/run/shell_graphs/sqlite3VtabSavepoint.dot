@@ -1,93 +1,102 @@
-digraph "sqlite3VtabSavepoint" {
+strict digraph "sqlite3VtabSavepoint" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
+	90;
 	17;
 	20;
 	26;
 	28;
+	89;
 	45;
+	85;
 	50;
 	52;
 	60;
 	64;
 	68;
 	71;
-	77;
 	84;
-	85;
+	77;
 	86;
-	89;
-	90;
 
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 90 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 17;
 	17 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 26;
 	26 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 89 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 85 [
 		color=red
-		label=false
+		cond=false
+	];
+	89 -> 90;
+	45 -> 85 [
+		color=red
+		cond=false
 	];
 	45 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	45 -> 85 [
-		color=red
-		label=false
+	85 -> 86;
+	50 -> 52 [
+		cond="case (x=0)"
+		label="case (x=0)"
 	];
-	50 -> 52 [label="case (x=0)"];
-	50 -> 60 [label="case (x=2)"];
-	50 -> 64 [label="default case"];
+	50 -> 60 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	50 -> 64 [
+		cond="default case"
+		label="default case"
+	];
 	52 -> 68;
 	60 -> 68;
 	64 -> 68;
 	68 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 84 [
 		color=red
-		label=false
-	];
-	71 -> 77 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	71 -> 84 [
 		color=red
-		label=false
+		cond=false
 	];
-	77 -> 84;
+	71 -> 77 [
+		color=darkgreen
+		cond=true
+	];
 	84 -> 85;
-	85 -> 86;
+	77 -> 84;
 	86 -> 17;
-	89 -> 90;
 }

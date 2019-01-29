@@ -1,61 +1,53 @@
-digraph "hash_get_entries" {
+strict digraph "hash_get_entries" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
-	10;
-	19;
-	20;
-	24;
+	38;
 	33;
-	35;
-	40;
-	41;
-	42;
+	18;
+	22;
+	31;
 
 	// Edge definitions.
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 42 [
+	3 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 10;
-	10 -> 19 [
-		color=red
-		label=false
-	];
-	10 -> 35 [
+	9 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 20;
-	20 -> 24 [
-		color=darkgreen
-		label=true
-	];
-	20 -> 40 [
+	9 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 20 [
-		color=red
-		label=false
-	];
-	24 -> 33 [
+	33 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 35;
-	35 -> 10 [
-		color=darkgreen
-		label=true
-	];
-	35 -> 41 [
+	33 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	40 -> 42;
-	41 -> 42;
+	18 -> 38 [
+		color=red
+		cond=false
+	];
+	18 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 18 [
+		color=red
+		cond=false
+	];
+	22 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	31 -> 33;
 }

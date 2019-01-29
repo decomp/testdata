@@ -1,40 +1,40 @@
-digraph "pagerUnlockDb" {
+strict digraph "pagerUnlockDb" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
+	38;
 	18;
 	19;
 	25;
 	32;
 	37;
-	38;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 25;
 	19 -> 25;
 	25 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	32 -> 37;
 	37 -> 38;

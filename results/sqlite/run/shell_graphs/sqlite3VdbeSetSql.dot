@@ -1,29 +1,29 @@
-digraph "sqlite3VdbeSetSql" {
+strict digraph "sqlite3VdbeSetSql" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	11;
 	12;
+	33;
 	20;
 	23;
-	33;
 
 	// Edge definitions.
 	4 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 33;
 	12 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 23;
 	23 -> 33;

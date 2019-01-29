@@ -1,17 +1,17 @@
-digraph "sqlite3_bind_zeroblob" {
+strict digraph "sqlite3_bind_zeroblob" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
 	30;
 
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 30;
 }

@@ -1,17 +1,17 @@
-digraph "store_char" {
+strict digraph "store_char" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	11;
 	7;
-	10;
 
 	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 10 [
-		color=darkgreen
-		label=true
-	];
-	7 -> 10;
+	7 -> 11;
 }

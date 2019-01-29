@@ -1,37 +1,37 @@
-digraph "read_binary_file" {
+strict digraph "read_binary_file" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	17;
 	5;
 	11;
-	13;
 	15;
-	17;
+	13;
 
 	// Edge definitions.
-	2 -> 5 [
-		color=red
-		label=false
-	];
 	2 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 11 [
+	2 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 13 [
+	5 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 15;
+	11 -> 13 [
+		color=red
+		cond=false
+	];
 	15 -> 17;
+	13 -> 15;
 }

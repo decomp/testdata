@@ -1,99 +1,100 @@
-digraph "set_table_name" {
+strict digraph "set_table_name" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
 	19;
 	22;
 	23;
-	31;
-	36;
+	109;
+	30;
+	35;
+	44;
 	45;
 	48;
-	51;
-	59;
-	60;
-	67;
-	86;
+	55;
+	56;
+	63;
 	94;
-	95;
-	98;
-	101;
-	109;
-	114;
+	83;
+	90;
+	91;
+	97;
+	104;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 19;
 	19 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 114;
-	23 -> 31 [
+	22 -> 109;
+	23 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 36 [
+	23 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 36;
-	36 -> 45 [
+	30 -> 35;
+	35 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 48 [
+	35 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 51 [
+	44 -> 45;
+	45 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	48 -> 59 [
+	45 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
-	51 -> 59;
-	59 -> 60;
-	60 -> 67 [
+	48 -> 55;
+	55 -> 56;
+	56 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 98 [
+	56 -> 94 [
 		color=red
-		label=false
+		cond=false
 	];
-	67 -> 86 [
+	63 -> 83 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 94 [
+	63 -> 90 [
 		color=red
-		label=false
+		cond=false
 	];
-	86 -> 94;
-	94 -> 95;
-	95 -> 60;
-	98 -> 101 [
+	94 -> 97 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	98 -> 109 [
+	94 -> 104 [
 		color=red
-		label=false
+		cond=false
 	];
-	101 -> 109;
-	109 -> 114;
+	83 -> 90;
+	90 -> 91;
+	91 -> 56;
+	97 -> 104;
+	104 -> 109;
 }

@@ -1,6 +1,6 @@
-digraph "sqlite3VdbeMemFromBtree" {
+strict digraph "sqlite3VdbeMemFromBtree" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	19;
 	31;
 	37;
@@ -8,11 +8,11 @@ digraph "sqlite3VdbeMemFromBtree" {
 	// Edge definitions.
 	4 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 37;
 	31 -> 37;

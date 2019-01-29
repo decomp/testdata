@@ -1,29 +1,29 @@
-digraph "sqlite3WhereSplit" {
+strict digraph "sqlite3WhereSplit" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	15;
 	16;
+	39;
 	24;
 	28;
-	39;
 
 	// Edge definitions.
 	3 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 39;
 	16 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 39;
 	28 -> 39;

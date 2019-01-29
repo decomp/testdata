@@ -1,6 +1,6 @@
-digraph "cellSizePtrNoPayload" {
+strict digraph "cellSizePtrNoPayload" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
 	19;
 	23;
@@ -11,20 +11,20 @@ digraph "cellSizePtrNoPayload" {
 	2 -> 12;
 	12 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 23;
 	23 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 12;
 }

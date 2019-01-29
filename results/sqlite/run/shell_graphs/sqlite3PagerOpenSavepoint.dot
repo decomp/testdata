@@ -1,28 +1,28 @@
-digraph "sqlite3PagerOpenSavepoint" {
+strict digraph "sqlite3PagerOpenSavepoint" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	11;
-	17;
 	21;
+	17;
 	22;
 
 	// Edge definitions.
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 21 [
 		color=red
-		label=false
-	];
-	11 -> 17 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	11 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 22;
+	11 -> 17 [
+		color=darkgreen
+		cond=true
+	];
 	21 -> 22;
+	17 -> 22;
 }

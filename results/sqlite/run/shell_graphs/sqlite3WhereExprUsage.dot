@@ -1,102 +1,19 @@
-digraph "sqlite3WhereExprUsage" {
+strict digraph "sqlite3WhereExprUsage" {
 	// Node definitions.
-	2 [label=entry];
-	9;
-	10;
-	16;
-	22;
-	28;
-	34;
-	35;
-	41;
-	49;
-	54;
-	62;
-	68;
-	74;
-	77;
-	86;
-	92;
-	101;
-	102;
-	103;
-	105;
+	2 [entry=true];
+	7;
+	11;
+	12;
 
 	// Edge definitions.
-	2 -> 9 [
+	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 10 [
+	2 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 105;
-	10 -> 16 [
-		color=darkgreen
-		label=true
-	];
-	10 -> 22 [
-		color=red
-		label=false
-	];
-	16 -> 105;
-	22 -> 28 [
-		color=darkgreen
-		label=true
-	];
-	22 -> 34 [
-		color=red
-		label=false
-	];
-	28 -> 35;
-	34 -> 35;
-	35 -> 41 [
-		color=darkgreen
-		label=true
-	];
-	35 -> 49 [
-		color=red
-		label=false
-	];
-	41 -> 49;
-	49 -> 54 [
-		color=darkgreen
-		label=true
-	];
-	49 -> 62 [
-		color=red
-		label=false
-	];
-	54 -> 103;
-	62 -> 68 [
-		color=darkgreen
-		label=true
-	];
-	62 -> 86 [
-		color=red
-		label=false
-	];
-	68 -> 74 [
-		color=darkgreen
-		label=true
-	];
-	68 -> 77 [
-		color=red
-		label=false
-	];
-	74 -> 77;
-	77 -> 102;
-	86 -> 92 [
-		color=darkgreen
-		label=true
-	];
-	86 -> 101 [
-		color=red
-		label=false
-	];
-	92 -> 101;
-	101 -> 102;
-	102 -> 103;
-	103 -> 105;
+	7 -> 12;
+	11 -> 12;
 }

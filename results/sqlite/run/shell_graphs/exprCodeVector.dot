@@ -1,47 +1,47 @@
-digraph "exprCodeVector" {
+strict digraph "exprCodeVector" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	14;
 	19;
+	64;
 	26;
 	30;
+	63;
 	40;
 	44;
-	59;
 	62;
-	63;
-	64;
+	59;
 
 	// Edge definitions.
 	3 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 64;
 	19 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	26 -> 63;
 	30 -> 40;
+	63 -> 64;
 	40 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
 	44 -> 59;
-	59 -> 40;
 	62 -> 63;
-	63 -> 64;
+	59 -> 40;
 }

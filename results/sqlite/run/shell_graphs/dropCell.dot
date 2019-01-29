@@ -1,61 +1,52 @@
-digraph "dropCell" {
+strict digraph "dropCell" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	17;
 	18;
-	63;
-	73;
-	76;
-	85;
-	88;
-	98;
-	153;
-	193;
+	172;
+	52;
+	55;
+	64;
+	67;
+	77;
+	132;
 
 	// Edge definitions.
 	4 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 193;
-	18 -> 63 [
-		color=red
-		label=false
-	];
-	18 -> 73 [
+	17 -> 172;
+	18 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	63 -> 73 [
-		color=darkgreen
-		label=true
-	];
-	63 -> 76 [
+	18 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
-	73 -> 193;
-	76 -> 85 [
+	52 -> 172;
+	55 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	76 -> 88 [
+	55 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
-	85 -> 193;
-	88 -> 98 [
+	64 -> 172;
+	67 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	88 -> 153 [
+	67 -> 132 [
 		color=red
-		label=false
+		cond=false
 	];
-	98 -> 193;
-	153 -> 193;
+	77 -> 172;
+	132 -> 172;
 }

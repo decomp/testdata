@@ -1,10 +1,10 @@
-digraph "estimateTableWidth" {
+strict digraph "estimateTableWidth" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	13;
 	16;
-	23;
 	28;
+	23;
 	34;
 	37;
 
@@ -12,21 +12,21 @@ digraph "estimateTableWidth" {
 	1 -> 13;
 	13 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 23;
-	23 -> 13;
 	28 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
+	23 -> 13;
 	34 -> 37;
 }

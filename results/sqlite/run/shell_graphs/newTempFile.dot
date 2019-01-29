@@ -1,0 +1,40 @@
+strict digraph "newTempFile" {
+	// Node definitions.
+	2 [entry=true];
+	16;
+	24;
+	29;
+	36;
+	44;
+	49;
+	52;
+
+	// Edge definitions.
+	2 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 24 [
+		color=red
+		cond=false
+	];
+	16 -> 24;
+	24 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 36 [
+		color=red
+		cond=false
+	];
+	29 -> 44;
+	36 -> 44;
+	44 -> 49 [
+		color=darkgreen
+		cond=true
+	];
+	44 -> 52 [
+		color=red
+		cond=false
+	];
+}

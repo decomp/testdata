@@ -1,0 +1,17 @@
+strict digraph "windowReturnRows" {
+	// Node definitions.
+	7 [entry=true];
+	35;
+	43;
+
+	// Edge definitions.
+	7 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	7 -> 43 [
+		color=red
+		cond=false
+	];
+	35 -> 43;
+}

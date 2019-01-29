@@ -1,52 +1,52 @@
-digraph "vdbeCompareMemString" {
+strict digraph "vdbeCompareMemString" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	24;
 	44;
-	63;
+	88;
 	66;
+	63;
+	72;
 	69;
 	71;
-	72;
 	86;
-	88;
 
 	// Edge definitions.
 	4 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 88;
-	44 -> 63 [
-		color=red
-		label=false
-	];
 	44 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	63 -> 66 [
-		color=darkgreen
-		label=true
-	];
-	63 -> 72 [
+	44 -> 63 [
 		color=red
-		label=false
+		cond=false
 	];
 	66 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	66 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
+	63 -> 66 [
+		color=darkgreen
+		cond=true
+	];
+	63 -> 72 [
+		color=red
+		cond=false
+	];
+	72 -> 86;
 	69 -> 71;
 	71 -> 86;
-	72 -> 86;
 	86 -> 88;
 }

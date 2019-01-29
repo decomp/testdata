@@ -1,6 +1,6 @@
-digraph "findRightmost" {
+strict digraph "findRightmost" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	3;
 	8;
 	12;
@@ -9,11 +9,11 @@ digraph "findRightmost" {
 	1 -> 3;
 	3 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 3;
 }

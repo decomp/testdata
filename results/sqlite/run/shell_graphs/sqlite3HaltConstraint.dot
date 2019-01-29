@@ -1,17 +1,17 @@
-digraph "sqlite3HaltConstraint" {
+strict digraph "sqlite3HaltConstraint" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	18;
 	20;
 
 	// Edge definitions.
 	6 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 20;
 }

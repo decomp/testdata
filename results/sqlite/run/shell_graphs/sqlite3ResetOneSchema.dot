@@ -1,17 +1,54 @@
-digraph "sqlite3ResetOneSchema" {
+strict digraph "sqlite3ResetOneSchema" {
 	// Node definitions.
-	2 [label=entry];
-	18;
-	27;
+	2 [entry=true];
+	8;
+	37;
+	42;
+	78;
+	43;
+	49;
+	77;
+	63;
+	73;
+	74;
 
 	// Edge definitions.
-	2 -> 18 [
+	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 27 [
+	2 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 27;
+	8 -> 37;
+	37 -> 42 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 78 [
+		color=red
+		cond=false
+	];
+	42 -> 43;
+	43 -> 49 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 77 [
+		color=red
+		cond=false
+	];
+	49 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 73 [
+		color=red
+		cond=false
+	];
+	77 -> 78;
+	63 -> 73;
+	73 -> 74;
+	74 -> 43;
 }

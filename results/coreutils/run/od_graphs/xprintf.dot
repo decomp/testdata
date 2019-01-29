@@ -1,26 +1,26 @@
-digraph "xprintf" {
+strict digraph "xprintf" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
-	12;
 	17;
+	12;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 17 [
 		color=red
-		label=false
-	];
-	8 -> 12 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	8 -> 17 [
 		color=red
-		label=false
+		cond=false
+	];
+	8 -> 12 [
+		color=darkgreen
+		cond=true
 	];
 	12 -> 17;
 }

@@ -1,20 +1,20 @@
-digraph "vdbeSorterRecordFree" {
+strict digraph "vdbeSorterRecordFree" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
 	11;
-	19;
 	21;
+	19;
 
 	// Edge definitions.
 	2 -> 8;
 	8 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 19;
 	19 -> 8;

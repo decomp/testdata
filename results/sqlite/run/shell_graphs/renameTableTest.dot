@@ -1,0 +1,147 @@
+strict digraph "renameTableTest" {
+	// Node definitions.
+	3 [entry=true];
+	44;
+	132;
+	47;
+	55;
+	120;
+	58;
+	82;
+	62;
+	68;
+	78;
+	81;
+	119;
+	86;
+	118;
+	89;
+	98;
+	92;
+	93;
+	95;
+	101;
+	117;
+	114;
+	116;
+	123;
+	131;
+
+	// Edge definitions.
+	3 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 132 [
+		color=red
+		cond=false
+	];
+	44 -> 132 [
+		color=red
+		cond=false
+	];
+	44 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 55 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 120 [
+		color=red
+		cond=false
+	];
+	55 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 82 [
+		color=red
+		cond=false
+	];
+	120 -> 123 [
+		color=darkgreen
+		cond=true
+	];
+	120 -> 131 [
+		color=red
+		cond=false
+	];
+	58 -> 82 [
+		color=red
+		cond=false
+	];
+	58 -> 62 [
+		color=darkgreen
+		cond=true
+	];
+	82 -> 86 [
+		color=darkgreen
+		cond=true
+	];
+	82 -> 118 [
+		color=red
+		cond=false
+	];
+	62 -> 82 [
+		color=red
+		cond=false
+	];
+	62 -> 68 [
+		color=darkgreen
+		cond=true
+	];
+	68 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	68 -> 81 [
+		color=red
+		cond=false
+	];
+	78 -> 81;
+	81 -> 119;
+	119 -> 120;
+	86 -> 89 [
+		color=darkgreen
+		cond=true
+	];
+	86 -> 98 [
+		color=red
+		cond=false
+	];
+	118 -> 119;
+	89 -> 92 [
+		color=darkgreen
+		cond=true
+	];
+	89 -> 93 [
+		color=red
+		cond=false
+	];
+	98 -> 101 [
+		color=darkgreen
+		cond=true
+	];
+	98 -> 117 [
+		color=red
+		cond=false
+	];
+	92 -> 95;
+	93 -> 95;
+	95 -> 98;
+	101 -> 114 [
+		color=darkgreen
+		cond=true
+	];
+	101 -> 116 [
+		color=red
+		cond=false
+	];
+	117 -> 118;
+	114 -> 116;
+	116 -> 117;
+	123 -> 131;
+	131 -> 132;
+}

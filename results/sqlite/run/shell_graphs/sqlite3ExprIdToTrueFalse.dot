@@ -1,0 +1,28 @@
+strict digraph "sqlite3ExprIdToTrueFalse" {
+	// Node definitions.
+	1 [entry=true];
+	17;
+	10;
+	20;
+	21;
+
+	// Edge definitions.
+	1 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 10 [
+		color=red
+		cond=false
+	];
+	17 -> 21;
+	10 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	10 -> 20 [
+		color=red
+		cond=false
+	];
+	20 -> 21;
+}

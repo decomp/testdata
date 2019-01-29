@@ -1,26 +1,26 @@
-digraph "freadptr" {
+strict digraph "freadptr" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	19;
 	8;
 	17;
-	19;
 
 	// Edge definitions.
-	2 -> 8 [
-		color=red
-		label=false
-	];
 	2 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 17 [
+	2 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	8 -> 17 [
+		color=red
+		cond=false
 	];
 	17 -> 19;
 }

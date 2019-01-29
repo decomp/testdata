@@ -1,6 +1,6 @@
-digraph "sqlite3_shathree_init" {
+strict digraph "sqlite3_shathree_init" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	14;
 	17;
 	20;
@@ -11,29 +11,29 @@ digraph "sqlite3_shathree_init" {
 	// Edge definitions.
 	3 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 17;
 	17 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 23;
 	23 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	26 -> 29;
 }

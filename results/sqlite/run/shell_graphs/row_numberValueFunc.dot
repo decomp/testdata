@@ -1,0 +1,19 @@
+strict digraph "row_numberValueFunc" {
+	// Node definitions.
+	1 [entry=true];
+	10;
+	13;
+	14;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 13 [
+		color=red
+		cond=false
+	];
+	10 -> 14;
+	13 -> 14;
+}

@@ -1,16 +1,16 @@
-digraph "quotearg_custom" {
+strict digraph "quotearg_custom" {
 	// Node definitions.
-	3 [label=entry];
-	10;
+	3 [entry=true];
 	11;
+	10;
 
 	// Edge definitions.
-	3 -> 10 [
-		color=red
-		label=false
-	];
 	3 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	3 -> 10 [
+		color=red
+		cond=false
 	];
 }

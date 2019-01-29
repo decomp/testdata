@@ -1,0 +1,106 @@
+strict digraph "fsdirFilter" {
+	// Node definitions.
+	5 [entry=true];
+	20;
+	22;
+	99;
+	26;
+	33;
+	32;
+	29;
+	34;
+	41;
+	43;
+	46;
+	53;
+	58;
+	74;
+	79;
+	84;
+	85;
+	93;
+	98;
+
+	// Edge definitions.
+	5 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	5 -> 22 [
+		color=red
+		cond=false
+	];
+	20 -> 99;
+	22 -> 26 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 33 [
+		color=red
+		cond=false
+	];
+	26 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 29 [
+		color=red
+		cond=false
+	];
+	32 -> 34;
+	29 -> 33 [
+		color=red
+		cond=false
+	];
+	29 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 43 [
+		color=red
+		cond=false
+	];
+	41 -> 99;
+	43 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 53 [
+		color=red
+		cond=false
+	];
+	46 -> 53;
+	53 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 74 [
+		color=red
+		cond=false
+	];
+	58 -> 79;
+	74 -> 79;
+	79 -> 84 [
+		color=darkgreen
+		cond=true
+	];
+	79 -> 85 [
+		color=red
+		cond=false
+	];
+	84 -> 99;
+	85 -> 93 [
+		color=darkgreen
+		cond=true
+	];
+	85 -> 98 [
+		color=red
+		cond=false
+	];
+	93 -> 99;
+	98 -> 99;
+}

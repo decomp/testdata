@@ -1,0 +1,42 @@
+strict digraph "idxSampleFunc" {
+	// Node definitions.
+	3 [entry=true];
+	16;
+	17;
+	18;
+	23;
+	24;
+	50;
+	39;
+	49;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 17 [
+		color=red
+		cond=false
+	];
+	16 -> 18;
+	18 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 24 [
+		color=red
+		cond=false
+	];
+	23 -> 50;
+	24 -> 39 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 49 [
+		color=red
+		cond=false
+	];
+	39 -> 49;
+	49 -> 50;
+}

@@ -1,60 +1,65 @@
-digraph "print_filename" {
+strict digraph "print_filename" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	3;
 	6;
-	7;
-	10;
-	14;
-	17;
-	20;
-	27;
-	30;
-	32;
-	36;
-	37;
+	35;
+	9;
+	13;
+	16;
+	19;
+	31;
+	29;
+	26;
 
 	// Edge definitions.
 	2 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 7 [
+	2 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
-	3 -> 6 [
-		color=red
-		label=false
-	];
-	3 -> 37 [
+	3 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	6 -> 10;
-	7 -> 37;
-	10 -> 14 [label="case (x=10)"];
-	10 -> 17 [label="case (x=92)"];
-	10 -> 20 [label="default case"];
-	14 -> 32;
-	17 -> 32;
-	20 -> 27 [
+	3 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 30 [
+	6 -> 35;
+	9 -> 13 [
+		cond="case (x=10)"
+		label="case (x=10)"
+	];
+	9 -> 16 [
+		cond="case (x=92)"
+		label="case (x=92)"
+	];
+	9 -> 19 [
+		cond="default case"
+		label="default case"
+	];
+	13 -> 31;
+	16 -> 31;
+	19 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 32;
-	30 -> 32;
-	32 -> 10 [
+	19 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 36 [
+	31 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 37;
+	31 -> 9 [
+		color=red
+		cond=false
+	];
+	29 -> 31;
+	26 -> 31;
 }

@@ -1,0 +1,26 @@
+strict digraph "cume_distValueFunc" {
+	// Node definitions.
+	1 [entry=true];
+	10;
+	27;
+	15;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 27 [
+		color=red
+		cond=false
+	];
+	10 -> 27 [
+		color=red
+		cond=false
+	];
+	10 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 27;
+}

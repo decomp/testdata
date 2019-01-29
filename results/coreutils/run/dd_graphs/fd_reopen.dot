@@ -1,17 +1,17 @@
-digraph "fd_reopen" {
+strict digraph "fd_reopen" {
 	// Node definitions.
-	4 [label=entry];
-	9;
+	4 [entry=true];
 	14;
+	9;
 
 	// Edge definitions.
-	4 -> 9 [
-		color=red
-		label=false
-	];
 	4 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	4 -> 9 [
+		color=red
+		cond=false
 	];
 	9 -> 14;
 }

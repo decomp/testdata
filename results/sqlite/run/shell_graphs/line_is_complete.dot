@@ -1,6 +1,6 @@
-digraph "line_is_complete" {
+strict digraph "line_is_complete" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	10;
 	27;
@@ -8,11 +8,11 @@ digraph "line_is_complete" {
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 27;
 	10 -> 27;

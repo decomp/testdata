@@ -1,6 +1,6 @@
-digraph "init_node" {
+strict digraph "init_node" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	8;
 	43;
 	49;
@@ -9,11 +9,11 @@ digraph "init_node" {
 	6 -> 8;
 	8 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
 	43 -> 8;
 }

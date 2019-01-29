@@ -1,54 +1,54 @@
-digraph "checkColumnOverlap" {
+strict digraph "checkColumnOverlap" {
 	// Node definitions.
-	2 [label=entry];
-	9;
+	2 [entry=true];
 	12;
+	9;
 	13;
+	37;
 	14;
 	20;
+	36;
 	31;
 	32;
 	33;
-	36;
-	37;
 
 	// Edge definitions.
-	2 -> 9 [
-		color=red
-		label=false
-	];
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	2 -> 9 [
+		color=red
+		cond=false
+	];
+	12 -> 37;
 	9 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	12 -> 37;
 	13 -> 14;
 	14 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
+	36 -> 37;
 	31 -> 37;
 	32 -> 33;
 	33 -> 14;
-	36 -> 37;
 }

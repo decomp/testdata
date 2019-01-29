@@ -1,0 +1,32 @@
+strict digraph "sqlite3_str_new" {
+	// Node definitions.
+	1 [entry=true];
+	8;
+	20;
+	12;
+	17;
+	18;
+	21;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 20 [
+		color=red
+		cond=false
+	];
+	8 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 17 [
+		color=red
+		cond=false
+	];
+	20 -> 21;
+	12 -> 18;
+	17 -> 18;
+	18 -> 21;
+}

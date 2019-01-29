@@ -1,48 +1,67 @@
-digraph "x2realloc" {
+strict digraph "x2realloc" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	5;
-	8;
-	10;
+	12;
+	9;
+	7;
 	11;
-	16;
-	17;
-	23;
-	24;
+	21;
+	15;
+	14;
+	20;
+	28;
+	27;
 
 	// Edge definitions.
 	2 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 8 [
+	2 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	5 -> 17;
-	8 -> 10 [
-		color=red
-		label=false
-	];
-	8 -> 11 [
+	5 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 16 [
-		color=darkgreen
-		label=true
-	];
-	11 -> 17 [
+	5 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 24;
-	17 -> 23 [
+	12 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 24 [
+	12 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
+	9 -> 21;
+	7 -> 9 [
+		color=red
+		cond=false
+	];
+	7 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 28 [
+		color=red
+		cond=false
+	];
+	21 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 21 [
+		color=red
+		cond=false
+	];
+	15 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	20 -> 28;
 }

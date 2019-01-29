@@ -1,112 +1,112 @@
-digraph "set_permissions" {
+strict digraph "set_permissions" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
-	11;
-	13;
-	15;
 	18;
+	13;
+	11;
+	15;
+	58;
 	22;
 	24;
 	27;
-	33;
 	35;
+	33;
 	40;
-	42;
 	45;
-	49;
+	42;
 	51;
+	49;
 	53;
 	56;
-	58;
 
 	// Edge definitions.
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 18 [
 		color=red
-		label=false
-	];
-	9 -> 11 [
-		color=red
-		label=false
+		cond=false
 	];
 	9 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 15;
-	13 -> 15;
-	15 -> 18 [
-		color=darkgreen
-		label=true
-	];
-	15 -> 58 [
+	9 -> 11 [
 		color=red
-		label=false
-	];
-	18 -> 22 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	18 -> 58 [
 		color=red
-		label=false
+		cond=false
+	];
+	18 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 15;
+	11 -> 15;
+	15 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 58 [
+		color=red
+		cond=false
 	];
 	22 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 35;
-	27 -> 33 [
-		color=red
-		label=false
-	];
 	27 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 35;
-	35 -> 40 [
+	27 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	35 -> 40 [
+		color=red
+		cond=false
+	];
+	33 -> 35;
+	40 -> 45 [
+		color=darkgreen
+		cond=true
 	];
 	40 -> 42 [
 		color=red
-		label=false
-	];
-	40 -> 45 [
-		color=darkgreen
-		label=true
-	];
-	42 -> 45;
-	45 -> 49 [
-		color=red
-		label=false
+		cond=false
 	];
 	45 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 53;
-	51 -> 53;
-	53 -> 56 [
+	45 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
+	42 -> 45;
+	51 -> 53;
+	49 -> 53;
 	53 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	53 -> 56 [
+		color=red
+		cond=false
 	];
 	56 -> 58;
 }

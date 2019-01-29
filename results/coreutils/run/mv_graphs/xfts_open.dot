@@ -1,26 +1,26 @@
-digraph "xfts_open" {
+strict digraph "xfts_open" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	7;
+	13;
 	11;
 	12;
-	13;
 
 	// Edge definitions.
 	3 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 }

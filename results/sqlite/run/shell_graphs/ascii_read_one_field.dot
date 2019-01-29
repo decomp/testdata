@@ -1,82 +1,82 @@
-digraph "ascii_read_one_field" {
+strict digraph "ascii_read_one_field" {
 	// Node definitions.
-	1 [label=entry];
-	21;
+	1 [entry=true];
 	24;
+	21;
 	27;
+	78;
 	28;
 	31;
-	35;
 	39;
+	35;
 	41;
 	48;
 	52;
 	57;
 	65;
 	74;
-	78;
 
 	// Edge definitions.
-	1 -> 21 [
-		color=red
-		label=false
-	];
 	1 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	1 -> 21 [
+		color=red
+		cond=false
+	];
+	24 -> 78;
 	21 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 78;
 	27 -> 28;
 	28 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 39 [
 		color=red
-		label=false
-	];
-	31 -> 35 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	31 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	35 -> 39;
+	31 -> 35 [
+		color=darkgreen
+		cond=true
+	];
 	39 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	39 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
+	35 -> 39;
 	41 -> 28;
 	48 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	48 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
 	52 -> 57;
 	57 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	57 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
 	65 -> 74;
 	74 -> 78;

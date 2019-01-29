@@ -1,29 +1,29 @@
-digraph "sqlite3ExprListSetSortOrder" {
+strict digraph "sqlite3ExprListSetSortOrder" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
 	8;
+	24;
 	11;
 	12;
-	24;
 
 	// Edge definitions.
 	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 24;
 	8 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 24;
 	12 -> 24;

@@ -1,86 +1,110 @@
-digraph "invalidate_cache" {
+strict digraph "invalidate_cache" {
 	// Node definitions.
-	2 [label=entry];
-	7;
-	15;
-	23;
-	25;
-	28;
-	33;
-	35;
-	40;
-	42;
-	47;
-	53;
-	56;
+	2 [entry=true];
+	12;
+	14;
+	21;
+	69;
+	29;
+	31;
+	38;
+	36;
+	34;
+	49;
+	41;
+	43;
+	45;
+	46;
+	52;
+	61;
+	65;
 
 	// Edge definitions.
-	2 -> 7 [
-		color=red
-		label=false
-	];
-	2 -> 15 [
+	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 15 [
+	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
-	7 -> 56 [
-		color=darkgreen
-		label=true
-	];
-	15 -> 23 [
+	12 -> 21;
+	14 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 56 [
+	14 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 25 [
-		color=darkgreen
-		label=true
-	];
-	23 -> 35 [
+	21 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 28 [
-		color=red
-		label=false
-	];
-	25 -> 33 [
+	21 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 53;
-	33 -> 53;
-	35 -> 40 [
+	29 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 53 [
+	29 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	40 -> 42 [
+	31 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 47 [
+	31 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 47 [
+	38 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	42 -> 53 [
+	38 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	47 -> 53;
-	53 -> 56;
+	36 -> 69;
+	34 -> 49;
+	49 -> 69 [
+		color=red
+		cond=false
+	];
+	49 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	41 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	41 -> 45 [
+		color=red
+		cond=false
+	];
+	43 -> 49;
+	45 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	45 -> 52 [
+		color=red
+		cond=false
+	];
+	46 -> 49;
+	52 -> 61 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 65 [
+		color=red
+		cond=false
+	];
+	61 -> 65;
+	65 -> 69;
 }

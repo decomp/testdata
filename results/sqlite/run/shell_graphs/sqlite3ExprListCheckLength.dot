@@ -1,26 +1,26 @@
-digraph "sqlite3ExprListCheckLength" {
+strict digraph "sqlite3ExprListCheckLength" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
-	22;
 	25;
+	22;
 
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 25 [
 		color=red
-		label=false
-	];
-	16 -> 22 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	16 -> 25 [
 		color=red
-		label=false
+		cond=false
+	];
+	16 -> 22 [
+		color=darkgreen
+		cond=true
 	];
 	22 -> 25;
 }

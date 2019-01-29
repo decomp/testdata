@@ -1,61 +1,59 @@
-digraph "resolveAlias" {
+strict digraph "resolveAlias" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	31;
-	32;
-	38;
-	41;
-	47;
-	55;
-	75;
-	81;
-	95;
-	99;
+	98;
+	37;
+	40;
+	46;
+	54;
+	94;
+	74;
+	80;
 
 	// Edge definitions.
 	6 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	6 -> 32 [
+	6 -> 98 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 99;
-	32 -> 38 [
+	31 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	32 -> 41 [
+	31 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
-	38 -> 41;
-	41 -> 47 [
+	37 -> 40;
+	40 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 55 [
+	40 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
-	47 -> 55;
-	55 -> 75 [
-		color=red
-		label=false
-	];
-	55 -> 95 [
+	46 -> 54;
+	54 -> 94 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	75 -> 81 [
-		color=darkgreen
-		label=true
-	];
-	75 -> 95 [
+	54 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
-	81 -> 95;
-	95 -> 99;
+	94 -> 98;
+	74 -> 94 [
+		color=red
+		cond=false
+	];
+	74 -> 80 [
+		color=darkgreen
+		cond=true
+	];
+	80 -> 94;
 }

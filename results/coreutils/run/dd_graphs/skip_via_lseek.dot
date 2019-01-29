@@ -1,64 +1,64 @@
-digraph "skip_via_lseek" {
+strict digraph "skip_via_lseek" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	14;
+	44;
 	17;
 	23;
 	29;
 	35;
-	38;
 	42;
-	44;
+	38;
 
 	// Edge definitions.
 	4 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 44 [
 		color=red
-		label=false
-	];
-	14 -> 17 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	14 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 23 [
+	14 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 29 [
+	17 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 35 [
+	23 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	35 -> 38 [
-		color=red
-		label=false
+	29 -> 35 [
+		color=darkgreen
+		cond=true
 	];
 	35 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	38 -> 42;
+	35 -> 38 [
+		color=red
+		cond=false
+	];
 	42 -> 44;
+	38 -> 42;
 }

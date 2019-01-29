@@ -1,32 +1,32 @@
-digraph "vdbeMergeEngineFree" {
+strict digraph "vdbeMergeEngineFree" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
+	24;
 	7;
 	13;
-	20;
 	23;
-	24;
+	20;
 
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 7;
 	7 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 20;
-	20 -> 7;
 	23 -> 24;
+	20 -> 7;
 }

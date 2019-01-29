@@ -1,6 +1,6 @@
-digraph "pager_cksum" {
+strict digraph "pager_cksum" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	17;
 	28;
@@ -9,11 +9,11 @@ digraph "pager_cksum" {
 	2 -> 14;
 	14 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 14;
 }

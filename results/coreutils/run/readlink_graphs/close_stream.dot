@@ -1,37 +1,37 @@
-digraph "close_stream" {
+strict digraph "close_stream" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
-	14;
 	19;
-	20;
 	22;
+	14;
+	20;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 19 [
 		color=red
-		label=false
-	];
-	9 -> 14 [
-		color=red
-		label=false
+		cond=false
 	];
 	9 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	14 -> 22;
-	19 -> 20 [
+	9 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	19 -> 20 [
+		color=red
+		cond=false
+	];
+	14 -> 22;
 	20 -> 22;
 }

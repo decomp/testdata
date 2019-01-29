@@ -1,87 +1,125 @@
-digraph "autoIncBegin" {
+strict digraph "autoIncBegin" {
 	// Node definitions.
-	3 [label=entry];
-	16;
-	24;
-	29;
-	33;
-	35;
-	40;
-	43;
-	49;
-	51;
-	55;
+	3 [entry=true];
+	17;
+	140;
+	25;
+	30;
+	34;
+	36;
+	69;
+	52;
 	58;
-	66;
-	67;
-	96;
-	100;
-	102;
+	63;
+	76;
+	142;
+	80;
+	83;
+	89;
+	91;
+	95;
+	98;
+	136;
+	106;
+	107;
 
 	// Edge definitions.
-	3 -> 16 [
+	3 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 100 [
+	3 -> 140 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 24 [
+	17 -> 140 [
+		color=red
+		cond=false
+	];
+	17 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 100 [
-		color=red
-		label=false
-	];
-	24 -> 29 [
+	140 -> 142;
+	25 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 33 [
+	25 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 35;
-	33 -> 35;
-	35 -> 40;
-	40 -> 43 [
+	30 -> 36;
+	34 -> 36;
+	36 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 49 [
+	36 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
-	43 -> 49;
-	49 -> 51 [
+	69 -> 142;
+	52 -> 69 [
+		color=red
+		cond=false
+	];
+	52 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 55 [
-		color=red
-		label=false
-	];
-	51 -> 40;
-	55 -> 58 [
+	58 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	55 -> 96 [
+	58 -> 63 [
 		color=red
-		label=false
+		cond=false
 	];
-	58 -> 66 [
+	63 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	58 -> 67 [
+	63 -> 76 [
 		color=red
-		label=false
+		cond=false
 	];
-	66 -> 102;
-	67 -> 96;
-	96 -> 100;
-	100 -> 102;
+	76 -> 80;
+	80 -> 83 [
+		color=darkgreen
+		cond=true
+	];
+	80 -> 89 [
+		color=red
+		cond=false
+	];
+	83 -> 89;
+	89 -> 91 [
+		color=darkgreen
+		cond=true
+	];
+	89 -> 95 [
+		color=red
+		cond=false
+	];
+	91 -> 80;
+	95 -> 98 [
+		color=darkgreen
+		cond=true
+	];
+	95 -> 136 [
+		color=red
+		cond=false
+	];
+	98 -> 106 [
+		color=darkgreen
+		cond=true
+	];
+	98 -> 107 [
+		color=red
+		cond=false
+	];
+	136 -> 140;
+	106 -> 142;
+	107 -> 136;
 }

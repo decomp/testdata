@@ -1,0 +1,200 @@
+strict digraph "windowAggStep" {
+	// Node definitions.
+	6 [entry=true];
+	26;
+	29;
+	278;
+	39;
+	80;
+	40;
+	44;
+	59;
+	56;
+	64;
+	79;
+	67;
+	69;
+	76;
+	86;
+	94;
+	156;
+	100;
+	106;
+	137;
+	153;
+	273;
+	161;
+	170;
+	272;
+	184;
+	177;
+	185;
+	271;
+	190;
+	219;
+	193;
+	205;
+	209;
+	215;
+	218;
+	227;
+	244;
+	267;
+	270;
+	274;
+
+	// Edge definitions.
+	6 -> 26;
+	26 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 278 [
+		color=red
+		cond=false
+	];
+	29 -> 39 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 80 [
+		color=red
+		cond=false
+	];
+	39 -> 40;
+	80 -> 86;
+	40 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 59 [
+		color=red
+		cond=false
+	];
+	44 -> 56;
+	59 -> 64 [
+		color=darkgreen
+		cond=true
+	];
+	59 -> 79 [
+		color=red
+		cond=false
+	];
+	56 -> 40;
+	64 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	64 -> 69 [
+		color=red
+		cond=false
+	];
+	79 -> 86;
+	67 -> 76;
+	69 -> 76;
+	76 -> 79;
+	86 -> 94 [
+		color=darkgreen
+		cond=true
+	];
+	86 -> 156 [
+		color=red
+		cond=false
+	];
+	94 -> 156 [
+		color=red
+		cond=false
+	];
+	94 -> 100 [
+		color=darkgreen
+		cond=true
+	];
+	156 -> 161 [
+		color=darkgreen
+		cond=true
+	];
+	156 -> 170 [
+		color=red
+		cond=false
+	];
+	100 -> 106 [
+		color=darkgreen
+		cond=true
+	];
+	100 -> 137 [
+		color=red
+		cond=false
+	];
+	106 -> 153;
+	137 -> 153;
+	153 -> 273;
+	273 -> 274;
+	161 -> 272;
+	170 -> 184 [
+		color=darkgreen
+		cond=true
+	];
+	170 -> 177 [
+		color=red
+		cond=false
+	];
+	272 -> 273;
+	184 -> 271;
+	177 -> 184 [
+		color=darkgreen
+		cond=true
+	];
+	177 -> 185 [
+		color=red
+		cond=false
+	];
+	185 -> 190 [
+		color=darkgreen
+		cond=true
+	];
+	185 -> 219 [
+		color=red
+		cond=false
+	];
+	271 -> 272;
+	190 -> 193 [
+		color=darkgreen
+		cond=true
+	];
+	190 -> 205 [
+		color=red
+		cond=false
+	];
+	219 -> 227 [
+		color=darkgreen
+		cond=true
+	];
+	219 -> 244 [
+		color=red
+		cond=false
+	];
+	193 -> 209;
+	205 -> 209;
+	209 -> 215 [
+		color=darkgreen
+		cond=true
+	];
+	209 -> 218 [
+		color=red
+		cond=false
+	];
+	215 -> 218;
+	218 -> 219;
+	227 -> 244;
+	244 -> 267 [
+		color=darkgreen
+		cond=true
+	];
+	244 -> 270 [
+		color=red
+		cond=false
+	];
+	267 -> 270;
+	270 -> 271;
+	274 -> 26;
+}

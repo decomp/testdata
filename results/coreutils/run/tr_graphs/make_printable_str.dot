@@ -1,12 +1,13 @@
-digraph "make_printable_str" {
+strict digraph "make_printable_str" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	6;
 	7;
-	11;
 	14;
+	11;
 	15;
-	16;
+	39;
+	21;
 	22;
 	23;
 	24;
@@ -14,62 +15,86 @@ digraph "make_printable_str" {
 	26;
 	27;
 	28;
-	29;
 	37;
-	38;
-	40;
+	36;
 
 	// Edge definitions.
 	2 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 7 [
 		color=red
-		label=false
+		cond=false
+	];
+	7 -> 14 [
+		color=darkgreen
+		cond=true
 	];
 	7 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	7 -> 15 [
+	11 -> 15;
+	15 -> 39 [
+		cond="case (x=92)"
+		label="case (x=92)"
+	];
+	15 -> 21 [
+		cond="case (x=7)"
+		label="case (x=7)"
+	];
+	15 -> 22 [
+		cond="case (x=8)"
+		label="case (x=8)"
+	];
+	15 -> 23 [
+		cond="case (x=12)"
+		label="case (x=12)"
+	];
+	15 -> 24 [
+		cond="case (x=10)"
+		label="case (x=10)"
+	];
+	15 -> 25 [
+		cond="case (x=13)"
+		label="case (x=13)"
+	];
+	15 -> 26 [
+		cond="case (x=9)"
+		label="case (x=9)"
+	];
+	15 -> 27 [
+		cond="case (x=11)"
+		label="case (x=11)"
+	];
+	15 -> 28 [
+		cond="default case"
+		label="default case"
+	];
+	39 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 16;
-	14 -> 15;
-	16 -> 22 [label="case (x=7)"];
-	16 -> 23 [label="case (x=8)"];
-	16 -> 24 [label="case (x=12)"];
-	16 -> 25 [label="case (x=10)"];
-	16 -> 26 [label="case (x=13)"];
-	16 -> 27 [label="case (x=9)"];
-	16 -> 28 [label="case (x=11)"];
-	16 -> 29 [label="default case"];
-	16 -> 40 [label="case (x=92)"];
-	22 -> 40;
-	23 -> 40;
-	24 -> 40;
-	25 -> 40;
-	26 -> 40;
-	27 -> 40;
-	28 -> 40;
-	29 -> 37 [
+	39 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 38 [
+	21 -> 39;
+	22 -> 39;
+	23 -> 39;
+	24 -> 39;
+	25 -> 39;
+	26 -> 39;
+	27 -> 39;
+	28 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 40;
-	38 -> 40;
-	40 -> 14 [
-		color=darkgreen
-		label=true
-	];
-	40 -> 16 [
+	28 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
+	37 -> 39;
+	36 -> 39;
 }

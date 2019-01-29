@@ -1,29 +1,29 @@
-digraph "explainIndexColumnName" {
+strict digraph "explainIndexColumnName" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	16;
 	17;
+	32;
 	20;
 	21;
-	32;
 
 	// Edge definitions.
 	2 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 32;
 	17 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 32;
 	21 -> 32;

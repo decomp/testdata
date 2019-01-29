@@ -1,17 +1,17 @@
-digraph "argv_iter_init_argv" {
+strict digraph "argv_iter_init_argv" {
 	// Node definitions.
-	1 [label=entry];
-	4;
+	1 [entry=true];
 	11;
+	4;
 
 	// Edge definitions.
-	1 -> 4 [
-		color=red
-		label=false
-	];
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	1 -> 4 [
+		color=red
+		cond=false
 	];
 	4 -> 11;
 }

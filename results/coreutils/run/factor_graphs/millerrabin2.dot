@@ -1,82 +1,78 @@
-digraph "millerrabin2" {
+strict digraph "millerrabin2" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
+	55;
 	17;
 	27;
 	29;
 	35;
-	36;
-	42;
-	45;
-	48;
-	56;
-	58;
+	41;
+	44;
+	47;
 
 	// Edge definitions.
+	6 -> 55 [
+		color=darkgreen
+		cond=true
+	];
 	6 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	6 -> 58 [
+	17 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 58 [
-		color=darkgreen
-		label=true
+	27 -> 55 [
+		color=red
+		cond=false
 	];
 	27 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 58 [
-		color=red
-		label=false
+	29 -> 55 [
+		color=darkgreen
+		cond=true
 	];
 	29 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 58 [
+	35 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 36;
-	36 -> 42 [
-		color=darkgreen
-		label=true
-	];
-	36 -> 45 [
+	35 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 45 [
-		color=red
-		label=false
-	];
-	42 -> 56 [
+	41 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	45 -> 48 [
-		color=darkgreen
-		label=true
-	];
-	45 -> 56 [
+	41 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 36 [
+	44 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 56 [
+	44 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	56 -> 58;
+	47 -> 55 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 35 [
+		color=red
+		cond=false
+	];
 }

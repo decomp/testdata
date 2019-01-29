@@ -1,33 +1,33 @@
-digraph "SHA3Final" {
+strict digraph "SHA3Final" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	15;
 	17;
 	26;
 	27;
 	33;
-	55;
 	58;
+	55;
 
 	// Edge definitions.
 	1 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 26;
 	17 -> 26;
 	26 -> 27;
 	27 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
 	33 -> 55;
 	55 -> 27;

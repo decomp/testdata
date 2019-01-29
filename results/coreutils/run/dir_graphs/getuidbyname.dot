@@ -1,103 +1,97 @@
-digraph "getuidbyname" {
+strict digraph "getuidbyname" {
 	// Node definitions.
-	1 [label=entry];
-	4;
+	1 [entry=true];
 	6;
-	7;
-	10;
-	12;
-	17;
-	20;
-	22;
-	26;
-	31;
-	34;
-	38;
-	39;
-	49;
-	56;
-	60;
-	61;
+	4;
+	11;
+	37;
+	9;
+	25;
+	16;
+	21;
+	19;
+	58;
+	30;
+	33;
+	54;
+	47;
 
 	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 4 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 7 [
+	6 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 12;
-	6 -> 7;
-	7 -> 10 [
+	6 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
-	7 -> 39 [
+	4 -> 11;
+	11 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	10 -> 26;
-	12 -> 17 [
-		color=darkgreen
-		label=true
-	];
-	12 -> 22 [
+	11 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 20 [
+	37 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 22 [
+	37 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 61;
-	22 -> 6 [
+	9 -> 25;
+	25 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 12 [
+	25 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 31 [
+	16 -> 21 [
+		color=red
+		cond=false
+	];
+	16 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 34 [
-		color=red
-		label=false
-	];
-	31 -> 34 [
-		color=red
-		label=false
-	];
-	31 -> 60 [
+	21 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	34 -> 26 [
+	21 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	34 -> 38 [
+	19 -> 58;
+	30 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	38 -> 39;
-	39 -> 49 [
+	30 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 56 [
+	33 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 61;
-	56 -> 61;
-	60 -> 61;
+	33 -> 25 [
+		color=red
+		cond=false
+	];
+	54 -> 58;
+	47 -> 58;
 }

@@ -1,66 +1,66 @@
-digraph "clearAllSharedCacheTableLocks" {
+strict digraph "clearAllSharedCacheTableLocks" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
 	15;
+	40;
 	23;
+	36;
 	32;
 	35;
-	36;
 	39;
-	40;
 	46;
 	55;
+	68;
 	60;
 	67;
-	68;
 
 	// Edge definitions.
 	1 -> 11;
 	11 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 32 [
-		color=darkgreen
-		label=true
-	];
-	23 -> 35 [
-		color=red
-		label=false
-	];
-	32 -> 35;
-	35 -> 39;
-	36 -> 39;
-	39 -> 11;
 	40 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
+	23 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	23 -> 35 [
+		color=red
+		cond=false
+	];
+	36 -> 39;
+	32 -> 35;
+	35 -> 39;
+	39 -> 11;
 	46 -> 68;
 	55 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
 	60 -> 67;
 	67 -> 68;

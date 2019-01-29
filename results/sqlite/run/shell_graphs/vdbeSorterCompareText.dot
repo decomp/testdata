@@ -1,6 +1,6 @@
-digraph "vdbeSorterCompareText" {
+strict digraph "vdbeSorterCompareText" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	39;
 	44;
 	49;
@@ -13,79 +13,79 @@ digraph "vdbeSorterCompareText" {
 	87;
 	91;
 	94;
+	113;
 	104;
 	112;
-	113;
+	128;
 	124;
 	127;
-	128;
 
 	// Edge definitions.
 	6 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
 	39 -> 49;
 	44 -> 49;
 	49 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
 	57 -> 67;
 	62 -> 67;
 	67 -> 75 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	67 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
 	75 -> 79;
 	77 -> 79;
 	79 -> 87 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	79 -> 91 [
 		color=red
-		label=false
+		cond=false
 	];
 	87 -> 91;
 	91 -> 94 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	91 -> 113 [
 		color=red
-		label=false
+		cond=false
 	];
 	94 -> 104 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	94 -> 112 [
 		color=red
-		label=false
+		cond=false
 	];
-	104 -> 112;
-	112 -> 128;
 	113 -> 124 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	113 -> 127 [
 		color=red
-		label=false
+		cond=false
 	];
+	104 -> 112;
+	112 -> 128;
 	124 -> 127;
 	127 -> 128;
 }

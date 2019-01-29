@@ -1,0 +1,35 @@
+strict digraph "countInverse" {
+	// Node definitions.
+	3 [entry=true];
+	19;
+	13;
+	27;
+	22;
+
+	// Edge definitions.
+	3 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 13 [
+		color=red
+		cond=false
+	];
+	19 -> 27 [
+		color=red
+		cond=false
+	];
+	19 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 27 [
+		color=red
+		cond=false
+	];
+	22 -> 27;
+}

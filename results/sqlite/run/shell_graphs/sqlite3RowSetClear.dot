@@ -1,21 +1,21 @@
-digraph "sqlite3RowSetClear" {
+strict digraph "sqlite3RowSetClear" {
 	// Node definitions.
-	1 [label=entry];
-	8;
+	1 [entry=true];
 	11;
-	20;
-	22;
+	14;
+	25;
+	23;
 
 	// Edge definitions.
-	1 -> 8;
-	8 -> 11 [
+	1 -> 11;
+	11 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 22 [
+	11 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 20;
-	20 -> 8;
+	14 -> 23;
+	23 -> 11;
 }

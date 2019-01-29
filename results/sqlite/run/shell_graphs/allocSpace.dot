@@ -1,28 +1,28 @@
-digraph "allocSpace" {
+strict digraph "allocSpace" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
+	39;
 	18;
 	32;
 	38;
-	39;
 
 	// Edge definitions.
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 38;
 	32 -> 38;

@@ -1,41 +1,39 @@
-digraph "ambsalign" {
+strict digraph "ambsalign" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	6;
+	20;
 	11;
 	15;
 	16;
 	19;
-	20;
-	21;
 
 	// Edge definitions.
 	4 -> 6;
-	6 -> 11 [
-		color=red
-		label=false
-	];
 	6 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	6 -> 11 [
+		color=red
+		cond=false
 	];
 	11 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 21;
+	15 -> 20;
 	16 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 21;
-	20 -> 21;
+	19 -> 20;
 }

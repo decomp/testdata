@@ -1,78 +1,78 @@
-digraph "sqlite3VdbeMemHandleBom" {
+strict digraph "sqlite3VdbeMemHandleBom" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
-	24;
-	28;
-	29;
-	33;
-	37;
-	38;
 	39;
+	24;
+	29;
+	28;
+	33;
+	38;
+	37;
 	42;
+	90;
 	47;
 	89;
-	90;
 
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 28 [
-		color=darkgreen
-		label=true
-	];
-	24 -> 29 [
-		color=red
-		label=false
-	];
-	28 -> 29;
-	29 -> 33 [
-		color=darkgreen
-		label=true
-	];
-	29 -> 38 [
-		color=red
-		label=false
-	];
-	33 -> 37 [
-		color=darkgreen
-		label=true
-	];
-	33 -> 38 [
-		color=red
-		label=false
-	];
-	37 -> 38;
-	38 -> 39;
 	39 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	39 -> 90 [
 		color=red
-		label=false
+		cond=false
 	];
+	24 -> 29 [
+		color=red
+		cond=false
+	];
+	24 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 33 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 38 [
+		color=red
+		cond=false
+	];
+	28 -> 29;
+	33 -> 38 [
+		color=red
+		cond=false
+	];
+	33 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 39;
+	37 -> 38;
 	42 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 89 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 89;
 	89 -> 90;

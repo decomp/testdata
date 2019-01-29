@@ -1,0 +1,41 @@
+strict digraph "readFileContents" {
+	// Node definitions.
+	2 [entry=true];
+	12;
+	13;
+	40;
+	24;
+	35;
+	30;
+	37;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 13 [
+		color=red
+		cond=false
+	];
+	12 -> 40;
+	13 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 35 [
+		color=red
+		cond=false
+	];
+	24 -> 35 [
+		color=red
+		cond=false
+	];
+	24 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	35 -> 37;
+	30 -> 37;
+	37 -> 40;
+}

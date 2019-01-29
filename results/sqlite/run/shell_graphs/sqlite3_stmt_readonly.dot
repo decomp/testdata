@@ -1,6 +1,6 @@
-digraph "sqlite3_stmt_readonly" {
+strict digraph "sqlite3_stmt_readonly" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
 	13;
 	14;
@@ -8,11 +8,11 @@ digraph "sqlite3_stmt_readonly" {
 	// Edge definitions.
 	1 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 14;
 	13 -> 14;

@@ -1,98 +1,98 @@
-digraph "analysisLoader" {
+strict digraph "analysisLoader" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
+	33;
 	23;
 	28;
-	33;
 	34;
+	140;
 	47;
 	48;
 	53;
 	54;
+	78;
 	63;
 	66;
 	77;
-	78;
 	84;
+	123;
 	110;
 	122;
-	123;
 	139;
-	140;
 
 	// Edge definitions.
-	4 -> 23 [
-		color=red
-		label=false
-	];
 	4 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	4 -> 23 [
+		color=red
+		cond=false
+	];
+	33 -> 140;
+	23 -> 33 [
+		color=darkgreen
+		cond=true
 	];
 	23 -> 28 [
 		color=red
-		label=false
-	];
-	23 -> 33 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	28 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 140;
 	34 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 140;
 	48 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	48 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	53 -> 78;
 	54 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	54 -> 66 [
 		color=red
-		label=false
+		cond=false
+	];
+	78 -> 84 [
+		color=darkgreen
+		cond=true
+	];
+	78 -> 123 [
+		color=red
+		cond=false
 	];
 	63 -> 77;
 	66 -> 77;
 	77 -> 78;
-	78 -> 84 [
-		color=darkgreen
-		label=true
-	];
-	78 -> 123 [
-		color=red
-		label=false
-	];
 	84 -> 110 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	84 -> 122 [
 		color=red
-		label=false
+		cond=false
 	];
+	123 -> 139;
 	110 -> 122;
 	122 -> 139;
-	123 -> 139;
 	139 -> 140;
 }

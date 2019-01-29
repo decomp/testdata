@@ -1,74 +1,74 @@
-digraph "sqlite3WalOpen" {
+strict digraph "sqlite3WalOpen" {
 	// Node definitions.
-	6 [label=entry];
-	28;
+	6 [entry=true];
 	29;
-	68;
-	72;
-	75;
-	78;
-	85;
-	91;
-	94;
-	98;
-	101;
-	104;
-	106;
+	28;
+	107;
+	69;
+	76;
+	73;
+	79;
+	86;
+	105;
+	92;
+	95;
+	99;
+	102;
 
 	// Edge definitions.
-	6 -> 28 [
-		color=red
-		label=false
-	];
 	6 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 106;
-	29 -> 68 [
-		color=darkgreen
-		label=true
-	];
-	29 -> 75 [
+	6 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	68 -> 72 [
+	29 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	68 -> 75 [
+	29 -> 76 [
 		color=red
-		label=false
+		cond=false
 	];
-	72 -> 75;
-	75 -> 78 [
+	28 -> 107;
+	69 -> 76 [
+		color=red
+		cond=false
+	];
+	69 -> 73 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	75 -> 85 [
-		color=red
-		label=false
-	];
-	78 -> 104;
-	85 -> 91 [
+	76 -> 79 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	85 -> 94 [
+	76 -> 86 [
 		color=red
-		label=false
+		cond=false
 	];
-	91 -> 94;
-	94 -> 98 [
+	73 -> 76;
+	79 -> 105;
+	86 -> 92 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	94 -> 101 [
+	86 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
-	98 -> 101;
-	101 -> 104;
-	104 -> 106;
+	105 -> 107;
+	92 -> 95;
+	95 -> 99 [
+		color=darkgreen
+		cond=true
+	];
+	95 -> 102 [
+		color=red
+		cond=false
+	];
+	99 -> 102;
+	102 -> 105;
 }

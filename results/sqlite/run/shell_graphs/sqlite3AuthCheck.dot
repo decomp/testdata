@@ -1,72 +1,72 @@
-digraph "sqlite3AuthCheck" {
+strict digraph "sqlite3AuthCheck" {
 	// Node definitions.
-	5 [label=entry];
-	23;
+	5 [entry=true];
 	29;
+	23;
 	30;
+	68;
 	35;
 	36;
 	53;
 	57;
-	60;
-	63;
-	65;
 	66;
-	68;
+	60;
+	65;
+	63;
 
 	// Edge definitions.
-	5 -> 23 [
-		color=red
-		label=false
-	];
 	5 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	5 -> 23 [
+		color=red
+		cond=false
+	];
+	29 -> 68;
 	23 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 68;
 	30 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 68;
 	36 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
 	53 -> 66;
 	57 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	57 -> 65 [
 		color=red
-		label=false
+		cond=false
+	];
+	66 -> 68;
+	60 -> 65 [
+		color=red
+		cond=false
 	];
 	60 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 65 [
-		color=red
-		label=false
-	];
-	63 -> 65;
 	65 -> 66;
-	66 -> 68;
+	63 -> 65;
 }

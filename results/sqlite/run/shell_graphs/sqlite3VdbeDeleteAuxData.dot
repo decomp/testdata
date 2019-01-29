@@ -1,79 +1,79 @@
-digraph "sqlite3VdbeDeleteAuxData" {
+strict digraph "sqlite3VdbeDeleteAuxData" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	10;
 	14;
+	67;
+	43;
 	19;
 	25;
+	63;
 	30;
 	35;
-	43;
 	48;
 	55;
-	63;
 	66;
-	67;
 
 	// Edge definitions.
 	4 -> 10;
 	10 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 67 [
 		color=red
-		label=false
-	];
-	14 -> 19 [
-		color=red
-		label=false
+		cond=false
 	];
 	14 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 25 [
-		color=darkgreen
-		label=true
-	];
-	19 -> 63 [
+	14 -> 19 [
 		color=red
-		label=false
-	];
-	25 -> 30 [
-		color=darkgreen
-		label=true
-	];
-	25 -> 63 [
-		color=red
-		label=false
-	];
-	30 -> 35 [
-		color=red
-		label=false
-	];
-	30 -> 43 [
-		color=darkgreen
-		label=true
-	];
-	35 -> 43 [
-		color=red
-		label=false
-	];
-	35 -> 63 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	43 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 55 [
 		color=red
-		label=false
+		cond=false
+	];
+	19 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 63 [
+		color=red
+		cond=false
+	];
+	25 -> 63 [
+		color=red
+		cond=false
+	];
+	25 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	63 -> 66;
+	30 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 35 [
+		color=red
+		cond=false
+	];
+	35 -> 43 [
+		color=red
+		cond=false
+	];
+	35 -> 63 [
+		color=darkgreen
+		cond=true
 	];
 	48 -> 55;
 	55 -> 66;
-	63 -> 66;
 	66 -> 10;
 }

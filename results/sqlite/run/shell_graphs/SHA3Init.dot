@@ -1,28 +1,28 @@
-digraph "SHA3Init" {
+strict digraph "SHA3Init" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
-	12;
 	21;
+	12;
 	24;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 21 [
 		color=red
-		label=false
-	];
-	9 -> 12 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	9 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	12 -> 24;
+	9 -> 12 [
+		color=darkgreen
+		cond=true
+	];
 	21 -> 24;
+	12 -> 24;
 }

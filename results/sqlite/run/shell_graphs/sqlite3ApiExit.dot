@@ -1,28 +1,28 @@
-digraph "sqlite3ApiExit" {
+strict digraph "sqlite3ApiExit" {
 	// Node definitions.
-	2 [label=entry];
-	11;
+	2 [entry=true];
 	14;
+	11;
 	17;
 	23;
 
 	// Edge definitions.
-	2 -> 11 [
-		color=red
-		label=false
-	];
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	2 -> 11 [
+		color=red
+		cond=false
+	];
+	14 -> 23;
 	11 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 23;
 	17 -> 23;
 }

@@ -1,17 +1,17 @@
-digraph "sqlite3BackupUpdate" {
+strict digraph "sqlite3BackupUpdate" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
 	13;
 
 	// Edge definitions.
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 13;
 }

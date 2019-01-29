@@ -1,54 +1,78 @@
-digraph "readDbPage" {
+strict digraph "readDbPage" {
 	// Node definitions.
-	2 [label=entry];
-	22;
+	1 [entry=true];
+	16;
+	29;
+	26;
+	28;
+	94;
 	32;
-	52;
-	53;
-	54;
-	57;
-	60;
-	64;
-	73;
-	74;
+	44;
+	70;
+	68;
+	69;
+	75;
+	92;
+	78;
+	82;
+	91;
 
 	// Edge definitions.
-	2 -> 22 [
+	1 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 32 [
+	1 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 54;
-	32 -> 52 [
+	16 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	32 -> 53 [
+	16 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	52 -> 53;
-	53 -> 54;
-	54 -> 57 [
+	29 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	54 -> 74 [
+	29 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	57 -> 60 [
+	26 -> 94;
+	28 -> 29;
+	32 -> 70;
+	44 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	57 -> 64 [
+	44 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
-	60 -> 73;
-	64 -> 73;
-	73 -> 74;
+	70 -> 75 [
+		color=darkgreen
+		cond=true
+	];
+	70 -> 92 [
+		color=red
+		cond=false
+	];
+	68 -> 69;
+	69 -> 70;
+	75 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	75 -> 82 [
+		color=red
+		cond=false
+	];
+	92 -> 94;
+	78 -> 91;
+	82 -> 91;
+	91 -> 92;
 }

@@ -1,63 +1,63 @@
-digraph "get_fs_usage" {
+strict digraph "get_fs_usage" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	10;
-	13;
-	17;
 	20;
-	23;
-	27;
-	51;
+	13;
+	18;
 	53;
-	57;
-	77;
+	23;
+	51;
+	27;
 	79;
+	77;
+	57;
 
 	// Edge definitions.
 	3 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	10 -> 17 [
+	10 -> 18 [
 		color=red
-		label=false
-	];
-	13 -> 17;
-	17 -> 20;
-	20 -> 23 [
-		color=red
-		label=false
+		cond=false
 	];
 	20 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 27 [
+	20 -> 23 [
 		color=red
-		label=false
+		cond=false
+	];
+	13 -> 18;
+	18 -> 20;
+	53 -> 77 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 57 [
+		color=red
+		cond=false
 	];
 	23 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 51;
-	51 -> 79;
-	53 -> 57 [
+	23 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 77 [
-		color=darkgreen
-		label=true
-	];
-	57 -> 77;
+	51 -> 79;
+	27 -> 51;
 	77 -> 79;
+	57 -> 77;
 }

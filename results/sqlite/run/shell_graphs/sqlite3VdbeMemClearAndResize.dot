@@ -1,6 +1,6 @@
-digraph "sqlite3VdbeMemClearAndResize" {
+strict digraph "sqlite3VdbeMemClearAndResize" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	11;
 	15;
 	27;
@@ -8,11 +8,11 @@ digraph "sqlite3VdbeMemClearAndResize" {
 	// Edge definitions.
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 27;
 	15 -> 27;

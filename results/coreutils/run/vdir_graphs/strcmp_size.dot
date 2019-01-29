@@ -1,17 +1,17 @@
-digraph "strcmp_size" {
+strict digraph "strcmp_size" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	20;
 
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 20;
 }

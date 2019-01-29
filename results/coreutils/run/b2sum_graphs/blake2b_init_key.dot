@@ -1,37 +1,68 @@
-digraph "blake2b_init_key" {
+strict digraph "blake2b_init_key" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
+	127;
 	10;
 	15;
 	26;
 	72;
-	83;
+	84;
+	118;
+	97;
+	102;
+	114;
 
 	// Edge definitions.
+	4 -> 127 [
+		color=darkgreen
+		cond=true
+	];
 	4 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
-	4 -> 83 [
+	10 -> 127 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 15 [
 		color=red
-		label=false
-	];
-	10 -> 83 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	15 -> 26;
 	26 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	26 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	72 -> 83;
+	72 -> 84 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 118 [
+		color=red
+		cond=false
+	];
+	84 -> 118 [
+		color=red
+		cond=false
+	];
+	84 -> 97 [
+		color=darkgreen
+		cond=true
+	];
+	118 -> 127;
+	97 -> 102;
+	102 -> 102 [
+		color=darkgreen
+		cond=true
+	];
+	102 -> 114 [
+		color=red
+		cond=false
+	];
+	114 -> 118;
 }

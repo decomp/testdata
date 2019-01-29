@@ -1,6 +1,6 @@
-digraph "setOrClearFlag" {
+strict digraph "setOrClearFlag" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	10;
 	16;
 	23;
@@ -8,11 +8,11 @@ digraph "setOrClearFlag" {
 	// Edge definitions.
 	3 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 23;
 	16 -> 23;

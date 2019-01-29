@@ -1,0 +1,30 @@
+strict digraph "sqlite3VdbeBooleanValue" {
+	// Node definitions.
+	2 [entry=true];
+	12;
+	19;
+	33;
+	26;
+	28;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 19 [
+		color=red
+		cond=false
+	];
+	12 -> 33;
+	19 -> 26 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 28 [
+		color=red
+		cond=false
+	];
+	26 -> 33;
+	28 -> 33;
+}

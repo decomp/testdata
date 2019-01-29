@@ -1,6 +1,6 @@
-digraph "zeroblobFunc" {
+strict digraph "zeroblobFunc" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
 	17;
 	23;
@@ -9,20 +9,20 @@ digraph "zeroblobFunc" {
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 17;
 	17 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 26;
 }

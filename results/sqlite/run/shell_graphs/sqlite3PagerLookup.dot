@@ -1,6 +1,6 @@
-digraph "sqlite3PagerLookup" {
+strict digraph "sqlite3PagerLookup" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	15;
 	22;
@@ -8,11 +8,11 @@ digraph "sqlite3PagerLookup" {
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 22;
 	15 -> 22;

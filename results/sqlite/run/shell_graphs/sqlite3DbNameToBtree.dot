@@ -1,6 +1,6 @@
-digraph "sqlite3DbNameToBtree" {
+strict digraph "sqlite3DbNameToBtree" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
 	12;
 	13;
@@ -11,21 +11,21 @@ digraph "sqlite3DbNameToBtree" {
 	// Edge definitions.
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 13;
 	12 -> 13;
 	13 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 27;
 	18 -> 27;

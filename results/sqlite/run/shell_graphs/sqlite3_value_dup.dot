@@ -1,52 +1,52 @@
-digraph "sqlite3_value_dup" {
+strict digraph "sqlite3_value_dup" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
 	8;
+	56;
 	13;
 	14;
 	35;
+	54;
 	51;
 	53;
-	54;
-	56;
 
 	// Edge definitions.
 	1 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 56;
 	8 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 56;
 	14 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
+	54 -> 56;
 	51 -> 53;
 	53 -> 54;
-	54 -> 56;
 }

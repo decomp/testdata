@@ -1,43 +1,43 @@
-digraph "mbuiter_multi_copy" {
+strict digraph "mbuiter_multi_copy" {
 	// Node definitions.
-	2 [label=entry];
-	8;
+	2 [entry=true];
 	13;
+	8;
 	15;
 	23;
-	25;
+	27;
 	29;
-	39;
 	43;
+	39;
 
 	// Edge definitions.
-	2 -> 8 [
-		color=red
-		label=false
-	];
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 15;
-	13 -> 15;
-	15 -> 23 [
+	2 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 25 [
+	13 -> 15;
+	8 -> 15;
+	15 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	15 -> 27 [
+		color=red
+		cond=false
 	];
 	23 -> 29;
-	25 -> 29;
-	29 -> 39 [
-		color=red
-		label=false
-	];
+	27 -> 29;
 	29 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	29 -> 39 [
+		color=red
+		cond=false
 	];
 	39 -> 43;
 }

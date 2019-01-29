@@ -1,35 +1,35 @@
-digraph "strcmp_atime" {
+strict digraph "strcmp_atime" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	28;
 	16;
 	18;
 	22;
-	28;
 
 	// Edge definitions.
-	2 -> 16 [
-		color=red
-		label=false
-	];
 	2 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 18 [
+	2 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 22 [
-		color=darkgreen
-		label=true
+	16 -> 18 [
+		color=red
+		cond=false
 	];
 	18 -> 28 [
 		color=red
-		label=false
+		cond=false
+	];
+	18 -> 22 [
+		color=darkgreen
+		cond=true
 	];
 	22 -> 28;
 }

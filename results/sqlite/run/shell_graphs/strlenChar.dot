@@ -1,29 +1,29 @@
-digraph "strlenChar" {
+strict digraph "strlenChar" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	4;
 	8;
+	19;
 	15;
 	18;
-	19;
 
 	// Edge definitions.
 	1 -> 4;
 	4 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 18;
 	18 -> 4;

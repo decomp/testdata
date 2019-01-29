@@ -1,17 +1,17 @@
-digraph "sqlite3BitvecTest" {
+strict digraph "sqlite3BitvecTest" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
 	12;
 
 	// Edge definitions.
 	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 12;
 }

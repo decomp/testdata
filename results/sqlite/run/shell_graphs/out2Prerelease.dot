@@ -1,6 +1,6 @@
-digraph "out2Prerelease" {
+strict digraph "out2Prerelease" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	21;
 	24;
 	28;
@@ -8,11 +8,11 @@ digraph "out2Prerelease" {
 	// Edge definitions.
 	2 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 28;
 	24 -> 28;

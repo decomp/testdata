@@ -1,0 +1,17 @@
+strict digraph "sqlite3BtreeSkipNext" {
+	// Node definitions.
+	1 [entry=true];
+	8;
+	13;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 13 [
+		color=red
+		cond=false
+	];
+	8 -> 13;
+}

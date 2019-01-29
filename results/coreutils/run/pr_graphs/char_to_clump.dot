@@ -1,105 +1,105 @@
-digraph "char_to_clump" {
+strict digraph "char_to_clump" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
-	16;
-	18;
-	23;
 	24;
+	16;
+	23;
+	82;
+	18;
+	70;
 	33;
+	66;
 	35;
 	45;
+	67;
 	47;
+	62;
 	49;
 	52;
-	62;
-	66;
-	67;
-	70;
-	77;
-	82;
 	87;
+	77;
 
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 18 [
-		color=red
-		label=false
-	];
-	16 -> 82 [
-		color=darkgreen
-		label=true
-	];
-	18 -> 70;
-	23 -> 70;
 	24 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 66 [
 		color=red
-		label=false
+		cond=false
+	];
+	16 -> 82 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 18 [
+		color=red
+		cond=false
+	];
+	23 -> 70;
+	82 -> 87;
+	18 -> 70;
+	70 -> 87 [
+		color=darkgreen
+		cond=true
+	];
+	70 -> 77 [
+		color=red
+		cond=false
 	];
 	33 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	33 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
+	66 -> 67;
 	35 -> 67;
 	45 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	45 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
+	67 -> 82;
 	47 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
+	62 -> 70;
 	49 -> 67;
 	52 -> 67;
-	62 -> 70;
-	66 -> 67;
-	67 -> 82;
-	70 -> 77 [
-		color=red
-		label=false
-	];
-	70 -> 87 [
-		color=darkgreen
-		label=true
-	];
 	77 -> 82 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	77 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
-	82 -> 87;
 }

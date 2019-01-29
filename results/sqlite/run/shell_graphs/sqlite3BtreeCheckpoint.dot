@@ -1,28 +1,28 @@
-digraph "sqlite3BtreeCheckpoint" {
+strict digraph "sqlite3BtreeCheckpoint" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	13;
+	37;
 	23;
 	24;
 	35;
-	37;
 
 	// Edge definitions.
 	4 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 35;
 	24 -> 35;

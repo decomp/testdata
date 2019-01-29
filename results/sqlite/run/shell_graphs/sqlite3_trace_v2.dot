@@ -1,6 +1,6 @@
-digraph "sqlite3_trace_v2" {
+strict digraph "sqlite3_trace_v2" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	14;
 	15;
 	18;
@@ -9,20 +9,20 @@ digraph "sqlite3_trace_v2" {
 	// Edge definitions.
 	4 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 15;
 	15 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 19;
 }

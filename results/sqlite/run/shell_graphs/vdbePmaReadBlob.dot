@@ -1,150 +1,150 @@
-digraph "vdbePmaReadBlob" {
+strict digraph "vdbePmaReadBlob" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	22;
 	37;
+	223;
 	49;
+	92;
 	62;
 	66;
 	75;
 	89;
 	91;
-	92;
 	101;
 	115;
+	222;
 	121;
+	159;
 	127;
 	128;
 	133;
 	135;
 	139;
 	142;
-	151;
 	152;
-	159;
+	151;
 	180;
 	183;
+	217;
 	190;
 	194;
 	200;
 	202;
-	217;
-	222;
-	223;
 
 	// Edge definitions.
 	3 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 223;
 	37 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 92 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 66 [
 		color=red
-		label=false
+		cond=false
+	];
+	92 -> 101 [
+		color=darkgreen
+		cond=true
+	];
+	92 -> 115 [
+		color=red
+		cond=false
 	];
 	62 -> 75;
 	66 -> 75;
 	75 -> 89 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	75 -> 91 [
 		color=red
-		label=false
+		cond=false
 	];
 	89 -> 223;
 	91 -> 92;
-	92 -> 101 [
-		color=darkgreen
-		label=true
-	];
-	92 -> 115 [
-		color=red
-		label=false
-	];
 	101 -> 222;
 	115 -> 121 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	115 -> 159 [
 		color=red
-		label=false
+		cond=false
 	];
+	222 -> 223;
 	121 -> 127 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	121 -> 128 [
 		color=red
-		label=false
+		cond=false
 	];
+	159 -> 180;
 	127 -> 133;
 	128 -> 133;
 	133 -> 135;
 	135 -> 139 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	135 -> 142 [
 		color=red
-		label=false
+		cond=false
 	];
 	139 -> 135;
-	142 -> 151 [
-		color=red
-		label=false
-	];
 	142 -> 152 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	151 -> 223;
+	142 -> 151 [
+		color=red
+		cond=false
+	];
 	152 -> 159;
-	159 -> 180;
+	151 -> 223;
 	180 -> 183 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	180 -> 217 [
 		color=red
-		label=false
+		cond=false
 	];
 	183 -> 190 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	183 -> 194 [
 		color=red
-		label=false
+		cond=false
 	];
+	217 -> 222;
 	190 -> 194;
 	194 -> 200 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	194 -> 202 [
 		color=red
-		label=false
+		cond=false
 	];
 	200 -> 223;
 	202 -> 180;
-	217 -> 222;
-	222 -> 223;
 }

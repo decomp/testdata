@@ -1,17 +1,17 @@
-digraph "completionBestIndex" {
+strict digraph "completionBestIndex" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	15;
 	21;
+	53;
 	27;
 	28;
+	48;
 	34;
 	35;
 	39;
 	43;
 	47;
-	48;
-	53;
 	56;
 	73;
 	76;
@@ -21,53 +21,62 @@ digraph "completionBestIndex" {
 	2 -> 15;
 	15 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 28 [
 		color=red
-		label=false
+		cond=false
+	];
+	53 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 73 [
+		color=red
+		cond=false
 	];
 	27 -> 48;
 	28 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
+	48 -> 15;
 	34 -> 48;
-	35 -> 39 [label="case (x=1)"];
-	35 -> 43 [label="case (x=2)"];
-	35 -> 47 [label="default case"];
+	35 -> 39 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	35 -> 43 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	35 -> 47 [
+		cond="default case"
+		label="default case"
+	];
 	39 -> 47;
 	43 -> 47;
 	47 -> 48;
-	48 -> 15;
-	53 -> 56 [
-		color=darkgreen
-		label=true
-	];
-	53 -> 73 [
-		color=red
-		label=false
-	];
 	56 -> 73;
 	73 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	73 -> 93 [
 		color=red
-		label=false
+		cond=false
 	];
 	76 -> 93;
 }

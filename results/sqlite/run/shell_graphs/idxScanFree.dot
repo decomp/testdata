@@ -1,0 +1,21 @@
+strict digraph "idxScanFree" {
+	// Node definitions.
+	2 [entry=true];
+	8;
+	12;
+	29;
+	27;
+
+	// Edge definitions.
+	2 -> 8;
+	8 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 29 [
+		color=red
+		cond=false
+	];
+	12 -> 27;
+	27 -> 8;
+}

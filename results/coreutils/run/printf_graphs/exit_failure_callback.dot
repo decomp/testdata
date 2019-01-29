@@ -1,6 +1,6 @@
-digraph "exit_failure_callback" {
+strict digraph "exit_failure_callback" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	5;
 	7;
 	10;
@@ -8,11 +8,11 @@ digraph "exit_failure_callback" {
 	// Edge definitions.
 	3 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 10;
 	7 -> 10;

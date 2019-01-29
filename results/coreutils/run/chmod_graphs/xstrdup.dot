@@ -1,16 +1,16 @@
-digraph "xstrdup" {
+strict digraph "xstrdup" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	9;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 }

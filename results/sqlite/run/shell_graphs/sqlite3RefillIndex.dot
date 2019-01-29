@@ -1,67 +1,67 @@
-digraph "sqlite3RefillIndex" {
+strict digraph "sqlite3RefillIndex" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	54;
 	55;
+	206;
 	68;
 	69;
 	72;
 	74;
 	78;
-	125;
-	130;
-	152;
+	126;
+	131;
+	154;
 	172;
 	175;
-	206;
 
 	// Edge definitions.
 	3 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	54 -> 206;
 	55 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
 	68 -> 206;
 	69 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	69 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
 	72 -> 78;
 	74 -> 78;
-	78 -> 125 [
+	78 -> 126 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	78 -> 130 [
+	78 -> 131 [
 		color=red
-		label=false
+		cond=false
 	];
-	125 -> 130;
-	130 -> 152 [
+	126 -> 131;
+	131 -> 154 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	130 -> 172 [
+	131 -> 172 [
 		color=red
-		label=false
+		cond=false
 	];
-	152 -> 175;
+	154 -> 175;
 	172 -> 175;
 	175 -> 206;
 }

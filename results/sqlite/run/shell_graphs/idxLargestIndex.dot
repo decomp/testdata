@@ -1,0 +1,26 @@
+strict digraph "idxLargestIndex" {
+	// Node definitions.
+	3 [entry=true];
+	17;
+	26;
+	21;
+
+	// Edge definitions.
+	3 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 26 [
+		color=red
+		cond=false
+	];
+	17 -> 26 [
+		color=red
+		cond=false
+	];
+	17 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 26;
+}

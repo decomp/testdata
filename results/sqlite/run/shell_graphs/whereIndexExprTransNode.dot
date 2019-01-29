@@ -1,6 +1,6 @@
-digraph "whereIndexExprTransNode" {
+strict digraph "whereIndexExprTransNode" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	20;
 	36;
 	37;
@@ -8,11 +8,11 @@ digraph "whereIndexExprTransNode" {
 	// Edge definitions.
 	2 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 37;
 	36 -> 37;

@@ -1,0 +1,19 @@
+strict digraph "sqlite3WindowListDelete" {
+	// Node definitions.
+	2 [entry=true];
+	6;
+	9;
+	16;
+
+	// Edge definitions.
+	2 -> 6;
+	6 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	6 -> 16 [
+		color=red
+		cond=false
+	];
+	9 -> 6;
+}

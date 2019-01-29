@@ -1,59 +1,59 @@
-digraph "set_window_size" {
+strict digraph "set_window_size" {
 	// Node definitions.
-	3 [label=entry];
-	9;
-	13;
-	15;
+	3 [entry=true];
 	16;
+	9;
+	15;
+	13;
 	18;
 	21;
 	23;
 	26;
-	29;
 	33;
+	29;
 
 	// Edge definitions.
-	3 -> 9 [
-		color=red
-		label=false
-	];
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	9 -> 13 [
+	3 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 15 [
-		color=darkgreen
-		label=true
-	];
-	15 -> 16;
 	16 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
+	9 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	9 -> 13 [
+		color=red
+		cond=false
+	];
+	15 -> 16;
 	18 -> 21;
 	21 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 26;
-	26 -> 29 [
-		color=red
-		label=false
-	];
 	26 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	26 -> 29 [
+		color=red
+		cond=false
 	];
 }

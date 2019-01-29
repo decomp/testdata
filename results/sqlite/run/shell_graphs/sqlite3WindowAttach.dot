@@ -1,0 +1,41 @@
+strict digraph "sqlite3WindowAttach" {
+	// Node definitions.
+	3 [entry=true];
+	9;
+	28;
+	12;
+	27;
+	24;
+	26;
+	33;
+
+	// Edge definitions.
+	3 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 28 [
+		color=red
+		cond=false
+	];
+	9 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	9 -> 27 [
+		color=red
+		cond=false
+	];
+	28 -> 33;
+	12 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 26 [
+		color=red
+		cond=false
+	];
+	27 -> 33;
+	24 -> 26;
+	26 -> 27;
+}

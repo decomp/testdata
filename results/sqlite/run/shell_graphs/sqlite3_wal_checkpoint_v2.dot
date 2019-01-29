@@ -1,93 +1,93 @@
-digraph "sqlite3_wal_checkpoint_v2" {
+strict digraph "sqlite3_wal_checkpoint_v2" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	16;
 	18;
 	21;
 	23;
-	26;
 	29;
+	26;
 	30;
+	81;
 	36;
-	42;
 	46;
+	42;
 	49;
 	52;
 	64;
 	72;
 	76;
-	81;
 
 	// Edge definitions.
 	5 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 18;
 	18 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 23;
-	23 -> 26 [
-		color=red
-		label=false
-	];
 	23 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	23 -> 26 [
+		color=red
+		cond=false
+	];
+	29 -> 81;
 	26 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 81;
 	30 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 46 [
 		color=red
-		label=false
-	];
-	36 -> 42 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	36 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 46;
+	36 -> 42 [
+		color=darkgreen
+		cond=true
+	];
 	46 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	46 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
+	42 -> 46;
 	49 -> 64;
 	52 -> 64;
 	64 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	64 -> 76 [
 		color=red
-		label=false
+		cond=false
 	];
 	72 -> 76;
 	76 -> 81;

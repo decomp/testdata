@@ -1,27 +1,27 @@
-digraph "sqlite3ExprAddCollateToken" {
+strict digraph "sqlite3ExprAddCollateToken" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	14;
+	33;
 	23;
 	32;
-	33;
 
 	// Edge definitions.
 	4 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 32;
 	32 -> 33;

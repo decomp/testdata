@@ -1,31 +1,31 @@
-digraph "estimateIndexWidth" {
+strict digraph "estimateIndexWidth" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	12;
 	19;
+	52;
 	30;
 	31;
 	45;
 	49;
-	52;
 
 	// Edge definitions.
 	1 -> 12;
 	12 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 45;
 	31 -> 45;

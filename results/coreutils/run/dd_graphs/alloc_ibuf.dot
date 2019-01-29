@@ -1,27 +1,27 @@
-digraph "alloc_ibuf" {
+strict digraph "alloc_ibuf" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	4;
+	25;
 	12;
 	17;
-	25;
 
 	// Edge definitions.
 	0 -> 4 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	4 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 25;
 }

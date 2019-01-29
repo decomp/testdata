@@ -1,65 +1,74 @@
-digraph "parse_integer" {
+strict digraph "parse_integer" {
 	// Node definitions.
-	2 [label=entry];
-	8;
+	2 [entry=true];
 	10;
-	14;
-	19;
-	23;
-	24;
-	26;
-	29;
-	34;
+	8;
 	37;
 	38;
+	14;
+	24;
+	19;
+	23;
+	26;
+	34;
+	29;
 
 	// Edge definitions.
-	2 -> 8 [label="case (x=0)"];
-	2 -> 10 [label="case (x=2)"];
-	2 -> 37 [label="default case"];
-	8 -> 38;
-	10 -> 14 [
-		color=darkgreen
-		label=true
+	2 -> 10 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	2 -> 8 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	2 -> 37 [
+		cond="default case"
+		label="default case"
 	];
 	10 -> 37 [
 		color=red
-		label=false
+		cond=false
+	];
+	10 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 38;
+	37 -> 38;
+	14 -> 24 [
+		color=darkgreen
+		cond=true
 	];
 	14 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 24 [
-		color=darkgreen
-		label=true
-	];
-	19 -> 23 [
-		color=red
-		label=false
-	];
-	19 -> 24 [
-		color=darkgreen
-		label=true
-	];
-	23 -> 38;
 	24 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 34 [
 		color=red
-		label=false
+		cond=false
+	];
+	19 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 23 [
+		color=red
+		cond=false
+	];
+	23 -> 38;
+	26 -> 34 [
+		color=red
+		cond=false
 	];
 	26 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 34 [
-		color=red
-		label=false
-	];
-	29 -> 34;
 	34 -> 38;
-	37 -> 38;
+	29 -> 34;
 }

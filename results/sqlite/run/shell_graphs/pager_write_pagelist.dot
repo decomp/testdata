@@ -1,18 +1,20 @@
-digraph "pager_write_pagelist" {
+strict digraph "pager_write_pagelist" {
 	// Node definitions.
-	2 [label=entry];
-	16;
+	2 [entry=true];
 	25;
+	16;
 	28;
-	36;
-	41;
-	49;
 	68;
+	36;
+	49;
+	41;
 	69;
 	72;
 	75;
 	77;
+	157;
 	86;
+	152;
 	93;
 	106;
 	108;
@@ -20,115 +22,113 @@ digraph "pager_write_pagelist" {
 	129;
 	135;
 	139;
-	152;
 	153;
-	157;
 
 	// Edge definitions.
-	2 -> 16 [
-		color=red
-		label=false
-	];
 	2 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 25;
+	2 -> 16 [
+		color=red
+		cond=false
+	];
 	25 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 68 [
 		color=red
-		label=false
+		cond=false
+	];
+	16 -> 25;
+	28 -> 68 [
+		color=red
+		cond=false
 	];
 	28 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 68 [
-		color=red
-		label=false
+	68 -> 69;
+	36 -> 49 [
+		color=darkgreen
+		cond=true
 	];
 	36 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	36 -> 49 [
-		color=darkgreen
-		label=true
+	49 -> 68;
+	41 -> 68 [
+		color=red
+		cond=false
 	];
 	41 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 68 [
-		color=red
-		label=false
-	];
-	49 -> 68;
-	68 -> 69;
 	69 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	69 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
 	72 -> 75;
 	75 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	75 -> 157 [
 		color=red
-		label=false
+		cond=false
 	];
 	77 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	77 -> 152 [
 		color=red
-		label=false
-	];
-	86 -> 93 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	86 -> 152 [
 		color=red
-		label=false
+		cond=false
 	];
+	86 -> 93 [
+		color=darkgreen
+		cond=true
+	];
+	152 -> 153;
 	93 -> 106 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	93 -> 108 [
 		color=red
-		label=false
+		cond=false
 	];
 	106 -> 108;
 	108 -> 123 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	108 -> 129 [
 		color=red
-		label=false
+		cond=false
 	];
 	123 -> 129;
 	129 -> 135 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	129 -> 139 [
 		color=red
-		label=false
+		cond=false
 	];
 	135 -> 139;
 	139 -> 153;
-	152 -> 153;
 	153 -> 69;
 }

@@ -1,52 +1,59 @@
-digraph "sqlite3PagerClose" {
+strict digraph "sqlite3PagerClose" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	15;
+	27;
+	21;
 	25;
-	31;
-	32;
-	34;
-	44;
-	46;
-	53;
-	58;
-	60;
+	48;
+	50;
+	64;
+	57;
+	62;
 
 	// Edge definitions.
-	2 -> 25 [
+	2 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 32 [
+	2 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 31 [
+	15 -> 27 [
+		color=red
+		cond=false
+	];
+	15 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	25 -> 32 [
-		color=red
-		label=false
-	];
-	31 -> 34;
-	32 -> 34;
-	34 -> 44 [
+	27 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	34 -> 46 [
+	27 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
-	44 -> 60;
-	46 -> 53 [
+	21 -> 27 [
+		color=red
+		cond=false
+	];
+	21 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	46 -> 58 [
+	25 -> 27;
+	48 -> 64;
+	50 -> 57 [
+		color=darkgreen
+		cond=true
+	];
+	50 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 58;
-	58 -> 60;
+	57 -> 62;
+	62 -> 64;
 }

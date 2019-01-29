@@ -1,112 +1,114 @@
-digraph "rpl_fcntl" {
+strict digraph "rpl_fcntl" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
+	58;
 	10;
 	16;
 	20;
 	26;
-	29;
+	38;
 	33;
-	36;
-	39;
+	29;
+	34;
+	74;
+	37;
 	42;
-	48;
-	51;
-	55;
+	47;
+	54;
+	50;
 	59;
-	60;
-	66;
-	70;
-	75;
+	65;
+	69;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 59 [
+	2 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 16 [
 		color=red
-		label=false
+		cond=false
+	];
+	58 -> 59 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 65 [
+		color=red
+		cond=false
 	];
 	10 -> 20;
 	16 -> 20;
 	20 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 39 [
+	20 -> 38 [
 		color=red
-		label=false
+		cond=false
+	];
+	26 -> 33 [
+		color=darkgreen
+		cond=true
 	];
 	26 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 36 [
-		color=darkgreen
-		label=true
-	];
+	38 -> 42;
+	33 -> 74;
 	29 -> 33 [
-		color=darkgreen
-		label=true
-	];
-	29 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 36 [
-		color=red
-		label=false
-	];
-	33 -> 75 [
+	29 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 42;
-	39 -> 42;
-	42 -> 48 [
+	34 -> 74 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	42 -> 75 [
+	34 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 51 [
+	37 -> 42;
+	42 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 55 [
+	42 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	51 -> 55 [
+	47 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	51 -> 75 [
+	47 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
-	55 -> 75;
-	59 -> 60 [
+	54 -> 74;
+	50 -> 74 [
+		color=red
+		cond=false
+	];
+	50 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	59 -> 66 [
-		color=red
-		label=false
-	];
-	60 -> 70;
-	66 -> 70;
-	70 -> 75;
+	59 -> 69;
+	65 -> 69;
+	69 -> 74;
 }

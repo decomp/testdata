@@ -1,92 +1,92 @@
-digraph "vdbeUnbind" {
+strict digraph "vdbeUnbind" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	12;
-	22;
+	99;
 	27;
+	22;
 	40;
-	43;
 	50;
+	43;
 	59;
 	78;
+	98;
 	84;
 	85;
 	88;
 	92;
-	98;
-	99;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 99;
-	12 -> 22 [
-		color=red
-		label=false
-	];
 	12 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	12 -> 22 [
+		color=red
+		cond=false
+	];
+	27 -> 99;
 	22 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 40 [
 		color=red
-		label=false
-	];
-	27 -> 99;
-	40 -> 43 [
-		color=red
-		label=false
+		cond=false
 	];
 	40 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	40 -> 43 [
+		color=red
+		cond=false
+	];
+	50 -> 99;
 	43 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
-	50 -> 99;
 	59 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	59 -> 98 [
 		color=red
-		label=false
+		cond=false
 	];
 	78 -> 84 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	78 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
+	98 -> 99;
 	84 -> 88;
 	85 -> 88;
-	88 -> 92 [
-		color=darkgreen
-		label=true
-	];
 	88 -> 98 [
 		color=red
-		label=false
+		cond=false
+	];
+	88 -> 92 [
+		color=darkgreen
+		cond=true
 	];
 	92 -> 98;
-	98 -> 99;
 }

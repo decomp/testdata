@@ -1,0 +1,80 @@
+strict digraph "windowAggFinal" {
+	// Node definitions.
+	3 [entry=true];
+	12;
+	15;
+	119;
+	23;
+	61;
+	29;
+	54;
+	60;
+	114;
+	66;
+	67;
+	113;
+	70;
+	96;
+	112;
+	115;
+
+	// Edge definitions.
+	3 -> 12;
+	12 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 119 [
+		color=red
+		cond=false
+	];
+	15 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 61 [
+		color=red
+		cond=false
+	];
+	23 -> 61 [
+		color=red
+		cond=false
+	];
+	23 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	61 -> 66 [
+		color=darkgreen
+		cond=true
+	];
+	61 -> 67 [
+		color=red
+		cond=false
+	];
+	29 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 60 [
+		color=red
+		cond=false
+	];
+	54 -> 60;
+	60 -> 114;
+	114 -> 115;
+	66 -> 113;
+	67 -> 70 [
+		color=darkgreen
+		cond=true
+	];
+	67 -> 96 [
+		color=red
+		cond=false
+	];
+	113 -> 114;
+	70 -> 112;
+	96 -> 112;
+	112 -> 113;
+	115 -> 12;
+}

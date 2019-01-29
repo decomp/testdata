@@ -1,6 +1,6 @@
-digraph "getFileMode" {
+strict digraph "getFileMode" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	16;
 	27;
 	28;
@@ -8,11 +8,11 @@ digraph "getFileMode" {
 	// Edge definitions.
 	4 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 28;
 	27 -> 28;

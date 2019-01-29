@@ -1,54 +1,54 @@
-digraph "run_schema_dump_query" {
+strict digraph "run_schema_dump_query" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	19;
+	69;
 	28;
 	35;
 	42;
 	44;
+	71;
 	59;
 	65;
 	66;
-	69;
-	71;
 
 	// Edge definitions.
 	2 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
+	69 -> 71;
 	28 -> 35;
 	35 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
 	42 -> 71;
 	44 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	44 -> 65 [
 		color=red
-		label=false
+		cond=false
 	];
 	59 -> 66;
 	65 -> 66;
 	66 -> 69;
-	69 -> 71;
 }

@@ -1,27 +1,28 @@
-digraph "import_append_char" {
+strict digraph "import_append_char" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
+	38;
 	36;
-	39;
-	40;
+	37;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 40 [
+	2 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 39 [
+	13 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 40;
+	36 -> 37;
+	37 -> 38;
 }

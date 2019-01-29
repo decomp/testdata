@@ -1,26 +1,26 @@
-digraph "sqlite3VdbeUsesBtree" {
+strict digraph "sqlite3VdbeUsesBtree" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
-	26;
 	33;
+	26;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 33 [
 		color=red
-		label=false
-	];
-	13 -> 26 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	13 -> 33 [
 		color=red
-		label=false
+		cond=false
+	];
+	13 -> 26 [
+		color=darkgreen
+		cond=true
 	];
 	26 -> 33;
 }

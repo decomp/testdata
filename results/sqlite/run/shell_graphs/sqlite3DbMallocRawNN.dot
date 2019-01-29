@@ -1,69 +1,71 @@
-digraph "sqlite3DbMallocRawNN" {
+strict digraph "sqlite3DbMallocRawNN" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
+	79;
 	20;
 	27;
-	33;
-	40;
-	67;
-	75;
 	78;
-	79;
-	80;
-	85;
+	33;
+	48;
+	90;
+	54;
+	69;
+	76;
+	77;
 	86;
-	87;
-	91;
+	84;
+	85;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 80 [
+	2 -> 79 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 79;
+	79 -> 84 [
+		color=darkgreen
+		cond=true
+	];
+	79 -> 85 [
+		color=red
+		cond=false
+	];
+	20 -> 78;
 	27 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 40 [
+	27 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 78;
-	40 -> 67 [
+	78 -> 86;
+	33 -> 90;
+	48 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 75 [
+	48 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
-	67 -> 75;
-	75 -> 91;
-	78 -> 79;
-	79 -> 87;
-	80 -> 85 [
-		color=darkgreen
-		label=true
-	];
-	80 -> 86 [
-		color=red
-		label=false
-	];
-	85 -> 91;
-	86 -> 87;
-	87 -> 91;
+	54 -> 90;
+	69 -> 76;
+	76 -> 77;
+	77 -> 78;
+	86 -> 90;
+	84 -> 90;
+	85 -> 86;
 }

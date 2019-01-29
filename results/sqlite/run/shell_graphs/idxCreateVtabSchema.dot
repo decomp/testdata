@@ -1,0 +1,89 @@
+strict digraph "idxCreateVtabSchema" {
+	// Node definitions.
+	2 [entry=true];
+	21;
+	24;
+	28;
+	30;
+	126;
+	48;
+	42;
+	55;
+	125;
+	64;
+	124;
+	74;
+	80;
+	106;
+	103;
+	114;
+	121;
+
+	// Edge definitions.
+	2 -> 21;
+	21 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 28 [
+		color=red
+		cond=false
+	];
+	24 -> 28;
+	28 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 126 [
+		color=red
+		cond=false
+	];
+	30 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 42 [
+		color=red
+		cond=false
+	];
+	48 -> 125;
+	42 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	42 -> 55 [
+		color=red
+		cond=false
+	];
+	55 -> 64 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 124 [
+		color=red
+		cond=false
+	];
+	125 -> 21;
+	64 -> 74;
+	124 -> 125;
+	74 -> 80 [
+		color=darkgreen
+		cond=true
+	];
+	74 -> 106 [
+		color=red
+		cond=false
+	];
+	80 -> 103;
+	106 -> 114 [
+		color=darkgreen
+		cond=true
+	];
+	106 -> 121 [
+		color=red
+		cond=false
+	];
+	103 -> 74;
+	114 -> 121;
+	121 -> 124;
+}

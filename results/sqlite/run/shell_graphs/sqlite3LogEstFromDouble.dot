@@ -1,29 +1,29 @@
-digraph "sqlite3LogEstFromDouble" {
+strict digraph "sqlite3LogEstFromDouble" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	9;
+	27;
 	12;
 	16;
-	27;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 27;
 	9 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 27;
 	16 -> 27;

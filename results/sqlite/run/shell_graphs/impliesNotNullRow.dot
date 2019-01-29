@@ -1,0 +1,91 @@
+strict digraph "impliesNotNullRow" {
+	// Node definitions.
+	2 [entry=true];
+	11;
+	12;
+	68;
+	17;
+	18;
+	31;
+	67;
+	27;
+	30;
+	39;
+	48;
+	65;
+	56;
+	66;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 12 [
+		color=red
+		cond=false
+	];
+	11 -> 68;
+	12 -> 17 [
+		cond="case (x=157)"
+		label="case (x=157)"
+	];
+	12 -> 18 [
+		cond="case (x=158)"
+		label="case (x=158)"
+	];
+	12 -> 31 [
+		cond="case (x=57)"
+		label="case (x=57)"
+	];
+	12 -> 67 [
+		cond="default case"
+		label="default case"
+	];
+	17 -> 68;
+	18 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 30 [
+		color=red
+		cond=false
+	];
+	31 -> 39 [
+		color=darkgreen
+		cond=true
+	];
+	31 -> 48 [
+		color=red
+		cond=false
+	];
+	67 -> 68;
+	27 -> 68;
+	30 -> 68;
+	39 -> 48 [
+		color=red
+		cond=false
+	];
+	39 -> 65 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 66 [
+		color=red
+		cond=false
+	];
+	65 -> 68;
+	56 -> 65 [
+		color=darkgreen
+		cond=true
+	];
+	56 -> 66 [
+		color=red
+		cond=false
+	];
+	66 -> 67;
+}

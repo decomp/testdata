@@ -1,6 +1,6 @@
-digraph "vdbeRecordCompareInt" {
+strict digraph "vdbeRecordCompareInt" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	27;
 	32;
 	44;
@@ -12,28 +12,58 @@ digraph "vdbeRecordCompareInt" {
 	185;
 	190;
 	195;
+	242;
 	206;
 	211;
+	240;
 	215;
 	220;
+	239;
 	226;
 	231;
 	238;
-	239;
-	240;
-	242;
 
 	// Edge definitions.
-	3 -> 27 [label="case (x=1)"];
-	3 -> 32 [label="case (x=2)"];
-	3 -> 44 [label="case (x=3)"];
-	3 -> 62 [label="case (x=4)"];
-	3 -> 87 [label="case (x=5)"];
-	3 -> 128 [label="case (x=6)"];
-	3 -> 183 [label="case (x=8)"];
-	3 -> 184 [label="case (x=9)"];
-	3 -> 185 [label="case (x=7)"];
-	3 -> 190 [label="default case"];
+	3 -> 27 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	3 -> 32 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	3 -> 44 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	3 -> 62 [
+		cond="case (x=4)"
+		label="case (x=4)"
+	];
+	3 -> 87 [
+		cond="case (x=5)"
+		label="case (x=5)"
+	];
+	3 -> 128 [
+		cond="case (x=6)"
+		label="case (x=6)"
+	];
+	3 -> 183 [
+		cond="case (x=8)"
+		label="case (x=8)"
+	];
+	3 -> 184 [
+		cond="case (x=9)"
+		label="case (x=9)"
+	];
+	3 -> 185 [
+		cond="case (x=7)"
+		label="case (x=7)"
+	];
+	3 -> 190 [
+		cond="default case"
+		label="default case"
+	];
 	27 -> 195;
 	32 -> 195;
 	44 -> 195;
@@ -46,33 +76,33 @@ digraph "vdbeRecordCompareInt" {
 	190 -> 242;
 	195 -> 206 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	195 -> 211 [
 		color=red
-		label=false
+		cond=false
 	];
 	206 -> 240;
 	211 -> 215 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	211 -> 220 [
 		color=red
-		label=false
+		cond=false
 	];
+	240 -> 242;
 	215 -> 239;
 	220 -> 226 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	220 -> 231 [
 		color=red
-		label=false
+		cond=false
 	];
+	239 -> 240;
 	226 -> 238;
 	231 -> 238;
 	238 -> 239;
-	239 -> 240;
-	240 -> 242;
 }

@@ -1,55 +1,55 @@
-digraph "xstrtod" {
+strict digraph "xstrtod" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
+	22;
 	12;
 	14;
 	17;
-	19;
-	22;
-	25;
 	27;
+	19;
+	25;
 
 	// Edge definitions.
-	4 -> 12 [
-		color=red
-		label=false
-	];
 	4 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 14 [
-		color=darkgreen
-		label=true
-	];
-	12 -> 17 [
+	4 -> 12 [
 		color=red
-		label=false
-	];
-	14 -> 17 [
-		color=darkgreen
-		label=true
-	];
-	14 -> 27 [
-		color=red
-		label=false
-	];
-	17 -> 19 [
-		color=darkgreen
-		label=true
-	];
-	17 -> 22 [
-		color=red
-		label=false
-	];
-	19 -> 22;
-	22 -> 25 [
-		color=red
-		label=false
+		cond=false
 	];
 	22 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	22 -> 25 [
+		color=red
+		cond=false
+	];
+	12 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 17 [
+		color=red
+		cond=false
+	];
+	14 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 27 [
+		color=red
+		cond=false
+	];
+	17 -> 22 [
+		color=red
+		cond=false
+	];
+	17 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 22;
 	25 -> 27;
 }

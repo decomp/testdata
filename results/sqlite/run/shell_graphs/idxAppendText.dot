@@ -1,0 +1,74 @@
+strict digraph "idxAppendText" {
+	// Node definitions.
+	3 [entry=true];
+	14;
+	18;
+	19;
+	26;
+	70;
+	32;
+	41;
+	44;
+	64;
+	47;
+	50;
+	55;
+	67;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 18 [
+		color=red
+		cond=false
+	];
+	14 -> 19;
+	18 -> 19;
+	19 -> 26 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 70 [
+		color=red
+		cond=false
+	];
+	26 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 41 [
+		color=red
+		cond=false
+	];
+	32 -> 41;
+	41 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	41 -> 64 [
+		color=red
+		cond=false
+	];
+	44 -> 64 [
+		color=red
+		cond=false
+	];
+	44 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	64 -> 67;
+	47 -> 50 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 55 [
+		color=red
+		cond=false
+	];
+	50 -> 55;
+	55 -> 67;
+	67 -> 70;
+}

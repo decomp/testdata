@@ -1,138 +1,132 @@
-digraph "display_speed" {
+strict digraph "display_speed" {
 	// Node definitions.
-	2 [label=entry];
-	5;
+	2 [entry=true];
 	9;
-	12;
+	5;
+	29;
 	17;
+	12;
 	23;
-	27;
-	28;
-	30;
-	33;
-	38;
-	44;
-	48;
-	49;
-	52;
-	57;
-	63;
-	67;
-	68;
 	70;
-	71;
+	27;
+	67;
+	37;
+	32;
+	43;
+	74;
+	47;
+	55;
+	50;
+	61;
 	72;
-	73;
-	75;
-	77;
+	65;
+	69;
+	68;
 
 	// Edge definitions.
-	2 -> 5 [
-		color=red
-		label=false
-	];
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 9 [
-		color=darkgreen
-		label=true
-	];
-	5 -> 30 [
+	2 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 17;
-	12 -> 23 [
+	5 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 73 [
+	5 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
+	29 -> 37;
 	17 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 28;
-	27 -> 28;
-	28 -> 70;
-	30 -> 38;
-	33 -> 44 [
+	12 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 77 [
+	12 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
-	38 -> 33 [
+	23 -> 27;
+	70 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	38 -> 44 [
+	70 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	44 -> 49;
-	48 -> 49;
-	49 -> 57;
-	52 -> 63 [
+	27 -> 67;
+	67 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 75 [
+	67 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
-	57 -> 52 [
+	37 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
-	57 -> 63 [
+	37 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	63 -> 68;
-	67 -> 68;
-	68 -> 70;
-	70 -> 71 [
-		color=red
-		label=false
-	];
-	70 -> 72 [
+	32 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	71 -> 72;
-	73 -> 17 [
+	32 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
-	73 -> 27 [
-		color=darkgreen
-		label=true
-	];
-	75 -> 57 [
+	43 -> 47;
+	74 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	75 -> 67 [
+	74 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	77 -> 38 [
+	47 -> 55;
+	55 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
-	77 -> 48 [
+	55 -> 61 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	50 -> 61 [
+		color=darkgreen
+		cond=true
+	];
+	50 -> 72 [
+		color=red
+		cond=false
+	];
+	61 -> 65;
+	72 -> 55 [
+		color=red
+		cond=false
+	];
+	72 -> 65 [
+		color=darkgreen
+		cond=true
+	];
+	65 -> 67;
+	68 -> 69;
 }

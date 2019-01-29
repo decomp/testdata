@@ -1,27 +1,27 @@
-digraph "sqlite3PagerExclusiveLock" {
+strict digraph "sqlite3PagerExclusiveLock" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
+	20;
 	16;
 	19;
-	20;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 19;
 	19 -> 20;

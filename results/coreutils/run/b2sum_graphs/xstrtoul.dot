@@ -1,29 +1,32 @@
-digraph "xstrtoul" {
+strict digraph "xstrtoul" {
 	// Node definitions.
-	5 [label=entry];
-	9;
+	5 [entry=true];
 	10;
+	9;
 	15;
 	24;
+	265;
 	27;
 	31;
+	40;
 	33;
 	36;
-	40;
-	42;
-	43;
-	46;
 	47;
-	52;
+	43;
+	42;
+	46;
+	262;
+	53;
 	56;
 	58;
 	59;
+	72;
 	62;
 	66;
 	71;
-	72;
 	75;
 	80;
+	253;
 	85;
 	111;
 	125;
@@ -34,128 +37,190 @@ digraph "xstrtoul" {
 	187;
 	221;
 	251;
-	253;
-	262;
-	265;
 
 	// Edge definitions.
-	5 -> 9 [
-		color=red
-		label=false
-	];
 	5 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	5 -> 9 [
+		color=red
+		cond=false
 	];
 	10 -> 15;
 	15 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 24 [
 		color=darkgreen
-		label=true
-	];
-	24 -> 27 [
-		color=red
-		label=false
+		cond=true
 	];
 	24 -> 265 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	24 -> 27 [
+		color=red
+		cond=false
 	];
 	27 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 40 [
 		color=red
-		label=false
-	];
-	31 -> 33 [
-		color=red
-		label=false
+		cond=false
 	];
 	31 -> 265 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 36 [
+	31 -> 33 [
 		color=red
-		label=false
+		cond=false
+	];
+	40 -> 265 [
+		cond="default case"
+		label="default case"
+	];
+	40 -> 43 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	40 -> 42 [
+		cond="case (x=34)"
+		label="case (x=34)"
 	];
 	33 -> 265 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 47 [
+	33 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 265 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 42 [label="case (x=34)"];
-	40 -> 43 [label="case (x=0)"];
-	40 -> 265 [label="default case"];
-	42 -> 43;
-	43 -> 46 [
-		color=darkgreen
-		label=true
-	];
-	43 -> 47 [
+	36 -> 47 [
 		color=red
-		label=false
-	];
-	46 -> 265;
-	47 -> 52 [
-		color=red
-		label=false
+		cond=false
 	];
 	47 -> 262 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 56 [
-		color=darkgreen
-		label=true
-	];
-	52 -> 58 [
+	47 -> 53 [
 		color=red
-		label=false
+		cond=false
+	];
+	43 -> 47 [
+		color=red
+		cond=false
+	];
+	43 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	42 -> 43;
+	46 -> 265;
+	262 -> 265;
+	53 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 58 [
+		color=red
+		cond=false
 	];
 	56 -> 265;
-	58 -> 59 [label="case (x=90)"];
-	58 -> 72 [label="default case"];
-	59 -> 62 [
-		color=red
-		label=false
+	58 -> 59 [
+		cond="case (x=90)"
+		label="case (x=90)"
+	];
+	58 -> 72 [
+		cond="default case"
+		label="default case"
 	];
 	59 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	62 -> 66 [label="case (x=105)"];
-	62 -> 71 [label="case (x=68)"];
-	62 -> 72 [label="default case"];
+	59 -> 62 [
+		color=red
+		cond=false
+	];
+	72 -> 75 [
+		cond="case (x=98)"
+		label="case (x=98)"
+	];
+	72 -> 80 [
+		cond="case (x=66)"
+		label="case (x=66)"
+	];
+	72 -> 253 [
+		cond="case (x=99)"
+		label="case (x=99)"
+	];
+	72 -> 85 [
+		cond="case (x=69)"
+		label="case (x=69)"
+	];
+	72 -> 111 [
+		cond="case (x=103)"
+		label="case (x=103)"
+	];
+	72 -> 125 [
+		cond="case (x=75)"
+		label="case (x=75)"
+	];
+	72 -> 131 [
+		cond="case (x=109)"
+		label="case (x=109)"
+	];
+	72 -> 141 [
+		cond="case (x=80)"
+		label="case (x=80)"
+	];
+	72 -> 163 [
+		cond="case (x=116)"
+		label="case (x=116)"
+	];
+	72 -> 181 [
+		cond="case (x=119)"
+		label="case (x=119)"
+	];
+	72 -> 187 [
+		cond="case (x=89)"
+		label="case (x=89)"
+	];
+	72 -> 221 [
+		cond="case (x=90)"
+		label="case (x=90)"
+	];
+	72 -> 251 [
+		cond="default case"
+		label="default case"
+	];
+	62 -> 72 [
+		cond="default case"
+		label="default case"
+	];
+	62 -> 66 [
+		cond="case (x=105)"
+		label="case (x=105)"
+	];
+	62 -> 71 [
+		cond="case (x=68)"
+		label="case (x=68)"
+	];
 	66 -> 72;
 	71 -> 72;
-	72 -> 75 [label="case (x=98)"];
-	72 -> 80 [label="case (x=66)"];
-	72 -> 85 [label="case (x=69)"];
-	72 -> 111 [label="case (x=103)"];
-	72 -> 125 [label="case (x=75)"];
-	72 -> 131 [label="case (x=109)"];
-	72 -> 141 [label="case (x=80)"];
-	72 -> 163 [label="case (x=116)"];
-	72 -> 181 [label="case (x=119)"];
-	72 -> 187 [label="case (x=89)"];
-	72 -> 221 [label="case (x=90)"];
-	72 -> 251 [label="default case"];
-	72 -> 253 [label="case (x=99)"];
 	75 -> 253;
 	80 -> 253;
+	253 -> 262;
 	85 -> 253;
 	111 -> 253;
 	125 -> 253;
@@ -166,6 +231,4 @@ digraph "xstrtoul" {
 	187 -> 253;
 	221 -> 253;
 	251 -> 265;
-	253 -> 262;
-	262 -> 265;
 }

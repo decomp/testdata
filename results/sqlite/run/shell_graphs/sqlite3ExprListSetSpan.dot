@@ -1,17 +1,17 @@
-digraph "sqlite3ExprListSetSpan" {
+strict digraph "sqlite3ExprListSetSpan" {
 	// Node definitions.
-	3 [label=entry];
-	14;
-	45;
+	4 [entry=true];
+	16;
+	35;
 
 	// Edge definitions.
-	3 -> 14 [
+	4 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 45 [
+	4 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 45;
+	16 -> 35;
 }

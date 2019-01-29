@@ -1,132 +1,132 @@
-digraph "generateWithRecursiveQuery" {
+strict digraph "generateWithRecursiveQuery" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	44;
 	45;
-	46;
+	274;
+	71;
 	77;
-	83;
-	96;
-	104;
-	105;
-	108;
-	118;
+	102;
+	90;
+	98;
+	99;
+	112;
+	121;
 	126;
-	130;
-	144;
-	159;
-	164;
-	167;
-	178;
-	191;
-	192;
-	202;
-	211;
-	216;
-	236;
-	241;
-	249;
-	251;
-	260;
-	266;
-	282;
+	140;
+	155;
+	160;
+	163;
+	174;
+	188;
+	189;
+	261;
+	199;
+	208;
+	213;
+	230;
+	235;
+	243;
+	245;
+	255;
 
 	// Edge definitions.
+	3 -> 44 [
+		color=darkgreen
+		cond=true
+	];
 	3 -> 45 [
-		color=darkgreen
-		label=true
-	];
-	3 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	45 -> 282;
-	46 -> 77;
-	77 -> 83 [
+	44 -> 274;
+	45 -> 71;
+	71 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	77 -> 108 [
+	71 -> 102 [
 		color=red
-		label=false
+		cond=false
 	];
-	83 -> 96 [
+	77 -> 90 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	83 -> 104 [
+	77 -> 98 [
 		color=red
-		label=false
+		cond=false
 	];
-	96 -> 108;
-	104 -> 105;
-	105 -> 77;
-	108 -> 118 [
+	102 -> 112 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	108 -> 126 [
+	102 -> 121 [
 		color=red
-		label=false
+		cond=false
 	];
-	118 -> 130;
-	126 -> 130;
-	130 -> 144 [
+	90 -> 102;
+	98 -> 99;
+	99 -> 71;
+	112 -> 126;
+	121 -> 126;
+	126 -> 140 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	130 -> 159 [
+	126 -> 155 [
 		color=red
-		label=false
+		cond=false
 	];
-	144 -> 164;
-	159 -> 164;
-	164 -> 167 [
+	140 -> 160;
+	155 -> 160;
+	160 -> 163 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	164 -> 178 [
+	160 -> 174 [
 		color=red
-		label=false
+		cond=false
 	];
-	167 -> 178;
-	178 -> 191 [
+	163 -> 174;
+	174 -> 188 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	178 -> 192 [
+	174 -> 189 [
 		color=red
-		label=false
+		cond=false
 	];
-	191 -> 266;
-	192 -> 202 [
+	188 -> 261;
+	189 -> 199 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	192 -> 211 [
+	189 -> 208 [
 		color=red
-		label=false
+		cond=false
 	];
-	202 -> 216;
-	211 -> 216;
-	216 -> 236 [
+	261 -> 274;
+	199 -> 213;
+	208 -> 213;
+	213 -> 230 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	216 -> 241 [
+	213 -> 235 [
 		color=red
-		label=false
+		cond=false
 	];
-	236 -> 241;
-	241 -> 249 [
+	230 -> 235;
+	235 -> 243 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	241 -> 251 [
+	235 -> 245 [
 		color=red
-		label=false
+		cond=false
 	];
-	249 -> 260;
-	251 -> 260;
-	260 -> 266;
-	266 -> 282;
+	243 -> 255;
+	245 -> 255;
+	255 -> 261;
 }

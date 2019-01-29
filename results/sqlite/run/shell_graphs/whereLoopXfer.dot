@@ -1,43 +1,43 @@
-digraph "whereLoopXfer" {
+strict digraph "whereLoopXfer" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	18;
 	22;
+	63;
 	45;
 	50;
+	62;
 	56;
 	61;
-	62;
-	63;
 
 	// Edge definitions.
 	3 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 63;
 	22 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
 	45 -> 62;
 	50 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	50 -> 61 [
 		color=red
-		label=false
+		cond=false
 	];
+	62 -> 63;
 	56 -> 61;
 	61 -> 62;
-	62 -> 63;
 }

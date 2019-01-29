@@ -1,6 +1,6 @@
-digraph "nocaseCollatingFunc" {
+strict digraph "nocaseCollatingFunc" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	17;
 	19;
 	21;
@@ -10,21 +10,21 @@ digraph "nocaseCollatingFunc" {
 	// Edge definitions.
 	5 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 21;
 	19 -> 21;
 	21 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 31;
 }

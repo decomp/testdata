@@ -1,6 +1,6 @@
-digraph "unixShmRegionPerMap" {
+strict digraph "unixShmRegionPerMap" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	10;
 	11;
 	15;
@@ -8,11 +8,11 @@ digraph "unixShmRegionPerMap" {
 	// Edge definitions.
 	0 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 15;
 	11 -> 15;

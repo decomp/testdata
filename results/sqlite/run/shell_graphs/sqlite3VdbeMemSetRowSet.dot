@@ -1,19 +1,19 @@
-digraph "sqlite3VdbeMemSetRowSet" {
+strict digraph "sqlite3VdbeMemSetRowSet" {
 	// Node definitions.
-	1 [label=entry];
-	16;
-	21;
-	42;
+	1 [entry=true];
+	14;
+	15;
+	24;
 
 	// Edge definitions.
-	1 -> 16 [
+	1 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 21 [
+	1 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 42;
-	21 -> 42;
+	14 -> 24;
+	15 -> 24;
 }

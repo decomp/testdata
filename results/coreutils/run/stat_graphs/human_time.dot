@@ -1,30 +1,30 @@
-digraph "human_time" {
+strict digraph "human_time" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	13;
-	19;
 	22;
+	19;
 	27;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 13;
-	13 -> 19 [
-		color=red
-		label=false
-	];
 	13 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 27;
+	13 -> 19 [
+		color=red
+		cond=false
+	];
 	22 -> 27;
+	19 -> 27;
 }

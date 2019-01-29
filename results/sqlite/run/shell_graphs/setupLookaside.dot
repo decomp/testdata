@@ -1,126 +1,126 @@
-digraph "setupLookaside" {
+strict digraph "setupLookaside" {
 	// Node definitions.
-	4 [label=entry];
-	18;
-	19;
-	25;
-	30;
-	35;
-	36;
-	39;
-	40;
-	43;
-	46;
-	47;
-	50;
-	58;
-	63;
+	4 [entry=true];
+	16;
+	17;
+	153;
+	23;
+	28;
+	33;
+	34;
+	37;
+	38;
+	44;
+	41;
+	45;
+	65;
+	48;
+	62;
+	56;
+	61;
 	64;
-	66;
-	67;
-	82;
-	87;
-	90;
-	107;
-	110;
-	126;
-	143;
-	144;
+	83;
+	132;
+	92;
+	95;
+	115;
+	112;
+	152;
 
 	// Edge definitions.
-	4 -> 18 [
+	4 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 19 [
+	4 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 144;
-	19 -> 25 [
+	16 -> 153;
+	17 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 30 [
+	17 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 30;
-	30 -> 35 [
+	23 -> 28;
+	28 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 36 [
+	28 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	35 -> 36;
-	36 -> 39 [
+	33 -> 34;
+	34 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 40 [
+	34 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 40;
-	40 -> 43 [
-		color=red
-		label=false
-	];
-	40 -> 46 [
+	37 -> 38;
+	38 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	43 -> 46 [
-		color=darkgreen
-		label=true
-	];
-	43 -> 47 [
+	38 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	46 -> 67;
-	47 -> 50 [
+	44 -> 65;
+	41 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 64 [
+	41 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	50 -> 58 [
+	45 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	50 -> 63 [
+	45 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
-	58 -> 63;
-	63 -> 66;
-	64 -> 66;
-	66 -> 67;
-	67 -> 82 [
+	65 -> 83 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 126 [
+	65 -> 132 [
 		color=red
-		label=false
+		cond=false
 	];
-	82 -> 87;
-	87 -> 90 [
+	48 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	87 -> 110 [
+	48 -> 61 [
 		color=red
-		label=false
+		cond=false
 	];
-	90 -> 107;
-	107 -> 87;
-	110 -> 143;
-	126 -> 143;
-	143 -> 144;
+	62 -> 64;
+	56 -> 61;
+	61 -> 64;
+	64 -> 65;
+	83 -> 92;
+	132 -> 152;
+	92 -> 95 [
+		color=darkgreen
+		cond=true
+	];
+	92 -> 115 [
+		color=red
+		cond=false
+	];
+	95 -> 112;
+	115 -> 152;
+	112 -> 92;
+	152 -> 153;
 }

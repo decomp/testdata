@@ -1,17 +1,17 @@
-digraph "sqlite3VdbeMemSetDouble" {
+strict digraph "sqlite3VdbeMemSetDouble" {
 	// Node definitions.
-	2 [label=entry];
-	9;
+	2 [entry=true];
 	16;
+	9;
 
 	// Edge definitions.
-	2 -> 9 [
-		color=red
-		label=false
-	];
 	2 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 9 [
+		color=red
+		cond=false
 	];
 	9 -> 16;
 }

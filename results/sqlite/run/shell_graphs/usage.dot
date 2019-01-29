@@ -1,6 +1,6 @@
-digraph "usage" {
+strict digraph "usage" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	11;
 	14;
@@ -9,11 +9,11 @@ digraph "usage" {
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 14;
 	11 -> 14;

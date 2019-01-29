@@ -1,69 +1,75 @@
-digraph "first_last_page" {
+strict digraph "first_last_page" {
 	// Node definitions.
-	3 [label=entry];
-	11;
-	12;
-	18;
-	21;
-	25;
-	26;
-	29;
-	33;
+	3 [entry=true];
+	14;
+	13;
+	20;
+	43;
+	23;
+	37;
+	28;
+	27;
+	31;
 	35;
-	40;
-	41;
+	42;
 
 	// Edge definitions.
-	3 -> 11 [label="default case"];
-	3 -> 12 [label="case (x=0)"];
-	12 -> 18 [
+	3 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 41 [
+	3 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 21 [
+	14 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 35 [
+	14 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 25 [
-		color=red
-		label=false
-	];
-	21 -> 26 [
+	20 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 29 [
+	20 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 41 [
+	23 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	29 -> 33 [
+	23 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 41 [
-		color=darkgreen
-		label=true
-	];
-	33 -> 35;
-	35 -> 40 [
-		color=darkgreen
-		label=true
-	];
-	35 -> 41 [
+	37 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
-	40 -> 41;
+	37 -> 42 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 31 [
+		color=red
+		cond=false
+	];
+	31 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	31 -> 35 [
+		color=red
+		cond=false
+	];
+	35 -> 37;
+	42 -> 43;
 }

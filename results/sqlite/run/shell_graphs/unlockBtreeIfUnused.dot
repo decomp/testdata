@@ -1,26 +1,26 @@
-digraph "unlockBtreeIfUnused" {
+strict digraph "unlockBtreeIfUnused" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
-	14;
 	21;
+	14;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 21 [
 		color=red
-		label=false
-	];
-	9 -> 14 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	9 -> 21 [
 		color=red
-		label=false
+		cond=false
+	];
+	9 -> 14 [
+		color=darkgreen
+		cond=true
 	];
 	14 -> 21;
 }

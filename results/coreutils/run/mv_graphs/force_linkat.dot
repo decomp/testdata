@@ -1,101 +1,92 @@
-digraph "force_linkat" {
+strict digraph "force_linkat" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
+	60;
 	13;
 	17;
-	25;
 	28;
-	33;
-	41;
-	43;
-	46;
-	48;
-	51;
-	54;
-	55;
-	57;
+	25;
 	58;
-	60;
-	62;
+	41;
+	39;
+	49;
+	46;
+	44;
+	53;
+	52;
+	56;
+	55;
 
 	// Edge definitions.
+	6 -> 60 [
+		color=darkgreen
+		cond=true
+	];
 	6 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	6 -> 62 [
-		color=darkgreen
-		label=true
+	13 -> 60 [
+		color=red
+		cond=false
 	];
 	13 -> 17 [
 		color=darkgreen
-		label=true
-	];
-	13 -> 62 [
-		color=red
-		label=false
-	];
-	17 -> 25 [
-		color=red
-		label=false
+		cond=true
 	];
 	17 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	17 -> 25 [
+		color=red
+		cond=false
+	];
+	28 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 39 [
+		color=red
+		cond=false
 	];
 	25 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 60 [
+	25 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 33 [
-		color=red
-		label=false
-	];
-	28 -> 60 [
-		color=darkgreen
-		label=true
-	];
-	33 -> 41 [
-		color=red
-		label=false
-	];
-	33 -> 43 [
-		color=darkgreen
-		label=true
-	];
-	41 -> 51;
-	43 -> 46 [
-		color=red
-		label=false
-	];
-	43 -> 48 [
-		color=darkgreen
-		label=true
-	];
-	46 -> 48;
-	48 -> 51;
-	51 -> 54 [
-		color=red
-		label=false
-	];
-	51 -> 55 [
-		color=darkgreen
-		label=true
-	];
-	54 -> 55;
-	55 -> 57 [
-		color=red
-		label=false
-	];
-	55 -> 58 [
-		color=darkgreen
-		label=true
-	];
-	57 -> 58;
 	58 -> 60;
-	60 -> 62;
+	41 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	41 -> 44 [
+		color=red
+		cond=false
+	];
+	39 -> 49;
+	49 -> 53 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 52 [
+		color=red
+		cond=false
+	];
+	46 -> 49;
+	44 -> 46;
+	53 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 55 [
+		color=red
+		cond=false
+	];
+	52 -> 53;
+	56 -> 58;
+	55 -> 56;
 }

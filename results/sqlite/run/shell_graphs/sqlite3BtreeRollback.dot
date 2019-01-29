@@ -1,96 +1,96 @@
-digraph "sqlite3BtreeRollback" {
+strict digraph "sqlite3BtreeRollback" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	19;
+	26;
 	24;
 	25;
-	26;
 	27;
 	30;
+	40;
 	37;
 	39;
-	40;
 	46;
+	80;
 	53;
 	55;
 	59;
+	76;
 	67;
 	71;
-	76;
-	80;
 
 	// Edge definitions.
 	3 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
+	26 -> 27;
 	24 -> 25;
 	25 -> 27;
-	26 -> 27;
 	27 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 39;
-	39 -> 40;
 	40 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
+	37 -> 39;
+	39 -> 40;
 	46 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	46 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	53 -> 55;
 	55 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 76 [
 		color=red
-		label=false
+		cond=false
 	];
 	59 -> 67 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	59 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
+	76 -> 80;
 	67 -> 71;
 	71 -> 76;
-	76 -> 80;
 }

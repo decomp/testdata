@@ -1,0 +1,21 @@
+strict digraph "selectWindowRewriteSelectCb" {
+	// Node definitions.
+	2 [entry=true];
+	18;
+	19;
+	30;
+	29;
+
+	// Edge definitions.
+	2 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 19 [
+		color=red
+		cond=false
+	];
+	18 -> 30;
+	19 -> 29;
+	29 -> 30;
+}

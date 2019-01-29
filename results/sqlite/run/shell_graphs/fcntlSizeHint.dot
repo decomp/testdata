@@ -1,120 +1,120 @@
-digraph "fcntlSizeHint" {
+strict digraph "fcntlSizeHint" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	16;
+	93;
 	24;
 	25;
+	131;
 	47;
+	92;
 	63;
 	71;
+	91;
 	75;
 	78;
 	84;
 	85;
 	86;
-	91;
-	92;
-	93;
 	98;
+	130;
 	104;
 	109;
+	125;
 	116;
 	124;
-	125;
-	130;
-	131;
 
 	// Edge definitions.
 	2 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 93 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 25 [
 		color=red
-		label=false
+		cond=false
+	];
+	93 -> 98 [
+		color=darkgreen
+		cond=true
+	];
+	93 -> 130 [
+		color=red
+		cond=false
 	];
 	24 -> 131;
 	25 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 92 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 63;
+	92 -> 93;
 	63 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	63 -> 91 [
 		color=red
-		label=false
+		cond=false
 	];
 	71 -> 75 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	71 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
+	91 -> 92;
 	75 -> 78;
 	78 -> 84 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	78 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
 	84 -> 131;
 	85 -> 86;
 	86 -> 63;
-	91 -> 92;
-	92 -> 93;
-	93 -> 98 [
-		color=darkgreen
-		label=true
-	];
-	93 -> 130 [
+	98 -> 130 [
 		color=red
-		label=false
+		cond=false
 	];
 	98 -> 104 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	98 -> 130 [
-		color=red
-		label=false
-	];
+	130 -> 131;
 	104 -> 109 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	104 -> 125 [
 		color=red
-		label=false
+		cond=false
 	];
 	109 -> 116 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	109 -> 124 [
 		color=red
-		label=false
+		cond=false
 	];
+	125 -> 131;
 	116 -> 131;
 	124 -> 125;
-	125 -> 131;
-	130 -> 131;
 }

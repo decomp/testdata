@@ -1,17 +1,17 @@
-digraph "sqlite3VdbeSetP4KeyInfo" {
+strict digraph "sqlite3VdbeSetP4KeyInfo" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	15;
 	19;
 
 	// Edge definitions.
 	2 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 19;
 }

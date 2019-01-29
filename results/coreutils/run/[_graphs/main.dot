@@ -1,85 +1,76 @@
-digraph "main" {
+strict digraph "main" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
+	21;
 	14;
 	15;
 	18;
-	21;
 	23;
+	52;
 	30;
-	34;
-	37;
-	39;
-	45;
-	53;
-	56;
+	33;
+	35;
+	49;
+	41;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 15 [
 		color=red
-		label=false
+		cond=false
+	];
+	21 -> 23 [
+		color=red
+		cond=false
+	];
+	21 -> 30 [
+		color=darkgreen
+		cond=true
 	];
 	15 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 56;
-	21 -> 23 [
-		color=red
-		label=false
-	];
-	21 -> 34 [
-		color=darkgreen
-		label=true
-	];
+	18 -> 52;
 	23 -> 30 [
-		color=darkgreen
-		label=true
-	];
-	23 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	30 -> 34 [
-		color=red
-		label=false
-	];
-	30 -> 37 [
+	23 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 39 [
-		color=red
-		label=false
-	];
-	37 -> 56 [
+	33 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 45 [
+	33 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 53 [
+	35 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	53 -> 56;
+	35 -> 41 [
+		color=red
+		cond=false
+	];
+	49 -> 52;
 }

@@ -1,17 +1,17 @@
-digraph "zeroPage" {
+strict digraph "zeroPage" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	24;
 	36;
 
 	// Edge definitions.
 	2 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 36;
 }

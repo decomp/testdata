@@ -1,50 +1,48 @@
-digraph "print_named_ascii" {
+strict digraph "print_named_ascii" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	9;
+	37;
 	13;
+	31;
 	25;
 	27;
 	30;
-	31;
-	37;
-	38;
 
 	// Edge definitions.
 	6 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	6 -> 38 [
+	6 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 13;
-	13 -> 25 [
-		color=red
-		label=false
-	];
 	13 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	25 -> 27 [
-		color=darkgreen
-		label=true
-	];
-	25 -> 30 [
+	13 -> 25 [
 		color=red
-		label=false
-	];
-	27 -> 31;
-	30 -> 31;
-	31 -> 13 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	31 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 38;
+	31 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 30 [
+		color=red
+		cond=false
+	];
+	27 -> 31;
+	30 -> 31;
 }

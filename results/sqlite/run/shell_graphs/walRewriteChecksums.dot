@@ -1,8 +1,9 @@
-digraph "walRewriteChecksums" {
+strict digraph "walRewriteChecksums" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	23;
 	24;
+	121;
 	29;
 	30;
 	43;
@@ -10,60 +11,59 @@ digraph "walRewriteChecksums" {
 	71;
 	75;
 	77;
+	118;
 	96;
 	114;
 	115;
-	118;
-	121;
 
 	// Edge definitions.
 	2 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 121;
 	24 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 43;
 	30 -> 43;
 	43 -> 68;
 	68 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
 	71 -> 75;
 	75 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	75 -> 118 [
 		color=red
-		label=false
+		cond=false
 	];
 	77 -> 96 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	77 -> 114 [
 		color=red
-		label=false
+		cond=false
 	];
+	118 -> 121;
 	96 -> 114;
 	114 -> 115;
 	115 -> 68;
-	118 -> 121;
 }

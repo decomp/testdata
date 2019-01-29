@@ -1,17 +1,17 @@
-digraph "sqlite3StatusUp" {
+strict digraph "sqlite3StatusUp" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	21;
 	29;
 
 	// Edge definitions.
 	2 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 29;
 }

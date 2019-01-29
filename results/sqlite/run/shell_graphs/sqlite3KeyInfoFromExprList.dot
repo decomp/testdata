@@ -1,0 +1,32 @@
+strict digraph "sqlite3KeyInfoFromExprList" {
+	// Node definitions.
+	4 [entry=true];
+	29;
+	71;
+	37;
+	41;
+	70;
+	65;
+
+	// Edge definitions.
+	4 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 71 [
+		color=red
+		cond=false
+	];
+	29 -> 37;
+	37 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 70 [
+		color=red
+		cond=false
+	];
+	41 -> 65;
+	70 -> 71;
+	65 -> 37;
+}

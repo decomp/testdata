@@ -1,78 +1,78 @@
-digraph "pagerOpenWalIfPresent" {
+strict digraph "pagerOpenWalIfPresent" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	58;
 	11;
 	21;
+	57;
 	24;
+	46;
 	29;
 	31;
+	60;
 	34;
 	42;
 	45;
-	46;
+	56;
 	52;
 	55;
-	56;
-	57;
-	58;
-	60;
 
 	// Edge definitions.
-	1 -> 11 [
-		color=red
-		label=false
-	];
 	1 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	1 -> 11 [
+		color=red
+		cond=false
+	];
+	58 -> 60;
 	11 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
+	57 -> 58;
 	24 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 31 [
 		color=red
-		label=false
+		cond=false
+	];
+	46 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	46 -> 55 [
+		color=red
+		cond=false
 	];
 	29 -> 60;
 	31 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	34 -> 45;
 	42 -> 45;
 	45 -> 56;
-	46 -> 52 [
-		color=darkgreen
-		label=true
-	];
-	46 -> 55 [
-		color=red
-		label=false
-	];
+	56 -> 57;
 	52 -> 55;
 	55 -> 56;
-	56 -> 57;
-	57 -> 58;
-	58 -> 60;
 }

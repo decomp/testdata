@@ -1,46 +1,46 @@
-digraph "sqlite3VdbeCheckFk" {
+strict digraph "sqlite3VdbeCheckFk" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
 	21;
-	24;
 	29;
 	35;
+	24;
 	36;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 29 [
 		color=darkgreen
-		label=true
-	];
-	21 -> 24 [
-		color=red
-		label=false
+		cond=true
 	];
 	21 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 29 [
-		color=darkgreen
-		label=true
-	];
-	24 -> 35 [
+	21 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 36;
 	35 -> 36;
+	24 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 35 [
+		color=red
+		cond=false
+	];
 }

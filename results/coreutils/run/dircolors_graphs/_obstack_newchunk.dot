@@ -1,69 +1,69 @@
-digraph "_obstack_newchunk" {
+strict digraph "_obstack_newchunk" {
 	// Node definitions.
-	2 [label=entry];
-	28;
-	34;
-	40;
-	44;
+	2 [entry=true];
 	47;
+	28;
+	40;
+	34;
+	44;
 	49;
 	67;
-	74;
-	84;
-	89;
 	92;
+	74;
+	89;
+	84;
 
 	// Edge definitions.
-	2 -> 28 [
-		color=red
-		label=false
-	];
 	2 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 34 [
+	2 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	34 -> 44;
+	28 -> 34 [
+		color=red
+		cond=false
+	];
 	40 -> 44;
+	34 -> 44;
 	44 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	44 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 67 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 92 [
 		color=red
-		label=false
-	];
-	67 -> 74 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	67 -> 92 [
 		color=red
-		label=false
+		cond=false
 	];
-	74 -> 84 [
-		color=red
-		label=false
+	67 -> 74 [
+		color=darkgreen
+		cond=true
 	];
 	74 -> 89 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	84 -> 92;
+	74 -> 84 [
+		color=red
+		cond=false
+	];
 	89 -> 92;
+	84 -> 92;
 }

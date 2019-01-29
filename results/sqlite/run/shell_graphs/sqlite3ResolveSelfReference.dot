@@ -1,28 +1,28 @@
-digraph "sqlite3ResolveSelfReference" {
+strict digraph "sqlite3ResolveSelfReference" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	38;
 	39;
-	42;
 	45;
+	42;
 
 	// Edge definitions.
 	5 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 45;
-	39 -> 42 [
-		color=darkgreen
-		label=true
-	];
 	39 -> 45 [
 		color=red
-		label=false
+		cond=false
+	];
+	39 -> 42 [
+		color=darkgreen
+		cond=true
 	];
 	42 -> 45;
 }

@@ -1,39 +1,39 @@
-digraph "sqlite3StringToId" {
+strict digraph "sqlite3StringToId" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	11;
-	17;
-	25;
-	30;
 	31;
+	17;
+	30;
+	25;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 31;
 	11 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 30 [
 		color=red
-		label=false
-	];
-	17 -> 25 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	17 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 30;
+	17 -> 25 [
+		color=darkgreen
+		cond=true
+	];
 	30 -> 31;
+	25 -> 30;
 }

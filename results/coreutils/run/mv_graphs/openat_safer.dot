@@ -1,28 +1,28 @@
-digraph "openat_safer" {
+strict digraph "openat_safer" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	26;
 	7;
 	12;
 	18;
 	22;
-	26;
 
 	// Edge definitions.
-	3 -> 7 [
-		color=red
-		label=false
-	];
 	3 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	3 -> 7 [
+		color=red
+		cond=false
 	];
 	7 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 22;
 	18 -> 22;

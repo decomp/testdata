@@ -1,6 +1,6 @@
-digraph "sqlite3ExprSetHeightAndFlags" {
+strict digraph "sqlite3ExprSetHeightAndFlags" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	10;
 	17;
@@ -8,11 +8,11 @@ digraph "sqlite3ExprSetHeightAndFlags" {
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 17;
 	10 -> 17;

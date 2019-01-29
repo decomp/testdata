@@ -1,32 +1,32 @@
-digraph "copyPayload" {
+strict digraph "copyPayload" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	15;
+	27;
 	20;
 	22;
-	27;
-	32;
 	33;
+	32;
 
 	// Edge definitions.
 	5 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
+	27 -> 32;
 	20 -> 33;
 	22 -> 32;
-	27 -> 32;
 	32 -> 33;
 }

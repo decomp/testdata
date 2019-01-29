@@ -1,20 +1,20 @@
-digraph "analyzeDatabase" {
+strict digraph "analyzeDatabase" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	46;
 	49;
-	59;
 	63;
+	59;
 
 	// Edge definitions.
 	2 -> 46;
 	46 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	46 -> 63 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 59;
 	59 -> 46;

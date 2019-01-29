@@ -1,19 +1,41 @@
-digraph "output_reset" {
+strict digraph "output_reset" {
 	// Node definitions.
-	1 [label=entry];
-	9;
-	14;
-	18;
+	1 [entry=true];
+	11;
+	16;
+	43;
+	24;
+	42;
+	33;
+	37;
 
 	// Edge definitions.
-	1 -> 9 [
+	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 14 [
+	1 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 18;
-	14 -> 18;
+	11 -> 43;
+	16 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 42 [
+		color=red
+		cond=false
+	];
+	24 -> 33 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 37 [
+		color=red
+		cond=false
+	];
+	42 -> 43;
+	33 -> 37;
+	37 -> 42;
 }

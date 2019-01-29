@@ -1,96 +1,96 @@
-digraph "sqlite3PagerRollback" {
+strict digraph "sqlite3PagerRollback" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	12;
 	16;
+	85;
 	22;
 	23;
 	28;
+	42;
 	39;
 	41;
-	42;
+	81;
 	49;
 	55;
+	77;
+	76;
 	66;
 	69;
-	76;
-	77;
 	80;
-	81;
-	85;
 
 	// Edge definitions.
 	1 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 85;
 	16 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 85;
 	23 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 41;
-	41 -> 81;
 	42 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
+	39 -> 41;
+	41 -> 81;
+	81 -> 85;
 	49 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 77 [
 		color=red
-		label=false
-	];
-	55 -> 66 [
-		color=red
-		label=false
+		cond=false
 	];
 	55 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	55 -> 66 [
+		color=red
+		cond=false
+	];
+	77 -> 80;
+	76 -> 80;
+	66 -> 76 [
+		color=red
+		cond=false
 	];
 	66 -> 69 [
 		color=darkgreen
-		label=true
-	];
-	66 -> 76 [
-		color=red
-		label=false
+		cond=true
 	];
 	69 -> 85;
-	76 -> 80;
-	77 -> 80;
 	80 -> 81;
-	81 -> 85;
 }

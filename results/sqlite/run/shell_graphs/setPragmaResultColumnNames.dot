@@ -1,47 +1,47 @@
-digraph "setPragmaResultColumnNames" {
+strict digraph "setPragmaResultColumnNames" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	15;
 	16;
 	19;
 	24;
 	30;
+	54;
 	35;
 	40;
-	48;
 	53;
-	54;
+	48;
 
 	// Edge definitions.
 	2 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 19;
 	16 -> 19;
 	19 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 54;
 	30 -> 35;
 	35 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
 	40 -> 48;
-	48 -> 35;
 	53 -> 54;
+	48 -> 35;
 }

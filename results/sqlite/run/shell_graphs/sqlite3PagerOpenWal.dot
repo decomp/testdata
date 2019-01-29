@@ -1,52 +1,52 @@
-digraph "sqlite3PagerOpenWal" {
+strict digraph "sqlite3PagerOpenWal" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	35;
 	11;
 	16;
-	20;
 	21;
+	20;
+	39;
 	29;
 	34;
-	35;
 	37;
-	39;
 
 	// Edge definitions.
-	2 -> 11 [
-		color=red
-		label=false
-	];
 	2 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 11 [
+		color=red
+		cond=false
+	];
+	35 -> 37;
+	11 -> 35 [
+		color=darkgreen
+		cond=true
 	];
 	11 -> 16 [
 		color=red
-		label=false
-	];
-	11 -> 35 [
-		color=darkgreen
-		label=true
-	];
-	16 -> 20 [
-		color=red
-		label=false
+		cond=false
 	];
 	16 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 39;
+	16 -> 20 [
+		color=red
+		cond=false
+	];
 	21 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
+	20 -> 39;
 	29 -> 34;
 	34 -> 37;
-	35 -> 37;
 	37 -> 39;
 }

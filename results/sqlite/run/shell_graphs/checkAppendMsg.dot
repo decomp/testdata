@@ -1,50 +1,50 @@
-digraph "checkAppendMsg" {
+strict digraph "checkAppendMsg" {
 	// Node definitions.
-	2 [label=entry];
-	10;
+	2 [entry=true];
 	11;
+	10;
+	63;
 	27;
 	30;
 	35;
 	47;
 	60;
-	63;
 
 	// Edge definitions.
-	2 -> 10 [
-		color=red
-		label=false
-	];
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	10 -> 63;
+	2 -> 10 [
+		color=red
+		cond=false
+	];
 	11 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
+	10 -> 63;
 	27 -> 30;
 	30 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 47;
-	47 -> 60 [
-		color=darkgreen
-		label=true
-	];
 	47 -> 63 [
 		color=red
-		label=false
+		cond=false
+	];
+	47 -> 60 [
+		color=darkgreen
+		cond=true
 	];
 	60 -> 63;
 }

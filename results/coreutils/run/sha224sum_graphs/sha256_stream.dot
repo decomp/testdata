@@ -1,74 +1,74 @@
-digraph "sha256_stream" {
+strict digraph "sha256_stream" {
 	// Node definitions.
-	2 [label=entry];
-	7;
+	2 [entry=true];
+	43;
+	6;
 	14;
-	15;
-	22;
-	25;
-	28;
-	29;
-	32;
-	33;
+	19;
+	35;
 	34;
-	36;
-	37;
-	47;
+	25;
+	29;
+	27;
+	33;
+	41;
+	39;
+	38;
 
 	// Edge definitions.
-	2 -> 7 [
+	2 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
-	2 -> 47 [
+	6 -> 14;
+	14 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 14;
-	14 -> 15;
-	15 -> 22 [
+	14 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 32 [
+	19 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 25 [
-		color=darkgreen
-		label=true
-	];
-	22 -> 29 [
+	19 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 28 [
+	35 -> 39 [
+		color=darkgreen
+		cond=true
+	];
+	35 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 34 [
+	34 -> 27;
+	25 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 47;
-	29 -> 15 [
+	25 -> 27 [
+		color=red
+		cond=false
+	];
+	29 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 14;
-	33 -> 34;
-	34 -> 36 [
-		color=red
-		label=false
-	];
-	34 -> 37 [
-		color=darkgreen
-		label=true
-	];
-	36 -> 37;
-	37 -> 47;
+	27 -> 14;
+	33 -> 41;
+	41 -> 43;
+	39 -> 41;
+	38 -> 39;
 }

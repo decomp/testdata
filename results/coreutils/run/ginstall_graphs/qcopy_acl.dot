@@ -1,17 +1,17 @@
-digraph "qcopy_acl" {
+strict digraph "qcopy_acl" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	10;
 	12;
 
 	// Edge definitions.
 	5 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 12;
 }

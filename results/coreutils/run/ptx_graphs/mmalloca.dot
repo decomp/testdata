@@ -1,26 +1,26 @@
-digraph "mmalloca" {
+strict digraph "mmalloca" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	3;
+	16;
 	7;
-	17;
 
 	// Edge definitions.
 	1 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 17 [
+	1 -> 16 [
 		color=red
-		label=false
+		cond=false
+	];
+	3 -> 16 [
+		color=darkgreen
+		cond=true
 	];
 	3 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
-	3 -> 17 [
-		color=darkgreen
-		label=true
-	];
-	7 -> 17;
+	7 -> 16;
 }

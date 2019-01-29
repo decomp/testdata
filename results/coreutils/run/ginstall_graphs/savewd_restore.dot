@@ -1,83 +1,98 @@
-digraph "savewd_restore" {
+strict digraph "savewd_restore" {
 	// Node definitions.
-	2 [label=entry];
-	6;
+	2 [entry=true];
+	53;
 	10;
+	6;
+	24;
+	52;
+	21;
 	15;
 	16;
-	21;
-	24;
 	28;
 	29;
 	31;
 	33;
 	36;
-	40;
 	41;
-	45;
+	40;
 	48;
-	52;
-	53;
+	45;
 
 	// Edge definitions.
-	2 -> 6 [label="case (x=4)"];
-	2 -> 10 [label="case (x=2)"];
-	2 -> 24 [label="case (x=3)"];
-	2 -> 52 [label="default case"];
-	2 -> 53 [label="case (x=1)"];
-	6 -> 21;
+	2 -> 53 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	2 -> 10 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	2 -> 6 [
+		cond="case (x=4)"
+		label="case (x=4)"
+	];
+	2 -> 24 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	2 -> 52 [
+		cond="default case"
+		label="default case"
+	];
 	10 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 53;
-	16 -> 21;
-	21 -> 53;
+	6 -> 21;
 	24 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 29 [
 		color=red
-		label=false
+		cond=false
+	];
+	21 -> 53;
+	15 -> 53;
+	16 -> 21;
+	29 -> 53 [
+		color=red
+		cond=false
 	];
 	29 -> 31 [
 		color=darkgreen
-		label=true
-	];
-	29 -> 53 [
-		color=red
-		label=false
+		cond=true
 	];
 	31 -> 33;
 	33 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	33 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 40 [
 		color=red
-		label=false
-	];
-	41 -> 45 [
-		color=red
-		label=false
+		cond=false
 	];
 	41 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	45 -> 48;
+	41 -> 45 [
+		color=red
+		cond=false
+	];
 	48 -> 53;
+	45 -> 48;
 }

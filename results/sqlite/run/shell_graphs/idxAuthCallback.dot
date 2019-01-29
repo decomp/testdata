@@ -1,0 +1,140 @@
+strict digraph "idxAuthCallback" {
+	// Node definitions.
+	6 [entry=true];
+	27;
+	21;
+	24;
+	108;
+	31;
+	107;
+	37;
+	40;
+	53;
+	47;
+	48;
+	49;
+	56;
+	106;
+	60;
+	63;
+	81;
+	69;
+	76;
+	75;
+	77;
+	84;
+	105;
+	89;
+	104;
+
+	// Edge definitions.
+	6 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	6 -> 21 [
+		color=red
+		cond=false
+	];
+	27 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	27 -> 107 [
+		color=red
+		cond=false
+	];
+	21 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 24 [
+		color=red
+		cond=false
+	];
+	24 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 108 [
+		color=red
+		cond=false
+	];
+	31 -> 37;
+	107 -> 108;
+	37 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 53 [
+		color=red
+		cond=false
+	];
+	40 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 48 [
+		color=red
+		cond=false
+	];
+	53 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 106 [
+		color=red
+		cond=false
+	];
+	47 -> 53;
+	48 -> 49;
+	49 -> 37;
+	56 -> 60;
+	106 -> 107;
+	60 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	60 -> 81 [
+		color=red
+		cond=false
+	];
+	63 -> 69 [
+		color=darkgreen
+		cond=true
+	];
+	63 -> 76 [
+		color=red
+		cond=false
+	];
+	81 -> 84 [
+		color=darkgreen
+		cond=true
+	];
+	81 -> 105 [
+		color=red
+		cond=false
+	];
+	69 -> 76 [
+		color=red
+		cond=false
+	];
+	69 -> 75 [
+		color=darkgreen
+		cond=true
+	];
+	76 -> 77;
+	75 -> 81;
+	77 -> 60;
+	84 -> 89 [
+		color=darkgreen
+		cond=true
+	];
+	84 -> 104 [
+		color=red
+		cond=false
+	];
+	105 -> 106;
+	89 -> 104;
+	104 -> 105;
+}

@@ -1,19 +1,19 @@
-digraph "sqliteDefaultBusyCallback" {
+strict digraph "sqliteDefaultBusyCallback" {
 	// Node definitions.
-	2 [label=entry];
-	19;
-	20;
-	25;
+	3 [entry=true];
+	22;
+	23;
+	28;
 
 	// Edge definitions.
-	2 -> 19 [
+	3 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 20 [
+	3 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 25;
-	20 -> 25;
+	22 -> 28;
+	23 -> 28;
 }

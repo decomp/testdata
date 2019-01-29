@@ -1,36 +1,36 @@
-digraph "add_exclude_file" {
+strict digraph "add_exclude_file" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	9;
-	13;
 	17;
-	20;
+	13;
 	26;
+	20;
 
 	// Edge definitions.
 	5 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 17 [
 		color=red
-		label=false
-	];
-	9 -> 13 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	9 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 26;
-	17 -> 20 [
-		color=red
-		label=false
+	9 -> 13 [
+		color=darkgreen
+		cond=true
 	];
 	17 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	17 -> 20 [
+		color=red
+		cond=false
+	];
+	13 -> 26;
 }

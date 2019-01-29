@@ -1,17 +1,17 @@
-digraph "sqlite3BtreeCommit" {
+strict digraph "sqlite3BtreeCommit" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
 	12;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 12;
 }

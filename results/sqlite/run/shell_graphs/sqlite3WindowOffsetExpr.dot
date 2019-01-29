@@ -1,0 +1,17 @@
+strict digraph "sqlite3WindowOffsetExpr" {
+	// Node definitions.
+	2 [entry=true];
+	8;
+	17;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 17 [
+		color=red
+		cond=false
+	];
+	8 -> 17;
+}

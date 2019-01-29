@@ -1,0 +1,17 @@
+strict digraph "expertColumn" {
+	// Node definitions.
+	3 [entry=true];
+	18;
+	21;
+
+	// Edge definitions.
+	3 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 21 [
+		color=red
+		cond=false
+	];
+	18 -> 21;
+}

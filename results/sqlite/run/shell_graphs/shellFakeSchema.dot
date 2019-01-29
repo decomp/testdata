@@ -1,0 +1,74 @@
+strict digraph "shellFakeSchema" {
+	// Node definitions.
+	3 [entry=true];
+	16;
+	18;
+	19;
+	29;
+	43;
+	35;
+	40;
+	39;
+	48;
+	52;
+	62;
+	67;
+	69;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 18 [
+		color=red
+		cond=false
+	];
+	16 -> 19;
+	18 -> 19;
+	19 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 43 [
+		color=red
+		cond=false
+	];
+	29 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 40 [
+		color=red
+		cond=false
+	];
+	43 -> 48;
+	35 -> 40 [
+		color=red
+		cond=false
+	];
+	35 -> 39 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 43;
+	39 -> 40;
+	48 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 62 [
+		color=red
+		cond=false
+	];
+	52 -> 48;
+	62 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	62 -> 69 [
+		color=red
+		cond=false
+	];
+	67 -> 69;
+}

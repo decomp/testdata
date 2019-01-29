@@ -1,63 +1,63 @@
-digraph "pageInsertArray" {
+strict digraph "pageInsertArray" {
 	// Node definitions.
-	7 [label=entry];
+	7 [entry=true];
 	32;
 	36;
+	107;
 	46;
 	52;
 	57;
+	74;
 	66;
 	67;
-	74;
-	104;
-	107;
 	110;
+	104;
 
 	// Edge definitions.
 	7 -> 32;
 	32 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 107 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
+	107 -> 110;
 	46 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
 	46 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	52 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	52 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
 	57 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	57 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
+	74 -> 104;
 	66 -> 110;
 	67 -> 74;
-	74 -> 104;
 	104 -> 32;
-	107 -> 110;
 }

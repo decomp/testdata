@@ -1,37 +1,46 @@
-digraph "tzalloc" {
+strict digraph "tzalloc" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	3;
-	6;
-	15;
-	20;
+	9;
+	11;
+	24;
+	17;
 	22;
 
 	// Edge definitions.
 	1 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 6 [
+	1 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
-	3 -> 6;
-	6 -> 15 [
-		color=red
-		label=false
-	];
-	6 -> 22 [
+	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 20 [
-		color=darkgreen
-		label=true
-	];
-	15 -> 22 [
+	3 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 22;
+	9 -> 11;
+	11 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	11 -> 17 [
+		color=red
+		cond=false
+	];
+	17 -> 24 [
+		color=red
+		cond=false
+	];
+	17 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 24;
 }

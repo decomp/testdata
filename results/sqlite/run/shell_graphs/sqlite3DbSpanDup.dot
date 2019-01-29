@@ -1,0 +1,43 @@
+strict digraph "sqlite3DbSpanDup" {
+	// Node definitions.
+	3 [entry=true];
+	8;
+	18;
+	21;
+	28;
+	31;
+	44;
+	46;
+	49;
+
+	// Edge definitions.
+	3 -> 8;
+	8 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 21 [
+		color=red
+		cond=false
+	];
+	18 -> 8;
+	21 -> 28;
+	28 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 44 [
+		color=red
+		cond=false
+	];
+	31 -> 44;
+	44 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	44 -> 49 [
+		color=red
+		cond=false
+	];
+	46 -> 28;
+}

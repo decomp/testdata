@@ -1,0 +1,30 @@
+strict digraph "apndIsOrdinaryDatabaseFile" {
+	// Node definitions.
+	2 [entry=true];
+	10;
+	11;
+	28;
+	22;
+	23;
+
+	// Edge definitions.
+	2 -> 10 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 11 [
+		color=red
+		cond=false
+	];
+	10 -> 28;
+	11 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	11 -> 23 [
+		color=red
+		cond=false
+	];
+	22 -> 28;
+	23 -> 28;
+}

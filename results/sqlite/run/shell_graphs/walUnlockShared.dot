@@ -1,6 +1,6 @@
-digraph "walUnlockShared" {
+strict digraph "walUnlockShared" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	10;
 	16;
@@ -8,11 +8,11 @@ digraph "walUnlockShared" {
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 16;
 	10 -> 16;

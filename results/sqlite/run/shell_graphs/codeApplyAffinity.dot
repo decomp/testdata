@@ -1,8 +1,9 @@
-digraph "codeApplyAffinity" {
+strict digraph "codeApplyAffinity" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	15;
 	16;
+	63;
 	17;
 	20;
 	26;
@@ -14,63 +15,62 @@ digraph "codeApplyAffinity" {
 	50;
 	53;
 	56;
-	66;
 
 	// Edge definitions.
 	4 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 66;
+	15 -> 63;
 	16 -> 17;
 	17 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 26;
 	26 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 17;
 	35 -> 36;
 	36 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
 	39 -> 48;
 	48 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	48 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
 	50 -> 36;
+	53 -> 63 [
+		color=red
+		cond=false
+	];
 	53 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	53 -> 66 [
-		color=red
-		label=false
-	];
-	56 -> 66;
+	56 -> 63;
 }

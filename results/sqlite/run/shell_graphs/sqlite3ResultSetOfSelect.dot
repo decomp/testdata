@@ -1,8 +1,9 @@
-digraph "sqlite3ResultSetOfSelect" {
+strict digraph "sqlite3ResultSetOfSelect" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	29;
 	30;
+	80;
 	31;
 	36;
 	40;
@@ -10,44 +11,43 @@ digraph "sqlite3ResultSetOfSelect" {
 	50;
 	75;
 	78;
-	80;
 
 	// Edge definitions.
 	2 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 80;
 	30 -> 31;
 	31 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 31;
 	40 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 80;
 	50 -> 75 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	50 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
 	75 -> 80;
 	78 -> 80;

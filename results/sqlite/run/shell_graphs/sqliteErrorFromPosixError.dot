@@ -1,15 +1,24 @@
-digraph "sqliteErrorFromPosixError" {
+strict digraph "sqliteErrorFromPosixError" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
 	8;
 	9;
 	11;
 
 	// Edge definitions.
-	2 -> 7 [label="case (x=37)"];
-	2 -> 8 [label="case (x=1)"];
-	2 -> 9 [label="default case"];
+	2 -> 7 [
+		cond="case (x=37)"
+		label="case (x=37)"
+	];
+	2 -> 8 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	2 -> 9 [
+		cond="default case"
+		label="default case"
+	];
 	7 -> 11;
 	8 -> 11;
 	9 -> 11;

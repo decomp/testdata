@@ -1,6 +1,6 @@
-digraph "pcache1Rekey" {
+strict digraph "pcache1Rekey" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	28;
 	33;
 	37;
@@ -11,20 +11,20 @@ digraph "pcache1Rekey" {
 	4 -> 28;
 	28 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	33 -> 28;
 	37 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
 	71 -> 75;
 }

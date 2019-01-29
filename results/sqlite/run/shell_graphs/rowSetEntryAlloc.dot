@@ -1,30 +1,30 @@
-digraph "rowSetEntryAlloc" {
+strict digraph "rowSetEntryAlloc" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
+	35;
 	18;
 	19;
-	35;
 	44;
 
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
+	35 -> 44;
 	18 -> 44;
 	19 -> 35;
-	35 -> 44;
 }

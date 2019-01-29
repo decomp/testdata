@@ -1,50 +1,50 @@
-digraph "sqlite3ValueText" {
+strict digraph "sqlite3ValueText" {
 	// Node definitions.
-	2 [label=entry];
-	8;
+	2 [entry=true];
 	9;
+	8;
+	40;
 	16;
-	24;
 	28;
+	24;
 	35;
 	36;
-	40;
 
 	// Edge definitions.
-	2 -> 8 [
-		color=red
-		label=false
-	];
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 40;
+	2 -> 8 [
+		color=red
+		cond=false
+	];
 	9 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 28 [
 		color=red
-		label=false
+		cond=false
+	];
+	8 -> 40;
+	16 -> 28 [
+		color=red
+		cond=false
 	];
 	16 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 28 [
-		color=red
-		label=false
-	];
-	24 -> 40;
 	28 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
+	24 -> 40;
 	35 -> 40;
 	36 -> 40;
 }

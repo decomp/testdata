@@ -1,0 +1,32 @@
+strict digraph "fsdirResetCursor" {
+	// Node definitions.
+	1 [entry=true];
+	5;
+	11;
+	34;
+	22;
+	27;
+	31;
+
+	// Edge definitions.
+	1 -> 5;
+	5 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	5 -> 34 [
+		color=red
+		cond=false
+	];
+	11 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	11 -> 27 [
+		color=red
+		cond=false
+	];
+	22 -> 27;
+	27 -> 31;
+	31 -> 5;
+}

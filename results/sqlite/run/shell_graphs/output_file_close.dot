@@ -1,35 +1,35 @@
-digraph "output_file_close" {
+strict digraph "output_file_close" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
+	16;
 	9;
 	13;
-	16;
 
 	// Edge definitions.
 	1 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 16 [
 		color=red
-		label=false
-	];
-	5 -> 9 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	5 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 13 [
+	5 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 16 [
 		color=red
-		label=false
+		cond=false
+	];
+	9 -> 13 [
+		color=darkgreen
+		cond=true
 	];
 	13 -> 16;
 }

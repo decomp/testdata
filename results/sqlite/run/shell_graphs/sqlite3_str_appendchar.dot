@@ -1,0 +1,39 @@
+strict digraph "sqlite3_str_appendchar" {
+	// Node definitions.
+	3 [entry=true];
+	19;
+	25;
+	24;
+	41;
+	26;
+	30;
+
+	// Edge definitions.
+	3 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 25 [
+		color=red
+		cond=false
+	];
+	19 -> 25 [
+		color=red
+		cond=false
+	];
+	19 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 26;
+	24 -> 41;
+	26 -> 41 [
+		color=red
+		cond=false
+	];
+	26 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 26;
+}

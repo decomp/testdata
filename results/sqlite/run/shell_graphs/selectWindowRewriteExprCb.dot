@@ -1,0 +1,138 @@
+strict digraph "selectWindowRewriteExprCb" {
+	// Node definitions.
+	2 [entry=true];
+	23;
+	66;
+	29;
+	30;
+	152;
+	36;
+	40;
+	59;
+	54;
+	55;
+	56;
+	63;
+	64;
+	65;
+	71;
+	98;
+	150;
+	76;
+	77;
+	151;
+	81;
+	84;
+	96;
+	90;
+	91;
+	92;
+	97;
+	116;
+	149;
+
+	// Edge definitions.
+	2 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 66 [
+		color=red
+		cond=false
+	];
+	23 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	23 -> 30 [
+		color=red
+		cond=false
+	];
+	66 -> 71 [
+		cond="case (x=157)"
+		label="case (x=157)"
+	];
+	66 -> 98 [
+		cond="case (x=158)"
+		label="case (x=158)"
+	];
+	66 -> 150 [
+		cond="default case"
+		label="default case"
+	];
+	29 -> 152;
+	30 -> 36;
+	36 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 59 [
+		color=red
+		cond=false
+	];
+	40 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 55 [
+		color=red
+		cond=false
+	];
+	59 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	59 -> 64 [
+		color=red
+		cond=false
+	];
+	54 -> 59;
+	55 -> 56;
+	56 -> 36;
+	63 -> 152;
+	64 -> 65;
+	65 -> 66;
+	71 -> 76 [
+		color=darkgreen
+		cond=true
+	];
+	71 -> 77 [
+		color=red
+		cond=false
+	];
+	98 -> 116 [
+		color=darkgreen
+		cond=true
+	];
+	98 -> 149 [
+		color=red
+		cond=false
+	];
+	150 -> 151;
+	76 -> 151;
+	77 -> 81;
+	151 -> 152;
+	81 -> 84 [
+		color=darkgreen
+		cond=true
+	];
+	81 -> 96 [
+		color=red
+		cond=false
+	];
+	84 -> 90 [
+		color=darkgreen
+		cond=true
+	];
+	84 -> 91 [
+		color=red
+		cond=false
+	];
+	96 -> 97;
+	90 -> 152;
+	91 -> 92;
+	92 -> 81;
+	97 -> 98;
+	116 -> 149;
+	149 -> 151;
+}

@@ -1,6 +1,6 @@
-digraph "compare_nodes" {
+strict digraph "compare_nodes" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	26;
 	28;
@@ -8,11 +8,11 @@ digraph "compare_nodes" {
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 28;
 	26 -> 28;

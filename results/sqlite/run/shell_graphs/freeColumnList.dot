@@ -1,20 +1,20 @@
-digraph "freeColumnList" {
+strict digraph "freeColumnList" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	4;
 	11;
-	17;
 	20;
+	17;
 
 	// Edge definitions.
 	1 -> 4;
 	4 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 17;
 	17 -> 4;

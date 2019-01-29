@@ -1,0 +1,128 @@
+strict digraph "findConstInWhere" {
+	// Node definitions.
+	2 [entry=true];
+	9;
+	10;
+	104;
+	16;
+	17;
+	23;
+	32;
+	38;
+	39;
+	51;
+	74;
+	57;
+	61;
+	70;
+	80;
+	103;
+	86;
+	90;
+	99;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 10 [
+		color=red
+		cond=false
+	];
+	9 -> 104;
+	10 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	10 -> 17 [
+		color=red
+		cond=false
+	];
+	16 -> 104;
+	17 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	17 -> 32 [
+		color=red
+		cond=false
+	];
+	23 -> 104;
+	32 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	32 -> 39 [
+		color=red
+		cond=false
+	];
+	38 -> 104;
+	39 -> 51 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 74 [
+		color=red
+		cond=false
+	];
+	51 -> 74 [
+		color=darkgreen
+		cond=true
+	];
+	51 -> 57 [
+		color=red
+		cond=false
+	];
+	74 -> 80 [
+		color=darkgreen
+		cond=true
+	];
+	74 -> 103 [
+		color=red
+		cond=false
+	];
+	57 -> 74 [
+		color=red
+		cond=false
+	];
+	57 -> 61 [
+		color=darkgreen
+		cond=true
+	];
+	61 -> 74 [
+		color=red
+		cond=false
+	];
+	61 -> 70 [
+		color=darkgreen
+		cond=true
+	];
+	70 -> 104;
+	80 -> 103 [
+		color=darkgreen
+		cond=true
+	];
+	80 -> 86 [
+		color=red
+		cond=false
+	];
+	103 -> 104;
+	86 -> 103 [
+		color=red
+		cond=false
+	];
+	86 -> 90 [
+		color=darkgreen
+		cond=true
+	];
+	90 -> 103 [
+		color=red
+		cond=false
+	];
+	90 -> 99 [
+		color=darkgreen
+		cond=true
+	];
+	99 -> 103;
+}

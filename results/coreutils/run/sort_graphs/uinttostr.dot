@@ -1,6 +1,6 @@
-digraph "uinttostr" {
+strict digraph "uinttostr" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	4;
 	13;
 
@@ -8,10 +8,10 @@ digraph "uinttostr" {
 	2 -> 4;
 	4 -> 4 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 }

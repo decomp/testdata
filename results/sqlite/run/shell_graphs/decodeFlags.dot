@@ -1,47 +1,47 @@
-digraph "decodeFlags" {
+strict digraph "decodeFlags" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	30;
+	60;
 	37;
 	42;
 	49;
-	60;
+	83;
 	63;
 	80;
 	82;
-	83;
 	89;
 
 	// Edge definitions.
 	2 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 60 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 42 [
 		color=red
-		label=false
+		cond=false
+	];
+	60 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	60 -> 80 [
+		color=red
+		cond=false
 	];
 	37 -> 49;
 	42 -> 49;
 	49 -> 83;
-	60 -> 63 [
-		color=darkgreen
-		label=true
-	];
-	60 -> 80 [
-		color=red
-		label=false
-	];
+	83 -> 89;
 	63 -> 82;
 	80 -> 89;
 	82 -> 83;
-	83 -> 89;
 }

@@ -1,131 +1,131 @@
-digraph "booleanValue" {
+strict digraph "booleanValue" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
+	30;
 	16;
 	17;
 	25;
-	26;
 	29;
-	30;
+	26;
+	54;
 	31;
 	39;
 	47;
 	49;
-	50;
 	53;
-	54;
+	50;
 	57;
-	65;
 	70;
-	74;
-	78;
-	79;
-	83;
-	87;
-	88;
+	65;
 	92;
+	78;
+	74;
+	79;
+	87;
+	83;
+	88;
 
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 30 [
 		color=red
-		label=false
-	];
-	10 -> 16 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	10 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
+	10 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 31;
 	16 -> 17;
 	17 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 26;
-	26 -> 17;
 	29 -> 54;
-	30 -> 31;
+	26 -> 17;
+	54 -> 57 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 70 [
+		color=red
+		cond=false
+	];
 	31 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
 	39 -> 47;
 	47 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 50;
-	50 -> 31;
 	53 -> 54;
-	54 -> 57 [
-		color=darkgreen
-		label=true
-	];
-	54 -> 70 [
+	50 -> 31;
+	57 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
 	57 -> 65 [
 		color=darkgreen
-		label=true
-	];
-	57 -> 70 [
-		color=red
-		label=false
-	];
-	65 -> 92;
-	70 -> 74 [
-		color=red
-		label=false
+		cond=true
 	];
 	70 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	70 -> 74 [
+		color=red
+		cond=false
+	];
+	65 -> 92;
+	78 -> 92;
 	74 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	74 -> 79 [
 		color=red
-		label=false
-	];
-	78 -> 92;
-	79 -> 83 [
-		color=red
-		label=false
+		cond=false
 	];
 	79 -> 87 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	79 -> 83 [
+		color=red
+		cond=false
+	];
+	87 -> 92;
 	83 -> 87 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	83 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
-	87 -> 92;
 	88 -> 92;
 }

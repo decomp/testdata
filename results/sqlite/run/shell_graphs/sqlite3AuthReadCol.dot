@@ -1,74 +1,72 @@
-digraph "sqlite3AuthReadCol" {
+strict digraph "sqlite3AuthReadCol" {
 	// Node definitions.
-	4 [label=entry];
-	29;
+	4 [entry=true];
 	30;
-	46;
-	51;
-	54;
-	59;
-	63;
-	66;
-	69;
-	72;
-	74;
+	31;
+	78;
+	47;
+	67;
+	58;
+	55;
+	62;
+	76;
+	70;
 	75;
-	77;
+	73;
 
 	// Edge definitions.
-	4 -> 29 [
-		color=darkgreen
-		label=true
-	];
 	4 -> 30 [
-		color=red
-		label=false
-	];
-	29 -> 77;
-	30 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 66 [
+	4 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	46 -> 51 [
-		color=red
-		label=false
-	];
-	46 -> 54 [
+	30 -> 78;
+	31 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	51 -> 54 [
-		color=darkgreen
-		label=true
-	];
-	51 -> 59 [
+	31 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
-	54 -> 63;
-	59 -> 63;
-	63 -> 75;
-	66 -> 69 [
+	47 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	66 -> 74 [
+	47 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
-	69 -> 72 [
+	67 -> 70 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	69 -> 74 [
+	67 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	72 -> 74;
-	74 -> 75;
-	75 -> 77;
+	58 -> 62;
+	55 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 62 [
+		color=red
+		cond=false
+	];
+	62 -> 76;
+	76 -> 78;
+	70 -> 75 [
+		color=red
+		cond=false
+	];
+	70 -> 73 [
+		color=darkgreen
+		cond=true
+	];
+	75 -> 76;
+	73 -> 75;
 }

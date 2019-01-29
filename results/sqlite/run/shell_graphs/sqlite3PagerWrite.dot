@@ -1,60 +1,60 @@
-digraph "sqlite3PagerWrite" {
+strict digraph "sqlite3PagerWrite" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	14;
+	31;
 	22;
 	27;
 	30;
-	31;
+	54;
 	36;
 	40;
 	48;
 	51;
-	54;
 
 	// Edge definitions.
 	1 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 31 [
 		color=red
-		label=false
-	];
-	14 -> 22 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	14 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 27 [
+	14 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 30 [
-		color=red
-		label=false
-	];
-	27 -> 54;
-	30 -> 54;
 	31 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
+	22 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 30 [
+		color=red
+		cond=false
+	];
+	27 -> 54;
+	30 -> 54;
 	36 -> 54;
 	40 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
 	48 -> 54;
 	51 -> 54;

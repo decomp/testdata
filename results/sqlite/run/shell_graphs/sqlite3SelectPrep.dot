@@ -1,81 +1,70 @@
-digraph "sqlite3SelectPrep" {
+strict digraph "sqlite3SelectPrep" {
 	// Node definitions.
-	3 [label=entry];
-	10;
-	11;
-	19;
+	3 [entry=true];
+	13;
+	14;
+	57;
 	20;
-	26;
-	27;
-	34;
-	40;
-	41;
-	49;
-	55;
-	56;
-	59;
+	21;
+	36;
+	28;
+	37;
+	53;
+	45;
+	54;
 
 	// Edge definitions.
-	3 -> 10 [
+	3 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 11 [
+	3 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
-	10 -> 59;
-	11 -> 19 [
+	13 -> 57;
+	14 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 20 [
+	14 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 59;
-	20 -> 26 [
+	20 -> 57;
+	21 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 27 [
+	21 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 59;
-	27 -> 34 [
-		color=red
-		label=false
-	];
-	27 -> 40 [
+	36 -> 57;
+	28 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	34 -> 40 [
-		color=darkgreen
-		label=true
-	];
-	34 -> 41 [
+	28 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	40 -> 59;
-	41 -> 49 [
-		color=red
-		label=false
-	];
-	41 -> 55 [
+	37 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 55 [
-		color=darkgreen
-		label=true
-	];
-	49 -> 56 [
+	37 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	55 -> 59;
-	56 -> 59;
+	53 -> 57;
+	45 -> 53 [
+		color=darkgreen
+		cond=true
+	];
+	45 -> 54 [
+		color=red
+		cond=false
+	];
+	54 -> 57;
 }

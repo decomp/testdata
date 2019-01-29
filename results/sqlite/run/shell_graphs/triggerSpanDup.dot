@@ -1,0 +1,43 @@
+strict digraph "triggerSpanDup" {
+	// Node definitions.
+	3 [entry=true];
+	15;
+	45;
+	16;
+	23;
+	44;
+	35;
+	40;
+	41;
+
+	// Edge definitions.
+	3 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 45 [
+		color=red
+		cond=false
+	];
+	15 -> 16;
+	16 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 44 [
+		color=red
+		cond=false
+	];
+	23 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	23 -> 40 [
+		color=red
+		cond=false
+	];
+	44 -> 45;
+	35 -> 40;
+	40 -> 41;
+	41 -> 16;
+}

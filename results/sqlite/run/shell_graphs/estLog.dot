@@ -1,6 +1,6 @@
-digraph "estLog" {
+strict digraph "estLog" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	7;
 	13;
@@ -8,11 +8,11 @@ digraph "estLog" {
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 13;
 	7 -> 13;

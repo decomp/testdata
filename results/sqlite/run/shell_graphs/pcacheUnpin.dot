@@ -1,17 +1,17 @@
-digraph "pcacheUnpin" {
+strict digraph "pcacheUnpin" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
 	19;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 19;
 }

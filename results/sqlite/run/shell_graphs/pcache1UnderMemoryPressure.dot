@@ -1,28 +1,28 @@
-digraph "pcache1UnderMemoryPressure" {
+strict digraph "pcache1UnderMemoryPressure" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
-	16;
 	18;
+	16;
 	20;
 
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 18 [
 		color=red
-		label=false
-	];
-	6 -> 16 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	6 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 20;
+	6 -> 16 [
+		color=darkgreen
+		cond=true
+	];
 	18 -> 20;
+	16 -> 20;
 }

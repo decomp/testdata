@@ -1,6 +1,6 @@
-digraph "allSpaces" {
+strict digraph "allSpaces" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	5;
 	8;
 	17;
@@ -11,20 +11,20 @@ digraph "allSpaces" {
 	2 -> 5;
 	5 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 17;
 	17 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 5;
 }

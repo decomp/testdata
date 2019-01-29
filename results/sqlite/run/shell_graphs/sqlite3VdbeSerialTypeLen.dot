@@ -1,6 +1,6 @@
-digraph "sqlite3VdbeSerialTypeLen" {
+strict digraph "sqlite3VdbeSerialTypeLen" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	10;
 	16;
@@ -8,11 +8,11 @@ digraph "sqlite3VdbeSerialTypeLen" {
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 16;
 	10 -> 16;

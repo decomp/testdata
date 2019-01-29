@@ -1,12 +1,14 @@
-digraph "sqlite3BitvecBuiltinTest" {
+strict digraph "sqlite3BitvecBuiltinTest" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	30;
 	24;
 	27;
-	30;
 	31;
+	179;
 	34;
 	41;
+	135;
 	43;
 	64;
 	65;
@@ -14,119 +16,126 @@ digraph "sqlite3BitvecBuiltinTest" {
 	76;
 	77;
 	88;
+	114;
 	105;
+	113;
 	111;
 	112;
-	113;
-	114;
 	134;
-	135;
 	150;
 	154;
+	178;
 	172;
 	174;
 	175;
-	178;
-	179;
 
 	// Edge definitions.
-	2 -> 24 [
-		color=red
-		label=false
-	];
 	2 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 24 [
+		color=red
+		cond=false
+	];
+	30 -> 179;
+	24 -> 30 [
+		color=darkgreen
+		cond=true
 	];
 	24 -> 27 [
 		color=red
-		label=false
-	];
-	24 -> 30 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	27 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	30 -> 179;
 	31 -> 34;
 	34 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 135 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 43 [label="case (x=5)"];
-	41 -> 64 [label="case (x=4)"];
-	41 -> 65 [label="default case"];
+	41 -> 43 [
+		cond="case (x=5)"
+		label="case (x=5)"
+	];
+	41 -> 64 [
+		cond="case (x=4)"
+		label="case (x=4)"
+	];
+	41 -> 65 [
+		cond="default case"
+		label="default case"
+	];
+	135 -> 150;
 	43 -> 67;
 	64 -> 65;
 	65 -> 67;
 	67 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	67 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
 	76 -> 77;
 	77 -> 88 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	77 -> 114 [
 		color=red
-		label=false
+		cond=false
 	];
 	88 -> 105 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	88 -> 113 [
 		color=red
-		label=false
+		cond=false
 	];
+	114 -> 134;
 	105 -> 111 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	105 -> 112 [
 		color=red
-		label=false
+		cond=false
 	];
+	113 -> 134;
 	111 -> 179;
 	112 -> 113;
-	113 -> 134;
-	114 -> 134;
 	134 -> 34;
-	135 -> 150;
 	150 -> 154 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	150 -> 178 [
 		color=red
-		label=false
+		cond=false
 	];
 	154 -> 172 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	154 -> 174 [
 		color=red
-		label=false
+		cond=false
 	];
+	178 -> 179;
 	172 -> 178;
 	174 -> 175;
 	175 -> 150;
-	178 -> 179;
 }

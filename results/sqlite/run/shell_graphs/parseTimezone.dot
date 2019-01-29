@@ -1,92 +1,92 @@
-digraph "parseTimezone" {
+strict digraph "parseTimezone" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	19;
 	22;
 	30;
 	31;
+	49;
 	34;
 	35;
-	38;
-	41;
-	44;
 	48;
-	49;
+	41;
+	38;
+	44;
+	67;
+	88;
 	55;
 	56;
-	67;
 	68;
 	77;
 	80;
-	88;
 
 	// Edge definitions.
 	2 -> 10;
 	10 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 10;
 	22 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 49;
 	31 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	34 -> 48;
-	35 -> 38 [
-		color=red
-		label=false
-	];
-	35 -> 41 [
-		color=darkgreen
-		label=true
-	];
-	38 -> 41 [
-		color=darkgreen
-		label=true
-	];
-	38 -> 44 [
-		color=red
-		label=false
-	];
-	41 -> 67;
-	44 -> 88;
-	48 -> 49;
 	49 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
+	34 -> 48;
+	35 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	35 -> 38 [
+		color=red
+		cond=false
+	];
+	48 -> 49;
+	41 -> 67;
+	38 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 44 [
+		color=red
+		cond=false
+	];
+	44 -> 88;
+	67 -> 68;
 	55 -> 88;
 	56 -> 67;
-	67 -> 68;
 	68 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
 	77 -> 68;
 	80 -> 88;

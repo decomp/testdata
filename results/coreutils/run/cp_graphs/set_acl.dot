@@ -1,17 +1,17 @@
-digraph "set_acl" {
+strict digraph "set_acl" {
 	// Node definitions.
-	3 [label=entry];
-	6;
+	3 [entry=true];
 	11;
+	6;
 
 	// Edge definitions.
-	3 -> 6 [
-		color=red
-		label=false
-	];
 	3 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	3 -> 6 [
+		color=red
+		cond=false
 	];
 	6 -> 11;
 }

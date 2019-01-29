@@ -1,117 +1,131 @@
-digraph "excise" {
+strict digraph "excise" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	13;
-	17;
 	24;
+	77;
+	17;
 	28;
-	34;
-	37;
-	38;
 	40;
-	45;
+	37;
+	34;
+	38;
 	46;
+	45;
 	50;
+	55;
 	51;
 	54;
-	55;
 	66;
-	67;
-	72;
-	78;
-	79;
+	71;
 
 	// Edge definitions.
 	4 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 24 [
 		color=red
-		label=false
+		cond=false
+	];
+	13 -> 77 [
+		color=darkgreen
+		cond=true
 	];
 	13 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 79 [
-		color=darkgreen
-		label=true
-	];
-	17 -> 79;
 	24 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 40 [
 		color=red
-		label=false
+		cond=false
+	];
+	17 -> 77;
+	28 -> 37 [
+		color=darkgreen
+		cond=true
 	];
 	28 -> 34 [
 		color=red
-		label=false
-	];
-	28 -> 37 [
-		color=darkgreen
-		label=true
-	];
-	34 -> 37 [
-		color=red
-		label=false
-	];
-	34 -> 38 [
-		color=darkgreen
-		label=true
-	];
-	37 -> 38;
-	38 -> 40;
-	40 -> 45 [
-		color=red
-		label=false
+		cond=false
 	];
 	40 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	45 -> 46 [label="default case"];
-	45 -> 79 [label="case (x=20)"];
+	40 -> 45 [
+		color=red
+		cond=false
+	];
+	37 -> 38;
+	34 -> 37 [
+		color=red
+		cond=false
+	];
+	34 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 40;
 	46 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	46 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
-	50 -> 51 [label="case (x=17)"];
-	50 -> 55 [label="default case"];
-	51 -> 54 [label="case (x=13)"];
-	51 -> 55 [label="default case"];
-	54 -> 55;
+	45 -> 77 [
+		cond="case (x=20)"
+		label="case (x=20)"
+	];
+	45 -> 46 [
+		cond="default case"
+		label="default case"
+	];
+	50 -> 55 [
+		cond="default case"
+		label="default case"
+	];
+	50 -> 51 [
+		cond="case (x=17)"
+		label="case (x=17)"
+	];
+	55 -> 77 [
+		color=red
+		cond=false
+	];
 	55 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	55 -> 79 [
+	51 -> 55 [
+		cond="default case"
+		label="default case"
+	];
+	51 -> 54 [
+		cond="case (x=13)"
+		label="case (x=13)"
+	];
+	54 -> 55;
+	66 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
-	66 -> 67;
-	67 -> 72 [
+	66 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 78 [
+	71 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
-	72 -> 67 [
+	71 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	72 -> 78 [
-		color=red
-		label=false
-	];
-	78 -> 79;
 }

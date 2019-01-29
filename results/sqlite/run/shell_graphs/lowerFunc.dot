@@ -1,43 +1,43 @@
-digraph "lowerFunc" {
+strict digraph "lowerFunc" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	22;
+	56;
 	30;
+	55;
 	31;
 	35;
-	48;
 	51;
-	55;
-	56;
+	48;
 
 	// Edge definitions.
 	3 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 31;
+	55 -> 56;
 	31 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 48;
-	48 -> 31;
 	51 -> 55;
-	55 -> 56;
+	48 -> 31;
 }

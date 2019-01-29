@@ -1,0 +1,30 @@
+strict digraph "fsdirConnect" {
+	// Node definitions.
+	6 [entry=true];
+	24;
+	33;
+	29;
+	30;
+	38;
+
+	// Edge definitions.
+	6 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	6 -> 33 [
+		color=red
+		cond=false
+	];
+	24 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 30 [
+		color=red
+		cond=false
+	];
+	33 -> 38;
+	29 -> 38;
+	30 -> 33;
+}

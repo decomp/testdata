@@ -1,17 +1,17 @@
-digraph "autoIncStep" {
+strict digraph "autoIncStep" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
 	16;
 
 	// Edge definitions.
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 16;
 }

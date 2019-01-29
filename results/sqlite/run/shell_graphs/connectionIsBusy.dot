@@ -1,54 +1,54 @@
-digraph "connectionIsBusy" {
+strict digraph "connectionIsBusy" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	11;
+	39;
 	12;
 	18;
-	29;
-	33;
-	34;
-	35;
 	38;
-	39;
+	29;
+	34;
+	33;
+	35;
 
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 39;
 	11 -> 12;
 	12 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 34 [
 		color=red
-		label=false
+		cond=false
+	];
+	38 -> 39;
+	29 -> 34 [
+		color=red
+		cond=false
 	];
 	29 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	29 -> 34 [
-		color=red
-		label=false
-	];
-	33 -> 39;
 	34 -> 35;
+	33 -> 39;
 	35 -> 12;
-	38 -> 39;
 }

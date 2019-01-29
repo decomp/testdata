@@ -1,105 +1,114 @@
-digraph "sqlite3LocateTable" {
+strict digraph "sqlite3LocateTable" {
 	// Node definitions.
-	4 [label=entry];
-	16;
-	17;
+	4 [entry=true];
+	22;
+	27;
 	26;
-	37;
-	47;
-	51;
-	57;
+	95;
+	34;
+	93;
+	44;
+	73;
+	52;
 	60;
-	65;
-	69;
-	70;
-	74;
+	56;
+	63;
+	72;
+	68;
 	77;
-	82;
-	86;
-	89;
-	90;
 	92;
+	80;
+	85;
+	89;
 
 	// Edge definitions.
-	4 -> 16 [
+	4 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 17 [
+	4 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 92;
-	17 -> 26 [
+	22 -> 27 [
+		color=red
+		cond=false
+	];
+	22 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 90 [
-		color=red
-		label=false
-	];
-	26 -> 37 [
+	27 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 70 [
+	27 -> 93 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 47 [
+	26 -> 95;
+	34 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 57 [
+	34 -> 73 [
 		color=red
-		label=false
+		cond=false
 	];
-	47 -> 51 [
+	93 -> 95;
+	44 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 57 [
+	44 -> 60 [
 		color=red
-		label=false
+		cond=false
 	];
-	51 -> 57;
-	57 -> 60 [
+	73 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	57 -> 69 [
+	73 -> 92 [
 		color=red
-		label=false
+		cond=false
 	];
-	60 -> 65 [
+	52 -> 60 [
+		color=red
+		cond=false
+	];
+	52 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 69 [
-		color=red
-		label=false
-	];
-	65 -> 92;
-	69 -> 70;
-	70 -> 74 [
+	60 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	70 -> 89 [
+	60 -> 72 [
 		color=red
-		label=false
+		cond=false
 	];
-	74 -> 77 [
+	56 -> 60;
+	63 -> 72 [
+		color=red
+		cond=false
+	];
+	63 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	74 -> 82 [
+	72 -> 73;
+	68 -> 95;
+	77 -> 80 [
+		color=darkgreen
+		cond=true
+	];
+	77 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
-	77 -> 86;
-	82 -> 86;
-	86 -> 89;
-	89 -> 90;
-	90 -> 92;
+	92 -> 93;
+	80 -> 89;
+	85 -> 89;
+	89 -> 92;
 }

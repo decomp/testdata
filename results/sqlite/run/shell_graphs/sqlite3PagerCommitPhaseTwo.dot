@@ -1,48 +1,48 @@
-digraph "sqlite3PagerCommitPhaseTwo" {
+strict digraph "sqlite3PagerCommitPhaseTwo" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
 	13;
+	48;
 	19;
+	34;
 	25;
 	31;
-	34;
-	48;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 48;
 	13 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 34 [
 		color=red
-		label=false
-	];
-	19 -> 25 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	19 -> 34 [
 		color=red
-		label=false
+		cond=false
+	];
+	19 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 48;
+	25 -> 34 [
+		color=red
+		cond=false
 	];
 	25 -> 31 [
 		color=darkgreen
-		label=true
-	];
-	25 -> 34 [
-		color=red
-		label=false
+		cond=true
 	];
 	31 -> 48;
-	34 -> 48;
 }

@@ -1,32 +1,32 @@
-digraph "print_group" {
+strict digraph "print_group" {
 	// Node definitions.
-	2 [label=entry];
-	3;
+	2 [entry=true];
 	5;
+	3;
+	14;
 	8;
 	11;
-	14;
 	18;
 
 	// Edge definitions.
-	2 -> 3 [
-		color=red
-		label=false
-	];
 	2 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 14;
+	2 -> 3 [
+		color=red
+		cond=false
+	];
 	5 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
+	3 -> 14;
+	14 -> 18;
 	8 -> 14;
 	11 -> 18;
-	14 -> 18;
 }

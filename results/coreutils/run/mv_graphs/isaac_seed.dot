@@ -1,28 +1,26 @@
-digraph "isaac_seed" {
+strict digraph "isaac_seed" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	2;
 	77;
-	78;
-	153;
+	152;
 
 	// Edge definitions.
 	1 -> 2;
 	2 -> 2 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
-	77 -> 78;
-	78 -> 78 [
+	77 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	78 -> 153 [
+	77 -> 152 [
 		color=red
-		label=false
+		cond=false
 	];
 }

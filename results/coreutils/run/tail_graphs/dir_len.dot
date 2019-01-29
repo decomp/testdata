@@ -1,6 +1,6 @@
-digraph "dir_len" {
+strict digraph "dir_len" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
 	12;
 	17;
@@ -9,18 +9,18 @@ digraph "dir_len" {
 	1 -> 9;
 	9 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 }

@@ -1,26 +1,26 @@
-digraph "setRawDateNumber" {
+strict digraph "setRawDateNumber" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
-	15;
 	24;
+	15;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 24 [
 		color=red
-		label=false
-	];
-	12 -> 15 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	12 -> 24 [
 		color=red
-		label=false
+		cond=false
+	];
+	12 -> 15 [
+		color=darkgreen
+		cond=true
 	];
 	15 -> 24;
 }

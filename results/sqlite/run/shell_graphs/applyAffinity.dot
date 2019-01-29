@@ -1,87 +1,87 @@
-digraph "applyAffinity" {
+strict digraph "applyAffinity" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	10;
+	38;
 	17;
+	37;
 	24;
+	34;
 	31;
 	33;
-	34;
 	36;
-	37;
-	38;
+	69;
 	42;
+	68;
 	49;
+	61;
 	56;
 	60;
-	61;
-	68;
-	69;
 
 	// Edge definitions.
 	3 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 24 [
-		color=darkgreen
-		label=true
-	];
-	17 -> 34 [
-		color=red
-		label=false
-	];
-	24 -> 31 [
-		color=darkgreen
-		label=true
-	];
-	24 -> 33 [
-		color=red
-		label=false
-	];
-	31 -> 33;
-	33 -> 36;
-	34 -> 36;
-	36 -> 37;
-	37 -> 69;
 	38 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	38 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
+	17 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	17 -> 34 [
+		color=red
+		cond=false
+	];
+	37 -> 69;
+	24 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 33 [
+		color=red
+		cond=false
+	];
+	34 -> 36;
+	31 -> 33;
+	33 -> 36;
+	36 -> 37;
 	42 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 61 [
 		color=red
-		label=false
+		cond=false
 	];
+	68 -> 69;
 	49 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 60 [
 		color=red
-		label=false
+		cond=false
 	];
+	61 -> 68;
 	56 -> 60;
 	60 -> 61;
-	61 -> 68;
-	68 -> 69;
 }

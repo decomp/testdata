@@ -1,63 +1,63 @@
-digraph "sqlite3WhereFindTerm" {
+strict digraph "sqlite3WhereFindTerm" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	25;
 	28;
+	58;
 	35;
+	56;
 	40;
-	48;
 	50;
+	48;
+	60;
 	53;
 	55;
-	56;
-	58;
-	60;
 
 	// Edge definitions.
 	6 -> 25;
 	25 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
+	58 -> 60;
 	35 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 50 [
 		color=red
-		label=false
+		cond=false
+	];
+	56 -> 25;
+	40 -> 50 [
+		color=red
+		cond=false
 	];
 	40 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 50 [
-		color=red
-		label=false
-	];
-	48 -> 60;
 	50 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	50 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
+	48 -> 60;
 	53 -> 55;
 	55 -> 56;
-	56 -> 25;
-	58 -> 60;
 }

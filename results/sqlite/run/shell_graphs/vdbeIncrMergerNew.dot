@@ -1,45 +1,45 @@
-digraph "vdbeIncrMergerNew" {
+strict digraph "vdbeIncrMergerNew" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	11;
 	12;
 	14;
 	20;
+	67;
 	40;
 	47;
 	54;
-	67;
 	69;
 
 	// Edge definitions.
 	3 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 14;
 	12 -> 14;
 	14 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
+	67 -> 69;
 	40 -> 54;
 	47 -> 54;
 	54 -> 69;
-	67 -> 69;
 }

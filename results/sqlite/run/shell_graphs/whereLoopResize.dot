@@ -1,40 +1,40 @@
-digraph "whereLoopResize" {
+strict digraph "whereLoopResize" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	15;
 	16;
+	62;
 	28;
 	29;
 	48;
 	54;
-	62;
 
 	// Edge definitions.
 	3 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 62;
 	16 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 62;
 	29 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	48 -> 54;
 	54 -> 62;

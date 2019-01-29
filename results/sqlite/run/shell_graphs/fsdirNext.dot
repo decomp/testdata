@@ -1,0 +1,140 @@
+strict digraph "fsdirNext" {
+	// Node definitions.
+	1 [entry=true];
+	26;
+	107;
+	36;
+	74;
+	52;
+	53;
+	213;
+	101;
+	106;
+	108;
+	113;
+	207;
+	128;
+	191;
+	135;
+	159;
+	142;
+	150;
+	149;
+	157;
+	158;
+	176;
+	177;
+	185;
+	190;
+
+	// Edge definitions.
+	1 -> 26 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 107 [
+		color=red
+		cond=false
+	];
+	26 -> 36 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 74 [
+		color=red
+		cond=false
+	];
+	107 -> 108;
+	36 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 53 [
+		color=red
+		cond=false
+	];
+	74 -> 101 [
+		color=darkgreen
+		cond=true
+	];
+	74 -> 106 [
+		color=red
+		cond=false
+	];
+	52 -> 213;
+	53 -> 74;
+	101 -> 213;
+	106 -> 107;
+	108 -> 113 [
+		color=darkgreen
+		cond=true
+	];
+	108 -> 207 [
+		color=red
+		cond=false
+	];
+	113 -> 128 [
+		color=darkgreen
+		cond=true
+	];
+	113 -> 191 [
+		color=red
+		cond=false
+	];
+	207 -> 213;
+	128 -> 135 [
+		color=darkgreen
+		cond=true
+	];
+	128 -> 159 [
+		color=red
+		cond=false
+	];
+	191 -> 108;
+	135 -> 142 [
+		color=darkgreen
+		cond=true
+	];
+	135 -> 150 [
+		color=red
+		cond=false
+	];
+	159 -> 176 [
+		color=darkgreen
+		cond=true
+	];
+	159 -> 177 [
+		color=red
+		cond=false
+	];
+	142 -> 150 [
+		color=red
+		cond=false
+	];
+	142 -> 149 [
+		color=darkgreen
+		cond=true
+	];
+	150 -> 157 [
+		color=darkgreen
+		cond=true
+	];
+	150 -> 158 [
+		color=red
+		cond=false
+	];
+	149 -> 108;
+	157 -> 108;
+	158 -> 159;
+	176 -> 213;
+	177 -> 185 [
+		color=darkgreen
+		cond=true
+	];
+	177 -> 190 [
+		color=red
+		cond=false
+	];
+	185 -> 213;
+	190 -> 213;
+}

@@ -1,28 +1,28 @@
-digraph "sqlite3_blob_bytes" {
+strict digraph "sqlite3_blob_bytes" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
-	13;
 	17;
+	13;
 	18;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 17 [
 		color=red
-		label=false
-	];
-	8 -> 13 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	8 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 18;
+	8 -> 13 [
+		color=darkgreen
+		cond=true
+	];
 	17 -> 18;
+	13 -> 18;
 }

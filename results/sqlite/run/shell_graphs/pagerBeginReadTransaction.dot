@@ -1,36 +1,36 @@
-digraph "pagerBeginReadTransaction" {
+strict digraph "pagerBeginReadTransaction" {
 	// Node definitions.
-	1 [label=entry];
-	14;
+	1 [entry=true];
 	17;
+	14;
+	29;
 	23;
 	28;
-	29;
 
 	// Edge definitions.
-	1 -> 14 [
-		color=red
-		label=false
-	];
 	1 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	14 -> 17 [
-		color=darkgreen
-		label=true
-	];
-	14 -> 29 [
+	1 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 28 [
 		color=red
-		label=false
+		cond=false
+	];
+	14 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 29 [
+		color=red
+		cond=false
 	];
 	23 -> 28;
 	28 -> 29;

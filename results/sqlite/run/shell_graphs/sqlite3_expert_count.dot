@@ -1,0 +1,17 @@
+strict digraph "sqlite3_expert_count" {
+	// Node definitions.
+	1 [entry=true];
+	8;
+	15;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 15 [
+		color=red
+		cond=false
+	];
+	8 -> 15;
+}

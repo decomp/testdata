@@ -1,6 +1,6 @@
-digraph "sqlite3NotPureFunc" {
+strict digraph "sqlite3NotPureFunc" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	18;
 	20;
 	21;
@@ -8,11 +8,11 @@ digraph "sqlite3NotPureFunc" {
 	// Edge definitions.
 	1 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 21;
 	20 -> 21;

@@ -1,6 +1,6 @@
-digraph "valueBytes" {
+strict digraph "valueBytes" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	13;
 	14;
@@ -8,11 +8,11 @@ digraph "valueBytes" {
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 14;
 	13 -> 14;

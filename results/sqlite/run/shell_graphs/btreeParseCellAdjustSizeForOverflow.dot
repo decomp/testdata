@@ -1,6 +1,6 @@
-digraph "btreeParseCellAdjustSizeForOverflow" {
+strict digraph "btreeParseCellAdjustSizeForOverflow" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	35;
 	40;
 	45;
@@ -8,11 +8,11 @@ digraph "btreeParseCellAdjustSizeForOverflow" {
 	// Edge definitions.
 	3 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 45;
 	40 -> 45;

@@ -1,4 +1,17 @@
-digraph "sha1_buffer" {
+strict digraph "sha1_buffer" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	19;
+	21;
+
+	// Edge definitions.
+	3 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 21 [
+		color=red
+		cond=false
+	];
+	19 -> 21;
 }

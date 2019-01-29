@@ -1,4 +1,17 @@
-digraph "sqlite3OsFileControlHint" {
+strict digraph "sqlite3OsFileControlHint" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	11;
+	21;
+
+	// Edge definitions.
+	3 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 21 [
+		color=red
+		cond=false
+	];
+	11 -> 21;
 }

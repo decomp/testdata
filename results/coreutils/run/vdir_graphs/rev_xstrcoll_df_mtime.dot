@@ -1,59 +1,71 @@
-digraph "rev_xstrcoll_df_mtime" {
+strict digraph "rev_xstrcoll_df_mtime" {
 	// Node definitions.
-	2 [label=entry];
-	13;
-	14;
-	17;
-	18;
+	2 [entry=true];
+	9;
+	10;
+	11;
+	39;
+	12;
+	26;
+	28;
 	32;
-	34;
-	38;
-	45;
 
 	// Edge definitions.
-	2 -> 13 [
-		color=red
-		label=false
+	2 -> 9 [
+		cond="case (x=3)"
+		label="case (x=3)"
 	];
-	2 -> 14 [
+	2 -> 10 [
+		cond="default case"
+		label="default case"
+	];
+	9 -> 11 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	9 -> 39 [
+		cond="default case"
+		label="default case"
+	];
+	10 -> 11 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	10 -> 12 [
+		cond="default case"
+		label="default case"
+	];
+	11 -> 39 [
+		cond="default case"
+		label="default case"
+	];
+	11 -> 12 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	12 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 14 [label="case (x=3)"];
-	13 -> 45 [label="default case"];
-	14 -> 17 [
+	12 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 18 [
+	26 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 18 [label="case (x=3)"];
-	17 -> 45 [label="default case"];
-	18 -> 32 [
+	26 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 45 [
-		color=darkgreen
-		label=true
-	];
-	32 -> 34 [
+	28 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 45 [
+	28 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	34 -> 38 [
-		color=darkgreen
-		label=true
-	];
-	34 -> 45 [
-		color=red
-		label=false
-	];
-	38 -> 45;
+	32 -> 39;
 }

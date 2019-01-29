@@ -1,63 +1,78 @@
-digraph "parse_duration" {
+strict digraph "parse_duration" {
 	// Node definitions.
-	1 [label=entry];
-	7;
+	1 [entry=true];
 	14;
+	7;
 	17;
-	22;
+	31;
 	26;
+	22;
+	34;
 	28;
 	29;
 	30;
-	31;
-	34;
 
 	// Edge definitions.
-	1 -> 7 [
-		color=red
-		label=false
-	];
 	1 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 17 [
-		color=darkgreen
-		label=true
-	];
-	7 -> 31 [
+	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 22 [
+	7 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	7 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 26 [
-		color=darkgreen
-		label=true
+	17 -> 22 [
+		color=red
+		cond=false
+	];
+	26 -> 31 [
+		cond="default case"
+		label="default case"
+	];
+	26 -> 34 [
+		cond="case (x=115)"
+		label="case (x=115)"
+	];
+	26 -> 28 [
+		cond="case (x=109)"
+		label="case (x=109)"
+	];
+	26 -> 29 [
+		cond="case (x=104)"
+		label="case (x=104)"
+	];
+	26 -> 30 [
+		cond="case (x=100)"
+		label="case (x=100)"
 	];
 	22 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 28 [label="case (x=109)"];
-	26 -> 29 [label="case (x=104)"];
-	26 -> 30 [label="case (x=100)"];
-	26 -> 31 [label="default case"];
-	26 -> 34 [label="case (x=115)"];
+	22 -> 26 [
+		color=darkgreen
+		cond=true
+	];
 	28 -> 34;
 	29 -> 34;
 	30 -> 34;

@@ -1,94 +1,92 @@
-digraph "ofile_open" {
+strict digraph "ofile_open" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	7;
-	12;
-	18;
-	20;
-	22;
-	25;
-	30;
-	31;
-	34;
-	39;
-	44;
-	47;
-	52;
-	57;
+	71;
+	13;
+	19;
+	21;
+	23;
 	59;
+	26;
+	34;
+	31;
+	39;
+	47;
+	44;
+	57;
+	52;
 	63;
 	68;
-	71;
 
 	// Edge definitions.
 	3 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
-	7 -> 12;
-	12 -> 18 [
+	7 -> 13;
+	13 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 20 [
+	13 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 22;
-	20 -> 22;
-	22 -> 25 [
-		color=red
-		label=false
-	];
-	22 -> 59 [
+	19 -> 23;
+	21 -> 23;
+	23 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	25 -> 30 [
-		color=darkgreen
-		label=true
-	];
-	25 -> 31 [
+	23 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	30 -> 34;
-	34 -> 39 [
-		color=darkgreen
-		label=true
-	];
-	34 -> 47 [
-		color=red
-		label=false
-	];
-	39 -> 34 [
-		color=red
-		label=false
-	];
-	39 -> 44 [
-		color=darkgreen
-		label=true
-	];
-	47 -> 52 [
-		color=red
-		label=false
-	];
-	47 -> 57 [
-		color=darkgreen
-		label=true
-	];
-	57 -> 12;
 	59 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	59 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
+	26 -> 34 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 31 [
+		color=red
+		cond=false
+	];
+	34 -> 39 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 47 [
+		color=red
+		cond=false
+	];
+	39 -> 34 [
+		color=red
+		cond=false
+	];
+	39 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 57 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 52 [
+		color=red
+		cond=false
+	];
+	57 -> 13;
 	68 -> 71;
 }

@@ -1,10 +1,10 @@
-digraph "pcache1RemoveFromHash" {
+strict digraph "pcache1RemoveFromHash" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	24;
 	29;
-	30;
 	34;
+	30;
 	46;
 	48;
 
@@ -12,21 +12,21 @@ digraph "pcache1RemoveFromHash" {
 	2 -> 24;
 	24 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 30;
-	30 -> 24;
 	34 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
+	30 -> 24;
 	46 -> 48;
 }

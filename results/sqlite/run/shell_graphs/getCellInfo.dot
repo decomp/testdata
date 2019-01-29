@@ -1,19 +1,19 @@
-digraph "getCellInfo" {
+strict digraph "getCellInfo" {
 	// Node definitions.
-	1 [label=entry];
-	10;
-	33;
-	34;
+	1 [entry=true];
+	9;
+	25;
+	26;
 
 	// Edge definitions.
-	1 -> 10 [
+	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 33 [
+	1 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	10 -> 34;
-	33 -> 34;
+	9 -> 26;
+	25 -> 26;
 }

@@ -1,61 +1,61 @@
-digraph "sqlite3VdbeEnter" {
+strict digraph "sqlite3VdbeEnter" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
 	12;
+	56;
 	22;
 	26;
 	29;
+	52;
 	37;
 	45;
-	52;
 	53;
-	56;
 
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 56;
 	12 -> 22;
-	22 -> 26 [
-		color=darkgreen
-		label=true
-	];
 	22 -> 56 [
 		color=red
-		label=false
+		cond=false
+	];
+	22 -> 26 [
+		color=darkgreen
+		cond=true
 	];
 	26 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 52 [
 		color=red
-		label=false
-	];
-	29 -> 37 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	29 -> 52 [
 		color=red
-		label=false
+		cond=false
+	];
+	29 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 53;
+	37 -> 52 [
+		color=red
+		cond=false
 	];
 	37 -> 45 [
 		color=darkgreen
-		label=true
-	];
-	37 -> 52 [
-		color=red
-		label=false
+		cond=true
 	];
 	45 -> 52;
-	52 -> 53;
 	53 -> 22;
 }

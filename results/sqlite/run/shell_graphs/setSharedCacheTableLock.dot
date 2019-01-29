@@ -1,76 +1,76 @@
-digraph "setSharedCacheTableLock" {
+strict digraph "setSharedCacheTableLock" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	17;
 	20;
-	26;
-	32;
-	34;
-	35;
 	39;
-	42;
-	47;
-	48;
+	26;
+	34;
+	32;
+	35;
 	63;
+	42;
+	48;
+	47;
+	76;
 	71;
 	75;
-	76;
 
 	// Edge definitions.
 	3 -> 17;
 	17 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 34 [
 		color=red
-		label=false
-	];
-	26 -> 32 [
-		color=darkgreen
-		label=true
-	];
-	26 -> 34 [
-		color=red
-		label=false
-	];
-	32 -> 39;
-	34 -> 35;
-	35 -> 17;
-	39 -> 42 [
-		color=red
-		label=false
+		cond=false
 	];
 	39 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	42 -> 47 [
+	39 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 48 [
+	26 -> 34 [
+		color=red
+		cond=false
+	];
+	26 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 76;
-	48 -> 63;
+	34 -> 35;
+	32 -> 39;
+	35 -> 17;
 	63 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	63 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
+	42 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	42 -> 47 [
+		color=red
+		cond=false
+	];
+	48 -> 63;
+	47 -> 76;
 	71 -> 75;
 	75 -> 76;
 }

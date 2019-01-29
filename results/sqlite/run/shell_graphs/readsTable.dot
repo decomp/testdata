@@ -1,113 +1,113 @@
-digraph "readsTable" {
+strict digraph "readsTable" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	23;
 	29;
 	30;
 	32;
 	36;
+	99;
 	45;
+	81;
 	51;
 	60;
 	61;
+	100;
 	65;
 	68;
+	80;
 	74;
 	75;
 	76;
-	80;
-	81;
 	87;
-	94;
 	95;
+	94;
 	96;
-	99;
-	100;
 
 	// Edge definitions.
 	3 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 30;
 	29 -> 30;
 	30 -> 32;
 	32 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 99 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 81 [
 		color=red
-		label=false
+		cond=false
+	];
+	99 -> 100;
+	45 -> 81 [
+		color=red
+		cond=false
 	];
 	45 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	45 -> 81 [
+	81 -> 87 [
+		color=darkgreen
+		cond=true
+	];
+	81 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
 	51 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 61 [
 		color=red
-		label=false
+		cond=false
 	];
 	60 -> 100;
 	61 -> 65;
 	65 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	65 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
 	68 -> 74 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
+	80 -> 81;
 	74 -> 100;
 	75 -> 76;
 	76 -> 65;
-	80 -> 81;
-	81 -> 87 [
-		color=darkgreen
-		label=true
-	];
-	81 -> 95 [
+	87 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
 	87 -> 94 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	87 -> 95 [
-		color=red
-		label=false
-	];
-	94 -> 100;
 	95 -> 96;
+	94 -> 100;
 	96 -> 32;
-	99 -> 100;
 }

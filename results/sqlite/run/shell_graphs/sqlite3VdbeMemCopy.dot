@@ -1,38 +1,38 @@
-digraph "sqlite3VdbeMemCopy" {
+strict digraph "sqlite3VdbeMemCopy" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
 	14;
 	31;
+	48;
 	38;
 	47;
-	48;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 14;
 	14 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
 	31 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 47;
 	47 -> 48;

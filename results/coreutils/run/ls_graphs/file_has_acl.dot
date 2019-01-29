@@ -1,82 +1,82 @@
-digraph "file_has_acl" {
+strict digraph "file_has_acl" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	35;
 	7;
 	10;
 	14;
 	16;
+	29;
 	20;
+	34;
 	23;
 	27;
-	29;
-	34;
-	35;
 
 	// Edge definitions.
-	2 -> 7 [
-		color=red
-		label=false
-	];
 	2 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 7 [
+		color=red
+		cond=false
 	];
 	7 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 29 [
 		color=red
-		label=false
-	];
-	14 -> 16 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	14 -> 35 [
 		color=red
-		label=false
+		cond=false
+	];
+	14 -> 16 [
+		color=darkgreen
+		cond=true
 	];
 	16 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
+	29 -> 35;
 	20 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
+	34 -> 35;
 	23 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 34 [
 		color=darkgreen
-		label=true
-	];
-	27 -> 34 [
-		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 35;
-	34 -> 35;
+	27 -> 34 [
+		color=darkgreen
+		cond=true
+	];
 }

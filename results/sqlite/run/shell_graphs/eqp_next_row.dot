@@ -1,0 +1,43 @@
+strict digraph "eqp_next_row" {
+	// Node definitions.
+	3 [entry=true];
+	10;
+	14;
+	19;
+	21;
+	24;
+	30;
+	32;
+	36;
+
+	// Edge definitions.
+	3 -> 10 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 14 [
+		color=red
+		cond=false
+	];
+	10 -> 19;
+	14 -> 19;
+	19 -> 21;
+	21 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 30 [
+		color=red
+		cond=false
+	];
+	24 -> 30;
+	30 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 36 [
+		color=red
+		cond=false
+	];
+	32 -> 21;
+}

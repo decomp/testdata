@@ -1,9 +1,11 @@
-digraph "removeFromSharingList" {
+strict digraph "removeFromSharingList" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	16;
+	55;
 	20;
 	24;
+	51;
 	26;
 	29;
 	35;
@@ -11,55 +13,53 @@ digraph "removeFromSharingList" {
 	41;
 	44;
 	50;
-	51;
-	55;
 
 	// Edge definitions.
 	1 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 51;
 	24 -> 26;
+	51 -> 55;
 	26 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 35;
 	35 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 26;
 	41 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
 	44 -> 50;
 	50 -> 51;
-	51 -> 55;
 }

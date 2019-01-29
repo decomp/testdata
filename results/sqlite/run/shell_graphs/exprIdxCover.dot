@@ -1,37 +1,37 @@
-digraph "exprIdxCover" {
+strict digraph "exprIdxCover" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	11;
+	38;
 	22;
 	35;
-	38;
 	39;
 
 	// Edge definitions.
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 38 [
 		color=red
-		label=false
-	];
-	11 -> 22 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	11 -> 38 [
 		color=red
-		label=false
+		cond=false
+	];
+	11 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 39;
+	22 -> 38 [
+		color=red
+		cond=false
 	];
 	22 -> 35 [
 		color=darkgreen
-		label=true
-	];
-	22 -> 38 [
-		color=red
-		label=false
+		cond=true
 	];
 	35 -> 39;
-	38 -> 39;
 }

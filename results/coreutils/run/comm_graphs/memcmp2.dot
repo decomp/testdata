@@ -1,25 +1,25 @@
-digraph "memcmp2" {
+strict digraph "memcmp2" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	9;
+	13;
 	11;
-	14;
 
 	// Edge definitions.
 	4 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 14 [
+	4 -> 13 [
 		color=red
-		label=false
+		cond=false
+	];
+	9 -> 13 [
+		color=darkgreen
+		cond=true
 	];
 	9 -> 11 [
 		color=red
-		label=false
-	];
-	9 -> 14 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 }

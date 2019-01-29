@@ -1,16 +1,16 @@
-digraph "file_name_concat" {
+strict digraph "file_name_concat" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	6;
 	7;
 
 	// Edge definitions.
 	3 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 }

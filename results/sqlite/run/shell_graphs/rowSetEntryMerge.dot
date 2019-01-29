@@ -1,56 +1,56 @@
-digraph "rowSetEntryMerge" {
+strict digraph "rowSetEntryMerge" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
 	15;
+	38;
 	23;
 	27;
 	33;
 	37;
-	38;
+	53;
+	52;
 	47;
 	51;
-	52;
-	53;
 
 	// Edge definitions.
 	2 -> 7;
 	7 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 27 [
 		color=red
-		label=false
+		cond=false
+	];
+	38 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 51 [
+		color=red
+		cond=false
 	];
 	23 -> 27;
 	27 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	33 -> 53;
 	37 -> 52;
-	38 -> 47 [
-		color=darkgreen
-		label=true
-	];
-	38 -> 51 [
-		color=red
-		label=false
-	];
+	52 -> 7;
 	47 -> 53;
 	51 -> 52;
-	52 -> 7;
 }

@@ -1,126 +1,104 @@
-digraph "codeVectorCompare" {
+strict digraph "codeVectorCompare" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	44;
 	46;
+	144;
 	54;
 	55;
 	59;
 	60;
 	67;
 	68;
-	71;
-	73;
-	101;
+	141;
+	98;
+	99;
 	103;
-	108;
-	109;
-	113;
-	122;
-	126;
+	112;
+	137;
+	116;
+	125;
+	136;
+	133;
 	135;
-	143;
-	145;
-	146;
-	147;
-	148;
-	151;
-	154;
+	138;
 
 	// Edge definitions.
 	5 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	44 -> 154;
+	44 -> 144;
 	46 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	46 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	54 -> 55;
 	55 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 60 [
 		color=red
-		label=false
+		cond=false
 	];
 	59 -> 60;
 	60 -> 67;
 	67 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 151 [
+	67 -> 141 [
 		color=red
-		label=false
+		cond=false
 	];
-	68 -> 71 [
+	68 -> 98 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	68 -> 73 [
+	68 -> 99 [
 		color=red
-		label=false
+		cond=false
 	];
-	71 -> 73;
-	73 -> 101 [
+	141 -> 144;
+	98 -> 141;
+	99 -> 103 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	73 -> 103 [
+	99 -> 112 [
 		color=red
-		label=false
+		cond=false
 	];
-	101 -> 103;
-	103 -> 108 [
+	103 -> 137;
+	112 -> 116 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	103 -> 109 [
+	112 -> 125 [
 		color=red
-		label=false
+		cond=false
 	];
-	108 -> 151;
-	109 -> 113 [
+	137 -> 138;
+	116 -> 136;
+	125 -> 133 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	109 -> 122 [
+	125 -> 135 [
 		color=red
-		label=false
+		cond=false
 	];
-	113 -> 147;
-	122 -> 126 [
-		color=darkgreen
-		label=true
-	];
-	122 -> 135 [
-		color=red
-		label=false
-	];
-	126 -> 146;
-	135 -> 143 [
-		color=darkgreen
-		label=true
-	];
-	135 -> 145 [
-		color=red
-		label=false
-	];
-	143 -> 145;
-	145 -> 146;
-	146 -> 147;
-	147 -> 148;
-	148 -> 67;
-	151 -> 154;
+	136 -> 137;
+	133 -> 135;
+	135 -> 136;
+	138 -> 67;
 }

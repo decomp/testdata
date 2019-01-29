@@ -1,43 +1,43 @@
-digraph "sqlite3TwoPartName" {
+strict digraph "sqlite3TwoPartName" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	19;
+	39;
 	25;
 	27;
+	49;
 	35;
 	38;
-	39;
 	47;
-	49;
 
 	// Edge definitions.
 	4 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
+	39 -> 47;
 	25 -> 49;
 	27 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 49;
 	38 -> 47;
-	39 -> 47;
 	47 -> 49;
 }

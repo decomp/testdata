@@ -1,4 +1,19 @@
-digraph "sqlite3OsSync" {
+strict digraph "sqlite3OsSync" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	7;
+	16;
+	17;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 16 [
+		color=red
+		cond=false
+	];
+	7 -> 17;
+	16 -> 17;
 }

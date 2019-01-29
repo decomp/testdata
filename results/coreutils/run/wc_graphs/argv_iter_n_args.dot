@@ -1,19 +1,19 @@
-digraph "argv_iter_n_args" {
+strict digraph "argv_iter_n_args" {
 	// Node definitions.
-	1 [label=entry];
-	5;
+	1 [entry=true];
 	8;
+	5;
 	17;
 
 	// Edge definitions.
-	1 -> 5 [
-		color=red
-		label=false
-	];
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 17;
+	1 -> 5 [
+		color=red
+		cond=false
+	];
 	8 -> 17;
+	5 -> 17;
 }

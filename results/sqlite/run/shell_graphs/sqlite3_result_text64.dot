@@ -1,6 +1,6 @@
-digraph "sqlite3_result_text64" {
+strict digraph "sqlite3_result_text64" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	14;
 	15;
 	18;
@@ -10,20 +10,20 @@ digraph "sqlite3_result_text64" {
 	// Edge definitions.
 	5 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 15;
 	15 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 30;
 	23 -> 30;

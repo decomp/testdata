@@ -1,70 +1,103 @@
-digraph "sqlite3SrcListAppendFromTerm" {
+strict digraph "sqlite3SrcListAppendFromTerm" {
 	// Node definitions.
-	8 [label=entry];
-	25;
-	28;
-	31;
-	36;
-	44;
-	49;
-	50;
-	63;
+	8 [entry=true];
+	38;
+	26;
+	32;
+	29;
+	108;
+	46;
+	47;
+	61;
+	86;
+	66;
 	69;
-	80;
-	87;
+	76;
+	74;
+	78;
+	91;
+	97;
+	115;
 
 	// Edge definitions.
-	8 -> 25 [
-		color=red
-		label=false
-	];
-	8 -> 36 [
+	8 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	25 -> 28 [
+	8 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 31 [
+	38 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 31 [
-		color=darkgreen
-		label=true
-	];
-	28 -> 36 [
+	38 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 80;
-	36 -> 44 [
-		color=red
-		label=false
-	];
-	36 -> 49 [
+	26 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	44 -> 49 [
-		color=darkgreen
-		label=true
-	];
-	44 -> 50 [
+	26 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	49 -> 80;
-	50 -> 63 [
-		color=darkgreen
-		label=true
-	];
-	50 -> 69 [
+	32 -> 108;
+	29 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	63 -> 69;
-	69 -> 87;
-	80 -> 87;
+	29 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	108 -> 115;
+	46 -> 108;
+	47 -> 61 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 86 [
+		color=red
+		cond=false
+	];
+	61 -> 86 [
+		color=red
+		cond=false
+	];
+	61 -> 66 [
+		color=darkgreen
+		cond=true
+	];
+	86 -> 91 [
+		color=darkgreen
+		cond=true
+	];
+	86 -> 97 [
+		color=red
+		cond=false
+	];
+	66 -> 69 [
+		color=darkgreen
+		cond=true
+	];
+	66 -> 76 [
+		color=red
+		cond=false
+	];
+	69 -> 76 [
+		color=red
+		cond=false
+	];
+	69 -> 74 [
+		color=darkgreen
+		cond=true
+	];
+	76 -> 78;
+	74 -> 78;
+	78 -> 86;
+	91 -> 97;
+	97 -> 115;
 }

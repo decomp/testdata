@@ -1,46 +1,42 @@
-digraph "iread_fullblock" {
+strict digraph "iread_fullblock" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	18;
 	5;
-	6;
-	12;
-	14;
-	19;
-	21;
+	11;
+	13;
 
 	// Edge definitions.
+	3 -> 18 [
+		color=darkgreen
+		cond=true
+	];
 	3 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
-	3 -> 21 [
+	5 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 6;
-	6 -> 12 [
+	5 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	6 -> 19 [
+	11 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 14 [
+	11 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	12 -> 19 [
+	13 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	14 -> 6 [
+	13 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 19 [
-		color=darkgreen
-		label=true
-	];
-	19 -> 21;
 }

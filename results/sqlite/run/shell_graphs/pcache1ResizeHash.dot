@@ -1,6 +1,6 @@
-digraph "pcache1ResizeHash" {
+strict digraph "pcache1ResizeHash" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	15;
 	16;
 	21;
@@ -8,71 +8,71 @@ digraph "pcache1ResizeHash" {
 	32;
 	33;
 	36;
+	90;
 	37;
 	43;
+	79;
 	51;
 	54;
 	75;
 	76;
-	79;
-	90;
 
 	// Edge definitions.
 	1 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 16;
 	16 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 22;
 	22 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	32 -> 33;
 	33 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	33 -> 90 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 37;
 	37 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 79 [
 		color=red
-		label=false
+		cond=false
 	];
 	43 -> 51;
+	79 -> 90;
 	51 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
 	54 -> 51;
 	75 -> 76;
 	76 -> 37;
-	79 -> 90;
 }

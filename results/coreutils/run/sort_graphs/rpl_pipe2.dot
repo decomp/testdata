@@ -1,0 +1,149 @@
+strict digraph "rpl_pipe2" {
+	// Node definitions.
+	2 [entry=true];
+	8;
+	17;
+	11;
+	15;
+	16;
+	74;
+	22;
+	20;
+	25;
+	46;
+	28;
+	67;
+	32;
+	37;
+	41;
+	49;
+	53;
+	58;
+	62;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 17 [
+		color=red
+		cond=false
+	];
+	8 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 15 [
+		color=red
+		cond=false
+	];
+	17 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	17 -> 20 [
+		color=red
+		cond=false
+	];
+	11 -> 15 [
+		color=red
+		cond=false
+	];
+	11 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 74;
+	16 -> 17;
+	22 -> 74 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 25 [
+		color=red
+		cond=false
+	];
+	20 -> 74;
+	25 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 28 [
+		color=red
+		cond=false
+	];
+	46 -> 74 [
+		color=darkgreen
+		cond=true
+	];
+	46 -> 49 [
+		color=red
+		cond=false
+	];
+	28 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 32 [
+		color=red
+		cond=false
+	];
+	67 -> 74;
+	32 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	32 -> 37 [
+		color=red
+		cond=false
+	];
+	37 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 41 [
+		color=red
+		cond=false
+	];
+	41 -> 46 [
+		color=red
+		cond=false
+	];
+	41 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 53 [
+		color=red
+		cond=false
+	];
+	53 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 58 [
+		color=red
+		cond=false
+	];
+	58 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 62 [
+		color=red
+		cond=false
+	];
+	62 -> 74 [
+		color=red
+		cond=false
+	];
+	62 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+}

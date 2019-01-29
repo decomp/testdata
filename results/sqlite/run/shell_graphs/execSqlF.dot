@@ -1,6 +1,6 @@
-digraph "execSqlF" {
+strict digraph "execSqlF" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	21;
 	22;
 	30;
@@ -8,11 +8,11 @@ digraph "execSqlF" {
 	// Edge definitions.
 	3 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 30;
 	22 -> 30;

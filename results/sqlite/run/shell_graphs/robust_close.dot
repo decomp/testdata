@@ -1,28 +1,28 @@
-digraph "robust_close" {
+strict digraph "robust_close" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	12;
+	24;
 	15;
 	19;
 	20;
-	24;
 
 	// Edge definitions.
 	3 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 20;
 	19 -> 20;

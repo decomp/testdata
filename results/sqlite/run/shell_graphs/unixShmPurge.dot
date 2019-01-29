@@ -1,65 +1,65 @@
-digraph "unixShmPurge" {
+strict digraph "unixShmPurge" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	13;
+	86;
 	18;
 	23;
 	30;
+	63;
 	35;
 	50;
 	58;
 	59;
-	63;
 	72;
 	79;
-	86;
 
 	// Edge definitions.
 	1 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 86 [
 		color=red
-		label=false
-	];
-	13 -> 18 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	13 -> 86 [
 		color=red
-		label=false
+		cond=false
+	];
+	13 -> 18 [
+		color=darkgreen
+		cond=true
 	];
 	18 -> 23;
 	23 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 63 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 50 [
 		color=red
-		label=false
+		cond=false
+	];
+	63 -> 72 [
+		color=darkgreen
+		cond=true
+	];
+	63 -> 79 [
+		color=red
+		cond=false
 	];
 	35 -> 58;
 	50 -> 58;
 	58 -> 59;
 	59 -> 23;
-	63 -> 72 [
-		color=darkgreen
-		label=true
-	];
-	63 -> 79 [
-		color=red
-		label=false
-	];
 	72 -> 79;
 	79 -> 86;
 }

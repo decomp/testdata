@@ -1,0 +1,66 @@
+strict digraph "expertConnect" {
+	// Node definitions.
+	6 [entry=true];
+	21;
+	24;
+	69;
+	31;
+	67;
+	37;
+	40;
+	43;
+	65;
+	62;
+	63;
+	64;
+	68;
+
+	// Edge definitions.
+	6 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	6 -> 24 [
+		color=red
+		cond=false
+	];
+	21 -> 69;
+	24 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 67 [
+		color=red
+		cond=false
+	];
+	31 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	31 -> 40 [
+		color=red
+		cond=false
+	];
+	67 -> 68;
+	37 -> 40;
+	40 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 65 [
+		color=red
+		cond=false
+	];
+	43 -> 62 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 63 [
+		color=red
+		cond=false
+	];
+	65 -> 68;
+	62 -> 64;
+	64 -> 65;
+	68 -> 69;
+}

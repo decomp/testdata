@@ -1,44 +1,35 @@
-digraph "hard_locale" {
+strict digraph "hard_locale" {
 	// Node definitions.
-	1 [label=entry];
-	4;
-	7;
+	1 [entry=true];
 	11;
-	14;
-	15;
+	4;
+	10;
+	7;
 
 	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 4 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 15 [
+	4 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 7 [
-		color=darkgreen
-		label=true
-	];
-	4 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
+	10 -> 11;
 	7 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	7 -> 14 [
+	7 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 14 [
-		color=darkgreen
-		label=true
-	];
-	11 -> 15 [
-		color=red
-		label=false
-	];
-	14 -> 15;
 }

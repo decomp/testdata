@@ -1,6 +1,6 @@
-digraph "vdbeSorterTreeDepth" {
+strict digraph "vdbeSorterTreeDepth" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
 	10;
 	15;
@@ -9,11 +9,11 @@ digraph "vdbeSorterTreeDepth" {
 	1 -> 5;
 	5 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 5;
 }

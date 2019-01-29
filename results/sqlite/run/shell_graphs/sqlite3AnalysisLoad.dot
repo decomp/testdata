@@ -1,97 +1,97 @@
-digraph "sqlite3AnalysisLoad" {
+strict digraph "sqlite3AnalysisLoad" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	25;
 	28;
-	37;
 	41;
+	37;
 	46;
 	49;
-	58;
 	62;
+	58;
 	79;
+	95;
 	86;
 	87;
 	94;
-	95;
 	100;
 	103;
-	114;
-	116;
+	122;
 	117;
-	121;
-	124;
-	126;
+	115;
+	118;
+	125;
+	127;
 
 	// Edge definitions.
 	2 -> 25;
 	25 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 37;
-	37 -> 25;
 	41 -> 46;
+	37 -> 25;
 	46 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	46 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 58;
-	58 -> 46;
 	62 -> 79 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	62 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
+	58 -> 46;
 	79 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	79 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
+	95 -> 100;
 	86 -> 94;
 	87 -> 94;
 	94 -> 95;
-	95 -> 100;
 	100 -> 103 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	100 -> 121 [
+	100 -> 122 [
 		color=red
-		label=false
+		cond=false
 	];
-	103 -> 114 [
-		color=red
-		label=false
-	];
-	103 -> 116 [
+	103 -> 117 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	114 -> 116;
-	116 -> 117;
-	117 -> 100;
-	121 -> 124 [
-		color=darkgreen
-		label=true
-	];
-	121 -> 126 [
+	103 -> 115 [
 		color=red
-		label=false
+		cond=false
 	];
-	124 -> 126;
+	122 -> 125 [
+		color=darkgreen
+		cond=true
+	];
+	122 -> 127 [
+		color=red
+		cond=false
+	];
+	117 -> 118;
+	115 -> 117;
+	118 -> 100;
+	125 -> 127;
 }

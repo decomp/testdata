@@ -1,6 +1,6 @@
-digraph "xlseek" {
+strict digraph "xlseek" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	9;
 	10;
 	12;
@@ -12,16 +12,28 @@ digraph "xlseek" {
 	// Edge definitions.
 	4 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
-	10 -> 12 [label="case (x=0)"];
-	10 -> 17 [label="case (x=1)"];
-	10 -> 22 [label="case (x=2)"];
-	10 -> 27 [label="default case"];
+	10 -> 12 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	10 -> 17 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	10 -> 22 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	10 -> 27 [
+		cond="default case"
+		label="default case"
+	];
 	12 -> 28;
 	17 -> 28;
 	22 -> 28;

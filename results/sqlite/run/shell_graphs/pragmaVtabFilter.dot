@@ -1,89 +1,89 @@
-digraph "pragmaVtabFilter" {
+strict digraph "pragmaVtabFilter" {
 	// Node definitions.
-	5 [label=entry];
-	38;
-	42;
-	51;
-	66;
+	5 [entry=true];
+	39;
+	43;
+	75;
+	52;
+	69;
 	67;
 	68;
-	69;
-	74;
-	86;
-	91;
-	102;
-	107;
-	111;
+	137;
+	70;
+	87;
+	92;
+	103;
+	108;
 	112;
-	123;
-	133;
-	136;
+	113;
+	124;
+	134;
 
 	// Edge definitions.
-	5 -> 38;
-	38 -> 42 [
+	5 -> 39;
+	39 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	38 -> 74 [
+	39 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 51 [
+	43 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	42 -> 68 [
+	43 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
-	51 -> 66 [
+	75 -> 87 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	51 -> 67 [
+	75 -> 92 [
 		color=red
-		label=false
+		cond=false
 	];
-	66 -> 136;
-	67 -> 68;
+	52 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 68 [
+		color=red
+		cond=false
+	];
+	69 -> 70;
+	67 -> 137;
 	68 -> 69;
-	69 -> 38;
-	74 -> 86 [
+	70 -> 39;
+	87 -> 92;
+	92 -> 103 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	74 -> 91 [
+	92 -> 108 [
 		color=red
-		label=false
+		cond=false
 	];
-	86 -> 91;
-	91 -> 102 [
+	103 -> 108;
+	108 -> 112 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	91 -> 107 [
+	108 -> 113 [
 		color=red
-		label=false
+		cond=false
 	];
-	102 -> 107;
-	107 -> 111 [
+	112 -> 137;
+	113 -> 124 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	107 -> 112 [
+	113 -> 134 [
 		color=red
-		label=false
+		cond=false
 	];
-	111 -> 136;
-	112 -> 123 [
-		color=darkgreen
-		label=true
-	];
-	112 -> 133 [
-		color=red
-		label=false
-	];
-	123 -> 136;
-	133 -> 136;
+	124 -> 137;
+	134 -> 137;
 }

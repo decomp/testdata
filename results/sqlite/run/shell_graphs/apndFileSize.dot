@@ -1,0 +1,26 @@
+strict digraph "apndFileSize" {
+	// Node definitions.
+	2 [entry=true];
+	22;
+	35;
+	27;
+
+	// Edge definitions.
+	2 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 35 [
+		color=red
+		cond=false
+	];
+	22 -> 35 [
+		color=red
+		cond=false
+	];
+	22 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	27 -> 35;
+}

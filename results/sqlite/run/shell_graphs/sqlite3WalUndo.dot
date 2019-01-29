@@ -1,54 +1,54 @@
-digraph "sqlite3WalUndo" {
+strict digraph "sqlite3WalUndo" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	14;
+	59;
 	30;
 	33;
 	37;
 	39;
-	46;
 	49;
+	46;
 	56;
 	58;
-	59;
 
 	// Edge definitions.
 	3 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 30;
 	30 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	33 -> 37;
 	37 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
 	39 -> 46;
-	46 -> 30;
 	49 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
+	46 -> 30;
 	56 -> 58;
 	58 -> 59;
 }

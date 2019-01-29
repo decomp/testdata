@@ -1,118 +1,118 @@
-digraph "sqlite3VtabBegin" {
+strict digraph "sqlite3VtabBegin" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
-	19;
 	20;
-	23;
+	19;
+	106;
 	24;
+	23;
 	34;
+	104;
 	35;
 	41;
+	56;
 	51;
 	52;
 	53;
-	56;
 	61;
-	71;
-	83;
-	88;
-	101;
-	102;
 	103;
-	104;
-	106;
+	71;
+	102;
+	83;
+	101;
+	88;
 
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 20 [
 		color=red
-		label=false
-	];
-	14 -> 19 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	14 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 106;
-	20 -> 23 [
-		color=red
-		label=false
+	14 -> 19 [
+		color=darkgreen
+		cond=true
 	];
 	20 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 106;
+	20 -> 23 [
+		color=red
+		cond=false
+	];
+	19 -> 106;
 	24 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 104 [
 		color=red
-		label=false
+		cond=false
 	];
+	23 -> 106;
 	34 -> 35;
+	104 -> 106;
 	35 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
 	41 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 52 [
 		color=red
-		label=false
+		cond=false
+	];
+	56 -> 61 [
+		color=darkgreen
+		cond=true
+	];
+	56 -> 103 [
+		color=red
+		cond=false
 	];
 	51 -> 106;
 	52 -> 53;
 	53 -> 35;
-	56 -> 61 [
-		color=darkgreen
-		label=true
-	];
-	56 -> 103 [
-		color=red
-		label=false
-	];
 	61 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	61 -> 102 [
 		color=red
-		label=false
+		cond=false
 	];
+	103 -> 104;
 	71 -> 83 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	71 -> 101 [
 		color=red
-		label=false
+		cond=false
+	];
+	102 -> 103;
+	83 -> 101 [
+		color=red
+		cond=false
 	];
 	83 -> 88 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	83 -> 101 [
-		color=red
-		label=false
-	];
-	88 -> 101;
 	101 -> 102;
-	102 -> 103;
-	103 -> 104;
-	104 -> 106;
+	88 -> 101;
 }

@@ -1,35 +1,35 @@
-digraph "sqlite3LocateCollSeq" {
+strict digraph "sqlite3LocateCollSeq" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	41;
 	27;
 	30;
 	35;
-	41;
 
 	// Edge definitions.
-	2 -> 27 [
-		color=red
-		label=false
-	];
 	2 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 27 [
+		color=red
+		cond=false
 	];
 	27 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 35 [
 		color=red
-		label=false
-	];
-	30 -> 35 [
-		color=red
-		label=false
+		cond=false
 	];
 	30 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	30 -> 35 [
+		color=red
+		cond=false
 	];
 	35 -> 41;
 }

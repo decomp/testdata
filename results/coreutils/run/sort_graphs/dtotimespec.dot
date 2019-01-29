@@ -1,26 +1,26 @@
-digraph "dtotimespec" {
+strict digraph "dtotimespec" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	3;
+	23;
 	5;
-	25;
 
 	// Edge definitions.
 	1 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 25 [
+	1 -> 23 [
 		color=red
-		label=false
+		cond=false
+	];
+	3 -> 23 [
+		color=red
+		cond=false
 	];
 	3 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 25 [
-		color=red
-		label=false
-	];
-	5 -> 25;
+	5 -> 23;
 }

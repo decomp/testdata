@@ -1,63 +1,63 @@
-digraph "sqlite3VtabFinishParse" {
+strict digraph "sqlite3VtabFinishParse" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	23;
 	24;
+	142;
 	33;
 	34;
+	121;
 	40;
 	43;
 	62;
-	121;
 	137;
 	139;
-	142;
 
 	// Edge definitions.
 	2 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 142;
 	24 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
 	33 -> 142;
-	34 -> 40 [
-		color=red
-		label=false
-	];
 	34 -> 121 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 43 [
-		color=darkgreen
-		label=true
-	];
-	40 -> 62 [
+	34 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
-	43 -> 62;
-	62 -> 142;
 	121 -> 137 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	121 -> 139 [
 		color=red
-		label=false
+		cond=false
 	];
+	40 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 62 [
+		color=red
+		cond=false
+	];
+	43 -> 62;
+	62 -> 142;
 	137 -> 142;
 	139 -> 142;
 }

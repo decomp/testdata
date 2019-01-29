@@ -1,0 +1,41 @@
+strict digraph "eqp_append" {
+	// Node definitions.
+	4 [entry=true];
+	17;
+	25;
+	33;
+	34;
+	55;
+	62;
+	67;
+
+	// Edge definitions.
+	4 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 25 [
+		color=red
+		cond=false
+	];
+	17 -> 25;
+	25 -> 33 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 34 [
+		color=red
+		cond=false
+	];
+	33 -> 34;
+	34 -> 55 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 62 [
+		color=red
+		cond=false
+	];
+	55 -> 67;
+	62 -> 67;
+}

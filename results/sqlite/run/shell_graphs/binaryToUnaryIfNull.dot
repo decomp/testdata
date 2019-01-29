@@ -1,35 +1,44 @@
-digraph "binaryToUnaryIfNull" {
+strict digraph "binaryToUnaryIfNull" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	15;
+	41;
 	18;
 	24;
-	35;
+	30;
 
 	// Edge definitions.
 	4 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 35 [
+	4 -> 41 [
 		color=red
-		label=false
+		cond=false
+	];
+	15 -> 41 [
+		color=red
+		cond=false
 	];
 	15 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 35 [
+	18 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 35 [
+	24 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 35;
+	30 -> 41;
 }

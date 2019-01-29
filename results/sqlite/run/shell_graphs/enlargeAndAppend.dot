@@ -1,17 +1,17 @@
-digraph "enlargeAndAppend" {
+strict digraph "enlargeAndAppend" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	12;
 	29;
 
 	// Edge definitions.
 	3 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 29;
 }

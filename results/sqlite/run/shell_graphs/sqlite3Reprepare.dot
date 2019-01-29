@@ -1,32 +1,32 @@
-digraph "sqlite3Reprepare" {
+strict digraph "sqlite3Reprepare" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	24;
+	31;
 	27;
 	29;
-	31;
-	32;
 	45;
+	32;
 
 	// Edge definitions.
 	1 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
+	31 -> 32;
 	27 -> 29;
 	29 -> 45;
-	31 -> 32;
 	32 -> 45;
 }

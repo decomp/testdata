@@ -1,106 +1,106 @@
-digraph "di_set_insert" {
+strict digraph "di_set_insert" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	14;
 	7;
 	11;
-	14;
-	19;
-	27;
-	30;
-	34;
-	36;
-	39;
+	21;
 	42;
+	63;
+	18;
+	29;
+	39;
+	32;
 	45;
-	49;
+	59;
+	48;
 	52;
-	56;
-	60;
+	55;
 
 	// Edge definitions.
-	3 -> 7 [
-		color=red
-		label=false
-	];
 	3 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	3 -> 7 [
+		color=red
+		cond=false
+	];
+	14 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 18 [
+		color=red
+		cond=false
 	];
 	7 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 19 [
+	7 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 39;
-	14 -> 19 [
-		color=red
-		label=false
-	];
-	14 -> 60 [
+	11 -> 42;
+	21 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 27 [
+	21 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 60 [
+	42 -> 63 [
 		color=darkgreen
-		label=true
-	];
-	27 -> 30 [
-		color=red
-		label=false
-	];
-	27 -> 34 [
-		color=darkgreen
-		label=true
-	];
-	30 -> 36;
-	34 -> 36;
-	36 -> 39;
-	39 -> 42 [
-		color=red
-		label=false
-	];
-	39 -> 60 [
-		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 56 [
+	18 -> 21;
+	29 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	45 -> 49 [
-		color=darkgreen
-		label=true
-	];
-	45 -> 52 [
+	29 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
-	49 -> 52 [
-		color=red
-		label=false
-	];
-	49 -> 60 [
+	39 -> 42;
+	32 -> 42;
+	45 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 56 [
+	45 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	52 -> 60 [
+	59 -> 63;
+	48 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	56 -> 60;
+	48 -> 55 [
+		color=red
+		cond=false
+	];
+	52 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 55 [
+		color=red
+		cond=false
+	];
+	55 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 59 [
+		color=red
+		cond=false
+	];
 }

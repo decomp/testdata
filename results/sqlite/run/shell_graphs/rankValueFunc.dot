@@ -1,0 +1,17 @@
+strict digraph "rankValueFunc" {
+	// Node definitions.
+	1 [entry=true];
+	9;
+	16;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 16 [
+		color=red
+		cond=false
+	];
+	9 -> 16;
+}

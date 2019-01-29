@@ -1,85 +1,75 @@
-digraph "flush_paragraph" {
+strict digraph "flush_paragraph" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	3;
 	8;
+	76;
+	31;
 	11;
 	14;
-	31;
-	32;
-	37;
-	38;
-	44;
-	45;
-	61;
-	62;
-	70;
-	71;
-	81;
+	42;
+	36;
+	66;
+	58;
 
 	// Edge definitions.
 	0 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
-	3 -> 81;
+	3 -> 76;
+	8 -> 31 [
+		color=darkgreen
+		cond=true
+	];
 	8 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	8 -> 32 [
+	31 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	31 -> 36 [
+		color=red
+		cond=false
 	];
 	11 -> 14;
-	14 -> 14 [
-		color=red
-		label=false
-	];
 	14 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 32;
-	32 -> 37 [
+	14 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 45 [
+	42 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 38;
-	38 -> 38 [
+	42 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	38 -> 44 [
+	36 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	44 -> 45;
-	45 -> 61 [
+	36 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
-	45 -> 71 [
+	66 -> 76;
+	58 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	61 -> 62;
-	62 -> 62 [
+	58 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 70 [
-		color=darkgreen
-		label=true
-	];
-	70 -> 71;
-	71 -> 81;
 }

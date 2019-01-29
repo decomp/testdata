@@ -1,0 +1,28 @@
+strict digraph "sqlite3IsBinary" {
+	// Node definitions.
+	1 [entry=true];
+	17;
+	5;
+	10;
+	15;
+
+	// Edge definitions.
+	1 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 5 [
+		color=red
+		cond=false
+	];
+	5 -> 10 [
+		color=darkgreen
+		cond=true
+	];
+	5 -> 15 [
+		color=red
+		cond=false
+	];
+	10 -> 15;
+	15 -> 17;
+}

@@ -1,17 +1,17 @@
-digraph "columnMallocFailure" {
+strict digraph "columnMallocFailure" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	23;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 23;
 }

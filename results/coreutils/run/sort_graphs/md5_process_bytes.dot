@@ -1,61 +1,92 @@
-digraph "md5_process_bytes" {
+strict digraph "md5_process_bytes" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	30;
 	7;
 	18;
-	25;
-	28;
-	32;
-	36;
+	27;
+	34;
+	57;
+	53;
+	38;
 	40;
-	48;
-	52;
-	55;
+	64;
+	47;
+	61;
+	81;
+	74;
+	78;
 
 	// Edge definitions.
+	3 -> 30 [
+		color=darkgreen
+		cond=true
+	];
 	3 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
-	3 -> 28 [
+	30 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	30 -> 57 [
+		color=red
+		cond=false
 	];
 	7 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 25 [
+	7 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 25;
-	25 -> 28;
-	28 -> 32 [
+	18 -> 27;
+	27 -> 30;
+	34 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 36 [
+	34 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 36;
-	36 -> 40 [
+	57 -> 64 [
 		color=red
-		label=false
+		cond=false
 	];
-	36 -> 55 [
+	57 -> 81 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 48 [
+	53 -> 57;
+	38 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 52 [
+	38 -> 64 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 52;
-	52 -> 55;
+	40 -> 47;
+	64 -> 74 [
+		color=darkgreen
+		cond=true
+	];
+	64 -> 78 [
+		color=red
+		cond=false
+	];
+	47 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 61 [
+		color=red
+		cond=false
+	];
+	61 -> 64;
+	74 -> 78;
+	78 -> 81;
 }

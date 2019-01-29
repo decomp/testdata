@@ -1,41 +1,37 @@
-digraph "c_strcasecmp" {
+strict digraph "c_strcasecmp" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	31;
 	4;
-	5;
-	22;
-	24;
-	29;
-	30;
-	34;
+	21;
+	23;
+	28;
 
 	// Edge definitions.
+	2 -> 31 [
+		color=darkgreen
+		cond=true
+	];
 	2 -> 4 [
 		color=red
-		label=false
+		cond=false
 	];
-	2 -> 34 [
+	4 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 5;
-	5 -> 22 [
-		color=darkgreen
-		label=true
-	];
-	5 -> 24 [
+	4 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 30;
-	24 -> 5 [
+	21 -> 28;
+	23 -> 4 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 29 [
+	23 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 30;
-	30 -> 34;
+	28 -> 31;
 }

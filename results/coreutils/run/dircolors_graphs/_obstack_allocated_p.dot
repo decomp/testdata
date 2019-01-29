@@ -1,46 +1,42 @@
-digraph "_obstack_allocated_p" {
+strict digraph "_obstack_allocated_p" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	18;
 	6;
-	7;
-	11;
-	15;
-	19;
-	21;
+	10;
+	14;
 
 	// Edge definitions.
+	2 -> 18 [
+		color=darkgreen
+		cond=true
+	];
 	2 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
-	2 -> 21 [
+	6 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	6 -> 7;
-	7 -> 11 [
-		color=darkgreen
-		label=true
-	];
-	7 -> 15 [
+	6 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 15 [
-		color=darkgreen
-		label=true
-	];
-	11 -> 19 [
+	10 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 7 [
-		color=red
-		label=false
-	];
-	15 -> 19 [
+	10 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 21;
+	14 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 6 [
+		color=red
+		cond=false
+	];
 }

@@ -1,71 +1,69 @@
-digraph "_obstack_free" {
+strict digraph "_obstack_free" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	42;
 	6;
 	12;
 	16;
 	20;
-	26;
-	29;
-	31;
 	35;
-	42;
-	43;
+	29;
+	26;
+	31;
 	45;
-	46;
+	44;
 
 	// Edge definitions.
+	2 -> 42 [
+		color=darkgreen
+		cond=true
+	];
 	2 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
-	2 -> 43 [
+	42 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	42 -> 44 [
+		color=red
+		cond=false
 	];
 	6 -> 12;
 	12 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 35 [
 		color=red
-		label=false
-	];
-	20 -> 26 [
-		color=red
-		label=false
+		cond=false
 	];
 	20 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 31;
-	29 -> 31;
-	31 -> 12 [
+	20 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
+	35 -> 45;
+	29 -> 31;
+	26 -> 31;
 	31 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 46;
-	42 -> 43;
-	43 -> 45 [
+	31 -> 12 [
 		color=red
-		label=false
-	];
-	43 -> 46 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 }

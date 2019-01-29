@@ -1,43 +1,43 @@
-digraph "sqlite3ExprCheckIN" {
+strict digraph "sqlite3ExprCheckIN" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	16;
+	39;
 	27;
 	38;
-	39;
+	49;
+	48;
 	42;
 	47;
-	48;
-	49;
 
 	// Edge definitions.
 	2 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 49;
-	38 -> 48;
 	39 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	39 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
+	27 -> 49;
+	38 -> 48;
+	48 -> 49;
 	42 -> 49;
 	47 -> 48;
-	48 -> 49;
 }

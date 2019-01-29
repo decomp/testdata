@@ -1,17 +1,30 @@
-digraph "fetchPayload" {
+strict digraph "fetchPayload" {
 	// Node definitions.
-	2 [label=entry];
-	31;
-	37;
+	2 [entry=true];
+	26;
+	58;
+	41;
+	42;
+	56;
 
 	// Edge definitions.
-	2 -> 31 [
+	2 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 37 [
+	2 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 37;
+	26 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 42 [
+		color=red
+		cond=false
+	];
+	41 -> 56;
+	42 -> 56;
+	56 -> 58;
 }

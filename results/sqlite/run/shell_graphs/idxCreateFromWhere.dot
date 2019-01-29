@@ -1,0 +1,110 @@
+strict digraph "idxCreateFromWhere" {
+	// Node definitions.
+	3 [entry=true];
+	13;
+	16;
+	36;
+	31;
+	21;
+	26;
+	32;
+	44;
+	85;
+	48;
+	51;
+	54;
+	56;
+	84;
+	61;
+	62;
+	63;
+	79;
+	68;
+	73;
+	80;
+
+	// Edge definitions.
+	3 -> 13;
+	13 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 36 [
+		color=red
+		cond=false
+	];
+	16 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 21 [
+		color=red
+		cond=false
+	];
+	36 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 85 [
+		color=red
+		cond=false
+	];
+	31 -> 32;
+	21 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 26 [
+		color=red
+		cond=false
+	];
+	26 -> 31;
+	32 -> 13;
+	44 -> 48;
+	48 -> 51 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 54 [
+		color=red
+		cond=false
+	];
+	51 -> 54;
+	54 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 84 [
+		color=red
+		cond=false
+	];
+	56 -> 61 [
+		color=darkgreen
+		cond=true
+	];
+	56 -> 62 [
+		color=red
+		cond=false
+	];
+	84 -> 85;
+	61 -> 63;
+	63 -> 79 [
+		color=darkgreen
+		cond=true
+	];
+	63 -> 68 [
+		color=red
+		cond=false
+	];
+	79 -> 80;
+	68 -> 79 [
+		color=darkgreen
+		cond=true
+	];
+	68 -> 73 [
+		color=red
+		cond=false
+	];
+	73 -> 79;
+	80 -> 48;
+}

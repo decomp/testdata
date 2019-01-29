@@ -1,32 +1,32 @@
-digraph "sqlite3ExprAnalyzeAggList" {
+strict digraph "sqlite3ExprAnalyzeAggList" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
+	30;
 	13;
 	19;
-	24;
 	29;
-	30;
+	24;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 13;
 	13 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 24;
-	24 -> 13;
 	29 -> 30;
+	24 -> 13;
 }

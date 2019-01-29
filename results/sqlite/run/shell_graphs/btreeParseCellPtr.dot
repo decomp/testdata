@@ -1,102 +1,102 @@
-digraph "btreeParseCellPtr" {
+strict digraph "btreeParseCellPtr" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	18;
+	44;
 	23;
 	32;
 	37;
 	41;
 	43;
-	44;
 	52;
+	86;
 	57;
 	71;
 	72;
+	85;
 	76;
 	84;
-	85;
-	86;
 	104;
+	130;
 	122;
 	125;
-	130;
 	134;
 
 	// Edge definitions.
 	3 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 23;
+	44 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	44 -> 86 [
+		color=red
+		cond=false
+	];
 	23 -> 32;
 	32 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 41;
 	41 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
 	43 -> 44;
-	44 -> 52 [
-		color=darkgreen
-		label=true
-	];
-	44 -> 86 [
-		color=red
-		label=false
-	];
 	52 -> 57;
+	86 -> 104 [
+		color=darkgreen
+		cond=true
+	];
+	86 -> 130 [
+		color=red
+		cond=false
+	];
 	57 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	57 -> 72 [
 		color=red
-		label=false
+		cond=false
 	];
 	71 -> 85;
 	72 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	72 -> 84 [
 		color=red
-		label=false
+		cond=false
 	];
+	85 -> 86;
 	76 -> 85;
 	84 -> 57;
-	85 -> 86;
-	86 -> 104 [
-		color=darkgreen
-		label=true
-	];
-	86 -> 130 [
-		color=red
-		label=false
-	];
 	104 -> 122 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	104 -> 125 [
 		color=red
-		label=false
+		cond=false
 	];
+	130 -> 134;
 	122 -> 125;
 	125 -> 134;
-	130 -> 134;
 }

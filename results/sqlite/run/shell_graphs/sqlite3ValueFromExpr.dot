@@ -1,6 +1,6 @@
-digraph "sqlite3ValueFromExpr" {
+strict digraph "sqlite3ValueFromExpr" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	13;
 	20;
 	21;
@@ -8,11 +8,11 @@ digraph "sqlite3ValueFromExpr" {
 	// Edge definitions.
 	5 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 21;
 	20 -> 21;

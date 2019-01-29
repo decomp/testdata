@@ -1,25 +1,25 @@
-digraph "cleanup_file_list_stdin" {
+strict digraph "cleanup_file_list_stdin" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	2;
-	6;
 	9;
+	6;
 
 	// Edge definitions.
 	0 -> 2 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 9 [
 		color=red
-		label=false
-	];
-	2 -> 6 [
-		color=red
-		label=false
+		cond=false
 	];
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 6 [
+		color=red
+		cond=false
 	];
 }

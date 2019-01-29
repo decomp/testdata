@@ -1,0 +1,31 @@
+strict digraph "build_type_arg" {
+	// Node definitions.
+	3 [entry=true];
+	7;
+	10;
+	20;
+	19;
+
+	// Edge definitions.
+	3 -> 7 [
+		cond="case (x=110)"
+		label="case (x=110)"
+	];
+	3 -> 10 [
+		cond="case (x=112)"
+		label="case (x=112)"
+	];
+	3 -> 20 [
+		cond="default case"
+		label="default case"
+	];
+	7 -> 20;
+	10 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	10 -> 19 [
+		color=red
+		cond=false
+	];
+}

@@ -1,54 +1,65 @@
-digraph "sqlite3PCacheBufferSetup" {
+strict digraph "sqlite3PCacheBufferSetup" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	10;
+	50;
 	13;
 	14;
-	21;
-	22;
+	17;
+	18;
+	25;
 	26;
-	29;
+	30;
 	33;
-	44;
-	46;
+	37;
+	48;
 
 	// Edge definitions.
 	3 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 46 [
+	3 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 14;
-	14 -> 21 [
+	14 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	14 -> 22 [
+	14 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 26;
-	22 -> 26;
-	26 -> 29;
-	29 -> 33 [
+	17 -> 18;
+	18 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	29 -> 44 [
+	18 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 29;
-	44 -> 46;
+	25 -> 30;
+	26 -> 30;
+	30 -> 33;
+	33 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	33 -> 48 [
+		color=red
+		cond=false
+	];
+	37 -> 33;
+	48 -> 50;
 }

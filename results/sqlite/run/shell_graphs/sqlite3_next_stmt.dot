@@ -1,6 +1,6 @@
-digraph "sqlite3_next_stmt" {
+strict digraph "sqlite3_next_stmt" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	11;
 	16;
 	22;
@@ -8,11 +8,11 @@ digraph "sqlite3_next_stmt" {
 	// Edge definitions.
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 22;
 	16 -> 22;

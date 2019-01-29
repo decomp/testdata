@@ -1,56 +1,56 @@
-digraph "sqlite3IdListDup" {
+strict digraph "sqlite3IdListDup" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
 	13;
+	81;
 	19;
 	20;
 	40;
 	44;
 	45;
 	51;
-	76;
 	79;
-	81;
+	76;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 81;
 	13 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 81;
 	20 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
 	40 -> 81;
 	44 -> 45;
 	45 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	45 -> 79 [
 		color=red
-		label=false
+		cond=false
 	];
 	51 -> 76;
-	76 -> 45;
 	79 -> 81;
+	76 -> 45;
 }

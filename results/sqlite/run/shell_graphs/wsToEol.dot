@@ -1,0 +1,65 @@
+strict digraph "wsToEol" {
+	// Node definitions.
+	1 [entry=true];
+	5;
+	12;
+	59;
+	20;
+	21;
+	60;
+	36;
+	37;
+	56;
+	45;
+	55;
+	54;
+
+	// Edge definitions.
+	1 -> 5;
+	5 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	5 -> 59 [
+		color=red
+		cond=false
+	];
+	12 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 21 [
+		color=red
+		cond=false
+	];
+	59 -> 60;
+	20 -> 60;
+	21 -> 36 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 37 [
+		color=red
+		cond=false
+	];
+	36 -> 56;
+	37 -> 45 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 55 [
+		color=red
+		cond=false
+	];
+	56 -> 5;
+	45 -> 55 [
+		color=red
+		cond=false
+	];
+	45 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 60;
+	54 -> 60;
+}

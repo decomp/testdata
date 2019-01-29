@@ -1,64 +1,73 @@
-digraph "lengthFunc" {
+strict digraph "lengthFunc" {
 	// Node definitions.
-	3 [label=entry];
-	14;
-	20;
-	27;
+	3 [entry=true];
+	15;
+	21;
+	64;
+	66;
 	28;
 	29;
-	33;
-	41;
-	42;
-	48;
-	51;
-	52;
-	53;
+	31;
+	36;
 	56;
-	58;
+	42;
+	55;
+	43;
+	49;
+	54;
 
 	// Edge definitions.
-	3 -> 14 [label="case (x=2)"];
-	3 -> 20 [label="case (x=3)"];
-	3 -> 56 [label="default case"];
-	14 -> 58;
-	20 -> 27 [
+	3 -> 15 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	3 -> 21 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	3 -> 64 [
+		cond="default case"
+		label="default case"
+	];
+	15 -> 66;
+	21 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 28 [
+	21 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 58;
-	28 -> 29;
-	29 -> 33 [
+	64 -> 66;
+	28 -> 66;
+	29 -> 31;
+	31 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	29 -> 53 [
+	31 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 41 [
+	36 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 52 [
+	36 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 42;
-	42 -> 48 [
+	56 -> 66;
+	42 -> 43;
+	55 -> 31;
+	43 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	42 -> 51 [
+	43 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 42;
-	51 -> 52;
-	52 -> 29;
-	53 -> 58;
-	56 -> 58;
+	49 -> 43;
+	54 -> 55;
 }

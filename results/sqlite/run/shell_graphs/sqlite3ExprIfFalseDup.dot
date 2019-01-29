@@ -1,17 +1,17 @@
-digraph "sqlite3ExprIfFalseDup" {
+strict digraph "sqlite3ExprIfFalseDup" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	22;
 	27;
 
 	// Edge definitions.
 	4 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 27;
 }

@@ -1,0 +1,65 @@
+strict digraph "sqlite3_expert_analyze" {
+	// Node definitions.
+	2 [entry=true];
+	12;
+	15;
+	18;
+	22;
+	27;
+	30;
+	53;
+	49;
+	56;
+	60;
+	63;
+	66;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 15 [
+		color=red
+		cond=false
+	];
+	12 -> 15;
+	15 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 22 [
+		color=red
+		cond=false
+	];
+	18 -> 22;
+	22 -> 27;
+	27 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	27 -> 53 [
+		color=red
+		cond=false
+	];
+	30 -> 49;
+	53 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 60 [
+		color=red
+		cond=false
+	];
+	49 -> 27;
+	56 -> 60;
+	60 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	60 -> 66 [
+		color=red
+		cond=false
+	];
+	63 -> 66;
+}

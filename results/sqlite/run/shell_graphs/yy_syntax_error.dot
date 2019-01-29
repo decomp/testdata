@@ -1,4 +1,19 @@
-digraph "yy_syntax_error" {
+strict digraph "yy_syntax_error" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
+	21;
+	23;
+	25;
+
+	// Edge definitions.
+	4 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 23 [
+		color=red
+		cond=false
+	];
+	21 -> 25;
+	23 -> 25;
 }

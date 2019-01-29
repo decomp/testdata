@@ -1,27 +1,27 @@
-digraph "pageReinit" {
+strict digraph "pageReinit" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
+	21;
 	17;
 	20;
-	21;
 
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 20;
 	20 -> 21;

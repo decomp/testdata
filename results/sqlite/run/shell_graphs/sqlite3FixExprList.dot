@@ -1,45 +1,45 @@
-digraph "sqlite3FixExprList" {
+strict digraph "sqlite3FixExprList" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	11;
+	36;
 	15;
 	21;
+	35;
 	28;
 	29;
 	30;
-	35;
-	36;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 36;
 	11 -> 15;
 	15 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
+	35 -> 36;
 	28 -> 36;
 	29 -> 30;
 	30 -> 15;
-	35 -> 36;
 }

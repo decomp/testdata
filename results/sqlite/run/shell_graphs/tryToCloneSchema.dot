@@ -1,111 +1,111 @@
-digraph "tryToCloneSchema" {
+strict digraph "tryToCloneSchema" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	24;
 	36;
+	136;
 	37;
 	41;
+	71;
 	55;
 	61;
 	64;
 	69;
-	71;
 	74;
+	135;
 	87;
 	99;
 	100;
 	104;
+	134;
 	118;
 	124;
 	127;
 	132;
-	134;
-	135;
-	136;
 
 	// Edge definitions.
 	4 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 136;
 	36 -> 37;
 	37 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
 	41 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 61 [
 		color=red
-		label=false
+		cond=false
+	];
+	71 -> 74 [
+		color=darkgreen
+		cond=true
+	];
+	71 -> 135 [
+		color=red
+		cond=false
 	];
 	55 -> 61;
 	61 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	61 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
 	64 -> 69;
 	69 -> 37;
-	71 -> 74 [
-		color=darkgreen
-		label=true
-	];
-	71 -> 135 [
-		color=red
-		label=false
-	];
 	74 -> 87 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	74 -> 99 [
 		color=red
-		label=false
+		cond=false
 	];
+	135 -> 136;
 	87 -> 136;
 	99 -> 100;
 	100 -> 104 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	100 -> 134 [
 		color=red
-		label=false
+		cond=false
 	];
 	104 -> 118 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	104 -> 124 [
 		color=red
-		label=false
+		cond=false
 	];
+	134 -> 135;
 	118 -> 124;
 	124 -> 127 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	124 -> 132 [
 		color=red
-		label=false
+		cond=false
 	];
 	127 -> 132;
 	132 -> 100;
-	134 -> 135;
-	135 -> 136;
 }

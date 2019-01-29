@@ -1,116 +1,116 @@
-digraph "codeInteger" {
+strict digraph "codeInteger" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	22;
+	37;
 	29;
 	32;
-	37;
+	93;
 	46;
 	49;
+	58;
 	52;
 	55;
-	58;
+	75;
 	62;
-	68;
-	73;
+	69;
 	74;
-	77;
-	80;
-	81;
-	84;
-	86;
-	91;
 	92;
+	78;
+	87;
+	81;
+	82;
+	85;
 
 	// Edge definitions.
 	4 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 32 [
 		color=red
-		label=false
+		cond=false
+	];
+	37 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 49 [
+		color=red
+		cond=false
 	];
 	29 -> 32;
-	32 -> 92;
-	37 -> 46 [
-		color=red
-		label=false
-	];
-	37 -> 58 [
-		color=darkgreen
-		label=true
-	];
+	32 -> 93;
 	46 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	46 -> 52 [
+	46 -> 58 [
 		color=red
-		label=false
-	];
-	49 -> 52 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	49 -> 58 [
-		color=red
-		label=false
-	];
-	52 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 74 [
+	49 -> 52 [
 		color=red
-		label=false
-	];
-	55 -> 58 [
-		color=darkgreen
-		label=true
-	];
-	55 -> 74 [
-		color=red
-		label=false
+		cond=false
 	];
 	58 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	58 -> 68 [
+	58 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 73;
-	68 -> 73;
-	73 -> 91;
-	74 -> 77 [
+	52 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	74 -> 86 [
+	52 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	77 -> 80 [
+	55 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	77 -> 81 [
+	55 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	80 -> 84;
-	81 -> 84;
-	84 -> 86;
-	86 -> 91;
-	91 -> 92;
+	75 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	75 -> 87 [
+		color=red
+		cond=false
+	];
+	62 -> 74;
+	69 -> 74;
+	74 -> 92;
+	92 -> 93;
+	78 -> 81 [
+		color=darkgreen
+		cond=true
+	];
+	78 -> 82 [
+		color=red
+		cond=false
+	];
+	87 -> 92;
+	81 -> 85;
+	82 -> 85;
+	85 -> 87;
 }

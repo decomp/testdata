@@ -1,31 +1,31 @@
-digraph "sqlite3InsertBuiltinFuncs" {
+strict digraph "sqlite3InsertBuiltinFuncs" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	14;
+	77;
 	35;
 	50;
 	73;
 	74;
-	77;
 
 	// Edge definitions.
 	2 -> 10;
 	10 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 73;
 	50 -> 73;

@@ -1,29 +1,29 @@
-digraph "changeTempStorage" {
+strict digraph "changeTempStorage" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	19;
 	20;
+	30;
 	24;
 	25;
-	30;
 
 	// Edge definitions.
 	2 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 30;
 	20 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 30;
 	25 -> 30;

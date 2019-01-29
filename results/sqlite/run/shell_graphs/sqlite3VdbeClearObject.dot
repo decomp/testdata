@@ -1,10 +1,10 @@
-digraph "sqlite3VdbeClearObject" {
+strict digraph "sqlite3VdbeClearObject" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	18;
 	21;
-	35;
 	37;
+	35;
 	42;
 	59;
 
@@ -12,21 +12,21 @@ digraph "sqlite3VdbeClearObject" {
 	2 -> 18;
 	18 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 35;
-	35 -> 18;
 	37 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
+	35 -> 18;
 	42 -> 59;
 }

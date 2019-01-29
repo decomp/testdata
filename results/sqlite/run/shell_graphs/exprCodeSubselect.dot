@@ -1,17 +1,17 @@
-digraph "exprCodeSubselect" {
+strict digraph "exprCodeSubselect" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	11;
 	15;
 
 	// Edge definitions.
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 15;
 }

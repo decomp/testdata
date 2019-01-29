@@ -1,50 +1,50 @@
-digraph "subjournalPage" {
+strict digraph "subjournalPage" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	16;
+	59;
 	21;
+	58;
 	46;
 	57;
-	58;
-	59;
 	62;
 	72;
 
 	// Edge definitions.
 	1 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 46 [
-		color=darkgreen
-		label=true
-	];
-	21 -> 57 [
-		color=red
-		label=false
-	];
-	46 -> 57;
-	57 -> 58;
-	58 -> 59;
 	59 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	59 -> 72 [
 		color=red
-		label=false
+		cond=false
 	];
+	21 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 57 [
+		color=red
+		cond=false
+	];
+	58 -> 59;
+	46 -> 57;
+	57 -> 58;
 	62 -> 72;
 }

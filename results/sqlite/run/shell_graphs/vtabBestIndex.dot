@@ -1,43 +1,43 @@
-digraph "vtabBestIndex" {
+strict digraph "vtabBestIndex" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	26;
+	49;
 	29;
 	33;
-	38;
-	42;
-	47;
 	48;
-	49;
+	42;
+	38;
+	47;
 
 	// Edge definitions.
 	3 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
 	26 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 48;
-	33 -> 38 [
-		color=red
-		label=false
-	];
 	33 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	38 -> 47;
-	42 -> 47;
-	47 -> 48;
+	33 -> 38 [
+		color=red
+		cond=false
+	];
 	48 -> 49;
+	42 -> 47;
+	38 -> 47;
+	47 -> 48;
 }

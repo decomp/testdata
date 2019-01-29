@@ -1,26 +1,26 @@
-digraph "sqlite3VdbeFinalize" {
+strict digraph "sqlite3VdbeFinalize" {
 	// Node definitions.
-	1 [label=entry];
-	8;
+	1 [entry=true];
 	13;
+	8;
 	16;
 
 	// Edge definitions.
-	1 -> 8 [
-		color=red
-		label=false
-	];
 	1 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	1 -> 8 [
+		color=red
+		cond=false
+	];
+	13 -> 16;
 	8 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 16;
 }

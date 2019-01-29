@@ -1,30 +1,30 @@
-digraph "moveToLeftmost" {
+strict digraph "moveToLeftmost" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	9;
-	22;
-	24;
-	67;
+	17;
+	19;
+	62;
 
 	// Edge definitions.
 	1 -> 6;
 	6 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	6 -> 22 [
+	6 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 22;
-	22 -> 24 [
+	9 -> 17;
+	17 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 67 [
+	17 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 6;
+	19 -> 6;
 }

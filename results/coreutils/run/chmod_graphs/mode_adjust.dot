@@ -1,58 +1,77 @@
-digraph "mode_adjust" {
+strict digraph "mode_adjust" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
+	81;
 	10;
-	15;
-	29;
-	43;
-	49;
-	59;
-	68;
-	71;
-	75;
-	82;
-	83;
-	87;
-	88;
+	14;
+	42;
+	28;
+	48;
+	58;
+	67;
+	70;
+	74;
+	86;
+	85;
 
 	// Edge definitions.
+	5 -> 81 [
+		color=darkgreen
+		cond=true
+	];
 	5 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
-	5 -> 83 [
+	81 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	10 -> 15;
-	15 -> 29 [label="case (x=3)"];
-	15 -> 43 [label="case (x=2)"];
-	15 -> 49 [label="default case"];
-	29 -> 49;
-	43 -> 49;
-	49 -> 59 [label="case (x=61)"];
-	49 -> 68 [label="case (x=43)"];
-	49 -> 71 [label="case (x=45)"];
-	49 -> 75 [label="default case"];
-	59 -> 75;
-	68 -> 75;
-	71 -> 75;
-	75 -> 15 [
+	81 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
-	75 -> 82 [
+	10 -> 14;
+	14 -> 42 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	14 -> 28 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	14 -> 48 [
+		cond="default case"
+		label="default case"
+	];
+	42 -> 48;
+	28 -> 48;
+	48 -> 58 [
+		cond="case (x=61)"
+		label="case (x=61)"
+	];
+	48 -> 67 [
+		cond="case (x=43)"
+		label="case (x=43)"
+	];
+	48 -> 70 [
+		cond="case (x=45)"
+		label="case (x=45)"
+	];
+	48 -> 74 [
+		cond="default case"
+		label="default case"
+	];
+	58 -> 74;
+	67 -> 74;
+	70 -> 74;
+	74 -> 81 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	82 -> 83;
-	83 -> 87 [
+	74 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
-	83 -> 88 [
-		color=darkgreen
-		label=true
-	];
-	87 -> 88;
+	85 -> 86;
 }

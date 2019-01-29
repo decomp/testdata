@@ -1,6 +1,6 @@
-digraph "allocateCursor" {
+strict digraph "allocateCursor" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	16;
 	27;
 	31;
@@ -10,55 +10,55 @@ digraph "allocateCursor" {
 	56;
 	71;
 	76;
+	128;
 	110;
 	127;
-	128;
 
 	// Edge definitions.
 	5 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 31;
 	27 -> 31;
 	31 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	40 -> 43;
 	42 -> 43;
 	43 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
 	56 -> 71;
 	71 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	71 -> 128 [
 		color=red
-		label=false
+		cond=false
 	];
 	76 -> 110 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	76 -> 127 [
 		color=red
-		label=false
+		cond=false
 	];
 	110 -> 127;
 	127 -> 128;

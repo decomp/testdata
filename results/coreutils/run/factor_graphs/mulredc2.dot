@@ -1,56 +1,56 @@
-digraph "mulredc2" {
+strict digraph "mulredc2" {
 	// Node definitions.
-	8 [label=entry];
-	11;
+	8 [entry=true];
 	12;
-	14;
+	11;
 	15;
-	17;
+	14;
 	18;
-	74;
+	17;
 	78;
+	74;
 	82;
 
 	// Edge definitions.
-	8 -> 11 [
-		color=red
-		label=false
-	];
 	8 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 14 [
+	8 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 17 [
+	12 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 74 [
+	15 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	18 -> 74 [
+		color=red
+		cond=false
+	];
+	78 -> 82;
 	74 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
 	74 -> 82 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	78 -> 82;
 }

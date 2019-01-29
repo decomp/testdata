@@ -1,43 +1,43 @@
-digraph "invokeValueDestructor" {
+strict digraph "invokeValueDestructor" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
 	10;
+	18;
 	13;
 	14;
 	17;
-	18;
 	21;
 	23;
 
 	// Edge definitions.
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 18;
 	10 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 14 [
 		color=red
-		label=false
+		cond=false
+	];
+	18 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 23 [
+		color=red
+		cond=false
 	];
 	13 -> 17;
 	14 -> 17;
 	17 -> 18;
-	18 -> 21 [
-		color=darkgreen
-		label=true
-	];
-	18 -> 23 [
-		color=red
-		label=false
-	];
 	21 -> 23;
 }

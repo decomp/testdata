@@ -1,17 +1,17 @@
-digraph "unixLogErrorAtLine" {
+strict digraph "unixLogErrorAtLine" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	15;
 	16;
 
 	// Edge definitions.
 	4 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 16;
 }

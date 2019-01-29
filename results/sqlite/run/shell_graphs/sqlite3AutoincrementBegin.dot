@@ -1,32 +1,32 @@
-digraph "sqlite3AutoincrementBegin" {
+strict digraph "sqlite3AutoincrementBegin" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	18;
 	21;
+	112;
 	55;
 	56;
-	95;
-	99;
+	108;
 
 	// Edge definitions.
 	1 -> 18;
 	18 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 99 [
+	18 -> 112 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
-	55 -> 99;
-	56 -> 95;
-	95 -> 18;
+	55 -> 112;
+	56 -> 108;
+	108 -> 18;
 }

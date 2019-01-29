@@ -1,114 +1,114 @@
-digraph "pagerStress" {
+strict digraph "pagerStress" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	15;
+	91;
 	21;
-	28;
-	35;
 	36;
-	43;
+	35;
+	28;
 	48;
-	52;
+	58;
 	53;
-	60;
-	66;
-	69;
-	72;
-	76;
-	77;
-	80;
+	57;
 	82;
-	86;
+	71;
+	65;
+	74;
+	77;
+	81;
+	85;
+	87;
 
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 86;
+	14 -> 91;
 	15 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 36 [
 		color=red
-		label=false
-	];
-	21 -> 28 [
-		color=red
-		label=false
+		cond=false
 	];
 	21 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	21 -> 28 [
+		color=red
+		cond=false
+	];
+	36 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 58 [
+		color=red
+		cond=false
+	];
+	35 -> 91;
+	28 -> 36 [
+		color=red
+		cond=false
 	];
 	28 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 36 [
-		color=red
-		label=false
-	];
-	35 -> 86;
-	36 -> 43 [
+	48 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 53 [
+	48 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
-	43 -> 48 [
+	58 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	43 -> 52 [
+	58 -> 65 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 52;
-	52 -> 77;
-	53 -> 60 [
-		color=red
-		label=false
-	];
-	53 -> 66 [
+	53 -> 57;
+	57 -> 82;
+	82 -> 85 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 66 [
-		color=darkgreen
-		label=true
-	];
-	60 -> 69 [
+	82 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
-	66 -> 69;
-	69 -> 72 [
+	71 -> 74;
+	65 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	69 -> 76 [
+	65 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
-	72 -> 76;
-	76 -> 77;
-	77 -> 80 [
+	74 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	77 -> 82 [
+	74 -> 81 [
 		color=red
-		label=false
+		cond=false
 	];
-	80 -> 82;
-	82 -> 86;
+	77 -> 81;
+	81 -> 82;
+	85 -> 87;
+	87 -> 91;
 }

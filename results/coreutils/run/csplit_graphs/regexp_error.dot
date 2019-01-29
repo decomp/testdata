@@ -1,52 +1,48 @@
-digraph "regexp_error" {
+strict digraph "regexp_error" {
 	// Node definitions.
-	3 [label=entry];
-	17;
+	3 [entry=true];
 	23;
+	17;
 	26;
-	27;
-	30;
-	31;
 	35;
-	36;
-	37;
+	27;
+	34;
+	30;
 
 	// Edge definitions.
-	3 -> 17 [
-		color=red
-		label=false
-	];
 	3 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 26;
+	3 -> 17 [
+		color=red
+		cond=false
+	];
 	23 -> 26;
+	17 -> 26;
+	26 -> 35 [
+		color=darkgreen
+		cond=true
+	];
 	26 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 37 [
+	27 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 36 [
+	34 -> 35;
+	30 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 31;
-	31 -> 31 [
+	30 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 35 [
-		color=darkgreen
-		label=true
-	];
-	35 -> 36;
-	36 -> 37;
 }

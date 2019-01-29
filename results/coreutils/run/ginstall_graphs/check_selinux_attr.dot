@@ -1,17 +1,17 @@
-digraph "check_selinux_attr" {
+strict digraph "check_selinux_attr" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	9;
 	5;
-	8;
 
 	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		cond=true
+	];
 	2 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
-	2 -> 8 [
-		color=darkgreen
-		label=true
-	];
-	5 -> 8;
+	5 -> 9;
 }

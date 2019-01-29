@@ -1,63 +1,63 @@
-digraph "sqlite3VtabClear" {
+strict digraph "sqlite3VtabClear" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
 	13;
 	16;
 	21;
+	50;
 	22;
 	28;
+	44;
 	31;
 	40;
 	41;
-	44;
-	50;
 
 	// Edge definitions.
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 16;
 	16 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 22;
 	22 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
+	44 -> 50;
 	31 -> 40;
 	40 -> 41;
 	41 -> 22;
-	44 -> 50;
 }

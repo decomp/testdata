@@ -1,39 +1,39 @@
-digraph "invalidateTempStorage" {
+strict digraph "invalidateTempStorage" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	15;
+	45;
 	20;
 	29;
 	31;
-	45;
 	46;
 
 	// Edge definitions.
 	1 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
+	45 -> 46;
 	20 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 46;
 	31 -> 45;
-	45 -> 46;
 }

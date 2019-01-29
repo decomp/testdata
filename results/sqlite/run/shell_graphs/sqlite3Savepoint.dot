@@ -1,36 +1,36 @@
-digraph "sqlite3Savepoint" {
+strict digraph "sqlite3Savepoint" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
+	40;
 	21;
 	30;
 	35;
-	40;
 
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 40;
 	35 -> 40;

@@ -1,6 +1,6 @@
-digraph "sqlite3FaultSim" {
+strict digraph "sqlite3FaultSim" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
 	11;
 	12;
@@ -8,11 +8,11 @@ digraph "sqlite3FaultSim" {
 	// Edge definitions.
 	1 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 12;
 	11 -> 12;

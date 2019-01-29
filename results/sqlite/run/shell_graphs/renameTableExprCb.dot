@@ -1,0 +1,26 @@
+strict digraph "renameTableExprCb" {
+	// Node definitions.
+	2 [entry=true];
+	15;
+	31;
+	23;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 31 [
+		color=red
+		cond=false
+	];
+	15 -> 31 [
+		color=red
+		cond=false
+	];
+	15 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	23 -> 31;
+}

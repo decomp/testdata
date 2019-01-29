@@ -1,8 +1,9 @@
-digraph "sqlite3SrcListDup" {
+strict digraph "sqlite3SrcListDup" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
 	17;
+	204;
 	22;
 	29;
 	30;
@@ -10,6 +11,7 @@ digraph "sqlite3SrcListDup" {
 	42;
 	50;
 	56;
+	202;
 	122;
 	132;
 	146;
@@ -17,75 +19,73 @@ digraph "sqlite3SrcListDup" {
 	165;
 	170;
 	199;
-	202;
-	204;
 
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 204;
 	17 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 30;
 	29 -> 30;
 	30 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	41 -> 204;
 	42 -> 50;
 	50 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	50 -> 202 [
 		color=red
-		label=false
+		cond=false
 	];
 	56 -> 122 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	56 -> 132 [
 		color=red
-		label=false
+		cond=false
 	];
+	202 -> 204;
 	122 -> 132;
 	132 -> 146 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	132 -> 157 [
 		color=red
-		label=false
+		cond=false
 	];
 	146 -> 157;
 	157 -> 165 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	157 -> 170 [
 		color=red
-		label=false
+		cond=false
 	];
 	165 -> 170;
 	170 -> 199;
 	199 -> 50;
-	202 -> 204;
 }

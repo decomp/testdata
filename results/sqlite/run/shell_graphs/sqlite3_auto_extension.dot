@@ -1,69 +1,69 @@
-digraph "sqlite3_auto_extension" {
+strict digraph "sqlite3_auto_extension" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	12;
 	14;
+	64;
 	17;
 	21;
+	34;
 	29;
 	30;
 	31;
-	34;
 	38;
+	61;
 	50;
 	51;
 	60;
-	61;
-	64;
 
 	// Edge definitions.
 	1 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 64;
 	14 -> 17;
 	17 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 30 [
 		color=red
-		label=false
+		cond=false
+	];
+	34 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 61 [
+		color=red
+		cond=false
 	];
 	29 -> 34;
 	30 -> 31;
 	31 -> 17;
-	34 -> 38 [
-		color=darkgreen
-		label=true
-	];
-	34 -> 61 [
-		color=red
-		label=false
-	];
 	38 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	38 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
+	61 -> 64;
 	50 -> 60;
 	51 -> 60;
 	60 -> 61;
-	61 -> 64;
 }

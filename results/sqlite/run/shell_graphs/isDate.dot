@@ -1,116 +1,116 @@
-digraph "isDate" {
+strict digraph "isDate" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	18;
 	22;
-	28;
+	99;
 	31;
+	28;
 	37;
+	52;
 	44;
 	50;
 	51;
-	52;
 	53;
 	57;
-	72;
+	84;
 	79;
+	72;
 	80;
 	81;
-	84;
-	91;
 	97;
+	91;
 	98;
-	99;
 
 	// Edge definitions.
 	4 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 99;
-	22 -> 28 [
-		color=red
-		label=false
-	];
 	22 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	22 -> 28 [
+		color=red
+		cond=false
+	];
+	31 -> 52;
 	28 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 52;
 	37 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
+	52 -> 53;
 	44 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	44 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
 	50 -> 99;
 	51 -> 52;
-	52 -> 53;
 	53 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	53 -> 84 [
 		color=red
-		label=false
-	];
-	57 -> 72 [
-		color=red
-		label=false
+		cond=false
 	];
 	57 -> 79 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	72 -> 79 [
-		color=darkgreen
-		label=true
-	];
-	72 -> 80 [
+	57 -> 72 [
 		color=red
-		label=false
-	];
-	79 -> 99;
-	80 -> 81;
-	81 -> 53;
-	84 -> 91 [
-		color=red
-		label=false
+		cond=false
 	];
 	84 -> 97 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	84 -> 91 [
+		color=red
+		cond=false
+	];
+	79 -> 99;
+	72 -> 79 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 80 [
+		color=red
+		cond=false
+	];
+	80 -> 81;
+	81 -> 53;
+	97 -> 99;
 	91 -> 97 [
 		color=red
-		label=false
+		cond=false
 	];
 	91 -> 98 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	97 -> 99;
 	98 -> 99;
 }

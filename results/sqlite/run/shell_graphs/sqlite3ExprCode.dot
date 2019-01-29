@@ -1,48 +1,48 @@
-digraph "sqlite3ExprCode" {
+strict digraph "sqlite3ExprCode" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	10;
-	16;
 	25;
-	33;
-	38;
-	45;
+	16;
 	46;
+	33;
+	45;
+	38;
 
 	// Edge definitions.
 	3 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 25 [
 		color=red
-		label=false
-	];
-	10 -> 16 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	10 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 46;
+	10 -> 16 [
+		color=darkgreen
+		cond=true
+	];
 	25 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 45 [
 		color=red
-		label=false
+		cond=false
+	];
+	16 -> 46;
+	33 -> 45 [
+		color=red
+		cond=false
 	];
 	33 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 45 [
-		color=red
-		label=false
-	];
-	38 -> 45;
 	45 -> 46;
+	38 -> 45;
 }

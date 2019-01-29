@@ -1,97 +1,97 @@
-digraph "sig2str" {
+strict digraph "sig2str" {
 	// Node definitions.
-	2 [label=entry];
-	3;
+	2 [entry=true];
 	9;
-	15;
-	20;
-	26;
-	31;
-	32;
-	33;
-	37;
-	41;
+	3;
+	16;
+	45;
 	43;
-	49;
-	55;
-	62;
+	22;
+	28;
+	34;
+	33;
+	35;
+	39;
+	51;
+	57;
+	63;
 
 	// Edge definitions.
 	2 -> 9;
-	3 -> 15 [
-		color=darkgreen
-		label=true
-	];
-	3 -> 43 [
-		color=red
-		label=false
-	];
 	9 -> 3 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 15 [
+	9 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 41;
-	20 -> 26 [
+	3 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 41 [
+	16 -> 43;
+	45 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 31 [
+	45 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 32 [
+	22 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 33;
-	32 -> 33;
-	33 -> 37 [
+	22 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 41 [
+	28 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 41;
-	43 -> 15 [
-		color=darkgreen
-		label=true
-	];
-	43 -> 49 [
+	28 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	49 -> 15 [
+	34 -> 35;
+	33 -> 35;
+	35 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 55 [
+	35 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	55 -> 15 [
+	39 -> 43;
+	51 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	55 -> 62 [
+	51 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 9 [
+	57 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	62 -> 20 [
+	57 -> 63 [
 		color=red
-		label=false
+		cond=false
+	];
+	63 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	63 -> 22 [
+		color=red
+		cond=false
 	];
 }

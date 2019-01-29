@@ -1,0 +1,21 @@
+strict digraph "idxStatementFree" {
+	// Node definitions.
+	2 [entry=true];
+	8;
+	12;
+	26;
+	24;
+
+	// Edge definitions.
+	2 -> 8;
+	8 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 26 [
+		color=red
+		cond=false
+	];
+	12 -> 24;
+	24 -> 8;
+}

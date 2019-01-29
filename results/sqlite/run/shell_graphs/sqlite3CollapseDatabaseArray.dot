@@ -1,63 +1,63 @@
-digraph "sqlite3CollapseDatabaseArray" {
+strict digraph "sqlite3CollapseDatabaseArray" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	12;
+	55;
 	23;
 	30;
+	52;
 	34;
 	49;
-	52;
-	55;
 	63;
-	71;
 	90;
+	71;
 
 	// Edge definitions.
 	1 -> 6;
 	6 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 30 [
 		color=red
-		label=false
+		cond=false
+	];
+	55 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 90 [
+		color=red
+		cond=false
 	];
 	23 -> 52;
 	30 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
+	52 -> 6;
 	34 -> 49;
 	49 -> 52;
-	52 -> 6;
-	55 -> 63 [
-		color=darkgreen
-		label=true
-	];
-	55 -> 90 [
+	63 -> 90 [
 		color=red
-		label=false
+		cond=false
 	];
 	63 -> 71 [
 		color=darkgreen
-		label=true
-	];
-	63 -> 90 [
-		color=red
-		label=false
+		cond=true
 	];
 	71 -> 90;
 }

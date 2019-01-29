@@ -1,0 +1,28 @@
+strict digraph "renameParseCleanup" {
+	// Node definitions.
+	1 [entry=true];
+	11;
+	16;
+	25;
+	30;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 16 [
+		color=red
+		cond=false
+	];
+	11 -> 16;
+	16 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 30 [
+		color=red
+		cond=false
+	];
+	25 -> 30;
+}

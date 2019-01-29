@@ -1,76 +1,94 @@
-digraph "execSql" {
+strict digraph "execSql" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
 	18;
+	62;
 	19;
 	23;
+	46;
 	28;
-	35;
-	36;
-	37;
-	38;
-	41;
-	42;
 	45;
+	36;
+	32;
+	43;
+	44;
+	49;
 	50;
-	54;
+	53;
+	58;
 
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 54;
+	16 -> 62;
 	18 -> 19;
 	19 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 38 [
+	19 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 37 [
+	23 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	28 -> 35 [
+	46 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	46 -> 50 [
+		color=red
+		cond=false
 	];
 	28 -> 36 [
-		color=red
-		label=false
-	];
-	35 -> 38;
-	36 -> 37;
-	37 -> 19;
-	38 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	38 -> 42 [
+	28 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 42;
-	42 -> 45 [
+	45 -> 19;
+	36 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	42 -> 50 [
+	36 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	45 -> 50;
-	50 -> 54;
+	32 -> 45 [
+		color=red
+		cond=false
+	];
+	32 -> 36 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 46;
+	44 -> 45;
+	49 -> 50;
+	50 -> 53 [
+		color=darkgreen
+		cond=true
+	];
+	50 -> 58 [
+		color=red
+		cond=false
+	];
+	53 -> 58;
+	58 -> 62;
 }

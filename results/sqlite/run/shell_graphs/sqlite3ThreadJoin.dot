@@ -1,32 +1,32 @@
-digraph "sqlite3ThreadJoin" {
+strict digraph "sqlite3ThreadJoin" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	10;
+	33;
 	15;
 	20;
-	28;
-	32;
+	29;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 32;
+	9 -> 33;
 	10 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 28;
-	20 -> 28;
-	28 -> 32;
+	15 -> 29;
+	20 -> 29;
+	29 -> 33;
 }

@@ -1,17 +1,17 @@
-digraph "save_err_msg" {
+strict digraph "save_err_msg" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	14;
 	20;
 
 	// Edge definitions.
 	1 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 20;
 }

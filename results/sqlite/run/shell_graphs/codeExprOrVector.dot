@@ -1,47 +1,56 @@
-digraph "codeExprOrVector" {
+strict digraph "codeExprOrVector" {
 	// Node definitions.
-	4 [label=entry];
-	16;
-	22;
-	35;
-	40;
-	44;
-	56;
+	4 [entry=true];
+	15;
+	64;
+	19;
+	25;
+	38;
+	63;
+	43;
+	47;
+	62;
 	59;
-	60;
-	61;
-	65;
+	68;
 
 	// Edge definitions.
-	4 -> 16 [
+	4 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 61 [
+	4 -> 64 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 22 [
+	15 -> 64 [
+		color=red
+		cond=false
+	];
+	15 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 35 [
-		color=red
-		label=false
-	];
-	22 -> 60;
-	35 -> 40;
-	40 -> 44 [
+	64 -> 68;
+	19 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 59 [
+	19 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	44 -> 56;
-	56 -> 40;
-	59 -> 60;
-	60 -> 65;
-	61 -> 65;
+	25 -> 63;
+	38 -> 43;
+	63 -> 68;
+	43 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 62 [
+		color=red
+		cond=false
+	];
+	47 -> 59;
+	62 -> 63;
+	59 -> 43;
 }

@@ -1,28 +1,28 @@
-digraph "fileHasMoved" {
+strict digraph "fileHasMoved" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
-	16;
-	26;
 	28;
+	26;
+	16;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 28 [
 		color=red
-		label=false
-	];
-	8 -> 16 [
-		color=red
-		label=false
+		cond=false
 	];
 	8 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 26;
+	8 -> 16 [
+		color=red
+		cond=false
+	];
 	26 -> 28;
+	16 -> 26;
 }

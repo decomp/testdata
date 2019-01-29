@@ -1,20 +1,20 @@
-digraph "output_hex_blob" {
+strict digraph "output_hex_blob" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	12;
 	16;
-	26;
 	29;
+	26;
 
 	// Edge definitions.
 	3 -> 12;
 	12 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 26;
 	26 -> 12;

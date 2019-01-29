@@ -1,52 +1,52 @@
-digraph "sumFinalize" {
+strict digraph "sumFinalize" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
+	38;
 	14;
 	19;
 	21;
+	37;
 	26;
 	31;
 	36;
-	37;
-	38;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 38 [
 		color=red
-		label=false
-	];
-	9 -> 14 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	9 -> 38 [
 		color=red
-		label=false
+		cond=false
+	];
+	9 -> 14 [
+		color=darkgreen
+		cond=true
 	];
 	14 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 37;
 	21 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
+	37 -> 38;
 	26 -> 36;
 	31 -> 36;
 	36 -> 37;
-	37 -> 38;
 }

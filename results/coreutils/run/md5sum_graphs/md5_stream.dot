@@ -1,85 +1,85 @@
-digraph "md5_stream" {
+strict digraph "md5_stream" {
 	// Node definitions.
-	2 [label=entry];
-	7;
+	2 [entry=true];
+	70;
+	6;
 	13;
-	14;
-	21;
-	24;
-	27;
-	28;
-	31;
-	32;
+	18;
+	34;
 	33;
-	35;
-	36;
-	43;
-	46;
-	66;
+	24;
+	28;
+	26;
+	32;
+	68;
+	38;
+	37;
+	45;
+	48;
 
 	// Edge definitions.
-	2 -> 7 [
+	2 -> 70 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
-	2 -> 66 [
+	6 -> 13;
+	13 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 13;
-	13 -> 14;
-	14 -> 21 [
+	13 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 31 [
+	18 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	21 -> 24 [
-		color=darkgreen
-		label=true
-	];
-	21 -> 28 [
+	18 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 27 [
+	34 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 33 [
+	33 -> 26;
+	24 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 66;
-	28 -> 14 [
+	24 -> 26 [
+		color=red
+		cond=false
+	];
+	28 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 13;
-	32 -> 33;
-	33 -> 35 [
-		color=red
-		label=false
-	];
-	33 -> 36 [
+	26 -> 13;
+	32 -> 68;
+	68 -> 70;
+	38 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 36;
-	36 -> 43 [
-		color=darkgreen
-		label=true
-	];
-	36 -> 46 [
+	38 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	43 -> 46;
-	46 -> 66;
+	37 -> 38;
+	45 -> 48;
+	48 -> 68;
 }

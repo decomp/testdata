@@ -1,126 +1,126 @@
-digraph "whereOrInsert" {
+strict digraph "whereOrInsert" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	18;
 	22;
-	30;
-	38;
-	39;
-	47;
-	57;
-	58;
-	59;
 	64;
+	30;
+	39;
+	38;
+	131;
+	47;
+	58;
+	57;
+	150;
+	59;
 	70;
 	82;
+	130;
 	86;
 	94;
+	120;
 	108;
 	116;
 	117;
-	120;
 	128;
 	129;
-	130;
-	131;
 	145;
 	149;
-	150;
 
 	// Edge definitions.
 	4 -> 18;
 	18 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 64 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	30 -> 38 [
-		color=darkgreen
-		label=true
-	];
-	30 -> 39 [
-		color=red
-		label=false
-	];
-	38 -> 131;
-	39 -> 47 [
-		color=darkgreen
-		label=true
-	];
-	39 -> 58 [
-		color=red
-		label=false
-	];
-	47 -> 57 [
-		color=darkgreen
-		label=true
-	];
-	47 -> 58 [
-		color=red
-		label=false
-	];
-	57 -> 150;
-	58 -> 59;
-	59 -> 18;
 	64 -> 70 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	64 -> 82 [
 		color=red
-		label=false
+		cond=false
 	];
+	30 -> 39 [
+		color=red
+		cond=false
+	];
+	30 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 58 [
+		color=red
+		cond=false
+	];
+	38 -> 131;
+	131 -> 145 [
+		color=darkgreen
+		cond=true
+	];
+	131 -> 149 [
+		color=red
+		cond=false
+	];
+	47 -> 58 [
+		color=red
+		cond=false
+	];
+	47 -> 57 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 59;
+	57 -> 150;
+	59 -> 18;
 	70 -> 130;
 	82 -> 86;
+	130 -> 131;
 	86 -> 94 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	86 -> 120 [
 		color=red
-		label=false
+		cond=false
 	];
 	94 -> 108 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	94 -> 116 [
 		color=red
-		label=false
+		cond=false
+	];
+	120 -> 128 [
+		color=darkgreen
+		cond=true
+	];
+	120 -> 129 [
+		color=red
+		cond=false
 	];
 	108 -> 116;
 	116 -> 117;
 	117 -> 86;
-	120 -> 128 [
-		color=darkgreen
-		label=true
-	];
-	120 -> 129 [
-		color=red
-		label=false
-	];
 	128 -> 150;
 	129 -> 130;
-	130 -> 131;
-	131 -> 145 [
-		color=darkgreen
-		label=true
-	];
-	131 -> 149 [
-		color=red
-		label=false
-	];
 	145 -> 149;
 	149 -> 150;
 }

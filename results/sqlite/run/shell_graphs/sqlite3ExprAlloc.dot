@@ -1,123 +1,123 @@
-digraph "sqlite3ExprAlloc" {
+strict digraph "sqlite3ExprAlloc" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	14;
+	34;
+	28;
 	17;
 	22;
-	28;
 	33;
-	34;
 	43;
+	138;
 	54;
+	135;
 	57;
 	66;
+	134;
 	77;
 	89;
 	101;
+	133;
 	114;
 	123;
 	128;
-	133;
-	134;
-	135;
-	138;
 
 	// Edge definitions.
 	4 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 34 [
 		color=red
-		label=false
-	];
-	14 -> 17 [
-		color=red
-		label=false
+		cond=false
 	];
 	14 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 22 [
+	14 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 28 [
-		color=darkgreen
-		label=true
-	];
-	22 -> 28 [
-		color=darkgreen
-		label=true
-	];
-	22 -> 33 [
-		color=red
-		label=false
-	];
-	28 -> 33;
-	33 -> 34;
 	34 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 138 [
 		color=red
-		label=false
+		cond=false
 	];
+	28 -> 33;
+	17 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	17 -> 22 [
+		color=red
+		cond=false
+	];
+	22 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 33 [
+		color=red
+		cond=false
+	];
+	33 -> 34;
 	43 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 135 [
 		color=red
-		label=false
+		cond=false
 	];
 	54 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	54 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
+	135 -> 138;
 	57 -> 134;
 	66 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	66 -> 89 [
 		color=red
-		label=false
+		cond=false
 	];
+	134 -> 135;
 	77 -> 89;
 	89 -> 101 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	89 -> 133 [
 		color=red
-		label=false
-	];
-	101 -> 114 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	101 -> 133 [
 		color=red
-		label=false
+		cond=false
 	];
+	101 -> 114 [
+		color=darkgreen
+		cond=true
+	];
+	133 -> 134;
 	114 -> 123 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	114 -> 128 [
 		color=red
-		label=false
+		cond=false
 	];
 	123 -> 128;
 	128 -> 133;
-	133 -> 134;
-	134 -> 135;
-	135 -> 138;
 }

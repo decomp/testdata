@@ -1,0 +1,41 @@
+strict digraph "isRealTable" {
+	// Node definitions.
+	2 [entry=true];
+	11;
+	12;
+	17;
+	18;
+	21;
+	27;
+	28;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 12 [
+		color=red
+		cond=false
+	];
+	11 -> 12;
+	12 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 18 [
+		color=red
+		cond=false
+	];
+	17 -> 18;
+	18 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 27 [
+		color=red
+		cond=false
+	];
+	21 -> 28;
+	27 -> 28;
+}

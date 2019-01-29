@@ -1,52 +1,52 @@
-digraph "sqlite3SelectNew" {
+strict digraph "sqlite3SelectNew" {
 	// Node definitions.
-	10 [label=entry];
-	30;
-	31;
-	34;
-	41;
-	64;
-	70;
-	104;
-	112;
-	113;
+	9 [entry=true];
+	28;
+	29;
+	32;
+	39;
+	68;
+	74;
+	109;
+	117;
+	118;
 
 	// Edge definitions.
-	10 -> 30 [
+	9 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	10 -> 31 [
+	9 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	30 -> 31;
-	31 -> 34 [
+	28 -> 29;
+	29 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 41 [
+	29 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	34 -> 41;
-	41 -> 64 [
+	32 -> 39;
+	39 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 70 [
+	39 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
-	64 -> 70;
-	70 -> 104 [
+	68 -> 74;
+	74 -> 109 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	70 -> 112 [
+	74 -> 117 [
 		color=red
-		label=false
+		cond=false
 	];
-	104 -> 113;
-	112 -> 113;
+	109 -> 118;
+	117 -> 118;
 }

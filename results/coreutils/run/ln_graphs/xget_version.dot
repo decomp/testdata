@@ -1,46 +1,46 @@
-digraph "xget_version" {
+strict digraph "xget_version" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	12;
 	4;
 	7;
-	12;
+	23;
 	15;
 	18;
-	23;
 
 	// Edge definitions.
-	2 -> 4 [
-		color=red
-		label=false
-	];
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 7 [
+	2 -> 4 [
 		color=red
-		label=false
-	];
-	4 -> 12 [
-		color=darkgreen
-		label=true
-	];
-	7 -> 23;
-	12 -> 15 [
-		color=red
-		label=false
+		cond=false
 	];
 	12 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	12 -> 15 [
+		color=red
+		cond=false
+	];
+	4 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 7 [
+		color=red
+		cond=false
+	];
+	7 -> 23;
+	15 -> 23 [
+		color=darkgreen
+		cond=true
 	];
 	15 -> 18 [
 		color=red
-		label=false
-	];
-	15 -> 23 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	18 -> 23;
 }

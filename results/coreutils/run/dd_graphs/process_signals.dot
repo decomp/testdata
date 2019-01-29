@@ -1,52 +1,52 @@
-digraph "process_signals" {
+strict digraph "process_signals" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	3;
 	6;
 	9;
-	14;
-	16;
-	19;
-	21;
-	22;
 	23;
+	16;
+	14;
+	21;
+	19;
+	22;
 
 	// Edge definitions.
 	0 -> 3;
 	3 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 23 [
 		color=darkgreen
-		label=true
-	];
-	9 -> 14 [
-		color=red
-		label=false
+		cond=true
 	];
 	9 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	14 -> 16;
-	16 -> 19 [
+	9 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 22;
+	16 -> 19 [
+		color=red
+		cond=false
+	];
+	14 -> 16;
 	21 -> 22;
+	19 -> 22;
 	22 -> 3;
 }

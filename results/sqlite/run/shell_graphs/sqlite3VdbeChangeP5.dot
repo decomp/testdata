@@ -1,17 +1,17 @@
-digraph "sqlite3VdbeChangeP5" {
+strict digraph "sqlite3VdbeChangeP5" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	21;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 21;
 }

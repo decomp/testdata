@@ -1,26 +1,26 @@
-digraph "sqlite3_stmt_busy" {
+strict digraph "sqlite3_stmt_busy" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
-	13;
 	18;
+	13;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 18 [
 		color=red
-		label=false
-	];
-	8 -> 13 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	8 -> 18 [
 		color=red
-		label=false
+		cond=false
+	];
+	8 -> 13 [
+		color=darkgreen
+		cond=true
 	];
 	13 -> 18;
 }

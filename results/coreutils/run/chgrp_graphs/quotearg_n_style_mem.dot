@@ -1,16 +1,16 @@
-digraph "quotearg_n_style_mem" {
+strict digraph "quotearg_n_style_mem" {
 	// Node definitions.
-	4 [label=entry];
-	10;
-	11;
+	4 [entry=true];
+	8;
+	9;
 
 	// Edge definitions.
-	4 -> 10 [
+	4 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 11 [
+	4 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 }

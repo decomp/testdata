@@ -1,69 +1,54 @@
-digraph "sqlite3BtreeCloseCursor" {
+strict digraph "sqlite3BtreeCloseCursor" {
 	// Node definitions.
-	1 [label=entry];
-	12;
-	23;
-	29;
-	33;
-	39;
-	45;
-	49;
-	52;
-	53;
-	54;
-	61;
-	68;
-	71;
-	78;
+	1 [entry=true];
+	11;
+	62;
+	21;
+	27;
+	51;
+	31;
+	37;
+	43;
+	50;
+	47;
 
 	// Edge definitions.
-	1 -> 12 [
+	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 78 [
+	1 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
-	12 -> 23 [
+	11 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 29 [
+	11 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 53;
-	29 -> 33;
-	33 -> 39 [
+	21 -> 51;
+	27 -> 31;
+	51 -> 62;
+	31 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 45 [
+	31 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 52;
-	45 -> 49;
-	49 -> 33 [
+	37 -> 50;
+	43 -> 47;
+	50 -> 51;
+	47 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 52 [
+	47 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
-	52 -> 53;
-	53 -> 54;
-	54 -> 61 [
-		color=darkgreen
-		label=true
-	];
-	54 -> 71 [
-		color=red
-		label=false
-	];
-	61 -> 68;
-	68 -> 54;
-	71 -> 78;
 }

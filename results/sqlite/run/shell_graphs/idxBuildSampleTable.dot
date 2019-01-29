@@ -1,0 +1,30 @@
+strict digraph "idxBuildSampleTable" {
+	// Node definitions.
+	2 [entry=true];
+	14;
+	16;
+	30;
+	21;
+	22;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 16 [
+		color=red
+		cond=false
+	];
+	14 -> 30;
+	16 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 22 [
+		color=red
+		cond=false
+	];
+	21 -> 30;
+	22 -> 30;
+}

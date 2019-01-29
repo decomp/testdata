@@ -1,28 +1,26 @@
-digraph "sha256_process_block" {
+strict digraph "sha256_process_block" {
 	// Node definitions.
-	3 [label=entry];
-	39;
-	60;
-	3526;
-	3527;
+	3 [entry=true];
+	38;
+	3430;
+	59;
 
 	// Edge definitions.
-	3 -> 39 [
+	3 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 3527 [
+	3 -> 3430 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 60;
-	60 -> 60 [
+	38 -> 59;
+	59 -> 3430 [
+		color=red
+		cond=false
+	];
+	59 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 3526 [
-		color=red
-		label=false
-	];
-	3526 -> 3527;
 }

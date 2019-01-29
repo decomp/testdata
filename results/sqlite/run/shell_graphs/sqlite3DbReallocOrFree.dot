@@ -1,17 +1,17 @@
-digraph "sqlite3DbReallocOrFree" {
+strict digraph "sqlite3DbReallocOrFree" {
 	// Node definitions.
-	3 [label=entry];
-	14;
+	3 [entry=true];
 	17;
+	14;
 
 	// Edge definitions.
-	3 -> 14 [
-		color=red
-		label=false
-	];
 	3 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	3 -> 14 [
+		color=red
+		cond=false
 	];
 	14 -> 17;
 }

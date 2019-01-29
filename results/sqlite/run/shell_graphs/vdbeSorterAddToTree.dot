@@ -1,23 +1,23 @@
-digraph "vdbeSorterAddToTree" {
+strict digraph "vdbeSorterAddToTree" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	23;
 	27;
-	30;
 	33;
+	30;
 	34;
 	38;
 	41;
 	43;
+	85;
 	58;
+	70;
 	62;
 	63;
 	69;
-	70;
 	73;
 	81;
 	82;
-	85;
 	88;
 	98;
 	100;
@@ -26,70 +26,70 @@ digraph "vdbeSorterAddToTree" {
 	5 -> 23;
 	23 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 30;
-	30 -> 23;
 	33 -> 34;
+	30 -> 23;
 	34 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 41;
 	41 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
 	43 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 70 [
 		color=red
-		label=false
+		cond=false
+	];
+	85 -> 88 [
+		color=darkgreen
+		cond=true
+	];
+	85 -> 98 [
+		color=red
+		cond=false
 	];
 	58 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	58 -> 63 [
 		color=red
-		label=false
+		cond=false
+	];
+	70 -> 73 [
+		color=darkgreen
+		cond=true
+	];
+	70 -> 81 [
+		color=red
+		cond=false
 	];
 	62 -> 69;
 	63 -> 69;
 	69 -> 70;
-	70 -> 73 [
-		color=darkgreen
-		label=true
-	];
-	70 -> 81 [
-		color=red
-		label=false
-	];
 	73 -> 81;
 	81 -> 82;
 	82 -> 34;
-	85 -> 88 [
-		color=darkgreen
-		label=true
-	];
-	85 -> 98 [
-		color=red
-		label=false
-	];
 	88 -> 100;
 	98 -> 100;
 }

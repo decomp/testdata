@@ -1,26 +1,26 @@
-digraph "addWhereTerm" {
+strict digraph "addWhereTerm" {
 	// Node definitions.
-	8 [label=entry];
+	8 [entry=true];
 	40;
-	43;
 	54;
+	43;
 
 	// Edge definitions.
 	8 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 54 [
 		color=red
-		label=false
-	];
-	40 -> 43 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	40 -> 54 [
 		color=red
-		label=false
+		cond=false
+	];
+	40 -> 43 [
+		color=darkgreen
+		cond=true
 	];
 	43 -> 54;
 }

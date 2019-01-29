@@ -1,13 +1,13 @@
-digraph "seekAndWriteFd" {
+strict digraph "seekAndWriteFd" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	15;
 	21;
 	22;
+	40;
 	31;
 	34;
 	38;
-	40;
 	43;
 	47;
 
@@ -15,38 +15,38 @@ digraph "seekAndWriteFd" {
 	5 -> 15;
 	15 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 40;
 	22 -> 31;
+	40 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 47 [
+		color=red
+		cond=false
+	];
 	31 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	34 -> 38;
 	38 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	38 -> 40 [
 		color=red
-		label=false
-	];
-	40 -> 43 [
-		color=darkgreen
-		label=true
-	];
-	40 -> 47 [
-		color=red
-		label=false
+		cond=false
 	];
 	43 -> 47;
 }

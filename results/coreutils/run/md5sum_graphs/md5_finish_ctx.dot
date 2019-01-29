@@ -1,17 +1,17 @@
-digraph "md5_finish_ctx" {
+strict digraph "md5_finish_ctx" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
 	15;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 15;
 }

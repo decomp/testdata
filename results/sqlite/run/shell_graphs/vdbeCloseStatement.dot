@@ -1,24 +1,24 @@
-digraph "vdbeCloseStatement" {
+strict digraph "vdbeCloseStatement" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	18;
 	24;
+	59;
 	35;
+	55;
 	38;
 	42;
 	45;
 	49;
 	52;
 	54;
-	55;
 	56;
-	59;
 	68;
+	83;
 	71;
 	75;
 	78;
 	82;
-	83;
 	86;
 	97;
 
@@ -26,84 +26,84 @@ digraph "vdbeCloseStatement" {
 	2 -> 18;
 	18 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 55 [
 		color=red
-		label=false
+		cond=false
+	];
+	59 -> 68 [
+		color=darkgreen
+		cond=true
+	];
+	59 -> 83 [
+		color=red
+		cond=false
 	];
 	35 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
+	55 -> 56;
 	38 -> 42;
 	42 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
 	45 -> 49;
 	49 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	52 -> 54;
 	54 -> 55;
-	55 -> 56;
 	56 -> 18;
-	59 -> 68 [
-		color=darkgreen
-		label=true
-	];
-	59 -> 83 [
-		color=red
-		label=false
-	];
 	68 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 75 [
 		color=red
-		label=false
+		cond=false
+	];
+	83 -> 86 [
+		color=darkgreen
+		cond=true
+	];
+	83 -> 97 [
+		color=red
+		cond=false
 	];
 	71 -> 75;
 	75 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	75 -> 82 [
 		color=red
-		label=false
+		cond=false
 	];
 	78 -> 82;
 	82 -> 83;
-	83 -> 86 [
-		color=darkgreen
-		label=true
-	];
-	83 -> 97 [
-		color=red
-		label=false
-	];
 	86 -> 97;
 }

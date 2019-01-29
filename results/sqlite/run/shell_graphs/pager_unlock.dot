@@ -1,118 +1,118 @@
-digraph "pager_unlock" {
+strict digraph "pager_unlock" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	15;
 	21;
+	75;
+	74;
 	26;
 	33;
 	38;
 	39;
-	44;
 	51;
+	44;
 	55;
 	60;
-	66;
 	69;
-	74;
-	75;
+	66;
 	80;
+	118;
 	86;
 	92;
-	103;
-	108;
-	113;
-	117;
+	104;
+	109;
+	114;
 
 	// Edge definitions.
 	1 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 75;
-	21 -> 26 [
-		color=red
-		label=false
-	];
 	21 -> 74 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	21 -> 26 [
+		color=red
+		cond=false
+	];
+	75 -> 80 [
+		color=darkgreen
+		cond=true
+	];
+	75 -> 118 [
+		color=red
+		cond=false
+	];
+	74 -> 75;
 	26 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	33 -> 39;
 	38 -> 39;
-	39 -> 44 [
-		color=red
-		label=false
-	];
 	39 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	39 -> 44 [
+		color=red
+		cond=false
+	];
+	51 -> 55;
 	44 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	44 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
-	51 -> 55;
 	55 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 69 [
 		color=red
-		label=false
-	];
-	60 -> 66 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	60 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
-	66 -> 69;
-	69 -> 74;
-	74 -> 75;
-	75 -> 80 [
+	60 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	75 -> 117 [
-		color=red
-		label=false
-	];
+	69 -> 74;
+	66 -> 69;
 	80 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	80 -> 92 [
 		color=red
-		label=false
+		cond=false
 	];
-	86 -> 103;
-	92 -> 103;
-	103 -> 108 [
+	86 -> 104;
+	92 -> 104;
+	104 -> 109 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	103 -> 113 [
+	104 -> 114 [
 		color=red
-		label=false
+		cond=false
 	];
-	108 -> 113;
-	113 -> 117;
+	109 -> 114;
+	114 -> 118;
 }

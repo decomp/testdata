@@ -1,17 +1,17 @@
-digraph "src_to_dest_compare" {
+strict digraph "src_to_dest_compare" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
 	16;
 
 	// Edge definitions.
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 16;
 }

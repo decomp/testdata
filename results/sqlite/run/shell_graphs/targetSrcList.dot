@@ -1,37 +1,37 @@
-digraph "targetSrcList" {
+strict digraph "targetSrcList" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	16;
-	40;
-	43;
-	64;
 	65;
+	43;
+	40;
+	64;
 
 	// Edge definitions.
 	2 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 65 [
 		color=red
-		label=false
-	];
-	16 -> 40 [
-		color=red
-		label=false
+		cond=false
 	];
 	16 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	16 -> 40 [
+		color=red
+		cond=false
+	];
+	43 -> 64;
 	40 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 64 [
 		color=red
-		label=false
+		cond=false
 	];
-	43 -> 64;
 	64 -> 65;
 }

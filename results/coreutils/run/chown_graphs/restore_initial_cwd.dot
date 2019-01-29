@@ -1,72 +1,68 @@
-digraph "restore_initial_cwd" {
+strict digraph "restore_initial_cwd" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
+	24;
+	18;
 	9;
 	15;
 	17;
-	18;
-	23;
+	35;
 	28;
-	29;
-	32;
-	34;
-	36;
-	37;
+	31;
+	33;
 
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 23 [
+	1 -> 24 [
 		color=red
-		label=false
-	];
-	6 -> 9 [
-		color=red
-		label=false
+		cond=false
 	];
 	6 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	6 -> 9 [
+		color=red
+		cond=false
+	];
+	24 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 28 [
+		color=red
+		cond=false
+	];
+	18 -> 24;
 	9 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 17;
-	17 -> 23;
-	18 -> 23;
-	23 -> 28 [
-		color=red
-		label=false
-	];
-	23 -> 37 [
+	17 -> 24;
+	28 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 29;
-	29 -> 32 [
-		color=darkgreen
-		label=true
-	];
-	29 -> 34 [
+	28 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 34;
-	34 -> 29 [
-		color=red
-		label=false
-	];
-	34 -> 36 [
+	31 -> 33;
+	33 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 37;
+	33 -> 28 [
+		color=red
+		cond=false
+	];
 }

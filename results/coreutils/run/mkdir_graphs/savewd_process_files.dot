@@ -1,110 +1,120 @@
-digraph "savewd_process_files" {
+strict digraph "savewd_process_files" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	9;
 	13;
 	18;
 	21;
+	68;
 	25;
-	33;
 	39;
-	46;
+	33;
 	50;
-	52;
+	46;
+	54;
 	56;
 	58;
 	62;
-	66;
 	67;
-	68;
+	66;
 	72;
-	74;
 	85;
-	86;
+	75;
 
 	// Edge definitions.
 	4 -> 9;
 	9 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 25;
-	25 -> 33 [
+	68 -> 72 [
+		color=darkgreen
+		cond=true
+	];
+	68 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	25 -> 33 [
+		color=red
+		cond=false
+	];
+	39 -> 50 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 46 [
+		color=red
+		cond=false
 	];
 	33 -> 39;
-	39 -> 46 [
+	50 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 52 [
+	50 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
-	46 -> 50 [
-		color=darkgreen
-		label=true
+	46 -> 50;
+	54 -> 25;
+	56 -> 68 [
+		cond="case (x=4)"
+		label="case (x=4)"
 	];
-	46 -> 56 [
-		color=red
-		label=false
+	56 -> 58 [
+		cond="case (x=2)"
+		label="case (x=2)"
 	];
-	50 -> 25;
-	52 -> 46;
-	56 -> 58 [label="case (x=2)"];
-	56 -> 62 [label="case (x=3)"];
-	56 -> 67 [label="default case"];
-	56 -> 68 [label="case (x=4)"];
+	56 -> 62 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	56 -> 67 [
+		cond="default case"
+		label="default case"
+	];
 	58 -> 68;
-	62 -> 66 [
-		color=red
-		label=false
-	];
 	62 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	68 -> 72 [
-		color=darkgreen
-		label=true
-	];
-	68 -> 86 [
+	62 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
-	72 -> 74;
-	74 -> 74 [
-		color=red
-		label=false
-	];
-	74 -> 85 [
+	72 -> 75;
+	75 -> 85 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	85 -> 86;
+	75 -> 75 [
+		color=red
+		cond=false
+	];
 }

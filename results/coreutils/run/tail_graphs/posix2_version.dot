@@ -1,26 +1,44 @@
-digraph "posix2_version" {
+strict digraph "posix2_version" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
+	16;
 	4;
 	7;
-	14;
+	13;
+	19;
 
 	// Edge definitions.
+	0 -> 16 [
+		color=darkgreen
+		cond=true
+	];
 	0 -> 4 [
 		color=red
-		label=false
+		cond=false
 	];
-	0 -> 14 [
+	16 -> 19;
+	4 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
-	4 -> 14 [
+	7 -> 16 [
+		color=red
+		cond=false
+	];
+	7 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 14;
+	13 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 19 [
+		color=red
+		cond=false
+	];
 }

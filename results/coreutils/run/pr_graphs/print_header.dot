@@ -1,60 +1,56 @@
-digraph "print_header" {
+strict digraph "print_header" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
+	22;
 	5;
 	7;
-	8;
-	17;
-	19;
-	21;
-	23;
-	24;
+	18;
+	16;
+	20;
+	26;
 	28;
-	30;
 
 	// Edge definitions.
+	0 -> 22 [
+		color=darkgreen
+		cond=true
+	];
 	0 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
-	0 -> 24 [
+	22 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	22 -> 28 [
+		color=red
+		cond=false
+	];
+	5 -> 22 [
+		color=red
+		cond=false
 	];
 	5 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 24 [
-		color=red
-		label=false
-	];
-	7 -> 8;
-	8 -> 17 [
-		color=red
-		label=false
-	];
-	8 -> 21 [
+	7 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 19;
-	19 -> 8 [
+	7 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 23 [
+	18 -> 20;
+	16 -> 20;
+	20 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	21 -> 19;
-	23 -> 24;
-	24 -> 28 [
-		color=darkgreen
-		label=true
-	];
-	24 -> 30 [
+	20 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 }

@@ -1,37 +1,37 @@
-digraph "vdbeSorterSetupMerge" {
+strict digraph "vdbeSorterSetupMerge" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	24;
 	31;
-	39;
 	42;
+	39;
 	47;
+	158;
 	52;
+	150;
 	66;
+	77;
 	75;
 	76;
-	77;
 	80;
+	143;
 	88;
+	142;
 	92;
 	100;
+	116;
 	110;
 	112;
 	113;
-	116;
 	117;
 	120;
 	127;
 	129;
-	138;
 	141;
-	142;
-	143;
+	138;
 	146;
 	149;
-	150;
 	157;
-	158;
 	161;
 	163;
 
@@ -39,125 +39,125 @@ digraph "vdbeSorterSetupMerge" {
 	1 -> 24;
 	24 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	31 -> 39;
-	39 -> 24;
 	42 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 158 [
 		color=red
-		label=false
+		cond=false
 	];
+	39 -> 24;
 	47 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 150 [
 		color=red
-		label=false
+		cond=false
+	];
+	158 -> 161 [
+		color=darkgreen
+		cond=true
+	];
+	158 -> 163 [
+		color=red
+		cond=false
 	];
 	52 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	52 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
+	150 -> 157;
 	66 -> 75 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	66 -> 76 [
 		color=red
-		label=false
+		cond=false
 	];
-	75 -> 76;
-	76 -> 77;
 	77 -> 80 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	77 -> 143 [
 		color=red
-		label=false
+		cond=false
 	];
+	75 -> 76;
+	76 -> 77;
 	80 -> 88 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	80 -> 142 [
 		color=red
-		label=false
+		cond=false
+	];
+	143 -> 146 [
+		color=darkgreen
+		cond=true
+	];
+	143 -> 149 [
+		color=red
+		cond=false
 	];
 	88 -> 92;
+	142 -> 143;
 	92 -> 100 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	92 -> 116 [
 		color=red
-		label=false
+		cond=false
 	];
 	100 -> 110 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	100 -> 112 [
 		color=red
-		label=false
+		cond=false
 	];
+	116 -> 117;
 	110 -> 112;
 	112 -> 113;
 	113 -> 92;
-	116 -> 117;
 	117 -> 120 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	117 -> 127 [
 		color=red
-		label=false
+		cond=false
 	];
 	120 -> 127;
 	127 -> 129 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	127 -> 141 [
 		color=red
-		label=false
+		cond=false
 	];
 	129 -> 138;
-	138 -> 117;
 	141 -> 142;
-	142 -> 143;
-	143 -> 146 [
-		color=darkgreen
-		label=true
-	];
-	143 -> 149 [
-		color=red
-		label=false
-	];
+	138 -> 117;
 	146 -> 149;
 	149 -> 157;
-	150 -> 157;
 	157 -> 158;
-	158 -> 161 [
-		color=darkgreen
-		label=true
-	];
-	158 -> 163 [
-		color=red
-		label=false
-	];
 	161 -> 163;
 }

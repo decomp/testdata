@@ -1,29 +1,29 @@
-digraph "sqlite3BtreeSecureDelete" {
+strict digraph "sqlite3BtreeSecureDelete" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	10;
+	44;
 	14;
 	33;
-	44;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 44;
 	10 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 33;
 	33 -> 44;

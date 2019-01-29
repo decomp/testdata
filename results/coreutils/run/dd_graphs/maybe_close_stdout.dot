@@ -1,27 +1,27 @@
-digraph "maybe_close_stdout" {
+strict digraph "maybe_close_stdout" {
 	// Node definitions.
-	0 [label=entry];
-	2;
+	0 [entry=true];
 	3;
-	7;
+	2;
 	8;
+	7;
 
 	// Edge definitions.
-	0 -> 2 [
-		color=red
-		label=false
-	];
 	0 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 8;
-	3 -> 7 [
+	0 -> 2 [
 		color=red
-		label=false
+		cond=false
 	];
 	3 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	3 -> 7 [
+		color=red
+		cond=false
+	];
+	2 -> 8;
 }

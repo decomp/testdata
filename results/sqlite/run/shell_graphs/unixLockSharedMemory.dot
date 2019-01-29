@@ -1,0 +1,87 @@
+strict digraph "unixLockSharedMemory" {
+	// Node definitions.
+	2 [entry=true];
+	18;
+	19;
+	58;
+	24;
+	50;
+	29;
+	32;
+	49;
+	37;
+	48;
+	43;
+	57;
+	55;
+	56;
+	61;
+	64;
+
+	// Edge definitions.
+	2 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 19 [
+		color=red
+		cond=false
+	];
+	18 -> 58;
+	19 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 50 [
+		color=red
+		cond=false
+	];
+	58 -> 61 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 64 [
+		color=red
+		cond=false
+	];
+	24 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 32 [
+		color=red
+		cond=false
+	];
+	50 -> 55 [
+		color=darkgreen
+		cond=true
+	];
+	50 -> 56 [
+		color=red
+		cond=false
+	];
+	29 -> 49;
+	32 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	32 -> 48 [
+		color=red
+		cond=false
+	];
+	49 -> 57;
+	37 -> 48 [
+		color=red
+		cond=false
+	];
+	37 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 49;
+	43 -> 48;
+	57 -> 58;
+	55 -> 56;
+	56 -> 57;
+	61 -> 64;
+}

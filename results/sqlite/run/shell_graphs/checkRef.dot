@@ -1,41 +1,39 @@
-digraph "checkRef" {
+strict digraph "checkRef" {
 	// Node definitions.
-	2 [label=entry];
-	8;
-	9;
-	15;
-	18;
-	23;
-	26;
-	29;
+	2 [entry=true];
+	14;
+	11;
+	17;
+	28;
+	22;
+	25;
 
 	// Edge definitions.
-	2 -> 8 [
+	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 9 [
+	2 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	8 -> 29;
-	9 -> 15 [
+	14 -> 28;
+	11 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	9 -> 18 [
+	11 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 29;
-	18 -> 23 [
+	17 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 26 [
+	17 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 29;
-	26 -> 29;
+	22 -> 28;
+	25 -> 28;
 }

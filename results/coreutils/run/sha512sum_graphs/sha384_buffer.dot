@@ -1,4 +1,17 @@
-digraph "sha384_buffer" {
+strict digraph "sha384_buffer" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	28;
+	30;
+
+	// Edge definitions.
+	3 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 30 [
+		color=red
+		cond=false
+	];
+	28 -> 30;
 }

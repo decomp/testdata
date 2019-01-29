@@ -1,19 +1,39 @@
-digraph "sqlite3GetVdbe" {
+strict digraph "sqlite3GetVdbe" {
 	// Node definitions.
-	1 [label=entry];
-	9;
-	11;
-	14;
+	1 [entry=true];
+	8;
+	12;
+	32;
+	17;
+	29;
+	26;
 
 	// Edge definitions.
-	1 -> 9 [
+	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 11 [
+	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 14;
-	11 -> 14;
+	8 -> 32;
+	12 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 29 [
+		color=red
+		cond=false
+	];
+	17 -> 29 [
+		color=red
+		cond=false
+	];
+	17 -> 26 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 32;
+	26 -> 29;
 }

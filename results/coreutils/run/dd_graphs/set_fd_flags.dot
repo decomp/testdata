@@ -1,85 +1,92 @@
-digraph "set_fd_flags" {
+strict digraph "set_fd_flags" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	49;
 	7;
+	44;
 	11;
 	13;
+	30;
 	16;
 	20;
-	25;
 	27;
-	30;
-	37;
+	25;
 	41;
-	45;
-	50;
+	37;
 
 	// Edge definitions.
+	3 -> 49 [
+		color=darkgreen
+		cond=true
+	];
 	3 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
-	3 -> 50 [
+	7 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	7 -> 45 [
+	11 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 13 [
 		color=red
-		label=false
-	];
-	11 -> 50 [
-		color=darkgreen
-		label=true
-	];
-	13 -> 16 [
-		color=red
-		label=false
+		cond=false
 	];
 	13 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 20 [
-		color=darkgreen
-		label=true
-	];
-	16 -> 27 [
+	13 -> 16 [
 		color=red
-		label=false
-	];
-	20 -> 25 [
-		color=red
-		label=false
-	];
-	20 -> 27 [
-		color=darkgreen
-		label=true
-	];
-	25 -> 27;
-	27 -> 30;
-	30 -> 37 [
-		color=red
-		label=false
+		cond=false
 	];
 	30 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 41;
-	41 -> 45 [
-		color=darkgreen
-		label=true
-	];
-	41 -> 50 [
+	30 -> 37 [
 		color=red
-		label=false
+		cond=false
+	];
+	16 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 27 [
+		color=red
+		cond=false
+	];
+	20 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	20 -> 25 [
+		color=red
+		cond=false
+	];
+	27 -> 30;
+	25 -> 27;
+	41 -> 49 [
+		color=red
+		cond=false
+	];
+	41 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 41 [
+		color=red
+		cond=false
 	];
 }

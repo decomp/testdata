@@ -1,78 +1,100 @@
-digraph "findInodeInfo" {
+strict digraph "findInodeInfo" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	20;
 	24;
+	103;
 	33;
 	36;
 	43;
 	45;
 	49;
 	52;
+	95;
 	57;
 	58;
-	74;
+	67;
+	79;
+	75;
 	78;
-	80;
-	85;
-	88;
+	89;
+	93;
+	100;
 
 	// Edge definitions.
 	2 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 88;
+	20 -> 103;
 	24 -> 33;
 	33 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	33 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 43;
 	43 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
 	45 -> 33;
 	49 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 80 [
+	49 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
 	52 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	52 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	57 -> 88;
-	58 -> 74 [
+	95 -> 100;
+	57 -> 103;
+	58 -> 67 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	58 -> 78 [
+	58 -> 79 [
 		color=red
-		label=false
+		cond=false
 	];
-	74 -> 78;
-	78 -> 85;
-	80 -> 85;
-	85 -> 88;
+	67 -> 75 [
+		color=darkgreen
+		cond=true
+	];
+	67 -> 78 [
+		color=red
+		cond=false
+	];
+	79 -> 89 [
+		color=darkgreen
+		cond=true
+	];
+	79 -> 93 [
+		color=red
+		cond=false
+	];
+	75 -> 103;
+	78 -> 79;
+	89 -> 93;
+	93 -> 100;
+	100 -> 103;
 }

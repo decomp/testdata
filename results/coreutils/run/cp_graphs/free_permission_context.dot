@@ -1,28 +1,28 @@
-digraph "free_permission_context" {
+strict digraph "free_permission_context" {
 	// Node definitions.
-	1 [label=entry];
-	5;
+	1 [entry=true];
 	8;
-	12;
+	5;
 	15;
+	12;
 
 	// Edge definitions.
-	1 -> 5 [
-		color=red
-		label=false
-	];
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 8;
-	8 -> 12 [
+	1 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	8 -> 12 [
+		color=red
+		cond=false
+	];
+	5 -> 8;
 	12 -> 15;
 }

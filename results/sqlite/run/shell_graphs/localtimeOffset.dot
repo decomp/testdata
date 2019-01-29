@@ -1,8 +1,8 @@
-digraph "localtimeOffset" {
+strict digraph "localtimeOffset" {
 	// Node definitions.
-	3 [label=entry];
-	20;
+	3 [entry=true];
 	24;
+	20;
 	31;
 	39;
 	48;
@@ -10,31 +10,31 @@ digraph "localtimeOffset" {
 	85;
 
 	// Edge definitions.
-	3 -> 20 [
-		color=red
-		label=false
-	];
 	3 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	3 -> 20 [
+		color=red
+		cond=false
+	];
+	24 -> 39;
 	20 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 39;
 	31 -> 39;
 	39 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	39 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
 	48 -> 85;
 	51 -> 85;

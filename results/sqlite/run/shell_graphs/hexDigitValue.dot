@@ -1,68 +1,68 @@
-digraph "hexDigitValue" {
+strict digraph "hexDigitValue" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
-	11;
 	15;
-	19;
-	23;
-	28;
-	32;
-	36;
-	41;
+	11;
 	42;
+	19;
+	28;
+	23;
+	32;
+	41;
+	36;
 
 	// Edge definitions.
 	1 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 15 [
 		color=red
-		label=false
-	];
-	7 -> 11 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	7 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 42;
+	7 -> 11 [
+		color=darkgreen
+		cond=true
+	];
 	15 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 28 [
 		color=red
-		label=false
+		cond=false
+	];
+	11 -> 42;
+	19 -> 28 [
+		color=red
+		cond=false
 	];
 	19 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 28 [
-		color=red
-		label=false
-	];
-	23 -> 42;
 	28 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 41 [
 		color=red
-		label=false
+		cond=false
+	];
+	23 -> 42;
+	32 -> 41 [
+		color=red
+		cond=false
 	];
 	32 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	32 -> 41 [
-		color=red
-		label=false
-	];
-	36 -> 42;
 	41 -> 42;
+	36 -> 42;
 }

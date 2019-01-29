@@ -1,0 +1,47 @@
+strict digraph "renameColumnTokenNext" {
+	// Node definitions.
+	1 [entry=true];
+	12;
+	15;
+	32;
+	25;
+	27;
+	28;
+	35;
+	40;
+	45;
+	41;
+
+	// Edge definitions.
+	1 -> 12;
+	12 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 32 [
+		color=red
+		cond=false
+	];
+	15 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 27 [
+		color=red
+		cond=false
+	];
+	32 -> 35;
+	25 -> 27;
+	27 -> 28;
+	28 -> 12;
+	35 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	35 -> 45 [
+		color=red
+		cond=false
+	];
+	40 -> 41;
+	41 -> 35;
+}

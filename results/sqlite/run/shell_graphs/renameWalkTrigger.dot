@@ -1,0 +1,32 @@
+strict digraph "renameWalkTrigger" {
+	// Node definitions.
+	2 [entry=true];
+	15;
+	18;
+	67;
+	38;
+	62;
+	63;
+
+	// Edge definitions.
+	2 -> 15;
+	15 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 67 [
+		color=red
+		cond=false
+	];
+	18 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 62 [
+		color=red
+		cond=false
+	];
+	38 -> 62;
+	62 -> 63;
+	63 -> 15;
+}

@@ -1,118 +1,118 @@
-digraph "sqlite3PagerSavepoint" {
+strict digraph "sqlite3PagerSavepoint" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
+	110;
 	22;
-	29;
-	35;
-	44;
-	47;
-	53;
-	56;
-	63;
-	69;
-	74;
-	77;
+	30;
+	36;
+	48;
+	45;
+	54;
+	79;
+	57;
 	78;
-	83;
-	90;
-	93;
-	94;
-	102;
-	107;
-	108;
+	64;
+	70;
+	75;
 	109;
+	91;
+	84;
+	108;
+	94;
+	95;
+	103;
 
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 109 [
+	3 -> 110 [
 		color=red
-		label=false
+		cond=false
+	];
+	16 -> 110 [
+		color=red
+		cond=false
 	];
 	16 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 109 [
-		color=red
-		label=false
-	];
-	22 -> 29;
-	29 -> 35 [
+	22 -> 30;
+	30 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	29 -> 47 [
+	30 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	35 -> 44;
-	44 -> 29;
-	47 -> 53 [
+	36 -> 45;
+	48 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 78 [
+	48 -> 79 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 56 [
+	45 -> 30;
+	54 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	53 -> 77 [
+	54 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
-	56 -> 63 [
+	79 -> 91 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	56 -> 77 [
+	79 -> 84 [
 		color=red
-		label=false
+		cond=false
 	];
-	63 -> 69 [
+	57 -> 78 [
+		color=red
+		cond=false
+	];
+	57 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	63 -> 74 [
-		color=red
-		label=false
-	];
-	69 -> 74;
-	74 -> 77;
-	77 -> 108;
-	78 -> 83 [
-		color=red
-		label=false
-	];
-	78 -> 90 [
+	78 -> 109;
+	64 -> 70 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	83 -> 90 [
-		color=darkgreen
-		label=true
-	];
-	83 -> 107 [
+	64 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	90 -> 93 [
+	70 -> 75;
+	75 -> 78;
+	109 -> 110;
+	91 -> 94 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	90 -> 94 [
+	91 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
-	93 -> 102;
-	94 -> 102;
-	102 -> 107;
-	107 -> 108;
+	84 -> 91 [
+		color=darkgreen
+		cond=true
+	];
+	84 -> 108 [
+		color=red
+		cond=false
+	];
 	108 -> 109;
+	94 -> 103;
+	95 -> 103;
+	103 -> 108;
 }

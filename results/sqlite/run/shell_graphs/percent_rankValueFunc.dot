@@ -1,0 +1,30 @@
+strict digraph "percent_rankValueFunc" {
+	// Node definitions.
+	1 [entry=true];
+	10;
+	34;
+	15;
+	29;
+	31;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 34 [
+		color=red
+		cond=false
+	];
+	10 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	10 -> 29 [
+		color=red
+		cond=false
+	];
+	15 -> 31;
+	29 -> 31;
+	31 -> 34;
+}

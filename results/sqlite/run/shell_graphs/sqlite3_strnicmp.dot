@@ -1,78 +1,78 @@
-digraph "sqlite3_strnicmp" {
+strict digraph "sqlite3_strnicmp" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	12;
-	16;
-	19;
+	17;
+	75;
 	20;
 	21;
-	24;
-	28;
-	33;
-	47;
-	49;
-	54;
-	57;
+	22;
+	25;
+	29;
+	48;
+	34;
+	50;
+	55;
 	58;
-	72;
-	74;
+	59;
+	73;
 
 	// Edge definitions.
 	3 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 16 [
+	3 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	12 -> 74;
-	16 -> 19 [
+	12 -> 75;
+	17 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 20 [
+	17 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 74;
-	20 -> 21;
-	21 -> 24;
-	24 -> 28 [
+	20 -> 75;
+	21 -> 22;
+	22 -> 25;
+	25 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 47 [
+	25 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	28 -> 33 [
+	29 -> 48 [
+		color=red
+		cond=false
+	];
+	29 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 47 [
-		color=red
-		label=false
-	];
-	33 -> 47;
-	47 -> 49 [
+	48 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 54 [
+	48 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
-	49 -> 24;
-	54 -> 57 [
+	34 -> 48;
+	50 -> 25;
+	55 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	54 -> 58 [
+	55 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
-	57 -> 72;
-	58 -> 72;
-	72 -> 74;
+	58 -> 73;
+	59 -> 73;
+	73 -> 75;
 }

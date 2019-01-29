@@ -1,0 +1,17 @@
+strict digraph "sqlite3RenameTokenMap" {
+	// Node definitions.
+	3 [entry=true];
+	15;
+	32;
+
+	// Edge definitions.
+	3 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 32 [
+		color=red
+		cond=false
+	];
+	15 -> 32;
+}

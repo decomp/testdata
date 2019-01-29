@@ -1,61 +1,61 @@
-digraph "dired_dump_obstack" {
+strict digraph "dired_dump_obstack" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	60;
 	12;
 	14;
 	18;
 	35;
 	36;
+	53;
 	42;
+	51;
 	49;
-	56;
-	58;
-	60;
 
 	// Edge definitions.
-	2 -> 12 [
-		color=red
-		label=false
-	];
 	2 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 12 [
+		color=red
+		cond=false
 	];
 	12 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 18;
 	18 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 36;
-	36 -> 42;
-	42 -> 42 [
+	36 -> 53;
+	53 -> 53 [
 		color=red
-		label=false
+		cond=false
+	];
+	53 -> 42 [
+		color=darkgreen
+		cond=true
+	];
+	42 -> 51 [
+		color=darkgreen
+		cond=true
 	];
 	42 -> 49 [
-		color=darkgreen
-		label=true
-	];
-	49 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
-	49 -> 58 [
-		color=darkgreen
-		label=true
-	];
-	56 -> 60;
-	58 -> 60;
+	51 -> 60;
+	49 -> 60;
 }

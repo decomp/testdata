@@ -1,50 +1,50 @@
-digraph "vdbeLeave" {
+strict digraph "vdbeLeave" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	16;
 	20;
+	50;
 	23;
+	46;
 	31;
 	39;
-	46;
 	47;
-	50;
 
 	// Edge definitions.
 	1 -> 16;
 	16 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 46 [
 		color=red
-		label=false
-	];
-	23 -> 31 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	23 -> 46 [
 		color=red
-		label=false
+		cond=false
+	];
+	23 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	46 -> 47;
+	31 -> 46 [
+		color=red
+		cond=false
 	];
 	31 -> 39 [
 		color=darkgreen
-		label=true
-	];
-	31 -> 46 [
-		color=red
-		label=false
+		cond=true
 	];
 	39 -> 46;
-	46 -> 47;
 	47 -> 16;
 }

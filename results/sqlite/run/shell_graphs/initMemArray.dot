@@ -1,6 +1,6 @@
-digraph "initMemArray" {
+strict digraph "initMemArray" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	9;
 	13;
 	24;
@@ -9,11 +9,11 @@ digraph "initMemArray" {
 	4 -> 9;
 	9 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 9;
 }

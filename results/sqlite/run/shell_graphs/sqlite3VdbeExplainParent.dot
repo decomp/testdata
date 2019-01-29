@@ -1,0 +1,19 @@
+strict digraph "sqlite3VdbeExplainParent" {
+	// Node definitions.
+	1 [entry=true];
+	9;
+	10;
+	21;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 10 [
+		color=red
+		cond=false
+	];
+	9 -> 21;
+	10 -> 21;
+}

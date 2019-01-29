@@ -1,0 +1,28 @@
+strict digraph "dense_rankValueFunc" {
+	// Node definitions.
+	1 [entry=true];
+	9;
+	26;
+	14;
+	21;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 26 [
+		color=red
+		cond=false
+	];
+	9 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	9 -> 21 [
+		color=red
+		cond=false
+	];
+	14 -> 21;
+	21 -> 26;
+}

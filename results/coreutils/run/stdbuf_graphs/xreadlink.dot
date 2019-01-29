@@ -1,25 +1,25 @@
-digraph "xreadlink" {
+strict digraph "xreadlink" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	4;
-	8;
 	9;
+	8;
 
 	// Edge definitions.
 	1 -> 4 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 9 [
 		color=red
-		label=false
-	];
-	4 -> 8 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	4 -> 9 [
 		color=red
-		label=false
+		cond=false
+	];
+	4 -> 8 [
+		color=darkgreen
+		cond=true
 	];
 }

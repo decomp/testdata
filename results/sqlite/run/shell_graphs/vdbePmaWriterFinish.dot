@@ -1,35 +1,35 @@
-digraph "vdbePmaWriterFinish" {
+strict digraph "vdbePmaWriterFinish" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
+	53;
 	15;
 	23;
-	53;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 53 [
 		color=red
-		label=false
-	];
-	10 -> 15 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	10 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 23 [
+	10 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 53 [
 		color=red
-		label=false
+		cond=false
+	];
+	15 -> 23 [
+		color=darkgreen
+		cond=true
 	];
 	23 -> 53;
 }

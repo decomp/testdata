@@ -1,17 +1,17 @@
-digraph "memjrnlTruncate" {
+strict digraph "memjrnlTruncate" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	26;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 26;
 }

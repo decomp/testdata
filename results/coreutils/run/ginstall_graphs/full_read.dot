@@ -1,34 +1,39 @@
-digraph "full_read" {
+strict digraph "full_read" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	17;
 	5;
-	6;
-	11;
-	13;
-	18;
-	20;
+	10;
+	12;
 
 	// Edge definitions.
+	3 -> 17 [
+		color=darkgreen
+		cond=true
+	];
 	3 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
-	3 -> 20 [
+	5 -> 17 [
+		cond="case (x=-1)"
+		label="case (x=-1)"
+	];
+	5 -> 10 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	5 -> 12 [
+		cond="default case"
+		label="default case"
+	];
+	10 -> 17;
+	12 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 6;
-	6 -> 11 [label="case (x=0)"];
-	6 -> 13 [label="default case"];
-	6 -> 18 [label="case (x=-1)"];
-	11 -> 20;
-	13 -> 6 [
+	12 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 18 [
-		color=darkgreen
-		label=true
-	];
-	18 -> 20;
 }

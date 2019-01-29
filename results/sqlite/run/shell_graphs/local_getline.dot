@@ -1,109 +1,109 @@
-digraph "local_getline" {
+strict digraph "local_getline" {
 	// Node definitions.
-	2 [label=entry];
-	11;
-	16;
-	26;
+	2 [entry=true];
+	12;
+	17;
+	29;
 	27;
 	28;
-	39;
-	42;
-	44;
-	49;
+	40;
 	50;
-	57;
-	60;
-	63;
-	72;
-	77;
-	86;
-	89;
-	94;
+	43;
+	45;
+	98;
+	96;
+	51;
+	58;
+	61;
+	64;
 	95;
-	97;
+	73;
+	78;
+	90;
+	87;
 
 	// Edge definitions.
-	2 -> 11;
-	11 -> 16 [
+	2 -> 12;
+	12 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 28 [
+	12 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 26 [
+	17 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 27 [
+	17 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 97;
+	29 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 50 [
+		color=red
+		cond=false
+	];
 	27 -> 28;
-	28 -> 39 [
+	28 -> 29;
+	40 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 49 [
+	40 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 42 [
+	50 -> 51;
+	43 -> 98;
+	45 -> 96;
+	96 -> 98;
+	51 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 44 [
+	51 -> 61 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 97;
-	44 -> 95;
-	49 -> 50;
-	50 -> 57 [
+	58 -> 51;
+	61 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	50 -> 60 [
+	61 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
-	57 -> 50;
-	60 -> 63 [
+	64 -> 95 [
+		color=red
+		cond=false
+	];
+	64 -> 73 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 94 [
-		color=red
-		label=false
-	];
-	63 -> 72 [
+	95 -> 12;
+	73 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	63 -> 94 [
+	73 -> 90 [
 		color=red
-		label=false
+		cond=false
 	];
-	72 -> 77 [
+	78 -> 90 [
+		color=red
+		cond=false
+	];
+	78 -> 87 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	72 -> 89 [
-		color=red
-		label=false
-	];
-	77 -> 86 [
-		color=darkgreen
-		label=true
-	];
-	77 -> 89 [
-		color=red
-		label=false
-	];
-	86 -> 89;
-	89 -> 95;
-	94 -> 11;
-	95 -> 97;
+	90 -> 96;
+	87 -> 90;
 }

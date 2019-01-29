@@ -1,17 +1,17 @@
-digraph "sighandler" {
+strict digraph "sighandler" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	4;
 	5;
 
 	// Edge definitions.
 	1 -> 4 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
 	4 -> 5;
 }

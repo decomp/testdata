@@ -1,11 +1,17 @@
-digraph "acl_errno_valid" {
+strict digraph "acl_errno_valid" {
 	// Node definitions.
-	1 [label=entry];
-	2;
+	1 [entry=true];
 	3;
+	2;
 
 	// Edge definitions.
-	1 -> 2 [label="default case"];
-	1 -> 3 [label="case (x=95)"];
+	1 -> 3 [
+		cond="case (x=95)"
+		label="case (x=95)"
+	];
+	1 -> 2 [
+		cond="default case"
+		label="default case"
+	];
 	2 -> 3;
 }

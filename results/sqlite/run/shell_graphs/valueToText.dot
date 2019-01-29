@@ -1,102 +1,102 @@
-digraph "valueToText" {
+strict digraph "valueToText" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
+	68;
 	19;
 	23;
 	24;
 	25;
+	86;
 	40;
 	46;
 	51;
+	65;
 	59;
 	63;
 	64;
-	65;
-	68;
 	72;
 	81;
 	85;
-	86;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
+	68 -> 72;
 	19 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 86;
 	25 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
 	40 -> 46;
 	46 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	46 -> 65 [
 		color=red
-		label=false
-	];
-	51 -> 59 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	51 -> 65 [
 		color=red
-		label=false
+		cond=false
 	];
+	51 -> 59 [
+		color=darkgreen
+		cond=true
+	];
+	65 -> 72;
 	59 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	59 -> 64 [
 		color=red
-		label=false
+		cond=false
 	];
 	63 -> 86;
 	64 -> 65;
-	65 -> 72;
-	68 -> 72;
 	72 -> 81 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	72 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
 	81 -> 86;
 	85 -> 86;

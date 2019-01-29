@@ -1,43 +1,43 @@
-digraph "sqlite3BtreeCursorRestore" {
+strict digraph "sqlite3BtreeCursorRestore" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
 	15;
 	16;
 	20;
 	23;
+	34;
 	29;
 	31;
 	33;
-	34;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 16;
 	15 -> 16;
 	16 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 34;
 	23 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 33;
 	31 -> 33;

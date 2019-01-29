@@ -1,17 +1,17 @@
-digraph "sqlite3_expanded_sql" {
+strict digraph "sqlite3_expanded_sql" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	26;
 
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 26;
 }

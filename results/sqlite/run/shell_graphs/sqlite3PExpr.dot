@@ -1,50 +1,50 @@
-digraph "sqlite3PExpr" {
+strict digraph "sqlite3PExpr" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	12;
-	17;
 	24;
+	17;
+	49;
 	32;
 	42;
-	49;
 	52;
 	58;
 
 	// Edge definitions.
 	4 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 24 [
 		color=red
-		label=false
-	];
-	12 -> 17 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	12 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 49;
+	12 -> 17 [
+		color=darkgreen
+		cond=true
+	];
 	24 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 42;
-	42 -> 49;
+	17 -> 49;
 	49 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
+	32 -> 42;
+	42 -> 49;
 	52 -> 58;
 }

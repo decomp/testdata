@@ -1,6 +1,6 @@
-digraph "sqlite3_sql" {
+strict digraph "sqlite3_sql" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	12;
 	13;
@@ -8,11 +8,11 @@ digraph "sqlite3_sql" {
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 13;
 	12 -> 13;

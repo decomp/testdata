@@ -1,91 +1,103 @@
-digraph "mbuiter_multi_next" {
+strict digraph "mbuiter_multi_next" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
-	11;
+	64;
 	13;
-	24;
+	11;
+	36;
 	30;
+	24;
+	63;
 	34;
 	35;
-	36;
 	43;
 	45;
 	49;
-	53;
-	54;
-	57;
 	58;
+	54;
+	53;
+	57;
 	62;
-	63;
-	64;
 
 	// Edge definitions.
 	1 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 64 [
 		color=red
-		label=false
-	];
-	5 -> 11 [
-		color=red
-		label=false
+		cond=false
 	];
 	5 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 36;
-	13 -> 24 [
+	5 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 63;
+	13 -> 24 [
+		color=red
+		cond=false
+	];
+	11 -> 36;
+	36 -> 43 [
+		cond="case (x=-1)"
+		label="case (x=-1)"
+	];
+	36 -> 45 [
+		cond="case (x=-2)"
+		label="case (x=-2)"
+	];
+	36 -> 49 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	36 -> 58 [
+		cond="default case"
+		label="default case"
+	];
 	30 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
+	24 -> 63;
+	63 -> 64;
 	35 -> 36;
-	36 -> 43 [label="case (x=-1)"];
-	36 -> 45 [label="case (x=-2)"];
-	36 -> 49 [label="case (x=0)"];
-	36 -> 58 [label="default case"];
 	43 -> 63;
 	45 -> 63;
-	49 -> 53 [
-		color=red
-		label=false
-	];
 	49 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	54 -> 57 [
+	49 -> 53 [
 		color=red
-		label=false
-	];
-	54 -> 58 [
-		color=darkgreen
-		label=true
-	];
-	58 -> 62 [
-		color=red
-		label=false
+		cond=false
 	];
 	58 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	58 -> 62 [
+		color=red
+		cond=false
+	];
+	54 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 57 [
+		color=red
+		cond=false
 	];
 	62 -> 63;
-	63 -> 64;
 }

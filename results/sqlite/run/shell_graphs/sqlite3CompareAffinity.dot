@@ -1,68 +1,68 @@
-digraph "sqlite3CompareAffinity" {
+strict digraph "sqlite3CompareAffinity" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
-	16;
-	20;
-	24;
-	25;
 	26;
+	16;
+	24;
+	20;
+	25;
+	40;
+	33;
 	29;
 	32;
-	33;
-	40;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 26 [
 		color=red
-		label=false
-	];
-	12 -> 16 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	12 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 20 [
-		color=red
-		label=false
-	];
-	16 -> 24 [
+	12 -> 16 [
 		color=darkgreen
-		label=true
-	];
-	20 -> 24 [
-		color=darkgreen
-		label=true
-	];
-	20 -> 25 [
-		color=red
-		label=false
-	];
-	24 -> 40;
-	25 -> 40;
-	26 -> 29 [
-		color=red
-		label=false
+		cond=true
 	];
 	26 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	26 -> 29 [
+		color=red
+		cond=false
+	];
+	16 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 20 [
+		color=red
+		cond=false
+	];
+	24 -> 40;
+	20 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	20 -> 25 [
+		color=red
+		cond=false
+	];
+	25 -> 40;
+	33 -> 40;
+	29 -> 33 [
+		color=darkgreen
+		cond=true
 	];
 	29 -> 32 [
 		color=red
-		label=false
-	];
-	29 -> 33 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	32 -> 40;
-	33 -> 40;
 }

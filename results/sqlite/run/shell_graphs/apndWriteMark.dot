@@ -1,0 +1,21 @@
+strict digraph "apndWriteMark" {
+	// Node definitions.
+	2 [entry=true];
+	8;
+	11;
+	29;
+	26;
+
+	// Edge definitions.
+	2 -> 8;
+	8 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 29 [
+		color=red
+		cond=false
+	];
+	11 -> 26;
+	26 -> 8;
+}

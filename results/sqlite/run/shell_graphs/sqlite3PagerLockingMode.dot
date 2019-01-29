@@ -1,35 +1,35 @@
-digraph "sqlite3PagerLockingMode" {
+strict digraph "sqlite3PagerLockingMode" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
+	23;
 	12;
 	18;
-	23;
 
 	// Edge definitions.
 	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 23 [
 		color=red
-		label=false
-	];
-	7 -> 12 [
-		color=red
-		label=false
+		cond=false
 	];
 	7 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 18 [
+	7 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	12 -> 18 [
+		color=red
+		cond=false
 	];
 	18 -> 23;
 }

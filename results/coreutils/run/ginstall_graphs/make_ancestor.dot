@@ -1,37 +1,37 @@
-digraph "make_ancestor" {
+strict digraph "make_ancestor" {
 	// Node definitions.
-	3 [label=entry];
-	7;
+	3 [entry=true];
 	9;
+	7;
 	12;
-	16;
 	20;
+	16;
 
 	// Edge definitions.
-	3 -> 7 [
-		color=red
-		label=false
-	];
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 9;
+	3 -> 7 [
+		color=red
+		cond=false
+	];
 	9 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 20 [
 		color=red
-		label=false
+		cond=false
+	];
+	7 -> 9;
+	12 -> 20 [
+		color=darkgreen
+		cond=true
 	];
 	12 -> 16 [
 		color=red
-		label=false
-	];
-	12 -> 20 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	16 -> 20;
 }

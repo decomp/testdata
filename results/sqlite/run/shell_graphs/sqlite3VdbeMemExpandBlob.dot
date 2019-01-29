@@ -1,6 +1,6 @@
-digraph "sqlite3VdbeMemExpandBlob" {
+strict digraph "sqlite3VdbeMemExpandBlob" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	15;
 	16;
 	21;
@@ -10,20 +10,20 @@ digraph "sqlite3VdbeMemExpandBlob" {
 	// Edge definitions.
 	1 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 16;
 	16 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 50;
 	22 -> 50;

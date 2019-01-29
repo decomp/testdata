@@ -1,15 +1,17 @@
-digraph "balance_quick" {
+strict digraph "balance_quick" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	24;
 	26;
+	198;
 	31;
+	196;
 	49;
 	51;
 	71;
+	88;
 	84;
 	87;
-	88;
 	131;
 	138;
 	142;
@@ -22,101 +24,99 @@ digraph "balance_quick" {
 	164;
 	167;
 	183;
-	196;
-	198;
 
 	// Edge definitions.
 	3 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 198;
 	26 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 196 [
 		color=red
-		label=false
+		cond=false
 	];
 	31 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
+	196 -> 198;
 	49 -> 198;
 	51 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
 	71 -> 84 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	71 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
+	88 -> 131;
 	84 -> 87;
 	87 -> 88;
-	88 -> 131;
 	131 -> 138 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	131 -> 142 [
 		color=red
-		label=false
+		cond=false
 	];
 	138 -> 142;
 	142 -> 144 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	142 -> 145 [
 		color=red
-		label=false
+		cond=false
 	];
 	144 -> 131;
 	145 -> 148;
 	148 -> 157 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	148 -> 161 [
 		color=red
-		label=false
+		cond=false
 	];
 	157 -> 161;
 	161 -> 163 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	161 -> 164 [
 		color=red
-		label=false
+		cond=false
 	];
 	163 -> 148;
 	164 -> 167 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	164 -> 183 [
 		color=red
-		label=false
+		cond=false
 	];
 	167 -> 183;
 	183 -> 196;
-	196 -> 198;
 }

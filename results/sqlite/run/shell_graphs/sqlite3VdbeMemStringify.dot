@@ -1,42 +1,42 @@
-digraph "sqlite3VdbeMemStringify" {
+strict digraph "sqlite3VdbeMemStringify" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	17;
 	20;
+	71;
 	24;
 	33;
 	42;
 	59;
 	66;
-	71;
 
 	// Edge definitions.
 	3 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 71;
 	20 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 42;
 	33 -> 42;
 	42 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
 	59 -> 66;
 	66 -> 71;

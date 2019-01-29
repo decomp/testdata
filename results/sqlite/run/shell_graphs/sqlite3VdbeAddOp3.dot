@@ -1,6 +1,6 @@
-digraph "sqlite3VdbeAddOp3" {
+strict digraph "sqlite3VdbeAddOp3" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	24;
 	31;
 	63;
@@ -8,11 +8,11 @@ digraph "sqlite3VdbeAddOp3" {
 	// Edge definitions.
 	5 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 63;
 	31 -> 63;

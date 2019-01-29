@@ -1,6 +1,6 @@
-digraph "sqlite3VdbeMemSetPointer" {
+strict digraph "sqlite3VdbeMemSetPointer" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	11;
 	13;
 	14;
@@ -11,21 +11,21 @@ digraph "sqlite3VdbeMemSetPointer" {
 	// Edge definitions.
 	4 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 14;
 	13 -> 14;
 	14 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 31;
 	30 -> 31;

@@ -1,6 +1,6 @@
-digraph "resolve_backslashes" {
+strict digraph "resolve_backslashes" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	11;
 	16;
@@ -8,50 +8,50 @@ digraph "resolve_backslashes" {
 	21;
 	22;
 	30;
+	200;
 	34;
+	189;
 	43;
 	53;
 	54;
+	188;
 	58;
 	59;
+	187;
 	63;
 	64;
+	186;
 	68;
 	69;
+	185;
 	73;
 	74;
+	184;
 	78;
 	79;
+	183;
 	83;
 	84;
+	182;
 	88;
 	89;
+	181;
 	93;
 	94;
+	180;
 	98;
 	99;
+	179;
 	103;
+	178;
 	107;
 	120;
+	177;
 	129;
 	152;
-	161;
 	176;
-	177;
-	178;
-	179;
-	180;
-	181;
-	182;
-	183;
-	184;
-	185;
-	186;
-	187;
-	188;
-	189;
+	161;
 	195;
-	200;
 	204;
 	209;
 
@@ -59,208 +59,208 @@ digraph "resolve_backslashes" {
 	1 -> 6;
 	6 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 16;
 	16 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 6;
 	21 -> 22;
 	22 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 200 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 189 [
 		color=red
-		label=false
+		cond=false
 	];
-	34 -> 43 [
+	200 -> 204 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	200 -> 209 [
+		color=red
+		cond=false
 	];
 	34 -> 189 [
 		color=red
-		label=false
+		cond=false
 	];
+	34 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	189 -> 195;
 	43 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	53 -> 188;
 	54 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	54 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
+	188 -> 189;
 	58 -> 187;
 	59 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	59 -> 64 [
 		color=red
-		label=false
+		cond=false
 	];
+	187 -> 188;
 	63 -> 186;
 	64 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	64 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
+	186 -> 187;
 	68 -> 185;
 	69 -> 73 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	69 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
+	185 -> 186;
 	73 -> 184;
 	74 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	74 -> 79 [
 		color=red
-		label=false
+		cond=false
 	];
+	184 -> 185;
 	78 -> 183;
 	79 -> 83 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	79 -> 84 [
 		color=red
-		label=false
+		cond=false
 	];
+	183 -> 184;
 	83 -> 182;
 	84 -> 88 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	84 -> 89 [
 		color=red
-		label=false
+		cond=false
 	];
+	182 -> 183;
 	88 -> 181;
 	89 -> 93 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	89 -> 94 [
 		color=red
-		label=false
+		cond=false
 	];
+	181 -> 182;
 	93 -> 180;
 	94 -> 98 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	94 -> 99 [
 		color=red
-		label=false
+		cond=false
 	];
+	180 -> 181;
 	98 -> 179;
 	99 -> 103 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	99 -> 178 [
 		color=red
-		label=false
+		cond=false
+	];
+	179 -> 180;
+	103 -> 178 [
+		color=red
+		cond=false
 	];
 	103 -> 107 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	103 -> 178 [
-		color=red
-		label=false
-	];
+	178 -> 179;
 	107 -> 120 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	107 -> 177 [
 		color=red
-		label=false
-	];
-	120 -> 129 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	120 -> 177 [
 		color=red
-		label=false
+		cond=false
 	];
+	120 -> 129 [
+		color=darkgreen
+		cond=true
+	];
+	177 -> 178;
 	129 -> 152 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	129 -> 176 [
 		color=red
-		label=false
-	];
-	152 -> 161 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	152 -> 176 [
 		color=red
-		label=false
+		cond=false
 	];
-	161 -> 176;
-	176 -> 177;
-	177 -> 178;
-	178 -> 179;
-	179 -> 180;
-	180 -> 181;
-	181 -> 182;
-	182 -> 183;
-	183 -> 184;
-	184 -> 185;
-	185 -> 186;
-	186 -> 187;
-	187 -> 188;
-	188 -> 189;
-	189 -> 195;
-	195 -> 22;
-	200 -> 204 [
+	152 -> 161 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	200 -> 209 [
-		color=red
-		label=false
-	];
+	176 -> 177;
+	161 -> 176;
+	195 -> 22;
 	204 -> 209;
 }

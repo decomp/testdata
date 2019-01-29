@@ -1,31 +1,37 @@
-digraph "vstrtoimax" {
+strict digraph "vstrtoimax" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
+	19;
 	9;
 	17;
-	19;
 	23;
 
 	// Edge definitions.
-	1 -> 5 [label="case (x=39)"];
-	1 -> 19 [label="default case"];
-	5 -> 9 [
-		color=red
-		label=false
+	1 -> 5 [
+		cond="case (x=39)"
+		label="case (x=39)"
+	];
+	1 -> 19 [
+		cond="default case"
+		label="default case"
 	];
 	5 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	5 -> 9 [
+		color=red
+		cond=false
+	];
+	19 -> 23;
 	9 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 23;
-	19 -> 23;
 }

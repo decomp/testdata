@@ -1,17 +1,17 @@
-digraph "mb_width_aux" {
+strict digraph "mb_width_aux" {
 	// Node definitions.
-	1 [label=entry];
-	4;
+	1 [entry=true];
 	8;
+	4;
 
 	// Edge definitions.
-	1 -> 4 [
-		color=red
-		label=false
-	];
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	1 -> 4 [
+		color=red
+		cond=false
 	];
 	4 -> 8;
 }

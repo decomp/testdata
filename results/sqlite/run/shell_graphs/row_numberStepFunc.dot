@@ -1,0 +1,17 @@
+strict digraph "row_numberStepFunc" {
+	// Node definitions.
+	3 [entry=true];
+	13;
+	17;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 17 [
+		color=red
+		cond=false
+	];
+	13 -> 17;
+}

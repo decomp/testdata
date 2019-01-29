@@ -1,84 +1,84 @@
-digraph "disconnectAllVtab" {
+strict digraph "disconnectAllVtab" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
 	15;
-	33;
-	38;
-	41;
-	50;
+	56;
+	26;
+	52;
+	31;
+	34;
+	51;
+	43;
+	46;
+	47;
 	53;
-	54;
-	58;
-	59;
-	60;
-	63;
-	68;
-	71;
-	80;
-	85;
-	86;
-	90;
+	61;
+	64;
+	83;
+	73;
+	78;
+	79;
 
 	// Edge definitions.
 	1 -> 9;
 	9 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	9 -> 63 [
+	9 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 33 [
+	15 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 59 [
+	15 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 38;
-	38 -> 41 [
+	56 -> 61;
+	26 -> 31;
+	52 -> 53;
+	31 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	38 -> 58 [
+	31 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 50 [
+	34 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 53 [
+	34 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	50 -> 53;
-	53 -> 54;
-	54 -> 38;
-	58 -> 59;
-	59 -> 60;
-	60 -> 9;
-	63 -> 68;
-	68 -> 71 [
+	51 -> 52;
+	43 -> 46;
+	46 -> 47;
+	47 -> 31;
+	53 -> 9;
+	61 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	68 -> 90 [
+	61 -> 83 [
 		color=red
-		label=false
+		cond=false
 	];
-	71 -> 80 [
+	64 -> 73 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	71 -> 85 [
+	64 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
-	80 -> 85;
-	85 -> 86;
-	86 -> 68;
+	73 -> 78;
+	78 -> 79;
+	79 -> 61;
 }

@@ -1,0 +1,61 @@
+strict digraph "apndWrite" {
+	// Node definitions.
+	4 [entry=true];
+	24;
+	25;
+	100;
+	42;
+	98;
+	55;
+	65;
+	97;
+	82;
+	96;
+
+	// Edge definitions.
+	4 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 25 [
+		color=red
+		cond=false
+	];
+	24 -> 100;
+	25 -> 42 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 98 [
+		color=red
+		cond=false
+	];
+	42 -> 98 [
+		color=red
+		cond=false
+	];
+	42 -> 55 [
+		color=darkgreen
+		cond=true
+	];
+	98 -> 100;
+	55 -> 65 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 97 [
+		color=red
+		cond=false
+	];
+	65 -> 82 [
+		color=darkgreen
+		cond=true
+	];
+	65 -> 96 [
+		color=red
+		cond=false
+	];
+	97 -> 98;
+	82 -> 96;
+	96 -> 97;
+}

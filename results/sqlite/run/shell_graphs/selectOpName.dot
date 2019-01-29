@@ -1,6 +1,6 @@
-digraph "selectOpName" {
+strict digraph "selectOpName" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
 	6;
 	7;
@@ -8,10 +8,22 @@ digraph "selectOpName" {
 	9;
 
 	// Edge definitions.
-	1 -> 5 [label="case (x=116)"];
-	1 -> 6 [label="case (x=118)"];
-	1 -> 7 [label="case (x=117)"];
-	1 -> 8 [label="default case"];
+	1 -> 5 [
+		cond="case (x=124)"
+		label="case (x=124)"
+	];
+	1 -> 6 [
+		cond="case (x=126)"
+		label="case (x=126)"
+	];
+	1 -> 7 [
+		cond="case (x=125)"
+		label="case (x=125)"
+	];
+	1 -> 8 [
+		cond="default case"
+		label="default case"
+	];
 	5 -> 9;
 	6 -> 9;
 	7 -> 9;

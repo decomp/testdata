@@ -1,184 +1,184 @@
-digraph "sqlite3MemCompare" {
+strict digraph "sqlite3MemCompare" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	25;
 	31;
+	160;
 	35;
+	133;
 	41;
+	64;
 	51;
 	52;
 	62;
 	63;
-	64;
 	70;
+	93;
 	80;
 	81;
 	91;
 	92;
-	93;
 	97;
+	112;
 	101;
 	111;
-	112;
 	116;
+	132;
 	120;
 	131;
-	132;
-	133;
 	137;
+	156;
 	141;
 	142;
 	146;
 	147;
 	150;
 	155;
-	156;
-	160;
 
 	// Edge definitions.
 	3 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 160;
 	31 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 133 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 64 [
 		color=red
-		label=false
+		cond=false
+	];
+	133 -> 137 [
+		color=darkgreen
+		cond=true
+	];
+	133 -> 156 [
+		color=red
+		cond=false
 	];
 	41 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 52 [
 		color=red
-		label=false
+		cond=false
+	];
+	64 -> 70 [
+		color=darkgreen
+		cond=true
+	];
+	64 -> 93 [
+		color=red
+		cond=false
 	];
 	51 -> 160;
 	52 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	52 -> 63 [
 		color=red
-		label=false
+		cond=false
 	];
 	62 -> 160;
 	63 -> 160;
-	64 -> 70 [
-		color=darkgreen
-		label=true
-	];
-	64 -> 93 [
-		color=red
-		label=false
-	];
 	70 -> 80 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	70 -> 81 [
 		color=red
-		label=false
+		cond=false
+	];
+	93 -> 97 [
+		color=darkgreen
+		cond=true
+	];
+	93 -> 112 [
+		color=red
+		cond=false
 	];
 	80 -> 160;
 	81 -> 91 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	81 -> 92 [
 		color=red
-		label=false
+		cond=false
 	];
 	91 -> 160;
 	92 -> 160;
-	93 -> 97 [
-		color=darkgreen
-		label=true
-	];
-	93 -> 112 [
-		color=red
-		label=false
-	];
 	97 -> 101 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	97 -> 111 [
 		color=red
-		label=false
+		cond=false
 	];
-	101 -> 160;
-	111 -> 160;
 	112 -> 116 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	112 -> 132 [
 		color=red
-		label=false
+		cond=false
 	];
+	101 -> 160;
+	111 -> 160;
 	116 -> 120 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	116 -> 131 [
 		color=red
-		label=false
+		cond=false
 	];
+	132 -> 160;
 	120 -> 160;
 	131 -> 160;
-	132 -> 160;
-	133 -> 137 [
-		color=darkgreen
-		label=true
-	];
-	133 -> 156 [
-		color=red
-		label=false
-	];
 	137 -> 141 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	137 -> 142 [
 		color=red
-		label=false
+		cond=false
 	];
+	156 -> 160;
 	141 -> 160;
 	142 -> 146 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	142 -> 147 [
 		color=red
-		label=false
+		cond=false
 	];
 	146 -> 160;
 	147 -> 150 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	147 -> 155 [
 		color=red
-		label=false
+		cond=false
 	];
 	150 -> 160;
 	155 -> 156;
-	156 -> 160;
 }

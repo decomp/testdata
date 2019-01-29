@@ -1,17 +1,17 @@
-digraph "sqlite3SelectDelete" {
+strict digraph "sqlite3SelectDelete" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
 	10;
 
 	// Edge definitions.
 	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 10;
 }

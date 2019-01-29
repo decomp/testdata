@@ -1,6 +1,6 @@
-digraph "sqlite3VdbeMemSetNull" {
+strict digraph "sqlite3VdbeMemSetNull" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
 	11;
 	14;
@@ -8,11 +8,11 @@ digraph "sqlite3VdbeMemSetNull" {
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 14;
 	11 -> 14;

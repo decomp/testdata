@@ -1,19 +1,19 @@
-digraph "one_input_line" {
+strict digraph "one_input_line" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	11;
 	15;
-	26;
+	27;
 
 	// Edge definitions.
 	3 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 26;
-	15 -> 26;
+	11 -> 27;
+	15 -> 27;
 }

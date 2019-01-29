@@ -1,17 +1,17 @@
-digraph "sqlite3MallocZero" {
+strict digraph "sqlite3MallocZero" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	11;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 11;
 }

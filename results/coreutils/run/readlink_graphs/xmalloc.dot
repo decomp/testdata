@@ -1,16 +1,16 @@
-digraph "xmalloc" {
+strict digraph "xmalloc" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	7;
 
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 }

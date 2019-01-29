@@ -1,111 +1,85 @@
-digraph "sqlite3VtabOverloadFunction" {
+strict digraph "sqlite3VtabOverloadFunction" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
+	19;
 	21;
-	23;
+	121;
+	27;
 	29;
-	31;
+	35;
 	37;
-	39;
 	44;
-	46;
+	42;
+	57;
 	59;
-	61;
-	69;
 	71;
-	75;
-	82;
-	85;
-	95;
-	98;
-	100;
-	113;
-	115;
-	150;
+	73;
+	86;
+	88;
 
 	// Edge definitions.
+	4 -> 19 [
+		color=darkgreen
+		cond=true
+	];
 	4 -> 21 [
-		color=darkgreen
-		label=true
-	];
-	4 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 150;
-	23 -> 29 [
+	19 -> 121;
+	21 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 31 [
+	21 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 150;
-	31 -> 37 [
+	27 -> 121;
+	29 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 39 [
+	29 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 150;
-	39 -> 44 [
-		color=red
-		label=false
-	];
-	39 -> 46 [
+	35 -> 121;
+	37 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	44 -> 150;
-	46 -> 59 [
-		color=darkgreen
-		label=true
-	];
-	46 -> 61 [
+	37 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
-	59 -> 150;
-	61 -> 69 [
+	44 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	61 -> 95 [
+	44 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
-	69 -> 71;
-	71 -> 75 [
+	42 -> 121;
+	57 -> 121;
+	59 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	71 -> 85 [
+	59 -> 73 [
 		color=red
-		label=false
+		cond=false
 	];
-	75 -> 82;
-	82 -> 71;
-	85 -> 95;
-	95 -> 98 [
+	71 -> 121;
+	73 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	95 -> 100 [
+	73 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
-	98 -> 150;
-	100 -> 113 [
-		color=darkgreen
-		label=true
-	];
-	100 -> 115 [
-		color=red
-		label=false
-	];
-	113 -> 150;
-	115 -> 150;
+	86 -> 121;
+	88 -> 121;
 }

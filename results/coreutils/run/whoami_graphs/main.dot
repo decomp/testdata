@@ -1,56 +1,56 @@
-digraph "main" {
+strict digraph "main" {
 	// Node definitions.
-	2 [label=entry];
-	11;
+	2 [entry=true];
 	12;
-	15;
+	11;
 	22;
+	15;
 	26;
 	29;
-	32;
 	34;
+	32;
 	38;
 
 	// Edge definitions.
-	2 -> 11 [
-		color=red
-		label=false
-	];
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 15 [
+	2 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	12 -> 15 [
+		color=red
+		cond=false
 	];
 	22 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	26 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	32 -> 34;
 }

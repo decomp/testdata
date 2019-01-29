@@ -1,28 +1,41 @@
-digraph "sqlite3ReadSchema" {
+strict digraph "sqlite3ReadSchema" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	40;
 	13;
-	18;
-	21;
-	29;
+	20;
+	28;
+	39;
+	33;
+	38;
 
 	// Edge definitions.
+	1 -> 40 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 18 [
+	13 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 18;
-	18 -> 21 [
-		color=darkgreen
-		label=true
-	];
-	18 -> 29 [
+	13 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 29;
+	20 -> 39;
+	28 -> 33 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 38 [
+		color=red
+		cond=false
+	];
+	39 -> 40;
+	33 -> 38;
+	38 -> 39;
 }

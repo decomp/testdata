@@ -1,56 +1,67 @@
-digraph "selectAddSubqueryTypeInfo" {
+strict digraph "selectAddSubqueryTypeInfo" {
 	// Node definitions.
-	2 [label=entry];
-	24;
-	30;
-	39;
-	45;
+	2 [entry=true];
+	16;
+	17;
+	73;
+	31;
+	37;
 	46;
-	51;
-	55;
-	59;
-	60;
-	61;
+	67;
+	52;
 	66;
+	53;
+	58;
+	62;
+	68;
 
 	// Edge definitions.
-	2 -> 24;
-	24 -> 30 [
+	2 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 66 [
+	2 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	30 -> 39 [
+	16 -> 73;
+	17 -> 31;
+	31 -> 73 [
+		color=red
+		cond=false
+	];
+	31 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 60 [
-		color=red
-		label=false
-	];
-	39 -> 45 [
+	37 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 59 [
+	37 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
-	45 -> 46;
-	46 -> 51 [
+	46 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	46 -> 55 [
+	46 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
-	51 -> 46;
-	55 -> 59;
-	59 -> 60;
-	60 -> 61;
-	61 -> 24;
+	67 -> 68;
+	52 -> 53;
+	66 -> 67;
+	53 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 62 [
+		color=red
+		cond=false
+	];
+	58 -> 53;
+	62 -> 66;
+	68 -> 31;
 }

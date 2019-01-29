@@ -1,124 +1,124 @@
-digraph "btreeDropTable" {
+strict digraph "btreeDropTable" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	21;
 	23;
+	115;
 	29;
 	32;
 	38;
+	110;
 	43;
+	51;
 	48;
 	50;
-	51;
+	83;
 	58;
 	60;
 	68;
 	70;
 	78;
 	80;
-	83;
 	86;
-	95;
 	101;
+	95;
 	103;
 	106;
-	110;
 	113;
-	115;
 
 	// Edge definitions.
 	3 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 115;
 	23 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 115;
 	32 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 110 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	38 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
+	110 -> 113;
 	43 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 115;
-	50 -> 83;
 	51 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 60 [
 		color=red
-		label=false
+		cond=false
 	];
+	48 -> 115;
+	50 -> 83;
+	83 -> 86;
 	58 -> 115;
 	60 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	60 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
 	68 -> 115;
 	70 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	70 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
 	78 -> 115;
 	80 -> 83;
-	83 -> 86;
-	86 -> 95 [
-		color=red
-		label=false
-	];
 	86 -> 101 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	95 -> 101;
+	86 -> 95 [
+		color=red
+		cond=false
+	];
 	101 -> 103 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	101 -> 106 [
 		color=red
-		label=false
+		cond=false
 	];
+	95 -> 101;
 	103 -> 86;
 	106 -> 113;
-	110 -> 113;
 	113 -> 115;
 }

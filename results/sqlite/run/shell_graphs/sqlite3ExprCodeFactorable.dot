@@ -1,28 +1,28 @@
-digraph "sqlite3ExprCodeFactorable" {
+strict digraph "sqlite3ExprCodeFactorable" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	12;
-	16;
 	21;
+	16;
 	25;
 
 	// Edge definitions.
 	3 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 21 [
 		color=red
-		label=false
-	];
-	12 -> 16 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	12 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 25;
+	12 -> 16 [
+		color=darkgreen
+		cond=true
+	];
 	21 -> 25;
+	16 -> 25;
 }

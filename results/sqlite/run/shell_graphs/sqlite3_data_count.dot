@@ -1,28 +1,28 @@
-digraph "sqlite3_data_count" {
+strict digraph "sqlite3_data_count" {
 	// Node definitions.
-	1 [label=entry];
-	9;
+	1 [entry=true];
 	14;
+	9;
 	15;
 	20;
 
 	// Edge definitions.
-	1 -> 9 [
-		color=red
-		label=false
-	];
 	1 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	1 -> 9 [
+		color=red
+		cond=false
+	];
+	14 -> 20;
 	9 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 20;
 	15 -> 20;
 }

@@ -1,121 +1,117 @@
-digraph "fread_file" {
+strict digraph "fread_file" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
+	27;
 	13;
 	16;
 	20;
-	23;
 	25;
-	27;
-	31;
-	32;
-	41;
-	46;
-	49;
-	54;
-	57;
-	59;
-	67;
-	70;
+	23;
 	72;
-	75;
+	31;
+	56;
+	40;
+	45;
+	69;
+	48;
+	53;
+	58;
+	66;
 
 	// Edge definitions.
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 27 [
 		color=red
-		label=false
-	];
-	8 -> 13 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	8 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 16 [
+	8 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	27 -> 72 [
+		color=darkgreen
+		cond=true
+	];
+	27 -> 31 [
+		color=red
+		cond=false
 	];
 	13 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 20 [
+	13 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 23 [
-		color=red
-		label=false
+	16 -> 20 [
+		color=darkgreen
+		cond=true
 	];
 	20 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	20 -> 23 [
+		color=red
+		cond=false
+	];
+	25 -> 72;
 	23 -> 27;
-	25 -> 75;
-	27 -> 31 [
-		color=red
-		label=false
-	];
-	27 -> 75 [
+	31 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 32;
-	32 -> 41 [
+	31 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 57 [
+	56 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 46 [
-		color=darkgreen
-		label=true
-	];
-	41 -> 72 [
+	56 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	46 -> 49 [
+	40 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	46 -> 54 [
+	40 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
-	49 -> 54;
-	54 -> 75;
-	57 -> 59 [
-		color=red
-		label=false
-	];
-	57 -> 70 [
+	45 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	59 -> 32 [
+	45 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
-	59 -> 67 [
+	69 -> 72;
+	48 -> 53;
+	53 -> 72;
+	58 -> 31 [
+		color=red
+		cond=false
+	];
+	58 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 72;
-	70 -> 72;
-	72 -> 75;
+	66 -> 69;
 }

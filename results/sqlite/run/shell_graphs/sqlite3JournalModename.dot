@@ -1,6 +1,6 @@
-digraph "sqlite3JournalModename" {
+strict digraph "sqlite3JournalModename" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	7;
 	12;
@@ -8,11 +8,11 @@ digraph "sqlite3JournalModename" {
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 12;
 	7 -> 12;

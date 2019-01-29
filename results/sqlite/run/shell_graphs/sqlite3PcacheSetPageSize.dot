@@ -1,41 +1,41 @@
-digraph "sqlite3PcacheSetPageSize" {
+strict digraph "sqlite3PcacheSetPageSize" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	11;
+	49;
 	27;
 	28;
+	50;
 	37;
 	42;
-	49;
-	50;
 
 	// Edge definitions.
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
+	49 -> 50;
 	27 -> 50;
 	28 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 42;
 	42 -> 49;
-	49 -> 50;
 }

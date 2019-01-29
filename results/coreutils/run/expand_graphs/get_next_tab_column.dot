@@ -1,63 +1,70 @@
-digraph "get_next_tab_column" {
+strict digraph "get_next_tab_column" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	6;
-	10;
 	12;
-	16;
-	21;
+	10;
 	24;
-	25;
-	28;
-	32;
-	33;
+	16;
+	44;
+	21;
+	31;
+	27;
+	43;
 	34;
 
 	// Edge definitions.
 	3 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	6 -> 25 [
+	6 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
+	12 -> 44;
 	10 -> 16;
-	12 -> 34;
+	24 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 27 [
+		color=red
+		cond=false
+	];
+	16 -> 44 [
+		color=darkgreen
+		cond=true
+	];
 	16 -> 21 [
 		color=red
-		label=false
-	];
-	16 -> 33 [
-		color=darkgreen
-		label=true
-	];
-	21 -> 16 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	21 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 25;
-	25 -> 28 [
-		color=red
-		label=false
-	];
-	25 -> 32 [
+	21 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 34;
-	32 -> 34;
-	33 -> 34;
+	31 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	31 -> 34 [
+		color=red
+		cond=false
+	];
+	27 -> 44;
+	43 -> 44;
+	34 -> 44;
 }

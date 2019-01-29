@@ -1,45 +1,45 @@
-digraph "walCleanupHash" {
+strict digraph "walCleanupHash" {
 	// Node definitions.
-	1 [label=entry];
-	14;
-	15;
-	29;
-	32;
+	1 [entry=true];
+	12;
+	13;
+	75;
+	28;
+	31;
+	51;
 	41;
-	46;
 	47;
-	50;
-	71;
+	48;
 
 	// Edge definitions.
-	1 -> 14 [
+	1 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 15 [
+	1 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 71;
-	15 -> 29;
-	29 -> 32 [
+	12 -> 75;
+	13 -> 28;
+	28 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	29 -> 50 [
+	28 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 41 [
+	31 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	32 -> 46 [
+	31 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 46;
-	46 -> 47;
-	47 -> 29;
-	50 -> 71;
+	51 -> 75;
+	41 -> 47;
+	47 -> 48;
+	48 -> 28;
 }

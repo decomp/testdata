@@ -1,19 +1,19 @@
-digraph "vdbePmaWriterInit" {
+strict digraph "vdbePmaWriterInit" {
 	// Node definitions.
-	4 [label=entry];
-	20;
+	4 [entry=true];
 	23;
+	20;
 	47;
 
 	// Edge definitions.
-	4 -> 20 [
-		color=red
-		label=false
-	];
 	4 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 47;
+	4 -> 20 [
+		color=red
+		cond=false
+	];
 	23 -> 47;
+	20 -> 47;
 }

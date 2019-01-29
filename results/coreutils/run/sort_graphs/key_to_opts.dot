@@ -1,0 +1,136 @@
+strict digraph "key_to_opts" {
+	// Node definitions.
+	2 [entry=true];
+	6;
+	10;
+	12;
+	17;
+	19;
+	26;
+	24;
+	33;
+	31;
+	40;
+	38;
+	44;
+	46;
+	53;
+	51;
+	60;
+	58;
+	67;
+	65;
+	74;
+	72;
+	81;
+	79;
+
+	// Edge definitions.
+	2 -> 6 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 10 [
+		color=red
+		cond=false
+	];
+	6 -> 10 [
+		color=red
+		cond=false
+	];
+	6 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	10 -> 12;
+	12 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 19 [
+		color=red
+		cond=false
+	];
+	17 -> 19;
+	19 -> 26 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 24 [
+		color=red
+		cond=false
+	];
+	26 -> 33 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 31 [
+		color=red
+		cond=false
+	];
+	24 -> 26;
+	33 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	33 -> 38 [
+		color=red
+		cond=false
+	];
+	31 -> 33;
+	40 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 46 [
+		color=red
+		cond=false
+	];
+	38 -> 40;
+	44 -> 46;
+	46 -> 53 [
+		color=darkgreen
+		cond=true
+	];
+	46 -> 51 [
+		color=red
+		cond=false
+	];
+	53 -> 60 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 58 [
+		color=red
+		cond=false
+	];
+	51 -> 53;
+	60 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	60 -> 65 [
+		color=red
+		cond=false
+	];
+	58 -> 60;
+	67 -> 74 [
+		color=darkgreen
+		cond=true
+	];
+	67 -> 72 [
+		color=red
+		cond=false
+	];
+	65 -> 67;
+	74 -> 81 [
+		color=darkgreen
+		cond=true
+	];
+	74 -> 79 [
+		color=red
+		cond=false
+	];
+	72 -> 74;
+	79 -> 81;
+}

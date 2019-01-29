@@ -1,0 +1,45 @@
+strict digraph "sqlite3ExpandSubquery" {
+	// Node definitions.
+	2 [entry=true];
+	20;
+	21;
+	76;
+	28;
+	38;
+	48;
+	49;
+	54;
+	58;
+
+	// Edge definitions.
+	2 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 21 [
+		color=red
+		cond=false
+	];
+	20 -> 76;
+	21 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 38 [
+		color=red
+		cond=false
+	];
+	28 -> 48;
+	38 -> 48;
+	48 -> 49;
+	49 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 58 [
+		color=red
+		cond=false
+	];
+	54 -> 49;
+	58 -> 76;
+}

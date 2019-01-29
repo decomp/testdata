@@ -1,8 +1,8 @@
-digraph "version_etc_arn" {
+strict digraph "version_etc_arn" {
 	// Node definitions.
-	6 [label=entry];
-	8;
+	6 [entry=true];
 	10;
+	8;
 	12;
 	17;
 	18;
@@ -18,27 +18,60 @@ digraph "version_etc_arn" {
 	146;
 
 	// Edge definitions.
-	6 -> 8 [
-		color=red
-		label=false
-	];
 	6 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 12;
+	6 -> 8 [
+		color=red
+		cond=false
+	];
 	10 -> 12;
-	12 -> 17 [label="case (x=0)"];
-	12 -> 18 [label="case (x=1)"];
-	12 -> 22 [label="case (x=2)"];
-	12 -> 28 [label="case (x=3)"];
-	12 -> 36 [label="case (x=4)"];
-	12 -> 46 [label="case (x=5)"];
-	12 -> 58 [label="case (x=6)"];
-	12 -> 72 [label="case (x=7)"];
-	12 -> 88 [label="case (x=8)"];
-	12 -> 106 [label="case (x=9)"];
-	12 -> 126 [label="default case"];
+	8 -> 12;
+	12 -> 17 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	12 -> 18 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	12 -> 22 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	12 -> 28 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	12 -> 36 [
+		cond="case (x=4)"
+		label="case (x=4)"
+	];
+	12 -> 46 [
+		cond="case (x=5)"
+		label="case (x=5)"
+	];
+	12 -> 58 [
+		cond="case (x=6)"
+		label="case (x=6)"
+	];
+	12 -> 72 [
+		cond="case (x=7)"
+		label="case (x=7)"
+	];
+	12 -> 88 [
+		cond="case (x=8)"
+		label="case (x=8)"
+	];
+	12 -> 106 [
+		cond="case (x=9)"
+		label="case (x=9)"
+	];
+	12 -> 126 [
+		cond="default case"
+		label="default case"
+	];
 	18 -> 146;
 	22 -> 146;
 	28 -> 146;

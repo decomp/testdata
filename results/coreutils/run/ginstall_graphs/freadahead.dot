@@ -1,28 +1,28 @@
-digraph "freadahead" {
+strict digraph "freadahead" {
 	// Node definitions.
-	1 [label=entry];
-	7;
-	19;
-	27;
+	1 [entry=true];
 	30;
+	7;
+	27;
+	19;
 
 	// Edge definitions.
-	1 -> 7 [
-		color=red
-		label=false
-	];
 	1 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 19 [
+	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 27;
+	7 -> 19 [
+		color=red
+		cond=false
+	];
 	27 -> 30;
+	19 -> 27;
 }

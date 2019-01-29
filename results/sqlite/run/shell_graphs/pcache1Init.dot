@@ -1,59 +1,59 @@
-digraph "pcache1Init" {
+strict digraph "pcache1Init" {
 	// Node definitions.
-	1 [label=entry];
-	6;
+	1 [entry=true];
 	9;
+	6;
 	14;
 	17;
 	20;
+	28;
 	23;
 	26;
-	28;
 	29;
 
 	// Edge definitions.
-	1 -> 6 [
-		color=red
-		label=false
-	];
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	6 -> 9;
+	1 -> 6 [
+		color=red
+		cond=false
+	];
 	9 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
+	6 -> 9;
 	14 -> 17;
 	17 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 28 [
 		color=red
-		label=false
-	];
-	20 -> 23 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	20 -> 28 [
 		color=red
-		label=false
+		cond=false
+	];
+	20 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 29;
+	23 -> 28 [
+		color=red
+		cond=false
 	];
 	23 -> 26 [
 		color=darkgreen
-		label=true
-	];
-	23 -> 28 [
-		color=red
-		label=false
+		cond=true
 	];
 	26 -> 29;
-	28 -> 29;
 }

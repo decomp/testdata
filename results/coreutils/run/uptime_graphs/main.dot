@@ -1,25 +1,34 @@
-digraph "main" {
+strict digraph "main" {
 	// Node definitions.
-	2 [label=entry];
-	11;
+	2 [entry=true];
 	12;
+	11;
 	15;
 	16;
 	20;
 	28;
 
 	// Edge definitions.
-	2 -> 11 [
-		color=red
-		label=false
-	];
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 15 [label="case (x=0)"];
-	12 -> 16 [label="case (x=1)"];
-	12 -> 20 [label="default case"];
+	2 -> 11 [
+		color=red
+		cond=false
+	];
+	12 -> 15 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	12 -> 16 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	12 -> 20 [
+		cond="default case"
+		label="default case"
+	];
 	15 -> 28;
 	16 -> 28;
 }

@@ -1,27 +1,27 @@
-digraph "integerValue" {
+strict digraph "integerValue" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	12;
 	15;
+	25;
 	21;
 	24;
-	25;
 	31;
+	55;
 	37;
 	40;
 	46;
 	54;
-	55;
+	81;
 	56;
 	69;
 	80;
-	81;
 	82;
 	85;
+	107;
 	94;
 	103;
 	104;
-	107;
 	110;
 	113;
 	115;
@@ -29,89 +29,89 @@ digraph "integerValue" {
 	// Edge definitions.
 	1 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 25;
 	15 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 24;
-	24 -> 25;
 	25 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 55 [
 		color=red
-		label=false
+		cond=false
+	];
+	21 -> 24;
+	24 -> 25;
+	31 -> 55 [
+		color=red
+		cond=false
 	];
 	31 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 55 [
-		color=red
-		label=false
-	];
+	55 -> 56;
 	37 -> 40;
 	40 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	46 -> 40;
 	54 -> 81;
-	55 -> 56;
+	81 -> 82;
 	56 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	56 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
 	69 -> 56;
 	80 -> 81;
-	81 -> 82;
 	82 -> 85 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	82 -> 107 [
 		color=red
-		label=false
+		cond=false
 	];
 	85 -> 94 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	85 -> 103 [
 		color=red
-		label=false
+		cond=false
+	];
+	107 -> 110 [
+		color=darkgreen
+		cond=true
+	];
+	107 -> 113 [
+		color=red
+		cond=false
 	];
 	94 -> 107;
 	103 -> 104;
 	104 -> 82;
-	107 -> 110 [
-		color=darkgreen
-		label=true
-	];
-	107 -> 113 [
-		color=red
-		label=false
-	];
 	110 -> 115;
 	113 -> 115;
 }

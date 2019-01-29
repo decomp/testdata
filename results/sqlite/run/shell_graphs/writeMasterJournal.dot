@@ -1,130 +1,130 @@
-digraph "writeMasterJournal" {
+strict digraph "writeMasterJournal" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
-	19;
 	26;
+	19;
 	27;
+	153;
 	30;
 	37;
-	46;
 	49;
+	46;
 	54;
 	59;
+	122;
 	75;
 	85;
 	97;
 	110;
-	122;
 	124;
 	137;
-	143;
 	151;
-	153;
+	143;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 26 [
 		color=red
-		label=false
-	];
-	13 -> 19 [
-		color=red
-		label=false
+		cond=false
 	];
 	13 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	13 -> 19 [
+		color=red
+		cond=false
+	];
+	26 -> 153;
 	19 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 153;
 	27 -> 30;
 	30 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 46;
-	46 -> 30;
 	49 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
+	46 -> 30;
 	54 -> 59;
-	59 -> 75 [
-		color=red
-		label=false
-	];
 	59 -> 122 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	59 -> 75 [
+		color=red
+		cond=false
+	];
+	122 -> 153;
+	75 -> 122 [
+		color=darkgreen
+		cond=true
 	];
 	75 -> 85 [
 		color=red
-		label=false
-	];
-	75 -> 122 [
-		color=darkgreen
-		label=true
-	];
-	85 -> 97 [
-		color=red
-		label=false
+		cond=false
 	];
 	85 -> 122 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	97 -> 110 [
+	85 -> 97 [
 		color=red
-		label=false
+		cond=false
 	];
 	97 -> 122 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	97 -> 110 [
+		color=red
+		cond=false
 	];
 	110 -> 122 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	110 -> 124 [
 		color=red
-		label=false
+		cond=false
 	];
-	122 -> 153;
 	124 -> 137 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	124 -> 151 [
 		color=red
-		label=false
-	];
-	137 -> 143 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	137 -> 151 [
 		color=red
-		label=false
+		cond=false
 	];
-	143 -> 151;
+	137 -> 143 [
+		color=darkgreen
+		cond=true
+	];
 	151 -> 153;
+	143 -> 151;
 }

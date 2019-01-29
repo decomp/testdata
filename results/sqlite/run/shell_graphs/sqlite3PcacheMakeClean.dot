@@ -1,28 +1,17 @@
-digraph "sqlite3PcacheMakeClean" {
+strict digraph "sqlite3PcacheMakeClean" {
 	// Node definitions.
-	1 [label=entry];
-	9;
-	28;
-	30;
-	31;
+	1 [entry=true];
+	21;
+	23;
 
 	// Edge definitions.
-	1 -> 9 [
+	1 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 31 [
+	1 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 28 [
-		color=darkgreen
-		label=true
-	];
-	9 -> 30 [
-		color=red
-		label=false
-	];
-	28 -> 30;
-	30 -> 31;
+	21 -> 23;
 }

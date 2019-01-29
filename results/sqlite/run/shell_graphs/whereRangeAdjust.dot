@@ -1,41 +1,41 @@
-digraph "whereRangeAdjust" {
+strict digraph "whereRangeAdjust" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
+	38;
 	15;
 	24;
+	37;
 	31;
 	36;
-	37;
-	38;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 37;
 	24 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
+	37 -> 38;
 	31 -> 36;
 	36 -> 37;
-	37 -> 38;
 }

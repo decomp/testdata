@@ -1,57 +1,92 @@
-digraph "sqlite3IsLikeFunction" {
+strict digraph "sqlite3IsLikeFunction" {
 	// Node definitions.
-	4 [label=entry];
-	16;
-	22;
-	30;
-	31;
-	40;
-	47;
+	4 [entry=true];
+	25;
+	19;
+	26;
+	105;
 	48;
-	61;
+	42;
+	49;
+	52;
+	55;
+	93;
+	69;
+	70;
+	86;
+	80;
+	87;
 
 	// Edge definitions.
-	4 -> 16 [
-		color=red
-		label=false
-	];
-	4 -> 30 [
+	4 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 22 [
-		color=darkgreen
-		label=true
-	];
-	16 -> 30 [
+	4 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 30 [
-		color=darkgreen
-		label=true
-	];
-	22 -> 31 [
+	25 -> 105;
+	19 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	30 -> 61;
-	31 -> 40 [
-		color=red
-		label=false
-	];
-	31 -> 47 [
+	19 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 47 [
+	26 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 48 [
+	26 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
-	47 -> 61;
-	48 -> 61;
+	48 -> 105;
+	42 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	42 -> 49 [
+		color=red
+		cond=false
+	];
+	49 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 55 [
+		color=red
+		cond=false
+	];
+	52 -> 93;
+	55 -> 69 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 70 [
+		color=red
+		cond=false
+	];
+	93 -> 105;
+	69 -> 105;
+	70 -> 86 [
+		color=darkgreen
+		cond=true
+	];
+	70 -> 80 [
+		color=red
+		cond=false
+	];
+	86 -> 105;
+	80 -> 86 [
+		color=darkgreen
+		cond=true
+	];
+	80 -> 87 [
+		color=red
+		cond=false
+	];
+	87 -> 93;
 }

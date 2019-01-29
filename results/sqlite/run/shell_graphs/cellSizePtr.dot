@@ -1,111 +1,111 @@
-digraph "cellSizePtr" {
+strict digraph "cellSizePtr" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	21;
+	47;
 	26;
 	35;
 	40;
 	44;
 	46;
-	47;
 	54;
+	72;
 	57;
 	64;
 	68;
 	70;
 	71;
-	72;
 	79;
+	92;
 	90;
 	91;
-	92;
+	128;
 	115;
 	117;
-	128;
 
 	// Edge definitions.
 	2 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 26;
+	47 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 72 [
+		color=red
+		cond=false
+	];
 	26 -> 35;
 	35 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
 	40 -> 44;
 	44 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	44 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
 	46 -> 47;
-	47 -> 54 [
-		color=darkgreen
-		label=true
-	];
-	47 -> 72 [
-		color=red
-		label=false
-	];
 	54 -> 57;
+	72 -> 79 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 92 [
+		color=red
+		cond=false
+	];
 	57 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	57 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
 	64 -> 68;
 	68 -> 70 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
 	70 -> 57;
 	71 -> 72;
-	72 -> 79 [
-		color=darkgreen
-		label=true
-	];
-	72 -> 92 [
-		color=red
-		label=false
-	];
 	79 -> 90 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	79 -> 91 [
 		color=red
-		label=false
+		cond=false
 	];
-	90 -> 91;
-	91 -> 128;
 	92 -> 115 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	92 -> 117 [
 		color=red
-		label=false
+		cond=false
 	];
+	90 -> 91;
+	91 -> 128;
 	115 -> 117;
 	117 -> 128;
 }

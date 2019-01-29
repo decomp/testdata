@@ -1,65 +1,65 @@
-digraph "vdbeIncrSwap" {
+strict digraph "vdbeIncrSwap" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
+	56;
 	16;
 	35;
 	38;
+	55;
 	48;
 	51;
 	54;
-	55;
-	56;
+	80;
 	76;
 	79;
-	80;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 35 [
 		color=red
-		label=false
+		cond=false
+	];
+	56 -> 76 [
+		color=darkgreen
+		cond=true
+	];
+	56 -> 79 [
+		color=red
+		cond=false
 	];
 	16 -> 35;
 	35 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	38 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
+	55 -> 80;
 	48 -> 54;
 	51 -> 54;
 	54 -> 55;
-	55 -> 80;
-	56 -> 76 [
-		color=darkgreen
-		label=true
-	];
-	56 -> 79 [
-		color=red
-		label=false
-	];
 	76 -> 79;
 	79 -> 80;
 }

@@ -1,17 +1,17 @@
-digraph "rev_xstrcoll_size" {
+strict digraph "rev_xstrcoll_size" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	21;
 
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 21;
 }

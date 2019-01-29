@@ -1,35 +1,35 @@
-digraph "xstrcoll_mtime" {
+strict digraph "xstrcoll_mtime" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	29;
 	16;
 	18;
 	22;
-	29;
 
 	// Edge definitions.
-	2 -> 16 [
-		color=red
-		label=false
-	];
 	2 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 18 [
+	2 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 22 [
-		color=darkgreen
-		label=true
+	16 -> 18 [
+		color=red
+		cond=false
 	];
 	18 -> 29 [
 		color=red
-		label=false
+		cond=false
+	];
+	18 -> 22 [
+		color=darkgreen
+		cond=true
 	];
 	22 -> 29;
 }

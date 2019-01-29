@@ -1,22 +1,24 @@
-digraph "output_quoted_string" {
+strict digraph "output_quoted_string" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
 	15;
 	19;
 	21;
-	22;
 	25;
+	22;
 	29;
 	33;
+	96;
 	36;
 	40;
+	93;
 	41;
 	49;
 	53;
 	55;
-	56;
 	59;
+	56;
 	63;
 	66;
 	69;
@@ -25,104 +27,102 @@ digraph "output_quoted_string" {
 	85;
 	89;
 	90;
-	93;
-	96;
 
 	// Edge definitions.
 	2 -> 7;
 	7 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 19;
 	19 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 22;
-	22 -> 7;
 	25 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
+	22 -> 7;
 	29 -> 96;
 	33 -> 36;
 	36 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 93 [
 		color=red
-		label=false
+		cond=false
 	];
 	40 -> 41;
+	93 -> 96;
 	41 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 53;
 	53 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	53 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
 	55 -> 56;
-	56 -> 41;
 	59 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	59 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
+	56 -> 41;
 	63 -> 66;
 	66 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	66 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
 	69 -> 78;
 	78 -> 82 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	78 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
 	82 -> 36;
 	85 -> 89 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	85 -> 90 [
 		color=red
-		label=false
+		cond=false
 	];
 	89 -> 93;
 	90 -> 36;
-	93 -> 96;
 }

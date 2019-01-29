@@ -1,81 +1,81 @@
-digraph "sha3Func" {
+strict digraph "sha3Func" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	21;
 	22;
+	41;
 	29;
+	40;
 	32;
 	35;
 	38;
-	40;
-	41;
+	66;
 	44;
 	45;
 	49;
 	55;
 	61;
-	66;
 
 	// Edge definitions.
 	3 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 41;
 	22 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 32 [
-		color=darkgreen
-		label=true
-	];
-	29 -> 40 [
-		color=red
-		label=false
-	];
-	32 -> 35 [
-		color=darkgreen
-		label=true
-	];
-	32 -> 40 [
-		color=red
-		label=false
-	];
-	35 -> 38 [
-		color=darkgreen
-		label=true
-	];
-	35 -> 40 [
-		color=red
-		label=false
-	];
-	38 -> 66;
-	40 -> 41;
 	41 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
+	29 -> 40 [
+		color=red
+		cond=false
+	];
+	29 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 41;
+	32 -> 40 [
+		color=red
+		cond=false
+	];
+	32 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	35 -> 40 [
+		color=red
+		cond=false
+	];
+	35 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 66;
 	44 -> 66;
 	45 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	45 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 61;
 	55 -> 61;

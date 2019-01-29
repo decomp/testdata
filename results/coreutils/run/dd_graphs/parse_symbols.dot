@@ -1,76 +1,80 @@
-digraph "parse_symbols" {
+strict digraph "parse_symbols" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	5;
 	9;
 	12;
-	17;
 	22;
-	24;
+	17;
 	28;
-	29;
-	33;
-	35;
-	39;
-	41;
-	45;
-	50;
+	24;
+	44;
+	32;
+	38;
+	34;
+	40;
+	49;
 
 	// Edge definitions.
 	4 -> 5;
 	5 -> 9;
 	9 -> 12;
-	12 -> 17 [
-		color=red
-		label=false
-	];
 	12 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	12 -> 17 [
+		color=red
+		cond=false
+	];
+	22 -> 28 [
+		cond="default case"
+		label="default case"
+	];
+	22 -> 24 [
+		cond="case (x=0)"
+		label="case (x=0)"
 	];
 	17 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 24 [label="case (x=0)"];
-	22 -> 29 [label="default case"];
-	24 -> 29 [
-		color=darkgreen
-		label=true
-	];
-	24 -> 45 [
+	28 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
-	28 -> 29;
-	29 -> 9 [
-		color=red
-		label=false
-	];
-	29 -> 33 [
+	28 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 35 [
-		color=red
-		label=false
-	];
-	33 -> 39 [
+	24 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 41;
-	39 -> 41;
-	45 -> 5 [
+	24 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	45 -> 50 [
+	44 -> 5 [
+		color=red
+		cond=false
+	];
+	44 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	32 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	32 -> 34 [
+		color=red
+		cond=false
+	];
+	38 -> 40;
+	34 -> 40;
 }

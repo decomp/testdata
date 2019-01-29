@@ -1,0 +1,32 @@
+strict digraph "sqlite3Pow10" {
+	// Node definitions.
+	1 [entry=true];
+	5;
+	9;
+	13;
+	18;
+	19;
+	23;
+
+	// Edge definitions.
+	1 -> 5;
+	5 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	5 -> 13 [
+		color=red
+		cond=false
+	];
+	9 -> 13;
+	13 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 19 [
+		color=red
+		cond=false
+	];
+	18 -> 23;
+	19 -> 5;
+}

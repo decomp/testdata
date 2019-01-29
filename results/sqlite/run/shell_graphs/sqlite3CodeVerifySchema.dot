@@ -1,40 +1,40 @@
-digraph "sqlite3CodeVerifySchema" {
+strict digraph "sqlite3CodeVerifySchema" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	14;
 	16;
 	27;
+	40;
 	36;
 	39;
-	40;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 16;
 	14 -> 16;
 	16 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 39;
 	39 -> 40;

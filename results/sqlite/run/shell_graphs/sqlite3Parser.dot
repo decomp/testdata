@@ -1,56 +1,56 @@
-digraph "sqlite3Parser" {
+strict digraph "sqlite3Parser" {
 	// Node definitions.
-	5 [label=entry];
-	21;
-	28;
-	37;
-	40;
-	44;
-	58;
-	59;
+	4 [entry=true];
+	25;
+	33;
+	46;
+	84;
+	50;
 	60;
-	63;
-	71;
-	73;
+	93;
+	64;
+	70;
+	94;
+	85;
 
 	// Edge definitions.
-	5 -> 21;
-	21 -> 28 [
+	4 -> 25;
+	25 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	21 -> 37 [
+	25 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	28 -> 59;
-	37 -> 40 [
+	33 -> 84;
+	46 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 44 [
+	46 -> 60 [
 		color=red
-		label=false
+		cond=false
 	];
-	40 -> 58;
-	44 -> 58;
-	58 -> 59;
-	59 -> 60;
-	60 -> 63 [
+	84 -> 85;
+	50 -> 93;
+	60 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 71 [
+	60 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
-	63 -> 71;
-	71 -> 21 [
+	93 -> 94;
+	64 -> 94;
+	70 -> 93;
+	85 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	71 -> 73 [
+	85 -> 93 [
 		color=red
-		label=false
+		cond=false
 	];
 }

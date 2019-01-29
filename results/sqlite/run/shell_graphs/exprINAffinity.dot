@@ -1,58 +1,58 @@
-digraph "exprINAffinity" {
+strict digraph "exprINAffinity" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	22;
 	27;
 	28;
 	39;
+	83;
 	40;
 	44;
+	78;
 	52;
 	68;
 	74;
 	75;
-	78;
-	83;
 
 	// Edge definitions.
 	2 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 28;
 	27 -> 28;
 	28 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 83 [
 		color=red
-		label=false
+		cond=false
 	];
 	39 -> 40;
 	40 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
 	44 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	44 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
+	78 -> 83;
 	52 -> 74;
 	68 -> 74;
 	74 -> 75;
 	75 -> 40;
-	78 -> 83;
 }

@@ -1,6 +1,6 @@
-digraph "strlen30" {
+strict digraph "strlen30" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
 	9;
 	12;
@@ -9,11 +9,11 @@ digraph "strlen30" {
 	1 -> 5;
 	5 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 5;
 }

@@ -1,17 +1,17 @@
-digraph "sqlite3VtabImportErrmsg" {
+strict digraph "sqlite3VtabImportErrmsg" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	30;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 30;
 }

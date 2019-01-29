@@ -1,241 +1,182 @@
-digraph "sqlite3AlterRenameTable" {
+strict digraph "sqlite3AlterRenameTable" {
 	// Node definitions.
-	3 [label=entry];
-	31;
-	32;
-	40;
-	41;
-	66;
-	67;
-	73;
+	3 [entry=true];
+	28;
+	29;
+	213;
+	38;
+	37;
+	64;
+	63;
+	76;
+	70;
 	79;
-	82;
-	89;
-	90;
-	95;
-	96;
-	101;
-	106;
-	114;
-	115;
-	120;
-	121;
-	126;
-	138;
-	139;
-	140;
-	145;
-	146;
-	156;
-	171;
-	182;
+	86;
+	87;
+	92;
+	93;
+	98;
+	103;
+	111;
+	112;
+	117;
+	118;
+	123;
+	137;
+	135;
+	136;
+	142;
+	143;
+	169;
+	176;
+	179;
 	187;
-	195;
-	196;
-	210;
-	217;
-	222;
-	229;
-	235;
-	238;
-	241;
-	248;
-	256;
-	257;
-	261;
-	262;
-	266;
+	190;
+	205;
 
 	// Edge definitions.
-	3 -> 31 [
+	3 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 32 [
+	3 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 266;
-	32 -> 40 [
-		color=red
-		label=false
-	];
-	32 -> 41 [
+	28 -> 213;
+	29 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 266;
-	41 -> 66 [
+	29 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 67 [
+	38 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	66 -> 266;
-	67 -> 73 [
+	38 -> 63 [
 		color=red
-		label=false
+		cond=false
 	];
-	67 -> 79 [
+	37 -> 213;
+	64 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	73 -> 79 [
-		color=darkgreen
-		label=true
-	];
-	73 -> 82 [
+	64 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
-	79 -> 266;
-	82 -> 89 [
+	63 -> 213;
+	76 -> 213;
+	70 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	82 -> 90 [
+	70 -> 79 [
 		color=red
-		label=false
+		cond=false
 	];
-	89 -> 266;
-	90 -> 95 [
+	79 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	90 -> 96 [
+	79 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
-	95 -> 266;
-	96 -> 101 [
+	86 -> 213;
+	87 -> 92 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	96 -> 106 [
+	87 -> 93 [
 		color=red
-		label=false
+		cond=false
 	];
-	101 -> 266;
-	106 -> 114 [
+	92 -> 213;
+	93 -> 98 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	106 -> 115 [
+	93 -> 103 [
 		color=red
-		label=false
+		cond=false
 	];
-	114 -> 266;
-	115 -> 120 [
+	98 -> 213;
+	103 -> 111 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	115 -> 121 [
+	103 -> 112 [
 		color=red
-		label=false
+		cond=false
 	];
-	120 -> 266;
-	121 -> 126 [
+	111 -> 213;
+	112 -> 117 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	121 -> 140 [
+	112 -> 118 [
 		color=red
-		label=false
+		cond=false
 	];
-	126 -> 138 [
+	117 -> 213;
+	118 -> 123 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	126 -> 139 [
+	118 -> 137 [
 		color=red
-		label=false
+		cond=false
 	];
-	138 -> 139;
-	139 -> 140;
-	140 -> 145 [
+	123 -> 135 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	140 -> 146 [
+	123 -> 136 [
 		color=red
-		label=false
+		cond=false
 	];
-	145 -> 266;
-	146 -> 156 [
+	137 -> 142 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	146 -> 171 [
+	137 -> 143 [
 		color=red
-		label=false
+		cond=false
 	];
-	156 -> 171;
-	171 -> 182 [
+	135 -> 136;
+	136 -> 137;
+	142 -> 213;
+	143 -> 169 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	171 -> 196 [
+	143 -> 176 [
 		color=red
-		label=false
+		cond=false
 	];
-	182 -> 187 [
+	169 -> 176;
+	176 -> 179 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	182 -> 195 [
+	176 -> 187 [
 		color=red
-		label=false
+		cond=false
 	];
-	187 -> 195;
-	195 -> 196;
-	196 -> 210 [
+	179 -> 187;
+	187 -> 190 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	196 -> 217 [
+	187 -> 205 [
 		color=red
-		label=false
+		cond=false
 	];
-	210 -> 217;
-	217 -> 222 [
-		color=darkgreen
-		label=true
-	];
-	217 -> 229 [
-		color=red
-		label=false
-	];
-	222 -> 229;
-	229 -> 235 [
-		color=darkgreen
-		label=true
-	];
-	229 -> 262 [
-		color=red
-		label=false
-	];
-	235 -> 238;
-	238 -> 241 [
-		color=darkgreen
-		label=true
-	];
-	238 -> 261 [
-		color=red
-		label=false
-	];
-	241 -> 248 [
-		color=darkgreen
-		label=true
-	];
-	241 -> 256 [
-		color=red
-		label=false
-	];
-	248 -> 256;
-	256 -> 257;
-	257 -> 238;
-	261 -> 262;
-	262 -> 266;
+	190 -> 205;
+	205 -> 213;
 }

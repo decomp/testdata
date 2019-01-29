@@ -1,30 +1,30 @@
-digraph "contextMalloc" {
+strict digraph "contextMalloc" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	16;
 	18;
-	23;
-	25;
 	26;
+	25;
+	23;
 
 	// Edge definitions.
 	2 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 26;
-	18 -> 23 [
-		color=red
-		label=false
-	];
 	18 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 25;
+	18 -> 23 [
+		color=red
+		cond=false
+	];
 	25 -> 26;
+	23 -> 25;
 }

@@ -1,29 +1,29 @@
-digraph "exprStructSize" {
+strict digraph "exprStructSize" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
 	10;
+	18;
 	16;
 	17;
-	18;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 18;
 	10 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 18;
 	17 -> 18;

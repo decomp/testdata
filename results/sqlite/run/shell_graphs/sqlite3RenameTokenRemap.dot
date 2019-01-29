@@ -1,0 +1,32 @@
+strict digraph "sqlite3RenameTokenRemap" {
+	// Node definitions.
+	3 [entry=true];
+	11;
+	14;
+	29;
+	20;
+	24;
+	25;
+
+	// Edge definitions.
+	3 -> 11;
+	11 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	11 -> 29 [
+		color=red
+		cond=false
+	];
+	14 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 24 [
+		color=red
+		cond=false
+	];
+	20 -> 29;
+	24 -> 25;
+	25 -> 11;
+}

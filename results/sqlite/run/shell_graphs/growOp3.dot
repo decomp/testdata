@@ -1,6 +1,6 @@
-digraph "growOp3" {
+strict digraph "growOp3" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	15;
 	16;
 	23;
@@ -8,11 +8,11 @@ digraph "growOp3" {
 	// Edge definitions.
 	5 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 23;
 	16 -> 23;

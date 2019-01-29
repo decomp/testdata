@@ -1,0 +1,50 @@
+strict digraph "sqlite3_vtab_collation" {
+	// Node definitions.
+	2 [entry=true];
+	15;
+	65;
+	21;
+	44;
+	55;
+	58;
+	62;
+	63;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 65 [
+		color=red
+		cond=false
+	];
+	15 -> 65 [
+		color=red
+		cond=false
+	];
+	15 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 55 [
+		color=red
+		cond=false
+	];
+	44 -> 55;
+	55 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 62 [
+		color=red
+		cond=false
+	];
+	58 -> 63;
+	62 -> 63;
+	63 -> 65;
+}

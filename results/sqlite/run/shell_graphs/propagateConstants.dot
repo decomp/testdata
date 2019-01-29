@@ -1,0 +1,30 @@
+strict digraph "propagateConstants" {
+	// Node definitions.
+	2 [entry=true];
+	10;
+	20;
+	45;
+	46;
+	50;
+
+	// Edge definitions.
+	2 -> 10;
+	10 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	10 -> 45 [
+		color=red
+		cond=false
+	];
+	20 -> 45;
+	45 -> 46;
+	46 -> 10 [
+		color=darkgreen
+		cond=true
+	];
+	46 -> 50 [
+		color=red
+		cond=false
+	];
+}

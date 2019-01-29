@@ -1,16 +1,16 @@
-digraph "hash_init" {
+strict digraph "hash_init" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	3;
 	4;
 
 	// Edge definitions.
 	0 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 4 [
 		color=red
-		label=false
+		cond=false
 	];
 }

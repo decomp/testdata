@@ -1,86 +1,86 @@
-digraph "exprMightBeIndexed2" {
+strict digraph "exprMightBeIndexed2" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	13;
 	16;
-	17;
 	22;
+	17;
 	39;
 	42;
+	96;
 	47;
 	48;
+	92;
 	49;
 	56;
+	91;
 	66;
 	67;
+	88;
 	81;
 	87;
-	88;
-	91;
-	92;
-	96;
 	97;
 
 	// Edge definitions.
 	4 -> 13;
 	13 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 17;
-	17 -> 13;
 	22 -> 39;
+	17 -> 13;
 	39 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	39 -> 96 [
 		color=red
-		label=false
+		cond=false
 	];
 	42 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
+	96 -> 97;
 	47 -> 92;
 	48 -> 49;
+	92 -> 39;
 	49 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 91 [
 		color=red
-		label=false
+		cond=false
 	];
 	56 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	56 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
+	91 -> 92;
 	66 -> 88;
 	67 -> 81 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	67 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
+	88 -> 49;
 	81 -> 97;
 	87 -> 88;
-	88 -> 49;
-	91 -> 92;
-	92 -> 39;
-	96 -> 97;
 }

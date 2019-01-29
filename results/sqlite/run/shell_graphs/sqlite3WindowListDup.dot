@@ -1,0 +1,32 @@
+strict digraph "sqlite3WindowListDup" {
+	// Node definitions.
+	2 [entry=true];
+	9;
+	12;
+	29;
+	20;
+	21;
+	25;
+
+	// Edge definitions.
+	2 -> 9;
+	9 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	9 -> 29 [
+		color=red
+		cond=false
+	];
+	12 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 21 [
+		color=red
+		cond=false
+	];
+	20 -> 29;
+	21 -> 25;
+	25 -> 9;
+}

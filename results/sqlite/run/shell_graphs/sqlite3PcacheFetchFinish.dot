@@ -1,19 +1,19 @@
-digraph "sqlite3PcacheFetchFinish" {
+strict digraph "sqlite3PcacheFetchFinish" {
 	// Node definitions.
-	3 [label=entry];
-	17;
+	3 [entry=true];
 	22;
+	17;
 	32;
 
 	// Edge definitions.
-	3 -> 17 [
-		color=red
-		label=false
-	];
 	3 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 32;
+	3 -> 17 [
+		color=red
+		cond=false
+	];
 	22 -> 32;
+	17 -> 32;
 }

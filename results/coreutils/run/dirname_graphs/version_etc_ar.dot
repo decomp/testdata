@@ -1,6 +1,6 @@
-digraph "version_etc_ar" {
+strict digraph "version_etc_ar" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	6;
 	12;
 
@@ -8,10 +8,10 @@ digraph "version_etc_ar" {
 	5 -> 6;
 	6 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 }

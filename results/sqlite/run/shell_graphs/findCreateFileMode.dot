@@ -1,67 +1,89 @@
-digraph "findCreateFileMode" {
+strict digraph "findCreateFileMode" {
 	// Node definitions.
-	5 [label=entry];
-	21;
-	25;
-	33;
-	36;
+	5 [entry=true];
+	22;
+	62;
+	26;
+	34;
 	49;
-	53;
-	55;
-	59;
-	64;
-	70;
-	71;
+	45;
+	37;
+	46;
+	88;
+	86;
+	66;
+	68;
+	85;
 	72;
-	73;
+	84;
+	77;
+	83;
 
 	// Edge definitions.
-	5 -> 21 [
+	5 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 49 [
+	5 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 25;
-	25 -> 33 [
+	22 -> 26;
+	62 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	25 -> 36 [
+	62 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 25;
-	36 -> 73;
-	49 -> 53 [
+	26 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 55 [
+	26 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 72;
-	55 -> 59 [
+	34 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	55 -> 71 [
+	34 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	59 -> 64 [
+	49 -> 86;
+	45 -> 88;
+	37 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	59 -> 70 [
+	37 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	64 -> 70;
-	70 -> 71;
-	71 -> 72;
-	72 -> 73;
+	46 -> 26;
+	86 -> 88;
+	66 -> 85;
+	68 -> 72 [
+		color=darkgreen
+		cond=true
+	];
+	68 -> 84 [
+		color=red
+		cond=false
+	];
+	85 -> 86;
+	72 -> 77 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 83 [
+		color=red
+		cond=false
+	];
+	84 -> 85;
+	77 -> 83;
+	83 -> 84;
 }

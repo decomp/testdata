@@ -1,20 +1,20 @@
-digraph "KeccakF1600Step" {
+strict digraph "KeccakF1600Step" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	19;
 	22;
-	3446;
 	3449;
+	3446;
 
 	// Edge definitions.
 	1 -> 19;
 	19 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 3449 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 3446;
 	3446 -> 19;

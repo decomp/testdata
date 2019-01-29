@@ -1,17 +1,17 @@
-digraph "sqlite3FunctionUsesThisSrc" {
+strict digraph "sqlite3FunctionUsesThisSrc" {
 	// Node definitions.
-	2 [label=entry];
-	23;
+	2 [entry=true];
 	27;
+	23;
 
 	// Edge definitions.
-	2 -> 23 [
-		color=red
-		label=false
-	];
 	2 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 23 [
+		color=red
+		cond=false
 	];
 	23 -> 27;
 }

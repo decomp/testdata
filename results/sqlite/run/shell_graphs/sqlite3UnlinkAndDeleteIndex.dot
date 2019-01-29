@@ -1,74 +1,74 @@
-digraph "sqlite3UnlinkAndDeleteIndex" {
+strict digraph "sqlite3UnlinkAndDeleteIndex" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	25;
+	81;
 	33;
 	41;
+	78;
 	47;
 	50;
 	56;
 	58;
 	62;
 	65;
-	71;
 	77;
-	78;
-	81;
+	71;
 
 	// Edge definitions.
 	3 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 81 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	33 -> 78;
 	41 -> 47;
+	78 -> 81;
 	47 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
 	50 -> 56;
 	56 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	56 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
 	58 -> 47;
 	62 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	62 -> 77 [
 		color=red
-		label=false
-	];
-	65 -> 71 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	65 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
-	71 -> 77;
+	65 -> 71 [
+		color=darkgreen
+		cond=true
+	];
 	77 -> 78;
-	78 -> 81;
+	71 -> 77;
 }

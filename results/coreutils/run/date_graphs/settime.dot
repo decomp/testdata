@@ -1,26 +1,26 @@
-digraph "settime" {
+strict digraph "settime" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	19;
 	5;
 	9;
-	19;
 
 	// Edge definitions.
-	1 -> 5 [
-		color=red
-		label=false
-	];
 	1 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 9 [
+	1 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	5 -> 9 [
+		color=red
+		cond=false
 	];
 	9 -> 19;
 }

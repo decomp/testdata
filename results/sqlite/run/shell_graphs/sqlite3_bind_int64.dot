@@ -1,17 +1,17 @@
-digraph "sqlite3_bind_int64" {
+strict digraph "sqlite3_bind_int64" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
 	30;
 
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 30;
 }

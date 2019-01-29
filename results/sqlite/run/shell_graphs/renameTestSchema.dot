@@ -1,0 +1,17 @@
+strict digraph "renameTestSchema" {
+	// Node definitions.
+	3 [entry=true];
+	13;
+	16;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 16 [
+		color=red
+		cond=false
+	];
+	13 -> 16;
+}

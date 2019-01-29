@@ -1,6 +1,6 @@
-digraph "exprCodeBetween" {
+strict digraph "exprCodeBetween" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	53;
 	58;
 	65;
@@ -8,11 +8,11 @@ digraph "exprCodeBetween" {
 	// Edge definitions.
 	5 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
 	53 -> 65;
 	58 -> 65;

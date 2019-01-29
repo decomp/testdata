@@ -1,101 +1,97 @@
-digraph "add_line_number" {
+strict digraph "add_line_number" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
-	17;
 	25;
-	26;
-	29;
-	32;
-	37;
-	39;
-	44;
-	47;
-	53;
-	59;
+	17;
+	28;
+	46;
+	31;
+	43;
+	36;
+	58;
+	38;
+	52;
 	60;
+	66;
 	62;
-	64;
-	68;
 
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 26 [
+	1 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 17;
-	17 -> 17 [
+	25 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	25 -> 46 [
+		color=red
+		cond=false
 	];
 	17 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 26;
-	26 -> 29 [
+	17 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 47 [
-		color=red
-		label=false
-	];
-	29 -> 32 [
+	28 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	29 -> 44 [
+	28 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 37 [
+	46 -> 58 [
+		color=red
+		cond=false
+	];
+	46 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	32 -> 60 [
-		color=red
-		label=false
-	];
-	37 -> 39;
-	39 -> 39 [
+	31 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 59 [
+	31 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	44 -> 60;
-	47 -> 53 [
+	43 -> 58;
+	36 -> 38;
+	58 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 60 [
+	58 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 60;
-	59 -> 60;
+	38 -> 58 [
+		color=red
+		cond=false
+	];
+	38 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 58;
+	60 -> 66 [
+		color=darkgreen
+		cond=true
+	];
 	60 -> 62 [
-		color=darkgreen
-		label=true
-	];
-	60 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 64 [
-		color=red
-		label=false
-	];
-	62 -> 68 [
-		color=darkgreen
-		label=true
-	];
-	64 -> 68;
+	62 -> 66;
 }

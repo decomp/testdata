@@ -1,60 +1,60 @@
-digraph "sqlite3SrcListEnlarge" {
+strict digraph "sqlite3SrcListEnlarge" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	23;
+	58;
 	42;
 	44;
-	58;
+	119;
 	63;
 	67;
-	82;
 	85;
+	82;
 	101;
 	107;
-	114;
 	117;
-	119;
+	114;
 
 	// Edge definitions.
 	4 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
+	58 -> 63;
 	42 -> 119;
 	44 -> 58;
-	58 -> 63;
 	63 -> 67 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	63 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
 	67 -> 82;
-	82 -> 63;
 	85 -> 101;
+	82 -> 63;
 	101 -> 107 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	101 -> 117 [
 		color=red
-		label=false
+		cond=false
 	];
 	107 -> 114;
-	114 -> 101;
 	117 -> 119;
+	114 -> 101;
 }

@@ -1,17 +1,17 @@
-digraph "dbMallocRawFinish" {
+strict digraph "dbMallocRawFinish" {
 	// Node definitions.
-	2 [label=entry];
-	10;
+	2 [entry=true];
 	12;
+	10;
 
 	// Edge definitions.
-	2 -> 10 [
-		color=red
-		label=false
-	];
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 10 [
+		color=red
+		cond=false
 	];
 	10 -> 12;
 }

@@ -1,0 +1,48 @@
+strict digraph "sumInverse" {
+	// Node definitions.
+	3 [entry=true];
+	20;
+	62;
+	23;
+	30;
+	52;
+	36;
+	61;
+
+	// Edge definitions.
+	3 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 62 [
+		color=red
+		cond=false
+	];
+	20 -> 62 [
+		color=red
+		cond=false
+	];
+	20 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	23 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	23 -> 52 [
+		color=red
+		cond=false
+	];
+	30 -> 52 [
+		color=red
+		cond=false
+	];
+	30 -> 36 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 61;
+	36 -> 61;
+	61 -> 62;
+}

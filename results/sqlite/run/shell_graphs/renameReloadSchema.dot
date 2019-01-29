@@ -1,0 +1,28 @@
+strict digraph "renameReloadSchema" {
+	// Node definitions.
+	2 [entry=true];
+	11;
+	25;
+	20;
+	24;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 25 [
+		color=red
+		cond=false
+	];
+	11 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	11 -> 24 [
+		color=red
+		cond=false
+	];
+	20 -> 24;
+	24 -> 25;
+}

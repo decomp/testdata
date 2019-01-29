@@ -1,0 +1,26 @@
+strict digraph "apndFileControl" {
+	// Node definitions.
+	3 [entry=true];
+	26;
+	39;
+	29;
+
+	// Edge definitions.
+	3 -> 26 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 39 [
+		color=red
+		cond=false
+	];
+	26 -> 39 [
+		color=red
+		cond=false
+	];
+	26 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 39;
+}

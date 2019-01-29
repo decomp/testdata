@@ -1,76 +1,76 @@
-digraph "btreeCursor" {
+strict digraph "btreeCursor" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	19;
+	27;
 	25;
 	26;
-	27;
+	105;
 	30;
-	34;
 	35;
-	65;
-	68;
-	74;
-	87;
-	88;
-	92;
-	103;
+	34;
+	67;
+	70;
+	94;
+	76;
+	89;
+	90;
 
 	// Edge definitions.
 	5 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 103;
-	26 -> 27;
 	27 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 35 [
 		color=red
-		label=false
+		cond=false
+	];
+	25 -> 105;
+	26 -> 27;
+	30 -> 35 [
+		color=red
+		cond=false
 	];
 	30 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 35 [
-		color=red
-		label=false
-	];
+	35 -> 67;
 	34 -> 35;
-	35 -> 65;
-	65 -> 68 [
+	67 -> 70 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	65 -> 92 [
+	67 -> 94 [
 		color=red
-		label=false
+		cond=false
 	];
-	68 -> 74 [
+	70 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	68 -> 87 [
+	70 -> 89 [
 		color=red
-		label=false
+		cond=false
 	];
-	74 -> 87;
-	87 -> 88;
-	88 -> 65;
-	92 -> 103;
+	94 -> 105;
+	76 -> 89;
+	89 -> 90;
+	90 -> 67;
 }

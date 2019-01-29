@@ -1,37 +1,79 @@
-digraph "yy_destructor" {
+strict digraph "yy_destructor" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	13;
 	20;
-	28;
-	35;
-	42;
-	49;
-	56;
-	63;
-	70;
-	78;
-	79;
+	27;
+	34;
+	41;
+	48;
+	55;
+	62;
+	69;
+	76;
+	84;
+	92;
+	93;
 
 	// Edge definitions.
-	3 -> 13 [label="case (x=206)"];
-	3 -> 20 [label="case (x=173)"];
-	3 -> 28 [label="case (x=226)"];
-	3 -> 35 [label="case (x=212)"];
-	3 -> 42 [label="case (x=250)"];
-	3 -> 49 [label="case (x=241)"];
-	3 -> 56 [label="case (x=220)"];
-	3 -> 63 [label="case (x=237)"];
-	3 -> 70 [label="case (x=234)"];
-	3 -> 78 [label="default case"];
-	13 -> 79;
-	20 -> 79;
-	28 -> 79;
-	35 -> 79;
-	42 -> 79;
-	49 -> 79;
-	56 -> 79;
-	63 -> 79;
-	70 -> 79;
-	78 -> 79;
+	3 -> 13 [
+		cond="case (x=219)"
+		label="case (x=219)"
+	];
+	3 -> 20 [
+		cond="case (x=272)"
+		label="case (x=272)"
+	];
+	3 -> 27 [
+		cond="case (x=271)"
+		label="case (x=271)"
+	];
+	3 -> 34 [
+		cond="case (x=230)"
+		label="case (x=230)"
+	];
+	3 -> 41 [
+		cond="case (x=208)"
+		label="case (x=208)"
+	];
+	3 -> 48 [
+		cond="case (x=267)"
+		label="case (x=267)"
+	];
+	3 -> 55 [
+		cond="case (x=235)"
+		label="case (x=235)"
+	];
+	3 -> 62 [
+		cond="case (x=270)"
+		label="case (x=270)"
+	];
+	3 -> 69 [
+		cond="case (x=254)"
+		label="case (x=254)"
+	];
+	3 -> 76 [
+		cond="case (x=251)"
+		label="case (x=251)"
+	];
+	3 -> 84 [
+		cond="case (x=276)"
+		label="case (x=276)"
+	];
+	3 -> 92 [
+		cond="default case"
+		label="default case"
+	];
+	13 -> 93;
+	20 -> 93;
+	27 -> 93;
+	34 -> 93;
+	41 -> 93;
+	48 -> 93;
+	55 -> 93;
+	62 -> 93;
+	69 -> 93;
+	76 -> 93;
+	84 -> 93;
+	92 -> 93;
 }

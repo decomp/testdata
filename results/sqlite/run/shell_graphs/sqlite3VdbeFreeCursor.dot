@@ -1,52 +1,64 @@
-digraph "sqlite3VdbeFreeCursor" {
+strict digraph "sqlite3VdbeFreeCursor" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	10;
+	66;
 	15;
 	20;
+	45;
 	27;
+	38;
 	32;
 	37;
-	38;
 	44;
-	45;
-	66;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 66;
-	10 -> 15 [label="case (x=1)"];
-	10 -> 20 [label="case (x=0)"];
-	10 -> 45 [label="case (x=2)"];
-	10 -> 66 [label="default case"];
+	10 -> 66 [
+		cond="default case"
+		label="default case"
+	];
+	10 -> 15 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	10 -> 20 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	10 -> 45 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
 	15 -> 66;
 	20 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
+	45 -> 66;
 	27 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
+	38 -> 44;
 	32 -> 37;
 	37 -> 44;
-	38 -> 44;
 	44 -> 66;
-	45 -> 66;
 }

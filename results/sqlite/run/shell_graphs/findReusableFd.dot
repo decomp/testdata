@@ -1,100 +1,109 @@
-digraph "findReusableFd" {
+strict digraph "findReusableFd" {
 	// Node definitions.
-	2 [label=entry];
-	14;
-	16;
+	2 [entry=true];
+	11;
+	88;
+	17;
 	19;
-	27;
-	35;
-	37;
-	39;
-	43;
+	22;
+	40;
+	38;
+	30;
+	42;
 	46;
 	49;
-	53;
-	60;
-	62;
-	63;
-	67;
-	72;
-	77;
+	87;
+	55;
+	59;
+	66;
+	68;
+	73;
+	69;
 	78;
-	79;
+	83;
 
 	// Edge definitions.
-	2 -> 14 [
+	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 79 [
+	2 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 16;
-	16 -> 19 [
+	11 -> 88 [
+		color=red
+		cond=false
+	];
+	11 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 37 [
-		color=red
-		label=false
-	];
-	19 -> 27 [
-		color=red
-		label=false
-	];
-	19 -> 35 [
+	17 -> 19;
+	19 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 35;
-	35 -> 37;
-	37 -> 39 [
-		color=darkgreen
-		label=true
-	];
-	37 -> 43 [
+	19 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 16;
-	43 -> 46 [
+	22 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	43 -> 78 [
+	22 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	46 -> 49;
-	49 -> 53 [
+	40 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 60 [
+	40 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 60;
-	60 -> 62 [
+	38 -> 40;
+	30 -> 38;
+	42 -> 19;
+	46 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 67 [
+	46 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 63;
-	63 -> 49;
-	67 -> 72 [
+	49 -> 55;
+	87 -> 88;
+	55 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 77 [
+	55 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
-	72 -> 77;
-	77 -> 78;
-	78 -> 79;
+	59 -> 66;
+	66 -> 68 [
+		color=darkgreen
+		cond=true
+	];
+	66 -> 73 [
+		color=red
+		cond=false
+	];
+	68 -> 69;
+	73 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	73 -> 83 [
+		color=red
+		cond=false
+	];
+	69 -> 55;
+	78 -> 83;
+	83 -> 87;
 }

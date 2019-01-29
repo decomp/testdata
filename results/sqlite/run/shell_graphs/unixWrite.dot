@@ -1,63 +1,63 @@
-digraph "unixWrite" {
+strict digraph "unixWrite" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	14;
 	22;
 	25;
 	27;
 	39;
 	43;
-	46;
-	51;
-	52;
 	54;
+	46;
+	52;
+	51;
 	55;
 
 	// Edge definitions.
 	4 -> 14;
 	14 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 25;
 	25 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 14;
 	39 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	39 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	43 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 52 [
 		color=red
-		label=false
+		cond=false
+	];
+	54 -> 55;
+	46 -> 52 [
+		color=red
+		cond=false
 	];
 	46 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	46 -> 52 [
-		color=red
-		label=false
-	];
-	51 -> 55;
 	52 -> 55;
-	54 -> 55;
+	51 -> 55;
 }

@@ -1,31 +1,31 @@
-digraph "finalizeAggFunctions" {
+strict digraph "finalizeAggFunctions" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	15;
 	21;
+	52;
 	34;
 	38;
 	39;
 	47;
-	52;
 
 	// Edge definitions.
 	2 -> 15;
 	15 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	34 -> 39;
 	38 -> 39;

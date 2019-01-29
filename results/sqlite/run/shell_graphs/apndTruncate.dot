@@ -1,0 +1,17 @@
+strict digraph "apndTruncate" {
+	// Node definitions.
+	2 [entry=true];
+	28;
+	39;
+
+	// Edge definitions.
+	2 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 39 [
+		color=red
+		cond=false
+	];
+	28 -> 39;
+}

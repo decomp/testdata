@@ -1,79 +1,75 @@
-digraph "argmatch" {
+strict digraph "argmatch" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
+	38;
 	8;
 	10;
 	17;
+	31;
+	44;
 	20;
 	22;
-	23;
 	30;
-	31;
-	38;
-	39;
-	45;
-	46;
+	23;
 
 	// Edge definitions.
+	4 -> 38 [
+		color=darkgreen
+		cond=true
+	];
 	4 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
-	4 -> 39 [
-		color=darkgreen
-		label=true
-	];
+	38 -> 44;
 	8 -> 10;
 	10 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 31 [
 		color=red
-		label=false
+		cond=false
+	];
+	17 -> 44 [
+		color=darkgreen
+		cond=true
 	];
 	17 -> 20 [
 		color=red
-		label=false
-	];
-	17 -> 45 [
-		color=darkgreen
-		label=true
-	];
-	20 -> 22 [
-		color=red
-		label=false
-	];
-	20 -> 31 [
-		color=darkgreen
-		label=true
-	];
-	22 -> 23 [
-		color=red
-		label=false
-	];
-	22 -> 30 [
-		color=darkgreen
-		label=true
-	];
-	23 -> 30 [
-		color=red
-		label=false
-	];
-	23 -> 31 [
-		color=darkgreen
-		label=true
-	];
-	30 -> 31;
-	31 -> 10 [
-		color=red
-		label=false
+		cond=false
 	];
 	31 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	38 -> 39;
-	39 -> 46;
-	45 -> 46;
+	31 -> 10 [
+		color=red
+		cond=false
+	];
+	20 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	20 -> 22 [
+		color=red
+		cond=false
+	];
+	22 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 23 [
+		color=red
+		cond=false
+	];
+	30 -> 31;
+	23 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	23 -> 30 [
+		color=red
+		cond=false
+	];
 }

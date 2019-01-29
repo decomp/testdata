@@ -1,30 +1,30 @@
-digraph "sqlite3_db_release_memory" {
+strict digraph "sqlite3_db_release_memory" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	16;
+	35;
 	27;
 	31;
 	32;
-	35;
 
 	// Edge definitions.
 	1 -> 10;
 	10 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 31;
 	31 -> 32;

@@ -1,17 +1,17 @@
-digraph "randint_all_new" {
+strict digraph "randint_all_new" {
 	// Node definitions.
-	2 [label=entry];
-	5;
+	2 [entry=true];
 	10;
+	5;
 
 	// Edge definitions.
-	2 -> 5 [
-		color=red
-		label=false
-	];
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 5 [
+		color=red
+		cond=false
 	];
 	5 -> 10;
 }

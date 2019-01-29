@@ -1,28 +1,28 @@
-digraph "sqlite3DeferForeignKey" {
+strict digraph "sqlite3DeferForeignKey" {
 	// Node definitions.
-	2 [label=entry];
-	11;
+	2 [entry=true];
 	16;
+	11;
 	17;
 	22;
 
 	// Edge definitions.
-	2 -> 11 [
-		color=red
-		label=false
-	];
 	2 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	2 -> 11 [
+		color=red
+		cond=false
+	];
+	16 -> 22;
 	11 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 22;
 	17 -> 22;
 }

@@ -1,28 +1,28 @@
-digraph "sqlite3_compileoption_get" {
+strict digraph "sqlite3_compileoption_get" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
-	13;
 	19;
+	13;
 	20;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 19 [
 		color=red
-		label=false
-	];
-	9 -> 13 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	9 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 20;
+	9 -> 13 [
+		color=darkgreen
+		cond=true
+	];
 	19 -> 20;
+	13 -> 20;
 }

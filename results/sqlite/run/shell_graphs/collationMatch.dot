@@ -1,43 +1,43 @@
-digraph "collationMatch" {
+strict digraph "collationMatch" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
 	15;
-	32;
-	37;
-	38;
-	39;
 	42;
+	32;
+	38;
+	37;
 	43;
+	39;
 
 	// Edge definitions.
 	2 -> 8;
 	8 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 38 [
 		color=red
-		label=false
+		cond=false
+	];
+	42 -> 43;
+	32 -> 38 [
+		color=red
+		cond=false
 	];
 	32 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	32 -> 38 [
-		color=red
-		label=false
-	];
-	37 -> 43;
 	38 -> 39;
+	37 -> 43;
 	39 -> 8;
-	42 -> 43;
 }

@@ -1,52 +1,52 @@
-digraph "releaseInodeInfo" {
+strict digraph "releaseInodeInfo" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
+	62;
 	18;
-	24;
-	32;
-	36;
-	41;
-	49;
-	52;
-	53;
+	61;
+	30;
+	38;
+	42;
+	47;
+	55;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 53 [
+	1 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	9 -> 52 [
+	9 -> 61 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 24 [
+	18 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 32 [
+	18 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 36;
-	32 -> 36;
-	36 -> 41 [
+	61 -> 62;
+	30 -> 42;
+	38 -> 42;
+	42 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 49 [
+	42 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 49;
-	49 -> 52;
-	52 -> 53;
+	47 -> 55;
+	55 -> 61;
 }

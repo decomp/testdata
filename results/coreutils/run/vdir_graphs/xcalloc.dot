@@ -1,25 +1,25 @@
-digraph "xcalloc" {
+strict digraph "xcalloc" {
 	// Node definitions.
-	2 [label=entry];
-	5;
+	2 [entry=true];
 	8;
+	5;
 	9;
 
 	// Edge definitions.
-	2 -> 5 [
-		color=red
-		label=false
-	];
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 5 [
+		color=red
+		cond=false
 	];
 	5 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 }

@@ -1,17 +1,17 @@
-digraph "sqlite3ValueSetStr" {
+strict digraph "sqlite3ValueSetStr" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	13;
 	20;
 
 	// Edge definitions.
 	5 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 20;
 }

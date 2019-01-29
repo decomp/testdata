@@ -1,27 +1,27 @@
-digraph "ino_map_alloc" {
+strict digraph "ino_map_alloc" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	15;
 	5;
 	9;
 	10;
-	15;
 
 	// Edge definitions.
-	1 -> 5 [
-		color=red
-		label=false
-	];
 	1 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	1 -> 5 [
+		color=red
+		cond=false
 	];
 	5 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 15;
 	10 -> 15;

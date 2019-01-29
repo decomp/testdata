@@ -1,32 +1,32 @@
-digraph "moveToRightmost" {
+strict digraph "moveToRightmost" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
-	20;
-	42;
-	44;
-	45;
-	54;
+	15;
+	40;
+	37;
+	39;
+	49;
 
 	// Edge definitions.
 	1 -> 7;
-	7 -> 20 [
+	7 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 45 [
+	7 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 42 [
+	15 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 44 [
+	15 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 54;
-	44 -> 7;
-	45 -> 54;
+	40 -> 49;
+	37 -> 49;
+	39 -> 7;
 }

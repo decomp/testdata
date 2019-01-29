@@ -1,17 +1,17 @@
-digraph "sqlite3WalLimit" {
+strict digraph "sqlite3WalLimit" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
 	11;
 
 	// Edge definitions.
 	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 11;
 }

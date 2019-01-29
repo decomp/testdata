@@ -1,29 +1,4 @@
-digraph "xstrtol_fatal" {
+strict digraph "xstrtol_fatal" {
 	// Node definitions.
-	5 [label=entry];
-	11;
-	12;
-	18;
-	22;
-	25;
-
-	// Edge definitions.
-	5 -> 11 [
-		color=red
-		label=false
-	];
-	5 -> 12 [
-		color=darkgreen
-		label=true
-	];
-	12 -> 18 [
-		color=darkgreen
-		label=true
-	];
-	12 -> 22 [
-		color=red
-		label=false
-	];
-	18 -> 25;
-	22 -> 25;
+	5 [entry=true];
 }

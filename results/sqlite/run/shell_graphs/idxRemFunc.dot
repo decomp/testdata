@@ -1,0 +1,129 @@
+strict digraph "idxRemFunc" {
+	// Node definitions.
+	3 [entry=true];
+	17;
+	18;
+	19;
+	29;
+	30;
+	31;
+	40;
+	41;
+	46;
+	51;
+	59;
+	67;
+	77;
+	78;
+	85;
+	92;
+	150;
+	102;
+	121;
+	111;
+	113;
+	129;
+	139;
+	149;
+
+	// Edge definitions.
+	3 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 18 [
+		color=red
+		cond=false
+	];
+	17 -> 19;
+	19 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 30 [
+		color=red
+		cond=false
+	];
+	29 -> 31;
+	31 -> 40 [
+		cond="case (x=5)"
+		label="case (x=5)"
+	];
+	31 -> 41 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	31 -> 46 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	31 -> 51 [
+		cond="case (x=4)"
+		label="case (x=4)"
+	];
+	31 -> 59 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	31 -> 67 [
+		cond="default case"
+		label="default case"
+	];
+	40 -> 67;
+	41 -> 67;
+	46 -> 67;
+	51 -> 67;
+	59 -> 67;
+	67 -> 77 [
+		cond="case (x=5)"
+		label="case (x=5)"
+	];
+	67 -> 78 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	67 -> 85 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	67 -> 92 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	67 -> 150 [
+		cond="default case"
+		label="default case"
+	];
+	77 -> 150;
+	78 -> 150;
+	85 -> 150;
+	92 -> 102 [
+		color=darkgreen
+		cond=true
+	];
+	92 -> 121 [
+		color=red
+		cond=false
+	];
+	102 -> 111 [
+		color=darkgreen
+		cond=true
+	];
+	102 -> 113 [
+		color=red
+		cond=false
+	];
+	121 -> 129 [
+		color=darkgreen
+		cond=true
+	];
+	121 -> 139 [
+		color=red
+		cond=false
+	];
+	111 -> 150;
+	113 -> 121;
+	129 -> 149;
+	139 -> 149;
+	149 -> 150;
+}

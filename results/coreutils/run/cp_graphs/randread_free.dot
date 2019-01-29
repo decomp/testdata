@@ -1,17 +1,17 @@
-digraph "randread_free" {
+strict digraph "randread_free" {
 	// Node definitions.
-	1 [label=entry];
-	6;
-	8;
+	1 [entry=true];
+	9;
+	7;
 
 	// Edge definitions.
-	1 -> 6 [
-		color=red
-		label=false
-	];
-	1 -> 8 [
+	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	6 -> 8;
+	1 -> 7 [
+		color=red
+		cond=false
+	];
+	7 -> 9;
 }

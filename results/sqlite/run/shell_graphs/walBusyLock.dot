@@ -1,11 +1,11 @@
-digraph "walBusyLock" {
+strict digraph "walBusyLock" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	12;
 	17;
 	20;
-	23;
 	28;
+	23;
 	30;
 
 	// Edge definitions.
@@ -13,27 +13,27 @@ digraph "walBusyLock" {
 	12 -> 17;
 	17 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 28 [
 		color=red
-		label=false
-	];
-	20 -> 23 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	20 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 28;
+	20 -> 23 [
+		color=darkgreen
+		cond=true
+	];
 	28 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
+	23 -> 28;
 }

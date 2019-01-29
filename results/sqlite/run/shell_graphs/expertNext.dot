@@ -1,0 +1,31 @@
+strict digraph "expertNext" {
+	// Node definitions.
+	1 [entry=true];
+	11;
+	12;
+	13;
+	20;
+	27;
+	28;
+
+	// Edge definitions.
+	1 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 12 [
+		color=red
+		cond=false
+	];
+	11 -> 13;
+	13 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 27 [
+		color=red
+		cond=false
+	];
+	20 -> 28;
+	27 -> 28;
+}

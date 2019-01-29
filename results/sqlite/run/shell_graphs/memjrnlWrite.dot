@@ -1,102 +1,102 @@
-digraph "memjrnlWrite" {
+strict digraph "memjrnlWrite" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	26;
+	49;
 	36;
 	41;
 	47;
-	49;
+	154;
 	50;
 	53;
+	145;
 	75;
 	77;
 	83;
 	87;
-	99;
+	118;
 	100;
+	99;
 	105;
 	109;
 	113;
-	118;
-	145;
 	153;
-	154;
 
 	// Edge definitions.
 	4 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 49 [
 		color=red
-		label=false
-	];
-	26 -> 36 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	26 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
+	26 -> 36 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 50;
 	36 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
 	41 -> 47;
 	47 -> 154;
-	49 -> 50;
 	50 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	50 -> 145 [
 		color=red
-		label=false
+		cond=false
 	];
 	53 -> 75 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	53 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
+	145 -> 153;
 	75 -> 83;
 	77 -> 83;
 	83 -> 87 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	83 -> 118 [
 		color=red
-		label=false
-	];
-	87 -> 99 [
-		color=red
-		label=false
+		cond=false
 	];
 	87 -> 100 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	99 -> 154;
+	87 -> 99 [
+		color=red
+		cond=false
+	];
+	118 -> 50;
 	100 -> 105 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	100 -> 109 [
 		color=red
-		label=false
+		cond=false
 	];
+	99 -> 154;
 	105 -> 113;
 	109 -> 113;
 	113 -> 118;
-	118 -> 50;
-	145 -> 153;
 	153 -> 154;
 }

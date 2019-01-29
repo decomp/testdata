@@ -1,0 +1,111 @@
+strict digraph "sqlite3AlterRenameColumn" {
+	// Node definitions.
+	4 [entry=true];
+	28;
+	27;
+	154;
+	35;
+	36;
+	41;
+	42;
+	63;
+	64;
+	71;
+	70;
+	72;
+	79;
+	96;
+	91;
+	92;
+	93;
+	103;
+	106;
+	113;
+	112;
+
+	// Edge definitions.
+	4 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 27 [
+		color=red
+		cond=false
+	];
+	28 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 36 [
+		color=red
+		cond=false
+	];
+	27 -> 154;
+	35 -> 154;
+	36 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 42 [
+		color=red
+		cond=false
+	];
+	41 -> 154;
+	42 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	42 -> 64 [
+		color=red
+		cond=false
+	];
+	63 -> 154;
+	64 -> 71 [
+		color=darkgreen
+		cond=true
+	];
+	64 -> 70 [
+		color=red
+		cond=false
+	];
+	71 -> 72;
+	70 -> 154;
+	72 -> 79 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 96 [
+		color=red
+		cond=false
+	];
+	79 -> 91 [
+		color=darkgreen
+		cond=true
+	];
+	79 -> 92 [
+		color=red
+		cond=false
+	];
+	96 -> 103 [
+		color=darkgreen
+		cond=true
+	];
+	96 -> 106 [
+		color=red
+		cond=false
+	];
+	91 -> 96;
+	92 -> 93;
+	93 -> 72;
+	103 -> 154;
+	106 -> 113 [
+		color=darkgreen
+		cond=true
+	];
+	106 -> 112 [
+		color=red
+		cond=false
+	];
+	113 -> 154;
+	112 -> 154;
+}

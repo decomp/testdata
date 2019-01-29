@@ -1,48 +1,48 @@
-digraph "sqlite3SrcListIndexedBy" {
+strict digraph "sqlite3SrcListIndexedBy" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	10;
+	56;
 	15;
 	28;
-	33;
 	40;
-	65;
-	66;
+	33;
+	55;
 
 	// Edge definitions.
 	3 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 66 [
+	3 -> 56 [
 		color=red
-		label=false
+		cond=false
+	];
+	10 -> 56 [
+		color=red
+		cond=false
 	];
 	10 -> 15 [
 		color=darkgreen
-		label=true
-	];
-	10 -> 66 [
-		color=red
-		label=false
+		cond=true
 	];
 	15 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 40 [
 		color=red
-		label=false
-	];
-	28 -> 33 [
-		color=red
-		label=false
+		cond=false
 	];
 	28 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 65;
-	40 -> 65;
-	65 -> 66;
+	28 -> 33 [
+		color=red
+		cond=false
+	];
+	40 -> 55;
+	33 -> 55;
+	55 -> 56;
 }

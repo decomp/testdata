@@ -1,0 +1,118 @@
+strict digraph "expertFinish" {
+	// Node definitions.
+	3 [entry=true];
+	23;
+	24;
+	25;
+	35;
+	28;
+	31;
+	36;
+	37;
+	40;
+	107;
+	53;
+	106;
+	58;
+	66;
+	67;
+	71;
+	105;
+	83;
+	84;
+	87;
+	95;
+	102;
+
+	// Edge definitions.
+	3 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 24 [
+		color=red
+		cond=false
+	];
+	23 -> 25;
+	25 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 28 [
+		color=red
+		cond=false
+	];
+	35 -> 37;
+	28 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 31 [
+		color=red
+		cond=false
+	];
+	31 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	31 -> 36 [
+		color=red
+		cond=false
+	];
+	37 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 107 [
+		color=red
+		cond=false
+	];
+	40 -> 53 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 106 [
+		color=red
+		cond=false
+	];
+	53 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 66 [
+		color=red
+		cond=false
+	];
+	106 -> 107;
+	58 -> 66;
+	66 -> 67;
+	67 -> 71 [
+		color=darkgreen
+		cond=true
+	];
+	67 -> 105 [
+		color=red
+		cond=false
+	];
+	71 -> 83 [
+		color=darkgreen
+		cond=true
+	];
+	71 -> 84 [
+		color=red
+		cond=false
+	];
+	105 -> 106;
+	83 -> 84;
+	84 -> 87 [
+		color=darkgreen
+		cond=true
+	];
+	84 -> 95 [
+		color=red
+		cond=false
+	];
+	87 -> 95;
+	95 -> 102;
+	102 -> 67;
+}

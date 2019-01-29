@@ -1,30 +1,30 @@
-digraph "nl_error" {
+strict digraph "nl_error" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	7;
-	14;
-	16;
-	18;
 	19;
+	16;
+	14;
+	18;
 
 	// Edge definitions.
 	3 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 19 [
 		color=red
-		label=false
-	];
-	7 -> 14 [
-		color=red
-		label=false
+		cond=false
 	];
 	7 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	14 -> 18;
+	7 -> 14 [
+		color=red
+		cond=false
+	];
 	16 -> 18;
+	14 -> 18;
 	18 -> 19;
 }

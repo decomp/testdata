@@ -1,82 +1,93 @@
-digraph "sqlite3KeyInfoOfIndex" {
+strict digraph "sqlite3KeyInfoOfIndex" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	23;
 	24;
+	119;
 	32;
 	41;
 	47;
 	50;
+	117;
 	51;
 	55;
+	93;
 	65;
 	66;
 	70;
 	90;
-	93;
 	98;
-	100;
-	101;
-	103;
+	116;
+	106;
+	114;
 
 	// Edge definitions.
 	2 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 103;
+	23 -> 119;
 	24 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	32 -> 47;
 	41 -> 47;
 	47 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 101 [
+	47 -> 117 [
 		color=red
-		label=false
+		cond=false
 	];
 	50 -> 51;
+	117 -> 119;
 	51 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 93 [
 		color=red
-		label=false
+		cond=false
 	];
 	55 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 66 [
 		color=red
-		label=false
+		cond=false
+	];
+	93 -> 98 [
+		color=darkgreen
+		cond=true
+	];
+	93 -> 116 [
+		color=red
+		cond=false
 	];
 	65 -> 70;
 	66 -> 70;
 	70 -> 90;
 	90 -> 51;
-	93 -> 98 [
+	98 -> 106 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	93 -> 100 [
+	98 -> 114 [
 		color=red
-		label=false
+		cond=false
 	];
-	98 -> 100;
-	100 -> 101;
-	101 -> 103;
+	116 -> 117;
+	106 -> 114;
+	114 -> 116;
 }

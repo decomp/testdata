@@ -1,39 +1,39 @@
-digraph "pcache1Free" {
+strict digraph "pcache1Free" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
 	8;
-	14;
-	20;
-	35;
 	42;
+	14;
+	35;
+	20;
 
 	// Edge definitions.
 	1 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 42;
 	8 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 35 [
 		color=red
-		label=false
-	];
-	14 -> 20 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	14 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 42;
+	14 -> 20 [
+		color=darkgreen
+		cond=true
+	];
 	35 -> 42;
+	20 -> 42;
 }

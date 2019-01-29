@@ -1,45 +1,45 @@
-digraph "vdbeSorterMerge" {
+strict digraph "vdbeSorterMerge" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	11;
 	31;
+	47;
 	43;
 	46;
-	47;
+	64;
+	63;
 	59;
 	62;
-	63;
-	64;
 
 	// Edge definitions.
 	3 -> 11;
 	11 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
 	31 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	43 -> 64;
-	46 -> 63;
 	47 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
+	43 -> 64;
+	46 -> 63;
+	63 -> 11;
 	59 -> 64;
 	62 -> 63;
-	63 -> 11;
 }

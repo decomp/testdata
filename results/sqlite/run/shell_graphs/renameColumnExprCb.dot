@@ -1,0 +1,66 @@
+strict digraph "renameColumnExprCb" {
+	// Node definitions.
+	2 [entry=true];
+	15;
+	41;
+	24;
+	34;
+	72;
+	47;
+	71;
+	56;
+	64;
+
+	// Edge definitions.
+	2 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 41 [
+		color=red
+		cond=false
+	];
+	15 -> 41 [
+		color=red
+		cond=false
+	];
+	15 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	41 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	41 -> 71 [
+		color=red
+		cond=false
+	];
+	24 -> 41 [
+		color=red
+		cond=false
+	];
+	24 -> 34 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 72;
+	47 -> 71 [
+		color=red
+		cond=false
+	];
+	47 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	71 -> 72;
+	56 -> 71 [
+		color=red
+		cond=false
+	];
+	56 -> 64 [
+		color=darkgreen
+		cond=true
+	];
+	64 -> 71;
+}

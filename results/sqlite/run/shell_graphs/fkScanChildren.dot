@@ -1,10 +1,11 @@
-digraph "fkScanChildren" {
+strict digraph "fkScanChildren" {
 	// Node definitions.
-	8 [label=entry];
+	8 [entry=true];
 	43;
 	50;
 	51;
 	57;
+	119;
 	60;
 	69;
 	70;
@@ -12,128 +13,127 @@ digraph "fkScanChildren" {
 	86;
 	92;
 	116;
-	119;
 	125;
+	203;
 	128;
 	134;
 	151;
+	198;
 	154;
 	161;
-	191;
 	194;
-	198;
-	203;
+	191;
 	215;
+	232;
 	229;
 	231;
-	232;
 	237;
 	240;
 
 	// Edge definitions.
 	8 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
 	43 -> 50;
 	50 -> 51;
 	51 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 119 [
 		color=red
-		label=false
+		cond=false
 	];
 	57 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	57 -> 69 [
 		color=red
-		label=false
+		cond=false
+	];
+	119 -> 125 [
+		color=darkgreen
+		cond=true
+	];
+	119 -> 203 [
+		color=red
+		cond=false
 	];
 	60 -> 70;
 	69 -> 70;
 	70 -> 80 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	70 -> 86 [
 		color=red
-		label=false
+		cond=false
 	];
 	80 -> 92;
 	86 -> 92;
 	92 -> 116;
 	116 -> 51;
-	119 -> 125 [
-		color=darkgreen
-		label=true
-	];
-	119 -> 203 [
+	125 -> 203 [
 		color=red
-		label=false
+		cond=false
 	];
 	125 -> 128 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	125 -> 203 [
-		color=red
-		label=false
-	];
-	128 -> 134 [
-		color=darkgreen
-		label=true
-	];
-	128 -> 151 [
-		color=red
-		label=false
-	];
-	134 -> 198;
-	151 -> 154;
-	154 -> 161 [
-		color=darkgreen
-		label=true
-	];
-	154 -> 194 [
-		color=red
-		label=false
-	];
-	161 -> 191;
-	191 -> 154;
-	194 -> 198;
-	198 -> 203;
 	203 -> 215 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	203 -> 232 [
 		color=red
-		label=false
+		cond=false
 	];
+	128 -> 134 [
+		color=darkgreen
+		cond=true
+	];
+	128 -> 151 [
+		color=red
+		cond=false
+	];
+	134 -> 198;
+	151 -> 154;
+	198 -> 203;
+	154 -> 161 [
+		color=darkgreen
+		cond=true
+	];
+	154 -> 194 [
+		color=red
+		cond=false
+	];
+	161 -> 191;
+	194 -> 198;
+	191 -> 154;
 	215 -> 229 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	215 -> 231 [
 		color=red
-		label=false
+		cond=false
 	];
-	229 -> 231;
-	231 -> 232;
 	232 -> 237 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	232 -> 240 [
 		color=red
-		label=false
+		cond=false
 	];
+	229 -> 231;
+	231 -> 232;
 	237 -> 240;
 }

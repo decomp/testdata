@@ -1,16 +1,16 @@
-digraph "careadlinkatcwd" {
+strict digraph "careadlinkatcwd" {
 	// Node definitions.
-	4 [label=entry];
-	6;
+	4 [entry=true];
 	7;
+	6;
 
 	// Edge definitions.
-	4 -> 6 [
-		color=red
-		label=false
-	];
 	4 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	4 -> 6 [
+		color=red
+		cond=false
 	];
 }

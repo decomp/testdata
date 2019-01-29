@@ -1,0 +1,21 @@
+strict digraph "renameTokenFree" {
+	// Node definitions.
+	2 [entry=true];
+	8;
+	11;
+	20;
+	18;
+
+	// Edge definitions.
+	2 -> 8;
+	8 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 20 [
+		color=red
+		cond=false
+	];
+	11 -> 18;
+	18 -> 8;
+}

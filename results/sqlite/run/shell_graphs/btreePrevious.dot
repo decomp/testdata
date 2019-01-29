@@ -1,146 +1,146 @@
-digraph "btreePrevious" {
+strict digraph "btreePrevious" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	12;
+	54;
 	18;
 	21;
 	22;
 	26;
 	28;
+	152;
 	34;
 	35;
 	40;
+	53;
 	47;
 	50;
-	53;
-	54;
-	67;
 	109;
-	111;
-	114;
-	115;
-	121;
-	127;
-	130;
-	132;
+	62;
+	104;
+	106;
 	150;
-	155;
-	158;
-	159;
-	160;
-	162;
+	110;
+	116;
+	127;
+	122;
+	125;
+	140;
+	148;
+	145;
+	149;
 
 	// Edge definitions.
 	1 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 21 [
 		color=red
-		label=false
+		cond=false
+	];
+	54 -> 109 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 62 [
+		color=red
+		cond=false
 	];
 	18 -> 22;
 	21 -> 22;
 	22 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 162;
+	26 -> 152;
 	28 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	34 -> 162;
+	34 -> 152;
 	35 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
 	40 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
-	47 -> 162;
-	50 -> 53;
 	53 -> 54;
-	54 -> 67 [
-		color=red
-		label=false
-	];
-	54 -> 114 [
+	47 -> 152;
+	50 -> 53;
+	109 -> 110;
+	62 -> 104 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 109 [
-		color=darkgreen
-		label=true
-	];
-	67 -> 111 [
+	62 -> 106 [
 		color=red
-		label=false
+		cond=false
 	];
-	109 -> 162;
-	111 -> 160;
-	114 -> 115;
-	115 -> 121 [
+	104 -> 152;
+	106 -> 150;
+	150 -> 152;
+	110 -> 116 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	115 -> 132 [
+	110 -> 127 [
 		color=red
-		label=false
+		cond=false
 	];
-	121 -> 127 [
+	116 -> 122 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	121 -> 130 [
+	116 -> 125 [
 		color=red
-		label=false
+		cond=false
 	];
-	127 -> 162;
-	130 -> 115;
-	132 -> 150 [
+	127 -> 140 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	132 -> 158 [
+	127 -> 148 [
 		color=red
-		label=false
+		cond=false
 	];
-	150 -> 155 [
-		color=red
-		label=false
-	];
-	150 -> 158 [
+	122 -> 152;
+	125 -> 110;
+	140 -> 148 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	155 -> 159;
-	158 -> 159;
-	159 -> 160;
-	160 -> 162;
+	140 -> 145 [
+		color=red
+		cond=false
+	];
+	148 -> 149;
+	145 -> 149;
+	149 -> 150;
 }

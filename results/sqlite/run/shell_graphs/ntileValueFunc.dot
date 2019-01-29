@@ -1,0 +1,52 @@
+strict digraph "ntileValueFunc" {
+	// Node definitions.
+	1 [entry=true];
+	13;
+	78;
+	18;
+	29;
+	34;
+	77;
+	57;
+	65;
+	76;
+
+	// Edge definitions.
+	1 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 78 [
+		color=red
+		cond=false
+	];
+	13 -> 78 [
+		color=red
+		cond=false
+	];
+	13 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 34 [
+		color=red
+		cond=false
+	];
+	29 -> 77;
+	34 -> 57 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 65 [
+		color=red
+		cond=false
+	];
+	77 -> 78;
+	57 -> 76;
+	65 -> 76;
+	76 -> 77;
+}

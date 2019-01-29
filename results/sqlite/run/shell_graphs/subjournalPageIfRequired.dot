@@ -1,6 +1,6 @@
-digraph "subjournalPageIfRequired" {
+strict digraph "subjournalPageIfRequired" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
 	10;
 	11;
@@ -8,11 +8,11 @@ digraph "subjournalPageIfRequired" {
 	// Edge definitions.
 	1 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 11;
 	10 -> 11;

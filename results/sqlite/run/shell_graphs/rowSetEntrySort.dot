@@ -1,73 +1,73 @@
-digraph "rowSetEntrySort" {
+strict digraph "rowSetEntrySort" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	11;
+	42;
 	17;
 	23;
-	33;
 	36;
-	42;
+	33;
 	45;
 	49;
+	76;
 	55;
 	56;
+	73;
 	59;
 	66;
 	71;
-	73;
-	76;
 
 	// Edge definitions.
 	1 -> 8;
 	8 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 17;
+	42 -> 45;
 	17 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 33;
-	33 -> 17;
 	36 -> 8;
-	42 -> 45;
+	33 -> 17;
 	45 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	45 -> 76 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
 	55 -> 73;
 	56 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	56 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
+	73 -> 45;
 	59 -> 71;
 	66 -> 71;
 	71 -> 73;
-	73 -> 45;
 }

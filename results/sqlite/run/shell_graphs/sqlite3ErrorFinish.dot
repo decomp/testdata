@@ -1,17 +1,17 @@
-digraph "sqlite3ErrorFinish" {
+strict digraph "sqlite3ErrorFinish" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	13;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 13;
 }

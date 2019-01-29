@@ -1,6 +1,6 @@
-digraph "blake2b_init_param" {
+strict digraph "blake2b_init_param" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
 	53;
 
@@ -8,10 +8,10 @@ digraph "blake2b_init_param" {
 	2 -> 7;
 	7 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 }

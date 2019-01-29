@@ -1,6 +1,6 @@
-digraph "vdbeMergeEngineNew" {
+strict digraph "vdbeMergeEngineNew" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	10;
 	14;
@@ -14,30 +14,30 @@ digraph "vdbeMergeEngineNew" {
 	1 -> 6;
 	6 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 6;
 	14 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 28;
 	23 -> 28;
 	28 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
 	32 -> 52;
 }

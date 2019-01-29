@@ -1,52 +1,52 @@
-digraph "sqlite3ResolveExprNames" {
+strict digraph "sqlite3ResolveExprNames" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	11;
+	95;
 	50;
 	51;
 	68;
 	73;
-	86;
 	92;
-	95;
+	86;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 95;
 	11 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
 	50 -> 95;
 	51 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 73 [
 		color=red
-		label=false
+		cond=false
 	];
 	68 -> 73;
-	73 -> 86 [
-		color=red
-		label=false
-	];
 	73 -> 92 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	86 -> 92;
+	73 -> 86 [
+		color=red
+		cond=false
+	];
 	92 -> 95;
+	86 -> 92;
 }

@@ -1,94 +1,102 @@
-digraph "compare_occurs" {
+strict digraph "compare_occurs" {
 	// Node definitions.
-	2 [label=entry];
-	16;
-	17;
-	23;
-	24;
-	30;
-	32;
-	49;
-	51;
-	62;
-	63;
-	64;
+	2 [entry=true];
+	19;
+	13;
+	14;
+	57;
+	46;
+	20;
+	27;
+	25;
 	69;
-	75;
-	76;
-	77;
-	80;
+	44;
+	58;
+	60;
+	66;
 
 	// Edge definitions.
-	2 -> 16 [
-		color=red
-		label=false
-	];
-	2 -> 23 [
+	2 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 17 [
-		color=darkgreen
-		label=true
-	];
-	16 -> 64 [
+	2 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 51;
-	23 -> 24 [
-		color=darkgreen
-		label=true
-	];
-	23 -> 64 [
+	19 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 32;
-	30 -> 32 [
+	19 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 62 [
-		color=red
-		label=false
-	];
-	32 -> 30 [
+	13 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	32 -> 75 [
+	13 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
-	49 -> 51 [
+	14 -> 46;
+	57 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 63 [
+	57 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	51 -> 49 [
+	46 -> 69 [
+		color=red
+		cond=false
+	];
+	46 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	51 -> 76 [
-		color=red
-		label=false
-	];
-	62 -> 64;
-	63 -> 64;
-	64 -> 69 [
+	20 -> 27;
+	27 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	64 -> 77 [
+	27 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
-	69 -> 80;
-	75 -> 77;
-	76 -> 77;
-	77 -> 80;
+	25 -> 57 [
+		color=red
+		cond=false
+	];
+	25 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	44 -> 57 [
+		color=red
+		cond=false
+	];
+	44 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 69 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 60 [
+		color=red
+		cond=false
+	];
+	60 -> 69 [
+		color=darkgreen
+		cond=true
+	];
+	60 -> 66 [
+		color=red
+		cond=false
+	];
+	66 -> 69;
 }

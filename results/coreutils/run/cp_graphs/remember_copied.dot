@@ -1,27 +1,27 @@
-digraph "remember_copied" {
+strict digraph "remember_copied" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	14;
 	15;
-	17;
 	22;
+	17;
 
 	// Edge definitions.
 	3 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 15 [
 		color=red
-		label=false
-	];
-	15 -> 17 [
-		color=red
-		label=false
+		cond=false
 	];
 	15 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	15 -> 17 [
+		color=red
+		cond=false
 	];
 	17 -> 22;
 }

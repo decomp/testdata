@@ -1,75 +1,75 @@
-digraph "sqlite3VdbeMultiLoad" {
+strict digraph "sqlite3VdbeMultiLoad" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	13;
 	21;
+	88;
 	25;
+	54;
 	30;
 	36;
 	41;
-	53;
-	57;
-	63;
-	69;
-	74;
-	81;
-	82;
-	83;
 	84;
-	87;
-	92;
+	58;
+	82;
+	64;
+	70;
+	75;
+	83;
+	93;
+	85;
 
 	// Edge definitions.
 	3 -> 13;
 	13 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 87 [
+	13 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	21 -> 53 [
+	21 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
+	88 -> 93;
 	25 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 36 [
 		color=red
-		label=false
+		cond=false
+	];
+	54 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 82 [
+		color=red
+		cond=false
 	];
 	30 -> 41;
 	36 -> 41;
-	41 -> 83;
-	53 -> 57 [
+	41 -> 84;
+	84 -> 85;
+	58 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	53 -> 81 [
+	58 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
-	57 -> 63 [
-		color=darkgreen
-		label=true
-	];
-	57 -> 69 [
-		color=red
-		label=false
-	];
-	63 -> 74;
-	69 -> 74;
-	74 -> 82;
-	81 -> 92;
-	82 -> 83;
+	82 -> 93;
+	64 -> 75;
+	70 -> 75;
+	75 -> 83;
 	83 -> 84;
-	84 -> 13;
-	87 -> 92;
+	85 -> 13;
 }

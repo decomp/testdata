@@ -1,6 +1,6 @@
-digraph "transferParseError" {
+strict digraph "transferParseError" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	25;
 	32;
@@ -8,11 +8,11 @@ digraph "transferParseError" {
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 32;
 	25 -> 32;

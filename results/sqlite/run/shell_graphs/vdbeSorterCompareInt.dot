@@ -1,174 +1,174 @@
-digraph "vdbeSorterCompareInt" {
+strict digraph "vdbeSorterCompareInt" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	47;
+	99;
 	52;
 	57;
-	72;
-	84;
-	92;
-	93;
-	94;
-	97;
 	98;
-	101;
-	104;
-	108;
-	111;
+	72;
+	94;
+	84;
+	93;
+	95;
+	143;
+	102;
+	109;
+	105;
+	142;
 	112;
-	115;
+	113;
+	122;
 	116;
-	120;
+	117;
 	121;
-	124;
-	130;
+	125;
+	133;
 	131;
 	132;
-	138;
+	141;
 	139;
 	140;
-	141;
-	142;
-	145;
-	155;
-	163;
+	146;
+	165;
+	156;
 	164;
-	175;
-	178;
+	180;
+	176;
 	179;
 
 	// Edge definitions.
 	6 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	6 -> 98 [
+	6 -> 99 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 52;
+	99 -> 102 [
+		color=darkgreen
+		cond=true
+	];
+	99 -> 109 [
+		color=red
+		cond=false
+	];
 	52 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 97 [
+	52 -> 98 [
 		color=red
-		label=false
+		cond=false
 	];
 	57 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	57 -> 93 [
+	57 -> 94 [
 		color=red
-		label=false
+		cond=false
 	];
+	98 -> 143;
 	72 -> 84 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	72 -> 92 [
+	72 -> 93 [
 		color=red
-		label=false
+		cond=false
 	];
-	84 -> 92;
-	92 -> 97;
-	93 -> 94;
-	94 -> 52;
-	97 -> 142;
-	98 -> 101 [
+	94 -> 95;
+	84 -> 93;
+	93 -> 98;
+	95 -> 52;
+	143 -> 146 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	98 -> 108 [
+	143 -> 165 [
 		color=red
-		label=false
+		cond=false
 	];
-	101 -> 104 [
+	102 -> 109 [
+		color=red
+		cond=false
+	];
+	102 -> 105 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	101 -> 108 [
-		color=red
-		label=false
-	];
-	104 -> 141;
-	108 -> 111 [
+	109 -> 112 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	108 -> 112 [
+	109 -> 113 [
 		color=red
-		label=false
+		cond=false
 	];
-	111 -> 121;
-	112 -> 115 [
+	105 -> 142;
+	142 -> 143;
+	112 -> 122;
+	113 -> 116 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	112 -> 116 [
+	113 -> 117 [
 		color=red
-		label=false
+		cond=false
 	];
-	115 -> 120;
-	116 -> 120;
-	120 -> 121;
-	121 -> 124 [
+	122 -> 125 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	121 -> 132 [
+	122 -> 133 [
 		color=red
-		label=false
+		cond=false
 	];
-	124 -> 130 [
+	116 -> 121;
+	117 -> 121;
+	121 -> 122;
+	125 -> 131 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	124 -> 131 [
+	125 -> 132 [
 		color=red
-		label=false
+		cond=false
 	];
-	130 -> 131;
-	131 -> 140;
-	132 -> 138 [
+	133 -> 139 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	132 -> 139 [
+	133 -> 140 [
 		color=red
-		label=false
+		cond=false
 	];
-	138 -> 139;
+	131 -> 132;
+	132 -> 141;
+	141 -> 142;
 	139 -> 140;
 	140 -> 141;
-	141 -> 142;
-	142 -> 145 [
+	146 -> 156 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	142 -> 164 [
+	146 -> 164 [
 		color=red
-		label=false
+		cond=false
 	];
-	145 -> 155 [
+	165 -> 176 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	145 -> 163 [
+	165 -> 179 [
 		color=red
-		label=false
+		cond=false
 	];
-	155 -> 163;
-	163 -> 179;
-	164 -> 175 [
-		color=darkgreen
-		label=true
-	];
-	164 -> 178 [
-		color=red
-		label=false
-	];
-	175 -> 178;
-	178 -> 179;
+	156 -> 164;
+	164 -> 180;
+	176 -> 179;
+	179 -> 180;
 }

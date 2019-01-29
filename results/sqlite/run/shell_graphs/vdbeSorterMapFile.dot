@@ -1,27 +1,27 @@
-digraph "vdbeSorterMapFile" {
+strict digraph "vdbeSorterMapFile" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	21;
+	40;
 	31;
 	39;
-	40;
 
 	// Edge definitions.
 	3 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	31 -> 39;
 	39 -> 40;

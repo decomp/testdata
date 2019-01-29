@@ -1,6 +1,6 @@
-digraph "gethrxtime" {
+strict digraph "gethrxtime" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	6;
 	13;
 	21;
@@ -8,11 +8,11 @@ digraph "gethrxtime" {
 	// Edge definitions.
 	0 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 21;
 	13 -> 21;

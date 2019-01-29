@@ -1,77 +1,77 @@
-digraph "exprSrcCount" {
+strict digraph "exprSrcCount" {
 	// Node definitions.
-	2 [label=entry];
-	14;
+	2 [entry=true];
 	20;
+	14;
+	73;
 	30;
 	34;
 	35;
 	37;
 	41;
+	58;
 	53;
 	54;
 	55;
-	58;
 	62;
 	67;
 	72;
-	73;
 
 	// Edge definitions.
-	2 -> 14 [
-		color=red
-		label=false
-	];
 	2 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	14 -> 20 [
-		color=darkgreen
-		label=true
-	];
-	14 -> 73 [
+	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 34 [
 		color=red
-		label=false
+		cond=false
+	];
+	14 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 73 [
+		color=red
+		cond=false
 	];
 	30 -> 35;
 	34 -> 35;
 	35 -> 37;
 	37 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
 	41 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 54 [
 		color=red
-		label=false
+		cond=false
+	];
+	58 -> 62 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 67 [
+		color=red
+		cond=false
 	];
 	53 -> 58;
 	54 -> 55;
 	55 -> 37;
-	58 -> 62 [
-		color=darkgreen
-		label=true
-	];
-	58 -> 67 [
-		color=red
-		label=false
-	];
 	62 -> 72;
 	67 -> 72;
 	72 -> 73;

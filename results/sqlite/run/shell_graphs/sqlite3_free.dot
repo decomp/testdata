@@ -1,29 +1,29 @@
-digraph "sqlite3_free" {
+strict digraph "sqlite3_free" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
 	6;
+	19;
 	9;
 	16;
-	19;
 
 	// Edge definitions.
 	1 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 19;
 	6 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 19;
 	16 -> 19;

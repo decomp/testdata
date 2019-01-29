@@ -1,0 +1,17 @@
+strict digraph "sqlite3FreeIndex" {
+	// Node definitions.
+	2 [entry=true];
+	26;
+	32;
+
+	// Edge definitions.
+	2 -> 26 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 32 [
+		color=red
+		cond=false
+	];
+	26 -> 32;
+}

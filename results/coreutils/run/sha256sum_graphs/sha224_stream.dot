@@ -1,74 +1,74 @@
-digraph "sha224_stream" {
+strict digraph "sha224_stream" {
 	// Node definitions.
-	2 [label=entry];
-	7;
-	16;
-	17;
-	24;
-	27;
-	30;
-	31;
-	34;
+	2 [entry=true];
+	43;
+	6;
+	14;
+	19;
 	35;
-	36;
-	38;
+	34;
+	25;
+	29;
+	27;
+	33;
+	41;
 	39;
-	56;
+	38;
 
 	// Edge definitions.
-	2 -> 7 [
-		color=red
-		label=false
-	];
-	2 -> 56 [
+	2 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 16;
-	16 -> 17;
-	17 -> 24 [
+	2 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 34 [
+	6 -> 14;
+	14 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 27 [
-		color=darkgreen
-		label=true
-	];
-	24 -> 31 [
+	14 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 30 [
-		color=red
-		label=false
-	];
-	27 -> 36 [
+	19 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 56;
-	31 -> 17 [
-		color=darkgreen
-		label=true
-	];
-	31 -> 35 [
+	19 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	34 -> 16;
-	35 -> 36;
-	36 -> 38 [
-		color=red
-		label=false
-	];
-	36 -> 39 [
+	35 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	35 -> 38 [
+		color=red
+		cond=false
+	];
+	34 -> 27;
+	25 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 27 [
+		color=red
+		cond=false
+	];
+	29 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 33 [
+		color=red
+		cond=false
+	];
+	27 -> 14;
+	33 -> 41;
+	41 -> 43;
+	39 -> 41;
 	38 -> 39;
-	39 -> 56;
 }

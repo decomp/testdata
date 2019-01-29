@@ -1,0 +1,44 @@
+strict digraph "c_strncasecmp" {
+	// Node definitions.
+	3 [entry=true];
+	37;
+	7;
+	33;
+	26;
+	28;
+
+	// Edge definitions.
+	3 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 7 [
+		color=red
+		cond=false
+	];
+	7 -> 33 [
+		color=darkgreen
+		cond=true
+	];
+	7 -> 26 [
+		color=red
+		cond=false
+	];
+	33 -> 37;
+	26 -> 33 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 28 [
+		color=red
+		cond=false
+	];
+	28 -> 7 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 33 [
+		color=red
+		cond=false
+	];
+}

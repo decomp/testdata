@@ -1,50 +1,50 @@
-digraph "sqlite3BtreeCommitPhaseTwo" {
+strict digraph "sqlite3BtreeCommitPhaseTwo" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
 	14;
-	21;
-	31;
-	34;
-	37;
-	45;
 	48;
+	21;
+	45;
+	31;
+	37;
+	34;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 48;
 	14 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 37 [
 		color=red
-		label=false
+		cond=false
+	];
+	45 -> 48;
+	31 -> 37 [
+		color=red
+		cond=false
 	];
 	31 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 37 [
-		color=red
-		label=false
-	];
-	34 -> 48;
 	37 -> 45;
-	45 -> 48;
+	34 -> 48;
 }

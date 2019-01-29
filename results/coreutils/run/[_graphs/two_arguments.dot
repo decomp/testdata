@@ -1,61 +1,57 @@
-digraph "two_arguments" {
+strict digraph "two_arguments" {
 	// Node definitions.
-	0 [label=entry];
-	7;
-	11;
+	0 [entry=true];
+	8;
+	16;
+	40;
 	19;
+	39;
 	23;
 	27;
+	29;
 	31;
-	36;
-	38;
-	46;
-	47;
 
 	// Edge definitions.
-	0 -> 7 [label="case (x=33)"];
-	0 -> 19 [label="case (x=45)"];
-	0 -> 46 [label="default case"];
-	7 -> 11 [
+	0 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 46 [
+	0 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 47;
+	8 -> 40;
+	16 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 39 [
+		color=red
+		cond=false
+	];
+	19 -> 39 [
+		color=darkgreen
+		cond=true
+	];
 	19 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 46 [
-		color=darkgreen
-		label=true
+	23 -> 39 [
+		color=red
+		cond=false
 	];
 	23 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 46 [
-		color=red
-		label=false
+	27 -> 29 [
+		cond="case (x=78)"
+		label="case (x=78)"
 	];
 	27 -> 31 [
-		color=darkgreen
-		label=true
+		cond="default case"
+		label="default case"
 	];
-	27 -> 38 [
-		color=red
-		label=false
-	];
-	31 -> 36 [
-		color=red
-		label=false
-	];
-	31 -> 38 [
-		color=darkgreen
-		label=true
-	];
-	36 -> 47;
+	29 -> 40;
 }

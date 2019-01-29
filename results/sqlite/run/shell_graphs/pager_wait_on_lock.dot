@@ -1,6 +1,6 @@
-digraph "pager_wait_on_lock" {
+strict digraph "pager_wait_on_lock" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	6;
 	10;
 	13;
@@ -12,19 +12,19 @@ digraph "pager_wait_on_lock" {
 	6 -> 10;
 	10 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 22;
 	22 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 }

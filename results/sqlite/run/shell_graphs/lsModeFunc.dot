@@ -1,0 +1,60 @@
+strict digraph "lsModeFunc" {
+	// Node definitions.
+	3 [entry=true];
+	20;
+	22;
+	38;
+	26;
+	28;
+	37;
+	32;
+	34;
+	36;
+	39;
+	42;
+	80;
+	77;
+
+	// Edge definitions.
+	3 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 22 [
+		color=red
+		cond=false
+	];
+	20 -> 38;
+	22 -> 26 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 28 [
+		color=red
+		cond=false
+	];
+	38 -> 39;
+	26 -> 37;
+	28 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 34 [
+		color=red
+		cond=false
+	];
+	37 -> 38;
+	32 -> 36;
+	34 -> 36;
+	36 -> 37;
+	39 -> 42 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 80 [
+		color=red
+		cond=false
+	];
+	42 -> 77;
+	77 -> 39;
+}

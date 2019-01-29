@@ -1,125 +1,90 @@
-digraph "termIsEquivalence" {
+strict digraph "termIsEquivalence" {
 	// Node definitions.
-	2 [label=entry];
-	19;
-	20;
-	26;
-	32;
-	33;
-	39;
-	40;
-	54;
-	58;
-	62;
-	63;
+	2 [entry=true];
+	18;
+	17;
+	83;
+	24;
+	31;
+	30;
+	37;
+	38;
+	52;
+	61;
+	56;
+	60;
+	73;
 	74;
-	80;
-	81;
-	89;
-	93;
-	94;
-	103;
-	107;
-	108;
-	115;
 
 	// Edge definitions.
-	2 -> 19 [
-		color=red
-		label=false
-	];
-	2 -> 20 [
+	2 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 115;
-	20 -> 26 [
-		color=darkgreen
-		label=true
-	];
-	20 -> 33 [
+	2 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 32 [
+	18 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 33 [
+	18 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 115;
-	33 -> 39 [
+	17 -> 83;
+	24 -> 31 [
+		color=red
+		cond=false
+	];
+	24 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 40 [
-		color=red
-		label=false
-	];
-	39 -> 115;
-	40 -> 54 [
+	31 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 63 [
+	31 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	54 -> 58 [
+	30 -> 83;
+	37 -> 83;
+	38 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	54 -> 62 [
+	38 -> 61 [
 		color=red
-		label=false
+		cond=false
 	];
-	58 -> 62 [
-		color=red
-		label=false
-	];
-	58 -> 63 [
+	52 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	62 -> 115;
-	63 -> 74 [
+	52 -> 60 [
 		color=red
-		label=false
+		cond=false
 	];
-	63 -> 80 [
+	61 -> 73 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	74 -> 80 [
-		color=darkgreen
-		label=true
-	];
-	74 -> 81 [
+	61 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
-	80 -> 115;
-	81 -> 89 [
+	56 -> 61 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	81 -> 93 [
+	56 -> 60 [
 		color=red
-		label=false
+		cond=false
 	];
-	89 -> 94;
-	93 -> 94;
-	94 -> 103 [
-		color=darkgreen
-		label=true
-	];
-	94 -> 107 [
-		color=red
-		label=false
-	];
-	103 -> 108;
-	107 -> 108;
-	108 -> 115;
+	60 -> 83;
+	73 -> 83;
+	74 -> 83;
 }

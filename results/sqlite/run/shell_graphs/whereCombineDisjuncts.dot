@@ -1,122 +1,122 @@
-digraph "whereCombineDisjuncts" {
+strict digraph "whereCombineDisjuncts" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	30;
 	31;
+	137;
 	38;
 	39;
 	46;
-	53;
 	54;
+	53;
 	67;
 	68;
 	81;
 	82;
 	90;
+	98;
 	95;
 	96;
 	97;
-	98;
 	113;
 	114;
 	115;
 	122;
-	123;
 	126;
-	137;
+	123;
 
 	// Edge definitions.
 	4 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 137;
 	31 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 137;
 	39 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	39 -> 54 [
 		color=red
-		label=false
-	];
-	46 -> 53 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	46 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 137;
+	46 -> 53 [
+		color=darkgreen
+		cond=true
+	];
 	54 -> 67 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	54 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
+	53 -> 137;
 	67 -> 137;
 	68 -> 81 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 82 [
 		color=red
-		label=false
+		cond=false
 	];
 	81 -> 137;
 	82 -> 90 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	82 -> 98 [
 		color=red
-		label=false
+		cond=false
 	];
 	90 -> 95 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	90 -> 96 [
 		color=red
-		label=false
+		cond=false
+	];
+	98 -> 113 [
+		color=darkgreen
+		cond=true
+	];
+	98 -> 114 [
+		color=red
+		cond=false
 	];
 	95 -> 97;
 	96 -> 97;
 	97 -> 98;
-	98 -> 113 [
-		color=darkgreen
-		label=true
-	];
-	98 -> 114 [
-		color=red
-		label=false
-	];
 	113 -> 137;
 	114 -> 115;
 	115 -> 122 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	115 -> 126 [
 		color=red
-		label=false
+		cond=false
 	];
 	122 -> 123;
-	123 -> 115;
 	126 -> 137;
+	123 -> 115;
 }

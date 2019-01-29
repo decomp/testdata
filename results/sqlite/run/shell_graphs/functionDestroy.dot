@@ -1,27 +1,27 @@
-digraph "functionDestroy" {
+strict digraph "functionDestroy" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
+	32;
 	21;
 	31;
-	32;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 31;
 	31 -> 32;

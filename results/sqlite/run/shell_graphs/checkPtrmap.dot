@@ -1,57 +1,57 @@
-digraph "checkPtrmap" {
+strict digraph "checkPtrmap" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	19;
-	22;
-	25;
-	28;
 	31;
-	37;
-	41;
+	25;
+	22;
+	28;
 	50;
+	41;
+	37;
 
 	// Edge definitions.
 	4 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 31 [
 		color=red
-		label=false
-	];
-	19 -> 22 [
-		color=red
-		label=false
+		cond=false
 	];
 	19 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 25 [
-		color=darkgreen
-		label=true
-	];
-	22 -> 28 [
+	19 -> 22 [
 		color=red
-		label=false
-	];
-	25 -> 28;
-	28 -> 50;
-	31 -> 37 [
-		color=red
-		label=false
+		cond=false
 	];
 	31 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	31 -> 37 [
+		color=red
+		cond=false
+	];
+	25 -> 28;
+	22 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 28 [
+		color=red
+		cond=false
+	];
+	28 -> 50;
+	41 -> 50;
+	37 -> 50 [
+		color=red
+		cond=false
 	];
 	37 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 50 [
-		color=red
-		label=false
-	];
-	41 -> 50;
 }

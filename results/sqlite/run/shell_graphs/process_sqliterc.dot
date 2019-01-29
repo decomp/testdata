@@ -1,52 +1,52 @@
-digraph "process_sqliterc" {
+strict digraph "process_sqliterc" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
+	23;
 	16;
 	19;
-	24;
-	29;
-	32;
-	36;
-	42;
-	44;
+	43;
+	28;
+	41;
+	31;
+	35;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 24 [
+	2 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 44;
-	19 -> 24;
-	24 -> 29 [
+	23 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 42 [
+	23 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 32 [
+	16 -> 43;
+	19 -> 23;
+	28 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	29 -> 36 [
+	28 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 36;
-	36 -> 42;
-	42 -> 44;
+	41 -> 43;
+	31 -> 35;
+	35 -> 41;
 }

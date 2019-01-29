@@ -1,28 +1,28 @@
-digraph "physmem_total" {
+strict digraph "physmem_total" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
+	21;
 	6;
 	10;
 	18;
 	19;
-	21;
 
 	// Edge definitions.
-	0 -> 6 [
-		color=red
-		label=false
-	];
 	0 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	0 -> 6 [
+		color=red
+		cond=false
 	];
 	6 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 19;
 	18 -> 19;

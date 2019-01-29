@@ -1,19 +1,19 @@
-digraph "make_filename" {
+strict digraph "make_filename" {
 	// Node definitions.
-	1 [label=entry];
-	12;
+	1 [entry=true];
 	15;
+	12;
 	18;
 
 	// Edge definitions.
-	1 -> 12 [
-		color=red
-		label=false
-	];
 	1 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 18;
+	1 -> 12 [
+		color=red
+		cond=false
+	];
 	15 -> 18;
+	12 -> 18;
 }

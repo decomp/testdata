@@ -1,52 +1,52 @@
-digraph "unixFetch" {
+strict digraph "unixFetch" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	19;
+	53;
 	24;
+	32;
 	29;
 	31;
-	32;
+	54;
 	41;
 	52;
-	53;
-	54;
 
 	// Edge definitions.
 	4 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
+	53 -> 54;
 	24 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 54;
-	31 -> 32;
 	32 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
+	29 -> 54;
+	31 -> 32;
 	41 -> 52;
 	52 -> 53;
-	53 -> 54;
 }

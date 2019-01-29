@@ -1,52 +1,52 @@
-digraph "sqlite3RowSetNext" {
+strict digraph "sqlite3RowSetNext" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
+	33;
 	19;
 	26;
-	33;
 	38;
-	56;
-	58;
-	59;
 	60;
+	56;
+	59;
+	61;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 26 [
 		color=red
-		label=false
+		cond=false
+	];
+	33 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	33 -> 60 [
+		color=red
+		cond=false
 	];
 	19 -> 26;
 	26 -> 33;
-	33 -> 38 [
-		color=darkgreen
-		label=true
-	];
-	33 -> 59 [
-		color=red
-		label=false
-	];
 	38 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	38 -> 58 [
+	38 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
-	56 -> 58;
-	58 -> 60;
-	59 -> 60;
+	60 -> 61;
+	56 -> 59;
+	59 -> 61;
 }

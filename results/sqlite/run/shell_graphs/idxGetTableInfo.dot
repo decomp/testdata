@@ -1,0 +1,111 @@
+strict digraph "idxGetTableInfo" {
+	// Node definitions.
+	4 [entry=true];
+	32;
+	35;
+	39;
+	41;
+	62;
+	67;
+	69;
+	79;
+	83;
+	86;
+	102;
+	103;
+	106;
+	110;
+	112;
+	174;
+	150;
+	171;
+	178;
+	181;
+	192;
+
+	// Edge definitions.
+	4 -> 32;
+	32 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	32 -> 39 [
+		color=red
+		cond=false
+	];
+	35 -> 39;
+	39 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 62 [
+		color=red
+		cond=false
+	];
+	41 -> 32;
+	62 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	62 -> 69 [
+		color=red
+		cond=false
+	];
+	67 -> 69;
+	69 -> 79 [
+		color=darkgreen
+		cond=true
+	];
+	69 -> 83 [
+		color=red
+		cond=false
+	];
+	79 -> 83;
+	83 -> 86 [
+		color=darkgreen
+		cond=true
+	];
+	83 -> 102 [
+		color=red
+		cond=false
+	];
+	86 -> 102;
+	102 -> 103;
+	103 -> 106 [
+		color=darkgreen
+		cond=true
+	];
+	103 -> 110 [
+		color=red
+		cond=false
+	];
+	106 -> 110;
+	110 -> 112 [
+		color=darkgreen
+		cond=true
+	];
+	110 -> 174 [
+		color=red
+		cond=false
+	];
+	112 -> 150 [
+		color=darkgreen
+		cond=true
+	];
+	112 -> 171 [
+		color=red
+		cond=false
+	];
+	174 -> 178 [
+		color=darkgreen
+		cond=true
+	];
+	174 -> 181 [
+		color=red
+		cond=false
+	];
+	150 -> 171;
+	171 -> 103;
+	178 -> 192;
+	181 -> 192;
+}

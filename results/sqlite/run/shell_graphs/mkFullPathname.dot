@@ -1,41 +1,41 @@
-digraph "mkFullPathname" {
+strict digraph "mkFullPathname" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	17;
+	38;
 	26;
 	30;
-	38;
+	61;
 	45;
 	51;
-	61;
 
 	// Edge definitions.
 	3 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 61;
-	30 -> 38;
 	38 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	38 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
+	26 -> 61;
+	30 -> 38;
 	45 -> 61;
 	51 -> 61;
 }

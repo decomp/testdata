@@ -1,17 +1,17 @@
-digraph "fadvise" {
+strict digraph "fadvise" {
 	// Node definitions.
-	2 [label=entry];
-	4;
+	2 [entry=true];
 	7;
+	4;
 
 	// Edge definitions.
-	2 -> 4 [
-		color=red
-		label=false
-	];
 	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 4 [
+		color=red
+		cond=false
 	];
 	4 -> 7;
 }

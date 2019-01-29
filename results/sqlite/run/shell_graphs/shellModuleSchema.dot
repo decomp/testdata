@@ -1,0 +1,17 @@
+strict digraph "shellModuleSchema" {
+	// Node definitions.
+	3 [entry=true];
+	20;
+	25;
+
+	// Edge definitions.
+	3 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 25 [
+		color=red
+		cond=false
+	];
+	20 -> 25;
+}

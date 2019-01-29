@@ -1,17 +1,17 @@
-digraph "sqlite3_expired" {
+strict digraph "sqlite3_expired" {
 	// Node definitions.
-	1 [label=entry];
-	8;
+	1 [entry=true];
 	15;
+	8;
 
 	// Edge definitions.
-	1 -> 8 [
-		color=red
-		label=false
-	];
 	1 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	1 -> 8 [
+		color=red
+		cond=false
 	];
 	8 -> 15;
 }

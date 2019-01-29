@@ -1,73 +1,86 @@
-digraph "heap_insert" {
+strict digraph "heap_insert" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	12;
+	35;
 	16;
-	19;
 	21;
-	22;
-	26;
-	33;
-	45;
-	46;
-	53;
-	59;
-	61;
+	28;
+	18;
+	20;
+	24;
+	23;
+	60;
+	47;
+	54;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 33;
+	9 -> 35;
 	12 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 19 [
+	12 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 26;
-	19 -> 21 [
-		color=red
-		label=false
-	];
-	19 -> 22 [
+	35 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 26;
-	26 -> 33;
-	33 -> 45 [
+	35 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 61 [
+	16 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	45 -> 46;
-	46 -> 53 [
-		color=darkgreen
-		label=true
-	];
-	46 -> 59 [
+	16 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 46 [
-		color=red
-		label=false
-	];
-	53 -> 59 [
+	21 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	59 -> 61;
+	21 -> 23 [
+		color=red
+		cond=false
+	];
+	28 -> 35;
+	18 -> 28 [
+		color=red
+		cond=false
+	];
+	18 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 28;
+	47 -> 60 [
+		color=red
+		cond=false
+	];
+	47 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 60 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 47 [
+		color=red
+		cond=false
+	];
 }

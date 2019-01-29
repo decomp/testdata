@@ -1,17 +1,17 @@
-digraph "sqlite3WalHeapMemory" {
+strict digraph "sqlite3WalHeapMemory" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
 	11;
 
 	// Edge definitions.
 	1 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 11;
 }

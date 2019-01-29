@@ -1,17 +1,17 @@
-digraph "quotearg_alloc_mem" {
+strict digraph "quotearg_alloc_mem" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	29;
 	30;
 
 	// Edge definitions.
 	4 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 30;
 }

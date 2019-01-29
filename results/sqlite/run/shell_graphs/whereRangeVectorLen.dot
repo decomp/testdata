@@ -1,18 +1,19 @@
-digraph "whereRangeVectorLen" {
+strict digraph "whereRangeVectorLen" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	32;
 	34;
 	41;
 	43;
 	47;
+	192;
 	72;
 	85;
 	96;
+	144;
 	102;
 	108;
 	124;
-	144;
 	145;
 	163;
 	164;
@@ -21,96 +22,95 @@ digraph "whereRangeVectorLen" {
 	187;
 	188;
 	189;
-	192;
 
 	// Edge definitions.
 	5 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
 	32 -> 41;
 	34 -> 41;
 	41 -> 43;
 	43 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 192 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
 	72 -> 96;
 	85 -> 96;
-	96 -> 102 [
-		color=red
-		label=false
-	];
 	96 -> 144 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	96 -> 102 [
+		color=red
+		cond=false
+	];
+	144 -> 192;
+	102 -> 144 [
+		color=darkgreen
+		cond=true
 	];
 	102 -> 108 [
 		color=red
-		label=false
-	];
-	102 -> 144 [
-		color=darkgreen
-		label=true
-	];
-	108 -> 124 [
-		color=red
-		label=false
+		cond=false
 	];
 	108 -> 144 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	108 -> 124 [
+		color=red
+		cond=false
 	];
 	124 -> 144 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	124 -> 145 [
 		color=red
-		label=false
+		cond=false
 	];
-	144 -> 192;
 	145 -> 163 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	145 -> 164 [
 		color=red
-		label=false
+		cond=false
 	];
 	163 -> 192;
 	164 -> 171 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	164 -> 172 [
 		color=red
-		label=false
+		cond=false
 	];
 	171 -> 192;
 	172 -> 187 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	172 -> 188 [
 		color=red
-		label=false
+		cond=false
 	];
 	187 -> 192;
 	188 -> 189;

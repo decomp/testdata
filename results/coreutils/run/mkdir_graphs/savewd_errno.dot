@@ -1,17 +1,17 @@
-digraph "savewd_errno" {
+strict digraph "savewd_errno" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
 	8;
 
 	// Edge definitions.
 	1 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 8;
 }

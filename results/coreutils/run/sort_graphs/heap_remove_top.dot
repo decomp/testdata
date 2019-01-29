@@ -1,59 +1,57 @@
-digraph "heap_remove_top" {
+strict digraph "heap_remove_top" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	51;
 	5;
+	49;
 	22;
-	23;
-	27;
-	36;
-	42;
-	48;
-	50;
-	53;
+	26;
+	35;
+	41;
+	43;
 
 	// Edge definitions.
+	1 -> 51 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 53 [
+	5 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
-	5 -> 50 [
+	49 -> 51;
+	22 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 23;
-	23 -> 27 [
-		color=darkgreen
-		label=true
-	];
-	23 -> 36 [
+	22 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 36;
-	36 -> 42 [
-		color=red
-		label=false
-	];
-	36 -> 48 [
+	26 -> 35;
+	35 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	42 -> 23 [
+	35 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 48 [
+	41 -> 49;
+	43 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	48 -> 50;
-	50 -> 53;
+	43 -> 22 [
+		color=red
+		cond=false
+	];
 }

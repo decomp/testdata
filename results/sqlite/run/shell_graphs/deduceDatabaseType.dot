@@ -1,0 +1,139 @@
+strict digraph "deduceDatabaseType" {
+	// Node definitions.
+	2 [entry=true];
+	14;
+	23;
+	17;
+	22;
+	21;
+	82;
+	31;
+	36;
+	35;
+	78;
+	44;
+	65;
+	49;
+	54;
+	59;
+	64;
+	77;
+	68;
+	76;
+	71;
+	75;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 23 [
+		color=red
+		cond=false
+	];
+	14 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 22 [
+		color=red
+		cond=false
+	];
+	23 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	23 -> 36 [
+		color=red
+		cond=false
+	];
+	17 -> 22 [
+		color=red
+		cond=false
+	];
+	17 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 82;
+	21 -> 82;
+	31 -> 36 [
+		color=red
+		cond=false
+	];
+	31 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 65 [
+		color=red
+		cond=false
+	];
+	35 -> 78;
+	78 -> 82;
+	44 -> 65 [
+		color=red
+		cond=false
+	];
+	44 -> 49 [
+		color=darkgreen
+		cond=true
+	];
+	65 -> 68 [
+		color=darkgreen
+		cond=true
+	];
+	65 -> 76 [
+		color=red
+		cond=false
+	];
+	49 -> 65 [
+		color=red
+		cond=false
+	];
+	49 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 65 [
+		color=red
+		cond=false
+	];
+	54 -> 59 [
+		color=darkgreen
+		cond=true
+	];
+	59 -> 65 [
+		color=red
+		cond=false
+	];
+	59 -> 64 [
+		color=darkgreen
+		cond=true
+	];
+	64 -> 77;
+	77 -> 78;
+	68 -> 76 [
+		color=red
+		cond=false
+	];
+	68 -> 71 [
+		color=darkgreen
+		cond=true
+	];
+	76 -> 77;
+	71 -> 76 [
+		color=red
+		cond=false
+	];
+	71 -> 75 [
+		color=darkgreen
+		cond=true
+	];
+	75 -> 76;
+}

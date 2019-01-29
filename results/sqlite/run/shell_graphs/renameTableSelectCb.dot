@@ -1,0 +1,32 @@
+strict digraph "renameTableSelectCb" {
+	// Node definitions.
+	2 [entry=true];
+	16;
+	22;
+	47;
+	35;
+	43;
+	44;
+
+	// Edge definitions.
+	2 -> 16;
+	16 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 47 [
+		color=red
+		cond=false
+	];
+	22 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 43 [
+		color=red
+		cond=false
+	];
+	35 -> 43;
+	43 -> 44;
+	44 -> 16;
+}

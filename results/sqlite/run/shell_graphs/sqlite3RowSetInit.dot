@@ -1,4 +1,17 @@
-digraph "sqlite3RowSetInit" {
+strict digraph "sqlite3RowSetInit" {
 	// Node definitions.
-	3 [label=entry];
+	1 [entry=true];
+	10;
+	43;
+
+	// Edge definitions.
+	1 -> 10 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 43 [
+		color=red
+		cond=false
+	];
+	10 -> 43;
 }

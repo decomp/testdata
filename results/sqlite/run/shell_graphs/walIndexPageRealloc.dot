@@ -1,0 +1,76 @@
+strict digraph "walIndexPageRealloc" {
+	// Node definitions.
+	3 [entry=true];
+	16;
+	57;
+	34;
+	32;
+	124;
+	63;
+	82;
+	81;
+	80;
+	114;
+	102;
+	113;
+	111;
+	112;
+
+	// Edge definitions.
+	3 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 57 [
+		color=red
+		cond=false
+	];
+	16 -> 34 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 32 [
+		color=red
+		cond=false
+	];
+	57 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	57 -> 82 [
+		color=red
+		cond=false
+	];
+	34 -> 57;
+	32 -> 124;
+	63 -> 81 [
+		color=darkgreen
+		cond=true
+	];
+	63 -> 80 [
+		color=red
+		cond=false
+	];
+	82 -> 102 [
+		color=darkgreen
+		cond=true
+	];
+	82 -> 113 [
+		color=red
+		cond=false
+	];
+	81 -> 114;
+	80 -> 81;
+	114 -> 124;
+	102 -> 111 [
+		color=darkgreen
+		cond=true
+	];
+	102 -> 112 [
+		color=red
+		cond=false
+	];
+	113 -> 114;
+	111 -> 112;
+	112 -> 113;
+}

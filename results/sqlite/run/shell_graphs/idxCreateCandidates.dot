@@ -1,0 +1,52 @@
+strict digraph "idxCreateCandidates" {
+	// Node definitions.
+	1 [entry=true];
+	8;
+	11;
+	14;
+	16;
+	39;
+	22;
+	34;
+	27;
+	35;
+
+	// Edge definitions.
+	1 -> 8;
+	8 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 14 [
+		color=red
+		cond=false
+	];
+	11 -> 14;
+	14 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 39 [
+		color=red
+		cond=false
+	];
+	16 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 34 [
+		color=red
+		cond=false
+	];
+	22 -> 34 [
+		color=red
+		cond=false
+	];
+	22 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 35;
+	27 -> 34;
+	35 -> 8;
+}

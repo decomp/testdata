@@ -1,26 +1,17 @@
-digraph "pagerUnlockIfUnused" {
+strict digraph "pagerUnlockIfUnused" {
 	// Node definitions.
-	1 [label=entry];
-	7;
-	13;
-	15;
+	1 [entry=true];
+	8;
+	10;
 
 	// Edge definitions.
-	1 -> 7 [
+	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 15 [
+	1 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
-	7 -> 13 [
-		color=darkgreen
-		label=true
-	];
-	7 -> 15 [
-		color=red
-		label=false
-	];
-	13 -> 15;
+	8 -> 10;
 }

@@ -1,17 +1,30 @@
-digraph "sqlite3_overload_function" {
+strict digraph "sqlite3_overload_function" {
 	// Node definitions.
-	3 [label=entry];
-	16;
-	21;
+	3 [entry=true];
+	24;
+	25;
+	37;
+	30;
+	31;
 
 	// Edge definitions.
-	3 -> 16 [
+	3 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 21 [
+	3 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 21;
+	24 -> 37;
+	25 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 31 [
+		color=red
+		cond=false
+	];
+	30 -> 37;
+	31 -> 37;
 }

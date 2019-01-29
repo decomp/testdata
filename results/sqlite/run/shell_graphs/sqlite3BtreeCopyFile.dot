@@ -1,53 +1,53 @@
-digraph "sqlite3BtreeCopyFile" {
+strict digraph "sqlite3BtreeCopyFile" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	18;
+	37;
 	31;
 	32;
 	35;
 	36;
-	37;
+	66;
 	52;
 	61;
 	65;
-	66;
 
 	// Edge definitions.
 	2 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 32 [
 		color=red
-		label=false
+		cond=false
+	];
+	37 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 61 [
+		color=red
+		cond=false
 	];
 	31 -> 32;
 	32 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 66;
 	36 -> 37;
-	37 -> 52 [
-		color=darkgreen
-		label=true
-	];
-	37 -> 61 [
-		color=red
-		label=false
-	];
 	52 -> 65;
 	61 -> 65;
 	65 -> 66;

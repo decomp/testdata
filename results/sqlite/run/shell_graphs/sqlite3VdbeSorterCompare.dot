@@ -1,56 +1,56 @@
-digraph "sqlite3VdbeSorterCompare" {
+strict digraph "sqlite3VdbeSorterCompare" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	28;
+	41;
 	35;
 	36;
-	41;
+	80;
 	48;
 	52;
+	70;
 	64;
 	66;
 	67;
-	70;
-	80;
 
 	// Edge definitions.
 	4 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
+	41 -> 48;
 	35 -> 80;
 	36 -> 41;
-	41 -> 48;
 	48 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	48 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
 	52 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	52 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
+	70 -> 80;
 	64 -> 80;
 	66 -> 67;
 	67 -> 48;
-	70 -> 80;
 }

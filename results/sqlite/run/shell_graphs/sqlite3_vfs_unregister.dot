@@ -1,4 +1,19 @@
-digraph "sqlite3_vfs_unregister" {
+strict digraph "sqlite3_vfs_unregister" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	9;
+	11;
+	16;
+
+	// Edge definitions.
+	1 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 11 [
+		color=red
+		cond=false
+	];
+	9 -> 16;
+	11 -> 16;
 }

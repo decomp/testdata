@@ -1,105 +1,97 @@
-digraph "copy_with_unblock" {
+strict digraph "copy_with_unblock" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	4;
 	5;
+	24;
 	13;
-	22;
+	60;
 	23;
-	27;
-	29;
-	30;
 	32;
-	41;
-	43;
-	47;
-	49;
+	30;
+	52;
+	34;
+	46;
+	44;
 	50;
-	57;
-	58;
-	62;
-	63;
+	59;
 
 	// Edge definitions.
 	2 -> 4 [
-		color=red
-		label=false
-	];
-	2 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 5;
+	2 -> 5 [
+		color=red
+		cond=false
+	];
+	5 -> 24 [
+		color=darkgreen
+		cond=true
+	];
 	5 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	5 -> 23 [
+	24 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 22 [
+	24 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 58 [
+	13 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 58;
-	23 -> 27 [
+	13 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 30 [
-		color=darkgreen
-		label=true
-	];
-	27 -> 29 [
+	60 -> 4 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 50 [
+	60 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	29 -> 32;
-	30 -> 58;
-	32 -> 41 [
+	23 -> 60;
+	32 -> 60;
+	30 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 43 [
+	52 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 43;
-	43 -> 47 [
+	52 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
-	43 -> 49 [
+	34 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 32;
-	49 -> 50;
-	50 -> 57 [
+	34 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	50 -> 58 [
+	46 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	57 -> 58;
-	58 -> 5 [
-		color=darkgreen
-		label=true
-	];
-	58 -> 62 [
+	46 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 63;
+	44 -> 46;
+	50 -> 34;
+	59 -> 60;
 }

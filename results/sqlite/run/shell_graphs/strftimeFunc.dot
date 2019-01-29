@@ -1,14 +1,17 @@
-digraph "strftimeFunc" {
+strict digraph "strftimeFunc" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	21;
 	22;
-	29;
+	339;
 	37;
+	29;
 	38;
 	41;
 	47;
+	87;
 	54;
+	81;
 	61;
 	64;
 	65;
@@ -17,30 +20,25 @@ digraph "strftimeFunc" {
 	74;
 	77;
 	78;
-	81;
 	82;
-	87;
 	90;
 	92;
+	114;
 	100;
 	102;
 	110;
 	112;
 	113;
-	114;
 	115;
 	121;
+	328;
 	128;
 	137;
+	324;
 	145;
 	154;
-	159;
-	160;
 	173;
 	182;
-	202;
-	220;
-	229;
 	230;
 	246;
 	255;
@@ -50,154 +48,210 @@ digraph "strftimeFunc" {
 	304;
 	318;
 	323;
-	324;
+	159;
+	160;
+	202;
+	220;
+	229;
 	325;
-	328;
-	338;
 
 	// Edge definitions.
 	3 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 338;
-	22 -> 29 [
-		color=red
-		label=false
-	];
+	21 -> 339;
 	22 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	22 -> 29 [
+		color=red
+		cond=false
+	];
+	37 -> 339;
 	29 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 338;
 	38 -> 41;
 	41 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 81 [
 		color=red
-		label=false
+		cond=false
 	];
-	54 -> 61 [label="case (x=87)"];
-	54 -> 64 [label="case (x=37)"];
-	54 -> 65 [label="case (x=102)"];
-	54 -> 68 [label="case (x=106)"];
-	54 -> 71 [label="case (x=89)"];
-	54 -> 74 [label="case (x=74)"];
-	54 -> 77 [label="default case"];
+	87 -> 90 [
+		color=darkgreen
+		cond=true
+	];
+	87 -> 92 [
+		color=red
+		cond=false
+	];
+	54 -> 61 [
+		cond="case (x=87)"
+		label="case (x=87)"
+	];
+	54 -> 64 [
+		cond="case (x=37)"
+		label="case (x=37)"
+	];
+	54 -> 65 [
+		cond="case (x=102)"
+		label="case (x=102)"
+	];
+	54 -> 68 [
+		cond="case (x=106)"
+		label="case (x=106)"
+	];
+	54 -> 71 [
+		cond="case (x=89)"
+		label="case (x=89)"
+	];
+	54 -> 74 [
+		cond="case (x=74)"
+		label="case (x=74)"
+	];
+	54 -> 77 [
+		cond="default case"
+		label="default case"
+	];
+	81 -> 82;
 	61 -> 64;
 	64 -> 78;
 	65 -> 78;
 	68 -> 78;
 	71 -> 78;
 	74 -> 78;
-	77 -> 338;
+	77 -> 339;
 	78 -> 81;
-	81 -> 82;
 	82 -> 41;
-	87 -> 90 [
-		color=darkgreen
-		label=true
-	];
-	87 -> 92 [
-		color=red
-		label=false
-	];
 	90 -> 114;
 	92 -> 100 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	92 -> 102 [
 		color=red
-		label=false
+		cond=false
 	];
-	100 -> 338;
+	114 -> 115;
+	100 -> 339;
 	102 -> 110 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	102 -> 112 [
 		color=red
-		label=false
+		cond=false
 	];
-	110 -> 338;
+	110 -> 339;
 	112 -> 113;
 	113 -> 114;
-	114 -> 115;
 	115 -> 121 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	115 -> 328 [
 		color=red
-		label=false
+		cond=false
 	];
 	121 -> 128 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	121 -> 137 [
 		color=red
-		label=false
+		cond=false
 	];
+	328 -> 339;
 	128 -> 324;
-	137 -> 145 [label="case (x=100)"];
-	137 -> 154 [label="case (x=102)"];
-	137 -> 173 [label="case (x=72)"];
-	137 -> 182 [label="case (x=106)"];
-	137 -> 230 [label="case (x=74)"];
-	137 -> 246 [label="case (x=109)"];
-	137 -> 255 [label="case (x=77)"];
-	137 -> 264 [label="case (x=115)"];
-	137 -> 280 [label="case (x=83)"];
-	137 -> 290 [label="case (x=119)"];
-	137 -> 304 [label="case (x=89)"];
-	137 -> 318 [label="default case"];
+	137 -> 145 [
+		cond="case (x=100)"
+		label="case (x=100)"
+	];
+	137 -> 154 [
+		cond="case (x=102)"
+		label="case (x=102)"
+	];
+	137 -> 173 [
+		cond="case (x=72)"
+		label="case (x=72)"
+	];
+	137 -> 182 [
+		cond="case (x=106)"
+		label="case (x=106)"
+	];
+	137 -> 230 [
+		cond="case (x=74)"
+		label="case (x=74)"
+	];
+	137 -> 246 [
+		cond="case (x=109)"
+		label="case (x=109)"
+	];
+	137 -> 255 [
+		cond="case (x=77)"
+		label="case (x=77)"
+	];
+	137 -> 264 [
+		cond="case (x=115)"
+		label="case (x=115)"
+	];
+	137 -> 280 [
+		cond="case (x=83)"
+		label="case (x=83)"
+	];
+	137 -> 290 [
+		cond="case (x=119)"
+		label="case (x=119)"
+	];
+	137 -> 304 [
+		cond="case (x=89)"
+		label="case (x=89)"
+	];
+	137 -> 318 [
+		cond="default case"
+		label="default case"
+	];
+	324 -> 325;
 	145 -> 323;
 	154 -> 159 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	154 -> 160 [
 		color=red
-		label=false
+		cond=false
 	];
-	159 -> 160;
-	160 -> 323;
 	173 -> 323;
 	182 -> 202 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	182 -> 220 [
 		color=red
-		label=false
+		cond=false
 	];
-	202 -> 229;
-	220 -> 229;
-	229 -> 323;
 	230 -> 323;
 	246 -> 323;
 	255 -> 323;
@@ -207,7 +261,10 @@ digraph "strftimeFunc" {
 	304 -> 323;
 	318 -> 323;
 	323 -> 324;
-	324 -> 325;
+	159 -> 160;
+	160 -> 323;
+	202 -> 229;
+	220 -> 229;
+	229 -> 323;
 	325 -> 115;
-	328 -> 338;
 }

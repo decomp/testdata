@@ -1,17 +1,17 @@
-digraph "strcmp_extension" {
+strict digraph "strcmp_extension" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	15;
 	17;
 
 	// Edge definitions.
 	2 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 17;
 }

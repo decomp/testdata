@@ -1,74 +1,70 @@
-digraph "eval5" {
+strict digraph "eval5" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	45;
 	6;
-	7;
-	15;
-	17;
-	23;
-	26;
-	28;
-	30;
-	36;
-	39;
-	41;
-	46;
-	48;
+	14;
+	16;
+	29;
+	22;
+	25;
+	27;
+	35;
+	38;
+	40;
 
 	// Edge definitions.
+	1 -> 45 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 48 [
-		color=darkgreen
-		label=true
-	];
-	6 -> 7;
-	7 -> 15 [
-		color=darkgreen
-		label=true
-	];
-	7 -> 46 [
+	6 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 17 [
+	6 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 30 [
-		color=red
-		label=false
-	];
-	17 -> 23 [
+	14 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 26 [
+	14 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 28;
-	26 -> 28;
-	28 -> 30;
-	30 -> 36 [
+	16 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 39 [
+	16 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	36 -> 41;
-	39 -> 41;
-	41 -> 7 [
-		color=red
-		label=false
-	];
-	41 -> 46 [
+	29 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	46 -> 48;
+	29 -> 38 [
+		color=red
+		cond=false
+	];
+	22 -> 27;
+	25 -> 27;
+	27 -> 29;
+	35 -> 40;
+	38 -> 40;
+	40 -> 45 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 6 [
+		color=red
+		cond=false
+	];
 }

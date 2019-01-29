@@ -1,54 +1,54 @@
-digraph "physmem_available" {
+strict digraph "physmem_available" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	7;
 	11;
+	52;
 	15;
 	27;
+	45;
 	32;
 	36;
 	44;
-	45;
 	49;
-	52;
 
 	// Edge definitions.
 	0 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 52;
 	11 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 52;
-	27 -> 32 [
-		color=red
-		label=false
-	];
 	27 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	27 -> 32 [
+		color=red
+		cond=false
+	];
+	45 -> 49;
 	32 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 49;
 	44 -> 49;
-	45 -> 49;
 	49 -> 52;
 }

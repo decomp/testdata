@@ -1,85 +1,85 @@
-digraph "computeLimitRegisters" {
+strict digraph "computeLimitRegisters" {
 	// Node definitions.
-	3 [label=entry];
-	15;
-	16;
-	22;
-	36;
-	43;
-	47;
-	50;
-	60;
-	70;
-	71;
+	3 [entry=true];
+	19;
+	20;
+	117;
+	23;
+	37;
+	73;
+	44;
+	48;
 	72;
-	85;
-	90;
-	115;
+	51;
+	71;
+	61;
+	86;
+	91;
 	116;
 
 	// Edge definitions.
-	3 -> 15 [
+	3 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 16 [
+	3 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 116;
-	16 -> 22 [
+	19 -> 117;
+	20 -> 117 [
+		color=red
+		cond=false
+	];
+	20 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 116 [
-		color=red
-		label=false
-	];
-	22 -> 36 [
+	23 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 72 [
+	23 -> 73 [
 		color=red
-		label=false
+		cond=false
 	];
-	36 -> 43 [
+	37 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 47 [
+	37 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	43 -> 71;
-	47 -> 50 [
+	73 -> 86;
+	44 -> 72;
+	48 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 70 [
+	48 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
-	50 -> 60 [
+	72 -> 86;
+	51 -> 71 [
+		color=red
+		cond=false
+	];
+	51 -> 61 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	50 -> 70 [
-		color=red
-		label=false
-	];
-	60 -> 70;
-	70 -> 71;
-	71 -> 85;
-	72 -> 85;
-	85 -> 90 [
+	71 -> 72;
+	61 -> 71;
+	86 -> 91 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	85 -> 115 [
+	86 -> 116 [
 		color=red
-		label=false
+		cond=false
 	];
-	90 -> 115;
-	115 -> 116;
+	91 -> 116;
+	116 -> 117;
 }

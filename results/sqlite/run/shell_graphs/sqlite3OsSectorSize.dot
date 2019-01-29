@@ -1,6 +1,6 @@
-digraph "sqlite3OsSectorSize" {
+strict digraph "sqlite3OsSectorSize" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
 	15;
 	16;
@@ -8,11 +8,11 @@ digraph "sqlite3OsSectorSize" {
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 16;
 	15 -> 16;

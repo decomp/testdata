@@ -1,15 +1,24 @@
-digraph "diagnose_copy_fd_failure" {
+strict digraph "diagnose_copy_fd_failure" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	3;
 	8;
 	13;
 	14;
 
 	// Edge definitions.
-	2 -> 3 [label="case (x=1)"];
-	2 -> 8 [label="case (x=2)"];
-	2 -> 13 [label="default case"];
+	2 -> 3 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	2 -> 8 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	2 -> 13 [
+		cond="default case"
+		label="default case"
+	];
 	3 -> 14;
 	8 -> 14;
 }

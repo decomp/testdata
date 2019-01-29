@@ -1,26 +1,26 @@
-digraph "backupTruncateFile" {
+strict digraph "backupTruncateFile" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	11;
-	15;
 	19;
+	15;
 
 	// Edge definitions.
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 19 [
 		color=red
-		label=false
-	];
-	11 -> 15 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	11 -> 19 [
 		color=red
-		label=false
+		cond=false
+	];
+	11 -> 15 [
+		color=darkgreen
+		cond=true
 	];
 	15 -> 19;
 }

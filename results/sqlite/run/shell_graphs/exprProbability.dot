@@ -1,29 +1,29 @@
-digraph "exprProbability" {
+strict digraph "exprProbability" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	11;
+	29;
 	24;
 	25;
-	29;
 
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 29;
 	11 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 29;
 	25 -> 29;

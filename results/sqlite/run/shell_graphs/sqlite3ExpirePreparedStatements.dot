@@ -1,21 +1,21 @@
-digraph "sqlite3ExpirePreparedStatements" {
+strict digraph "sqlite3ExpirePreparedStatements" {
 	// Node definitions.
-	1 [label=entry];
-	7;
-	10;
-	16;
-	20;
+	2 [entry=true];
+	9;
+	12;
+	27;
+	23;
 
 	// Edge definitions.
-	1 -> 7;
-	7 -> 10 [
+	2 -> 9;
+	9 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 20 [
+	9 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	10 -> 16;
-	16 -> 7;
+	12 -> 23;
+	23 -> 9;
 }

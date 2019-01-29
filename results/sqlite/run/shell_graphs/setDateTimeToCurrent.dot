@@ -1,6 +1,6 @@
-digraph "setDateTimeToCurrent" {
+strict digraph "setDateTimeToCurrent" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	17;
 	18;
@@ -8,11 +8,11 @@ digraph "setDateTimeToCurrent" {
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 18;
 	17 -> 18;

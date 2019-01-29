@@ -1,435 +1,449 @@
-digraph "main" {
+strict digraph "main" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	17;
-	20;
+	28;
 	21;
+	20;
 	23;
 	24;
 	27;
-	28;
 	31;
 	33;
+	78;
 	35;
+	75;
 	40;
 	43;
+	57;
 	46;
-	47;
-	51;
-	54;
-	58;
-	59;
-	62;
-	65;
-	71;
-	77;
-	78;
-	79;
-	81;
-	84;
-	86;
-	100;
-	105;
-	108;
-	119;
-	124;
-	131;
-	135;
-	139;
-	145;
-	148;
-	150;
-	152;
-	155;
-	161;
-	162;
-	164;
-	166;
-	169;
-	175;
-	182;
-	183;
-	185;
-	191;
-	202;
-	205;
-	207;
-	208;
-	209;
-	212;
-	214;
-	215;
-	221;
-	225;
-	227;
-	231;
-	232;
-	236;
-	245;
-	249;
-	250;
-	259;
-	266;
-	269;
-	275;
-	276;
-	281;
-	283;
-	287;
-	288;
-	291;
+	50;
+	53;
+	60;
+	63;
+	69;
+	76;
 	296;
-	300;
-	301;
-	307;
-	311;
-	315;
+	83;
+	81;
+	97;
+	102;
+	116;
+	105;
+	121;
+	128;
+	132;
+	270;
+	136;
+	142;
+	145;
+	147;
+	149;
+	152;
+	158;
+	159;
+	161;
+	163;
+	166;
+	172;
+	196;
+	179;
+	184;
+	201;
+	191;
+	194;
+	252;
+	199;
+	258;
+	207;
+	212;
+	249;
+	210;
+	216;
+	217;
+	221;
+	229;
+	242;
+	233;
+	234;
+	263;
+	265;
+	269;
+	273;
+	292;
+	278;
+	289;
+	282;
+	283;
 
 	// Edge definitions.
 	2 -> 17;
-	17 -> 20 [label="case (x=80)"];
-	17 -> 21 [label="case (x=76)"];
-	17 -> 23 [label="case (x=-130)"];
-	17 -> 24 [label="case (x=-131)"];
-	17 -> 27 [label="default case"];
-	17 -> 28 [label="case (x=-1)"];
-	20 -> 21;
-	21 -> 17;
+	17 -> 28 [
+		cond="case (x=-1)"
+		label="case (x=-1)"
+	];
+	17 -> 21 [
+		cond="case (x=76)"
+		label="case (x=76)"
+	];
+	17 -> 20 [
+		cond="case (x=80)"
+		label="case (x=80)"
+	];
+	17 -> 23 [
+		cond="case (x=-130)"
+		label="case (x=-130)"
+	];
+	17 -> 24 [
+		cond="case (x=-131)"
+		label="case (x=-131)"
+	];
+	17 -> 27 [
+		cond="default case"
+		label="default case"
+	];
 	28 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
+	21 -> 17;
+	20 -> 21;
 	31 -> 33;
+	33 -> 78 [
+		color=darkgreen
+		cond=true
+	];
 	33 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 81 [
+	78 -> 83 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	78 -> 81 [
+		color=red
+		cond=false
+	];
+	35 -> 75 [
+		color=darkgreen
+		cond=true
 	];
 	35 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
-	35 -> 78 [
-		color=darkgreen
-		label=true
+	75 -> 78;
+	40 -> 75 [
+		color=red
+		cond=false
 	];
 	40 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 78 [
-		color=red
-		label=false
+	43 -> 57 [
+		color=darkgreen
+		cond=true
 	];
 	43 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	43 -> 59 [
-		color=darkgreen
-		label=true
-	];
-	46 -> 47;
-	47 -> 51 [label="case (x=46)"];
-	47 -> 54 [label="default case"];
-	47 -> 77 [label="case (x=47)"];
-	51 -> 54 [label="default case"];
-	51 -> 77 [label="case (x=47)"];
-	54 -> 47 [
+	57 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	54 -> 58 [
+	57 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	58 -> 59;
-	59 -> 62 [
+	46 -> 75 [
+		cond="case (x=47)"
+		label="case (x=47)"
+	];
+	46 -> 50 [
+		cond="case (x=46)"
+		label="case (x=46)"
+	];
+	46 -> 53 [
+		cond="default case"
+		label="default case"
+	];
+	50 -> 75 [
+		cond="case (x=47)"
+		label="case (x=47)"
+	];
+	50 -> 53 [
+		cond="default case"
+		label="default case"
+	];
+	53 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	59 -> 78 [
+	53 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 65 [
-		color=darkgreen
-		label=true
-	];
-	62 -> 78 [
+	60 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	65 -> 71 [
+	60 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	65 -> 78 [
+	63 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	71 -> 78 [
-		color=red
-		label=false
-	];
-	71 -> 79 [
+	63 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	77 -> 78;
-	78 -> 81;
-	79 -> 315;
-	81 -> 84 [
+	69 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	81 -> 86 [
+	69 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	84 -> 315;
-	86 -> 100 [
+	76 -> 296;
+	83 -> 97 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	86 -> 105 [
+	83 -> 102 [
 		color=red
-		label=false
+		cond=false
 	];
-	105 -> 108 [
-		color=red
-		label=false
-	];
-	105 -> 119 [
+	81 -> 296;
+	102 -> 116 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	108 -> 124;
-	124 -> 131 [
-		color=darkgreen
-		label=true
-	];
-	124 -> 135 [
+	102 -> 105 [
 		color=red
-		label=false
+		cond=false
 	];
-	131 -> 135 [
-		color=red
-		label=false
-	];
-	131 -> 288 [
+	105 -> 121;
+	121 -> 128 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	135 -> 139 [
-		color=darkgreen
-		label=true
-	];
-	135 -> 145 [
+	121 -> 132 [
 		color=red
-		label=false
+		cond=false
 	];
-	145 -> 148 [
-		color=darkgreen
-		label=true
-	];
-	145 -> 150 [
+	128 -> 132 [
 		color=red
-		label=false
+		cond=false
 	];
-	148 -> 152;
-	150 -> 152;
-	152 -> 155 [
+	128 -> 270 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	152 -> 161 [
-		color=red
-		label=false
-	];
-	161 -> 162 [
+	132 -> 136 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	161 -> 164 [
+	132 -> 142 [
 		color=red
-		label=false
+		cond=false
 	];
-	162 -> 166;
-	164 -> 166;
-	166 -> 169 [
+	270 -> 273 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	166 -> 175 [
+	270 -> 292 [
 		color=red
-		label=false
+		cond=false
 	];
-	175 -> 182 [
-		color=red
-		label=false
-	];
-	175 -> 209 [
+	142 -> 145 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	182 -> 183;
-	183 -> 185;
-	185 -> 191 [
-		color=darkgreen
-		label=true
-	];
-	185 -> 214 [
+	142 -> 147 [
 		color=red
-		label=false
+		cond=false
 	];
-	191 -> 202 [label="case (x=0)"];
-	191 -> 205 [label="default case"];
-	202 -> 185 [
-		color=red
-		label=false
-	];
-	202 -> 207 [
+	145 -> 149;
+	147 -> 149;
+	149 -> 152 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	205 -> 208 [
-		color=darkgreen
-		label=true
-	];
-	205 -> 215 [
+	149 -> 158 [
 		color=red
-		label=false
+		cond=false
 	];
-	207 -> 209;
-	208 -> 209;
-	209 -> 212 [
-		color=red
-		label=false
-	];
-	209 -> 269 [
+	158 -> 159 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	212 -> 276;
-	214 -> 215;
-	215 -> 221 [
-		color=darkgreen
-		label=true
-	];
-	215 -> 227 [
+	158 -> 161 [
 		color=red
-		label=false
+		cond=false
 	];
-	221 -> 225 [
-		color=red
-		label=false
-	];
-	221 -> 266 [
+	159 -> 163;
+	161 -> 163;
+	163 -> 166 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	225 -> 227;
-	227 -> 231 [
-		color=darkgreen
-		label=true
-	];
-	227 -> 266 [
+	163 -> 172 [
 		color=red
-		label=false
+		cond=false
 	];
-	231 -> 232 [
+	172 -> 196 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	231 -> 236 [
+	172 -> 179 [
 		color=red
-		label=false
+		cond=false
 	];
-	232 -> 236 [
+	196 -> 252 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	232 -> 266 [
+	196 -> 199 [
 		color=red
-		label=false
+		cond=false
 	];
-	236 -> 245 [
+	179 -> 184 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	236 -> 259 [
+	179 -> 201 [
 		color=red
-		label=false
+		cond=false
 	];
-	245 -> 249 [
+	184 -> 201 [
+		cond="default case"
+		label="default case"
+	];
+	184 -> 191 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	201 -> 207 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	245 -> 250 [
+	201 -> 212 [
 		color=red
-		label=false
+		cond=false
 	];
-	250 -> 259;
-	259 -> 269;
-	266 -> 183 [
-		color=red
-		label=false
-	];
-	266 -> 208 [
+	191 -> 196 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	269 -> 275 [
+	191 -> 194 [
 		color=red
-		label=false
+		cond=false
 	];
-	269 -> 281 [
-		color=darkgreen
-		label=true
-	];
-	275 -> 276;
-	281 -> 283 [
-		color=darkgreen
-		label=true
-	];
-	281 -> 287 [
+	194 -> 179;
+	252 -> 258 [
 		color=red
-		label=false
+		cond=false
 	];
-	287 -> 124;
-	288 -> 291 [
+	252 -> 263 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	288 -> 311 [
-		color=red
-		label=false
-	];
-	291 -> 296 [
+	199 -> 258;
+	207 -> 249 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	291 -> 307 [
+	207 -> 210 [
 		color=red
-		label=false
+		cond=false
 	];
-	296 -> 300 [
+	212 -> 249 [
+		color=red
+		cond=false
+	];
+	212 -> 216 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	296 -> 301 [
+	249 -> 196 [
+		color=darkgreen
+		cond=true
+	];
+	249 -> 194 [
 		color=red
-		label=false
+		cond=false
 	];
-	301 -> 307;
-	307 -> 311;
-	311 -> 315;
+	210 -> 212;
+	216 -> 217 [
+		color=darkgreen
+		cond=true
+	];
+	216 -> 221 [
+		color=red
+		cond=false
+	];
+	217 -> 249 [
+		color=red
+		cond=false
+	];
+	217 -> 221 [
+		color=darkgreen
+		cond=true
+	];
+	221 -> 229 [
+		color=darkgreen
+		cond=true
+	];
+	221 -> 242 [
+		color=red
+		cond=false
+	];
+	229 -> 233 [
+		color=darkgreen
+		cond=true
+	];
+	229 -> 234 [
+		color=red
+		cond=false
+	];
+	242 -> 252;
+	234 -> 242;
+	263 -> 265 [
+		color=darkgreen
+		cond=true
+	];
+	263 -> 269 [
+		color=red
+		cond=false
+	];
+	269 -> 121;
+	273 -> 278 [
+		color=darkgreen
+		cond=true
+	];
+	273 -> 289 [
+		color=red
+		cond=false
+	];
+	292 -> 296;
+	278 -> 282 [
+		color=darkgreen
+		cond=true
+	];
+	278 -> 283 [
+		color=red
+		cond=false
+	];
+	289 -> 292;
+	283 -> 289;
 }

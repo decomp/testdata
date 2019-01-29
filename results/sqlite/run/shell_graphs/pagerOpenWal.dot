@@ -1,6 +1,6 @@
-digraph "pagerOpenWal" {
+strict digraph "pagerOpenWal" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	11;
 	14;
@@ -9,20 +9,20 @@ digraph "pagerOpenWal" {
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 11;
 	11 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 34;
 }

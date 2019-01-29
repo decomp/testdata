@@ -1,41 +1,41 @@
-digraph "sqlite3SafetyCheckOk" {
+strict digraph "sqlite3SafetyCheckOk" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
 	8;
+	21;
 	14;
+	20;
 	18;
 	19;
-	20;
-	21;
 
 	// Edge definitions.
 	1 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 21;
 	8 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
+	20 -> 21;
 	18 -> 19;
 	19 -> 21;
-	20 -> 21;
 }

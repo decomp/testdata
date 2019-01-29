@@ -1,63 +1,63 @@
-digraph "cycle_check" {
+strict digraph "cycle_check" {
 	// Node definitions.
-	2 [label=entry];
-	6;
+	2 [entry=true];
 	7;
+	6;
+	23;
 	11;
 	17;
-	23;
+	34;
 	27;
 	29;
-	36;
 
 	// Edge definitions.
-	2 -> 6 [
-		color=red
-		label=false
-	];
 	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 11 [
+	2 -> 6 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 17 [
-		color=darkgreen
-		label=true
-	];
-	11 -> 23 [
+	7 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 23 [
+	23 -> 34 [
 		color=red
-		label=false
-	];
-	17 -> 36 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	23 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 36 [
+	11 -> 23 [
 		color=red
-		label=false
+		cond=false
+	];
+	11 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	17 -> 23 [
+		color=red
+		cond=false
+	];
+	17 -> 34 [
+		color=darkgreen
+		cond=true
+	];
+	27 -> 34 [
+		color=darkgreen
+		cond=true
 	];
 	27 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 36 [
-		color=darkgreen
-		label=true
-	];
-	29 -> 36;
+	29 -> 34;
 }

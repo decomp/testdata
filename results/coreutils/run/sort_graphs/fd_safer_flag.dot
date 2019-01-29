@@ -1,0 +1,17 @@
+strict digraph "fd_safer_flag" {
+	// Node definitions.
+	2 [entry=true];
+	4;
+	9;
+
+	// Edge definitions.
+	2 -> 4 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 9 [
+		color=red
+		cond=false
+	];
+	4 -> 9;
+}

@@ -1,0 +1,17 @@
+strict digraph "sqlite3UpsertDelete" {
+	// Node definitions.
+	2 [entry=true];
+	7;
+	27;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 27 [
+		color=red
+		cond=false
+	];
+	7 -> 27;
+}

@@ -1,30 +1,30 @@
-digraph "completionConnect" {
+strict digraph "completionConnect" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	24;
+	39;
 	32;
 	33;
-	39;
 	41;
 
 	// Edge definitions.
 	6 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
+	39 -> 41;
 	32 -> 41;
 	33 -> 39;
-	39 -> 41;
 }

@@ -1,0 +1,32 @@
+strict digraph "sqlite3RenameExprlistUnmap" {
+	// Node definitions.
+	2 [entry=true];
+	9;
+	35;
+	16;
+	22;
+	34;
+	31;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 35 [
+		color=red
+		cond=false
+	];
+	9 -> 16;
+	16 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 34 [
+		color=red
+		cond=false
+	];
+	22 -> 31;
+	34 -> 35;
+	31 -> 16;
+}

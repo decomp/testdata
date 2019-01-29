@@ -1,6 +1,6 @@
-digraph "cleanup" {
+strict digraph "cleanup" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	3;
 	9;
 	12;
@@ -9,18 +9,18 @@ digraph "cleanup" {
 	// Edge definitions.
 	0 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 }

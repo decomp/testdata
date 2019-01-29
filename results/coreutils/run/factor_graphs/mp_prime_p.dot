@@ -1,115 +1,105 @@
-digraph "mp_prime_p" {
+strict digraph "mp_prime_p" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	78;
 	14;
 	17;
 	24;
-	27;
+	74;
 	29;
+	27;
+	52;
+	67;
 	33;
-	34;
+	43;
+	54;
 	44;
-	45;
-	51;
-	53;
-	55;
-	56;
-	60;
-	61;
-	70;
-	71;
-	72;
-	79;
-	83;
+	50;
+	58;
 
 	// Edge definitions.
+	1 -> 78 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 83 [
+	14 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 17 [
 		color=red
-		label=false
-	];
-	14 -> 83 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	17 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 79 [
+	17 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 29;
-	27 -> 29 [
+	74 -> 78;
+	29 -> 67 [
 		color=darkgreen
-		label=true
-	];
-	27 -> 53 [
-		color=red
-		label=false
+		cond=true
 	];
 	29 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 71 [
+	27 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 34;
-	34 -> 34 [
-		color=darkgreen
-		label=true
-	];
-	34 -> 44 [
+	27 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
-	44 -> 45 [
-		color=red
-		label=false
-	];
-	44 -> 55 [
+	67 -> 74;
+	33 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	45 -> 27 [
-		color=darkgreen
-		label=true
-	];
-	45 -> 51 [
+	33 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
-	51 -> 56;
-	55 -> 56;
-	56 -> 60 [
-		color=red
-		label=false
-	];
-	56 -> 72 [
+	43 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 61;
-	61 -> 61 [
-		color=darkgreen
-		label=true
-	];
-	61 -> 70 [
+	43 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	70 -> 72;
-	71 -> 72;
-	72 -> 79;
-	79 -> 83;
+	54 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 58 [
+		color=red
+		cond=false
+	];
+	44 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	44 -> 50 [
+		color=red
+		cond=false
+	];
+	50 -> 54;
+	58 -> 67 [
+		color=red
+		cond=false
+	];
+	58 -> 58 [
+		color=darkgreen
+		cond=true
+	];
 }

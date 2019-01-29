@@ -1,17 +1,17 @@
-digraph "sqlite3MutexEnd" {
+strict digraph "sqlite3MutexEnd" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	4;
 	7;
 
 	// Edge definitions.
 	0 -> 4 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	4 -> 7;
 }

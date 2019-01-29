@@ -1,191 +1,192 @@
-digraph "base32_decode_ctx" {
+strict digraph "base32_decode_ctx" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	13;
 	17;
 	23;
+	39;
 	27;
 	30;
-	31;
-	38;
-	40;
+	37;
 	46;
+	121;
+	56;
 	48;
 	52;
-	56;
-	60;
-	66;
-	68;
-	69;
-	73;
-	76;
-	79;
-	82;
-	83;
-	86;
-	91;
-	93;
+	117;
+	62;
 	100;
-	101;
-	102;
-	107;
-	112;
-	116;
-	121;
-	124;
+	64;
+	65;
+	75;
+	69;
+	72;
+	109;
+	78;
+	95;
+	81;
+	93;
+	86;
+	105;
+	114;
 
 	// Edge definitions.
 	5 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 17;
 	17 -> 23;
-	23 -> 27 [
+	23 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 40 [
+	23 -> 27 [
 		color=red
-		label=false
+		cond=false
+	];
+	39 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 121 [
+		color=red
+		cond=false
+	];
+	27 -> 39 [
+		color=red
+		cond=false
 	];
 	27 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 40 [
-		color=red
-		label=false
-	];
-	30 -> 31;
-	31 -> 31 [
+	30 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 38 [
+	30 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	38 -> 40;
-	40 -> 46 [
-		color=red
-		label=false
-	];
-	40 -> 124 [
+	37 -> 39;
+	46 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	46 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	46 -> 60 [
+	56 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	56 -> 100 [
+		color=red
+		cond=false
+	];
+	48 -> 56 [
+		color=darkgreen
+		cond=true
 	];
 	48 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 60 [
+	52 -> 117;
+	117 -> 23;
+	62 -> 64 [
+		cond="case (x=8)"
+		label="case (x=8)"
+	];
+	62 -> 65 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	62 -> 75 [
+		cond="default case"
+		label="default case"
+	];
+	100 -> 121 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 56;
-	56 -> 23;
-	60 -> 66 [
-		color=darkgreen
-		label=true
-	];
-	60 -> 107 [
+	100 -> 105 [
 		color=red
-		label=false
+		cond=false
 	];
-	66 -> 68 [label="case (x=8)"];
-	66 -> 69 [label="case (x=0)"];
-	66 -> 79 [label="default case"];
-	68 -> 69;
-	69 -> 73 [
-		color=darkgreen
-		label=true
-	];
-	69 -> 79 [
+	64 -> 65;
+	65 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	73 -> 76 [
+	65 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	73 -> 79 [
-		color=red
-		label=false
-	];
-	76 -> 116;
-	79 -> 82 [
+	75 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	79 -> 102 [
+	75 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
-	82 -> 83;
-	83 -> 86;
-	86 -> 91 [
+	69 -> 75 [
+		color=red
+		cond=false
+	];
+	69 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	86 -> 93 [
+	72 -> 109;
+	109 -> 121 [
 		color=red
-		label=false
+		cond=false
 	];
-	91 -> 86 [
+	109 -> 114 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	91 -> 100 [
-		color=red
-		label=false
-	];
-	93 -> 83 [
+	78 -> 81;
+	95 -> 100;
+	81 -> 93 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	93 -> 101 [
+	81 -> 86 [
 		color=red
-		label=false
+		cond=false
 	];
-	100 -> 102;
-	101 -> 102;
-	102 -> 107;
-	107 -> 112 [
+	93 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
-	107 -> 124 [
+	93 -> 81 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	112 -> 116 [
-		color=red
-		label=false
-	];
-	112 -> 124 [
+	86 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	116 -> 121 [
-		color=darkgreen
-		label=true
-	];
-	116 -> 124 [
+	86 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
-	121 -> 56;
+	105 -> 121 [
+		color=red
+		cond=false
+	];
+	105 -> 109 [
+		color=darkgreen
+		cond=true
+	];
+	114 -> 117;
 }

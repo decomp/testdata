@@ -1,6 +1,6 @@
-digraph "vdbeSafetyNotNull" {
+strict digraph "vdbeSafetyNotNull" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	7;
 	10;
@@ -8,11 +8,11 @@ digraph "vdbeSafetyNotNull" {
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 10;
 	7 -> 10;

@@ -1,68 +1,83 @@
-digraph "generateOutputSubroutine" {
+strict digraph "generateOutputSubroutine" {
 	// Node definitions.
-	8 [label=entry];
+	8 [entry=true];
 	35;
 	75;
 	82;
 	83;
+	227;
 	93;
 	125;
-	164;
-	172;
-	177;
-	190;
-	206;
-	222;
-	227;
-	234;
-	241;
+	157;
+	165;
+	199;
+	208;
+	170;
+	183;
+	213;
+	220;
 
 	// Edge definitions.
 	8 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 75;
 	75 -> 82 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	75 -> 83 [
 		color=red
-		label=false
+		cond=false
 	];
-	82 -> 241;
-	83 -> 93 [label="case (x=12)"];
-	83 -> 125 [label="case (x=11)"];
-	83 -> 164 [label="case (x=10)"];
-	83 -> 172 [label="case (x=13)"];
-	83 -> 206 [label="default case"];
-	93 -> 222;
-	125 -> 222;
-	164 -> 222;
-	172 -> 177 [
+	82 -> 227;
+	83 -> 93 [
+		cond="case (x=12)"
+		label="case (x=12)"
+	];
+	83 -> 125 [
+		cond="case (x=11)"
+		label="case (x=11)"
+	];
+	83 -> 157 [
+		cond="case (x=10)"
+		label="case (x=10)"
+	];
+	83 -> 165 [
+		cond="case (x=13)"
+		label="case (x=13)"
+	];
+	83 -> 199 [
+		cond="default case"
+		label="default case"
+	];
+	93 -> 208;
+	125 -> 208;
+	157 -> 208;
+	165 -> 170 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	172 -> 190 [
+	165 -> 183 [
 		color=red
-		label=false
+		cond=false
 	];
-	177 -> 190;
-	190 -> 222;
-	206 -> 222;
-	222 -> 227 [
+	199 -> 208;
+	208 -> 213 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	222 -> 234 [
+	208 -> 220 [
 		color=red
-		label=false
+		cond=false
 	];
-	227 -> 234;
-	234 -> 241;
+	170 -> 183;
+	183 -> 208;
+	213 -> 220;
+	220 -> 227;
 }

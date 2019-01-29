@@ -1,39 +1,63 @@
-digraph "sqlite3LockAndPrepare" {
+strict digraph "sqlite3LockAndPrepare" {
 	// Node definitions.
-	7 [label=entry];
-	21;
-	24;
-	26;
+	7 [entry=true];
+	22;
+	25;
+	27;
+	65;
+	32;
 	41;
-	53;
-	59;
+	54;
+	44;
+	47;
+	52;
+	56;
 
 	// Edge definitions.
-	7 -> 21 [
+	7 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 24 [
+	7 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 24 [
+	22 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	21 -> 26 [
+	22 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 59;
-	26 -> 41 [
+	25 -> 65;
+	27 -> 32;
+	32 -> 41;
+	41 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 53 [
+	41 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 53;
-	53 -> 59;
+	54 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 56 [
+		color=red
+		cond=false
+	];
+	44 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	44 -> 52 [
+		color=red
+		cond=false
+	];
+	47 -> 52;
+	52 -> 54;
+	56 -> 65;
 }

@@ -1,35 +1,35 @@
-digraph "sqlite3PagerDontWrite" {
+strict digraph "sqlite3PagerDontWrite" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	36;
 	11;
 	18;
 	23;
-	36;
 
 	// Edge definitions.
-	1 -> 11 [
-		color=red
-		label=false
-	];
 	1 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 18 [
-		color=darkgreen
-		label=true
+	1 -> 11 [
+		color=red
+		cond=false
 	];
 	11 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 23 [
+	11 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 36 [
 		color=red
-		label=false
+		cond=false
+	];
+	18 -> 23 [
+		color=darkgreen
+		cond=true
 	];
 	23 -> 36;
 }

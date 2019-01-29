@@ -1,0 +1,130 @@
+strict digraph "idxCreateFromCons" {
+	// Node definitions.
+	4 [entry=true];
+	28;
+	25;
+	137;
+	35;
+	40;
+	43;
+	52;
+	48;
+	54;
+	57;
+	66;
+	62;
+	69;
+	135;
+	75;
+	82;
+	97;
+	94;
+	103;
+	104;
+	134;
+	108;
+	109;
+	110;
+	119;
+	118;
+	131;
+
+	// Edge definitions.
+	4 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 25 [
+		color=red
+		cond=false
+	];
+	28 -> 137 [
+		color=red
+		cond=false
+	];
+	28 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 137 [
+		color=red
+		cond=false
+	];
+	35 -> 40;
+	40 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 52 [
+		color=red
+		cond=false
+	];
+	43 -> 48;
+	52 -> 54;
+	48 -> 40;
+	54 -> 57 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 66 [
+		color=red
+		cond=false
+	];
+	57 -> 62;
+	66 -> 69 [
+		color=darkgreen
+		cond=true
+	];
+	66 -> 135 [
+		color=red
+		cond=false
+	];
+	62 -> 54;
+	69 -> 75;
+	135 -> 137;
+	75 -> 82 [
+		color=darkgreen
+		cond=true
+	];
+	75 -> 97 [
+		color=red
+		cond=false
+	];
+	82 -> 94;
+	97 -> 103 [
+		color=darkgreen
+		cond=true
+	];
+	97 -> 104 [
+		color=red
+		cond=false
+	];
+	94 -> 75;
+	103 -> 134;
+	104 -> 108 [
+		color=darkgreen
+		cond=true
+	];
+	104 -> 109 [
+		color=red
+		cond=false
+	];
+	134 -> 135;
+	108 -> 110;
+	109 -> 110;
+	110 -> 119 [
+		color=darkgreen
+		cond=true
+	];
+	110 -> 118 [
+		color=red
+		cond=false
+	];
+	119 -> 131;
+	118 -> 131;
+	131 -> 134;
+}

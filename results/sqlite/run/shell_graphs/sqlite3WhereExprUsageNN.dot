@@ -1,0 +1,113 @@
+strict digraph "sqlite3WhereExprUsageNN" {
+	// Node definitions.
+	2 [entry=true];
+	12;
+	24;
+	18;
+	115;
+	30;
+	31;
+	32;
+	38;
+	44;
+	45;
+	51;
+	59;
+	64;
+	72;
+	113;
+	78;
+	96;
+	84;
+	87;
+	112;
+	102;
+	111;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 24 [
+		color=red
+		cond=false
+	];
+	12 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 18 [
+		color=red
+		cond=false
+	];
+	24 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 31 [
+		color=red
+		cond=false
+	];
+	18 -> 115;
+	30 -> 115;
+	31 -> 32;
+	32 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	32 -> 44 [
+		color=red
+		cond=false
+	];
+	38 -> 45;
+	44 -> 45;
+	45 -> 51 [
+		color=darkgreen
+		cond=true
+	];
+	45 -> 59 [
+		color=red
+		cond=false
+	];
+	51 -> 59;
+	59 -> 64 [
+		color=darkgreen
+		cond=true
+	];
+	59 -> 72 [
+		color=red
+		cond=false
+	];
+	64 -> 113;
+	72 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 96 [
+		color=red
+		cond=false
+	];
+	113 -> 115;
+	78 -> 84 [
+		color=darkgreen
+		cond=true
+	];
+	78 -> 87 [
+		color=red
+		cond=false
+	];
+	96 -> 102 [
+		color=darkgreen
+		cond=true
+	];
+	96 -> 111 [
+		color=red
+		cond=false
+	];
+	84 -> 87;
+	87 -> 112;
+	112 -> 113;
+	102 -> 111;
+	111 -> 112;
+}

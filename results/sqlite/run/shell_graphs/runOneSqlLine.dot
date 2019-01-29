@@ -1,87 +1,87 @@
-digraph "runOneSqlLine" {
+strict digraph "runOneSqlLine" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	19;
 	21;
 	30;
-	33;
+	27;
+	61;
 	36;
-	39;
+	33;
+	40;
 	43;
 	46;
-	49;
-	55;
-	63;
-	64;
-	70;
-	83;
-	84;
-	85;
+	52;
+	60;
+	82;
+	67;
+	80;
+	81;
 
 	// Edge definitions.
 	4 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 21;
 	21 -> 30 [
-		color=red
-		label=false
-	];
-	21 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	21 -> 27 [
+		color=red
+		cond=false
+	];
+	30 -> 36 [
+		color=darkgreen
+		cond=true
 	];
 	30 -> 33 [
-		color=darkgreen
-		label=true
-	];
-	30 -> 64 [
 		color=red
-		label=false
+		cond=false
 	];
+	27 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	27 -> 61 [
+		color=red
+		cond=false
+	];
+	61 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	61 -> 80 [
+		color=red
+		cond=false
+	];
+	36 -> 43;
 	33 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 39 [
+	33 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 39 [
+	40 -> 43;
+	43 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
-	36 -> 43 [
-		color=darkgreen
-		label=true
-	];
-	39 -> 46;
-	43 -> 46;
-	46 -> 49 [
-		color=darkgreen
-		label=true
-	];
-	46 -> 55 [
-		color=red
-		label=false
-	];
-	49 -> 63;
-	55 -> 63;
-	63 -> 85;
-	64 -> 70 [
-		color=darkgreen
-		label=true
-	];
-	64 -> 83 [
-		color=red
-		label=false
-	];
-	70 -> 83;
-	83 -> 84;
-	84 -> 85;
+	46 -> 60;
+	52 -> 60;
+	60 -> 82;
+	67 -> 80;
+	80 -> 81;
+	81 -> 82;
 }

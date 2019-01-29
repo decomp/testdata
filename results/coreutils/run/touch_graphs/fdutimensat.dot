@@ -1,66 +1,66 @@
-digraph "fdutimensat" {
+strict digraph "fdutimensat" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	7;
 	9;
+	22;
 	12;
+	20;
 	14;
 	16;
-	20;
-	22;
-	25;
 	27;
+	25;
 
 	// Edge definitions.
 	5 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 9;
-	9 -> 12 [
-		color=red
-		label=false
-	];
 	9 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 14 [
+	9 -> 12 [
 		color=red
-		label=false
-	];
-	12 -> 20 [
-		color=darkgreen
-		label=true
-	];
-	14 -> 16 [
-		color=darkgreen
-		label=true
-	];
-	14 -> 22 [
-		color=red
-		label=false
-	];
-	16 -> 20 [
-		color=darkgreen
-		label=true
-	];
-	16 -> 27 [
-		color=red
-		label=false
-	];
-	20 -> 22;
-	22 -> 25 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	22 -> 27 [
 		color=red
-		label=false
+		cond=false
+	];
+	22 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 14 [
+		color=red
+		cond=false
+	];
+	20 -> 22;
+	14 -> 22 [
+		color=red
+		cond=false
+	];
+	14 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 27 [
+		color=red
+		cond=false
 	];
 	25 -> 27;
 }

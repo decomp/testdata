@@ -1,17 +1,17 @@
-digraph "sqlite3WalEndWriteTransaction" {
+strict digraph "sqlite3WalEndWriteTransaction" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
 	15;
 
 	// Edge definitions.
 	1 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 15;
 }

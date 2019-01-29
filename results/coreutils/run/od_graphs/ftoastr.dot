@@ -1,46 +1,42 @@
-digraph "ftoastr" {
+strict digraph "ftoastr" {
 	// Node definitions.
-	5 [label=entry];
-	41;
-	42;
-	47;
-	50;
-	56;
-	58;
+	5 [entry=true];
+	54;
+	40;
+	45;
+	48;
 
 	// Edge definitions.
-	5 -> 41 [
-		color=red
-		label=false
-	];
-	5 -> 58 [
+	5 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 42;
-	42 -> 47 [
-		color=darkgreen
-		label=true
-	];
-	42 -> 50 [
+	5 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
-	47 -> 50 [
-		color=red
-		label=false
-	];
-	47 -> 56 [
+	40 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	50 -> 42 [
+	40 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	50 -> 56 [
+	45 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	56 -> 58;
+	45 -> 48 [
+		color=red
+		cond=false
+	];
+	48 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 40 [
+		color=red
+		cond=false
+	];
 }

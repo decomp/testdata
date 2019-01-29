@@ -1,81 +1,77 @@
-digraph "areadlink_with_size" {
+strict digraph "areadlink_with_size" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	34;
 	8;
-	9;
-	14;
+	13;
 	18;
-	19;
-	21;
-	23;
-	25;
-	27;
-	31;
-	33;
-	35;
-	36;
+	17;
+	20;
+	22;
+	24;
+	26;
+	30;
+	28;
 
 	// Edge definitions.
+	2 -> 34 [
+		color=darkgreen
+		cond=true
+	];
 	2 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
-	2 -> 36 [
+	8 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 9;
-	9 -> 14 [
-		color=darkgreen
-		label=true
-	];
-	9 -> 19 [
+	8 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 18 [
-		color=red
-		label=false
-	];
-	14 -> 19 [
+	13 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 36;
-	19 -> 21 [
-		color=darkgreen
-		label=true
-	];
-	19 -> 23 [
+	13 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 36;
-	23 -> 25 [
+	18 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 31 [
+	18 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 27;
-	27 -> 9 [
-		color=red
-		label=false
-	];
-	27 -> 35 [
+	17 -> 34;
+	20 -> 34;
+	22 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 27 [
-		color=darkgreen
-		label=true
-	];
-	31 -> 33 [
+	22 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 36;
-	35 -> 36;
+	24 -> 30;
+	26 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 28 [
+		color=red
+		cond=false
+	];
+	30 -> 34 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 8 [
+		color=red
+		cond=false
+	];
+	28 -> 34;
 }

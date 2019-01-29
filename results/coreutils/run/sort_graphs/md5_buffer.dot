@@ -1,17 +1,17 @@
-digraph "md5_buffer" {
+strict digraph "md5_buffer" {
 	// Node definitions.
-	3 [label=entry];
-	17;
+	3 [entry=true];
+	16;
 	19;
 
 	// Edge definitions.
-	3 -> 17 [
+	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 19;
+	16 -> 19;
 }

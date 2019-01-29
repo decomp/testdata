@@ -1,50 +1,50 @@
-digraph "walDecodeFrame" {
+strict digraph "walDecodeFrame" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	27;
 	28;
+	77;
 	34;
 	35;
-	61;
 	69;
+	61;
 	70;
-	77;
 
 	// Edge definitions.
 	5 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 77;
 	28 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	34 -> 77;
-	35 -> 61 [
-		color=red
-		label=false
-	];
 	35 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	35 -> 61 [
+		color=red
+		cond=false
+	];
+	69 -> 77;
 	61 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	61 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
-	69 -> 77;
 	70 -> 77;
 }

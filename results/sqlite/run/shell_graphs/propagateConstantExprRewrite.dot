@@ -1,0 +1,78 @@
+strict digraph "propagateConstantExprRewrite" {
+	// Node definitions.
+	2 [entry=true];
+	14;
+	15;
+	100;
+	21;
+	22;
+	27;
+	33;
+	99;
+	45;
+	46;
+	96;
+	54;
+	55;
+	65;
+	66;
+
+	// Edge definitions.
+	2 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 15 [
+		color=red
+		cond=false
+	];
+	14 -> 100;
+	15 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 22 [
+		color=red
+		cond=false
+	];
+	21 -> 100;
+	22 -> 27;
+	27 -> 33 [
+		color=darkgreen
+		cond=true
+	];
+	27 -> 99 [
+		color=red
+		cond=false
+	];
+	33 -> 45 [
+		color=darkgreen
+		cond=true
+	];
+	33 -> 46 [
+		color=red
+		cond=false
+	];
+	99 -> 100;
+	45 -> 96;
+	46 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	46 -> 55 [
+		color=red
+		cond=false
+	];
+	96 -> 27;
+	54 -> 96;
+	55 -> 65 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 66 [
+		color=red
+		cond=false
+	];
+	65 -> 96;
+	66 -> 99;
+}

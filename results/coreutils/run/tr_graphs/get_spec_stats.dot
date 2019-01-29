@@ -1,97 +1,111 @@
-digraph "get_spec_stats" {
+strict digraph "get_spec_stats" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
+	112;
 	16;
-	19;
+	103;
 	22;
+	36;
+	19;
+	96;
+	102;
+	52;
 	30;
 	31;
-	36;
-	43;
-	44;
-	47;
-	48;
-	60;
-	61;
-	62;
-	106;
+	41;
+	40;
+	50;
+	51;
+	100;
 	110;
-	112;
-	113;
-	120;
-	122;
 
 	// Edge definitions.
 	1 -> 9;
+	9 -> 112 [
+		color=darkgreen
+		cond=true
+	];
 	9 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 122 [
+	16 -> 103 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	16 -> 22 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	16 -> 36 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	16 -> 19 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	16 -> 96 [
+		cond="case (x=4)"
+		label="case (x=4)"
+	];
+	16 -> 102 [
+		cond="default case"
+		label="default case"
+	];
+	103 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 19 [label="case (x=3)"];
-	16 -> 22 [label="case (x=1)"];
-	16 -> 36 [label="case (x=2)"];
-	16 -> 106 [label="case (x=4)"];
-	16 -> 112 [label="default case"];
-	16 -> 113 [label="case (x=0)"];
-	19 -> 62;
+	103 -> 110 [
+		color=red
+		cond=false
+	];
 	22 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 113;
-	36 -> 44;
-	43 -> 60 [label="default case"];
-	43 -> 113 [label="case (x=6)"];
-	44 -> 47 [
+	36 -> 41;
+	19 -> 52;
+	96 -> 103 [
 		color=red
-		label=false
+		cond=false
 	];
-	44 -> 48 [
+	96 -> 100 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	48 -> 43 [
+	52 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 44 [
+	52 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 113;
-	61 -> 113;
-	62 -> 61 [
-		color=darkgreen
-		label=true
-	];
-	62 -> 62 [
+	31 -> 103;
+	41 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	106 -> 110 [
+	41 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	106 -> 113 [
-		color=red
-		label=false
+	40 -> 103 [
+		cond="case (x=6)"
+		label="case (x=6)"
 	];
-	110 -> 113;
-	113 -> 9 [
-		color=darkgreen
-		label=true
+	40 -> 50 [
+		cond="default case"
+		label="default case"
 	];
-	113 -> 120 [
-		color=red
-		label=false
-	];
+	50 -> 103;
+	51 -> 103;
+	100 -> 103;
 }

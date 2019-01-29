@@ -1,107 +1,105 @@
-digraph "print_with_separator" {
+strict digraph "print_with_separator" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	62;
 	4;
 	6;
-	15;
 	17;
-	20;
-	24;
-	30;
-	31;
-	40;
-	42;
-	44;
-	51;
-	53;
+	15;
 	56;
-	62;
-	63;
-	70;
-	72;
-	74;
+	20;
+	30;
+	24;
+	31;
+	42;
+	40;
+	44;
+	53;
+	51;
+	71;
+	69;
+	73;
 
 	// Edge definitions.
+	1 -> 62 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 4 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 63 [
+	62 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	62 -> 69 [
+		color=red
+		cond=false
 	];
 	4 -> 6;
-	6 -> 15 [
-		color=red
-		label=false
-	];
 	6 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 17;
-	17 -> 20 [
+	6 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 24 [
+	17 -> 20 [
 		color=red
-		label=false
+		cond=false
+	];
+	15 -> 17;
+	56 -> 62 [
+		color=red
+		cond=false
+	];
+	56 -> 6 [
+		color=darkgreen
+		cond=true
 	];
 	20 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	20 -> 24 [
+		color=red
+		cond=false
+	];
+	30 -> 31;
 	24 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 31 [
 		color=darkgreen
-		label=true
-	];
-	30 -> 31;
-	31 -> 40 [
-		color=red
-		label=false
+		cond=true
 	];
 	31 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 44;
-	42 -> 44;
-	44 -> 51 [
+	31 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
+	42 -> 44;
+	40 -> 44;
 	44 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	51 -> 56;
+	44 -> 51 [
+		color=red
+		cond=false
+	];
 	53 -> 56;
-	56 -> 6 [
-		color=darkgreen
-		label=true
-	];
-	56 -> 62 [
-		color=red
-		label=false
-	];
-	62 -> 63;
-	63 -> 70 [
-		color=red
-		label=false
-	];
-	63 -> 72 [
-		color=darkgreen
-		label=true
-	];
-	70 -> 74;
-	72 -> 74;
+	51 -> 56;
+	71 -> 73;
+	69 -> 73;
 }

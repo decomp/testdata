@@ -1,0 +1,16 @@
+strict digraph "c_isxdigit" {
+	// Node definitions.
+	1 [entry=true];
+	4;
+	9;
+
+	// Edge definitions.
+	1 -> 4 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 9 [
+		color=red
+		cond=false
+	];
+}

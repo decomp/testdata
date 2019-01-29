@@ -1,6 +1,6 @@
-digraph "sqlite3SelectWrongNumTermsError" {
+strict digraph "sqlite3SelectWrongNumTermsError" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	12;
 	19;
@@ -8,11 +8,11 @@ digraph "sqlite3SelectWrongNumTermsError" {
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 19;
 	12 -> 19;

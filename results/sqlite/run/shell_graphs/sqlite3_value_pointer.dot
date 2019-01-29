@@ -1,46 +1,46 @@
-digraph "sqlite3_value_pointer" {
+strict digraph "sqlite3_value_pointer" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
+	35;
 	17;
 	23;
 	31;
-	35;
 	36;
 
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 35 [
 		color=red
-		label=false
-	];
-	14 -> 17 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	14 -> 35 [
 		color=red
-		label=false
+		cond=false
+	];
+	14 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	35 -> 36;
+	17 -> 35 [
+		color=red
+		cond=false
 	];
 	17 -> 23 [
 		color=darkgreen
-		label=true
-	];
-	17 -> 35 [
-		color=red
-		label=false
-	];
-	23 -> 31 [
-		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 35 [
 		color=red
-		label=false
+		cond=false
+	];
+	23 -> 31 [
+		color=darkgreen
+		cond=true
 	];
 	31 -> 36;
-	35 -> 36;
 }

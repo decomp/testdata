@@ -1,6 +1,6 @@
-digraph "exprListDeleteNN" {
+strict digraph "exprListDeleteNN" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
 	28;
 	32;
@@ -10,10 +10,10 @@ digraph "exprListDeleteNN" {
 	13 -> 28;
 	28 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
 }

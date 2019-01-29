@@ -1,6 +1,6 @@
-digraph "can_write_any_file" {
+strict digraph "can_write_any_file" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	2;
 	4;
 	8;
@@ -8,11 +8,11 @@ digraph "can_write_any_file" {
 	// Edge definitions.
 	0 -> 2 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 4 [
 		color=red
-		label=false
+		cond=false
 	];
 	2 -> 8;
 	4 -> 8;

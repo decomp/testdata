@@ -1,6 +1,6 @@
-digraph "sqlite3_blob_close" {
+strict digraph "sqlite3_blob_close" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	27;
 	28;
@@ -8,11 +8,11 @@ digraph "sqlite3_blob_close" {
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 28;
 	27 -> 28;

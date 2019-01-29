@@ -1,16 +1,16 @@
-digraph "gen_tempname_len" {
+strict digraph "gen_tempname_len" {
 	// Node definitions.
-	5 [label=entry];
-	8;
+	5 [entry=true];
 	9;
+	8;
 
 	// Edge definitions.
-	5 -> 8 [
-		color=red
-		label=false
-	];
 	5 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	5 -> 8 [
+		color=red
+		cond=false
 	];
 }

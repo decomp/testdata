@@ -1,11 +1,11 @@
-digraph "whereRangeScanEst" {
+strict digraph "whereRangeScanEst" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	29;
+	49;
 	35;
 	38;
 	44;
-	49;
 	62;
 	63;
 	68;
@@ -14,53 +14,53 @@ digraph "whereRangeScanEst" {
 	// Edge definitions.
 	5 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 49 [
 		color=red
-		label=false
-	];
-	29 -> 35 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	29 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
-	35 -> 38 [
+	29 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 49 [
-		color=red
-		label=false
-	];
-	38 -> 44 [
-		color=darkgreen
-		label=true
-	];
-	38 -> 49 [
-		color=red
-		label=false
-	];
-	44 -> 49;
 	49 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 63 [
 		color=red
-		label=false
+		cond=false
 	];
+	35 -> 49 [
+		color=red
+		cond=false
+	];
+	35 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 49 [
+		color=red
+		cond=false
+	];
+	38 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	44 -> 49;
 	62 -> 63;
 	63 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	63 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
 	68 -> 71;
 }

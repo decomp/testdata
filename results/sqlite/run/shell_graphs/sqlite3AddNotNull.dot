@@ -1,28 +1,63 @@
-digraph "sqlite3AddNotNull" {
+strict digraph "sqlite3AddNotNull" {
 	// Node definitions.
-	2 [label=entry];
-	11;
-	17;
-	18;
-	36;
+	2 [entry=true];
+	19;
+	13;
+	20;
+	77;
+	45;
+	49;
+	52;
+	76;
+	65;
+	71;
+	72;
 
 	// Edge definitions.
-	2 -> 11 [
-		color=red
-		label=false
-	];
-	2 -> 17 [
+	2 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 17 [
-		color=darkgreen
-		label=true
-	];
-	11 -> 18 [
+	2 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 36;
-	18 -> 36;
+	19 -> 77;
+	13 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 20 [
+		color=red
+		cond=false
+	];
+	20 -> 77 [
+		color=red
+		cond=false
+	];
+	20 -> 45 [
+		color=darkgreen
+		cond=true
+	];
+	45 -> 49;
+	49 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 76 [
+		color=red
+		cond=false
+	];
+	52 -> 65 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 71 [
+		color=red
+		cond=false
+	];
+	76 -> 77;
+	65 -> 71;
+	71 -> 72;
+	72 -> 49;
 }

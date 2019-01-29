@@ -1,15 +1,18 @@
-digraph "fkActionTrigger" {
+strict digraph "fkActionTrigger" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	49;
-	55;
 	56;
+	55;
+	388;
 	65;
+	386;
 	68;
 	74;
 	75;
 	76;
 	82;
+	229;
 	87;
 	93;
 	99;
@@ -19,237 +22,243 @@ digraph "fkActionTrigger" {
 	152;
 	171;
 	174;
-	177;
+	225;
 	180;
+	177;
 	183;
 	190;
+	218;
 	193;
+	214;
 	206;
 	210;
 	213;
-	214;
 	217;
-	218;
-	225;
 	226;
-	229;
 	242;
+	263;
 	251;
 	254;
-	263;
 	278;
+	322;
 	312;
 	321;
-	322;
 	341;
 	344;
 	346;
 	349;
-	352;
-	355;
 	356;
 	359;
-	385;
-	387;
+	355;
+	352;
 
 	// Edge definitions.
 	4 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 56 [
 		color=red
-		label=false
-	];
-	49 -> 55 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	49 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
-	55 -> 387;
+	49 -> 55 [
+		color=darkgreen
+		cond=true
+	];
 	56 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	56 -> 385 [
+	56 -> 386 [
 		color=red
-		label=false
+		cond=false
+	];
+	55 -> 388;
+	65 -> 386 [
+		color=darkgreen
+		cond=true
 	];
 	65 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
-	65 -> 385 [
-		color=darkgreen
-		label=true
-	];
+	386 -> 388;
 	68 -> 74 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
-	74 -> 387;
+	74 -> 388;
 	75 -> 76;
 	76 -> 82 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	76 -> 229 [
 		color=red
-		label=false
+		cond=false
 	];
 	82 -> 87 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	82 -> 93 [
 		color=red
-		label=false
+		cond=false
+	];
+	229 -> 242 [
+		color=darkgreen
+		cond=true
+	];
+	229 -> 263 [
+		color=red
+		cond=false
 	];
 	87 -> 99;
 	93 -> 99;
 	99 -> 106 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	99 -> 115 [
 		color=red
-		label=false
+		cond=false
 	];
 	106 -> 120;
 	115 -> 120;
 	120 -> 152 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	120 -> 171 [
 		color=red
-		label=false
+		cond=false
 	];
 	152 -> 171;
 	171 -> 174 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	171 -> 225 [
 		color=red
-		label=false
-	];
-	174 -> 177 [
-		color=red
-		label=false
+		cond=false
 	];
 	174 -> 180 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	177 -> 180 [
-		color=darkgreen
-		label=true
-	];
-	177 -> 225 [
+	174 -> 177 [
 		color=red
-		label=false
+		cond=false
 	];
+	225 -> 226;
 	180 -> 183 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	180 -> 190 [
 		color=red
-		label=false
+		cond=false
+	];
+	177 -> 225 [
+		color=red
+		cond=false
+	];
+	177 -> 180 [
+		color=darkgreen
+		cond=true
 	];
 	183 -> 218;
 	190 -> 193 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	190 -> 214 [
 		color=red
-		label=false
+		cond=false
 	];
+	218 -> 225;
 	193 -> 206 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	193 -> 210 [
 		color=red
-		label=false
+		cond=false
 	];
+	214 -> 217;
 	206 -> 213;
 	210 -> 213;
 	213 -> 217;
-	214 -> 217;
 	217 -> 218;
-	218 -> 225;
-	225 -> 226;
 	226 -> 76;
-	229 -> 242 [
-		color=darkgreen
-		label=true
-	];
-	229 -> 263 [
-		color=red
-		label=false
-	];
 	242 -> 251 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	242 -> 254 [
 		color=red
-		label=false
+		cond=false
 	];
-	251 -> 254;
-	254 -> 263;
 	263 -> 278 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	263 -> 322 [
 		color=red
-		label=false
+		cond=false
 	];
+	251 -> 254;
+	254 -> 263;
 	278 -> 312 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	278 -> 321 [
 		color=red
-		label=false
+		cond=false
 	];
-	312 -> 321;
-	321 -> 322;
 	322 -> 341 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	322 -> 344 [
 		color=red
-		label=false
+		cond=false
 	];
-	341 -> 387;
-	344 -> 346 [label="case (x=6)"];
-	344 -> 349 [label="case (x=9)"];
-	344 -> 356 [label="default case"];
+	312 -> 321;
+	321 -> 322;
+	341 -> 388;
+	344 -> 346 [
+		cond="case (x=7)"
+		label="case (x=7)"
+	];
+	344 -> 349 [
+		cond="case (x=10)"
+		label="case (x=10)"
+	];
+	344 -> 356 [
+		cond="default case"
+		label="default case"
+	];
 	346 -> 359;
-	349 -> 352 [
-		color=red
-		label=false
-	];
 	349 -> 355 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	352 -> 359;
-	355 -> 356;
+	349 -> 352 [
+		color=red
+		cond=false
+	];
 	356 -> 359;
-	359 -> 385;
-	385 -> 387;
+	359 -> 386;
+	355 -> 356;
+	352 -> 359;
 }

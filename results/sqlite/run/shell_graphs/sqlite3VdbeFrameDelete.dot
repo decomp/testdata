@@ -1,20 +1,20 @@
-digraph "sqlite3VdbeFrameDelete" {
+strict digraph "sqlite3VdbeFrameDelete" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	17;
 	23;
-	32;
 	35;
+	32;
 
 	// Edge definitions.
 	1 -> 17;
 	17 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 32;
 	32 -> 17;

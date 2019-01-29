@@ -1,0 +1,29 @@
+strict digraph "idxNewConstraint" {
+	// Node definitions.
+	2 [entry=true];
+	13;
+	14;
+	15;
+	26;
+	39;
+
+	// Edge definitions.
+	2 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 14 [
+		color=red
+		cond=false
+	];
+	13 -> 15;
+	15 -> 26 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 39 [
+		color=red
+		cond=false
+	];
+	26 -> 39;
+}

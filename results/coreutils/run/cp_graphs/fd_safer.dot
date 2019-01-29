@@ -1,17 +1,17 @@
-digraph "fd_safer" {
+strict digraph "fd_safer" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	3;
 	8;
 
 	// Edge definitions.
 	1 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
 	3 -> 8;
 }

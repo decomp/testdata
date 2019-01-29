@@ -1,0 +1,17 @@
+strict digraph "verify_uninitialized" {
+	// Node definitions.
+	0 [entry=true];
+	3;
+	6;
+
+	// Edge definitions.
+	0 -> 3 [
+		color=darkgreen
+		cond=true
+	];
+	0 -> 6 [
+		color=red
+		cond=false
+	];
+	3 -> 6;
+}

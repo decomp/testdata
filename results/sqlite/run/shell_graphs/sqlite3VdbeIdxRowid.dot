@@ -1,107 +1,107 @@
-digraph "sqlite3VdbeIdxRowid" {
+strict digraph "sqlite3VdbeIdxRowid" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	25;
 	27;
+	124;
 	33;
 	38;
 	43;
-	48;
 	53;
+	48;
 	54;
+	122;
 	64;
 	73;
 	82;
+	93;
 	87;
 	90;
-	93;
 	94;
 	106;
 	107;
-	122;
-	124;
 
 	// Edge definitions.
 	3 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 124;
 	27 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	33 -> 43;
 	38 -> 43;
-	43 -> 48 [
-		color=red
-		label=false
-	];
 	43 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	43 -> 48 [
+		color=red
+		cond=false
+	];
+	53 -> 122;
 	48 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	48 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 122;
 	54 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	54 -> 73 [
 		color=red
-		label=false
+		cond=false
 	];
+	122 -> 124;
 	64 -> 82;
 	73 -> 82;
-	82 -> 87 [
-		color=red
-		label=false
-	];
 	82 -> 93 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	82 -> 87 [
+		color=red
+		cond=false
+	];
+	93 -> 122;
+	87 -> 93 [
+		color=darkgreen
+		cond=true
 	];
 	87 -> 90 [
 		color=red
-		label=false
-	];
-	87 -> 93 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	90 -> 93 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	90 -> 94 [
 		color=red
-		label=false
+		cond=false
 	];
-	93 -> 122;
 	94 -> 106 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	94 -> 107 [
 		color=red
-		label=false
+		cond=false
 	];
 	106 -> 122;
 	107 -> 124;
-	122 -> 124;
 }

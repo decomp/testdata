@@ -1,38 +1,47 @@
-digraph "pthreadMutexAlloc" {
+strict digraph "pthreadMutexAlloc" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
+	19;
+	29;
 	11;
 	18;
-	19;
+	34;
 	24;
 	28;
-	29;
-	34;
 
 	// Edge definitions.
-	1 -> 6 [label="case (x=1)"];
-	1 -> 19 [label="case (x=0)"];
-	1 -> 29 [label="default case"];
+	1 -> 6 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	1 -> 19 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	1 -> 29 [
+		cond="default case"
+		label="default case"
+	];
 	6 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 18;
-	18 -> 34;
 	19 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
+	29 -> 34;
+	11 -> 18;
+	18 -> 34;
 	24 -> 28;
 	28 -> 34;
-	29 -> 34;
 }

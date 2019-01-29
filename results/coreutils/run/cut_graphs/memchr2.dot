@@ -1,103 +1,91 @@
-digraph "memchr2" {
+strict digraph "memchr2" {
 	// Node definitions.
-	4 [label=entry];
-	8;
-	14;
-	15;
+	4 [entry=true];
 	17;
-	25;
-	33;
-	34;
-	53;
-	54;
-	75;
-	76;
-	80;
+	11;
+	19;
+	35;
+	86;
+	27;
+	47;
+	68;
+	72;
+	74;
 	82;
-	90;
-	94;
-	96;
-	97;
 
 	// Edge definitions.
-	4 -> 8 [
-		color=red
-		label=false
-	];
-	4 -> 15 [
+	4 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 14 [
-		color=darkgreen
-		label=true
-	];
-	8 -> 34 [
+	4 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 17;
-	15 -> 97;
-	17 -> 25 [
-		color=red
-		label=false
-	];
-	17 -> 96 [
+	17 -> 86;
+	11 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	25 -> 17 [
-		color=darkgreen
-		label=true
-	];
-	25 -> 33 [
+	11 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 34;
-	34 -> 53 [
+	19 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	34 -> 76 [
+	19 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 54;
-	54 -> 54 [
+	35 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	54 -> 75 [
+	35 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
-	75 -> 76;
-	76 -> 80 [
-		color=red
-		label=false
-	];
-	76 -> 97 [
+	27 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	80 -> 82;
-	82 -> 90 [
+	27 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	82 -> 94 [
+	47 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	90 -> 82 [
+	47 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
-	90 -> 94 [
+	68 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	94 -> 97;
-	96 -> 97;
+	68 -> 72 [
+		color=red
+		cond=false
+	];
+	72 -> 74;
+	74 -> 86 [
+		color=darkgreen
+		cond=true
+	];
+	74 -> 82 [
+		color=red
+		cond=false
+	];
+	82 -> 86 [
+		color=darkgreen
+		cond=true
+	];
+	82 -> 74 [
+		color=red
+		cond=false
+	];
 }

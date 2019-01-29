@@ -1,6 +1,6 @@
-digraph "walLockExclusive" {
+strict digraph "walLockExclusive" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	13;
 	14;
 	22;
@@ -8,11 +8,11 @@ digraph "walLockExclusive" {
 	// Edge definitions.
 	3 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 22;
 	14 -> 22;

@@ -1,103 +1,144 @@
-digraph "fts_stat" {
+strict digraph "fts_stat" {
 	// Node definitions.
-	3 [label=entry];
-	8;
-	12;
+	3 [entry=true];
+	10;
+	14;
 	19;
-	27;
+	33;
+	49;
+	24;
+	28;
+	45;
 	32;
-	36;
+	42;
+	87;
 	40;
-	41;
-	48;
-	51;
-	55;
-	60;
-	73;
-	76;
-	80;
-	84;
+	54;
 	85;
 	86;
+	68;
+	58;
+	61;
+	74;
+	81;
+	77;
 
 	// Edge definitions.
-	3 -> 8 [
-		color=red
-		label=false
-	];
-	3 -> 12 [
+	3 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 19;
-	12 -> 19;
-	19 -> 27 [
+	3 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 41 [
+	10 -> 14;
+	14 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 32 [
+	14 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 55 [
+	19 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	32 -> 36 [
-		color=darkgreen
-		label=true
-	];
-	32 -> 51 [
+	19 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	36 -> 40 [
+	33 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 51 [
+	33 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
-	40 -> 86;
-	41 -> 48 [
-		color=red
-		label=false
+	49 -> 87 [
+		cond="case (x=-24576)"
+		label="case (x=-24576)"
 	];
-	41 -> 55 [
+	49 -> 54 [
+		cond="case (x=16384)"
+		label="case (x=16384)"
+	];
+	49 -> 85 [
+		cond="case (x=-32768)"
+		label="case (x=-32768)"
+	];
+	49 -> 86 [
+		cond="default case"
+		label="default case"
+	];
+	24 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	48 -> 51;
-	51 -> 86;
-	55 -> 60 [label="case (x=16384)"];
-	55 -> 84 [label="case (x=-32768)"];
-	55 -> 85 [label="default case"];
-	55 -> 86 [label="case (x=-24576)"];
-	60 -> 73 [
-		color=darkgreen
-		label=true
-	];
-	60 -> 86 [
+	24 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	73 -> 76 [label="case (x=46)"];
-	73 -> 80 [label="case (x=0)"];
-	73 -> 86 [label="default case"];
-	76 -> 80 [
+	28 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	76 -> 86 [
+	28 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
-	80 -> 86;
-	84 -> 86;
-	85 -> 86;
+	45 -> 87;
+	32 -> 87;
+	42 -> 45;
+	40 -> 42;
+	54 -> 68 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 58 [
+		color=red
+		cond=false
+	];
+	85 -> 87;
+	86 -> 87;
+	68 -> 87 [
+		color=red
+		cond=false
+	];
+	68 -> 74 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 68 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 61 [
+		color=red
+		cond=false
+	];
+	61 -> 68;
+	74 -> 87 [
+		cond="default case"
+		label="default case"
+	];
+	74 -> 81 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	74 -> 77 [
+		cond="case (x=46)"
+		label="case (x=46)"
+	];
+	81 -> 87;
+	77 -> 87 [
+		color=red
+		cond=false
+	];
+	77 -> 81 [
+		color=darkgreen
+		cond=true
+	];
 }

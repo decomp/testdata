@@ -1,8 +1,10 @@
-digraph "main" {
+strict digraph "main" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
+	32;
 	11;
+	29;
 	12;
 	13;
 	14;
@@ -16,77 +18,141 @@ digraph "main" {
 	22;
 	23;
 	24;
-	27;
+	25;
 	28;
-	31;
-	32;
-	34;
+	36;
 	35;
-	37;
 	38;
-	44;
+	39;
 	45;
 	46;
-	50;
-	58;
+	47;
+	51;
+	59;
 
 	// Edge definitions.
 	2 -> 8;
-	8 -> 11 [label="case (x=97)"];
-	8 -> 12 [label="case (x=100)"];
-	8 -> 13 [label="case (x=72)"];
-	8 -> 14 [label="case (x=108)"];
-	8 -> 15 [label="case (x=109)"];
-	8 -> 16 [label="case (x=112)"];
-	8 -> 17 [label="case (x=113)"];
-	8 -> 18 [label="case (x=114)"];
-	8 -> 19 [label="case (x=115)"];
-	8 -> 20 [label="case (x=116)"];
-	8 -> 21 [label="case (x=119)"];
-	8 -> 22 [label="case (x=117)"];
-	8 -> 23 [label="case (x=128)"];
-	8 -> 24 [label="case (x=98)"];
-	8 -> 27 [label="case (x=-130)"];
-	8 -> 28 [label="case (x=-131)"];
-	8 -> 31 [label="default case"];
-	8 -> 32 [label="case (x=-1)"];
-	11 -> 24;
-	12 -> 24;
-	13 -> 24;
-	14 -> 24;
-	15 -> 24;
-	16 -> 24;
-	17 -> 24;
-	18 -> 24;
-	19 -> 24;
-	20 -> 24;
-	21 -> 24;
-	22 -> 24;
-	23 -> 24;
-	24 -> 8;
-	32 -> 34 [
-		color=red
-		label=false
+	8 -> 32 [
+		cond="case (x=-1)"
+		label="case (x=-1)"
+	];
+	8 -> 11 [
+		cond="case (x=97)"
+		label="case (x=97)"
+	];
+	8 -> 29 [
+		cond="case (x=98)"
+		label="case (x=98)"
+	];
+	8 -> 12 [
+		cond="case (x=100)"
+		label="case (x=100)"
+	];
+	8 -> 13 [
+		cond="case (x=72)"
+		label="case (x=72)"
+	];
+	8 -> 14 [
+		cond="case (x=108)"
+		label="case (x=108)"
+	];
+	8 -> 15 [
+		cond="case (x=109)"
+		label="case (x=109)"
+	];
+	8 -> 16 [
+		cond="case (x=112)"
+		label="case (x=112)"
+	];
+	8 -> 17 [
+		cond="case (x=113)"
+		label="case (x=113)"
+	];
+	8 -> 18 [
+		cond="case (x=114)"
+		label="case (x=114)"
+	];
+	8 -> 19 [
+		cond="case (x=115)"
+		label="case (x=115)"
+	];
+	8 -> 20 [
+		cond="case (x=116)"
+		label="case (x=116)"
+	];
+	8 -> 21 [
+		cond="case (x=119)"
+		label="case (x=119)"
+	];
+	8 -> 22 [
+		cond="case (x=117)"
+		label="case (x=117)"
+	];
+	8 -> 23 [
+		cond="case (x=128)"
+		label="case (x=128)"
+	];
+	8 -> 24 [
+		cond="case (x=-130)"
+		label="case (x=-130)"
+	];
+	8 -> 25 [
+		cond="case (x=-131)"
+		label="case (x=-131)"
+	];
+	8 -> 28 [
+		cond="default case"
+		label="default case"
+	];
+	32 -> 36 [
+		color=darkgreen
+		cond=true
 	];
 	32 -> 35 [
-		color=darkgreen
-		label=true
-	];
-	34 -> 35;
-	35 -> 37 [
-		color=darkgreen
-		label=true
-	];
-	35 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 38;
-	38 -> 44 [label="case (x=2)"];
-	38 -> 45 [label="case (x=0)"];
-	38 -> 46 [label="case (x=1)"];
-	38 -> 50 [label="default case"];
-	44 -> 45;
-	45 -> 58;
-	46 -> 58;
+	11 -> 29;
+	29 -> 8;
+	12 -> 29;
+	13 -> 29;
+	14 -> 29;
+	15 -> 29;
+	16 -> 29;
+	17 -> 29;
+	18 -> 29;
+	19 -> 29;
+	20 -> 29;
+	21 -> 29;
+	22 -> 29;
+	23 -> 29;
+	36 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 39 [
+		color=red
+		cond=false
+	];
+	35 -> 36;
+	38 -> 39;
+	39 -> 45 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	39 -> 46 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	39 -> 47 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	39 -> 51 [
+		cond="default case"
+		label="default case"
+	];
+	45 -> 46;
+	46 -> 59;
+	47 -> 59;
 }

@@ -1,61 +1,61 @@
-digraph "sqlite3Close" {
+strict digraph "sqlite3Close" {
 	// Node definitions.
-	2 [label=entry];
-	8;
+	2 [entry=true];
 	9;
-	13;
+	8;
+	54;
 	15;
+	13;
 	25;
 	35;
+	50;
 	41;
 	45;
-	50;
-	54;
 
 	// Edge definitions.
-	2 -> 8 [
-		color=red
-		label=false
-	];
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 54;
-	9 -> 13 [
+	2 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 54;
+	9 -> 13 [
+		color=red
+		cond=false
+	];
+	8 -> 54;
 	15 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
+	13 -> 54;
 	25 -> 35;
-	35 -> 41 [
-		color=red
-		label=false
-	];
 	35 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	35 -> 41 [
+		color=red
+		cond=false
+	];
+	50 -> 54;
+	41 -> 50 [
+		color=red
+		cond=false
 	];
 	41 -> 45 [
 		color=darkgreen
-		label=true
-	];
-	41 -> 50 [
-		color=red
-		label=false
+		cond=true
 	];
 	45 -> 54;
-	50 -> 54;
 }

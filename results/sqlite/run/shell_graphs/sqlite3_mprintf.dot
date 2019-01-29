@@ -1,6 +1,6 @@
-digraph "sqlite3_mprintf" {
+strict digraph "sqlite3_mprintf" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	9;
 	18;
@@ -8,11 +8,11 @@ digraph "sqlite3_mprintf" {
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 18;
 	9 -> 18;

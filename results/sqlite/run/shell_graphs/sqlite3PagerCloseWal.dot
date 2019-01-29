@@ -1,99 +1,99 @@
-digraph "sqlite3PagerCloseWal" {
+strict digraph "sqlite3PagerCloseWal" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	34;
 	11;
 	16;
 	24;
 	27;
-	30;
 	33;
-	34;
+	30;
 	37;
+	78;
 	42;
 	47;
-	68;
-	73;
-	76;
 	77;
-	78;
+	68;
+	76;
+	73;
 
 	// Edge definitions.
-	2 -> 11 [
-		color=red
-		label=false
-	];
 	2 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 11 [
+		color=red
+		cond=false
+	];
+	34 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 78 [
+		color=red
+		cond=false
 	];
 	11 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 24;
 	24 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 33 [
 		color=red
-		label=false
-	];
-	27 -> 30 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	27 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	30 -> 33;
-	33 -> 34;
-	34 -> 37 [
+	27 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	34 -> 78 [
+	33 -> 34;
+	30 -> 33;
+	37 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 42 [
 		color=darkgreen
-		label=true
-	];
-	37 -> 78 [
-		color=red
-		label=false
+		cond=true
 	];
 	42 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 76 [
 		color=red
-		label=false
+		cond=false
+	];
+	77 -> 78;
+	68 -> 76 [
+		color=darkgreen
+		cond=true
 	];
 	68 -> 73 [
 		color=red
-		label=false
+		cond=false
 	];
-	68 -> 76 [
-		color=darkgreen
-		label=true
-	];
-	73 -> 76;
 	76 -> 77;
-	77 -> 78;
+	73 -> 76;
 }

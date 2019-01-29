@@ -1,28 +1,28 @@
-digraph "sqlite3PagerFilename" {
+strict digraph "sqlite3PagerFilename" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
-	13;
 	14;
+	13;
 	18;
 
 	// Edge definitions.
 	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 14 [
 		color=red
-		label=false
-	];
-	7 -> 13 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	7 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 18;
+	7 -> 13 [
+		color=darkgreen
+		cond=true
+	];
 	14 -> 18;
+	13 -> 18;
 }

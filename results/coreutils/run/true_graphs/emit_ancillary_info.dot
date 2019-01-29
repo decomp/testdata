@@ -1,0 +1,46 @@
+strict digraph "emit_ancillary_info" {
+	// Node definitions.
+	0 [entry=true];
+	4;
+	14;
+	9;
+	30;
+	24;
+	27;
+
+	// Edge definitions.
+	0 -> 4;
+	4 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 9 [
+		color=red
+		cond=false
+	];
+	14 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 24 [
+		color=red
+		cond=false
+	];
+	9 -> 4 [
+		color=red
+		cond=false
+	];
+	9 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 27 [
+		color=red
+		cond=false
+	];
+	27 -> 30;
+}

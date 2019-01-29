@@ -1,187 +1,217 @@
-digraph "copy_unescaped_string" {
+strict digraph "copy_unescaped_string" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	113;
 	7;
-	8;
-	14;
-	17;
-	19;
-	21;
-	31;
-	35;
-	39;
-	49;
-	52;
-	57;
-	62;
-	69;
+	13;
+	102;
+	18;
+	54;
+	71;
 	74;
-	75;
-	80;
-	83;
-	86;
+	16;
+	82;
+	85;
+	88;
 	91;
 	94;
+	108;
 	97;
-	100;
-	103;
-	106;
-	111;
-	113;
-	114;
-	116;
-	125;
-	131;
-	136;
-	140;
-	151;
-	156;
-	160;
+	77;
+	46;
+	28;
+	36;
+	32;
+	49;
+	130;
+	104;
+	59;
+	66;
+	115;
+	124;
+	139;
+	135;
+	150;
+	159;
+	155;
 
 	// Edge definitions.
+	1 -> 113 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 114 [
+	7 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 8;
-	8 -> 14 [
-		color=darkgreen
-		label=true
-	];
-	8 -> 111 [
+	7 -> 102 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 17 [label="case (x=99)"];
-	14 -> 21 [label="case (x=120)"];
-	14 -> 57 [label="case (x=48)"];
-	14 -> 75 [label="case (x=0)"];
-	14 -> 80 [label="case (x=97)"];
-	14 -> 83 [label="case (x=98)"];
-	14 -> 91 [label="case (x=102)"];
-	14 -> 94 [label="case (x=110)"];
-	14 -> 97 [label="case (x=114)"];
-	14 -> 100 [label="case (x=116)"];
-	14 -> 103 [label="case (x=118)"];
-	14 -> 106 [label="default case"];
-	17 -> 19 [
-		color=red
-		label=false
+	13 -> 18 [
+		cond="case (x=120)"
+		label="case (x=120)"
 	];
-	17 -> 75 [
+	13 -> 54 [
+		cond="case (x=48)"
+		label="case (x=48)"
+	];
+	13 -> 71 [
+		cond="case (x=97)"
+		label="case (x=97)"
+	];
+	13 -> 74 [
+		cond="case (x=98)"
+		label="case (x=98)"
+	];
+	13 -> 16 [
+		cond="case (x=99)"
+		label="case (x=99)"
+	];
+	13 -> 82 [
+		cond="case (x=102)"
+		label="case (x=102)"
+	];
+	13 -> 85 [
+		cond="case (x=110)"
+		label="case (x=110)"
+	];
+	13 -> 88 [
+		cond="case (x=114)"
+		label="case (x=114)"
+	];
+	13 -> 91 [
+		cond="case (x=116)"
+		label="case (x=116)"
+	];
+	13 -> 94 [
+		cond="case (x=118)"
+		label="case (x=118)"
+	];
+	13 -> 108 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	13 -> 97 [
+		cond="default case"
+		label="default case"
+	];
+	102 -> 104;
+	18 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 86;
-	21 -> 31 [
+	18 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 49 [
+	54 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 35 [
+	54 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 39 [
+	71 -> 104;
+	74 -> 104;
+	16 -> 113 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 39;
-	39 -> 52 [
-		color=darkgreen
-		label=true
-	];
-	39 -> 131 [
+	16 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
-	49 -> 75;
-	52 -> 75;
-	57 -> 62 [
+	82 -> 104;
+	85 -> 104;
+	88 -> 104;
+	91 -> 104;
+	94 -> 104;
+	108 -> 113 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	57 -> 69 [
+	108 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 69 [
-		color=red
-		label=false
-	];
-	62 -> 116 [
+	97 -> 104;
+	77 -> 113 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	69 -> 75;
-	74 -> 75;
-	75 -> 8 [
+	77 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
-	75 -> 113 [
+	46 -> 104;
+	28 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	80 -> 75;
-	83 -> 75;
-	86 -> 74 [
-		color=darkgreen
-		label=true
-	];
-	86 -> 86 [
+	28 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
-	91 -> 75;
-	94 -> 75;
-	97 -> 75;
-	100 -> 75;
-	103 -> 75;
-	106 -> 75;
-	111 -> 75;
-	113 -> 114;
-	116 -> 69 [
-		color=red
-		label=false
-	];
-	116 -> 125 [
+	36 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	125 -> 69;
-	131 -> 136 [
+	36 -> 130 [
 		color=red
-		label=false
+		cond=false
 	];
-	131 -> 140 [
+	32 -> 36;
+	49 -> 104;
+	130 -> 139 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	136 -> 140;
-	140 -> 52 [
-		color=darkgreen
-		label=true
-	];
-	140 -> 151 [
+	130 -> 135 [
 		color=red
-		label=false
+		cond=false
 	];
-	151 -> 156 [
+	104 -> 108;
+	59 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
-	151 -> 160 [
+	59 -> 115 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	156 -> 160;
-	160 -> 52;
+	66 -> 104;
+	115 -> 66 [
+		color=red
+		cond=false
+	];
+	115 -> 124 [
+		color=darkgreen
+		cond=true
+	];
+	124 -> 66;
+	139 -> 49 [
+		color=darkgreen
+		cond=true
+	];
+	139 -> 150 [
+		color=red
+		cond=false
+	];
+	135 -> 139;
+	150 -> 159 [
+		color=darkgreen
+		cond=true
+	];
+	150 -> 155 [
+		color=red
+		cond=false
+	];
+	159 -> 49;
+	155 -> 159;
 }

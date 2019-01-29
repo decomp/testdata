@@ -1,22 +1,31 @@
-digraph "parse_long_options" {
+strict digraph "parse_long_options" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	10;
-	12;
-	13;
 	17;
+	13;
+	12;
 
 	// Edge definitions.
 	6 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	10 -> 12 [label="case (x=104)"];
-	10 -> 13 [label="case (x=118)"];
-	10 -> 17 [label="default case"];
+	10 -> 17 [
+		cond="default case"
+		label="default case"
+	];
+	10 -> 13 [
+		cond="case (x=118)"
+		label="case (x=118)"
+	];
+	10 -> 12 [
+		cond="case (x=104)"
+		label="case (x=104)"
+	];
 	12 -> 17;
 }

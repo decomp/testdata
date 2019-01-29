@@ -1,92 +1,92 @@
-digraph "termCanDriveIndex" {
+strict digraph "termCanDriveIndex" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
 	17;
+	86;
 	24;
 	25;
 	33;
+	49;
 	41;
 	48;
-	49;
 	56;
 	57;
 	63;
 	64;
-	84;
 	85;
-	86;
+	84;
 
 	// Edge definitions.
 	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 86;
 	17 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 86;
 	25 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 49 [
 		color=red
-		label=false
-	];
-	33 -> 41 [
-		color=red
-		label=false
+		cond=false
 	];
 	33 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 48 [
-		color=darkgreen
-		label=true
-	];
-	41 -> 49 [
+	33 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 86;
 	49 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
+	41 -> 49 [
+		color=red
+		cond=false
+	];
+	41 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 86;
 	56 -> 86;
 	57 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	57 -> 64 [
 		color=red
-		label=false
+		cond=false
 	];
 	63 -> 86;
-	64 -> 84 [
-		color=red
-		label=false
-	];
 	64 -> 85 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	84 -> 86;
+	64 -> 84 [
+		color=red
+		cond=false
+	];
 	85 -> 86;
+	84 -> 86;
 }

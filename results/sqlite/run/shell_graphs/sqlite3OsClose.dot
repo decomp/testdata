@@ -1,17 +1,17 @@
-digraph "sqlite3OsClose" {
+strict digraph "sqlite3OsClose" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
 	17;
 
 	// Edge definitions.
 	1 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 17;
 }

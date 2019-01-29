@@ -1,50 +1,50 @@
-digraph "columnMem" {
+strict digraph "columnMem" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
 	14;
+	48;
 	24;
+	41;
 	31;
 	34;
-	41;
 	46;
-	48;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 48;
 	14 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 41 [
 		color=red
-		label=false
-	];
-	24 -> 31 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	24 -> 41 [
 		color=red
-		label=false
+		cond=false
+	];
+	24 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	41 -> 46;
+	31 -> 41 [
+		color=red
+		cond=false
 	];
 	31 -> 34 [
 		color=darkgreen
-		label=true
-	];
-	31 -> 41 [
-		color=red
-		label=false
+		cond=true
 	];
 	34 -> 46;
-	41 -> 46;
 	46 -> 48;
 }

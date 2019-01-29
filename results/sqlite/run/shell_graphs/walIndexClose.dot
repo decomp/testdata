@@ -1,34 +1,52 @@
-digraph "walIndexClose" {
+strict digraph "walIndexClose" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	17;
 	11;
-	12;
-	18;
-	33;
-	36;
-	37;
 	43;
+	18;
+	24;
+	42;
+	39;
+	49;
+	55;
 
 	// Edge definitions.
+	2 -> 17 [
+		color=darkgreen
+		cond=true
+	];
 	2 -> 11 [
-		color=darkgreen
-		label=true
-	];
-	2 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 12;
-	12 -> 18 [
+	17 -> 18;
+	11 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 36 [
+	11 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 33;
-	33 -> 12;
-	36 -> 43;
-	37 -> 43;
+	43 -> 49 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 55 [
+		color=red
+		cond=false
+	];
+	18 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 42 [
+		color=red
+		cond=false
+	];
+	24 -> 39;
+	42 -> 43;
+	39 -> 18;
+	49 -> 55;
 }

@@ -1,0 +1,198 @@
+strict digraph "writeFile" {
+	// Node definitions.
+	5 [entry=true];
+	23;
+	32;
+	30;
+	31;
+	140;
+	119;
+	36;
+	70;
+	41;
+	69;
+	67;
+	45;
+	49;
+	54;
+	61;
+	68;
+	118;
+	75;
+	76;
+	81;
+	96;
+	94;
+	95;
+	101;
+	111;
+	104;
+	110;
+	114;
+	115;
+	122;
+	139;
+	137;
+	138;
+
+	// Edge definitions.
+	5 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	5 -> 32 [
+		color=red
+		cond=false
+	];
+	23 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	23 -> 31 [
+		color=red
+		cond=false
+	];
+	32 -> 36 [
+		color=darkgreen
+		cond=true
+	];
+	32 -> 70 [
+		color=red
+		cond=false
+	];
+	30 -> 140;
+	31 -> 119;
+	119 -> 122 [
+		color=darkgreen
+		cond=true
+	];
+	119 -> 139 [
+		color=red
+		cond=false
+	];
+	36 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 69 [
+		color=red
+		cond=false
+	];
+	70 -> 75 [
+		color=darkgreen
+		cond=true
+	];
+	70 -> 76 [
+		color=red
+		cond=false
+	];
+	41 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	41 -> 45 [
+		color=red
+		cond=false
+	];
+	69 -> 118;
+	67 -> 140;
+	45 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	45 -> 49 [
+		color=red
+		cond=false
+	];
+	49 -> 67 [
+		color=red
+		cond=false
+	];
+	49 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 61 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 68 [
+		color=red
+		cond=false
+	];
+	61 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	61 -> 68 [
+		color=red
+		cond=false
+	];
+	68 -> 69;
+	118 -> 119;
+	75 -> 140;
+	76 -> 81 [
+		color=darkgreen
+		cond=true
+	];
+	76 -> 96 [
+		color=red
+		cond=false
+	];
+	81 -> 94 [
+		color=darkgreen
+		cond=true
+	];
+	81 -> 95 [
+		color=red
+		cond=false
+	];
+	96 -> 101 [
+		color=darkgreen
+		cond=true
+	];
+	96 -> 111 [
+		color=red
+		cond=false
+	];
+	94 -> 95;
+	95 -> 96;
+	101 -> 111 [
+		color=red
+		cond=false
+	];
+	101 -> 104 [
+		color=darkgreen
+		cond=true
+	];
+	111 -> 114 [
+		color=darkgreen
+		cond=true
+	];
+	111 -> 115 [
+		color=red
+		cond=false
+	];
+	104 -> 111 [
+		color=red
+		cond=false
+	];
+	104 -> 110 [
+		color=darkgreen
+		cond=true
+	];
+	110 -> 111;
+	114 -> 140;
+	115 -> 118;
+	122 -> 137 [
+		color=darkgreen
+		cond=true
+	];
+	122 -> 138 [
+		color=red
+		cond=false
+	];
+	139 -> 140;
+	137 -> 140;
+	138 -> 139;
+}

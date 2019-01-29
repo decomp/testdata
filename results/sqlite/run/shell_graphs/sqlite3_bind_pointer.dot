@@ -1,29 +1,29 @@
-digraph "sqlite3_bind_pointer" {
+strict digraph "sqlite3_bind_pointer" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	20;
 	36;
+	43;
 	39;
 	42;
-	43;
 
 	// Edge definitions.
 	5 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 43;
 	36 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	39 -> 42;
 	42 -> 43;

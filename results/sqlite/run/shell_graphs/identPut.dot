@@ -1,25 +1,25 @@
-digraph "identPut" {
+strict digraph "identPut" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	14;
 	21;
+	46;
+	42;
 	33;
 	41;
-	42;
 	43;
-	46;
+	72;
 	56;
 	61;
 	69;
-	72;
 	77;
 	83;
 	84;
 	91;
+	119;
 	109;
 	115;
 	116;
-	119;
 	122;
 	128;
 
@@ -27,92 +27,92 @@ digraph "identPut" {
 	3 -> 14;
 	14 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 46 [
 		color=red
-		label=false
-	];
-	21 -> 33 [
-		color=red
-		label=false
+		cond=false
 	];
 	21 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 41 [
-		color=darkgreen
-		label=true
-	];
-	33 -> 42 [
+	21 -> 33 [
 		color=red
-		label=false
-	];
-	41 -> 46;
-	42 -> 43;
-	43 -> 14;
-	46 -> 56 [
-		color=red
-		label=false
+		cond=false
 	];
 	46 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	56 -> 61 [
+	46 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
-	56 -> 72 [
-		color=darkgreen
-		label=true
-	];
-	61 -> 69 [
+	42 -> 43;
+	33 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
-	61 -> 72 [
+	33 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	69 -> 72;
+	41 -> 46;
+	43 -> 14;
 	72 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	72 -> 83 [
 		color=red
-		label=false
+		cond=false
 	];
+	56 -> 72 [
+		color=darkgreen
+		cond=true
+	];
+	56 -> 61 [
+		color=red
+		cond=false
+	];
+	61 -> 72 [
+		color=darkgreen
+		cond=true
+	];
+	61 -> 69 [
+		color=red
+		cond=false
+	];
+	69 -> 72;
 	77 -> 83;
 	83 -> 84;
 	84 -> 91 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	84 -> 119 [
 		color=red
-		label=false
+		cond=false
 	];
 	91 -> 109 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	91 -> 115 [
 		color=red
-		label=false
+		cond=false
+	];
+	119 -> 122 [
+		color=darkgreen
+		cond=true
+	];
+	119 -> 128 [
+		color=red
+		cond=false
 	];
 	109 -> 115;
 	115 -> 116;
 	116 -> 84;
-	119 -> 122 [
-		color=darkgreen
-		label=true
-	];
-	119 -> 128 [
-		color=red
-		label=false
-	];
 	122 -> 128;
 }

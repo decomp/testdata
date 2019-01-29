@@ -1,115 +1,133 @@
-digraph "sqlite3ExprNeedsNoAffinityChange" {
+strict digraph "sqlite3ExprNeedsNoAffinityChange" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	11;
+	92;
 	12;
-	18;
 	24;
+	18;
 	26;
 	30;
 	37;
 	41;
 	44;
-	48;
-	52;
 	55;
-	59;
-	63;
 	66;
 	71;
 	72;
-	78;
-	82;
-	86;
-	88;
 	91;
-	92;
+	52;
+	48;
+	63;
+	59;
+	78;
+	88;
+	86;
+	82;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 92;
 	11 -> 12;
-	12 -> 18 [
-		color=red
-		label=false
-	];
 	12 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 24;
+	12 -> 18 [
+		color=red
+		cond=false
+	];
 	24 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
+	18 -> 24;
 	26 -> 12;
 	30 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 41;
-	41 -> 44 [label="case (x=134)"];
-	41 -> 55 [label="case (x=132)"];
-	41 -> 66 [label="case (x=97)"];
-	41 -> 71 [label="case (x=133)"];
-	41 -> 72 [label="case (x=152)"];
-	41 -> 91 [label="default case"];
-	44 -> 48 [
-		color=red
-		label=false
+	41 -> 44 [
+		cond="case (x=143)"
+		label="case (x=143)"
+	];
+	41 -> 55 [
+		cond="case (x=141)"
+		label="case (x=141)"
+	];
+	41 -> 66 [
+		cond="case (x=106)"
+		label="case (x=106)"
+	];
+	41 -> 71 [
+		cond="case (x=142)"
+		label="case (x=142)"
+	];
+	41 -> 72 [
+		cond="case (x=158)"
+		label="case (x=158)"
+	];
+	41 -> 91 [
+		cond="default case"
+		label="default case"
 	];
 	44 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	48 -> 52;
-	52 -> 92;
-	55 -> 59 [
+	44 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
 	55 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	59 -> 63;
-	63 -> 92;
+	55 -> 59 [
+		color=red
+		cond=false
+	];
 	66 -> 92;
 	71 -> 92;
 	72 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	72 -> 88 [
 		color=red
-		label=false
+		cond=false
+	];
+	91 -> 92;
+	52 -> 92;
+	48 -> 52;
+	63 -> 92;
+	59 -> 63;
+	78 -> 86 [
+		color=darkgreen
+		cond=true
 	];
 	78 -> 82 [
 		color=red
-		label=false
+		cond=false
 	];
-	78 -> 86 [
-		color=darkgreen
-		label=true
-	];
-	82 -> 86;
-	86 -> 88;
 	88 -> 92;
-	91 -> 92;
+	86 -> 88;
+	82 -> 86;
 }

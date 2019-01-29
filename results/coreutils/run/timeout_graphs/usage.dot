@@ -1,39 +1,59 @@
-digraph "usage" {
+strict digraph "usage" {
 	// Node definitions.
-	1 [label=entry];
-	3;
-	8;
-	37;
-	40;
-	43;
-	48;
+	1 [entry=true];
+	9;
+	4;
+	72;
+	39;
+	49;
+	44;
+	65;
+	59;
+	62;
 
 	// Edge definitions.
-	1 -> 3 [
-		color=red
-		label=false
-	];
-	1 -> 8 [
+	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 48;
-	8 -> 37 [
+	1 -> 4 [
 		color=red
-		label=false
+		cond=false
 	];
-	8 -> 43 [
+	9 -> 39;
+	4 -> 72;
+	39 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 40 [
+	39 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 43 [
+	49 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 43;
-	43 -> 48;
+	49 -> 59 [
+		color=red
+		cond=false
+	];
+	44 -> 39 [
+		color=red
+		cond=false
+	];
+	44 -> 49 [
+		color=darkgreen
+		cond=true
+	];
+	65 -> 72;
+	59 -> 65 [
+		color=darkgreen
+		cond=true
+	];
+	59 -> 62 [
+		color=red
+		cond=false
+	];
+	62 -> 65;
 }

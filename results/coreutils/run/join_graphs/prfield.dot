@@ -1,0 +1,48 @@
+strict digraph "prfield" {
+	// Node definitions.
+	2 [entry=true];
+	6;
+	23;
+	17;
+	12;
+	29;
+	20;
+	26;
+
+	// Edge definitions.
+	2 -> 6 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 23 [
+		color=red
+		cond=false
+	];
+	6 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	6 -> 12 [
+		color=red
+		cond=false
+	];
+	23 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	23 -> 26 [
+		color=red
+		cond=false
+	];
+	17 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	17 -> 20 [
+		color=red
+		cond=false
+	];
+	12 -> 29;
+	20 -> 29;
+	26 -> 29;
+}

@@ -1,31 +1,31 @@
-digraph "substExprList" {
+strict digraph "substExprList" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
 	9;
+	35;
 	10;
 	16;
 	32;
-	35;
 
 	// Edge definitions.
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 35;
 	9 -> 10;
-	10 -> 16 [
-		color=darkgreen
-		label=true
-	];
 	10 -> 35 [
 		color=red
-		label=false
+		cond=false
+	];
+	10 -> 16 [
+		color=darkgreen
+		cond=true
 	];
 	16 -> 32;
 	32 -> 10;

@@ -1,11 +1,17 @@
-digraph "copy_attr_error" {
+strict digraph "copy_attr_error" {
 	// Node definitions.
-	2 [label=entry];
-	6;
+	2 [entry=true];
 	9;
+	6;
 
 	// Edge definitions.
-	2 -> 6 [label="default case"];
-	2 -> 9 [label="case (x=61)"];
+	2 -> 9 [
+		cond="case (x=61)"
+		label="case (x=61)"
+	];
+	2 -> 6 [
+		cond="default case"
+		label="default case"
+	];
 	6 -> 9;
 }

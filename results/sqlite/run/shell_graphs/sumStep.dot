@@ -1,59 +1,59 @@
-digraph "sumStep" {
+strict digraph "sumStep" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	20;
+	75;
 	23;
 	30;
+	63;
 	51;
+	62;
 	57;
-	60;
-	61;
-	72;
-	73;
+	74;
 
 	// Edge definitions.
 	3 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 73 [
+	3 -> 75 [
 		color=red
-		label=false
+		cond=false
+	];
+	20 -> 75 [
+		color=red
+		cond=false
 	];
 	20 -> 23 [
 		color=darkgreen
-		label=true
-	];
-	20 -> 73 [
-		color=red
-		label=false
+		cond=true
 	];
 	23 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 61 [
+	23 -> 63 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 60 [
+	30 -> 62 [
 		color=red
-		label=false
+		cond=false
+	];
+	63 -> 74;
+	51 -> 62 [
+		color=red
+		cond=false
 	];
 	51 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	51 -> 60 [
-		color=red
-		label=false
-	];
-	57 -> 60;
-	60 -> 72;
-	61 -> 72;
-	72 -> 73;
+	62 -> 74;
+	57 -> 62;
+	74 -> 75;
 }

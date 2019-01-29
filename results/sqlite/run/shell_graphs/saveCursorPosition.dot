@@ -1,6 +1,6 @@
-digraph "saveCursorPosition" {
+strict digraph "saveCursorPosition" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
 	12;
 	15;
@@ -10,21 +10,21 @@ digraph "saveCursorPosition" {
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 15;
 	12 -> 15;
 	15 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 24;
 }

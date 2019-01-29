@@ -1,26 +1,26 @@
-digraph "sqlite3_uri_int64" {
+strict digraph "sqlite3_uri_int64" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	14;
-	18;
 	20;
+	18;
 
 	// Edge definitions.
 	3 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 20 [
 		color=red
-		label=false
-	];
-	14 -> 18 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	14 -> 20 [
 		color=red
-		label=false
+		cond=false
+	];
+	14 -> 18 [
+		color=darkgreen
+		cond=true
 	];
 	18 -> 20;
 }

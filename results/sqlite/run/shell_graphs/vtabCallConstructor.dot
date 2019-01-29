@@ -1,242 +1,242 @@
-digraph "vtabCallConstructor" {
+strict digraph "vtabCallConstructor" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	38;
 	41;
+	59;
 	47;
 	54;
+	339;
 	55;
-	59;
-	67;
 	68;
-	74;
+	67;
 	77;
+	73;
 	128;
 	130;
 	133;
+	151;
 	136;
 	141;
 	147;
-	151;
+	335;
 	156;
+	334;
 	173;
 	182;
+	333;
 	191;
 	198;
+	332;
 	208;
 	212;
-	219;
-	222;
-	231;
-	240;
-	249;
-	250;
-	251;
 	254;
+	219;
+	250;
+	231;
+	222;
+	249;
+	240;
+	251;
 	258;
-	270;
-	276;
-	288;
-	291;
-	299;
-	302;
-	308;
-	320;
-	327;
+	321;
+	271;
+	277;
+	292;
+	289;
+	300;
+	309;
+	303;
 	328;
-	331;
-	332;
-	333;
-	334;
-	338;
+	329;
 
 	// Edge definitions.
 	5 -> 38;
 	38 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	38 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
 	41 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 54 [
 		color=red
-		label=false
-	];
-	47 -> 338;
-	54 -> 55;
-	55 -> 38;
-	59 -> 67 [
-		color=red
-		label=false
+		cond=false
 	];
 	59 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 338;
-	68 -> 74 [
+	59 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
+	47 -> 339;
+	54 -> 55;
+	55 -> 38;
 	68 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	74 -> 338;
+	68 -> 73 [
+		color=red
+		cond=false
+	];
+	67 -> 339;
 	77 -> 128 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	77 -> 130 [
 		color=red
-		label=false
+		cond=false
 	];
+	73 -> 339;
 	128 -> 130;
 	130 -> 133 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	130 -> 151 [
 		color=red
-		label=false
+		cond=false
 	];
 	133 -> 136 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	133 -> 141 [
 		color=red
-		label=false
+		cond=false
+	];
+	151 -> 156 [
+		color=darkgreen
+		cond=true
+	];
+	151 -> 334 [
+		color=red
+		cond=false
 	];
 	136 -> 147;
 	141 -> 147;
-	147 -> 334;
-	151 -> 156 [
-		color=darkgreen
-		label=true
-	];
-	151 -> 333 [
-		color=red
-		label=false
-	];
+	147 -> 335;
+	335 -> 339;
 	156 -> 173 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	156 -> 182 [
 		color=red
-		label=false
+		cond=false
 	];
-	173 -> 332;
+	334 -> 335;
+	173 -> 333;
 	182 -> 191;
+	333 -> 334;
 	191 -> 198 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	191 -> 331 [
+	191 -> 332 [
 		color=red
-		label=false
+		cond=false
 	];
 	198 -> 208;
+	332 -> 333;
 	208 -> 212 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	208 -> 254 [
 		color=red
-		label=false
+		cond=false
 	];
 	212 -> 219 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	212 -> 250 [
 		color=red
-		label=false
+		cond=false
 	];
-	219 -> 222 [
+	254 -> 258 [
+		color=darkgreen
+		cond=true
+	];
+	254 -> 321 [
 		color=red
-		label=false
+		cond=false
 	];
 	219 -> 231 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	222 -> 231 [
-		color=darkgreen
-		label=true
-	];
-	222 -> 250 [
+	219 -> 222 [
 		color=red
-		label=false
+		cond=false
+	];
+	250 -> 251;
+	231 -> 249 [
+		color=darkgreen
+		cond=true
 	];
 	231 -> 240 [
 		color=red
-		label=false
+		cond=false
 	];
-	231 -> 249 [
+	222 -> 250 [
+		color=red
+		cond=false
+	];
+	222 -> 231 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	249 -> 254;
+	240 -> 250 [
+		color=red
+		cond=false
 	];
 	240 -> 249 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	240 -> 250 [
-		color=red
-		label=false
-	];
-	249 -> 254;
-	250 -> 251;
 	251 -> 208;
-	254 -> 258 [
+	258 -> 271;
+	321 -> 328;
+	271 -> 277 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	254 -> 320 [
+	271 -> 292 [
 		color=red
-		label=false
+		cond=false
 	];
-	258 -> 270;
-	270 -> 276 [
+	277 -> 289;
+	292 -> 300 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	270 -> 291 [
+	292 -> 309 [
 		color=red
-		label=false
+		cond=false
 	];
-	276 -> 288;
-	288 -> 270;
-	291 -> 299 [
+	289 -> 271;
+	300 -> 309 [
+		color=red
+		cond=false
+	];
+	300 -> 303 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	291 -> 308 [
-		color=red
-		label=false
-	];
-	299 -> 302 [
-		color=darkgreen
-		label=true
-	];
-	299 -> 308 [
-		color=red
-		label=false
-	];
-	302 -> 308;
-	308 -> 327;
-	320 -> 327;
-	327 -> 328;
-	328 -> 191;
-	331 -> 332;
-	332 -> 333;
-	333 -> 334;
-	334 -> 338;
+	309 -> 328;
+	303 -> 309;
+	328 -> 329;
+	329 -> 191;
 }

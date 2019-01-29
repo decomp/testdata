@@ -1,19 +1,19 @@
-digraph "serialGet" {
+strict digraph "serialGet" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	65;
 	72;
-	88;
+	89;
 
 	// Edge definitions.
 	3 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 72 [
 		color=red
-		label=false
+		cond=false
 	];
-	65 -> 88;
-	72 -> 88;
+	65 -> 89;
+	72 -> 89;
 }

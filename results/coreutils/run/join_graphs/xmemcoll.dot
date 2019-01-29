@@ -1,17 +1,17 @@
-digraph "xmemcoll" {
+strict digraph "xmemcoll" {
 	// Node definitions.
-	4 [label=entry];
-	9;
+	4 [entry=true];
 	16;
+	9;
 
 	// Edge definitions.
-	4 -> 9 [
-		color=red
-		label=false
-	];
 	4 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	4 -> 9 [
+		color=red
+		cond=false
 	];
 	9 -> 16;
 }

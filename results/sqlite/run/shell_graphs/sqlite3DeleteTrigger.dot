@@ -1,6 +1,6 @@
-digraph "sqlite3DeleteTrigger" {
+strict digraph "sqlite3DeleteTrigger" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
 	8;
 	32;
@@ -8,11 +8,11 @@ digraph "sqlite3DeleteTrigger" {
 	// Edge definitions.
 	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 32;
 	8 -> 32;

@@ -1,17 +1,17 @@
-digraph "checkConstraintUnchanged" {
+strict digraph "checkConstraintUnchanged" {
 	// Node definitions.
-	3 [label=entry];
-	18;
+	3 [entry=true];
 	24;
+	18;
 
 	// Edge definitions.
-	3 -> 18 [
-		color=red
-		label=false
-	];
 	3 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	3 -> 18 [
+		color=red
+		cond=false
 	];
 	18 -> 24;
 }

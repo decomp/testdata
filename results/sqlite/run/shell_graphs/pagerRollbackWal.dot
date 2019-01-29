@@ -1,6 +1,6 @@
-digraph "pagerRollbackWal" {
+strict digraph "pagerRollbackWal" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	21;
 	24;
 	27;
@@ -11,20 +11,20 @@ digraph "pagerRollbackWal" {
 	1 -> 21;
 	21 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 27;
 	27 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 21;
 }

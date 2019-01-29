@@ -1,63 +1,63 @@
-digraph "sqlite3_open16" {
+strict digraph "sqlite3_open16" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
 	15;
+	64;
 	18;
 	19;
 	27;
-	33;
-	46;
-	58;
 	59;
+	33;
+	58;
+	46;
 	60;
-	64;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 64;
 	15 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 19;
 	19 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 58 [
 		color=red
-		label=false
+		cond=false
+	];
+	59 -> 60;
+	33 -> 58 [
+		color=darkgreen
+		cond=true
 	];
 	33 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 58 [
-		color=darkgreen
-		label=true
-	];
-	46 -> 58;
 	58 -> 60;
-	59 -> 60;
+	46 -> 58;
 	60 -> 64;
 }

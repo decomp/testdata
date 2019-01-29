@@ -1,104 +1,104 @@
-digraph "appendText" {
+strict digraph "appendText" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	21;
+	46;
 	24;
 	28;
+	45;
 	38;
 	41;
 	42;
-	45;
-	46;
 	56;
+	82;
 	80;
-	83;
-	84;
-	87;
-	99;
-	103;
-	120;
-	124;
-	125;
-	128;
-	143;
-	168;
+	81;
+	85;
+	141;
+	97;
+	101;
+	126;
+	118;
+	122;
+	123;
+	166;
 
 	// Edge definitions.
 	3 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 24;
+	46 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	46 -> 82 [
+		color=red
+		cond=false
+	];
 	24 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
+	45 -> 46;
 	38 -> 41;
 	41 -> 42;
 	42 -> 24;
-	45 -> 46;
-	46 -> 56 [
-		color=darkgreen
-		label=true
-	];
-	46 -> 84 [
-		color=red
-		label=false
-	];
 	56 -> 80 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	56 -> 83 [
+	56 -> 81 [
 		color=red
-		label=false
+		cond=false
 	];
-	80 -> 168;
-	83 -> 84;
-	84 -> 87 [
+	82 -> 85 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	84 -> 143 [
+	82 -> 141 [
 		color=red
-		label=false
+		cond=false
 	];
-	87 -> 99;
-	99 -> 103 [
+	80 -> 81;
+	81 -> 82;
+	85 -> 97;
+	141 -> 166;
+	97 -> 101 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	99 -> 128 [
+	97 -> 126 [
 		color=red
-		label=false
+		cond=false
 	];
-	103 -> 120 [
+	101 -> 118 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	103 -> 124 [
+	101 -> 122 [
 		color=red
-		label=false
+		cond=false
 	];
-	120 -> 124;
-	124 -> 125;
-	125 -> 99;
-	128 -> 168;
-	143 -> 168;
+	126 -> 166;
+	118 -> 122;
+	122 -> 123;
+	123 -> 97;
 }

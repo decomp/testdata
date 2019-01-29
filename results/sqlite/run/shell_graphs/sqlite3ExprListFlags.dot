@@ -1,32 +1,21 @@
-digraph "sqlite3ExprListFlags" {
+strict digraph "sqlite3ExprListFlags" {
 	// Node definitions.
-	1 [label=entry];
-	8;
-	9;
-	15;
+	1 [entry=true];
+	6;
+	12;
 	28;
-	31;
-	32;
+	25;
 
 	// Edge definitions.
-	1 -> 8 [
+	1 -> 6;
+	6 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 32 [
+	6 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	8 -> 9;
-	9 -> 15 [
-		color=darkgreen
-		label=true
-	];
-	9 -> 31 [
-		color=red
-		label=false
-	];
-	15 -> 28;
-	28 -> 9;
-	31 -> 32;
+	12 -> 25;
+	25 -> 6;
 }

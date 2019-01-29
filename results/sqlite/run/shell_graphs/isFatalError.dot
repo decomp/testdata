@@ -1,26 +1,26 @@
-digraph "isFatalError" {
+strict digraph "isFatalError" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
-	8;
 	11;
+	8;
 
 	// Edge definitions.
 	1 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
-	];
-	5 -> 8 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	5 -> 11 [
 		color=red
-		label=false
+		cond=false
+	];
+	5 -> 8 [
+		color=darkgreen
+		cond=true
 	];
 	8 -> 11;
 }

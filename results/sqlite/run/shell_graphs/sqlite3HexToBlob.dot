@@ -1,32 +1,32 @@
-digraph "sqlite3HexToBlob" {
+strict digraph "sqlite3HexToBlob" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	19;
+	59;
 	20;
 	24;
-	50;
 	53;
-	59;
+	50;
 
 	// Edge definitions.
 	3 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 20;
 	20 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 50;
-	50 -> 20;
 	53 -> 59;
+	50 -> 20;
 }

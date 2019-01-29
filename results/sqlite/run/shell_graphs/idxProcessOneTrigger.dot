@@ -1,0 +1,170 @@
+strict digraph "idxProcessOneTrigger" {
+	// Node definitions.
+	3 [entry=true];
+	32;
+	35;
+	39;
+	41;
+	50;
+	54;
+	70;
+	60;
+	61;
+	69;
+	74;
+	97;
+	126;
+	78;
+	84;
+	94;
+	91;
+	144;
+	101;
+	107;
+	125;
+	122;
+	131;
+	132;
+	133;
+	136;
+	143;
+	141;
+	142;
+	147;
+	162;
+	156;
+	161;
+	166;
+	173;
+
+	// Edge definitions.
+	3 -> 32;
+	32 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	32 -> 39 [
+		color=red
+		cond=false
+	];
+	35 -> 39;
+	39 -> 41 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 50 [
+		color=red
+		cond=false
+	];
+	41 -> 32;
+	50 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	50 -> 70 [
+		color=red
+		cond=false
+	];
+	54 -> 60 [
+		color=darkgreen
+		cond=true
+	];
+	54 -> 61 [
+		color=red
+		cond=false
+	];
+	70 -> 74 [
+		cond="case (x=18)"
+		label="case (x=18)"
+	];
+	70 -> 97 [
+		cond="case (x=23)"
+		label="case (x=23)"
+	];
+	70 -> 126 [
+		cond="default case"
+		label="default case"
+	];
+	60 -> 69;
+	61 -> 69;
+	69 -> 70;
+	74 -> 78;
+	97 -> 101;
+	126 -> 131 [
+		color=darkgreen
+		cond=true
+	];
+	126 -> 132 [
+		color=red
+		cond=false
+	];
+	78 -> 84 [
+		color=darkgreen
+		cond=true
+	];
+	78 -> 94 [
+		color=red
+		cond=false
+	];
+	84 -> 91;
+	94 -> 144;
+	91 -> 78;
+	144 -> 147 [
+		color=darkgreen
+		cond=true
+	];
+	144 -> 162 [
+		color=red
+		cond=false
+	];
+	101 -> 107 [
+		color=darkgreen
+		cond=true
+	];
+	101 -> 125 [
+		color=red
+		cond=false
+	];
+	107 -> 122;
+	125 -> 144;
+	122 -> 101;
+	131 -> 133;
+	133 -> 136 [
+		color=darkgreen
+		cond=true
+	];
+	133 -> 143 [
+		color=red
+		cond=false
+	];
+	136 -> 141 [
+		color=darkgreen
+		cond=true
+	];
+	136 -> 142 [
+		color=red
+		cond=false
+	];
+	143 -> 144;
+	141 -> 142;
+	142 -> 143;
+	147 -> 156 [
+		color=darkgreen
+		cond=true
+	];
+	147 -> 161 [
+		color=red
+		cond=false
+	];
+	162 -> 166 [
+		color=darkgreen
+		cond=true
+	];
+	162 -> 173 [
+		color=red
+		cond=false
+	];
+	156 -> 161;
+	161 -> 162;
+	166 -> 173;
+}

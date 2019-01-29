@@ -1,6 +1,6 @@
-digraph "sqlite3BtreeGetMeta" {
+strict digraph "sqlite3BtreeGetMeta" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	14;
 	24;
 	37;
@@ -8,11 +8,11 @@ digraph "sqlite3BtreeGetMeta" {
 	// Edge definitions.
 	3 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 37;
 	24 -> 37;

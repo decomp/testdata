@@ -1,0 +1,17 @@
+strict digraph "close_db" {
+	// Node definitions.
+	1 [entry=true];
+	8;
+	14;
+
+	// Edge definitions.
+	1 -> 8 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 14 [
+		color=red
+		cond=false
+	];
+	8 -> 14;
+}

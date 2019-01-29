@@ -1,29 +1,29 @@
-digraph "numericType" {
+strict digraph "numericType" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	17;
+	28;
 	24;
 	27;
-	28;
 
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 28;
 	17 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 28;
 	27 -> 28;

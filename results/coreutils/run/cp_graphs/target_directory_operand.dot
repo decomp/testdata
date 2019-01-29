@@ -1,0 +1,44 @@
+strict digraph "target_directory_operand" {
+	// Node definitions.
+	4 [entry=true];
+	10;
+	7;
+	15;
+	16;
+	22;
+	17;
+	19;
+
+	// Edge definitions.
+	4 -> 10 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 7 [
+		color=red
+		cond=false
+	];
+	10 -> 22;
+	7 -> 10 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	7 -> 15 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	7 -> 16 [
+		cond="default case"
+		label="default case"
+	];
+	15 -> 22;
+	16 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 19 [
+		color=red
+		cond=false
+	];
+	17 -> 22;
+}

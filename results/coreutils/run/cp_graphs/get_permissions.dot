@@ -1,50 +1,50 @@
-digraph "get_permissions" {
+strict digraph "get_permissions" {
 	// Node definitions.
-	4 [label=entry];
-	8;
+	4 [entry=true];
 	10;
+	8;
 	12;
 	16;
 	21;
+	29;
 	24;
 	28;
-	29;
 
 	// Edge definitions.
-	4 -> 8 [
-		color=red
-		label=false
-	];
 	4 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 12;
+	4 -> 8 [
+		color=red
+		cond=false
+	];
 	10 -> 12;
+	8 -> 12;
 	12 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 29;
 	21 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 28 [
 		color=red
-		label=false
-	];
-	24 -> 28 [
-		color=red
-		label=false
+		cond=false
 	];
 	24 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	24 -> 28 [
+		color=red
+		cond=false
 	];
 	28 -> 29;
 }

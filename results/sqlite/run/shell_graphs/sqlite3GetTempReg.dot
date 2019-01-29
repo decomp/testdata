@@ -1,6 +1,6 @@
-digraph "sqlite3GetTempReg" {
+strict digraph "sqlite3GetTempReg" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
 	14;
 	24;
@@ -8,11 +8,11 @@ digraph "sqlite3GetTempReg" {
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 24;
 	14 -> 24;

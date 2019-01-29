@@ -1,0 +1,30 @@
+strict digraph "constInsert" {
+	// Node definitions.
+	3 [entry=true];
+	34;
+	37;
+	70;
+	43;
+	47;
+
+	// Edge definitions.
+	3 -> 34 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 37 [
+		color=red
+		cond=false
+	];
+	34 -> 70;
+	37 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 47 [
+		color=red
+		cond=false
+	];
+	43 -> 47;
+	47 -> 70;
+}

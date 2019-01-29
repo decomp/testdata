@@ -1,32 +1,32 @@
-digraph "btreeGetUnusedPage" {
+strict digraph "btreeGetUnusedPage" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	18;
+	34;
 	25;
 	30;
-	34;
-	36;
 	38;
+	36;
 
 	// Edge definitions.
 	4 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
+	34 -> 36;
 	25 -> 38;
 	30 -> 36;
-	34 -> 36;
 	36 -> 38;
 }

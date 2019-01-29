@@ -1,0 +1,39 @@
+strict digraph "ntileStepFunc" {
+	// Node definitions.
+	3 [entry=true];
+	14;
+	44;
+	19;
+	39;
+	36;
+	38;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 44 [
+		color=red
+		cond=false
+	];
+	14 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 39 [
+		color=red
+		cond=false
+	];
+	19 -> 36 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 38 [
+		color=red
+		cond=false
+	];
+	39 -> 44;
+	36 -> 38;
+	38 -> 39;
+}

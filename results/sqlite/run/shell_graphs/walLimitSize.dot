@@ -1,37 +1,37 @@
-digraph "walLimitSize" {
+strict digraph "walLimitSize" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
-	17;
 	23;
+	17;
 	26;
 	31;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 23 [
 		color=red
-		label=false
-	];
-	13 -> 17 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	13 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 23;
+	13 -> 17 [
+		color=darkgreen
+		cond=true
+	];
 	23 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
+	17 -> 23;
 	26 -> 31;
 }

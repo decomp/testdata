@@ -1,17 +1,17 @@
-digraph "vdbeSorterCompare" {
+strict digraph "vdbeSorterCompare" {
 	// Node definitions.
-	6 [label=entry];
-	20;
+	6 [entry=true];
 	30;
+	20;
 
 	// Edge definitions.
-	6 -> 20 [
-		color=red
-		label=false
-	];
 	6 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	6 -> 20 [
+		color=red
+		cond=false
 	];
 	20 -> 30;
 }

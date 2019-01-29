@@ -1,31 +1,33 @@
-digraph "xnanosleep" {
+strict digraph "xnanosleep" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	17;
 	12;
-	13;
-	15;
-	18;
-	20;
+	14;
 
 	// Edge definitions.
+	1 -> 17 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 20 [
+	12 -> 17 [
+		cond="default case"
+		label="default case"
+	];
+	12 -> 14 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	14 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 13;
-	13 -> 15 [label="case (x=0)"];
-	13 -> 18 [label="default case"];
-	15 -> 13 [
+	14 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 18 [
-		color=darkgreen
-		label=true
-	];
-	18 -> 20;
 }

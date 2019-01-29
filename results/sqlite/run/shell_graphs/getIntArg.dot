@@ -1,6 +1,6 @@
-digraph "getIntArg" {
+strict digraph "getIntArg" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
 	12;
 	24;
@@ -8,11 +8,11 @@ digraph "getIntArg" {
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 24;
 	12 -> 24;

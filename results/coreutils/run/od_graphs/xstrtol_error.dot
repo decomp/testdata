@@ -1,0 +1,29 @@
+strict digraph "xstrtol_error" {
+	// Node definitions.
+	6 [entry=true];
+	12;
+	11;
+	18;
+	22;
+	25;
+
+	// Edge definitions.
+	6 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	6 -> 11 [
+		color=red
+		cond=false
+	];
+	12 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 22 [
+		color=red
+		cond=false
+	];
+	18 -> 25;
+	22 -> 25;
+}

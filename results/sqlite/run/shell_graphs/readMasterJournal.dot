@@ -1,117 +1,126 @@
-digraph "readMasterJournal" {
+strict digraph "readMasterJournal" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	69;
 	19;
 	22;
 	28;
 	32;
-	35;
+	38;
 	41;
-	48;
-	52;
-	63;
-	65;
-	66;
-	70;
-	79;
-	82;
+	47;
+	54;
+	58;
+	71;
+	97;
+	72;
+	76;
+	88;
 	85;
-	86;
 	91;
+	92;
 
 	// Edge definitions.
+	3 -> 69 [
+		color=darkgreen
+		cond=true
+	];
 	3 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
-	3 -> 63 [
+	69 -> 97;
+	19 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 63 [
+	22 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 63 [
+	28 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
-	28 -> 63 [
+	32 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	32 -> 35 [
+	32 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 63 [
+	38 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 41 [
+	38 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	35 -> 63 [
+	41 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 48 [
+	41 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 63 [
+	47 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	48 -> 52 [
+	47 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 63 [
+	54 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 63 [
-		color=darkgreen
-		label=true
-	];
-	52 -> 65 [
+	54 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	63 -> 91;
-	65 -> 66;
-	66 -> 70 [
+	58 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	66 -> 82 [
+	58 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
-	70 -> 79;
-	79 -> 66;
-	82 -> 85 [
+	71 -> 72;
+	72 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	82 -> 86 [
+	72 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
-	85 -> 86;
-	86 -> 91;
+	76 -> 85;
+	88 -> 91 [
+		color=darkgreen
+		cond=true
+	];
+	88 -> 92 [
+		color=red
+		cond=false
+	];
+	85 -> 72;
+	91 -> 92;
+	92 -> 97;
 }

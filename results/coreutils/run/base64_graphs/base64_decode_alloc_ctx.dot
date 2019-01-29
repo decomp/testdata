@@ -1,37 +1,37 @@
-digraph "base64_decode_alloc_ctx" {
+strict digraph "base64_decode_alloc_ctx" {
 	// Node definitions.
-	5 [label=entry];
-	13;
-	15;
-	17;
-	19;
+	5 [entry=true];
 	21;
+	13;
+	17;
+	15;
+	19;
 
 	// Edge definitions.
-	5 -> 13 [
-		color=red
-		label=false
-	];
 	5 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 15 [
+	5 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 21;
-	17 -> 19 [
+	13 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	17 -> 19 [
+		color=red
+		cond=false
+	];
+	15 -> 21;
 	19 -> 21;
 }

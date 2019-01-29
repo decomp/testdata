@@ -1,61 +1,89 @@
-digraph "corruptSchema" {
+strict digraph "corruptSchema" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
-	22;
-	25;
+	19;
+	84;
 	26;
-	32;
-	37;
-	47;
-	53;
-	54;
+	27;
+	83;
+	33;
+	42;
+	82;
+	48;
+	52;
+	81;
+	55;
 	56;
+	62;
+	73;
+	68;
 
 	// Edge definitions.
 	3 -> 16 [
-		color=red
-		label=false
-	];
-	3 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 22 [
-		color=darkgreen
-		label=true
-	];
-	16 -> 47 [
+	3 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 25 [
+	16 -> 84;
+	19 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 26 [
+	19 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 26;
-	26 -> 32 [
+	26 -> 83;
+	27 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 37 [
+	27 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 37;
-	37 -> 47;
-	47 -> 53 [
+	83 -> 84;
+	33 -> 82;
+	42 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 54 [
+	42 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 56;
-	54 -> 56;
+	82 -> 83;
+	48 -> 81;
+	52 -> 55 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 56 [
+		color=red
+		cond=false
+	];
+	81 -> 82;
+	55 -> 56;
+	56 -> 62 [
+		color=darkgreen
+		cond=true
+	];
+	56 -> 73 [
+		color=red
+		cond=false
+	];
+	62 -> 73 [
+		color=red
+		cond=false
+	];
+	62 -> 68 [
+		color=darkgreen
+		cond=true
+	];
+	73 -> 81;
+	68 -> 73;
 }

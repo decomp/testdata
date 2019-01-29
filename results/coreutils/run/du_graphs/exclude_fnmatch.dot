@@ -1,57 +1,53 @@
-digraph "exclude_fnmatch" {
+strict digraph "exclude_fnmatch" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	12;
+	37;
 	17;
-	18;
-	24;
-	27;
-	31;
-	38;
-	39;
+	23;
+	30;
+	26;
 
 	// Edge definitions.
 	3 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 39 [
+	3 -> 37 [
 		color=red
-		label=false
+		cond=false
+	];
+	12 -> 37 [
+		color=red
+		cond=false
 	];
 	12 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	12 -> 39 [
-		color=red
-		label=false
-	];
-	17 -> 18;
-	18 -> 24 [
+	17 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 31 [
+	17 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 27 [
-		color=red
-		label=false
-	];
-	24 -> 31 [
+	23 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 31;
-	31 -> 18 [
-		color=darkgreen
-		label=true
-	];
-	31 -> 38 [
+	23 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	38 -> 39;
+	30 -> 37 [
+		color=red
+		cond=false
+	];
+	30 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 30;
 }

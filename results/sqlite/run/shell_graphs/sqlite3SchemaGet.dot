@@ -1,43 +1,43 @@
-digraph "sqlite3SchemaGet" {
+strict digraph "sqlite3SchemaGet" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
 	12;
 	15;
-	18;
 	20;
+	18;
+	38;
 	26;
 	37;
-	38;
 
 	// Edge definitions.
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 15;
 	12 -> 15;
-	15 -> 18 [
-		color=red
-		label=false
-	];
 	15 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 38;
+	15 -> 18 [
+		color=red
+		cond=false
+	];
 	20 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
+	18 -> 38;
 	26 -> 37;
 	37 -> 38;
 }

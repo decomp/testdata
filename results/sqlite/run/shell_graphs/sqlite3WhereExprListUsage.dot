@@ -1,32 +1,32 @@
-digraph "sqlite3WhereExprListUsage" {
+strict digraph "sqlite3WhereExprListUsage" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
+	32;
 	10;
 	16;
-	28;
 	31;
-	32;
+	28;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 10;
 	10 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 28;
-	28 -> 10;
 	31 -> 32;
+	28 -> 10;
 }

@@ -1,28 +1,28 @@
-digraph "sqlite3ReleaseTempRange" {
+strict digraph "sqlite3ReleaseTempRange" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
 	12;
-	21;
-	28;
+	25;
+	18;
 
 	// Edge definitions.
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 28;
-	12 -> 21 [
-		color=darkgreen
-		label=true
-	];
-	12 -> 28 [
+	9 -> 25;
+	12 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 28;
+	12 -> 18 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 25;
 }

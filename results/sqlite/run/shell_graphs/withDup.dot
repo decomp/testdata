@@ -1,43 +1,43 @@
-digraph "withDup" {
+strict digraph "withDup" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
+	89;
 	26;
+	88;
 	32;
 	38;
-	84;
 	87;
-	88;
-	89;
+	84;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 89 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
 	26 -> 32;
+	88 -> 89;
 	32 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 84;
-	84 -> 32;
 	87 -> 88;
-	88 -> 89;
+	84 -> 32;
 }

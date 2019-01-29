@@ -1,27 +1,27 @@
-digraph "sqlite3StmtCurrentTime" {
+strict digraph "sqlite3StmtCurrentTime" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	12;
+	27;
 	24;
 	26;
-	27;
 
 	// Edge definitions.
 	1 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 26;
 	26 -> 27;

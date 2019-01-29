@@ -1,41 +1,52 @@
-digraph "clearSelect" {
+strict digraph "clearSelect" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	8;
 	11;
-	51;
-	56;
-	59;
-	63;
+	71;
+	47;
+	52;
+	57;
+	62;
 	65;
+	69;
 
 	// Edge definitions.
 	3 -> 8;
 	8 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 65 [
+	8 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 51 [
+	11 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 56 [
+	11 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
-	51 -> 56;
-	56 -> 59 [
+	47 -> 52;
+	52 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	56 -> 63 [
+	52 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
-	59 -> 63;
-	63 -> 8;
+	57 -> 62;
+	62 -> 65 [
+		color=darkgreen
+		cond=true
+	];
+	62 -> 69 [
+		color=red
+		cond=false
+	];
+	65 -> 69;
+	69 -> 8;
 }

@@ -1,63 +1,63 @@
-digraph "databaseIsUnmoved" {
+strict digraph "databaseIsUnmoved" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	11;
+	36;
 	16;
 	17;
 	25;
 	26;
-	29;
-	32;
-	33;
 	34;
-	36;
+	29;
+	33;
+	32;
 
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 36;
 	11 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 36;
 	17 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 34;
 	26 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 33 [
 		color=red
-		label=false
+		cond=false
+	];
+	34 -> 36;
+	29 -> 33 [
+		color=red
+		cond=false
 	];
 	29 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	29 -> 33 [
-		color=red
-		label=false
-	];
-	32 -> 33;
 	33 -> 34;
-	34 -> 36;
+	32 -> 33;
 }

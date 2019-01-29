@@ -1,17 +1,17 @@
-digraph "codeOffset" {
+strict digraph "codeOffset" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
 	14;
 
 	// Edge definitions.
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 14;
 }

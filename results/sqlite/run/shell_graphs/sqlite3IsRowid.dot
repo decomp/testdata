@@ -1,40 +1,40 @@
-digraph "sqlite3IsRowid" {
+strict digraph "sqlite3IsRowid" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
 	8;
+	19;
 	12;
 	13;
 	17;
 	18;
-	19;
 
 	// Edge definitions.
 	1 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 19;
 	8 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 19;
 	13 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 19;
 	18 -> 19;

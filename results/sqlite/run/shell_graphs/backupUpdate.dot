@@ -1,50 +1,50 @@
-digraph "backupUpdate" {
+strict digraph "backupUpdate" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	8;
+	42;
 	14;
 	20;
 	37;
 	41;
-	42;
 	43;
 	48;
 
 	// Edge definitions.
 	3 -> 8;
-	8 -> 14 [
-		color=red
-		label=false
-	];
 	8 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	8 -> 14 [
+		color=red
+		cond=false
+	];
+	42 -> 43;
+	14 -> 42 [
+		color=red
+		cond=false
 	];
 	14 -> 20 [
 		color=darkgreen
-		label=true
-	];
-	14 -> 42 [
-		color=red
-		label=false
+		cond=true
 	];
 	20 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 41;
 	41 -> 42;
-	42 -> 43;
 	43 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
 }

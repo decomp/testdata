@@ -1,0 +1,28 @@
+strict digraph "analyzeFilterKeyword" {
+	// Node definitions.
+	2 [entry=true];
+	8;
+	12;
+	11;
+	13;
+
+	// Edge definitions.
+	2 -> 8 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 12 [
+		color=red
+		cond=false
+	];
+	8 -> 12 [
+		color=red
+		cond=false
+	];
+	8 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 13;
+	11 -> 13;
+}

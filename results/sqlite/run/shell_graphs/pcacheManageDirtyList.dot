@@ -1,7 +1,8 @@
-digraph "pcacheManageDirtyList" {
+strict digraph "pcacheManageDirtyList" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
+	72;
 	19;
 	25;
 	30;
@@ -9,112 +10,111 @@ digraph "pcacheManageDirtyList" {
 	44;
 	49;
 	57;
+	71;
 	67;
 	70;
-	71;
-	76;
-	81;
-	91;
-	97;
-	105;
-	108;
-	109;
-	117;
-	124;
-	128;
-	129;
+	77;
+	127;
+	89;
+	95;
+	107;
+	103;
+	106;
+	126;
+	115;
+	122;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 76 [
+	2 -> 72 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 25 [
 		color=red
-		label=false
+		cond=false
+	];
+	72 -> 77 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 127 [
+		color=red
+		cond=false
 	];
 	19 -> 25;
 	25 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 44;
 	38 -> 44;
 	44 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	44 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
 	49 -> 71;
 	57 -> 67 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	57 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
+	71 -> 72;
 	67 -> 70;
 	70 -> 71;
-	71 -> 76;
-	76 -> 81 [
+	77 -> 89 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	76 -> 129 [
+	77 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
-	81 -> 91 [
+	89 -> 107;
+	95 -> 103 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	81 -> 97 [
+	95 -> 106 [
 		color=red
-		label=false
+		cond=false
 	];
-	91 -> 109;
-	97 -> 105 [
+	107 -> 126 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	97 -> 108 [
+	107 -> 115 [
 		color=red
-		label=false
+		cond=false
 	];
-	105 -> 108;
-	108 -> 109;
-	109 -> 117 [
+	103 -> 106;
+	106 -> 107;
+	126 -> 127;
+	115 -> 126 [
 		color=red
-		label=false
+		cond=false
 	];
-	109 -> 128 [
+	115 -> 122 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	117 -> 124 [
-		color=darkgreen
-		label=true
-	];
-	117 -> 128 [
-		color=red
-		label=false
-	];
-	124 -> 128;
-	128 -> 129;
+	122 -> 126;
 }

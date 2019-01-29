@@ -1,27 +1,27 @@
-digraph "di_set_alloc" {
+strict digraph "di_set_alloc" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
+	11;
 	4;
 	8;
 	9;
-	11;
 
 	// Edge definitions.
-	0 -> 4 [
-		color=red
-		label=false
-	];
 	0 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	0 -> 4 [
+		color=red
+		cond=false
 	];
 	4 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 11;
 	9 -> 11;

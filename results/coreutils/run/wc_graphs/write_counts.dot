@@ -1,6 +1,6 @@
-digraph "write_counts" {
+strict digraph "write_counts" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	10;
 	14;
 	17;
@@ -11,86 +11,86 @@ digraph "write_counts" {
 	35;
 	38;
 	42;
-	44;
-	47;
-	49;
 	52;
-	59;
+	44;
+	49;
+	47;
 	61;
+	59;
 	63;
 
 	// Edge definitions.
 	6 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 14;
 	14 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 21;
 	21 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 28;
 	28 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	31 -> 35;
 	35 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 42;
-	42 -> 44 [
-		color=red
-		label=false
-	];
 	42 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	44 -> 47 [
+	42 -> 44 [
 		color=red
-		label=false
-	];
-	44 -> 49 [
-		color=darkgreen
-		label=true
-	];
-	47 -> 49;
-	49 -> 52;
-	52 -> 59 [
-		color=red
-		label=false
+		cond=false
 	];
 	52 -> 61 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	59 -> 63;
+	52 -> 59 [
+		color=red
+		cond=false
+	];
+	44 -> 49 [
+		color=darkgreen
+		cond=true
+	];
+	44 -> 47 [
+		color=red
+		cond=false
+	];
+	49 -> 52;
+	47 -> 49;
 	61 -> 63;
+	59 -> 63;
 }

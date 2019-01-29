@@ -1,79 +1,79 @@
-digraph "mkancesdirs_safe_wd" {
+strict digraph "mkancesdirs_safe_wd" {
 	// Node definitions.
-	4 [label=entry];
-	6;
+	4 [entry=true];
 	9;
+	6;
 	12;
-	17;
 	18;
+	17;
 	24;
 	29;
 	31;
-	36;
-	40;
 	43;
 	45;
+	36;
+	40;
 
 	// Edge definitions.
-	4 -> 6 [
-		color=red
-		label=false
-	];
 	4 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	4 -> 6 [
+		color=red
+		cond=false
+	];
+	9 -> 18;
 	6 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 12 [
 		color=darkgreen
-		label=true
-	];
-	9 -> 18;
-	12 -> 17 [
-		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 18;
+	12 -> 17 [
+		color=darkgreen
+		cond=true
+	];
 	18 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
+	17 -> 18;
 	24 -> 29;
 	29 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 43 [
 		color=red
-		label=false
-	];
-	31 -> 36 [
-		color=red
-		label=false
+		cond=false
 	];
 	31 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	31 -> 36 [
+		color=red
+		cond=false
+	];
+	43 -> 45;
+	36 -> 43 [
+		color=red
+		cond=false
 	];
 	36 -> 40 [
 		color=darkgreen
-		label=true
-	];
-	36 -> 43 [
-		color=red
-		label=false
+		cond=true
 	];
 	40 -> 45;
-	43 -> 45;
 }

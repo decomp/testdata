@@ -1,73 +1,91 @@
-digraph "sqlite3ExprCanBeNull" {
+strict digraph "sqlite3ExprCanBeNull" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
-	11;
 	17;
+	11;
 	19;
 	23;
 	30;
 	34;
 	37;
 	38;
+	75;
+	76;
+	72;
 	44;
-	50;
-	65;
-	67;
+	49;
+	55;
 	70;
-	71;
 
 	// Edge definitions.
 	1 -> 5;
-	5 -> 11 [
-		color=red
-		label=false
-	];
 	5 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 17;
+	5 -> 11 [
+		color=red
+		cond=false
+	];
 	17 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
+	11 -> 17;
 	19 -> 5;
 	23 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 34;
-	34 -> 37 [label="case (x=133)"];
-	34 -> 38 [label="case (x=152)"];
-	34 -> 70 [label="default case"];
-	37 -> 71;
+	34 -> 37 [
+		cond="case (x=142)"
+		label="case (x=142)"
+	];
+	34 -> 38 [
+		cond="case (x=158)"
+		label="case (x=158)"
+	];
+	34 -> 75 [
+		cond="default case"
+		label="default case"
+	];
+	37 -> 76;
+	38 -> 72 [
+		color=darkgreen
+		cond=true
+	];
 	38 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	38 -> 67 [
+	75 -> 76;
+	72 -> 76;
+	44 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	44 -> 50 [
-		color=darkgreen
-		label=true
-	];
-	44 -> 65 [
+	44 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
-	50 -> 65;
-	65 -> 67;
-	67 -> 71;
-	70 -> 71;
+	49 -> 55 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 70 [
+		color=red
+		cond=false
+	];
+	55 -> 70;
+	70 -> 72;
 }

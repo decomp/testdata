@@ -1,48 +1,48 @@
-digraph "btreeSetHasContent" {
+strict digraph "btreeSetHasContent" {
 	// Node definitions.
-	2 [label=entry];
-	10;
-	21;
-	22;
+	2 [entry=true];
 	23;
+	10;
+	22;
+	21;
 	26;
-	33;
 	39;
+	33;
 
 	// Edge definitions.
-	2 -> 10 [
-		color=red
-		label=false
-	];
 	2 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	10 -> 21 [
+	2 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
-	10 -> 22 [
-		color=darkgreen
-		label=true
-	];
-	21 -> 22;
-	22 -> 23;
 	23 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 39 [
 		color=red
-		label=false
+		cond=false
+	];
+	10 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	10 -> 21 [
+		color=red
+		cond=false
+	];
+	22 -> 23;
+	21 -> 22;
+	26 -> 39 [
+		color=red
+		cond=false
 	];
 	26 -> 33 [
 		color=darkgreen
-		label=true
-	];
-	26 -> 39 [
-		color=red
-		label=false
+		cond=true
 	];
 	33 -> 39;
 }

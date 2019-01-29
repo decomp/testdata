@@ -1,43 +1,43 @@
-digraph "closeCursorsInFrame" {
+strict digraph "closeCursorsInFrame" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
+	40;
 	10;
 	16;
+	39;
 	26;
 	35;
 	36;
-	39;
-	40;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 10;
 	10 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
+	39 -> 40;
 	26 -> 35;
 	35 -> 36;
 	36 -> 10;
-	39 -> 40;
 }

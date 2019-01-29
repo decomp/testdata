@@ -1,0 +1,28 @@
+strict digraph "sqlite3_keyword_name" {
+	// Node definitions.
+	3 [entry=true];
+	13;
+	10;
+	14;
+	29;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 10 [
+		color=red
+		cond=false
+	];
+	13 -> 29;
+	10 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	10 -> 14 [
+		color=red
+		cond=false
+	];
+	14 -> 29;
+}

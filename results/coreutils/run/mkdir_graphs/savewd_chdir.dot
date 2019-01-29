@@ -1,157 +1,187 @@
-digraph "savewd_chdir" {
+strict digraph "savewd_chdir" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
+	28;
 	10;
 	15;
 	19;
 	21;
 	25;
-	28;
+	87;
+	76;
 	32;
+	44;
+	58;
+	57;
 	35;
 	37;
-	40;
 	42;
-	44;
+	40;
 	48;
 	52;
 	54;
-	57;
-	58;
 	60;
 	62;
 	64;
 	67;
 	69;
 	70;
-	74;
 	75;
-	76;
+	74;
 	83;
-	87;
 
 	// Edge definitions.
-	4 -> 10 [
-		color=red
-		label=false
-	];
 	4 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	4 -> 10 [
+		color=red
+		cond=false
+	];
+	28 -> 32 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	28 -> 44 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	28 -> 58 [
+		cond="case (x=5)"
+		label="case (x=5)"
+	];
+	28 -> 57 [
+		cond="default case"
+		label="default case"
 	];
 	10 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 19;
 	19 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 76 [
 		color=red
-		label=false
-	];
-	28 -> 32 [label="case (x=0)"];
-	28 -> 44 [label="case (x=3)"];
-	28 -> 57 [label="default case"];
-	28 -> 58 [label="case (x=5)"];
-	32 -> 35 [
-		color=darkgreen
-		label=true
-	];
-	32 -> 37 [
-		color=red
-		label=false
-	];
-	35 -> 58;
-	37 -> 40 [label="default case"];
-	37 -> 42 [label="case (x=116)"];
-	40 -> 58;
-	42 -> 48;
-	44 -> 48 [
-		color=darkgreen
-		label=true
-	];
-	44 -> 58 [
-		color=red
-		label=false
-	];
-	48 -> 52 [
-		color=red
-		label=false
-	];
-	48 -> 58 [
-		color=darkgreen
-		label=true
-	];
-	52 -> 54 [
-		color=red
-		label=false
-	];
-	52 -> 76 [
-		color=darkgreen
-		label=true
-	];
-	54 -> 58;
-	58 -> 60 [
-		color=darkgreen
-		label=true
-	];
-	58 -> 62 [
-		color=red
-		label=false
-	];
-	60 -> 64;
-	62 -> 64;
-	64 -> 67 [
-		color=darkgreen
-		label=true
-	];
-	64 -> 76 [
-		color=red
-		label=false
-	];
-	67 -> 69 [label="case (x=1)"];
-	67 -> 70 [label="case (x=3)"];
-	67 -> 75 [label="default case"];
-	67 -> 76 [label="case (x=5)"];
-	69 -> 76;
-	70 -> 74 [
-		color=red
-		label=false
-	];
-	70 -> 76 [
-		color=darkgreen
-		label=true
-	];
-	76 -> 83 [
-		color=red
-		label=false
+		cond=false
 	];
 	76 -> 87 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	76 -> 83 [
+		color=red
+		cond=false
+	];
+	32 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	32 -> 37 [
+		color=red
+		cond=false
+	];
+	44 -> 58 [
+		color=red
+		cond=false
+	];
+	44 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 60 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 62 [
+		color=red
+		cond=false
+	];
+	35 -> 58;
+	37 -> 42 [
+		cond="case (x=116)"
+		label="case (x=116)"
+	];
+	37 -> 40 [
+		cond="default case"
+		label="default case"
+	];
+	42 -> 48;
+	40 -> 58;
+	48 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 52 [
+		color=red
+		cond=false
+	];
+	52 -> 76 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 54 [
+		color=red
+		cond=false
+	];
+	54 -> 58;
+	60 -> 64;
+	62 -> 64;
+	64 -> 76 [
+		color=red
+		cond=false
+	];
+	64 -> 67 [
+		color=darkgreen
+		cond=true
+	];
+	67 -> 76 [
+		cond="case (x=5)"
+		label="case (x=5)"
+	];
+	67 -> 69 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	67 -> 70 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	67 -> 75 [
+		cond="default case"
+		label="default case"
+	];
+	69 -> 76;
+	70 -> 76 [
+		color=darkgreen
+		cond=true
+	];
+	70 -> 74 [
+		color=red
+		cond=false
 	];
 	83 -> 87;
 }

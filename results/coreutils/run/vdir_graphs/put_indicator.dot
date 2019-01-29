@@ -1,27 +1,27 @@
-digraph "put_indicator" {
+strict digraph "put_indicator" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	8;
 	3;
 	6;
 	7;
-	8;
 
 	// Edge definitions.
-	1 -> 3 [
-		color=red
-		label=false
-	];
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	1 -> 3 [
+		color=red
+		cond=false
 	];
 	3 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 7;
 	7 -> 8;

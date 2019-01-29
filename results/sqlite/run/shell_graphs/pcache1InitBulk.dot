@@ -1,8 +1,9 @@
-digraph "pcache1InitBulk" {
+strict digraph "pcache1InitBulk" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	11;
+	115;
 	16;
 	17;
 	20;
@@ -11,68 +12,67 @@ digraph "pcache1InitBulk" {
 	44;
 	54;
 	61;
+	109;
 	68;
 	104;
 	108;
-	109;
-	115;
 
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 115;
 	11 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 115;
 	17 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 32;
 	28 -> 32;
 	32 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	44 -> 54;
 	54 -> 61 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	54 -> 109 [
 		color=red
-		label=false
+		cond=false
 	];
 	61 -> 68;
+	109 -> 115;
 	68 -> 104;
 	104 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	104 -> 108 [
 		color=red
-		label=false
+		cond=false
 	];
 	108 -> 109;
-	109 -> 115;
 }

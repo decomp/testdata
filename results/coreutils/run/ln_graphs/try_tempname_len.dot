@@ -1,94 +1,88 @@
-digraph "try_tempname_len" {
+strict digraph "try_tempname_len" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
+	48;
 	12;
 	17;
-	20;
-	22;
-	24;
-	26;
-	27;
-	35;
-	36;
-	39;
-	40;
-	44;
-	46;
-	47;
 	51;
-	54;
+	20;
+	24;
+	22;
+	42;
+	34;
+	26;
+	37;
+	38;
+	44;
 
 	// Edge definitions.
+	5 -> 48 [
+		color=darkgreen
+		cond=true
+	];
 	5 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	5 -> 51 [
+	48 -> 51;
+	12 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	12 -> 51 [
+	17 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 20 [
 		color=red
-		label=false
-	];
-	17 -> 54 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	20 -> 24;
-	22 -> 24 [
+	24 -> 34 [
 		color=darkgreen
-		label=true
-	];
-	22 -> 44 [
-		color=red
-		label=false
+		cond=true
 	];
 	24 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 36 [
+	22 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 27;
-	27 -> 27 [
+	22 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 35 [
+	42 -> 48;
+	34 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 36;
-	36 -> 39 [
-		color=darkgreen
-		label=true
-	];
-	36 -> 40 [
+	34 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 47;
-	40 -> 22 [
+	26 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 46 [
+	26 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	44 -> 51;
-	46 -> 47;
-	47 -> 51;
-	51 -> 54;
+	37 -> 44;
+	38 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 44 [
+		color=red
+		cond=false
+	];
+	44 -> 48;
 }

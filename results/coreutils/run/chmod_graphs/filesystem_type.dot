@@ -1,0 +1,105 @@
+strict digraph "filesystem_type" {
+	// Node definitions.
+	2 [entry=true];
+	60;
+	14;
+	16;
+	19;
+	32;
+	27;
+	28;
+	36;
+	39;
+	40;
+	57;
+	43;
+	56;
+	53;
+	55;
+
+	// Edge definitions.
+	2 -> 60 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 14 [
+		color=red
+		cond=false
+	];
+	14 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 19 [
+		color=red
+		cond=false
+	];
+	16 -> 19 [
+		color=red
+		cond=false
+	];
+	16 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 28 [
+		color=red
+		cond=false
+	];
+	32 -> 60 [
+		color=darkgreen
+		cond=true
+	];
+	32 -> 36 [
+		color=red
+		cond=false
+	];
+	27 -> 32;
+	28 -> 60;
+	36 -> 60 [
+		color=red
+		cond=false
+	];
+	36 -> 39 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 57 [
+		color=red
+		cond=false
+	];
+	40 -> 57 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 43 [
+		color=red
+		cond=false
+	];
+	57 -> 60;
+	43 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 53 [
+		color=red
+		cond=false
+	];
+	56 -> 57;
+	53 -> 57 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 55 [
+		color=red
+		cond=false
+	];
+}

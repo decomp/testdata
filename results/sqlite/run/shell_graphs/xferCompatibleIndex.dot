@@ -1,111 +1,111 @@
-digraph "xferCompatibleIndex" {
+strict digraph "xferCompatibleIndex" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	16;
 	17;
+	140;
 	27;
 	28;
 	29;
 	36;
+	129;
 	54;
 	55;
 	65;
+	88;
 	86;
 	87;
-	88;
 	106;
 	107;
 	124;
 	125;
 	126;
-	129;
 	138;
 	139;
-	140;
 
 	// Edge definitions.
 	2 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 140;
 	17 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 140;
 	28 -> 29;
 	29 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 129 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 55 [
 		color=red
-		label=false
+		cond=false
+	];
+	129 -> 138 [
+		color=darkgreen
+		cond=true
+	];
+	129 -> 139 [
+		color=red
+		cond=false
 	];
 	54 -> 140;
 	55 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
 	65 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	65 -> 87 [
 		color=red
-		label=false
+		cond=false
 	];
-	86 -> 140;
-	87 -> 88;
 	88 -> 106 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	88 -> 107 [
 		color=red
-		label=false
+		cond=false
 	];
+	86 -> 140;
+	87 -> 88;
 	106 -> 140;
 	107 -> 124 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	107 -> 125 [
 		color=red
-		label=false
+		cond=false
 	];
 	124 -> 140;
 	125 -> 126;
 	126 -> 29;
-	129 -> 138 [
-		color=darkgreen
-		label=true
-	];
-	129 -> 139 [
-		color=red
-		label=false
-	];
 	138 -> 140;
 	139 -> 140;
 }

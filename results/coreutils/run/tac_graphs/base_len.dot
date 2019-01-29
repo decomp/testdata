@@ -1,6 +1,6 @@
-digraph "base_len" {
+strict digraph "base_len" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	3;
 	6;
 	11;
@@ -9,18 +9,18 @@ digraph "base_len" {
 	1 -> 3;
 	3 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 }

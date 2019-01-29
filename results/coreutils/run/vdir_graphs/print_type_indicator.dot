@@ -1,0 +1,125 @@
+strict digraph "print_type_indicator" {
+	// Node definitions.
+	3 [entry=true];
+	4;
+	7;
+	8;
+	28;
+	16;
+	44;
+	19;
+	20;
+	23;
+	26;
+	27;
+	24;
+	25;
+	39;
+	36;
+	41;
+
+	// Edge definitions.
+	3 -> 4 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 7 [
+		color=red
+		cond=false
+	];
+	4 -> 8 [
+		cond="case (x=-32768)"
+		label="case (x=-32768)"
+	];
+	4 -> 28 [
+		cond="case (x=16384)"
+		label="case (x=16384)"
+	];
+	4 -> 16 [
+		cond="default case"
+		label="default case"
+	];
+	7 -> 8 [
+		cond="case (x=5)"
+		label="case (x=5)"
+	];
+	7 -> 28 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	7 -> 16 [
+		cond="default case"
+		label="default case"
+	];
+	8 -> 28 [
+		color=red
+		cond=false
+	];
+	8 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 39 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 36 [
+		color=red
+		cond=false
+	];
+	16 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 19 [
+		color=red
+		cond=false
+	];
+	19 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 23 [
+		color=red
+		cond=false
+	];
+	20 -> 28 [
+		cond="case (x=-24576)"
+		label="case (x=-24576)"
+	];
+	20 -> 44 [
+		cond="default case"
+		label="default case"
+	];
+	20 -> 26 [
+		cond="case (x=4096)"
+		label="case (x=4096)"
+	];
+	20 -> 27 [
+		cond="case (x=-16384)"
+		label="case (x=-16384)"
+	];
+	23 -> 28 [
+		cond="case (x=6)"
+		label="case (x=6)"
+	];
+	23 -> 44 [
+		cond="default case"
+		label="default case"
+	];
+	23 -> 24 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	23 -> 25 [
+		cond="case (x=7)"
+		label="case (x=7)"
+	];
+	26 -> 28;
+	27 -> 28;
+	24 -> 28;
+	25 -> 28;
+	39 -> 41;
+	36 -> 41;
+	41 -> 44;
+}

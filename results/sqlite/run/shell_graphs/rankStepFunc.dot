@@ -1,0 +1,28 @@
+strict digraph "rankStepFunc" {
+	// Node definitions.
+	3 [entry=true];
+	13;
+	29;
+	22;
+	28;
+
+	// Edge definitions.
+	3 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 29 [
+		color=red
+		cond=false
+	];
+	13 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 28 [
+		color=red
+		cond=false
+	];
+	22 -> 28;
+	28 -> 29;
+}

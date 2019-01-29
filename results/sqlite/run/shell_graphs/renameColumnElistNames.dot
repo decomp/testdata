@@ -1,0 +1,43 @@
+strict digraph "renameColumnElistNames" {
+	// Node definitions.
+	4 [entry=true];
+	13;
+	41;
+	14;
+	20;
+	40;
+	32;
+	36;
+	37;
+
+	// Edge definitions.
+	4 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 41 [
+		color=red
+		cond=false
+	];
+	13 -> 14;
+	14 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 40 [
+		color=red
+		cond=false
+	];
+	20 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	20 -> 36 [
+		color=red
+		cond=false
+	];
+	40 -> 41;
+	32 -> 36;
+	36 -> 37;
+	37 -> 14;
+}

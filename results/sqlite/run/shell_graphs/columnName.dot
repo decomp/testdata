@@ -1,36 +1,36 @@
-digraph "columnName" {
+strict digraph "columnName" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	23;
+	53;
 	26;
 	47;
 	49;
-	53;
 
 	// Edge definitions.
 	4 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 53 [
 		color=red
-		label=false
-	];
-	23 -> 26 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	23 -> 53 [
 		color=red
-		label=false
+		cond=false
+	];
+	23 -> 26 [
+		color=darkgreen
+		cond=true
 	];
 	26 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 49;
 	49 -> 53;

@@ -1,17 +1,17 @@
-digraph "sqlite3BeginBenignMalloc" {
+strict digraph "sqlite3BeginBenignMalloc" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	3;
 	5;
 
 	// Edge definitions.
 	0 -> 3 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	0 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
 	3 -> 5;
 }

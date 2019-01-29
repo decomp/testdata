@@ -1,50 +1,54 @@
-digraph "sqlite3InvokeBusyHandler" {
+strict digraph "sqlite3InvokeBusyHandler" {
 	// Node definitions.
-	1 [label=entry];
-	7;
-	12;
+	2 [entry=true];
 	17;
+	12;
 	18;
-	31;
-	34;
-	39;
-	41;
+	61;
+	23;
+	37;
+	48;
+	51;
+	54;
+	59;
 
 	// Edge definitions.
-	1 -> 7 [
-		color=red
-		label=false
-	];
-	1 -> 17 [
+	2 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 12 [
+	2 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	7 -> 17 [
-		color=darkgreen
-		label=true
-	];
+	17 -> 61;
 	12 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 41;
-	18 -> 31 [
+	18 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 34 [
+	18 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 39;
-	34 -> 39;
-	39 -> 41;
+	23 -> 48;
+	37 -> 48;
+	48 -> 51 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 54 [
+		color=red
+		cond=false
+	];
+	51 -> 59;
+	54 -> 59;
+	59 -> 61;
 }

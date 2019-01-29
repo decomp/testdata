@@ -1,113 +1,113 @@
-digraph "explainAppendTerm" {
+strict digraph "explainAppendTerm" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	16;
 	18;
 	21;
 	23;
 	24;
 	28;
+	43;
 	31;
 	33;
 	40;
-	43;
 	46;
 	48;
 	53;
 	55;
 	56;
 	60;
+	70;
 	63;
 	65;
 	67;
-	70;
 	73;
 	75;
 
 	// Edge definitions.
 	6 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 18;
 	18 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 23;
 	23 -> 24;
 	24 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 33 [
 		color=red
-		label=false
+		cond=false
+	];
+	43 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 48 [
+		color=red
+		cond=false
 	];
 	31 -> 33;
 	33 -> 40;
 	40 -> 24;
-	43 -> 46 [
-		color=darkgreen
-		label=true
-	];
-	43 -> 48 [
-		color=red
-		label=false
-	];
 	46 -> 48;
 	48 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	48 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	53 -> 55;
 	55 -> 56;
 	56 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	56 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
 	60 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	60 -> 65 [
 		color=red
-		label=false
+		cond=false
+	];
+	70 -> 73 [
+		color=darkgreen
+		cond=true
+	];
+	70 -> 75 [
+		color=red
+		cond=false
 	];
 	63 -> 65;
 	65 -> 67;
 	67 -> 56;
-	70 -> 73 [
-		color=darkgreen
-		label=true
-	];
-	70 -> 75 [
-		color=red
-		label=false
-	];
 	73 -> 75;
 }

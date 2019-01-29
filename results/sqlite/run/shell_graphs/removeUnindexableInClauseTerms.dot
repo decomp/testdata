@@ -1,0 +1,89 @@
+strict digraph "removeUnindexableInClauseTerms" {
+	// Node definitions.
+	4 [entry=true];
+	31;
+	185;
+	45;
+	52;
+	111;
+	64;
+	107;
+	108;
+	130;
+	152;
+	135;
+	161;
+	184;
+	165;
+	171;
+	183;
+	180;
+
+	// Edge definitions.
+	4 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 185 [
+		color=red
+		cond=false
+	];
+	31 -> 45;
+	45 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	45 -> 111 [
+		color=red
+		cond=false
+	];
+	52 -> 64 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 107 [
+		color=red
+		cond=false
+	];
+	111 -> 130 [
+		color=darkgreen
+		cond=true
+	];
+	111 -> 152 [
+		color=red
+		cond=false
+	];
+	64 -> 107;
+	107 -> 108;
+	108 -> 45;
+	130 -> 152 [
+		color=red
+		cond=false
+	];
+	130 -> 135 [
+		color=darkgreen
+		cond=true
+	];
+	152 -> 161 [
+		color=darkgreen
+		cond=true
+	];
+	152 -> 184 [
+		color=red
+		cond=false
+	];
+	135 -> 152;
+	161 -> 165;
+	184 -> 185;
+	165 -> 171 [
+		color=darkgreen
+		cond=true
+	];
+	165 -> 183 [
+		color=red
+		cond=false
+	];
+	171 -> 180;
+	183 -> 184;
+	180 -> 165;
+}

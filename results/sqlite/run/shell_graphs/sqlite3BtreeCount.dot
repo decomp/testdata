@@ -1,100 +1,100 @@
-digraph "sqlite3BtreeCount" {
+strict digraph "sqlite3BtreeCount" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	16;
-	19;
-	22;
-	36;
+	144;
+	17;
+	20;
+	142;
+	34;
+	29;
 	41;
-	48;
+	46;
+	80;
+	47;
 	53;
-	54;
+	58;
 	60;
-	65;
-	67;
-	84;
-	97;
-	108;
-	122;
-	158;
-	159;
-	161;
+	72;
+	91;
+	105;
+	141;
 
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 161;
-	16 -> 19;
-	19 -> 22 [
+	14 -> 144;
+	16 -> 17;
+	17 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 159 [
+	17 -> 142 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 36 [
-		color=red
-		label=false
-	];
-	22 -> 41 [
+	20 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 41 [
+	20 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	36 -> 48 [
-		color=darkgreen
-		label=true
-	];
-	41 -> 48;
-	48 -> 53 [
-		color=darkgreen
-		label=true
-	];
-	48 -> 97 [
+	142 -> 144;
+	34 -> 41;
+	29 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 54;
-	54 -> 60 [
+	29 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	54 -> 65 [
-		color=red
-		label=false
-	];
-	60 -> 161;
-	65 -> 67;
-	67 -> 54 [
+	41 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 84 [
+	41 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
-	84 -> 97;
-	97 -> 108 [
+	46 -> 47;
+	80 -> 91 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	97 -> 122 [
+	80 -> 105 [
 		color=red
-		label=false
+		cond=false
 	];
-	108 -> 158;
-	122 -> 158;
-	158 -> 19;
-	159 -> 161;
+	47 -> 53 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 58 [
+		color=red
+		cond=false
+	];
+	53 -> 144;
+	58 -> 60;
+	60 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	60 -> 72 [
+		color=red
+		cond=false
+	];
+	72 -> 80;
+	91 -> 141;
+	105 -> 141;
+	141 -> 17;
 }

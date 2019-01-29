@@ -1,0 +1,59 @@
+strict digraph "same_nameat" {
+	// Node definitions.
+	4 [entry=true];
+	12;
+	45;
+	15;
+	24;
+	21;
+	31;
+	28;
+	37;
+	43;
+
+	// Edge definitions.
+	4 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 45 [
+		color=red
+		cond=false
+	];
+	12 -> 45 [
+		color=red
+		cond=false
+	];
+	12 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 21 [
+		color=red
+		cond=false
+	];
+	24 -> 31 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 28 [
+		color=red
+		cond=false
+	];
+	21 -> 24;
+	31 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	31 -> 43 [
+		color=red
+		cond=false
+	];
+	28 -> 31;
+	37 -> 43;
+	43 -> 45;
+}

@@ -1,101 +1,101 @@
-digraph "isSimpleCount" {
+strict digraph "isSimpleCount" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	35;
 	12;
 	19;
 	26;
-	35;
 	36;
+	90;
 	55;
 	56;
 	62;
 	63;
 	68;
 	69;
+	80;
 	81;
-	82;
+	87;
 	88;
-	89;
-	91;
 
 	// Edge definitions.
-	2 -> 12 [
-		color=red
-		label=false
-	];
 	2 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 12 [
+		color=red
+		cond=false
+	];
+	35 -> 90;
+	12 -> 35 [
+		color=darkgreen
+		cond=true
 	];
 	12 -> 19 [
 		color=red
-		label=false
-	];
-	12 -> 35 [
-		color=darkgreen
-		label=true
-	];
-	19 -> 26 [
-		color=red
-		label=false
+		cond=false
 	];
 	19 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	19 -> 26 [
+		color=red
+		cond=false
 	];
 	26 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
-	35 -> 91;
 	36 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
-	55 -> 91;
+	55 -> 90;
 	56 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	56 -> 63 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 91;
+	62 -> 90;
 	63 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	63 -> 69 [
 		color=red
-		label=false
+		cond=false
 	];
-	68 -> 91;
+	68 -> 90;
+	69 -> 80 [
+		color=darkgreen
+		cond=true
+	];
 	69 -> 81 [
-		color=darkgreen
-		label=true
-	];
-	69 -> 82 [
 		color=red
-		label=false
+		cond=false
 	];
-	81 -> 91;
-	82 -> 88 [
+	80 -> 90;
+	81 -> 87 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	82 -> 89 [
+	81 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
-	88 -> 91;
-	89 -> 91;
+	87 -> 90;
+	88 -> 90;
 }

@@ -1,0 +1,19 @@
+strict digraph "sqlite3WhereOrderByLimitOptLabel" {
+	// Node definitions.
+	1 [entry=true];
+	13;
+	9;
+	26;
+
+	// Edge definitions.
+	1 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 9 [
+		color=red
+		cond=false
+	];
+	13 -> 26;
+	9 -> 26;
+}

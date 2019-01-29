@@ -1,0 +1,83 @@
+strict digraph "unsetJoinExpr" {
+	// Node definitions.
+	2 [entry=true];
+	6;
+	9;
+	76;
+	15;
+	30;
+	25;
+	18;
+	36;
+	68;
+	42;
+	43;
+	52;
+	67;
+	64;
+
+	// Edge definitions.
+	2 -> 6;
+	6 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	6 -> 76 [
+		color=red
+		cond=false
+	];
+	9 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	9 -> 30 [
+		color=red
+		cond=false
+	];
+	15 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 18 [
+		color=red
+		cond=false
+	];
+	30 -> 36 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 68 [
+		color=red
+		cond=false
+	];
+	25 -> 30;
+	18 -> 30 [
+		color=red
+		cond=false
+	];
+	18 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 68 [
+		color=red
+		cond=false
+	];
+	36 -> 42 [
+		color=darkgreen
+		cond=true
+	];
+	68 -> 6;
+	42 -> 43;
+	43 -> 52 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 67 [
+		color=red
+		cond=false
+	];
+	52 -> 64;
+	67 -> 68;
+	64 -> 43;
+}

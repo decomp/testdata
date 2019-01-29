@@ -1,0 +1,39 @@
+strict digraph "xgethostname" {
+	// Node definitions.
+	0 [entry=true];
+	3;
+	13;
+	17;
+	20;
+	16;
+	19;
+
+	// Edge definitions.
+	0 -> 3;
+	3 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 17 [
+		color=red
+		cond=false
+	];
+	13 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 16 [
+		color=red
+		cond=false
+	];
+	17 -> 16 [
+		cond="case (x=12)"
+		label="case (x=12)"
+	];
+	17 -> 19 [
+		cond="default case"
+		label="default case"
+	];
+	16 -> 3;
+	19 -> 20;
+}

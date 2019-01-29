@@ -1,6 +1,6 @@
-digraph "invokeProfileCallback" {
+strict digraph "invokeProfileCallback" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	21;
 	32;
 	39;
@@ -9,20 +9,20 @@ digraph "invokeProfileCallback" {
 	// Edge definitions.
 	2 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 32;
 	32 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
 	39 -> 50;
 }

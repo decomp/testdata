@@ -1,63 +1,63 @@
-digraph "removeElementGivenHash" {
+strict digraph "removeElementGivenHash" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	12;
 	20;
 	26;
 	31;
 	39;
 	44;
+	67;
 	56;
 	62;
-	67;
 	78;
 	80;
 
 	// Edge definitions.
 	3 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 26;
 	20 -> 26;
 	26 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	31 -> 39;
 	39 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	39 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
 	44 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	44 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
-	56 -> 62;
-	62 -> 67;
 	67 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	67 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
+	56 -> 62;
+	62 -> 67;
 	78 -> 80;
 }

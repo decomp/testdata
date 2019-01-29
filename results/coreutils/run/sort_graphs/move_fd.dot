@@ -1,0 +1,17 @@
+strict digraph "move_fd" {
+	// Node definitions.
+	2 [entry=true];
+	7;
+	4;
+
+	// Edge definitions.
+	2 -> 7 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 4 [
+		color=red
+		cond=false
+	];
+	4 -> 7;
+}

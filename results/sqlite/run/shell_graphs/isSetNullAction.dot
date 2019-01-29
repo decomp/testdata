@@ -1,70 +1,70 @@
-digraph "isSetNullAction" {
+strict digraph "isSetNullAction" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
 	16;
 	18;
 	24;
+	59;
 	36;
 	43;
-	50;
 	57;
+	50;
 	58;
-	59;
 	60;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 18;
 	16 -> 18;
 	18 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
+	59 -> 60;
 	36 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
+	57 -> 60;
 	50 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	50 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	57 -> 60;
 	58 -> 59;
-	59 -> 60;
 }

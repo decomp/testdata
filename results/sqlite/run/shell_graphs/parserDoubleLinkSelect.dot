@@ -1,61 +1,61 @@
-digraph "parserDoubleLinkSelect" {
+strict digraph "parserDoubleLinkSelect" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
+	54;
 	15;
 	18;
-	26;
 	33;
+	26;
 	39;
+	53;
 	47;
 	51;
-	53;
-	54;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 15;
 	15 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 26;
-	26 -> 15;
 	33 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	33 -> 53 [
 		color=red
-		label=false
+		cond=false
+	];
+	26 -> 15;
+	39 -> 53 [
+		color=red
+		cond=false
 	];
 	39 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 53 [
+	53 -> 54;
+	47 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 51 [
 		color=darkgreen
-		label=true
-	];
-	47 -> 53 [
-		color=red
-		label=false
+		cond=true
 	];
 	51 -> 53;
-	53 -> 54;
 }

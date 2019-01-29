@@ -1,0 +1,54 @@
+strict digraph "sqlite3UpsertDoUpdate" {
+	// Node definitions.
+	5 [entry=true];
+	32;
+	107;
+	36;
+	42;
+	55;
+	106;
+	71;
+	75;
+	96;
+	93;
+
+	// Edge definitions.
+	5 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	5 -> 107 [
+		color=red
+		cond=false
+	];
+	32 -> 107 [
+		color=red
+		cond=false
+	];
+	32 -> 36 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 42 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 55 [
+		color=red
+		cond=false
+	];
+	42 -> 106;
+	55 -> 71;
+	106 -> 107;
+	71 -> 75 [
+		color=darkgreen
+		cond=true
+	];
+	71 -> 96 [
+		color=red
+		cond=false
+	];
+	75 -> 93;
+	96 -> 106;
+	93 -> 71;
+}

@@ -1,103 +1,103 @@
-digraph "vdbePmaReaderIncrMergeInit" {
+strict digraph "vdbePmaReaderIncrMergeInit" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	29;
+	104;
 	37;
+	58;
 	48;
 	57;
-	58;
+	103;
 	64;
 	77;
 	80;
 	102;
-	103;
-	104;
 	107;
-	112;
 	115;
+	112;
 	118;
-	121;
 	124;
+	121;
 
 	// Edge definitions.
 	2 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 104 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 58 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 48 [
-		color=darkgreen
-		label=true
-	];
-	37 -> 57 [
-		color=red
-		label=false
-	];
-	48 -> 57;
-	57 -> 103;
-	58 -> 64 [
-		color=darkgreen
-		label=true
-	];
-	58 -> 77 [
-		color=red
-		label=false
-	];
-	64 -> 77;
-	77 -> 80 [
-		color=darkgreen
-		label=true
-	];
-	77 -> 102 [
-		color=red
-		label=false
-	];
-	80 -> 102;
-	102 -> 103;
-	103 -> 104;
 	104 -> 107 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	104 -> 115 [
 		color=red
-		label=false
+		cond=false
+	];
+	37 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 57 [
+		color=red
+		cond=false
+	];
+	58 -> 64 [
+		color=darkgreen
+		cond=true
+	];
+	58 -> 77 [
+		color=red
+		cond=false
+	];
+	48 -> 57;
+	57 -> 103;
+	103 -> 104;
+	64 -> 77;
+	77 -> 80 [
+		color=darkgreen
+		cond=true
+	];
+	77 -> 102 [
+		color=red
+		cond=false
+	];
+	80 -> 102;
+	102 -> 103;
+	107 -> 115 [
+		color=red
+		cond=false
 	];
 	107 -> 112 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	107 -> 115 [
-		color=red
-		label=false
-	];
-	112 -> 115;
 	115 -> 118 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	115 -> 124 [
 		color=red
-		label=false
+		cond=false
+	];
+	112 -> 115;
+	118 -> 124 [
+		color=red
+		cond=false
 	];
 	118 -> 121 [
 		color=darkgreen
-		label=true
-	];
-	118 -> 124 [
-		color=red
-		label=false
+		cond=true
 	];
 	121 -> 124;
 }

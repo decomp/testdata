@@ -1,6 +1,6 @@
-digraph "walUnlockExclusive" {
+strict digraph "walUnlockExclusive" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	11;
 	12;
 	19;
@@ -8,11 +8,11 @@ digraph "walUnlockExclusive" {
 	// Edge definitions.
 	3 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 19;
 	12 -> 19;

@@ -1,43 +1,43 @@
-digraph "sqlite3VdbeSorterRewind" {
+strict digraph "sqlite3VdbeSorterRewind" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	17;
+	35;
 	23;
 	31;
 	33;
-	35;
+	49;
 	43;
 	47;
-	49;
 
 	// Edge definitions.
 	2 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 31 [
 		color=red
-		label=false
+		cond=false
+	];
+	35 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	35 -> 47 [
+		color=red
+		cond=false
 	];
 	23 -> 33;
 	31 -> 33;
 	33 -> 49;
-	35 -> 43 [
-		color=darkgreen
-		label=true
-	];
-	35 -> 47 [
-		color=red
-		label=false
-	];
 	43 -> 47;
 	47 -> 49;
 }

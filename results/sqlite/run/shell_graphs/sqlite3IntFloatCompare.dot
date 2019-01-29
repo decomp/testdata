@@ -1,29 +1,29 @@
-digraph "sqlite3IntFloatCompare" {
+strict digraph "sqlite3IntFloatCompare" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
 	14;
+	21;
 	19;
 	20;
-	21;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 21;
 	14 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 21;
 	20 -> 21;

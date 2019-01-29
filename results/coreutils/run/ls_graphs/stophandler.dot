@@ -1,17 +1,17 @@
-digraph "stophandler" {
+strict digraph "stophandler" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	4;
 	7;
 
 	// Edge definitions.
 	1 -> 4 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	4 -> 7;
 }

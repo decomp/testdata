@@ -1,18 +1,18 @@
-digraph "pcache1TruncateUnsafe" {
+strict digraph "pcache1TruncateUnsafe" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	18;
 	31;
 	38;
 	39;
 	46;
 	50;
+	78;
 	56;
+	74;
 	69;
 	72;
-	74;
 	77;
-	78;
 	82;
 	83;
 	90;
@@ -20,11 +20,11 @@ digraph "pcache1TruncateUnsafe" {
 	// Edge definitions.
 	2 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 38;
 	31 -> 38;
@@ -32,40 +32,40 @@ digraph "pcache1TruncateUnsafe" {
 	39 -> 46;
 	46 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	46 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
 	50 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	50 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
-	56 -> 69 [
-		color=red
-		label=false
-	];
-	56 -> 72 [
-		color=darkgreen
-		label=true
-	];
-	69 -> 72;
-	72 -> 77;
-	74 -> 77;
-	77 -> 46;
 	78 -> 82 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	78 -> 83 [
 		color=red
-		label=false
+		cond=false
 	];
+	56 -> 69 [
+		color=darkgreen
+		cond=true
+	];
+	56 -> 72 [
+		color=red
+		cond=false
+	];
+	74 -> 77;
+	69 -> 72;
+	72 -> 77;
+	77 -> 46;
 	82 -> 90;
 	83 -> 39;
 }

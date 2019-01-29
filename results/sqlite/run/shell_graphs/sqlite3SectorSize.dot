@@ -1,29 +1,29 @@
-digraph "sqlite3SectorSize" {
+strict digraph "sqlite3SectorSize" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	9;
+	14;
 	12;
 	13;
-	14;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 14;
 	9 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 13;
 	13 -> 14;

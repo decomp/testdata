@@ -1,28 +1,24 @@
-digraph "md5_process_block" {
+strict digraph "md5_process_block" {
 	// Node definitions.
-	3 [label=entry];
-	29;
-	30;
-	696;
-	697;
+	3 [entry=true];
+	28;
+	694;
 
 	// Edge definitions.
-	3 -> 29 [
+	3 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 697 [
+	3 -> 694 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 30;
-	30 -> 30 [
+	28 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 696 [
+	28 -> 694 [
 		color=red
-		label=false
+		cond=false
 	];
-	696 -> 697;
 }

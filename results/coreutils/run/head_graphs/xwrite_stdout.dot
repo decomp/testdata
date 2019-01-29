@@ -1,25 +1,25 @@
-digraph "xwrite_stdout" {
+strict digraph "xwrite_stdout" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	14;
 	4;
 	8;
-	14;
 
 	// Edge definitions.
-	2 -> 4 [
-		color=red
-		label=false
-	];
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 8 [
-		color=darkgreen
-		label=true
+	2 -> 4 [
+		color=red
+		cond=false
 	];
 	4 -> 14 [
 		color=red
-		label=false
+		cond=false
+	];
+	4 -> 8 [
+		color=darkgreen
+		cond=true
 	];
 }

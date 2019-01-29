@@ -1,42 +1,42 @@
-digraph "sqlite3ThreadCreate" {
+strict digraph "sqlite3ThreadCreate" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	15;
 	16;
+	48;
 	27;
 	28;
 	34;
 	37;
 	45;
-	48;
 
 	// Edge definitions.
 	3 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 48;
 	16 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 34;
 	28 -> 34;
 	34 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 45;
 	45 -> 48;

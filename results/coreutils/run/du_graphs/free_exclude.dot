@@ -1,91 +1,88 @@
-digraph "free_exclude" {
+strict digraph "free_exclude" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	44;
 	5;
-	6;
-	13;
-	19;
-	20;
-	28;
-	32;
-	37;
+	12;
 	38;
-	41;
-	45;
-	47;
+	42;
+	35;
+	18;
+	30;
+	26;
+	56;
 	48;
-	52;
-	53;
-	61;
-	62;
 
 	// Edge definitions.
+	1 -> 44 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 48 [
+	44 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 6;
-	6 -> 13 [label="case (x=1)"];
-	6 -> 41 [label="case (x=0)"];
-	6 -> 45 [label="default case"];
-	13 -> 19 [
+	44 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 38 [
+	5 -> 12 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	5 -> 38 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	5 -> 42 [
+		cond="default case"
+		label="default case"
+	];
+	12 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 20;
-	20 -> 28 [
+	12 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 32 [
+	38 -> 42;
+	42 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 32;
-	32 -> 20 [
-		color=darkgreen
-		label=true
-	];
-	32 -> 37 [
+	42 -> 5 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 38;
-	38 -> 45;
-	41 -> 45;
-	45 -> 6 [
-		color=red
-		label=false
-	];
-	45 -> 47 [
+	35 -> 42;
+	18 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 48;
-	48 -> 52 [
+	18 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 62 [
-		color=darkgreen
-		label=true
-	];
-	52 -> 53;
-	53 -> 53 [
+	30 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 61 [
+	30 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	61 -> 62;
+	26 -> 30;
+	48 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 48 [
+		color=red
+		cond=false
+	];
 }

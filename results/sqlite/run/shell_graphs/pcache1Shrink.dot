@@ -1,17 +1,17 @@
-digraph "pcache1Shrink" {
+strict digraph "pcache1Shrink" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	12;
 	25;
 
 	// Edge definitions.
 	1 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 25;
 }

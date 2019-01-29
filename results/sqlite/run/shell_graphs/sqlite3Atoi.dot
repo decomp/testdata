@@ -1,17 +1,17 @@
-digraph "sqlite3Atoi" {
+strict digraph "sqlite3Atoi" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	9;
 
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 9;
 }

@@ -1,6 +1,6 @@
-digraph "sqlite3_value_subtype" {
+strict digraph "sqlite3_value_subtype" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
 	16;
 	17;
@@ -8,11 +8,11 @@ digraph "sqlite3_value_subtype" {
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 17;
 	16 -> 17;

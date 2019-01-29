@@ -1,25 +1,25 @@
-digraph "xgetgroups" {
+strict digraph "xgetgroups" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	6;
-	10;
 	11;
+	10;
 
 	// Edge definitions.
 	3 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 11 [
 		color=red
-		label=false
-	];
-	6 -> 10 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	6 -> 11 [
 		color=red
-		label=false
+		cond=false
+	];
+	6 -> 10 [
+		color=darkgreen
+		cond=true
 	];
 }

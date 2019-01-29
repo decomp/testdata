@@ -1,20 +1,20 @@
-digraph "walRestartHdr" {
+strict digraph "walRestartHdr" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	43;
 	46;
-	52;
 	55;
+	52;
 
 	// Edge definitions.
 	2 -> 43;
 	43 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	46 -> 52;
 	52 -> 43;

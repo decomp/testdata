@@ -1,20 +1,20 @@
-digraph "sqlite3VarintLen" {
+strict digraph "sqlite3VarintLen" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	4;
 	8;
-	9;
 	12;
+	9;
 
 	// Edge definitions.
 	1 -> 4;
 	4 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 9;
 	9 -> 4;

@@ -1,41 +1,41 @@
-digraph "sqlite3DbFreeNN" {
+strict digraph "sqlite3DbFreeNN" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
+	35;
 	13;
 	16;
+	37;
 	21;
-	39;
-	40;
-	42;
+	34;
 
 	// Edge definitions.
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 40 [
+	2 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 42;
+	35 -> 37;
+	13 -> 37;
 	16 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 39 [
+	16 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 42;
-	39 -> 40;
-	40 -> 42;
+	21 -> 37;
+	34 -> 35;
 }

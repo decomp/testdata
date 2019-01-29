@@ -1,6 +1,6 @@
-digraph "sqlite3HashClear" {
+strict digraph "sqlite3HashClear" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	18;
 	21;
 	28;
@@ -9,11 +9,11 @@ digraph "sqlite3HashClear" {
 	1 -> 18;
 	18 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 18;
 }

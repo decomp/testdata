@@ -1,11 +1,17 @@
-digraph "chown_failure_ok" {
+strict digraph "chown_failure_ok" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	4;
 	8;
 
 	// Edge definitions.
-	1 -> 4 [label="case (x=22)"];
-	1 -> 8 [label="default case"];
+	1 -> 4 [
+		cond="case (x=22)"
+		label="case (x=22)"
+	];
+	1 -> 8 [
+		cond="default case"
+		label="default case"
+	];
 	4 -> 8;
 }

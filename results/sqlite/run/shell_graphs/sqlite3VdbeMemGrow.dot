@@ -1,114 +1,105 @@
-digraph "sqlite3VdbeMemGrow" {
+strict digraph "sqlite3VdbeMemGrow" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	10;
 	11;
-	14;
+	16;
+	41;
 	19;
 	27;
-	41;
+	62;
 	46;
 	53;
-	62;
 	67;
 	73;
+	128;
 	83;
 	86;
+	102;
 	91;
-	99;
-	110;
-	117;
-	124;
-	136;
+	109;
+	116;
 
 	// Edge definitions.
 	3 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 11;
-	11 -> 14 [
+	11 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	14 -> 19 [
-		color=darkgreen
-		label=true
-	];
-	14 -> 41 [
+	16 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 27 [
+	16 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 41 [
-		color=red
-		label=false
-	];
-	27 -> 62;
 	41 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
-	46 -> 53;
-	53 -> 62;
+	19 -> 41 [
+		color=red
+		cond=false
+	];
+	19 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	27 -> 62;
 	62 -> 67 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	62 -> 73 [
 		color=red
-		label=false
+		cond=false
 	];
-	67 -> 136;
+	46 -> 53;
+	53 -> 62;
+	67 -> 128;
 	73 -> 83;
 	83 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	83 -> 110 [
+	83 -> 102 [
 		color=red
-		label=false
+		cond=false
+	];
+	86 -> 102 [
+		color=red
+		cond=false
 	];
 	86 -> 91 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	86 -> 110 [
-		color=red
-		label=false
-	];
-	91 -> 99 [
+	102 -> 109 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	91 -> 110 [
+	102 -> 116 [
 		color=red
-		label=false
+		cond=false
 	];
-	99 -> 110;
-	110 -> 117 [
-		color=darkgreen
-		label=true
-	];
-	110 -> 124 [
-		color=red
-		label=false
-	];
-	117 -> 124;
-	124 -> 136;
+	91 -> 102;
+	109 -> 116;
+	116 -> 128;
 }

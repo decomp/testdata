@@ -1,0 +1,50 @@
+strict digraph "createFunctionApi" {
+	// Node definitions.
+	11 [entry=true];
+	30;
+	48;
+	39;
+	35;
+	74;
+	63;
+	73;
+	68;
+
+	// Edge definitions.
+	11 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	11 -> 48 [
+		color=red
+		cond=false
+	];
+	30 -> 39 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 35 [
+		color=red
+		cond=false
+	];
+	48 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 73 [
+		color=red
+		cond=false
+	];
+	39 -> 48;
+	35 -> 74;
+	63 -> 73 [
+		color=red
+		cond=false
+	];
+	63 -> 68 [
+		color=darkgreen
+		cond=true
+	];
+	73 -> 74;
+	68 -> 73;
+}

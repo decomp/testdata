@@ -1,6 +1,6 @@
-digraph "sqlite3ColumnType" {
+strict digraph "sqlite3ColumnType" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
 	14;
 	24;
@@ -8,11 +8,11 @@ digraph "sqlite3ColumnType" {
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 24;
 	14 -> 24;

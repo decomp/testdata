@@ -1,6 +1,6 @@
-digraph "actionName" {
+strict digraph "actionName" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	7;
 	8;
@@ -9,11 +9,26 @@ digraph "actionName" {
 	11;
 
 	// Edge definitions.
-	1 -> 6 [label="case (x=7)"];
-	1 -> 7 [label="case (x=8)"];
-	1 -> 8 [label="case (x=9)"];
-	1 -> 9 [label="case (x=6)"];
-	1 -> 10 [label="default case"];
+	1 -> 6 [
+		cond="case (x=8)"
+		label="case (x=8)"
+	];
+	1 -> 7 [
+		cond="case (x=9)"
+		label="case (x=9)"
+	];
+	1 -> 8 [
+		cond="case (x=10)"
+		label="case (x=10)"
+	];
+	1 -> 9 [
+		cond="case (x=7)"
+		label="case (x=7)"
+	];
+	1 -> 10 [
+		cond="default case"
+		label="default case"
+	];
 	6 -> 11;
 	7 -> 11;
 	8 -> 11;

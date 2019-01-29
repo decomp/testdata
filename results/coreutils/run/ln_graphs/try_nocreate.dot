@@ -1,17 +1,26 @@
-digraph "try_nocreate" {
+strict digraph "try_nocreate" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	11;
 	8;
-	9;
+	12;
 
 	// Edge definitions.
-	2 -> 8 [
+	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 9 [
+	2 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
-	8 -> 9;
+	11 -> 12;
+	8 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 12 [
+		color=red
+		cond=false
+	];
 }

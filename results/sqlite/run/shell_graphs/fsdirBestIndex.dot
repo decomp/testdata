@@ -1,0 +1,91 @@
+strict digraph "fsdirBestIndex" {
+	// Node definitions.
+	2 [entry=true];
+	13;
+	19;
+	53;
+	25;
+	26;
+	48;
+	32;
+	33;
+	38;
+	40;
+	45;
+	47;
+	56;
+	61;
+	103;
+	78;
+	97;
+	102;
+
+	// Edge definitions.
+	2 -> 13;
+	13 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 53 [
+		color=red
+		cond=false
+	];
+	19 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 26 [
+		color=red
+		cond=false
+	];
+	53 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 61 [
+		color=red
+		cond=false
+	];
+	25 -> 48;
+	26 -> 32 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 33 [
+		color=red
+		cond=false
+	];
+	48 -> 13;
+	32 -> 48;
+	33 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	33 -> 40 [
+		color=red
+		cond=false
+	];
+	38 -> 40;
+	40 -> 45 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 47 [
+		color=red
+		cond=false
+	];
+	45 -> 47;
+	47 -> 48;
+	56 -> 103;
+	61 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	61 -> 97 [
+		color=red
+		cond=false
+	];
+	78 -> 102;
+	97 -> 102;
+	102 -> 103;
+}

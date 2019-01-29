@@ -1,52 +1,41 @@
-digraph "pagerUndoCallback" {
+strict digraph "pagerUndoCallback" {
 	// Node definitions.
-	2 [label=entry];
-	16;
-	20;
-	22;
-	32;
-	36;
-	39;
-	44;
-	46;
-	47;
+	2 [entry=true];
+	15;
+	34;
+	19;
+	21;
+	33;
+	26;
+	31;
 
 	// Edge definitions.
-	2 -> 16 [
+	2 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 47 [
+	2 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 20 [
+	15 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 22 [
+	15 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 46;
-	22 -> 32 [
+	19 -> 33;
+	21 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 36 [
+	21 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 36;
-	36 -> 39 [
-		color=darkgreen
-		label=true
-	];
-	36 -> 44 [
-		color=red
-		label=false
-	];
-	39 -> 44;
-	44 -> 46;
-	46 -> 47;
+	33 -> 34;
+	26 -> 31;
+	31 -> 33;
 }

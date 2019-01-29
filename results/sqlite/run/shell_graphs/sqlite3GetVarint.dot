@@ -1,96 +1,96 @@
-digraph "sqlite3GetVarint" {
+strict digraph "sqlite3GetVarint" {
 	// Node definitions.
-	2 [label=entry];
-	15;
+	2 [entry=true];
 	19;
-	28;
-	39;
-	52;
-	65;
-	80;
-	91;
-	107;
-	122;
-	140;
-	157;
-	170;
-	189;
-	204;
-	221;
+	15;
 	258;
+	39;
+	28;
+	65;
+	52;
+	91;
+	80;
+	122;
+	107;
+	157;
+	140;
+	189;
+	170;
+	221;
+	204;
 
 	// Edge definitions.
-	2 -> 15 [
-		color=red
-		label=false
-	];
 	2 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 258;
-	19 -> 28 [
+	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 258;
-	39 -> 52 [
+	19 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
+	15 -> 258;
 	39 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 258;
-	65 -> 80 [
+	39 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
+	28 -> 258;
 	65 -> 91 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	80 -> 258;
-	91 -> 107 [
+	65 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
+	52 -> 258;
 	91 -> 122 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	107 -> 258;
-	122 -> 140 [
+	91 -> 107 [
 		color=red
-		label=false
+		cond=false
 	];
+	80 -> 258;
 	122 -> 157 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	140 -> 258;
-	157 -> 170 [
+	122 -> 140 [
 		color=red
-		label=false
+		cond=false
 	];
+	107 -> 258;
 	157 -> 189 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	170 -> 258;
-	189 -> 204 [
+	157 -> 170 [
 		color=red
-		label=false
+		cond=false
 	];
+	140 -> 258;
 	189 -> 221 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	204 -> 258;
+	189 -> 204 [
+		color=red
+		cond=false
+	];
+	170 -> 258;
 	221 -> 258;
+	204 -> 258;
 }

@@ -1,64 +1,64 @@
-digraph "parseDateOrTime" {
+strict digraph "parseDateOrTime" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	13;
 	14;
+	45;
 	19;
 	20;
 	24;
-	28;
 	32;
+	28;
 	38;
 	41;
 	42;
 	43;
 	44;
-	45;
 
 	// Edge definitions.
 	3 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 45;
 	14 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 45;
 	20 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 32 [
 		color=red
-		label=false
-	];
-	24 -> 28 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	24 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
-	28 -> 45;
+	24 -> 28 [
+		color=darkgreen
+		cond=true
+	];
 	32 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
+	28 -> 45;
 	38 -> 45;
 	41 -> 42;
 	42 -> 43;

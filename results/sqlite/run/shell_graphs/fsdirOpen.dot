@@ -1,0 +1,19 @@
+strict digraph "fsdirOpen" {
+	// Node definitions.
+	2 [entry=true];
+	12;
+	13;
+	21;
+
+	// Edge definitions.
+	2 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 13 [
+		color=red
+		cond=false
+	];
+	12 -> 21;
+	13 -> 21;
+}

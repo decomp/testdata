@@ -1,0 +1,55 @@
+strict digraph "diagnose_leading_hyphen" {
+	// Node definitions.
+	2 [entry=true];
+	5;
+	31;
+	8;
+	14;
+	28;
+	18;
+	21;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 31 [
+		color=red
+		cond=false
+	];
+	5 -> 8;
+	8 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 28 [
+		color=red
+		cond=false
+	];
+	14 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 18 [
+		color=red
+		cond=false
+	];
+	28 -> 31 [
+		color=red
+		cond=false
+	];
+	28 -> 8 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 28 [
+		color=red
+		cond=false
+	];
+	18 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 31;
+}

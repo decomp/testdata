@@ -1,37 +1,35 @@
-digraph "memcasecmp" {
+strict digraph "memcasecmp" {
 	// Node definitions.
-	3 [label=entry];
-	5;
-	8;
-	10;
+	3 [entry=true];
 	25;
-	27;
+	5;
+	10;
+	8;
 
 	// Edge definitions.
+	3 -> 25 [
+		color=darkgreen
+		cond=true
+	];
 	3 -> 5 [
 		color=red
-		label=false
-	];
-	3 -> 27 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	5 -> 10;
-	8 -> 10 [
-		color=darkgreen
-		label=true
-	];
-	8 -> 25 [
+	10 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	10 -> 25 [
+	8 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	25 -> 27;
+	8 -> 10 [
+		color=darkgreen
+		cond=true
+	];
 }

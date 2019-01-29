@@ -1,26 +1,26 @@
-digraph "sqlite3BtreeSchema" {
+strict digraph "sqlite3BtreeSchema" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	28;
 	16;
 	19;
-	28;
 
 	// Edge definitions.
-	3 -> 16 [
-		color=red
-		label=false
-	];
 	3 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 19 [
-		color=darkgreen
-		label=true
+	3 -> 16 [
+		color=red
+		cond=false
 	];
 	16 -> 28 [
 		color=red
-		label=false
+		cond=false
+	];
+	16 -> 19 [
+		color=darkgreen
+		cond=true
 	];
 	19 -> 28;
 }

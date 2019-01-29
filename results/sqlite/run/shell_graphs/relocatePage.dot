@@ -1,118 +1,118 @@
-digraph "relocatePage" {
+strict digraph "relocatePage" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	34;
 	36;
-	43;
+	111;
 	47;
+	43;
+	55;
 	52;
 	54;
-	55;
+	72;
 	62;
+	71;
 	68;
 	70;
-	71;
-	72;
 	76;
+	109;
 	82;
 	84;
 	91;
 	94;
 	103;
 	108;
-	109;
-	111;
 
 	// Edge definitions.
 	6 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	34 -> 111;
-	36 -> 43 [
-		color=red
-		label=false
-	];
 	36 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	43 -> 47 [
-		color=darkgreen
-		label=true
-	];
-	43 -> 55 [
+	36 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
-	52 -> 111;
-	54 -> 72;
+	43 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 55 [
+		color=red
+		cond=false
+	];
 	55 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 68 [
-		color=darkgreen
-		label=true
-	];
-	62 -> 70 [
-		color=red
-		label=false
-	];
-	68 -> 111;
-	70 -> 71;
-	71 -> 72;
+	52 -> 111;
+	54 -> 72;
 	72 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	72 -> 109 [
 		color=red
-		label=false
+		cond=false
 	];
+	62 -> 68 [
+		color=darkgreen
+		cond=true
+	];
+	62 -> 70 [
+		color=red
+		cond=false
+	];
+	71 -> 72;
+	68 -> 111;
+	70 -> 71;
 	76 -> 82 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	76 -> 84 [
 		color=red
-		label=false
+		cond=false
 	];
+	109 -> 111;
 	82 -> 111;
 	84 -> 91 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	84 -> 94 [
 		color=red
-		label=false
+		cond=false
 	];
 	91 -> 111;
 	94 -> 103 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	94 -> 108 [
 		color=red
-		label=false
+		cond=false
 	];
 	103 -> 108;
 	108 -> 109;
-	109 -> 111;
 }

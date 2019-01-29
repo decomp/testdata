@@ -1,63 +1,63 @@
-digraph "sqlite3FindDbName" {
+strict digraph "sqlite3FindDbName" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
+	46;
 	20;
 	23;
+	45;
 	30;
 	31;
 	34;
-	38;
 	39;
+	38;
 	40;
-	45;
-	46;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 20;
 	20 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
 	23 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
+	45 -> 46;
 	30 -> 45;
 	31 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 39 [
 		color=red
-		label=false
-	];
-	34 -> 38 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	34 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	38 -> 45;
+	34 -> 38 [
+		color=darkgreen
+		cond=true
+	];
 	39 -> 40;
+	38 -> 45;
 	40 -> 20;
-	45 -> 46;
 }

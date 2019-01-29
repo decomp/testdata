@@ -1,17 +1,17 @@
-digraph "setLikeOptFlag" {
+strict digraph "setLikeOptFlag" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	13;
-	22;
+	20;
 
 	// Edge definitions.
 	3 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 22 [
+	3 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 22;
+	13 -> 20;
 }

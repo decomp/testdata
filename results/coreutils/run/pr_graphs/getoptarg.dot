@@ -1,49 +1,49 @@
-digraph "getoptarg" {
+strict digraph "getoptarg" {
 	// Node definitions.
-	4 [label=entry];
-	10;
+	4 [entry=true];
 	13;
+	10;
+	37;
 	17;
 	25;
-	27;
-	30;
 	35;
-	37;
+	30;
+	27;
 
 	// Edge definitions.
-	4 -> 10 [
-		color=red
-		label=false
-	];
 	4 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	10 -> 13;
-	13 -> 17 [
+	4 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	13 -> 17 [
+		color=red
+		cond=false
+	];
+	10 -> 13;
 	17 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 35 [
 		color=red
-		label=false
-	];
-	25 -> 27 [
-		color=red
-		label=false
+		cond=false
 	];
 	25 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 30;
+	25 -> 27 [
+		color=red
+		cond=false
+	];
 	35 -> 37;
+	27 -> 30;
 }

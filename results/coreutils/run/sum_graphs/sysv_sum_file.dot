@@ -1,177 +1,160 @@
-digraph "sysv_sum_file" {
+strict digraph "sysv_sum_file" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
+	10;
+	17;
 	13;
-	14;
-	20;
+	144;
+	19;
+	113;
+	95;
 	23;
-	27;
-	31;
-	33;
+	25;
+	28;
+	101;
+	67;
 	36;
-	39;
-	45;
-	46;
-	52;
-	58;
-	60;
-	61;
-	88;
-	89;
+	38;
+	85;
+	74;
+	110;
 	99;
-	103;
-	105;
+	121;
 	114;
-	115;
-	118;
-	119;
-	122;
-	126;
-	137;
-	139;
-	146;
-	148;
-	150;
+	117;
+	133;
+	131;
+	142;
+	140;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 20 [
+	2 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 13 [
+	9 -> 17;
+	10 -> 17 [
+		color=red
+		cond=false
+	];
+	10 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	9 -> 20 [
-		color=red
-		label=false
+	17 -> 19;
+	13 -> 144;
+	19 -> 113 [
+		cond="case (x=0)"
+		label="case (x=0)"
 	];
-	13 -> 14;
-	14 -> 27;
-	20 -> 14 [
-		color=red
-		label=false
+	19 -> 95 [
+		cond="case (x=-1)"
+		label="case (x=-1)"
 	];
-	20 -> 23 [
+	19 -> 23 [
+		cond="default case"
+		label="default case"
+	];
+	113 -> 121 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 150;
-	27 -> 31 [label="default case"];
-	27 -> 99 [label="case (x=-1)"];
-	27 -> 118 [label="case (x=0)"];
-	31 -> 33 [
-		color=darkgreen
-		label=true
-	];
-	31 -> 36 [
+	113 -> 114 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 105;
-	36 -> 33 [
+	95 -> 144 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 39 [
+	95 -> 99 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 45 [
+	23 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 52 [
+	23 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	45 -> 46;
-	46 -> 52;
-	52 -> 58;
-	58 -> 60 [
-		color=red
-		label=false
-	];
-	58 -> 89 [
+	25 -> 101;
+	28 -> 67 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	60 -> 61;
-	61 -> 61 [
+	28 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
-	61 -> 88 [
-		color=darkgreen
-		label=true
-	];
-	88 -> 89;
-	89 -> 33 [
+	101 -> 101 [
 		color=red
-		label=false
+		cond=false
 	];
-	89 -> 115 [
+	101 -> 110 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	99 -> 103 [
+	67 -> 85 [
+		color=darkgreen
+		cond=true
+	];
+	67 -> 74 [
 		color=red
-		label=false
+		cond=false
 	];
-	99 -> 150 [
+	36 -> 38;
+	38 -> 67 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	103 -> 150;
-	105 -> 105 [
+	38 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	105 -> 114 [
-		color=darkgreen
-		label=true
-	];
-	114 -> 115;
-	115 -> 27;
-	118 -> 119 [
+	85 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	118 -> 126 [
+	85 -> 110 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	119 -> 122 [
+	74 -> 85;
+	110 -> 19;
+	99 -> 144;
+	121 -> 133 [
+		color=darkgreen
+		cond=true
+	];
+	121 -> 131 [
 		color=red
-		label=false
+		cond=false
 	];
-	119 -> 126 [
+	114 -> 121 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	122 -> 150;
-	126 -> 137 [
+	114 -> 117 [
 		color=red
-		label=false
+		cond=false
 	];
-	126 -> 139 [
+	117 -> 144;
+	133 -> 142 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	137 -> 139;
-	139 -> 146 [
+	133 -> 140 [
 		color=red
-		label=false
+		cond=false
 	];
-	139 -> 148 [
-		color=darkgreen
-		label=true
-	];
-	146 -> 150;
-	148 -> 150;
+	131 -> 133;
+	142 -> 144;
+	140 -> 144;
 }

@@ -1,67 +1,67 @@
-digraph "getRowTrigger" {
+strict digraph "getRowTrigger" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	15;
 	19;
 	21;
 	26;
 	29;
-	35;
-	41;
 	43;
+	41;
+	35;
 	45;
-	46;
 	50;
-	53;
+	46;
 	59;
+	53;
 
 	// Edge definitions.
 	4 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 21;
 	19 -> 21;
 	21 -> 26;
 	26 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 43 [
 		color=red
-		label=false
-	];
-	29 -> 35 [
-		color=red
-		label=false
+		cond=false
 	];
 	29 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	35 -> 41;
-	41 -> 43;
+	29 -> 35 [
+		color=red
+		cond=false
+	];
 	43 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
+	41 -> 43;
+	35 -> 41;
 	45 -> 46;
-	46 -> 26;
-	50 -> 53 [
-		color=red
-		label=false
-	];
 	50 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	50 -> 53 [
+		color=red
+		cond=false
+	];
+	46 -> 26;
 	53 -> 59;
 }

@@ -1,89 +1,133 @@
-digraph "digest_word_file" {
+strict digraph "digest_word_file" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
+	84;
 	15;
 	23;
-	24;
-	28;
-	31;
+	76;
+	30;
+	27;
 	34;
+	68;
 	37;
+	57;
 	39;
-	40;
+	44;
+	51;
+	41;
+	43;
 	47;
-	59;
-	70;
-	71;
+	46;
+	69;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 71 [
+	2 -> 84 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 15;
 	15 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 59 [
+	15 -> 76 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 24;
-	24 -> 28 [
-		color=red
-		label=false
-	];
-	24 -> 31 [
+	23 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 24 [
-		color=darkgreen
-		label=true
-	];
-	28 -> 31 [
+	23 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 34 [
-		color=darkgreen
-		label=true
-	];
-	31 -> 59 [
+	76 -> 84 [
 		color=red
-		label=false
+		cond=false
+	];
+	76 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 34 [
+		color=darkgreen
+		cond=true
+	];
+	30 -> 68 [
+		color=red
+		cond=false
+	];
+	27 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	27 -> 30 [
+		color=red
+		cond=false
 	];
 	34 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	34 -> 47 [
+	34 -> 57 [
 		color=red
-		label=false
+		cond=false
+	];
+	68 -> 76 [
+		color=red
+		cond=false
+	];
+	68 -> 69 [
+		color=darkgreen
+		cond=true
 	];
 	37 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 40 [
+	37 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	40 -> 47;
-	47 -> 59;
-	59 -> 15 [
+	57 -> 76 [
+		color=red
+		cond=false
+	];
+	57 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	59 -> 70 [
+	39 -> 51 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	70 -> 71;
+	44 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	44 -> 46 [
+		color=red
+		cond=false
+	];
+	51 -> 57;
+	41 -> 51 [
+		color=red
+		cond=false
+	];
+	41 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	47 -> 51;
+	69 -> 76;
 }

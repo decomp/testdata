@@ -1,0 +1,39 @@
+strict digraph "percent_rankStepFunc" {
+	// Node definitions.
+	3 [entry=true];
+	14;
+	42;
+	19;
+	26;
+	35;
+	41;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 42 [
+		color=red
+		cond=false
+	];
+	14 -> 19 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 26 [
+		color=red
+		cond=false
+	];
+	19 -> 26;
+	26 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 41 [
+		color=red
+		cond=false
+	];
+	35 -> 41;
+	41 -> 42;
+}

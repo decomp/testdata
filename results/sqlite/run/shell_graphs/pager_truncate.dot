@@ -1,90 +1,90 @@
-digraph "pager_truncate" {
+strict digraph "pager_truncate" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	16;
-	22;
+	91;
 	28;
+	22;
 	43;
+	90;
 	47;
 	51;
 	57;
+	82;
 	64;
 	81;
-	82;
 	85;
 	89;
-	90;
-	91;
 
 	// Edge definitions.
 	2 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 91 [
 		color=red
-		label=false
-	];
-	16 -> 22 [
-		color=red
-		label=false
+		cond=false
 	];
 	16 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 28 [
-		color=darkgreen
-		label=true
-	];
-	22 -> 91 [
+	16 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 90 [
 		color=red
-		label=false
+		cond=false
 	];
-	43 -> 47 [
+	22 -> 91 [
+		color=red
+		cond=false
+	];
+	22 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 90 [
 		color=red
-		label=false
+		cond=false
 	];
+	43 -> 47 [
+		color=darkgreen
+		cond=true
+	];
+	90 -> 91;
 	47 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
 	51 -> 82;
 	57 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	57 -> 81 [
 		color=red
-		label=false
+		cond=false
 	];
-	64 -> 81;
-	81 -> 82;
 	82 -> 85 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	82 -> 89 [
 		color=red
-		label=false
+		cond=false
 	];
+	64 -> 81;
+	81 -> 82;
 	85 -> 89;
 	89 -> 90;
-	90 -> 91;
 }

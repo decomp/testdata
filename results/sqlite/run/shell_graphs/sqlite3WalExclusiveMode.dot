@@ -1,56 +1,56 @@
-digraph "sqlite3WalExclusiveMode" {
+strict digraph "sqlite3WalExclusiveMode" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
-	13;
-	24;
-	27;
-	34;
+	37;
+	14;
 	35;
+	25;
+	28;
 	36;
-	39;
-	48;
-	55;
+	57;
+	40;
+	49;
 	56;
 
 	// Edge definitions.
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 36 [
+	2 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	8 -> 13 [
+	8 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 34 [
+	8 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 24 [
+	37 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 27 [
+	37 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 27;
-	27 -> 35;
-	34 -> 35;
-	35 -> 56;
-	36 -> 39 [
+	14 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 48 [
+	14 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 55;
-	48 -> 55;
-	55 -> 56;
+	35 -> 36;
+	25 -> 28;
+	28 -> 36;
+	36 -> 57;
+	40 -> 56;
+	49 -> 56;
+	56 -> 57;
 }

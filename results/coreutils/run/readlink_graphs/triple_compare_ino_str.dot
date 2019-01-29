@@ -1,26 +1,26 @@
-digraph "triple_compare_ino_str" {
+strict digraph "triple_compare_ino_str" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
-	18;
 	25;
+	18;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 25 [
 		color=red
-		label=false
-	];
-	10 -> 18 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	10 -> 25 [
 		color=red
-		label=false
+		cond=false
+	];
+	10 -> 18 [
+		color=darkgreen
+		cond=true
 	];
 	18 -> 25;
 }

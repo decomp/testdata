@@ -1,75 +1,75 @@
-digraph "leave_dir" {
+strict digraph "leave_dir" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	20;
 	9;
 	18;
 	19;
-	20;
+	55;
 	24;
 	28;
 	35;
 	36;
 	42;
 	48;
-	53;
 
 	// Edge definitions.
-	2 -> 9 [
-		color=red
-		label=false
-	];
 	2 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 9 [
+		color=red
+		cond=false
+	];
+	20 -> 55 [
+		color=darkgreen
+		cond=true
+	];
+	20 -> 24 [
+		color=red
+		cond=false
 	];
 	9 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
-	19 -> 53;
-	20 -> 24 [
+	19 -> 55;
+	24 -> 55 [
 		color=red
-		label=false
-	];
-	20 -> 53 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	24 -> 28 [
 		color=darkgreen
-		label=true
-	];
-	24 -> 53 [
-		color=red
-		label=false
+		cond=true
 	];
 	28 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	28 -> 36 [
 		color=red
-		label=false
+		cond=false
+	];
+	36 -> 55 [
+		color=red
+		cond=false
 	];
 	36 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 53 [
+	42 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	42 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	42 -> 53 [
-		color=red
-		label=false
-	];
-	48 -> 53;
+	48 -> 55;
 }

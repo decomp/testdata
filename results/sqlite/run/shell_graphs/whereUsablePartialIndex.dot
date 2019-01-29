@@ -1,87 +1,87 @@
-digraph "whereUsablePartialIndex" {
+strict digraph "whereUsablePartialIndex" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	17;
 	23;
-	31;
-	32;
 	36;
+	32;
+	31;
+	86;
 	44;
 	45;
 	49;
 	55;
+	85;
 	64;
 	71;
-	78;
 	79;
+	78;
 	80;
-	85;
-	86;
 
 	// Edge definitions.
 	3 -> 17;
 	17 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 36 [
 		color=red
-		label=false
-	];
-	23 -> 31 [
-		color=red
-		label=false
+		cond=false
 	];
 	23 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 86;
-	32 -> 17;
+	23 -> 31 [
+		color=red
+		cond=false
+	];
 	36 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
+	32 -> 17;
+	31 -> 86;
 	44 -> 45;
 	45 -> 49;
 	49 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
 	55 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
+	85 -> 86;
 	64 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	64 -> 79 [
 		color=red
-		label=false
-	];
-	71 -> 78 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	71 -> 79 [
 		color=red
-		label=false
+		cond=false
 	];
-	78 -> 86;
+	71 -> 78 [
+		color=darkgreen
+		cond=true
+	];
 	79 -> 80;
+	78 -> 86;
 	80 -> 49;
-	85 -> 86;
 }

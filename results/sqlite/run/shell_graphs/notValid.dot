@@ -1,41 +1,41 @@
-digraph "notValid" {
+strict digraph "notValid" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	17;
+	38;
 	24;
 	25;
+	34;
 	32;
 	33;
-	34;
-	38;
 
 	// Edge definitions.
 	4 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 34;
 	25 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
+	34 -> 38;
 	32 -> 33;
 	33 -> 34;
-	34 -> 38;
 }

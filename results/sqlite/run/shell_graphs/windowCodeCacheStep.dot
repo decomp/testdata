@@ -1,0 +1,179 @@
+strict digraph "windowCodeCacheStep" {
+	// Node definitions.
+	5 [entry=true];
+	48;
+	52;
+	53;
+	59;
+	71;
+	65;
+	137;
+	153;
+	158;
+	276;
+	170;
+	164;
+	182;
+	250;
+	188;
+	192;
+	193;
+	201;
+	205;
+	206;
+	212;
+	216;
+	229;
+	226;
+	258;
+	260;
+	261;
+	265;
+	267;
+	268;
+	272;
+	275;
+	279;
+	285;
+
+	// Edge definitions.
+	5 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	5 -> 52 [
+		color=red
+		cond=false
+	];
+	48 -> 53;
+	52 -> 53;
+	53 -> 59 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 71 [
+		color=red
+		cond=false
+	];
+	59 -> 71 [
+		color=red
+		cond=false
+	];
+	59 -> 65 [
+		color=darkgreen
+		cond=true
+	];
+	71 -> 137 [
+		color=darkgreen
+		cond=true
+	];
+	71 -> 153 [
+		color=red
+		cond=false
+	];
+	65 -> 71;
+	137 -> 153;
+	153 -> 158 [
+		color=darkgreen
+		cond=true
+	];
+	153 -> 276 [
+		color=red
+		cond=false
+	];
+	158 -> 170 [
+		color=darkgreen
+		cond=true
+	];
+	158 -> 164 [
+		color=red
+		cond=false
+	];
+	276 -> 279 [
+		color=darkgreen
+		cond=true
+	];
+	276 -> 285 [
+		color=red
+		cond=false
+	];
+	170 -> 182 [
+		color=darkgreen
+		cond=true
+	];
+	170 -> 250 [
+		color=red
+		cond=false
+	];
+	164 -> 276 [
+		color=red
+		cond=false
+	];
+	164 -> 170 [
+		color=darkgreen
+		cond=true
+	];
+	182 -> 188 [
+		color=darkgreen
+		cond=true
+	];
+	182 -> 192 [
+		color=red
+		cond=false
+	];
+	250 -> 258 [
+		color=darkgreen
+		cond=true
+	];
+	250 -> 260 [
+		color=red
+		cond=false
+	];
+	188 -> 193;
+	192 -> 193;
+	193 -> 201 [
+		color=darkgreen
+		cond=true
+	];
+	193 -> 205 [
+		color=red
+		cond=false
+	];
+	201 -> 206;
+	205 -> 206;
+	206 -> 212;
+	212 -> 216 [
+		color=darkgreen
+		cond=true
+	];
+	212 -> 229 [
+		color=red
+		cond=false
+	];
+	216 -> 226;
+	229 -> 250;
+	226 -> 212;
+	258 -> 261;
+	260 -> 261;
+	261 -> 265 [
+		color=darkgreen
+		cond=true
+	];
+	261 -> 267 [
+		color=red
+		cond=false
+	];
+	265 -> 268;
+	267 -> 268;
+	268 -> 272 [
+		color=darkgreen
+		cond=true
+	];
+	268 -> 275 [
+		color=red
+		cond=false
+	];
+	272 -> 275;
+	275 -> 276;
+	279 -> 285;
+}

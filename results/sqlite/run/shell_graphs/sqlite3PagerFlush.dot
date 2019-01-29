@@ -1,52 +1,52 @@
-digraph "sqlite3PagerFlush" {
+strict digraph "sqlite3PagerFlush" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	43;
 	13;
 	18;
 	21;
 	24;
 	26;
+	42;
 	35;
 	40;
-	42;
-	43;
 
 	// Edge definitions.
-	1 -> 13 [
-		color=red
-		label=false
-	];
 	1 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	1 -> 13 [
+		color=red
+		cond=false
 	];
 	13 -> 18;
 	18 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 24;
 	24 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	26 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
+	42 -> 43;
 	35 -> 40;
 	40 -> 18;
-	42 -> 43;
 }

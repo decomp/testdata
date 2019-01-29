@@ -1,99 +1,99 @@
-digraph "zeroJournalHdr" {
+strict digraph "zeroJournalHdr" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	12;
-	18;
+	74;
 	21;
+	18;
 	26;
 	31;
 	34;
-	39;
 	49;
+	39;
 	52;
+	73;
 	55;
 	62;
-	66;
 	72;
-	73;
-	74;
+	66;
 
 	// Edge definitions.
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 74 [
 		color=red
-		label=false
-	];
-	12 -> 18 [
-		color=red
-		label=false
+		cond=false
 	];
 	12 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	12 -> 18 [
+		color=red
+		cond=false
+	];
+	21 -> 31;
 	18 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 31;
 	26 -> 31;
 	31 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 49 [
 		color=red
-		label=false
-	];
-	34 -> 39 [
-		color=red
-		label=false
+		cond=false
 	];
 	34 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 49;
+	34 -> 39 [
+		color=red
+		cond=false
+	];
 	49 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 73 [
 		color=red
-		label=false
+		cond=false
+	];
+	39 -> 49;
+	52 -> 73 [
+		color=red
+		cond=false
 	];
 	52 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 73 [
-		color=red
-		label=false
-	];
+	73 -> 74;
 	55 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 72 [
 		color=red
-		label=false
-	];
-	62 -> 66 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	62 -> 72 [
 		color=red
-		label=false
+		cond=false
 	];
-	66 -> 72;
+	62 -> 66 [
+		color=darkgreen
+		cond=true
+	];
 	72 -> 73;
-	73 -> 74;
+	66 -> 72;
 }

@@ -1,27 +1,27 @@
-digraph "sqlite3BtreeUpdateMeta" {
+strict digraph "sqlite3BtreeUpdateMeta" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	27;
+	43;
 	37;
 	42;
-	43;
 
 	// Edge definitions.
 	3 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 42;
 	42 -> 43;

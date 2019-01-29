@@ -1,17 +1,17 @@
-digraph "free_mount_entry" {
+strict digraph "free_mount_entry" {
 	// Node definitions.
-	1 [label=entry];
-	12;
+	1 [entry=true];
 	15;
+	12;
 
 	// Edge definitions.
-	1 -> 12 [
-		color=red
-		label=false
-	];
 	1 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	1 -> 12 [
+		color=red
+		cond=false
 	];
 	12 -> 15;
 }

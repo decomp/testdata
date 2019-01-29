@@ -1,108 +1,125 @@
-digraph "resolveP2Values" {
+strict digraph "resolveP2Values" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	36;
 	42;
+	126;
 	47;
-	52;
-	57;
 	58;
 	64;
 	74;
 	80;
-	84;
-	85;
-	93;
-	95;
-	96;
-	102;
+	86;
+	97;
 	108;
-	118;
-	123;
-	134;
-	135;
-	141;
-	142;
-	145;
+	52;
+	57;
+	125;
+	92;
+	96;
+	105;
+	107;
+	113;
+	124;
+	132;
+	133;
+	136;
 
 	// Edge definitions.
 	2 -> 36;
 	36 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 135 [
+	36 -> 126 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 47 [label="case (x=2)"];
-	42 -> 58 [label="case (x=0)"];
-	42 -> 64 [label="case (x=9)"];
-	42 -> 74 [label="case (x=12)"];
-	42 -> 85 [label="case (x=11)"];
-	42 -> 96 [label="case (x=3)"];
-	42 -> 102 [label="case (x=4)"];
-	42 -> 108 [label="default case"];
+	42 -> 47 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	42 -> 58 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	42 -> 64 [
+		cond="case (x=7)"
+		label="case (x=7)"
+	];
+	42 -> 74 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	42 -> 80 [
+		cond="case (x=4)"
+		label="case (x=4)"
+	];
+	42 -> 86 [
+		cond="case (x=10)"
+		label="case (x=10)"
+	];
+	42 -> 97 [
+		cond="case (x=9)"
+		label="case (x=9)"
+	];
+	42 -> 108 [
+		cond="default case"
+		label="default case"
+	];
+	126 -> 132 [
+		color=darkgreen
+		cond=true
+	];
+	126 -> 133 [
+		color=red
+		cond=false
+	];
 	47 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	47 -> 57 [
 		color=red
-		label=false
+		cond=false
+	];
+	58 -> 125;
+	64 -> 125;
+	74 -> 125;
+	80 -> 125;
+	86 -> 92 [
+		color=darkgreen
+		cond=true
+	];
+	86 -> 96 [
+		color=red
+		cond=false
+	];
+	97 -> 105 [
+		color=darkgreen
+		cond=true
+	];
+	97 -> 107 [
+		color=red
+		cond=false
+	];
+	108 -> 113 [
+		color=darkgreen
+		cond=true
+	];
+	108 -> 124 [
+		color=red
+		cond=false
 	];
 	52 -> 57;
 	57 -> 58;
-	58 -> 108;
-	64 -> 108;
-	74 -> 80 [
-		color=darkgreen
-		label=true
-	];
-	74 -> 84 [
-		color=red
-		label=false
-	];
-	80 -> 84;
-	84 -> 108;
-	85 -> 93 [
-		color=darkgreen
-		label=true
-	];
-	85 -> 95 [
-		color=red
-		label=false
-	];
-	93 -> 95;
-	95 -> 108;
-	96 -> 108;
-	102 -> 108;
-	108 -> 118 [
-		color=darkgreen
-		label=true
-	];
-	108 -> 134 [
-		color=red
-		label=false
-	];
-	118 -> 123 [
-		color=darkgreen
-		label=true
-	];
-	118 -> 134 [
-		color=red
-		label=false
-	];
-	123 -> 134;
-	134 -> 135;
-	135 -> 141 [
-		color=darkgreen
-		label=true
-	];
-	135 -> 142 [
-		color=red
-		label=false
-	];
-	141 -> 145;
-	142 -> 36;
+	125 -> 126;
+	92 -> 96;
+	96 -> 125;
+	105 -> 107;
+	107 -> 108;
+	113 -> 124;
+	124 -> 125;
+	132 -> 136;
+	133 -> 36;
 }

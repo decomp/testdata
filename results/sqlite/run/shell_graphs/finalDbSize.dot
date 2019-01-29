@@ -1,50 +1,50 @@
-digraph "finalDbSize" {
+strict digraph "finalDbSize" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	38;
-	47;
 	50;
+	47;
 	51;
-	57;
 	66;
+	57;
 	68;
 	71;
 
 	// Edge definitions.
 	3 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 50 [
 		color=red
-		label=false
-	];
-	38 -> 47 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	38 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
-	47 -> 50;
+	38 -> 47 [
+		color=darkgreen
+		cond=true
+	];
 	50 -> 51;
-	51 -> 57 [
-		color=red
-		label=false
-	];
+	47 -> 50;
 	51 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	57 -> 66;
+	51 -> 57 [
+		color=red
+		cond=false
+	];
 	66 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	66 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
+	57 -> 66;
 	68 -> 51;
 }

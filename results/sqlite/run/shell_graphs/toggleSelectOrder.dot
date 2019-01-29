@@ -1,17 +1,17 @@
-digraph "toggleSelectOrder" {
+strict digraph "toggleSelectOrder" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
 	14;
 
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 14;
 }

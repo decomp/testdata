@@ -1,0 +1,19 @@
+strict digraph "sqlite3ParserFallback" {
+	// Node definitions.
+	1 [entry=true];
+	6;
+	12;
+	13;
+
+	// Edge definitions.
+	1 -> 6 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 12 [
+		color=red
+		cond=false
+	];
+	6 -> 13;
+	12 -> 13;
+}

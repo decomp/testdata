@@ -1,83 +1,77 @@
-digraph "hash_clear" {
+strict digraph "hash_clear" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	7;
+	51;
 	11;
+	47;
 	17;
+	39;
 	23;
-	24;
-	29;
-	32;
-	40;
-	41;
+	28;
+	31;
+	42;
 	44;
-	46;
-	49;
-	53;
-	54;
 
 	// Edge definitions.
 	1 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 54 [
+	1 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 11;
+	11 -> 47 [
+		color=darkgreen
+		cond=true
+	];
 	11 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 49 [
+	47 -> 51 [
+		color=red
+		cond=false
+	];
+	47 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	17 -> 39 [
+		color=darkgreen
+		cond=true
 	];
 	17 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 41 [
+	39 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 24;
-	24 -> 29 [
-		color=darkgreen
-		label=true
-	];
-	24 -> 32 [
+	39 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 32;
-	32 -> 24 [
-		color=red
-		label=false
-	];
-	32 -> 40 [
+	23 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 41;
-	41 -> 44 [
-		color=darkgreen
-		label=true
-	];
-	41 -> 46 [
+	23 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	44 -> 46;
-	46 -> 49;
-	49 -> 11 [
+	28 -> 31;
+	31 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 53 [
+	31 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 54;
+	42 -> 44;
+	44 -> 47;
 }

@@ -1,27 +1,27 @@
-digraph "sqlite3KeyInfoUnref" {
+strict digraph "sqlite3KeyInfoUnref" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
+	21;
 	14;
 	20;
-	21;
 
 	// Edge definitions.
 	1 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 20;
 	20 -> 21;

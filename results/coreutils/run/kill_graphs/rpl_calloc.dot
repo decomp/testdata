@@ -1,28 +1,28 @@
-digraph "rpl_calloc" {
+strict digraph "rpl_calloc" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	12;
 	6;
 	10;
-	12;
 	16;
 
 	// Edge definitions.
-	2 -> 6 [
-		color=red
-		label=false
-	];
 	2 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 6 [
+		color=red
+		cond=false
+	];
+	12 -> 16;
+	6 -> 12 [
+		color=darkgreen
+		cond=true
 	];
 	6 -> 10 [
 		color=red
-		label=false
-	];
-	6 -> 12 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	10 -> 16;
-	12 -> 16;
 }

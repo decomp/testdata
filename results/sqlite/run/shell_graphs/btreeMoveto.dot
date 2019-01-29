@@ -1,56 +1,56 @@
-digraph "btreeMoveto" {
+strict digraph "btreeMoveto" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	16;
+	40;
 	23;
 	24;
+	61;
 	37;
 	39;
-	40;
-	41;
 	48;
+	41;
 	51;
 	59;
-	61;
 
 	// Edge definitions.
 	5 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
+	40 -> 41;
 	23 -> 61;
 	24 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 48;
 	39 -> 41;
-	40 -> 41;
-	41 -> 48;
 	48 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	48 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
+	41 -> 48;
 	51 -> 59;
 	59 -> 61;
 }

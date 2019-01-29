@@ -1,87 +1,87 @@
-digraph "sqlite3ExprListDup" {
+strict digraph "sqlite3ExprListDup" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	17;
 	18;
-	31;
-	32;
-	46;
-	52;
-	64;
-	70;
-	75;
-	81;
+	157;
+	29;
+	30;
+	42;
+	48;
+	155;
+	60;
+	88;
+	66;
+	71;
+	77;
+	83;
 	87;
-	91;
-	92;
-	137;
-	144;
-	146;
+	148;
 
 	// Edge definitions.
 	3 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 146;
-	18 -> 31 [
+	17 -> 157;
+	18 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	18 -> 32 [
+	18 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 146;
-	32 -> 46;
-	46 -> 52 [
+	29 -> 157;
+	30 -> 42;
+	42 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	46 -> 144 [
+	42 -> 155 [
 		color=red
-		label=false
+		cond=false
 	];
-	52 -> 64 [
+	48 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 92 [
+	48 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
-	64 -> 70 [
+	155 -> 157;
+	60 -> 88 [
+		color=red
+		cond=false
+	];
+	60 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	64 -> 92 [
+	88 -> 148;
+	66 -> 88 [
 		color=red
-		label=false
+		cond=false
 	];
-	70 -> 75 [
+	66 -> 71 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	70 -> 92 [
-		color=red
-		label=false
-	];
-	75 -> 81 [
+	71 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	75 -> 87 [
+	71 -> 83 [
 		color=red
-		label=false
+		cond=false
 	];
-	81 -> 91;
-	87 -> 91;
-	91 -> 92;
-	92 -> 137;
-	137 -> 46;
-	144 -> 146;
+	77 -> 87;
+	83 -> 87;
+	87 -> 88;
+	148 -> 42;
 }

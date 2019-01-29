@@ -1,6 +1,6 @@
-digraph "cannotBeFunction" {
+strict digraph "cannotBeFunction" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	19;
 	20;
@@ -8,11 +8,11 @@ digraph "cannotBeFunction" {
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 20;
 	19 -> 20;

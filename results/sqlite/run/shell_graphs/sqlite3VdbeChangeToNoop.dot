@@ -1,6 +1,6 @@
-digraph "sqlite3VdbeChangeToNoop" {
+strict digraph "sqlite3VdbeChangeToNoop" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
 	14;
 	39;
@@ -8,11 +8,11 @@ digraph "sqlite3VdbeChangeToNoop" {
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 39;
 	14 -> 39;

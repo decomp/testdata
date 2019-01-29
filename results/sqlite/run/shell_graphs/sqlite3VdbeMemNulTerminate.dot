@@ -1,6 +1,6 @@
-digraph "sqlite3VdbeMemNulTerminate" {
+strict digraph "sqlite3VdbeMemNulTerminate" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	11;
 	14;
@@ -8,11 +8,11 @@ digraph "sqlite3VdbeMemNulTerminate" {
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 14;
 	11 -> 14;

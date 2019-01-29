@@ -1,101 +1,101 @@
-digraph "getfileconat" {
+strict digraph "getfileconat" {
 	// Node definitions.
-	3 [label=entry];
-	7;
+	3 [entry=true];
 	10;
+	7;
 	12;
+	48;
+	21;
 	17;
 	20;
-	21;
-	24;
 	27;
+	24;
 	29;
-	33;
 	35;
-	39;
-	41;
-	44;
-	46;
+	33;
 	47;
-	48;
+	41;
+	39;
+	46;
+	44;
 
 	// Edge definitions.
-	3 -> 7 [
-		color=red
-		label=false
-	];
 	3 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	3 -> 7 [
+		color=red
+		cond=false
+	];
+	10 -> 48;
 	7 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 12 [
 		color=red
-		label=false
-	];
-	10 -> 48;
-	12 -> 17 [
-		color=red
-		label=false
+		cond=false
 	];
 	12 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 20 [
+	12 -> 17 [
 		color=red
-		label=false
-	];
-	17 -> 21 [
-		color=darkgreen
-		label=true
-	];
-	20 -> 21;
-	21 -> 24 [
-		color=red
-		label=false
+		cond=false
 	];
 	21 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	21 -> 24 [
+		color=red
+		cond=false
+	];
+	17 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	17 -> 20 [
+		color=red
+		cond=false
+	];
+	20 -> 21;
 	27 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 35 [
 		color=red
-		label=false
-	];
-	29 -> 33 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	29 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 47;
-	35 -> 39 [
-		color=red
-		label=false
+	29 -> 33 [
+		color=darkgreen
+		cond=true
 	];
 	35 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 47;
-	41 -> 44 [
+	35 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
+	33 -> 47;
+	47 -> 48;
 	41 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	41 -> 44 [
+		color=red
+		cond=false
+	];
+	39 -> 47;
 	46 -> 47;
-	47 -> 48;
 }

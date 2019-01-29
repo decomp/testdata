@@ -1,50 +1,50 @@
-digraph "mfile_name_concat" {
+strict digraph "mfile_name_concat" {
 	// Node definitions.
-	3 [label=entry];
-	11;
-	16;
-	18;
-	23;
-	31;
-	36;
-	41;
-	44;
+	3 [entry=true];
+	21;
+	12;
+	25;
+	17;
+	43;
+	34;
+	40;
+	39;
 
 	// Edge definitions.
-	3 -> 11 [
-		color=red
-		label=false
-	];
-	3 -> 16 [
+	3 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 16;
-	16 -> 18;
-	18 -> 18 [
-		color=darkgreen
-		label=true
-	];
-	18 -> 23 [
+	3 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 31 [
-		color=red
-		label=false
-	];
-	23 -> 44 [
+	21 -> 25;
+	12 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 36 [
+	12 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 41 [
+	25 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 41;
-	41 -> 44;
+	25 -> 34 [
+		color=red
+		cond=false
+	];
+	17 -> 25;
+	34 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 39 [
+		color=red
+		cond=false
+	];
+	40 -> 43;
+	39 -> 40;
 }

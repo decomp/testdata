@@ -1,0 +1,75 @@
+strict digraph "getToken" {
+	// Node definitions.
+	1 [entry=true];
+	7;
+	13;
+	16;
+	35;
+	19;
+	22;
+	25;
+	28;
+	31;
+	36;
+
+	// Edge definitions.
+	1 -> 7;
+	7 -> 13;
+	13 -> 7 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 16 [
+		color=red
+		cond=false
+	];
+	16 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 19 [
+		color=red
+		cond=false
+	];
+	35 -> 36;
+	19 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 22 [
+		color=red
+		cond=false
+	];
+	22 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 25 [
+		color=red
+		cond=false
+	];
+	25 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 28 [
+		color=red
+		cond=false
+	];
+	28 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 31 [
+		color=red
+		cond=false
+	];
+	31 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	31 -> 36 [
+		color=red
+		cond=false
+	];
+}

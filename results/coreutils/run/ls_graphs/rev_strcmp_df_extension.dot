@@ -1,41 +1,53 @@
-digraph "rev_strcmp_df_extension" {
+strict digraph "rev_strcmp_df_extension" {
 	// Node definitions.
-	2 [label=entry];
-	13;
-	14;
-	17;
-	18;
-	31;
-	33;
+	2 [entry=true];
+	9;
+	10;
+	11;
+	27;
+	12;
+	25;
 
 	// Edge definitions.
-	2 -> 13 [
+	2 -> 9 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	2 -> 10 [
+		cond="default case"
+		label="default case"
+	];
+	9 -> 11 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	9 -> 27 [
+		cond="default case"
+		label="default case"
+	];
+	10 -> 11 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	10 -> 12 [
+		cond="default case"
+		label="default case"
+	];
+	11 -> 27 [
+		cond="default case"
+		label="default case"
+	];
+	11 -> 12 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	12 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
-	2 -> 14 [
+	12 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 14 [label="case (x=3)"];
-	13 -> 33 [label="default case"];
-	14 -> 17 [
-		color=red
-		label=false
-	];
-	14 -> 18 [
-		color=darkgreen
-		label=true
-	];
-	17 -> 18 [label="case (x=3)"];
-	17 -> 33 [label="default case"];
-	18 -> 31 [
-		color=darkgreen
-		label=true
-	];
-	18 -> 33 [
-		color=red
-		label=false
-	];
-	31 -> 33;
+	25 -> 27;
 }

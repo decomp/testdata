@@ -1,45 +1,56 @@
-digraph "exprSelectUsage" {
+strict digraph "exprSelectUsage" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
 	11;
+	116;
 	52;
+	112;
 	53;
 	59;
-	82;
-	85;
-	86;
-	90;
+	111;
+	94;
+	107;
+	108;
 
 	// Edge definitions.
 	2 -> 8;
 	8 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	8 -> 90 [
+	8 -> 116 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 86 [
+	11 -> 112 [
 		color=red
-		label=false
+		cond=false
 	];
 	52 -> 53;
+	112 -> 8;
 	53 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	53 -> 85 [
+	53 -> 111 [
 		color=red
-		label=false
+		cond=false
 	];
-	59 -> 82;
-	82 -> 53;
-	85 -> 86;
-	86 -> 8;
+	59 -> 94 [
+		color=darkgreen
+		cond=true
+	];
+	59 -> 107 [
+		color=red
+		cond=false
+	];
+	111 -> 112;
+	94 -> 107;
+	107 -> 108;
+	108 -> 53;
 }

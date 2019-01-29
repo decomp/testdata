@@ -1,162 +1,137 @@
-digraph "process_line" {
+strict digraph "process_line" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	3;
 	11;
-	13;
 	16;
-	21;
-	22;
-	27;
-	31;
-	41;
-	46;
-	47;
-	51;
-	56;
-	64;
-	65;
-	69;
-	70;
-	83;
 	86;
-	89;
-	91;
-	92;
-	93;
-	94;
-	95;
+	13;
+	29;
+	61;
+	21;
+	44;
+	39;
+	65;
+	48;
+	53;
+	81;
+	78;
+	84;
+	88;
+	102;
+	99;
 	97;
-	106;
-	108;
-	111;
 
 	// Edge definitions.
 	2 -> 3;
 	3 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 16 [
 		color=red
-		label=false
+		cond=false
+	];
+	11 -> 86 [
+		color=darkgreen
+		cond=true
 	];
 	11 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 94 [
+	16 -> 61 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 31;
 	16 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	16 -> 65 [
+	86 -> 88 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	21 -> 22;
-	22 -> 27 [
+	86 -> 102 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 64 [
+	13 -> 29;
+	29 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	27 -> 22 [
+	29 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 93 [
+	61 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 41 [
+	61 -> 65 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 47 [
+	21 -> 61 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 46 [
+	21 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 70 [
+	44 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	46 -> 51;
-	47 -> 31 [
+	44 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	47 -> 92 [
+	39 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	51 -> 56 [
+	39 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	51 -> 91 [
+	65 -> 81 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	56 -> 51 [
+	65 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
-	56 -> 69 [
+	48 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	64 -> 65;
-	65 -> 70 [
+	48 -> 53 [
 		color=red
-		label=false
+		cond=false
 	];
-	65 -> 94 [
+	53 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	69 -> 70;
-	70 -> 83 [
+	53 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	70 -> 86 [
+	81 -> 84;
+	78 -> 84;
+	84 -> 3;
+	88 -> 99 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	83 -> 89;
-	86 -> 89;
-	89 -> 3;
-	91 -> 95;
-	92 -> 95;
-	93 -> 95;
-	94 -> 95;
-	95 -> 97 [
-		color=darkgreen
-		label=true
-	];
-	95 -> 111 [
+	88 -> 97 [
 		color=red
-		label=false
+		cond=false
 	];
-	97 -> 106 [
-		color=red
-		label=false
-	];
-	97 -> 108 [
-		color=darkgreen
-		label=true
-	];
-	106 -> 111;
-	108 -> 111;
+	99 -> 102;
+	97 -> 102;
 }

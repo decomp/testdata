@@ -1,64 +1,64 @@
-digraph "cwrite" {
+strict digraph "cwrite" {
 	// Node definitions.
-	3 [label=entry];
-	4;
+	3 [entry=true];
 	6;
+	4;
+	24;
 	10;
 	12;
+	38;
 	19;
-	24;
 	28;
 	35;
-	38;
 
 	// Edge definitions.
-	3 -> 4 [
-		color=red
-		label=false
-	];
 	3 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 24;
+	3 -> 4 [
+		color=red
+		cond=false
+	];
 	6 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	6 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	10 -> 12 [
-		color=red
-		label=false
-	];
-	10 -> 38 [
+	4 -> 24;
+	24 -> 38 [
 		color=darkgreen
-		label=true
-	];
-	12 -> 19 [
-		color=darkgreen
-		label=true
-	];
-	12 -> 24 [
-		color=red
-		label=false
+		cond=true
 	];
 	24 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 38 [
-		color=darkgreen
-		label=true
-	];
-	28 -> 35 [
+	10 -> 12 [
 		color=red
-		label=false
+		cond=false
+	];
+	10 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	12 -> 24 [
+		color=red
+		cond=false
+	];
+	12 -> 19 [
+		color=darkgreen
+		cond=true
 	];
 	28 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	28 -> 35 [
+		color=red
+		cond=false
 	];
 }

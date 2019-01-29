@@ -1,0 +1,17 @@
+strict digraph "sqlite3_appendvfs_init" {
+	// Node definitions.
+	3 [entry=true];
+	27;
+	28;
+
+	// Edge definitions.
+	3 -> 27 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 28 [
+		color=red
+		cond=false
+	];
+	27 -> 28;
+}

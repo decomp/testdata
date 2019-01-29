@@ -1,58 +1,58 @@
-digraph "sqlite3VtabMakeWritable" {
+strict digraph "sqlite3VtabMakeWritable" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
 	17;
 	19;
 	21;
 	27;
+	42;
 	37;
 	38;
+	78;
 	39;
-	42;
 	60;
 	74;
-	78;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 19;
 	17 -> 19;
 	19 -> 21;
 	21 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 38 [
 		color=red
-		label=false
+		cond=false
+	];
+	42 -> 60 [
+		color=darkgreen
+		cond=true
+	];
+	42 -> 74 [
+		color=red
+		cond=false
 	];
 	37 -> 78;
 	38 -> 39;
 	39 -> 21;
-	42 -> 60 [
-		color=darkgreen
-		label=true
-	];
-	42 -> 74 [
-		color=red
-		label=false
-	];
 	60 -> 78;
 	74 -> 78;
 }

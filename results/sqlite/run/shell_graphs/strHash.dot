@@ -1,6 +1,6 @@
-digraph "strHash" {
+strict digraph "strHash" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
 	11;
 	21;
@@ -9,11 +9,11 @@ digraph "strHash" {
 	1 -> 5;
 	5 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 5;
 }

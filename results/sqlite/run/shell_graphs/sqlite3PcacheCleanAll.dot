@@ -1,6 +1,6 @@
-digraph "sqlite3PcacheCleanAll" {
+strict digraph "sqlite3PcacheCleanAll" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	4;
 	9;
 	11;
@@ -9,11 +9,11 @@ digraph "sqlite3PcacheCleanAll" {
 	1 -> 4;
 	4 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 4;
 }

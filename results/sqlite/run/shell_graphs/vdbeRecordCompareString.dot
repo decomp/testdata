@@ -1,136 +1,136 @@
-digraph "vdbeRecordCompareString" {
+strict digraph "vdbeRecordCompareString" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	20;
 	25;
 	30;
 	35;
 	40;
-	44;
+	163;
 	49;
+	44;
+	162;
 	62;
 	67;
+	165;
 	76;
 	83;
 	85;
 	102;
+	147;
 	113;
+	132;
 	119;
 	124;
 	131;
-	132;
+	146;
 	135;
 	140;
 	145;
-	146;
-	147;
+	161;
 	150;
 	155;
 	160;
-	161;
-	162;
-	163;
-	165;
 
 	// Edge definitions.
 	3 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 30;
 	25 -> 30;
 	30 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 163;
-	40 -> 44 [
-		color=red
-		label=false
-	];
 	40 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	44 -> 162;
+	40 -> 44 [
+		color=red
+		cond=false
+	];
+	163 -> 165;
 	49 -> 62 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
+	44 -> 162;
+	162 -> 163;
 	62 -> 165;
 	67 -> 76 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	67 -> 83 [
 		color=red
-		label=false
+		cond=false
 	];
 	76 -> 85;
 	83 -> 85;
 	85 -> 102 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	85 -> 147 [
 		color=red
-		label=false
+		cond=false
 	];
 	102 -> 113 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	102 -> 132 [
 		color=red
-		label=false
+		cond=false
+	];
+	147 -> 150 [
+		color=darkgreen
+		cond=true
+	];
+	147 -> 155 [
+		color=red
+		cond=false
 	];
 	113 -> 119 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	113 -> 124 [
 		color=red
-		label=false
+		cond=false
+	];
+	132 -> 135 [
+		color=darkgreen
+		cond=true
+	];
+	132 -> 140 [
+		color=red
+		cond=false
 	];
 	119 -> 131;
 	124 -> 131;
 	131 -> 146;
-	132 -> 135 [
-		color=darkgreen
-		label=true
-	];
-	132 -> 140 [
-		color=red
-		label=false
-	];
+	146 -> 161;
 	135 -> 145;
 	140 -> 145;
 	145 -> 146;
-	146 -> 161;
-	147 -> 150 [
-		color=darkgreen
-		label=true
-	];
-	147 -> 155 [
-		color=red
-		label=false
-	];
+	161 -> 162;
 	150 -> 160;
 	155 -> 160;
 	160 -> 161;
-	161 -> 162;
-	162 -> 163;
-	163 -> 165;
 }

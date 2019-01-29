@@ -1,8 +1,9 @@
-digraph "verifyDbFile" {
+strict digraph "verifyDbFile" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
 	12;
+	49;
 	21;
 	25;
 	29;
@@ -10,52 +11,51 @@ digraph "verifyDbFile" {
 	37;
 	41;
 	45;
-	49;
 
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 49;
 	12 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 49;
 	25 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 49;
 	33 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	33 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 49;
-	41 -> 45 [
-		color=darkgreen
-		label=true
-	];
 	41 -> 49 [
 		color=red
-		label=false
+		cond=false
+	];
+	41 -> 45 [
+		color=darkgreen
+		cond=true
 	];
 	45 -> 49;
 }

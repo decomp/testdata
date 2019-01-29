@@ -1,52 +1,52 @@
-digraph "unixGetTempname" {
+strict digraph "unixGetTempname" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	15;
+	49;
 	16;
-	36;
 	40;
+	36;
 	41;
 	42;
 	48;
-	49;
 
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 49;
 	15 -> 16;
-	16 -> 36 [
-		color=red
-		label=false
-	];
 	16 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	16 -> 36 [
+		color=red
+		cond=false
+	];
+	40 -> 49;
 	36 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	36 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	40 -> 49;
 	41 -> 42;
 	42 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
 	48 -> 49;
 }

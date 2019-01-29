@@ -1,6 +1,6 @@
-digraph "addModuleArgument" {
+strict digraph "addModuleArgument" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	28;
 	31;
 	49;
@@ -8,11 +8,11 @@ digraph "addModuleArgument" {
 	// Edge definitions.
 	3 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 49;
 	31 -> 49;

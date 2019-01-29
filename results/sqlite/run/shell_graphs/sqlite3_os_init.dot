@@ -1,20 +1,20 @@
-digraph "sqlite3_os_init" {
+strict digraph "sqlite3_os_init" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
 	2;
 	6;
-	14;
 	17;
+	14;
 
 	// Edge definitions.
 	0 -> 2;
 	2 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 14;
 	14 -> 2;

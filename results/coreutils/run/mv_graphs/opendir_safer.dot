@@ -1,48 +1,48 @@
-digraph "opendir_safer" {
+strict digraph "opendir_safer" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	25;
 	4;
 	7;
 	10;
 	13;
-	18;
 	20;
-	25;
+	18;
 
 	// Edge definitions.
-	1 -> 4 [
-		color=red
-		label=false
-	];
 	1 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 7 [
-		color=darkgreen
-		label=true
+	1 -> 4 [
+		color=red
+		cond=false
 	];
 	4 -> 25 [
 		color=red
-		label=false
+		cond=false
+	];
+	4 -> 7 [
+		color=darkgreen
+		cond=true
 	];
 	7 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 20;
-	13 -> 18 [
-		color=darkgreen
-		label=true
-	];
 	13 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 20;
+	13 -> 18 [
+		color=darkgreen
+		cond=true
+	];
 	20 -> 25;
+	18 -> 20;
 }

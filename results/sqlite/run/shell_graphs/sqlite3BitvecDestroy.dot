@@ -1,45 +1,45 @@
-digraph "sqlite3BitvecDestroy" {
+strict digraph "sqlite3BitvecDestroy" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	7;
+	32;
 	12;
+	29;
 	13;
 	17;
-	25;
 	28;
-	29;
-	32;
+	25;
 
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 32;
 	7 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 13;
+	29 -> 32;
 	13 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 25;
-	25 -> 13;
 	28 -> 29;
-	29 -> 32;
+	25 -> 13;
 }

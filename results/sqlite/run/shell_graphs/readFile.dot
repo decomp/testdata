@@ -1,51 +1,51 @@
-digraph "readFile" {
+strict digraph "readFile" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	15;
+	50;
 	26;
 	27;
 	36;
 	38;
 	44;
 	48;
-	50;
 
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 50;
 	15 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	26 -> 50;
 	27 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 50;
 	38 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	38 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
 	44 -> 48;
 	48 -> 50;

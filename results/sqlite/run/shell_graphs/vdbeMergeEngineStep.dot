@@ -1,25 +1,25 @@
-digraph "vdbeMergeEngineStep" {
+strict digraph "vdbeMergeEngineStep" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	30;
+	179;
 	51;
 	54;
+	163;
 	59;
 	60;
+	85;
 	65;
 	66;
 	84;
-	85;
+	95;
 	88;
 	91;
-	95;
 	124;
+	159;
 	129;
 	130;
-	159;
 	160;
-	163;
-	179;
 	182;
 	189;
 	191;
@@ -27,87 +27,87 @@ digraph "vdbeMergeEngineStep" {
 	// Edge definitions.
 	2 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 179 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 51;
+	179 -> 182 [
+		color=darkgreen
+		cond=true
+	];
+	179 -> 189 [
+		color=red
+		cond=false
+	];
 	51 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 163 [
 		color=red
-		label=false
+		cond=false
 	];
 	54 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	54 -> 60 [
 		color=red
-		label=false
+		cond=false
 	];
+	163 -> 179;
 	59 -> 85;
 	60 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	60 -> 66 [
 		color=red
-		label=false
+		cond=false
+	];
+	85 -> 95 [
+		color=darkgreen
+		cond=true
+	];
+	85 -> 88 [
+		color=red
+		cond=false
 	];
 	65 -> 84;
 	66 -> 84;
 	84 -> 85;
-	85 -> 88 [
-		color=red
-		label=false
-	];
-	85 -> 95 [
-		color=darkgreen
-		label=true
-	];
+	95 -> 159;
 	88 -> 91 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	88 -> 124 [
 		color=red
-		label=false
+		cond=false
 	];
 	91 -> 95 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	91 -> 124 [
 		color=red
-		label=false
+		cond=false
 	];
-	95 -> 159;
 	124 -> 129 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	124 -> 130 [
 		color=red
-		label=false
+		cond=false
 	];
+	159 -> 160;
 	129 -> 130;
 	130 -> 159;
-	159 -> 160;
 	160 -> 51;
-	163 -> 179;
-	179 -> 182 [
-		color=darkgreen
-		label=true
-	];
-	179 -> 189 [
-		color=red
-		label=false
-	];
 	182 -> 191;
 	189 -> 191;
 }

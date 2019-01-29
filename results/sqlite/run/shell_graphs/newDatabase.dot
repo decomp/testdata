@@ -1,29 +1,29 @@
-digraph "newDatabase" {
+strict digraph "newDatabase" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
 	12;
+	90;
 	25;
 	27;
-	90;
 
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 90;
 	12 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 90;
 	27 -> 90;

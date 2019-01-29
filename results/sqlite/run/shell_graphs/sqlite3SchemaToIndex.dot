@@ -1,43 +1,43 @@
-digraph "sqlite3SchemaToIndex" {
+strict digraph "sqlite3SchemaToIndex" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
-	9;
-	15;
-	26;
 	27;
-	28;
-	31;
-	32;
+	9;
+	10;
+	26;
+	21;
+	22;
+	23;
 
 	// Edge definitions.
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 32 [
+	2 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 9;
-	9 -> 15 [
+	9 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	9 -> 31 [
+	9 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 26 [
+	10 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 27 [
+	10 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 31;
-	27 -> 28;
-	28 -> 9;
-	31 -> 32;
+	26 -> 27;
+	21 -> 26;
+	22 -> 23;
+	23 -> 9;
 }

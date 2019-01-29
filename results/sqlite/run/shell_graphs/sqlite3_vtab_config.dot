@@ -1,50 +1,56 @@
-digraph "sqlite3_vtab_config" {
+strict digraph "sqlite3_vtab_config" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
-	20;
+	47;
 	22;
+	20;
+	46;
 	27;
 	33;
 	38;
-	46;
-	47;
 	49;
 	54;
 	57;
 
 	// Edge definitions.
-	2 -> 14 [label="case (x=1)"];
-	2 -> 47 [label="default case"];
-	14 -> 20 [
-		color=red
-		label=false
+	2 -> 14 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	2 -> 47 [
+		cond="default case"
+		label="default case"
 	];
 	14 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 46;
+	14 -> 20 [
+		color=red
+		cond=false
+	];
+	47 -> 49;
 	22 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
+	20 -> 46;
+	46 -> 49;
 	27 -> 38;
 	33 -> 38;
 	38 -> 46;
-	46 -> 49;
-	47 -> 49;
 	49 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
 	54 -> 57;
 }

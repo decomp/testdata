@@ -1,17 +1,17 @@
-digraph "exprTableColumn" {
+strict digraph "exprTableColumn" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	14;
 	24;
 
 	// Edge definitions.
 	4 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 24;
 }

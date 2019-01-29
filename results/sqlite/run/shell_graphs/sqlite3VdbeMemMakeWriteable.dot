@@ -1,79 +1,79 @@
-digraph "sqlite3VdbeMemMakeWriteable" {
+strict digraph "sqlite3VdbeMemMakeWriteable" {
 	// Node definitions.
-	1 [label=entry];
-	10;
-	17;
-	21;
+	1 [entry=true];
+	11;
+	46;
+	18;
 	22;
 	23;
-	28;
-	36;
-	44;
+	24;
+	53;
+	37;
+	29;
 	45;
-	69;
-	70;
-	77;
+	42;
+	44;
 
 	// Edge definitions.
-	1 -> 10 [
+	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 70 [
+	1 -> 46 [
 		color=red
-		label=false
+		cond=false
 	];
-	10 -> 17 [
+	11 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	10 -> 21 [
+	11 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 22 [
+	46 -> 53;
+	18 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 23 [
+	18 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 22 [
+	22 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	21 -> 23 [
+	22 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 77;
-	23 -> 28 [
-		color=red
-		label=false
-	];
-	23 -> 36 [
+	23 -> 53;
+	24 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 36 [
-		color=darkgreen
-		label=true
-	];
-	28 -> 69 [
+	24 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	36 -> 44 [
+	37 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 45 [
+	37 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	44 -> 77;
-	45 -> 69;
-	69 -> 70;
-	70 -> 77;
+	29 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 45 [
+		color=red
+		cond=false
+	];
+	45 -> 46;
+	42 -> 53;
+	44 -> 45;
 }

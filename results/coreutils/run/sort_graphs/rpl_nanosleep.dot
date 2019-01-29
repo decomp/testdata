@@ -1,52 +1,52 @@
-digraph "rpl_nanosleep" {
+strict digraph "rpl_nanosleep" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	7;
 	9;
+	33;
 	15;
 	19;
-	23;
-	25;
 	29;
+	23;
 	31;
-	33;
+	25;
 
 	// Edge definitions.
 	2 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 33;
 	9 -> 15;
 	15 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 23 [
 		color=red
-		label=false
+		cond=false
+	];
+	29 -> 31;
+	23 -> 31 [
+		color=darkgreen
+		cond=true
 	];
 	23 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	23 -> 31 [
-		color=darkgreen
-		label=true
-	];
-	25 -> 31;
-	29 -> 31;
 	31 -> 33;
+	25 -> 31;
 }

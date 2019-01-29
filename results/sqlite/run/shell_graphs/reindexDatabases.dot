@@ -1,36 +1,36 @@
-digraph "reindexDatabases" {
+strict digraph "reindexDatabases" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	16;
 	22;
+	50;
 	29;
 	32;
-	40;
 	44;
+	40;
 	45;
-	50;
 
 	// Edge definitions.
 	2 -> 16;
 	16 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 29;
 	29 -> 32 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
 	32 -> 40;
-	40 -> 29;
 	44 -> 45;
+	40 -> 29;
 	45 -> 16;
 }

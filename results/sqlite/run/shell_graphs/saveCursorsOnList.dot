@@ -1,83 +1,83 @@
-digraph "saveCursorsOnList" {
+strict digraph "saveCursorsOnList" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
 	13;
-	16;
+	45;
 	22;
-	28;
+	16;
 	34;
+	28;
+	42;
 	39;
 	41;
-	42;
+	53;
 	44;
-	45;
 	49;
 	52;
-	53;
 
 	// Edge definitions.
 	3 -> 9;
 	9 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	9 -> 45 [
 		color=red
-		label=false
-	];
-	13 -> 16 [
-		color=red
-		label=false
+		cond=false
 	];
 	13 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	16 -> 22 [
-		color=darkgreen
-		label=true
-	];
-	16 -> 45 [
+	13 -> 16 [
 		color=red
-		label=false
+		cond=false
+	];
+	45 -> 49;
+	22 -> 34 [
+		color=darkgreen
+		cond=true
 	];
 	22 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	22 -> 34 [
-		color=darkgreen
-		label=true
-	];
-	28 -> 34 [
-		color=darkgreen
-		label=true
-	];
-	28 -> 42 [
+	16 -> 45 [
 		color=red
-		label=false
+		cond=false
+	];
+	16 -> 22 [
+		color=darkgreen
+		cond=true
 	];
 	34 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
+	28 -> 34 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 42 [
+		color=red
+		cond=false
+	];
+	42 -> 44;
 	39 -> 53;
 	41 -> 44;
-	42 -> 44;
 	44 -> 45;
-	45 -> 49;
 	49 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	49 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
 	52 -> 53;
 }

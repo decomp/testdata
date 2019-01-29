@@ -1,16 +1,16 @@
-digraph "xstrxfrm" {
+strict digraph "xstrxfrm" {
 	// Node definitions.
-	3 [label=entry];
-	8;
+	3 [entry=true];
 	13;
+	8;
 
 	// Edge definitions.
-	3 -> 8 [
-		color=red
-		label=false
-	];
 	3 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	3 -> 8 [
+		color=red
+		cond=false
 	];
 }

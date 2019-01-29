@@ -1,17 +1,17 @@
-digraph "sqlite3Utf16to8" {
+strict digraph "sqlite3Utf16to8" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	22;
 	24;
 
 	// Edge definitions.
 	4 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 24;
 }

@@ -1,26 +1,26 @@
-digraph "addArgumentToVtab" {
+strict digraph "addArgumentToVtab" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
-	16;
 	37;
+	16;
 
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 37 [
 		color=red
-		label=false
-	];
-	11 -> 16 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	11 -> 37 [
 		color=red
-		label=false
+		cond=false
+	];
+	11 -> 16 [
+		color=darkgreen
+		cond=true
 	];
 	16 -> 37;
 }

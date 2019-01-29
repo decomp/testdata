@@ -1,26 +1,26 @@
-digraph "xvprintf" {
+strict digraph "xvprintf" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	6;
-	10;
 	15;
+	10;
 
 	// Edge definitions.
 	2 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
-	];
-	6 -> 10 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	6 -> 15 [
 		color=red
-		label=false
+		cond=false
+	];
+	6 -> 10 [
+		color=darkgreen
+		cond=true
 	];
 	10 -> 15;
 }

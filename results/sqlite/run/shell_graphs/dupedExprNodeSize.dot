@@ -1,26 +1,26 @@
-digraph "dupedExprNodeSize" {
+strict digraph "dupedExprNodeSize" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	30;
 	15;
 	21;
-	30;
 
 	// Edge definitions.
-	2 -> 15 [
-		color=red
-		label=false
-	];
 	2 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 21 [
-		color=darkgreen
-		label=true
+	2 -> 15 [
+		color=red
+		cond=false
 	];
 	15 -> 30 [
 		color=red
-		label=false
+		cond=false
+	];
+	15 -> 21 [
+		color=darkgreen
+		cond=true
 	];
 	21 -> 30;
 }

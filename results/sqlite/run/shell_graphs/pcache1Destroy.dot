@@ -1,17 +1,17 @@
-digraph "pcache1Destroy" {
+strict digraph "pcache1Destroy" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	14;
 	16;
 
 	// Edge definitions.
 	1 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 16;
 }

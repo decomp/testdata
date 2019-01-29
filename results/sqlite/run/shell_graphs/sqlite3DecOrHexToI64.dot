@@ -1,78 +1,78 @@
-digraph "sqlite3DecOrHexToI64" {
+strict digraph "sqlite3DecOrHexToI64" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
-	20;
+	88;
 	26;
+	20;
 	27;
 	35;
-	36;
 	39;
+	36;
 	41;
 	53;
-	65;
 	68;
+	65;
 	79;
 	84;
-	87;
-	93;
+	94;
 
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 87 [
+	2 -> 88 [
 		color=red
-		label=false
-	];
-	14 -> 20 [
-		color=red
-		label=false
+		cond=false
 	];
 	14 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	14 -> 20 [
+		color=red
+		cond=false
+	];
+	88 -> 94;
+	26 -> 27;
+	20 -> 88 [
+		color=red
+		cond=false
 	];
 	20 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 87 [
-		color=red
-		label=false
-	];
-	26 -> 27;
 	27 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 36;
-	36 -> 27;
 	39 -> 41;
+	36 -> 27;
 	41 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
 	53 -> 65;
-	65 -> 41;
 	68 -> 79 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	68 -> 84 [
 		color=red
-		label=false
+		cond=false
 	];
+	65 -> 41;
 	79 -> 84;
-	84 -> 93;
-	87 -> 93;
+	84 -> 94;
 }

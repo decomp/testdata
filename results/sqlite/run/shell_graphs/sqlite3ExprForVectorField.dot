@@ -1,41 +1,41 @@
-digraph "sqlite3ExprForVectorField" {
+strict digraph "sqlite3ExprForVectorField" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	13;
+	27;
 	18;
 	26;
-	27;
+	50;
 	33;
 	44;
-	50;
 
 	// Edge definitions.
 	3 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 26;
-	26 -> 50;
 	27 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
+	18 -> 26;
+	26 -> 50;
 	33 -> 44;
 	44 -> 50;
 }

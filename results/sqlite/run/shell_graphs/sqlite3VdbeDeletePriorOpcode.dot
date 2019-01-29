@@ -1,28 +1,28 @@
-digraph "sqlite3VdbeDeletePriorOpcode" {
+strict digraph "sqlite3VdbeDeletePriorOpcode" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
-	26;
 	33;
+	26;
 	34;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 33 [
 		color=red
-		label=false
-	];
-	10 -> 26 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	10 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 34;
+	10 -> 26 [
+		color=darkgreen
+		cond=true
+	];
 	33 -> 34;
+	26 -> 34;
 }

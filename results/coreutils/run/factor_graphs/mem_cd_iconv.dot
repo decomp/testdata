@@ -1,193 +1,186 @@
-digraph "mem_cd_iconv" {
+strict digraph "mem_cd_iconv" {
 	// Node definitions.
-	5 [label=entry];
-	22;
-	28;
-	31;
-	35;
-	38;
-	39;
+	5 [entry=true];
 	43;
-	47;
-	48;
-	55;
-	61;
-	64;
+	22;
+	34;
+	28;
+	38;
+	42;
+	41;
+	59;
+	56;
+	50;
+	63;
+	111;
 	65;
-	69;
-	71;
+	66;
 	72;
+	69;
+	77;
 	75;
-	78;
-	81;
-	83;
-	91;
-	92;
 	95;
-	100;
-	102;
+	85;
+	88;
+	92;
+	104;
+	98;
+	99;
 	105;
-	106;
-	109;
-	110;
-	113;
-	114;
-	115;
-	117;
-	120;
-	123;
+	102;
+	103;
+	108;
 
 	// Edge definitions.
+	5 -> 43 [
+		color=darkgreen
+		cond=true
+	];
 	5 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
-	5 -> 48 [
+	43 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 31;
-	28 -> 31 [
+	43 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
-	28 -> 47 [
-		color=darkgreen
-		label=true
-	];
-	31 -> 35 [
-		color=darkgreen
-		label=true
-	];
-	31 -> 39 [
+	22 -> 34;
+	34 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
-	35 -> 38 [label="default case"];
-	35 -> 39 [label="case (x=7)"];
-	35 -> 43 [label="case (x=22)"];
-	38 -> 43;
-	39 -> 43;
-	43 -> 28 [label="case (x=0)"];
-	43 -> 47 [label="case (x=-1)"];
-	43 -> 64 [label="default case"];
-	47 -> 48;
-	48 -> 55 [
+	34 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	48 -> 61 [
+	38 -> 28 [
+		cond="case (x=7)"
+		label="case (x=7)"
+	];
+	38 -> 42 [
+		cond="case (x=22)"
+		label="case (x=22)"
+	];
+	38 -> 41 [
+		cond="default case"
+		label="default case"
+	];
+	42 -> 43;
+	41 -> 59;
+	59 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	55 -> 61;
-	61 -> 65;
-	64 -> 65;
-	65 -> 69 [
-		color=darkgreen
-		label=true
-	];
-	65 -> 123 [
+	59 -> 111 [
 		color=red
-		label=false
+		cond=false
 	];
-	69 -> 71 [
+	56 -> 59;
+	50 -> 56;
+	63 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	63 -> 66 [
+		color=red
+		cond=false
+	];
+	65 -> 111;
+	66 -> 72 [
+		color=darkgreen
+		cond=true
+	];
+	66 -> 69 [
+		color=red
+		cond=false
+	];
+	72 -> 77 [
+		color=red
+		cond=false
+	];
+	72 -> 75 [
+		color=darkgreen
+		cond=true
 	];
 	69 -> 72 [
-		color=red
-		label=false
-	];
-	71 -> 123;
-	72 -> 75 [
-		color=red
-		label=false
-	];
-	72 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	75 -> 78 [
-		color=darkgreen
-		label=true
-	];
-	75 -> 83 [
+	69 -> 77 [
 		color=red
-		label=false
+		cond=false
 	];
-	78 -> 81 [
+	77 -> 95 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	78 -> 83 [
+	77 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
-	81 -> 123;
-	83 -> 91 [
-		color=red
-		label=false
-	];
-	83 -> 106 [
+	75 -> 111;
+	95 -> 98 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	91 -> 92;
+	95 -> 99 [
+		color=red
+		cond=false
+	];
+	85 -> 88 [
+		color=darkgreen
+		cond=true
+	];
+	85 -> 92 [
+		color=red
+		cond=false
+	];
+	88 -> 95 [
+		color=darkgreen
+		cond=true
+	];
+	88 -> 104 [
+		color=red
+		cond=false
+	];
 	92 -> 95 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	92 -> 100 [
+	92 -> 85 [
 		color=red
-		label=false
+		cond=false
 	];
-	95 -> 100;
-	100 -> 102 [label="case (x=0)"];
-	100 -> 105 [label="case (x=-3)"];
-	100 -> 115 [label="default case"];
-	102 -> 92 [
-		color=red
-		label=false
-	];
-	102 -> 105 [
+	104 -> 105;
+	98 -> 105;
+	99 -> 102 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	105 -> 106;
-	106 -> 109 [
-		color=darkgreen
-		label=true
-	];
-	106 -> 110 [
+	99 -> 103 [
 		color=red
-		label=false
+		cond=false
 	];
-	109 -> 117;
-	110 -> 113 [
+	105 -> 111 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	110 -> 114 [
+	105 -> 108 [
 		color=red
-		label=false
+		cond=false
 	];
-	113 -> 123;
-	115 -> 117 [
-		color=darkgreen
-		label=true
-	];
-	115 -> 123 [
-		color=red
-		label=false
-	];
-	117 -> 120 [
-		color=red
-		label=false
-	];
-	117 -> 123 [
-		color=darkgreen
-		label=true
-	];
-	120 -> 123;
+	102 -> 111;
+	108 -> 111;
 }

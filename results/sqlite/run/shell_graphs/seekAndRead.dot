@@ -1,78 +1,78 @@
-digraph "seekAndRead" {
+strict digraph "seekAndRead" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	13;
 	21;
 	25;
+	79;
 	39;
 	40;
+	75;
 	43;
+	52;
 	47;
 	48;
-	52;
+	72;
 	55;
 	70;
 	71;
-	72;
-	75;
-	79;
 
 	// Edge definitions.
 	4 -> 13;
 	13 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 79;
 	25 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	39 -> 75;
 	40 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
+	75 -> 79;
 	43 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	43 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
-	47 -> 72;
-	48 -> 75;
 	52 -> 55 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	52 -> 70 [
 		color=red
-		label=false
+		cond=false
+	];
+	47 -> 72;
+	48 -> 75;
+	72 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 75 [
+		color=red
+		cond=false
 	];
 	55 -> 70;
 	70 -> 71;
 	71 -> 72;
-	72 -> 13 [
-		color=darkgreen
-		label=true
-	];
-	72 -> 75 [
-		color=red
-		label=false
-	];
-	75 -> 79;
 }

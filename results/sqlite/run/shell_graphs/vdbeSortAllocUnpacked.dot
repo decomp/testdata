@@ -1,30 +1,30 @@
-digraph "vdbeSortAllocUnpacked" {
+strict digraph "vdbeSortAllocUnpacked" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
+	38;
 	21;
 	22;
-	38;
 	39;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
+	38 -> 39;
 	21 -> 39;
 	22 -> 38;
-	38 -> 39;
 }

@@ -1,6 +1,6 @@
-digraph "unixFileControl" {
+strict digraph "unixFileControl" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	16;
 	23;
 	29;
@@ -9,94 +9,147 @@ digraph "unixFileControl" {
 	46;
 	50;
 	59;
-	69;
-	80;
 	81;
 	86;
+	136;
+	137;
+	69;
+	80;
 	93;
 	95;
-	103;
-	109;
-	114;
-	122;
-	126;
-	127;
+	98;
+	102;
+	99;
+	110;
+	134;
+	116;
+	121;
 	129;
-	130;
+	133;
 
 	// Edge definitions.
-	3 -> 16 [label="case (x=1)"];
-	3 -> 23 [label="case (x=4)"];
-	3 -> 29 [label="case (x=6)"];
-	3 -> 35 [label="case (x=5)"];
-	3 -> 42 [label="case (x=10)"];
-	3 -> 46 [label="case (x=13)"];
-	3 -> 50 [label="case (x=12)"];
-	3 -> 59 [label="case (x=16)"];
-	3 -> 81 [label="case (x=20)"];
-	3 -> 86 [label="case (x=18)"];
-	3 -> 129 [label="default case"];
-	16 -> 130;
-	23 -> 130;
-	29 -> 130;
-	35 -> 130;
-	42 -> 130;
-	46 -> 130;
-	50 -> 130;
+	3 -> 16 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	3 -> 23 [
+		cond="case (x=4)"
+		label="case (x=4)"
+	];
+	3 -> 29 [
+		cond="case (x=6)"
+		label="case (x=6)"
+	];
+	3 -> 35 [
+		cond="case (x=5)"
+		label="case (x=5)"
+	];
+	3 -> 42 [
+		cond="case (x=10)"
+		label="case (x=10)"
+	];
+	3 -> 46 [
+		cond="case (x=13)"
+		label="case (x=13)"
+	];
+	3 -> 50 [
+		cond="case (x=12)"
+		label="case (x=12)"
+	];
+	3 -> 59 [
+		cond="case (x=16)"
+		label="case (x=16)"
+	];
+	3 -> 81 [
+		cond="case (x=20)"
+		label="case (x=20)"
+	];
+	3 -> 86 [
+		cond="case (x=18)"
+		label="case (x=18)"
+	];
+	3 -> 136 [
+		cond="default case"
+		label="default case"
+	];
+	16 -> 137;
+	23 -> 137;
+	29 -> 137;
+	35 -> 137;
+	42 -> 137;
+	46 -> 137;
+	50 -> 137;
 	59 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	59 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
-	69 -> 80;
-	80 -> 130;
-	81 -> 130;
+	81 -> 137;
 	86 -> 93 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	86 -> 95 [
 		color=red
-		label=false
+		cond=false
 	];
+	136 -> 137;
+	69 -> 80;
+	80 -> 137;
 	93 -> 95;
-	95 -> 103 [
+	95 -> 98 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	95 -> 127 [
+	95 -> 102 [
 		color=red
-		label=false
+		cond=false
 	];
-	103 -> 109 [
+	98 -> 102 [
+		color=red
+		cond=false
+	];
+	98 -> 99 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	103 -> 127 [
-		color=red
-		label=false
-	];
-	109 -> 114 [
+	102 -> 110 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	109 -> 127 [
+	102 -> 134 [
 		color=red
-		label=false
+		cond=false
 	];
-	114 -> 122 [
+	99 -> 102;
+	110 -> 134 [
+		color=red
+		cond=false
+	];
+	110 -> 116 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	114 -> 126 [
+	134 -> 137;
+	116 -> 134 [
 		color=red
-		label=false
+		cond=false
 	];
-	122 -> 126;
-	126 -> 127;
-	127 -> 130;
-	129 -> 130;
+	116 -> 121 [
+		color=darkgreen
+		cond=true
+	];
+	121 -> 129 [
+		color=darkgreen
+		cond=true
+	];
+	121 -> 133 [
+		color=red
+		cond=false
+	];
+	129 -> 133;
+	133 -> 134;
 }

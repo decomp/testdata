@@ -1,6 +1,6 @@
-digraph "walWriteOneFrame" {
+strict digraph "walWriteOneFrame" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	31;
 	33;
 	43;
@@ -8,11 +8,11 @@ digraph "walWriteOneFrame" {
 	// Edge definitions.
 	4 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	31 -> 43;
 	33 -> 43;

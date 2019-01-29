@@ -1,76 +1,76 @@
-digraph "matchQuality" {
+strict digraph "matchQuality" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	11;
-	17;
-	24;
-	30;
+	18;
+	67;
+	25;
+	32;
 	31;
-	38;
 	39;
 	40;
+	41;
 	49;
 	52;
-	62;
 	65;
-	66;
-	68;
+	61;
+	64;
 
 	// Edge definitions.
 	3 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 17 [
+	3 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 68;
-	17 -> 24 [
+	11 -> 67;
+	18 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 31 [
+	18 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 30 [
+	25 -> 32 [
+		color=red
+		cond=false
+	];
+	25 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 31 [
-		color=red
-		label=false
-	];
-	30 -> 68;
-	31 -> 38 [
+	32 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 39 [
+	32 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
-	38 -> 40;
-	39 -> 40;
-	40 -> 49 [
+	31 -> 67;
+	39 -> 41;
+	40 -> 41;
+	41 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 52 [
+	41 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
-	49 -> 66;
-	52 -> 62 [
+	49 -> 65;
+	52 -> 61 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	52 -> 65 [
+	52 -> 64 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 65;
-	65 -> 66;
-	66 -> 68;
+	65 -> 67;
+	61 -> 64;
+	64 -> 65;
 }

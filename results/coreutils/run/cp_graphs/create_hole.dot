@@ -1,40 +1,46 @@
-digraph "create_hole" {
+strict digraph "create_hole" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	7;
 	12;
+	23;
 	13;
 	17;
 	20;
-	23;
 
 	// Edge definitions.
 	4 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	7 -> 23;
-	12 -> 13 [
-		color=darkgreen
-		label=true
-	];
 	12 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 17 [
+	12 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	17 -> 20 [label="default case"];
-	17 -> 23 [label="case (x=38)"];
+	13 -> 17 [
+		color=darkgreen
+		cond=true
+	];
+	17 -> 23 [
+		cond="case (x=38)"
+		label="case (x=38)"
+	];
+	17 -> 20 [
+		cond="default case"
+		label="default case"
+	];
 	20 -> 23;
 }

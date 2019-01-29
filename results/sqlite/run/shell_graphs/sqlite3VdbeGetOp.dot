@@ -1,6 +1,6 @@
-digraph "sqlite3VdbeGetOp" {
+strict digraph "sqlite3VdbeGetOp" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
 	13;
 	20;
@@ -10,20 +10,20 @@ digraph "sqlite3VdbeGetOp" {
 	// Edge definitions.
 	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 13;
 	13 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	13 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 28;
 	21 -> 28;

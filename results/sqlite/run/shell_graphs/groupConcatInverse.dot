@@ -1,0 +1,65 @@
+strict digraph "groupConcatInverse" {
+	// Node definitions.
+	3 [entry=true];
+	14;
+	15;
+	75;
+	21;
+	28;
+	35;
+	38;
+	44;
+	47;
+	66;
+	71;
+	74;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 15 [
+		color=red
+		cond=false
+	];
+	14 -> 75;
+	15 -> 75 [
+		color=red
+		cond=false
+	];
+	15 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 35 [
+		color=red
+		cond=false
+	];
+	28 -> 38;
+	35 -> 38;
+	38 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 47 [
+		color=red
+		cond=false
+	];
+	44 -> 66;
+	47 -> 66;
+	66 -> 71 [
+		color=darkgreen
+		cond=true
+	];
+	66 -> 74 [
+		color=red
+		cond=false
+	];
+	71 -> 74;
+	74 -> 75;
+}

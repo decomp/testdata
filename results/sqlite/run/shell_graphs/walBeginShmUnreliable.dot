@@ -1,0 +1,183 @@
+strict digraph "walBeginShmUnreliable" {
+	// Node definitions.
+	2 [entry=true];
+	21;
+	26;
+	24;
+	25;
+	179;
+	35;
+	43;
+	38;
+	39;
+	41;
+	56;
+	57;
+	60;
+	69;
+	77;
+	78;
+	86;
+	87;
+	99;
+	100;
+	131;
+	138;
+	166;
+	148;
+	149;
+	156;
+	155;
+	159;
+	160;
+	161;
+	183;
+	213;
+	184;
+	190;
+	208;
+	205;
+
+	// Edge definitions.
+	2 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 26 [
+		color=red
+		cond=false
+	];
+	21 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 25 [
+		color=red
+		cond=false
+	];
+	26 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 43 [
+		color=red
+		cond=false
+	];
+	24 -> 25;
+	25 -> 179;
+	179 -> 183 [
+		color=darkgreen
+		cond=true
+	];
+	179 -> 213 [
+		color=red
+		cond=false
+	];
+	35 -> 38 [
+		color=darkgreen
+		cond=true
+	];
+	35 -> 39 [
+		color=red
+		cond=false
+	];
+	43 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 57 [
+		color=red
+		cond=false
+	];
+	38 -> 41;
+	39 -> 41;
+	41 -> 179;
+	56 -> 179;
+	57 -> 60 [
+		color=darkgreen
+		cond=true
+	];
+	57 -> 69 [
+		color=red
+		cond=false
+	];
+	60 -> 179;
+	69 -> 77 [
+		color=darkgreen
+		cond=true
+	];
+	69 -> 78 [
+		color=red
+		cond=false
+	];
+	77 -> 179;
+	78 -> 86 [
+		color=darkgreen
+		cond=true
+	];
+	78 -> 87 [
+		color=red
+		cond=false
+	];
+	86 -> 179;
+	87 -> 99 [
+		color=darkgreen
+		cond=true
+	];
+	87 -> 100 [
+		color=red
+		cond=false
+	];
+	99 -> 179;
+	100 -> 131;
+	131 -> 138 [
+		color=darkgreen
+		cond=true
+	];
+	131 -> 166 [
+		color=red
+		cond=false
+	];
+	138 -> 148 [
+		color=darkgreen
+		cond=true
+	];
+	138 -> 149 [
+		color=red
+		cond=false
+	];
+	166 -> 179;
+	148 -> 166;
+	149 -> 156 [
+		color=darkgreen
+		cond=true
+	];
+	149 -> 155 [
+		color=red
+		cond=false
+	];
+	156 -> 159 [
+		color=darkgreen
+		cond=true
+	];
+	156 -> 160 [
+		color=red
+		cond=false
+	];
+	155 -> 166;
+	159 -> 166;
+	160 -> 161;
+	161 -> 131;
+	183 -> 184;
+	184 -> 190 [
+		color=darkgreen
+		cond=true
+	];
+	184 -> 208 [
+		color=red
+		cond=false
+	];
+	190 -> 205;
+	208 -> 213;
+	205 -> 184;
+}

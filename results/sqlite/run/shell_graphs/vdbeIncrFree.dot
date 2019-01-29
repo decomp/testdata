@@ -1,50 +1,50 @@
-digraph "vdbeIncrFree" {
+strict digraph "vdbeIncrFree" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	5;
+	47;
 	10;
+	41;
 	21;
 	27;
 	34;
 	40;
-	41;
-	47;
 
 	// Edge definitions.
 	1 -> 5 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
 	5 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
+	41 -> 47;
 	21 -> 27;
 	27 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	34 -> 40;
 	40 -> 41;
-	41 -> 47;
 }

@@ -1,17 +1,17 @@
-digraph "get_root_dev_ino" {
+strict digraph "get_root_dev_ino" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
-	13;
+	11;
 
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 13 [
+	1 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
-	6 -> 13;
+	6 -> 11;
 }

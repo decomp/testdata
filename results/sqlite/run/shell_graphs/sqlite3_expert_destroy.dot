@@ -1,0 +1,17 @@
+strict digraph "sqlite3_expert_destroy" {
+	// Node definitions.
+	1 [entry=true];
+	5;
+	33;
+
+	// Edge definitions.
+	1 -> 5 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 33 [
+		color=red
+		cond=false
+	];
+	5 -> 33;
+}

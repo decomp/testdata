@@ -1,99 +1,99 @@
-digraph "writeJournalHdr" {
+strict digraph "writeJournalHdr" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	19;
 	23;
 	24;
 	30;
+	55;
 	40;
 	51;
 	52;
-	55;
+	80;
 	67;
 	73;
-	80;
 	84;
 	86;
 	115;
 	118;
 	124;
 	126;
-	142;
 	146;
+	142;
 
 	// Edge definitions.
 	1 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 23;
 	23 -> 24;
 	24 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 51 [
 		color=red
-		label=false
+		cond=false
+	];
+	55 -> 80 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 67 [
+		color=red
+		cond=false
 	];
 	40 -> 51;
 	51 -> 52;
 	52 -> 24;
-	55 -> 67 [
-		color=red
-		label=false
-	];
-	55 -> 80 [
+	80 -> 86;
+	67 -> 80 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	67 -> 73 [
 		color=red
-		label=false
-	];
-	67 -> 80 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	73 -> 80 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	73 -> 84 [
 		color=red
-		label=false
+		cond=false
 	];
-	80 -> 86;
 	84 -> 86;
 	86 -> 115;
 	115 -> 118 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	115 -> 124 [
 		color=red
-		label=false
+		cond=false
 	];
 	118 -> 124;
 	124 -> 126 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	124 -> 146 [
 		color=red
-		label=false
+		cond=false
 	];
 	126 -> 142;
 	142 -> 115;

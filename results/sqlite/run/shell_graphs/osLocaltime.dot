@@ -1,6 +1,6 @@
-digraph "osLocaltime" {
+strict digraph "osLocaltime" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	15;
 	18;
@@ -9,20 +9,20 @@ digraph "osLocaltime" {
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 15;
 	15 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	18 -> 23;
 }

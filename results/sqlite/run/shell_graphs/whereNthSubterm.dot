@@ -1,43 +1,43 @@
-digraph "whereNthSubterm" {
+strict digraph "whereNthSubterm" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	11;
+	19;
 	14;
 	16;
 	17;
-	19;
+	41;
 	29;
 	40;
-	41;
 
 	// Edge definitions.
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 19 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 16 [
 		color=red
-		label=false
+		cond=false
+	];
+	19 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 40 [
+		color=red
+		cond=false
 	];
 	14 -> 17;
 	16 -> 17;
 	17 -> 41;
-	19 -> 29 [
-		color=darkgreen
-		label=true
-	];
-	19 -> 40 [
-		color=red
-		label=false
-	];
 	29 -> 41;
 	40 -> 41;
 }

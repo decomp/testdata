@@ -1,58 +1,81 @@
-digraph "codeTriggerProgram" {
+strict digraph "codeTriggerProgram" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	19;
 	22;
+	134;
 	25;
 	30;
 	34;
 	43;
-	62;
-	81;
-	91;
-	102;
-	108;
-	111;
-	112;
-	116;
+	51;
+	56;
+	75;
+	99;
+	109;
+	120;
+	126;
+	129;
+	130;
 
 	// Edge definitions.
 	3 -> 19;
 	19 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 116 [
+	19 -> 134 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 34;
 	30 -> 34;
-	34 -> 43 [label="case (x=110)"];
-	34 -> 62 [label="case (x=108)"];
-	34 -> 81 [label="case (x=109)"];
-	34 -> 91 [label="default case"];
-	43 -> 102;
-	62 -> 102;
-	81 -> 102;
-	91 -> 102;
-	102 -> 108 [
+	34 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	102 -> 111 [
+	34 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
-	108 -> 111;
-	111 -> 112;
-	112 -> 19;
+	43 -> 51;
+	51 -> 56 [
+		cond="case (x=118)"
+		label="case (x=118)"
+	];
+	51 -> 75 [
+		cond="case (x=116)"
+		label="case (x=116)"
+	];
+	51 -> 99 [
+		cond="case (x=117)"
+		label="case (x=117)"
+	];
+	51 -> 109 [
+		cond="default case"
+		label="default case"
+	];
+	56 -> 120;
+	75 -> 120;
+	99 -> 120;
+	109 -> 120;
+	120 -> 126 [
+		color=darkgreen
+		cond=true
+	];
+	120 -> 129 [
+		color=red
+		cond=false
+	];
+	126 -> 129;
+	129 -> 130;
+	130 -> 19;
 }

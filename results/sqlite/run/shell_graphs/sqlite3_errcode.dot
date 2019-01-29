@@ -1,47 +1,47 @@
-digraph "sqlite3_errcode" {
+strict digraph "sqlite3_errcode" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
-	10;
 	12;
+	10;
+	30;
 	15;
 	21;
 	22;
-	30;
 
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 12 [
 		color=red
-		label=false
-	];
-	6 -> 10 [
-		color=red
-		label=false
+		cond=false
 	];
 	6 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	10 -> 30;
+	6 -> 10 [
+		color=red
+		cond=false
+	];
 	12 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
+	10 -> 30;
 	15 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 30;
 	22 -> 30;

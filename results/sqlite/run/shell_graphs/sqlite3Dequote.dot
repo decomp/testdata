@@ -1,73 +1,73 @@
-digraph "sqlite3Dequote" {
+strict digraph "sqlite3Dequote" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	9;
-	20;
+	79;
 	21;
+	20;
 	25;
 	26;
 	27;
 	37;
+	59;
 	48;
 	57;
 	58;
-	59;
+	74;
 	70;
 	71;
-	74;
-	79;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 9 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 79;
-	9 -> 20 [
-		color=red
-		label=false
-	];
 	9 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	20 -> 79;
+	9 -> 20 [
+		color=red
+		cond=false
+	];
 	21 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
+	20 -> 79;
 	25 -> 26;
 	26 -> 27;
 	27 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
+	59 -> 70;
 	48 -> 58;
 	57 -> 74;
 	58 -> 70;
-	59 -> 70;
+	74 -> 79;
 	70 -> 71;
 	71 -> 27;
-	74 -> 79;
 }

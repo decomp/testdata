@@ -1,0 +1,17 @@
+strict digraph "c_isalnum" {
+	// Node definitions.
+	1 [entry=true];
+	3;
+	2;
+
+	// Edge definitions.
+	1 -> 3 [
+		cond="case (x=90)"
+		label="case (x=90)"
+	];
+	1 -> 2 [
+		cond="default case"
+		label="default case"
+	];
+	2 -> 3;
+}

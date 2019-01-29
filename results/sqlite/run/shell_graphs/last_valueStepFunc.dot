@@ -1,0 +1,30 @@
+strict digraph "last_valueStepFunc" {
+	// Node definitions.
+	3 [entry=true];
+	14;
+	36;
+	28;
+	30;
+	35;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 36 [
+		color=red
+		cond=false
+	];
+	14 -> 28 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 30 [
+		color=red
+		cond=false
+	];
+	28 -> 35;
+	30 -> 35;
+	35 -> 36;
+}

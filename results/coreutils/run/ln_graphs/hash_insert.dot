@@ -1,17 +1,17 @@
-digraph "hash_insert" {
+strict digraph "hash_insert" {
 	// Node definitions.
-	2 [label=entry];
-	7;
+	2 [entry=true];
 	11;
+	7;
 
 	// Edge definitions.
-	2 -> 7 [
-		color=red
-		label=false
-	];
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 7 [
+		color=red
+		cond=false
 	];
 	7 -> 11;
 }

@@ -1,56 +1,56 @@
-digraph "multiSelectOrderByKeyInfo" {
+strict digraph "multiSelectOrderByKeyInfo" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	33;
+	110;
 	34;
 	38;
+	109;
 	52;
 	56;
+	86;
 	69;
 	73;
-	86;
 	106;
-	109;
-	110;
 
 	// Edge definitions.
 	3 -> 33 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 110 [
 		color=red
-		label=false
+		cond=false
 	];
 	33 -> 34;
 	34 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 109 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	38 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
+	109 -> 110;
 	52 -> 86;
 	56 -> 69 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	56 -> 73 [
 		color=red
-		label=false
+		cond=false
 	];
+	86 -> 106;
 	69 -> 73;
 	73 -> 86;
-	86 -> 106;
 	106 -> 34;
-	109 -> 110;
 }

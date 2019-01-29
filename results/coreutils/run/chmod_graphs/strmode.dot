@@ -1,17 +1,17 @@
-digraph "strmode" {
+strict digraph "strmode" {
 	// Node definitions.
-	2 [label=entry];
-	6;
-	11;
+	2 [entry=true];
+	8;
+	12;
 
 	// Edge definitions.
-	2 -> 6 [
+	2 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 11 [
+	2 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
-	6 -> 11;
+	8 -> 12;
 }

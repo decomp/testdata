@@ -1,27 +1,27 @@
-digraph "yesno" {
+strict digraph "yesno" {
 	// Node definitions.
-	0 [label=entry];
+	0 [entry=true];
+	20;
 	8;
 	14;
 	16;
-	20;
 
 	// Edge definitions.
-	0 -> 8 [
-		color=red
-		label=false
-	];
 	0 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	0 -> 8 [
+		color=red
+		cond=false
 	];
 	8 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 16;
 	16 -> 20;

@@ -1,38 +1,38 @@
-digraph "sqlite3VdbeIdxKeyCompare" {
+strict digraph "sqlite3VdbeIdxKeyCompare" {
 	// Node definitions.
-	4 [label=entry];
-	23;
+	4 [entry=true];
 	26;
+	23;
 	29;
+	47;
 	37;
 	39;
-	47;
 
 	// Edge definitions.
-	4 -> 23 [
-		color=red
-		label=false
-	];
 	4 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	4 -> 23 [
+		color=red
+		cond=false
+	];
+	26 -> 47;
 	23 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 47;
 	29 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
 	37 -> 47;
 	39 -> 47;

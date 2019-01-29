@@ -1,10 +1,12 @@
-digraph "autoVacuumCommit" {
+strict digraph "autoVacuumCommit" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	127;
 	18;
-	26;
 	35;
+	26;
 	37;
+	129;
 	52;
 	54;
 	58;
@@ -13,115 +15,113 @@ digraph "autoVacuumCommit" {
 	67;
 	70;
 	72;
-	77;
 	80;
-	83;
+	77;
 	86;
-	89;
+	83;
 	120;
+	89;
 	123;
 	126;
-	127;
-	129;
 
 	// Edge definitions.
-	1 -> 18 [
-		color=red
-		label=false
-	];
 	1 -> 127 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	1 -> 18 [
+		color=red
+		cond=false
+	];
+	127 -> 129;
+	18 -> 35 [
+		color=darkgreen
+		cond=true
 	];
 	18 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 35 [
-		color=darkgreen
-		label=true
-	];
+	35 -> 129;
 	26 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	26 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	35 -> 129;
 	37 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	52 -> 129;
 	54 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	54 -> 61 [
 		color=red
-		label=false
+		cond=false
 	];
 	58 -> 61;
 	61 -> 63;
 	63 -> 67 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	63 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
 	67 -> 70;
 	70 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	70 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
 	72 -> 77;
-	77 -> 63;
-	80 -> 83 [
-		color=red
-		label=false
-	];
 	80 -> 86 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	83 -> 86 [
-		color=darkgreen
-		label=true
-	];
-	83 -> 120 [
+	80 -> 83 [
 		color=red
-		label=false
+		cond=false
+	];
+	77 -> 63;
+	86 -> 120 [
+		color=red
+		cond=false
 	];
 	86 -> 89 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	86 -> 120 [
+	83 -> 86 [
+		color=darkgreen
+		cond=true
+	];
+	83 -> 120 [
 		color=red
-		label=false
+		cond=false
 	];
-	89 -> 120;
 	120 -> 123 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	120 -> 126 [
 		color=red
-		label=false
+		cond=false
 	];
+	89 -> 120;
 	123 -> 126;
 	126 -> 127;
-	127 -> 129;
 }

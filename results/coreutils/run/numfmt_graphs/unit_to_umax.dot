@@ -1,65 +1,65 @@
-digraph "unit_to_umax" {
+strict digraph "unit_to_umax" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	34;
 	8;
 	15;
 	24;
+	31;
 	30;
-	33;
-	36;
-	42;
-	49;
-	52;
+	40;
+	47;
+	50;
 
 	// Edge definitions.
+	1 -> 34 [
+		color=darkgreen
+		cond=true
+	];
 	1 -> 8 [
 		color=red
-		label=false
+		cond=false
 	];
-	1 -> 36 [
+	34 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	34 -> 47 [
+		color=red
+		cond=false
+	];
+	8 -> 34 [
+		color=darkgreen
+		cond=true
 	];
 	8 -> 15 [
 		color=red
-		label=false
-	];
-	8 -> 36 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	15 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	15 -> 30 [
+	15 -> 31 [
 		color=red
-		label=false
+		cond=false
+	];
+	24 -> 31 [
+		color=darkgreen
+		cond=true
 	];
 	24 -> 30 [
-		color=darkgreen
-		label=true
-	];
-	24 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	30 -> 33;
-	33 -> 36;
-	36 -> 42 [
+	31 -> 34;
+	30 -> 34;
+	40 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 49 [
+	40 -> 50 [
 		color=red
-		label=false
-	];
-	42 -> 49 [
-		color=darkgreen
-		label=true
-	];
-	42 -> 52 [
-		color=red
-		label=false
+		cond=false
 	];
 }

@@ -1,20 +1,20 @@
-digraph "sqlite3CloseExtensions" {
+strict digraph "sqlite3CloseExtensions" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	4;
 	10;
-	21;
 	24;
+	21;
 
 	// Edge definitions.
 	1 -> 4;
 	4 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 21;
 	21 -> 4;

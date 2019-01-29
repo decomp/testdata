@@ -1,19 +1,19 @@
-digraph "sqlite3BtreeGetAutoVacuum" {
+strict digraph "sqlite3BtreeGetAutoVacuum" {
 	// Node definitions.
-	1 [label=entry];
-	11;
+	1 [entry=true];
 	12;
-	21;
+	11;
+	22;
 
 	// Edge definitions.
-	1 -> 11 [
-		color=red
-		label=false
-	];
 	1 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 21;
-	12 -> 21;
+	1 -> 11 [
+		color=red
+		cond=false
+	];
+	12 -> 22;
+	11 -> 22;
 }

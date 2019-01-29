@@ -1,17 +1,18 @@
-digraph "sqlite3Reindex" {
+strict digraph "sqlite3Reindex" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	22;
 	23;
+	114;
 	26;
 	28;
-	31;
 	36;
-	44;
+	31;
+	62;
 	45;
+	44;
 	54;
 	59;
-	62;
 	63;
 	70;
 	71;
@@ -21,97 +22,96 @@ digraph "sqlite3Reindex" {
 	98;
 	107;
 	112;
-	114;
 
 	// Edge definitions.
 	3 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 114;
 	23 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	26 -> 114;
-	28 -> 31 [
-		color=red
-		label=false
-	];
 	28 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	31 -> 36 [
-		color=darkgreen
-		label=true
-	];
-	31 -> 62 [
+	28 -> 31 [
 		color=red
-		label=false
-	];
-	36 -> 44 [
-		color=red
-		label=false
+		cond=false
 	];
 	36 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	44 -> 114;
+	36 -> 44 [
+		color=red
+		cond=false
+	];
+	31 -> 36 [
+		color=darkgreen
+		cond=true
+	];
+	31 -> 62 [
+		color=red
+		cond=false
+	];
+	62 -> 63;
 	45 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	45 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
+	44 -> 114;
 	54 -> 114;
 	59 -> 62;
-	62 -> 63;
 	63 -> 70 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	63 -> 71 [
 		color=red
-		label=false
+		cond=false
 	];
 	70 -> 114;
 	71 -> 77 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	71 -> 78 [
 		color=red
-		label=false
+		cond=false
 	];
 	77 -> 114;
 	78 -> 93 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	78 -> 98 [
 		color=red
-		label=false
+		cond=false
 	];
 	93 -> 114;
 	98 -> 107 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	98 -> 112 [
 		color=red
-		label=false
+		cond=false
 	];
 	107 -> 114;
 	112 -> 114;

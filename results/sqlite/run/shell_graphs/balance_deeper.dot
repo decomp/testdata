@@ -1,10 +1,10 @@
-digraph "balance_deeper" {
+strict digraph "balance_deeper" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	19;
+	38;
 	31;
 	37;
-	38;
 	41;
 	45;
 	98;
@@ -12,30 +12,30 @@ digraph "balance_deeper" {
 	// Edge definitions.
 	2 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 37;
-	37 -> 38;
 	38 -> 41 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	38 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
+	31 -> 37;
+	37 -> 38;
 	41 -> 98;
 	45 -> 98;
 }

@@ -1,17 +1,17 @@
-digraph "forget_created" {
+strict digraph "forget_created" {
 	// Node definitions.
-	2 [label=entry];
-	11;
+	2 [entry=true];
 	15;
+	11;
 
 	// Edge definitions.
-	2 -> 11 [
-		color=red
-		label=false
-	];
 	2 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 11 [
+		color=red
+		cond=false
 	];
 	11 -> 15;
 }

@@ -1,0 +1,16 @@
+strict digraph "is_char_class_member" {
+	// Node definitions.
+	2 [entry=true];
+	5;
+	4;
+
+	// Edge definitions.
+	2 -> 5 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 4 [
+		color=red
+		cond=false
+	];
+}

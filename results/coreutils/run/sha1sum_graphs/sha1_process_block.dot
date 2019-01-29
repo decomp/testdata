@@ -1,28 +1,26 @@
-digraph "sha1_process_block" {
+strict digraph "sha1_process_block" {
 	// Node definitions.
-	3 [label=entry];
-	33;
-	55;
-	1645;
-	1646;
+	3 [entry=true];
+	27;
+	1510;
+	50;
 
 	// Edge definitions.
-	3 -> 33 [
+	3 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 1646 [
+	3 -> 1510 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 55;
-	55 -> 55 [
+	27 -> 50;
+	50 -> 1510 [
+		color=red
+		cond=false
+	];
+	50 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	55 -> 1645 [
-		color=red
-		label=false
-	];
-	1645 -> 1646;
 }

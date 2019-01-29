@@ -1,16 +1,16 @@
-digraph "save_line_to_file" {
+strict digraph "save_line_to_file" {
 	// Node definitions.
-	1 [label=entry];
-	10;
+	1 [entry=true];
 	16;
+	10;
 
 	// Edge definitions.
-	1 -> 10 [
-		color=red
-		label=false
-	];
 	1 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	1 -> 10 [
+		color=red
+		cond=false
 	];
 }

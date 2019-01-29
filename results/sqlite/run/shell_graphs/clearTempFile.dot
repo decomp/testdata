@@ -1,0 +1,41 @@
+strict digraph "clearTempFile" {
+	// Node definitions.
+	1 [entry=true];
+	7;
+	8;
+	27;
+	13;
+	14;
+	20;
+	21;
+
+	// Edge definitions.
+	1 -> 7 [
+		color=darkgreen
+		cond=true
+	];
+	1 -> 8 [
+		color=red
+		cond=false
+	];
+	7 -> 27;
+	8 -> 13 [
+		color=darkgreen
+		cond=true
+	];
+	8 -> 14 [
+		color=red
+		cond=false
+	];
+	13 -> 27;
+	14 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	14 -> 21 [
+		color=red
+		cond=false
+	];
+	20 -> 27;
+	21 -> 27;
+}

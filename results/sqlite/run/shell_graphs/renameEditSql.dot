@@ -1,0 +1,82 @@
+strict digraph "renameEditSql" {
+	// Node definitions.
+	5 [entry=true];
+	35;
+	36;
+	159;
+	39;
+	42;
+	45;
+	59;
+	155;
+	65;
+	70;
+	150;
+	80;
+	83;
+	86;
+	102;
+	139;
+	156;
+
+	// Edge definitions.
+	5 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	5 -> 36 [
+		color=red
+		cond=false
+	];
+	35 -> 159;
+	36 -> 39;
+	39 -> 42 [
+		color=darkgreen
+		cond=true
+	];
+	39 -> 45 [
+		color=red
+		cond=false
+	];
+	42 -> 45;
+	45 -> 59 [
+		color=darkgreen
+		cond=true
+	];
+	45 -> 155 [
+		color=red
+		cond=false
+	];
+	59 -> 65;
+	155 -> 156;
+	65 -> 70 [
+		color=darkgreen
+		cond=true
+	];
+	65 -> 150 [
+		color=red
+		cond=false
+	];
+	70 -> 80 [
+		color=darkgreen
+		cond=true
+	];
+	70 -> 83 [
+		color=red
+		cond=false
+	];
+	150 -> 156;
+	80 -> 86;
+	83 -> 86;
+	86 -> 102 [
+		color=darkgreen
+		cond=true
+	];
+	86 -> 139 [
+		color=red
+		cond=false
+	];
+	102 -> 139;
+	139 -> 65;
+	156 -> 159;
+}

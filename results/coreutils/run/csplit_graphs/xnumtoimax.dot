@@ -1,41 +1,64 @@
-digraph "xnumtoimax" {
+strict digraph "xnumtoimax" {
 	// Node definitions.
-	7 [label=entry];
-	11;
+	7 [entry=true];
 	13;
+	27;
+	29;
+	11;
+	31;
 	18;
+	40;
 	20;
 	22;
+	25;
 	26;
-	28;
-	30;
-	39;
 
 	// Edge definitions.
-	7 -> 11 [label="default case"];
-	7 -> 13 [label="case (x=0)"];
-	7 -> 26 [label="case (x=1)"];
-	7 -> 28 [label="case (x=3)"];
-	11 -> 30;
+	7 -> 13 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	7 -> 27 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	7 -> 29 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	7 -> 11 [
+		cond="default case"
+		label="default case"
+	];
 	13 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 39 [
+	13 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
+	27 -> 31;
+	29 -> 31;
+	11 -> 31;
+	31 -> 40;
 	18 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
-	20 -> 30;
-	22 -> 30;
-	26 -> 30;
-	28 -> 30;
-	30 -> 39;
+	20 -> 31;
+	22 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	22 -> 26 [
+		color=red
+		cond=false
+	];
+	25 -> 31;
+	26 -> 31;
 }

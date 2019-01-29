@@ -1,17 +1,17 @@
-digraph "sqlite3_column_value" {
+strict digraph "sqlite3_column_value" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	15;
 	28;
 
 	// Edge definitions.
 	2 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 28 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 28;
 }

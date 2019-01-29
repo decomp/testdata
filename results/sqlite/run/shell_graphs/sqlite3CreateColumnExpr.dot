@@ -1,43 +1,43 @@
-digraph "sqlite3CreateColumnExpr" {
+strict digraph "sqlite3CreateColumnExpr" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	15;
+	61;
 	39;
 	42;
+	60;
 	49;
 	50;
 	52;
-	60;
-	61;
 
 	// Edge definitions.
 	4 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 61 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	39 -> 60;
 	42 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 50 [
 		color=red
-		label=false
+		cond=false
 	];
+	60 -> 61;
 	49 -> 52;
 	50 -> 52;
 	52 -> 60;
-	60 -> 61;
 }

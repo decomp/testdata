@@ -1,29 +1,29 @@
-digraph "doubleToInt64" {
+strict digraph "doubleToInt64" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	6;
 	7;
+	14;
 	10;
 	11;
-	14;
 
 	// Edge definitions.
 	1 -> 6 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 7 [
 		color=red
-		label=false
+		cond=false
 	];
 	6 -> 14;
 	7 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	7 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 14;
 	11 -> 14;

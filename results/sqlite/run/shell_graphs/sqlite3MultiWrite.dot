@@ -1,6 +1,6 @@
-digraph "sqlite3MultiWrite" {
+strict digraph "sqlite3MultiWrite" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	12;
 	14;
@@ -8,11 +8,11 @@ digraph "sqlite3MultiWrite" {
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 14;
 	12 -> 14;

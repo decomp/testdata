@@ -1,17 +1,17 @@
-digraph "sqlite3PagerClearCache" {
+strict digraph "sqlite3PagerClearCache" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	8;
 	10;
 
 	// Edge definitions.
 	1 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	8 -> 10;
 }

@@ -1,69 +1,69 @@
-digraph "sqlite3_file_control" {
+strict digraph "sqlite3_file_control" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	21;
+	67;
 	29;
 	33;
+	65;
 	36;
 	41;
+	64;
 	44;
 	49;
-	54;
-	59;
-	60;
-	61;
-	62;
 	63;
-	65;
+	52;
+	57;
+	62;
 
 	// Edge definitions.
 	4 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 65 [
+	4 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 63;
+	29 -> 65;
 	33 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	33 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	36 -> 62;
+	65 -> 67;
+	36 -> 64;
 	41 -> 44 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	41 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
-	44 -> 61;
-	49 -> 54 [
+	64 -> 65;
+	44 -> 63;
+	49 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	49 -> 59 [
+	49 -> 57 [
 		color=red
-		label=false
+		cond=false
 	];
-	54 -> 60;
-	59 -> 60;
-	60 -> 61;
-	61 -> 62;
+	63 -> 64;
+	52 -> 62;
+	57 -> 62;
 	62 -> 63;
-	63 -> 65;
 }

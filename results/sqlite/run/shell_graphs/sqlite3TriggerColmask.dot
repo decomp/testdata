@@ -1,61 +1,61 @@
-digraph "sqlite3TriggerColmask" {
+strict digraph "sqlite3TriggerColmask" {
 	// Node definitions.
-	7 [label=entry];
-	23;
-	26;
-	33;
-	41;
-	48;
-	56;
-	65;
-	66;
+	7 [entry=true];
+	24;
+	27;
+	72;
+	34;
 	67;
-	71;
+	42;
+	49;
+	57;
+	66;
+	68;
 
 	// Edge definitions.
-	7 -> 23;
-	23 -> 26 [
+	7 -> 24;
+	24 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	23 -> 71 [
+	24 -> 72 [
 		color=red
-		label=false
+		cond=false
 	];
-	26 -> 33 [
+	27 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 66 [
+	27 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
-	33 -> 41 [
+	34 -> 67 [
+		color=red
+		cond=false
+	];
+	34 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	33 -> 66 [
+	67 -> 68;
+	42 -> 67 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 48 [
+	42 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 66 [
-		color=red
-		label=false
-	];
-	48 -> 56 [
+	49 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	48 -> 65 [
+	49 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
-	56 -> 65;
-	65 -> 66;
+	57 -> 66;
 	66 -> 67;
-	67 -> 23;
+	68 -> 24;
 }

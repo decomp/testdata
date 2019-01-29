@@ -1,103 +1,103 @@
-digraph "vdbePmaReaderSeek" {
+strict digraph "vdbePmaReaderSeek" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	16;
 	17;
+	137;
 	22;
 	32;
 	53;
+	135;
 	58;
 	75;
+	90;
 	85;
 	86;
-	90;
 	93;
+	134;
 	96;
 	110;
 	119;
-	134;
-	135;
-	137;
 
 	// Edge definitions.
 	4 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 137;
 	17 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
 	22 -> 32;
 	32 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 135 [
 		color=red
-		label=false
-	];
-	53 -> 58 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	53 -> 135 [
 		color=red
-		label=false
+		cond=false
 	];
+	53 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	135 -> 137;
 	58 -> 75 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	58 -> 90 [
 		color=red
-		label=false
+		cond=false
 	];
 	75 -> 85 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	75 -> 86 [
 		color=red
-		label=false
+		cond=false
 	];
-	85 -> 86;
-	86 -> 90;
 	90 -> 93 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	90 -> 134 [
 		color=red
-		label=false
+		cond=false
+	];
+	85 -> 86;
+	86 -> 90;
+	93 -> 134 [
+		color=red
+		cond=false
 	];
 	93 -> 96 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	93 -> 134 [
-		color=red
-		label=false
-	];
+	134 -> 135;
 	96 -> 110 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	96 -> 119 [
 		color=red
-		label=false
+		cond=false
 	];
 	110 -> 119;
 	119 -> 134;
-	134 -> 135;
-	135 -> 137;
 }

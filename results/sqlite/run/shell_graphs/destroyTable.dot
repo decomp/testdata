@@ -1,85 +1,85 @@
-digraph "destroyTable" {
+strict digraph "destroyTable" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
-	17;
 	21;
+	17;
 	23;
 	27;
 	30;
-	36;
-	40;
-	44;
-	46;
-	47;
 	51;
+	40;
+	36;
+	46;
+	44;
+	47;
 	54;
 	55;
 	67;
 
 	// Edge definitions.
 	2 -> 14;
-	14 -> 17 [
-		color=red
-		label=false
-	];
 	14 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	14 -> 17 [
+		color=red
+		cond=false
+	];
+	21 -> 23;
 	17 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
-	21 -> 23;
 	23 -> 27;
 	27 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 51 [
 		color=red
-		label=false
-	];
-	30 -> 36 [
-		color=red
-		label=false
+		cond=false
 	];
 	30 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 40 [
-		color=darkgreen
-		label=true
-	];
-	36 -> 46 [
+	30 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
-	40 -> 44 [
-		color=darkgreen
-		label=true
-	];
-	40 -> 46 [
-		color=red
-		label=false
-	];
-	44 -> 46;
-	46 -> 47;
-	47 -> 27;
 	51 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
+	40 -> 46 [
+		color=red
+		cond=false
+	];
+	40 -> 44 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	36 -> 46 [
+		color=red
+		cond=false
+	];
+	46 -> 47;
+	44 -> 46;
+	47 -> 27;
 	55 -> 67;
 	67 -> 14;
 }

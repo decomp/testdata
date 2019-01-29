@@ -1,29 +1,29 @@
-digraph "handleDeferredMoveto" {
+strict digraph "handleDeferredMoveto" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	16;
 	18;
+	28;
 	21;
 	23;
-	28;
 
 	// Edge definitions.
 	1 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 28;
 	18 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	18 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	21 -> 28;
 	23 -> 28;

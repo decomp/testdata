@@ -1,47 +1,120 @@
-digraph "open_db" {
+strict digraph "open_db" {
 	// Node definitions.
-	2 [label=entry];
-	9;
-	24;
-	30;
-	42;
-	43;
+	2 [entry=true];
+	10;
+	160;
+	16;
+	45;
+	29;
+	21;
+	32;
 	44;
-	65;
+	50;
+	57;
+	61;
+	68;
+	75;
+	89;
+	83;
+	104;
+	102;
+	103;
+	148;
+	159;
 
 	// Edge definitions.
-	2 -> 9 [
+	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	2 -> 65 [
+	2 -> 160 [
 		color=red
-		label=false
+		cond=false
 	];
-	9 -> 24 [
-		color=red
-		label=false
-	];
-	9 -> 30 [
+	10 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 30 [
-		color=darkgreen
-		label=true
-	];
-	24 -> 44 [
+	10 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	30 -> 42 [
+	16 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 43 [
+	16 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 65;
-	44 -> 65;
+	45 -> 50 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	45 -> 57 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	45 -> 61 [
+		cond="case (x=4)"
+		label="case (x=4)"
+	];
+	45 -> 68 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	45 -> 75 [
+		cond="default case"
+		label="default case"
+	];
+	29 -> 44;
+	21 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 32 [
+		color=red
+		cond=false
+	];
+	32 -> 44;
+	44 -> 45;
+	50 -> 75;
+	57 -> 75;
+	61 -> 75;
+	68 -> 75;
+	75 -> 89 [
+		color=darkgreen
+		cond=true
+	];
+	75 -> 83 [
+		color=red
+		cond=false
+	];
+	89 -> 102 [
+		color=darkgreen
+		cond=true
+	];
+	89 -> 103 [
+		color=red
+		cond=false
+	];
+	83 -> 89 [
+		color=darkgreen
+		cond=true
+	];
+	83 -> 104 [
+		color=red
+		cond=false
+	];
+	104 -> 148 [
+		color=darkgreen
+		cond=true
+	];
+	104 -> 159 [
+		color=red
+		cond=false
+	];
+	102 -> 160;
+	148 -> 159;
+	159 -> 160;
 }

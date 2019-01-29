@@ -1,0 +1,43 @@
+strict digraph "idxMalloc" {
+	// Node definitions.
+	2 [entry=true];
+	9;
+	10;
+	11;
+	14;
+	15;
+	16;
+	21;
+	25;
+	27;
+
+	// Edge definitions.
+	2 -> 9 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 10 [
+		color=red
+		cond=false
+	];
+	9 -> 11;
+	11 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	11 -> 15 [
+		color=red
+		cond=false
+	];
+	14 -> 16;
+	16 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	16 -> 25 [
+		color=red
+		cond=false
+	];
+	21 -> 27;
+	25 -> 27;
+}

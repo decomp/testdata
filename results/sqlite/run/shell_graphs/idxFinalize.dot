@@ -1,0 +1,17 @@
+strict digraph "idxFinalize" {
+	// Node definitions.
+	2 [entry=true];
+	11;
+	14;
+
+	// Edge definitions.
+	2 -> 11 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 14 [
+		color=red
+		cond=false
+	];
+	11 -> 14;
+}

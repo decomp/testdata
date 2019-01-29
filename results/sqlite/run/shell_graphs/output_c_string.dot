@@ -1,97 +1,97 @@
-digraph "output_c_string" {
+strict digraph "output_c_string" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	8;
 	14;
+	82;
 	17;
 	24;
+	81;
 	27;
 	32;
+	80;
 	35;
 	40;
+	79;
 	43;
 	48;
+	78;
 	51;
 	56;
-	67;
-	72;
-	76;
 	77;
-	78;
-	79;
-	80;
-	81;
-	82;
+	72;
+	67;
+	76;
 
 	// Edge definitions.
 	2 -> 8;
 	8 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 82 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 81;
 	24 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
+	81 -> 8;
 	27 -> 80;
 	32 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
+	80 -> 81;
 	35 -> 79;
 	40 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	40 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
+	79 -> 80;
 	43 -> 78;
 	48 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	48 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
+	78 -> 79;
 	51 -> 77;
-	56 -> 67 [
-		color=red
-		label=false
-	];
 	56 -> 72 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 76;
-	72 -> 76;
-	76 -> 77;
+	56 -> 67 [
+		color=red
+		cond=false
+	];
 	77 -> 78;
-	78 -> 79;
-	79 -> 80;
-	80 -> 81;
-	81 -> 8;
+	72 -> 76;
+	67 -> 76;
+	76 -> 77;
 }

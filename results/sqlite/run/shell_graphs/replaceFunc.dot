@@ -1,122 +1,144 @@
-digraph "replaceFunc" {
+strict digraph "replaceFunc" {
 	// Node definitions.
-	3 [label=entry];
-	27;
-	28;
-	39;
-	40;
-	46;
-	51;
-	62;
-	63;
-	76;
-	77;
-	81;
-	85;
-	97;
-	107;
-	118;
-	135;
-	138;
-	147;
-	150;
-	165;
+	3 [entry=true];
+	30;
+	31;
+	215;
+	42;
+	43;
+	49;
+	54;
+	65;
+	66;
+	79;
+	80;
+	84;
+	88;
+	190;
+	110;
+	100;
+	121;
+	186;
+	125;
+	171;
+	140;
+	143;
+	151;
+	170;
 	166;
 	169;
-	194;
+	187;
 
 	// Edge definitions.
-	3 -> 27 [
+	3 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 28 [
+	3 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 194;
-	28 -> 39 [
+	30 -> 215;
+	31 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 40 [
+	31 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
-	39 -> 194;
-	40 -> 46 [
+	42 -> 215;
+	43 -> 49 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	40 -> 51 [
+	43 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
-	46 -> 194;
-	51 -> 62 [
+	49 -> 215;
+	54 -> 65 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	51 -> 63 [
+	54 -> 66 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 194;
-	63 -> 76 [
+	65 -> 215;
+	66 -> 79 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	63 -> 77 [
+	66 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
-	76 -> 194;
-	77 -> 81;
-	81 -> 85 [
+	79 -> 215;
+	80 -> 84;
+	84 -> 88 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	81 -> 169 [
+	84 -> 190 [
 		color=red
-		label=false
+		cond=false
 	];
-	85 -> 97 [
-		color=red
-		label=false
-	];
-	85 -> 107 [
+	88 -> 110 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	97 -> 107 [
-		color=darkgreen
-		label=true
-	];
-	97 -> 118 [
+	88 -> 100 [
 		color=red
-		label=false
+		cond=false
 	];
-	107 -> 165;
-	118 -> 135 [
+	190 -> 215;
+	110 -> 186;
+	100 -> 110 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	118 -> 138 [
+	100 -> 121 [
 		color=red
-		label=false
+		cond=false
 	];
-	135 -> 194;
-	138 -> 147 [
+	121 -> 125 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	138 -> 150 [
+	121 -> 171 [
 		color=red
-		label=false
+		cond=false
 	];
-	147 -> 194;
-	150 -> 165;
-	165 -> 166;
-	166 -> 81;
-	169 -> 194;
+	186 -> 187;
+	125 -> 140 [
+		color=darkgreen
+		cond=true
+	];
+	125 -> 143 [
+		color=red
+		cond=false
+	];
+	171 -> 186;
+	140 -> 215;
+	143 -> 151 [
+		color=darkgreen
+		cond=true
+	];
+	143 -> 170 [
+		color=red
+		cond=false
+	];
+	151 -> 166 [
+		color=darkgreen
+		cond=true
+	];
+	151 -> 169 [
+		color=red
+		cond=false
+	];
+	170 -> 171;
+	166 -> 215;
+	169 -> 170;
+	187 -> 84;
 }

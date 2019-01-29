@@ -1,61 +1,57 @@
-digraph "powm2" {
+strict digraph "powm2" {
 	// Node definitions.
-	6 [label=entry];
+	6 [entry=true];
 	17;
-	26;
 	29;
+	26;
 	37;
+	59;
 	41;
-	42;
-	50;
-	53;
-	60;
-	61;
+	52;
+	49;
 
 	// Edge definitions.
 	6 -> 17;
-	17 -> 26 [
-		color=red
-		label=false
-	];
 	17 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	26 -> 29;
+	17 -> 26 [
+		color=red
+		cond=false
+	];
 	29 -> 17 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	26 -> 29;
+	37 -> 59 [
+		color=darkgreen
+		cond=true
 	];
 	37 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	37 -> 61 [
+	41 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 42;
-	42 -> 50 [
+	41 -> 49 [
 		color=red
-		label=false
+		cond=false
 	];
-	42 -> 53 [
+	52 -> 59 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	50 -> 53;
-	53 -> 42 [
+	52 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 60 [
-		color=darkgreen
-		label=true
-	];
-	60 -> 61;
+	49 -> 52;
 }

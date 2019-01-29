@@ -1,76 +1,76 @@
-digraph "memjrnlCreateFile" {
+strict digraph "memjrnlCreateFile" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	26;
+	75;
 	31;
 	34;
+	70;
 	43;
 	50;
 	60;
 	61;
 	66;
-	70;
 	73;
 	74;
-	75;
 	78;
 	83;
 
 	// Edge definitions.
 	1 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 75 [
 		color=red
-		label=false
+		cond=false
 	];
 	26 -> 31;
+	75 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	75 -> 83 [
+		color=red
+		cond=false
+	];
 	31 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
 	34 -> 43 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 50 [
 		color=red
-		label=false
+		cond=false
+	];
+	70 -> 73 [
+		color=darkgreen
+		cond=true
+	];
+	70 -> 74 [
+		color=red
+		cond=false
 	];
 	43 -> 50;
 	50 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	50 -> 61 [
 		color=red
-		label=false
+		cond=false
 	];
 	60 -> 70;
 	61 -> 66;
 	66 -> 31;
-	70 -> 73 [
-		color=darkgreen
-		label=true
-	];
-	70 -> 74 [
-		color=red
-		label=false
-	];
 	73 -> 74;
 	74 -> 75;
-	75 -> 78 [
-		color=darkgreen
-		label=true
-	];
-	75 -> 83 [
-		color=red
-		label=false
-	];
 	78 -> 83;
 }

@@ -1,32 +1,32 @@
-digraph "tryToClone" {
+strict digraph "tryToClone" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	14;
+	43;
 	19;
 	24;
 	41;
-	44;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
-	10 -> 44;
+	10 -> 43;
 	14 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	14 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 41;
 	24 -> 41;
-	41 -> 44;
+	41 -> 43;
 }

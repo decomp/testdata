@@ -1,51 +1,51 @@
-digraph "sqlite3_soft_heap_limit64" {
+strict digraph "sqlite3_soft_heap_limit64" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	11;
 	12;
+	45;
 	17;
 	20;
 	25;
 	29;
 	38;
 	43;
-	45;
 
 	// Edge definitions.
 	1 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 45;
 	12 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 45;
 	20 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 29;
 	29 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	29 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
 	38 -> 43;
 	43 -> 45;

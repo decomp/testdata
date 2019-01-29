@@ -1,17 +1,17 @@
-digraph "async_safe_die" {
+strict digraph "async_safe_die" {
 	// Node definitions.
-	2 [label=entry];
-	7;
+	2 [entry=true];
 	13;
+	7;
 
 	// Edge definitions.
-	2 -> 7 [
-		color=red
-		label=false
-	];
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	2 -> 7 [
+		color=red
+		cond=false
 	];
 	7 -> 13;
 }

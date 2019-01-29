@@ -1,70 +1,70 @@
-digraph "settimeout" {
+strict digraph "settimeout" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	15;
+	27;
+	45;
 	19;
 	20;
 	24;
-	27;
+	34;
 	28;
 	32;
-	34;
 	36;
 	42;
-	45;
 
 	// Edge definitions.
 	2 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 27 [
 		color=red
-		label=false
-	];
-	15 -> 19 [
-		color=red
-		label=false
+		cond=false
 	];
 	15 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 20 [
-		color=darkgreen
-		label=true
-	];
-	19 -> 24 [
+	15 -> 19 [
 		color=red
-		label=false
-	];
-	20 -> 24;
-	24 -> 34;
-	27 -> 28 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	27 -> 34 [
 		color=red
-		label=false
+		cond=false
 	];
-	28 -> 32 [
-		color=red
-		label=false
-	];
-	28 -> 34 [
+	27 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	32 -> 34;
+	19 -> 20 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 24 [
+		color=red
+		cond=false
+	];
+	20 -> 24;
+	24 -> 34;
 	34 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
+	28 -> 34 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 32 [
+		color=red
+		cond=false
+	];
+	32 -> 34;
 	36 -> 42;
 	42 -> 45;
 }

@@ -1,72 +1,99 @@
-digraph "iread" {
+strict digraph "iread" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	4;
 	7;
-	11;
-	15;
+	21;
 	16;
-	22;
-	27;
-	30;
-	32;
+	25;
+	20;
+	49;
+	23;
+	29;
 	33;
 	34;
 	35;
+	43;
+	48;
+	46;
 
 	// Edge definitions.
 	3 -> 4;
 	4 -> 7 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 11 [
+	4 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
-	7 -> 4 [
+	7 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	7 -> 34 [
+	7 -> 25 [
 		color=red
-		label=false
+		cond=false
 	];
-	11 -> 15 [
+	21 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 16 [
+	21 -> 29 [
 		color=red
-		label=false
+		cond=false
 	];
-	15 -> 16;
-	16 -> 22 [
-		color=red
-		label=false
-	];
-	16 -> 35 [
+	16 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	22 -> 27 [
-		color=darkgreen
-		label=true
-	];
-	22 -> 33 [
+	16 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
-	27 -> 30 [
-		color=red
-		label=false
-	];
-	27 -> 32 [
+	25 -> 4 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	30 -> 32;
-	32 -> 33;
+	25 -> 49 [
+		color=red
+		cond=false
+	];
+	20 -> 49;
+	23 -> 25;
+	29 -> 33 [
+		color=darkgreen
+		cond=true
+	];
+	29 -> 34 [
+		color=red
+		cond=false
+	];
 	33 -> 35;
-	34 -> 35;
+	34 -> 49 [
+		color=red
+		cond=false
+	];
+	34 -> 35 [
+		color=darkgreen
+		cond=true
+	];
+	35 -> 49 [
+		color=red
+		cond=false
+	];
+	35 -> 43 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	43 -> 46 [
+		color=red
+		cond=false
+	];
+	48 -> 49;
+	46 -> 48;
 }

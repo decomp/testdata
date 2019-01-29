@@ -1,6 +1,6 @@
-digraph "sqlite3_enable_load_extension" {
+strict digraph "sqlite3_enable_load_extension" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	15;
 	20;
@@ -8,11 +8,11 @@ digraph "sqlite3_enable_load_extension" {
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 20;
 	15 -> 20;

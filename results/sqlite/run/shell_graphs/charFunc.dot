@@ -1,93 +1,93 @@
-digraph "charFunc" {
+strict digraph "charFunc" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	19;
 	21;
+	152;
 	22;
 	26;
-	35;
+	144;
 	38;
+	35;
 	39;
 	45;
 	51;
+	140;
 	54;
 	72;
+	139;
 	75;
 	102;
 	138;
-	139;
-	140;
 	141;
-	144;
-	152;
 
 	// Edge definitions.
 	3 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 152;
 	21 -> 22;
 	22 -> 26 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 144 [
 		color=red
-		label=false
-	];
-	26 -> 35 [
-		color=red
-		label=false
+		cond=false
 	];
 	26 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	26 -> 35 [
+		color=red
+		cond=false
+	];
+	144 -> 152;
+	38 -> 39;
 	35 -> 38 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	35 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
-	38 -> 39;
 	39 -> 45 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	39 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
 	45 -> 140;
 	51 -> 54 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 72 [
 		color=red
-		label=false
+		cond=false
 	];
+	140 -> 141;
 	54 -> 139;
 	72 -> 75 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	72 -> 102 [
 		color=red
-		label=false
+		cond=false
 	];
+	139 -> 140;
 	75 -> 138;
 	102 -> 138;
 	138 -> 139;
-	139 -> 140;
-	140 -> 141;
 	141 -> 22;
-	144 -> 152;
 }

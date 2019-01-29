@@ -1,103 +1,94 @@
-digraph "sqlite3RollbackAll" {
+strict digraph "sqlite3RollbackAll" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	15;
 	22;
 	25;
 	31;
+	59;
 	42;
+	55;
 	46;
 	47;
-	55;
 	56;
-	59;
+	64;
 	67;
-	74;
-	77;
-	91;
-	94;
-	99;
-	106;
+	81;
+	96;
+	89;
+	84;
 
 	// Edge definitions.
 	2 -> 15 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	15 -> 22;
 	22 -> 25;
 	25 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	25 -> 59 [
 		color=red
-		label=false
+		cond=false
 	];
 	31 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 55 [
 		color=red
-		label=false
+		cond=false
+	];
+	59 -> 64 [
+		color=darkgreen
+		cond=true
+	];
+	59 -> 67 [
+		color=red
+		cond=false
 	];
 	42 -> 46 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	42 -> 47 [
 		color=red
-		label=false
+		cond=false
 	];
+	55 -> 56;
 	46 -> 47;
 	47 -> 55;
-	55 -> 56;
 	56 -> 25;
-	59 -> 67 [
+	64 -> 67;
+	67 -> 81 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	59 -> 77 [
+	67 -> 96 [
 		color=red
-		label=false
+		cond=false
 	];
-	67 -> 74 [
+	81 -> 89 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	67 -> 77 [
+	81 -> 84 [
 		color=red
-		label=false
+		cond=false
 	];
-	74 -> 77;
-	77 -> 91 [
+	89 -> 96;
+	84 -> 96 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	77 -> 106 [
+	84 -> 89 [
 		color=red
-		label=false
+		cond=false
 	];
-	91 -> 94 [
-		color=red
-		label=false
-	];
-	91 -> 99 [
-		color=darkgreen
-		label=true
-	];
-	94 -> 99 [
-		color=red
-		label=false
-	];
-	94 -> 106 [
-		color=darkgreen
-		label=true
-	];
-	99 -> 106;
 }

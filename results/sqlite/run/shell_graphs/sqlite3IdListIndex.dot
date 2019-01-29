@@ -1,45 +1,45 @@
-digraph "sqlite3IdListIndex" {
+strict digraph "sqlite3IdListIndex" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
 	10;
+	36;
 	11;
 	17;
+	35;
 	29;
 	31;
 	32;
-	35;
-	36;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 36;
 	10 -> 11;
 	11 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
+	35 -> 36;
 	29 -> 36;
 	31 -> 32;
 	32 -> 11;
-	35 -> 36;
 }

@@ -1,0 +1,131 @@
+strict digraph "expertBestIndex" {
+	// Node definitions.
+	2 [entry=true];
+	22;
+	208;
+	40;
+	46;
+	139;
+	58;
+	135;
+	63;
+	77;
+	84;
+	92;
+	124;
+	103;
+	112;
+	123;
+	136;
+	144;
+	147;
+	207;
+	158;
+	203;
+	172;
+	202;
+	204;
+
+	// Edge definitions.
+	2 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	2 -> 208 [
+		color=red
+		cond=false
+	];
+	22 -> 40;
+	40 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 139 [
+		color=red
+		cond=false
+	];
+	46 -> 58 [
+		color=darkgreen
+		cond=true
+	];
+	46 -> 135 [
+		color=red
+		cond=false
+	];
+	139 -> 144;
+	58 -> 135 [
+		color=red
+		cond=false
+	];
+	58 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	135 -> 136;
+	63 -> 135 [
+		color=red
+		cond=false
+	];
+	63 -> 77 [
+		color=darkgreen
+		cond=true
+	];
+	77 -> 135 [
+		color=red
+		cond=false
+	];
+	77 -> 84 [
+		color=darkgreen
+		cond=true
+	];
+	84 -> 92 [
+		color=darkgreen
+		cond=true
+	];
+	84 -> 124 [
+		color=red
+		cond=false
+	];
+	92 -> 103 [
+		color=darkgreen
+		cond=true
+	];
+	92 -> 112 [
+		color=red
+		cond=false
+	];
+	124 -> 135;
+	103 -> 123;
+	112 -> 123;
+	123 -> 124;
+	136 -> 40;
+	144 -> 147 [
+		color=darkgreen
+		cond=true
+	];
+	144 -> 207 [
+		color=red
+		cond=false
+	];
+	147 -> 158 [
+		color=darkgreen
+		cond=true
+	];
+	147 -> 203 [
+		color=red
+		cond=false
+	];
+	207 -> 208;
+	158 -> 172 [
+		color=darkgreen
+		cond=true
+	];
+	158 -> 202 [
+		color=red
+		cond=false
+	];
+	203 -> 204;
+	172 -> 202;
+	202 -> 203;
+	204 -> 144;
+}

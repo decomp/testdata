@@ -1,51 +1,60 @@
-digraph "sqlite3ExprIsInteger" {
+strict digraph "sqlite3ExprIsInteger" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	10;
 	11;
+	48;
 	17;
 	23;
 	28;
 	34;
-	40;
-	44;
 	45;
 	46;
-	48;
+	40;
+	44;
 
 	// Edge definitions.
 	2 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 48;
 	11 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	11 -> 23 [
 		color=red
-		label=false
+		cond=false
 	];
 	17 -> 48;
-	23 -> 28 [label="case (x=156)"];
-	23 -> 34 [label="case (x=155)"];
-	23 -> 45 [label="default case"];
+	23 -> 28 [
+		cond="case (x=162)"
+		label="case (x=162)"
+	];
+	23 -> 34 [
+		cond="case (x=161)"
+		label="case (x=161)"
+	];
+	23 -> 45 [
+		cond="default case"
+		label="default case"
+	];
 	28 -> 46;
 	34 -> 40 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	34 -> 44 [
 		color=red
-		label=false
+		cond=false
 	];
-	40 -> 44;
-	44 -> 46;
 	45 -> 46;
 	46 -> 48;
+	40 -> 44;
+	44 -> 46;
 }

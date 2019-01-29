@@ -1,43 +1,136 @@
-digraph "writefileFunc" {
+strict digraph "writefileFunc" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
+	16;
+	13;
 	18;
-	19;
-	24;
+	97;
 	25;
-	32;
-	33;
+	26;
+	29;
+	34;
+	37;
 	42;
-	47;
+	53;
+	72;
+	57;
+	62;
+	71;
+	75;
+	78;
+	82;
+	85;
+	96;
+	89;
+	92;
+	95;
 
 	// Edge definitions.
-	3 -> 18 [
+	3 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	3 -> 19 [
+	3 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	18 -> 47;
-	19 -> 24 [
+	16 -> 97;
+	13 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	19 -> 25 [
+	13 -> 18 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 47;
-	25 -> 32 [
+	18 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	25 -> 33 [
+	18 -> 26 [
 		color=red
-		label=false
+		cond=false
 	];
-	32 -> 42;
-	33 -> 42;
-	42 -> 47;
+	25 -> 97;
+	26 -> 29 [
+		color=darkgreen
+		cond=true
+	];
+	26 -> 34 [
+		color=red
+		cond=false
+	];
+	29 -> 34;
+	34 -> 37 [
+		color=darkgreen
+		cond=true
+	];
+	34 -> 42 [
+		color=red
+		cond=false
+	];
+	37 -> 42;
+	42 -> 53 [
+		color=darkgreen
+		cond=true
+	];
+	42 -> 72 [
+		color=red
+		cond=false
+	];
+	53 -> 72 [
+		color=red
+		cond=false
+	];
+	53 -> 57 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 97 [
+		color=red
+		cond=false
+	];
+	72 -> 75 [
+		color=darkgreen
+		cond=true
+	];
+	57 -> 62 [
+		color=darkgreen
+		cond=true
+	];
+	57 -> 71 [
+		color=red
+		cond=false
+	];
+	62 -> 71;
+	71 -> 72;
+	75 -> 97 [
+		color=red
+		cond=false
+	];
+	75 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	78 -> 82 [
+		color=darkgreen
+		cond=true
+	];
+	78 -> 85 [
+		color=red
+		cond=false
+	];
+	82 -> 96;
+	85 -> 89 [
+		color=darkgreen
+		cond=true
+	];
+	85 -> 92 [
+		color=red
+		cond=false
+	];
+	96 -> 97;
+	89 -> 95;
+	92 -> 95;
+	95 -> 96;
 }

@@ -1,53 +1,53 @@
-digraph "unixRead" {
+strict digraph "unixRead" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	20;
+	65;
 	29;
 	38;
+	89;
 	64;
-	65;
 	74;
 	75;
 	78;
 	79;
-	89;
 
 	// Edge definitions.
 	4 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 65 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 38 [
 		color=red
-		label=false
+		cond=false
+	];
+	65 -> 74 [
+		color=darkgreen
+		cond=true
+	];
+	65 -> 75 [
+		color=red
+		cond=false
 	];
 	29 -> 89;
 	38 -> 64;
 	64 -> 65;
-	65 -> 74 [
-		color=darkgreen
-		label=true
-	];
-	65 -> 75 [
-		color=red
-		label=false
-	];
 	74 -> 89;
 	75 -> 78 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	75 -> 79 [
 		color=red
-		label=false
+		cond=false
 	];
 	78 -> 89;
 	79 -> 89;

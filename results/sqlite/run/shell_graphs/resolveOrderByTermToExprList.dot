@@ -1,45 +1,45 @@
-digraph "resolveOrderByTermToExprList" {
+strict digraph "resolveOrderByTermToExprList" {
 	// Node definitions.
-	3 [label=entry];
-	43;
+	3 [entry=true];
 	44;
 	45;
-	51;
-	62;
-	65;
-	66;
-	69;
+	71;
+	46;
+	52;
 	70;
+	63;
+	66;
+	67;
 
 	// Edge definitions.
-	3 -> 43 [
-		color=darkgreen
-		label=true
-	];
 	3 -> 44 [
-		color=red
-		label=false
-	];
-	43 -> 70;
-	44 -> 45;
-	45 -> 51 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	45 -> 69 [
+	3 -> 45 [
 		color=red
-		label=false
+		cond=false
 	];
-	51 -> 62 [
+	44 -> 71;
+	45 -> 46;
+	46 -> 52 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	51 -> 65 [
+	46 -> 70 [
 		color=red
-		label=false
+		cond=false
 	];
-	62 -> 70;
-	65 -> 66;
-	66 -> 45;
-	69 -> 70;
+	52 -> 63 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 66 [
+		color=red
+		cond=false
+	];
+	70 -> 71;
+	63 -> 71;
+	66 -> 67;
+	67 -> 46;
 }

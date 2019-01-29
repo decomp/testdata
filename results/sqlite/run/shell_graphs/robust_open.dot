@@ -1,118 +1,118 @@
-digraph "robust_open" {
+strict digraph "robust_open" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	12;
 	14;
 	15;
 	17;
 	27;
+	33;
 	31;
 	32;
-	33;
+	52;
 	36;
 	37;
 	50;
 	51;
-	52;
 	55;
+	82;
 	58;
+	81;
 	64;
+	80;
 	68;
 	74;
-	80;
-	81;
-	82;
 
 	// Edge definitions.
 	3 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 15;
 	14 -> 15;
 	15 -> 17;
 	17 -> 27 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	17 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	27 -> 31 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	27 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
-	31 -> 17;
-	32 -> 52;
 	33 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	33 -> 37 [
 		color=red
-		label=false
+		cond=false
+	];
+	31 -> 17;
+	32 -> 52;
+	52 -> 55 [
+		color=darkgreen
+		cond=true
+	];
+	52 -> 82 [
+		color=red
+		cond=false
 	];
 	36 -> 52;
 	37 -> 50 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	37 -> 51 [
 		color=red
-		label=false
+		cond=false
 	];
 	50 -> 52;
 	51 -> 17;
-	52 -> 55 [
-		color=darkgreen
-		label=true
-	];
-	52 -> 82 [
-		color=red
-		label=false
-	];
 	55 -> 58 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	55 -> 81 [
 		color=red
-		label=false
+		cond=false
 	];
 	58 -> 64 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	58 -> 80 [
 		color=red
-		label=false
+		cond=false
+	];
+	81 -> 82;
+	64 -> 80 [
+		color=red
+		cond=false
 	];
 	64 -> 68 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	64 -> 80 [
+	80 -> 81;
+	68 -> 80 [
 		color=red
-		label=false
+		cond=false
 	];
 	68 -> 74 [
 		color=darkgreen
-		label=true
-	];
-	68 -> 80 [
-		color=red
-		label=false
+		cond=true
 	];
 	74 -> 80;
-	80 -> 81;
-	81 -> 82;
 }

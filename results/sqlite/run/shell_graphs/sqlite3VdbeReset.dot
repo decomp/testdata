@@ -1,50 +1,50 @@
-digraph "sqlite3VdbeReset" {
+strict digraph "sqlite3VdbeReset" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	13;
+	30;
+	23;
 	29;
+	57;
 	35;
-	36;
-	41;
-	48;
-	67;
-	68;
+	56;
+	42;
 
 	// Edge definitions.
 	1 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 36 [
+	1 -> 30 [
 		color=red
-		label=false
+		cond=false
+	];
+	13 -> 23 [
+		color=darkgreen
+		cond=true
 	];
 	13 -> 29 [
-		color=darkgreen
-		label=true
-	];
-	13 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
-	29 -> 35;
-	35 -> 68;
-	36 -> 41 [
+	30 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	36 -> 67 [
+	30 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
-	41 -> 48 [
+	23 -> 29;
+	29 -> 57;
+	35 -> 56 [
+		color=red
+		cond=false
+	];
+	35 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	41 -> 67 [
-		color=red
-		label=false
-	];
-	48 -> 67;
-	67 -> 68;
+	56 -> 57;
+	42 -> 56;
 }

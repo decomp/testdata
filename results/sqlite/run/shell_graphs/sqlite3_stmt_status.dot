@@ -1,29 +1,29 @@
-digraph "sqlite3_stmt_status" {
+strict digraph "sqlite3_stmt_status" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	14;
 	33;
+	49;
 	42;
 	48;
-	49;
 
 	// Edge definitions.
 	3 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 33 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 49;
 	33 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	33 -> 48 [
 		color=red
-		label=false
+		cond=false
 	];
 	42 -> 48;
 	48 -> 49;

@@ -1,26 +1,17 @@
-digraph "unixClose" {
+strict digraph "unixClose" {
 	// Node definitions.
-	1 [label=entry];
-	14;
+	1 [entry=true];
 	21;
 	23;
 
 	// Edge definitions.
-	1 -> 14 [
+	1 -> 21 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 23 [
 		color=red
-		label=false
-	];
-	14 -> 21 [
-		color=darkgreen
-		label=true
-	];
-	14 -> 23 [
-		color=red
-		label=false
+		cond=false
 	];
 	21 -> 23;
 }

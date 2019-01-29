@@ -1,28 +1,39 @@
-digraph "sqlite3ExprListSetName" {
+strict digraph "sqlite3ExprListSetName" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	12;
+	54;
 	36;
 	40;
-	41;
+	46;
+	53;
 
 	// Edge definitions.
 	4 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	4 -> 41 [
+	4 -> 54 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 40 [
 		color=red
-		label=false
+		cond=false
 	];
 	36 -> 40;
-	40 -> 41;
+	40 -> 46 [
+		color=darkgreen
+		cond=true
+	];
+	40 -> 53 [
+		color=red
+		cond=false
+	];
+	46 -> 53;
+	53 -> 54;
 }

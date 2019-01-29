@@ -1,55 +1,55 @@
-digraph "fopen_safer" {
+strict digraph "fopen_safer" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
+	25;
 	5;
 	8;
 	11;
 	15;
 	18;
 	21;
-	25;
 
 	// Edge definitions.
-	2 -> 5 [
-		color=red
-		label=false
-	];
 	2 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	5 -> 8 [
-		color=darkgreen
-		label=true
+	2 -> 5 [
+		color=red
+		cond=false
 	];
 	5 -> 25 [
 		color=red
-		label=false
+		cond=false
+	];
+	5 -> 8 [
+		color=darkgreen
+		cond=true
 	];
 	8 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	8 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 25;
 	15 -> 18 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	15 -> 21 [
 		color=red
-		label=false
-	];
-	18 -> 21 [
-		color=darkgreen
-		label=true
+		cond=false
 	];
 	18 -> 25 [
 		color=red
-		label=false
+		cond=false
+	];
+	18 -> 21 [
+		color=darkgreen
+		cond=true
 	];
 	21 -> 25;
 }

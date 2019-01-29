@@ -1,6 +1,6 @@
-digraph "cachedCellSize" {
+strict digraph "cachedCellSize" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	14;
 	22;
 	26;
@@ -8,11 +8,11 @@ digraph "cachedCellSize" {
 	// Edge definitions.
 	2 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	14 -> 26;
 	22 -> 26;

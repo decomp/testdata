@@ -1,43 +1,43 @@
-digraph "sqlite3_finalize" {
+strict digraph "sqlite3_finalize" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
 	10;
+	39;
 	19;
 	21;
+	41;
 	29;
 	32;
-	39;
-	41;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 39;
 	10 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
+	39 -> 41;
 	19 -> 41;
 	21 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
 	29 -> 32;
 	32 -> 39;
-	39 -> 41;
 }

@@ -1,28 +1,28 @@
-digraph "base64_encode_alloc" {
+strict digraph "base64_encode_alloc" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	9;
 	10;
-	13;
 	14;
+	13;
 
 	// Edge definitions.
 	3 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 10 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 14;
-	10 -> 13 [
-		color=red
-		label=false
-	];
 	10 -> 14 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	10 -> 13 [
+		color=red
+		cond=false
 	];
 	13 -> 14;
 }

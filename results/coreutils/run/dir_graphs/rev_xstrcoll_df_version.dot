@@ -1,32 +1,44 @@
-digraph "rev_xstrcoll_df_version" {
+strict digraph "rev_xstrcoll_df_version" {
 	// Node definitions.
-	2 [label=entry];
-	13;
-	14;
-	17;
+	2 [entry=true];
+	9;
+	10;
+	11;
 	18;
-	24;
+	12;
 
 	// Edge definitions.
-	2 -> 13 [
-		color=red
-		label=false
+	2 -> 9 [
+		cond="case (x=3)"
+		label="case (x=3)"
 	];
-	2 -> 14 [
-		color=darkgreen
-		label=true
+	2 -> 10 [
+		cond="default case"
+		label="default case"
 	];
-	13 -> 14 [label="case (x=3)"];
-	13 -> 24 [label="default case"];
-	14 -> 17 [
-		color=red
-		label=false
+	9 -> 11 [
+		cond="case (x=3)"
+		label="case (x=3)"
 	];
-	14 -> 18 [
-		color=darkgreen
-		label=true
+	9 -> 18 [
+		cond="default case"
+		label="default case"
 	];
-	17 -> 18 [label="case (x=3)"];
-	17 -> 24 [label="default case"];
-	18 -> 24;
+	10 -> 11 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	10 -> 12 [
+		cond="default case"
+		label="default case"
+	];
+	11 -> 18 [
+		cond="default case"
+		label="default case"
+	];
+	11 -> 12 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	12 -> 18;
 }

@@ -1,54 +1,28 @@
-digraph "vdbeMemClearExternAndSetNull" {
+strict digraph "vdbeMemClearExternAndSetNull" {
 	// Node definitions.
-	1 [label=entry];
-	10;
-	17;
-	24;
-	31;
-	38;
-	43;
-	50;
-	67;
-	68;
-	69;
+	1 [entry=true];
+	9;
+	16;
+	23;
+	30;
 
 	// Edge definitions.
-	1 -> 10 [
+	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	1 -> 17 [
+	1 -> 16 [
 		color=red
-		label=false
+		cond=false
 	];
-	10 -> 17;
-	17 -> 24 [
+	9 -> 16;
+	16 -> 23 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 31 [
+	16 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
-	24 -> 69;
-	31 -> 38 [
-		color=darkgreen
-		label=true
-	];
-	31 -> 43 [
-		color=red
-		label=false
-	];
-	38 -> 68;
-	43 -> 50 [
-		color=darkgreen
-		label=true
-	];
-	43 -> 67 [
-		color=red
-		label=false
-	];
-	50 -> 67;
-	67 -> 68;
-	68 -> 69;
+	23 -> 30;
 }

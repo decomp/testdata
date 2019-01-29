@@ -1,17 +1,17 @@
-digraph "vdbePmaReaderClear" {
+strict digraph "vdbePmaReaderClear" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	13;
 	21;
 
 	// Edge definitions.
 	1 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 21;
 }

@@ -1,0 +1,107 @@
+strict digraph "sqlite3_expert_report" {
+	// Node definitions.
+	3 [entry=true];
+	14;
+	15;
+	67;
+	19;
+	22;
+	28;
+	30;
+	35;
+	31;
+	37;
+	45;
+	53;
+	61;
+	65;
+	40;
+	44;
+	48;
+	52;
+	56;
+	60;
+
+	// Edge definitions.
+	3 -> 14 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 15 [
+		color=red
+		cond=false
+	];
+	14 -> 67;
+	15 -> 19;
+	19 -> 22 [
+		color=darkgreen
+		cond=true
+	];
+	19 -> 28 [
+		color=red
+		cond=false
+	];
+	22 -> 28;
+	28 -> 30 [
+		color=darkgreen
+		cond=true
+	];
+	28 -> 35 [
+		color=red
+		cond=false
+	];
+	30 -> 31;
+	35 -> 37 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	35 -> 45 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	35 -> 53 [
+		cond="case (x=3)"
+		label="case (x=3)"
+	];
+	35 -> 61 [
+		cond="case (x=4)"
+		label="case (x=4)"
+	];
+	35 -> 65 [
+		cond="default case"
+		label="default case"
+	];
+	31 -> 19;
+	37 -> 40 [
+		color=darkgreen
+		cond=true
+	];
+	37 -> 44 [
+		color=red
+		cond=false
+	];
+	45 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	45 -> 52 [
+		color=red
+		cond=false
+	];
+	53 -> 56 [
+		color=darkgreen
+		cond=true
+	];
+	53 -> 60 [
+		color=red
+		cond=false
+	];
+	61 -> 65;
+	65 -> 67;
+	40 -> 44;
+	44 -> 65;
+	48 -> 52;
+	52 -> 65;
+	56 -> 60;
+	60 -> 65;
+}

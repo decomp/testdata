@@ -1,70 +1,70 @@
-digraph "quotearg_n_options" {
+strict digraph "quotearg_n_options" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	9;
 	10;
+	34;
 	13;
 	16;
 	17;
 	25;
 	26;
-	34;
-	53;
-	56;
-	57;
 	63;
+	53;
+	57;
+	56;
 
 	// Edge definitions.
 	4 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 10 [
 		color=red
-		label=false
-	];
-	10 -> 13 [
-		color=red
-		label=false
+		cond=false
 	];
 	10 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 16 [
-		color=darkgreen
-		label=true
-	];
-	13 -> 17 [
+	10 -> 13 [
 		color=red
-		label=false
-	];
-	17 -> 25 [
-		color=darkgreen
-		label=true
-	];
-	17 -> 26 [
-		color=red
-		label=false
-	];
-	25 -> 26;
-	26 -> 34;
-	34 -> 53 [
-		color=red
-		label=false
+		cond=false
 	];
 	34 -> 63 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	34 -> 53 [
+		color=red
+		cond=false
+	];
+	13 -> 16 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 17 [
+		color=red
+		cond=false
+	];
+	17 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	17 -> 26 [
+		color=red
+		cond=false
+	];
+	25 -> 26;
+	26 -> 34;
+	53 -> 57 [
+		color=darkgreen
+		cond=true
 	];
 	53 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 57 [
-		color=darkgreen
-		label=true
-	];
-	56 -> 57;
 	57 -> 63;
+	56 -> 57;
 }

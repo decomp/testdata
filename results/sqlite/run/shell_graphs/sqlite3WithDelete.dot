@@ -1,32 +1,32 @@
-digraph "sqlite3WithDelete" {
+strict digraph "sqlite3WithDelete" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	9;
+	41;
 	10;
 	16;
-	34;
 	37;
-	41;
+	34;
 
 	// Edge definitions.
 	2 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 41 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 10;
 	10 -> 16 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	10 -> 37 [
 		color=red
-		label=false
+		cond=false
 	];
 	16 -> 34;
-	34 -> 10;
 	37 -> 41;
+	34 -> 10;
 }

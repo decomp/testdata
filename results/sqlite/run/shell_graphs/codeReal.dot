@@ -1,27 +1,27 @@
-digraph "codeReal" {
+strict digraph "codeReal" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
 	12;
+	27;
 	19;
 	22;
-	27;
 
 	// Edge definitions.
 	4 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	4 -> 27 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	12 -> 22 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 22;
 	22 -> 27;

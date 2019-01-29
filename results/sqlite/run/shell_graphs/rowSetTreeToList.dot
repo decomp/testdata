@@ -1,6 +1,6 @@
-digraph "rowSetTreeToList" {
+strict digraph "rowSetTreeToList" {
 	// Node definitions.
-	3 [label=entry];
+	3 [entry=true];
 	12;
 	20;
 	23;
@@ -11,21 +11,21 @@ digraph "rowSetTreeToList" {
 	// Edge definitions.
 	3 -> 12 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	3 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	12 -> 23;
 	20 -> 23;
 	23 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	23 -> 35 [
 		color=red
-		label=false
+		cond=false
 	];
 	28 -> 38;
 	35 -> 38;

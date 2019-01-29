@@ -1,44 +1,44 @@
-digraph "allowedOp" {
+strict digraph "allowedOp" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
+	17;
 	5;
 	8;
 	11;
 	14;
-	17;
 
 	// Edge definitions.
-	1 -> 5 [
-		color=red
-		label=false
-	];
 	1 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	1 -> 5 [
+		color=red
+		cond=false
 	];
 	5 -> 8 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 11 [
 		color=red
-		label=false
-	];
-	8 -> 11 [
-		color=red
-		label=false
+		cond=false
 	];
 	8 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	11 -> 14 [
+	8 -> 11 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 17 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	11 -> 14 [
+		color=red
+		cond=false
 	];
 	14 -> 17;
 }

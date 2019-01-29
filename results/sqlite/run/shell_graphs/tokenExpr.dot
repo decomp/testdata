@@ -1,0 +1,52 @@
+strict digraph "tokenExpr" {
+	// Node definitions.
+	4 [entry=true];
+	25;
+	124;
+	90;
+	109;
+	99;
+	104;
+	117;
+	123;
+	126;
+
+	// Edge definitions.
+	4 -> 25 [
+		color=darkgreen
+		cond=true
+	];
+	4 -> 124 [
+		color=red
+		cond=false
+	];
+	25 -> 90 [
+		color=darkgreen
+		cond=true
+	];
+	25 -> 109 [
+		color=red
+		cond=false
+	];
+	124 -> 126;
+	90 -> 99 [
+		color=darkgreen
+		cond=true
+	];
+	90 -> 104 [
+		color=red
+		cond=false
+	];
+	109 -> 117 [
+		color=darkgreen
+		cond=true
+	];
+	109 -> 123 [
+		color=red
+		cond=false
+	];
+	99 -> 104;
+	104 -> 109;
+	117 -> 126;
+	123 -> 124;
+}

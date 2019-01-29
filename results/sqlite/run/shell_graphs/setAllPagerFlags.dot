@@ -1,41 +1,41 @@
-digraph "setAllPagerFlags" {
+strict digraph "setAllPagerFlags" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	9;
+	43;
 	16;
 	20;
+	42;
 	25;
 	39;
-	42;
-	43;
 
 	// Edge definitions.
 	1 -> 9 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
 	9 -> 16;
 	16 -> 20 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	16 -> 42 [
 		color=red
-		label=false
+		cond=false
 	];
 	20 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	20 -> 39 [
 		color=red
-		label=false
+		cond=false
 	];
+	42 -> 43;
 	25 -> 39;
 	39 -> 16;
-	42 -> 43;
 }

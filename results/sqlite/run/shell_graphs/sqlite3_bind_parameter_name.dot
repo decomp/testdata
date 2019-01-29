@@ -1,6 +1,6 @@
-digraph "sqlite3_bind_parameter_name" {
+strict digraph "sqlite3_bind_parameter_name" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	11;
 	12;
 	18;
@@ -8,11 +8,11 @@ digraph "sqlite3_bind_parameter_name" {
 	// Edge definitions.
 	2 -> 11 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 12 [
 		color=red
-		label=false
+		cond=false
 	];
 	11 -> 18;
 	12 -> 18;

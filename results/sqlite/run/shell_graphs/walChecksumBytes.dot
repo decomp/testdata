@@ -1,58 +1,58 @@
-digraph "walChecksumBytes" {
+strict digraph "walChecksumBytes" {
 	// Node definitions.
-	5 [label=entry];
+	5 [entry=true];
 	24;
 	31;
 	32;
 	35;
+	56;
 	36;
 	51;
 	55;
-	56;
+	119;
 	57;
 	114;
 	118;
-	119;
 
 	// Edge definitions.
 	5 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	5 -> 31 [
 		color=red
-		label=false
+		cond=false
 	];
 	24 -> 32;
 	31 -> 32;
 	32 -> 35 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 56 [
 		color=red
-		label=false
+		cond=false
 	];
 	35 -> 36;
+	56 -> 57;
 	36 -> 51;
 	51 -> 36 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	51 -> 55 [
 		color=red
-		label=false
+		cond=false
 	];
 	55 -> 119;
-	56 -> 57;
 	57 -> 114;
 	114 -> 57 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	114 -> 118 [
 		color=red
-		label=false
+		cond=false
 	];
 	118 -> 119;
 }

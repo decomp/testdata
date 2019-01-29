@@ -1,0 +1,28 @@
+strict digraph "last_valueInvFunc" {
+	// Node definitions.
+	3 [entry=true];
+	15;
+	31;
+	24;
+	30;
+
+	// Edge definitions.
+	3 -> 15 [
+		color=darkgreen
+		cond=true
+	];
+	3 -> 31 [
+		color=red
+		cond=false
+	];
+	15 -> 24 [
+		color=darkgreen
+		cond=true
+	];
+	15 -> 30 [
+		color=red
+		cond=false
+	];
+	24 -> 30;
+	30 -> 31;
+}

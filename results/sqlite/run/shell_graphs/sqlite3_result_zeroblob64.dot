@@ -1,6 +1,6 @@
-digraph "sqlite3_result_zeroblob64" {
+strict digraph "sqlite3_result_zeroblob64" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	19;
 	20;
 	26;
@@ -8,11 +8,11 @@ digraph "sqlite3_result_zeroblob64" {
 	// Edge definitions.
 	2 -> 19 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 20 [
 		color=red
-		label=false
+		cond=false
 	];
 	19 -> 26;
 	20 -> 26;

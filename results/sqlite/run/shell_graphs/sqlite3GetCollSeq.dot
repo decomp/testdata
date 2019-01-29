@@ -1,77 +1,77 @@
-digraph "sqlite3GetCollSeq" {
+strict digraph "sqlite3GetCollSeq" {
 	// Node definitions.
-	4 [label=entry];
-	17;
+	4 [entry=true];
 	22;
+	17;
 	25;
 	30;
 	39;
 	42;
+	53;
 	47;
 	52;
-	53;
 	56;
-	59;
+	61;
 
 	// Edge definitions.
-	4 -> 17 [
-		color=red
-		label=false
-	];
 	4 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	17 -> 22;
+	4 -> 17 [
+		color=red
+		cond=false
+	];
 	22 -> 25 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	22 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
+	17 -> 22;
 	25 -> 30 [
 		color=red
-		label=false
+		cond=false
 	];
 	25 -> 39 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	30 -> 39;
 	39 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	39 -> 53 [
 		color=red
-		label=false
-	];
-	42 -> 47 [
-		color=red
-		label=false
+		cond=false
 	];
 	42 -> 53 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	47 -> 52 [
+	42 -> 47 [
+		color=red
+		cond=false
+	];
+	53 -> 56 [
 		color=darkgreen
-		label=true
+		cond=true
+	];
+	53 -> 61 [
+		color=red
+		cond=false
 	];
 	47 -> 53 [
 		color=red
-		label=false
+		cond=false
+	];
+	47 -> 52 [
+		color=darkgreen
+		cond=true
 	];
 	52 -> 53;
-	53 -> 56 [
-		color=darkgreen
-		label=true
-	];
-	53 -> 59 [
-		color=red
-		label=false
-	];
-	56 -> 59;
+	56 -> 61;
 }

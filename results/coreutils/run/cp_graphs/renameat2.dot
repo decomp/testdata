@@ -1,0 +1,176 @@
+strict digraph "renameat2" {
+	// Node definitions.
+	5 [entry=true];
+	12;
+	82;
+	14;
+	24;
+	18;
+	17;
+	80;
+	23;
+	21;
+	33;
+	31;
+	45;
+	38;
+	43;
+	48;
+	49;
+	55;
+	78;
+	54;
+	66;
+	58;
+	61;
+	72;
+	71;
+	77;
+
+	// Edge definitions.
+	5 -> 12 [
+		color=darkgreen
+		cond=true
+	];
+	5 -> 82 [
+		color=red
+		cond=false
+	];
+	12 -> 82 [
+		cond="default case"
+		label="default case"
+	];
+	12 -> 14 [
+		cond="case (x=22)"
+		label="case (x=22)"
+	];
+	14 -> 24 [
+		cond="case (x=0)"
+		label="case (x=0)"
+	];
+	14 -> 18 [
+		cond="case (x=1)"
+		label="case (x=1)"
+	];
+	14 -> 17 [
+		cond="default case"
+		label="default case"
+	];
+	24 -> 33 [
+		color=darkgreen
+		cond=true
+	];
+	24 -> 31 [
+		color=red
+		cond=false
+	];
+	18 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	18 -> 21 [
+		color=red
+		cond=false
+	];
+	17 -> 80;
+	80 -> 82;
+	23 -> 80;
+	21 -> 24 [
+		cond="case (x=2)"
+		label="case (x=2)"
+	];
+	21 -> 80 [
+		cond="default case"
+		label="default case"
+	];
+	21 -> 23 [
+		cond="case (x=75)"
+		label="case (x=75)"
+	];
+	33 -> 45 [
+		color=darkgreen
+		cond=true
+	];
+	33 -> 38 [
+		color=red
+		cond=false
+	];
+	31 -> 80;
+	45 -> 80 [
+		color=red
+		cond=false
+	];
+	45 -> 48 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 45 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 43 [
+		color=red
+		cond=false
+	];
+	43 -> 80;
+	48 -> 49 [
+		color=darkgreen
+		cond=true
+	];
+	48 -> 55 [
+		color=red
+		cond=false
+	];
+	49 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	49 -> 54 [
+		color=red
+		cond=false
+	];
+	55 -> 66 [
+		color=darkgreen
+		cond=true
+	];
+	55 -> 58 [
+		color=red
+		cond=false
+	];
+	78 -> 80;
+	54 -> 80;
+	66 -> 72 [
+		color=darkgreen
+		cond=true
+	];
+	66 -> 71 [
+		color=red
+		cond=false
+	];
+	58 -> 80 [
+		color=red
+		cond=false
+	];
+	58 -> 61 [
+		color=darkgreen
+		cond=true
+	];
+	61 -> 80 [
+		color=red
+		cond=false
+	];
+	61 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 78 [
+		color=darkgreen
+		cond=true
+	];
+	72 -> 77 [
+		color=red
+		cond=false
+	];
+	71 -> 80;
+	77 -> 80;
+}

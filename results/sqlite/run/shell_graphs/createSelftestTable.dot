@@ -1,17 +1,17 @@
-digraph "createSelftestTable" {
+strict digraph "createSelftestTable" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	15;
 
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 15 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 15;
 }

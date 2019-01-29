@@ -1,6 +1,6 @@
-digraph "sqlite3WalSavepointUndo" {
+strict digraph "sqlite3WalSavepointUndo" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
 	21;
 	30;
@@ -9,20 +9,20 @@ digraph "sqlite3WalSavepointUndo" {
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 21 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 21;
 	21 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	21 -> 52 [
 		color=red
-		label=false
+		cond=false
 	];
 	30 -> 52;
 }

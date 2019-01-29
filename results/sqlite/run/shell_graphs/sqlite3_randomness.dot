@@ -1,93 +1,93 @@
-digraph "sqlite3_randomness" {
+strict digraph "sqlite3_randomness" {
 	// Node definitions.
-	2 [label=entry];
+	2 [entry=true];
 	13;
 	14;
-	19;
+	128;
 	22;
+	19;
 	24;
+	82;
 	27;
 	31;
 	34;
-	40;
 	43;
+	40;
 	44;
 	47;
-	78;
 	81;
-	82;
+	78;
 	83;
 	122;
 	126;
-	128;
 
 	// Edge definitions.
 	2 -> 13 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	2 -> 14 [
 		color=red
-		label=false
+		cond=false
 	];
 	13 -> 128;
-	14 -> 19 [
-		color=red
-		label=false
-	];
 	14 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	14 -> 19 [
+		color=red
+		cond=false
+	];
+	22 -> 128;
 	19 -> 22 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	19 -> 24 [
 		color=red
-		label=false
-	];
-	22 -> 128;
-	24 -> 27 [
-		color=red
-		label=false
+		cond=false
 	];
 	24 -> 82 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
+	24 -> 27 [
+		color=red
+		cond=false
+	];
+	82 -> 83;
 	27 -> 31;
 	31 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	31 -> 43 [
 		color=red
-		label=false
+		cond=false
 	];
 	34 -> 40;
-	40 -> 31;
 	43 -> 44;
+	40 -> 31;
 	44 -> 47 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	44 -> 81 [
 		color=red
-		label=false
+		cond=false
 	];
 	47 -> 78;
-	78 -> 44;
 	81 -> 82;
-	82 -> 83;
+	78 -> 44;
 	83 -> 122;
 	122 -> 83 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	122 -> 126 [
 		color=red
-		label=false
+		cond=false
 	];
 	126 -> 128;
 }

@@ -1,109 +1,109 @@
-digraph "unicode_to_mb" {
+strict digraph "unicode_to_mb" {
 	// Node definitions.
-	4 [label=entry];
+	4 [entry=true];
+	24;
 	13;
+	23;
 	18;
 	21;
-	23;
-	24;
 	30;
 	32;
+	78;
 	34;
 	36;
-	39;
-	42;
 	44;
+	42;
+	39;
 	48;
+	76;
 	60;
 	62;
+	74;
 	66;
 	68;
-	74;
-	76;
-	78;
 
 	// Edge definitions.
-	4 -> 13 [
-		color=red
-		label=false
-	];
 	4 -> 24 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	13 -> 18 [
+	4 -> 13 [
 		color=red
-		label=false
+		cond=false
 	];
-	13 -> 23 [
-		color=darkgreen
-		label=true
-	];
-	18 -> 21 [
-		color=darkgreen
-		label=true
-	];
-	18 -> 23 [
-		color=red
-		label=false
-	];
-	21 -> 23;
-	23 -> 24;
 	24 -> 30 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	24 -> 32 [
 		color=red
-		label=false
+		cond=false
 	];
+	13 -> 23 [
+		color=darkgreen
+		cond=true
+	];
+	13 -> 18 [
+		color=red
+		cond=false
+	];
+	23 -> 24;
+	18 -> 23 [
+		color=red
+		cond=false
+	];
+	18 -> 21 [
+		color=darkgreen
+		cond=true
+	];
+	21 -> 23;
 	30 -> 78;
 	32 -> 34 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	32 -> 36 [
 		color=red
-		label=false
+		cond=false
 	];
 	34 -> 44;
-	36 -> 39 [
-		color=red
-		label=false
-	];
 	36 -> 42 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	39 -> 44;
-	42 -> 78;
+	36 -> 39 [
+		color=red
+		cond=false
+	];
 	44 -> 48 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	44 -> 76 [
 		color=red
-		label=false
+		cond=false
 	];
+	42 -> 78;
+	39 -> 44;
 	48 -> 60 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	48 -> 62 [
 		color=red
-		label=false
+		cond=false
 	];
+	76 -> 78;
 	60 -> 74;
 	62 -> 66 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	62 -> 68 [
 		color=red
-		label=false
+		cond=false
 	];
+	74 -> 78;
 	66 -> 74;
 	68 -> 74;
-	74 -> 78;
-	76 -> 78;
 }

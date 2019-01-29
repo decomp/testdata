@@ -1,56 +1,56 @@
-digraph "minmaxFunc" {
+strict digraph "minmaxFunc" {
 	// Node definitions.
-	3 [label=entry];
-	22;
+	3 [entry=true];
 	23;
 	24;
-	28;
-	36;
+	67;
+	25;
+	29;
+	60;
 	37;
-	53;
-	55;
+	38;
+	54;
 	56;
-	59;
-	66;
+	57;
 
 	// Edge definitions.
-	3 -> 22 [
-		color=darkgreen
-		label=true
-	];
 	3 -> 23 [
-		color=red
-		label=false
-	];
-	22 -> 66;
-	23 -> 24;
-	24 -> 28 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	24 -> 59 [
+	3 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
-	28 -> 36 [
+	23 -> 67;
+	24 -> 25;
+	25 -> 29 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	28 -> 37 [
+	25 -> 60 [
 		color=red
-		label=false
+		cond=false
 	];
-	36 -> 66;
-	37 -> 53 [
+	29 -> 37 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
-	37 -> 55 [
+	29 -> 38 [
 		color=red
-		label=false
+		cond=false
 	];
-	53 -> 55;
-	55 -> 56;
-	56 -> 24;
-	59 -> 66;
+	60 -> 67;
+	37 -> 67;
+	38 -> 54 [
+		color=darkgreen
+		cond=true
+	];
+	38 -> 56 [
+		color=red
+		cond=false
+	];
+	54 -> 56;
+	56 -> 57;
+	57 -> 25;
 }

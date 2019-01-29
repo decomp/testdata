@@ -1,17 +1,17 @@
-digraph "journalHdrOffset" {
+strict digraph "journalHdrOffset" {
 	// Node definitions.
-	1 [label=entry];
+	1 [entry=true];
 	10;
 	24;
 
 	// Edge definitions.
 	1 -> 10 [
 		color=darkgreen
-		label=true
+		cond=true
 	];
 	1 -> 24 [
 		color=red
-		label=false
+		cond=false
 	];
 	10 -> 24;
 }
