@@ -1,5 +1,28 @@
 package cfastats
 
+type CFAResult struct {
+	// False negative.
+	FalseNegative2WayConditional int
+	FalseNegativeNWayConditional int
+	FalseNegativePostTestLoop    int
+	FalseNegativePreTestLoop     int
+	// False positive.
+	FalsePositive2WayConditional int
+	FalsePositiveNWayConditional int
+	FalsePositivePostTestLoop    int
+	FalsePositivePreTestLoop     int
+	// True positive.
+	TruePositive2WayConditional int
+	TruePositiveNWayConditional int
+	TruePositivePreTestLoop     int
+	TruePositivePostTestLoop    int
+	// True amount.
+	Total2WayConditional int
+	TotalNWayConditional int
+	TotalPreTestLoop     int
+	TotalPostTestLoop    int
+}
+
 type CFAStats struct {
 	Name                string `json:"name"`           // function name
 	Want2WayConditional int    `json:"want_2way"`      // if_stmts + if_else_stmts
@@ -12,70 +35,92 @@ type CFAStats struct {
 	GotPostTestLoop     int    `json:"got_post_loop"`  // loops (type=post-test_loop)
 }
 
-// false negatives.
+// false negatives; *not* recovered but present in original.
 
 func (stats *CFAStats) FalseNegative2WayConditional() int {
-	x := stats.Want2WayConditional - stats.Got2WayConditional
-	if x < 0 {
+	if stats.Got2WayConditional > stats.Want2WayConditional {
 		return 0
 	}
-	return x
+	return stats.Want2WayConditional - stats.Got2WayConditional
 }
 
 func (stats *CFAStats) FalseNegativeNWayConditional() int {
-	x := stats.WantNWayConditional - stats.GotNWayConditional
-	if x < 0 {
+	if stats.GotNWayConditional > stats.WantNWayConditional {
 		return 0
 	}
-	return x
+	return stats.WantNWayConditional - stats.GotNWayConditional
 }
 
 func (stats *CFAStats) FalseNegativePreTestLoop() int {
-	x := stats.WantPreTestLoop - stats.GotPreTestLoop
-	if x < 0 {
+	if stats.GotPreTestLoop > stats.WantPreTestLoop {
 		return 0
 	}
-	return x
+	return stats.WantPreTestLoop - stats.GotPreTestLoop
 }
 
 func (stats *CFAStats) FalseNegativePostTestLoop() int {
-	x := stats.WantPostTestLoop - stats.GotPostTestLoop
-	if x < 0 {
+	if stats.GotPostTestLoop > stats.WantPostTestLoop {
 		return 0
 	}
-	return x
+	return stats.WantPostTestLoop - stats.GotPostTestLoop
 }
 
-// false positives.
+// false positives; recovered but *not* present in original.
 
 func (stats *CFAStats) FalsePositive2WayConditional() int {
-	x := stats.Got2WayConditional - stats.Want2WayConditional
-	if x < 0 {
+	if stats.Got2WayConditional < stats.Want2WayConditional {
 		return 0
 	}
-	return x
+	return stats.Got2WayConditional - stats.Want2WayConditional
 }
 
 func (stats *CFAStats) FalsePositiveNWayConditional() int {
-	x := stats.GotNWayConditional - stats.WantNWayConditional
-	if x < 0 {
+	if stats.GotNWayConditional < stats.WantNWayConditional {
 		return 0
 	}
-	return x
+	return stats.GotNWayConditional - stats.WantNWayConditional
 }
 
 func (stats *CFAStats) FalsePositivePreTestLoop() int {
-	x := stats.GotPreTestLoop - stats.WantPreTestLoop
-	if x < 0 {
+	if stats.GotPreTestLoop < stats.WantPreTestLoop {
 		return 0
 	}
-	return x
+	return stats.GotPreTestLoop - stats.WantPreTestLoop
 }
 
 func (stats *CFAStats) FalsePositivePostTestLoop() int {
-	x := stats.GotPostTestLoop - stats.WantPostTestLoop
-	if x < 0 {
+	if stats.GotPostTestLoop < stats.WantPostTestLoop {
 		return 0
 	}
-	return x
+	return stats.GotPostTestLoop - stats.WantPostTestLoop
+}
+
+// true positives; recovered and present in original.
+
+func (stats *CFAStats) TruePositive2WayConditional() int {
+	if stats.Got2WayConditional < stats.Want2WayConditional {
+		return stats.Got2WayConditional
+	}
+	return stats.Want2WayConditional
+}
+
+func (stats *CFAStats) TruePositiveNWayConditional() int {
+	if stats.GotNWayConditional < stats.WantNWayConditional {
+		return stats.GotNWayConditional
+	}
+	return stats.WantNWayConditional
+}
+
+func (stats *CFAStats) TruePositivePreTestLoop() int {
+	if stats.GotPreTestLoop < stats.WantPreTestLoop {
+		return stats.GotPreTestLoop
+	}
+	return stats.WantPreTestLoop
+}
+
+func (stats *CFAStats) TruePositivePostTestLoop() int {
+	if stats.GotPostTestLoop < stats.WantPostTestLoop {
+		return stats.GotPostTestLoop
+	}
+	return stats.WantPostTestLoop
 }
