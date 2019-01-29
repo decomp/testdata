@@ -14,6 +14,9 @@ import (
 	"path/filepath"
 	"sort"
 
+	"github.com/mewkiz/pkg/jsonutil"
+
+	"github.com/decomp/testdata/_scripts_/cfastats"
 	"github.com/kr/pretty"
 	"github.com/mewkiz/pkg/osutil"
 	"github.com/mewkiz/pkg/pathutil"
@@ -38,6 +41,12 @@ Usage:
 }
 
 func main() {
+	var (
+		// method specifies the control flow recovery method (hammock, interval,
+		// pattern-independent).
+		method string
+	)
+	flag.StringVar(&method, "method", "hammock", "control flow recovery method (hammock, interval, pattern-independent)")
 	flag.Usage = usage
 	flag.Parse()
 	for _, llPath := range flag.Args() {
@@ -45,7 +54,7 @@ func main() {
 		if err != nil {
 			log.Fatalf("%+v", err)
 		}
-		if err := genResults(llPath, dotPaths); err != nil {
+		if err := genResults(llPath, dotPaths, method); err != nil {
 			log.Fatalf("%+v", err)
 		}
 	}
@@ -73,7 +82,7 @@ func getDOTPaths(llPath string) ([]string, error) {
 	return dotPaths, nil
 }
 
-func genResults(llPath string, dotPaths []string) error {
+func genResults(llPath string, dotPaths []string, method string) error {
 	// Load and index truth table.
 	files, err := loadTruth(llPath)
 	if err != nil {
@@ -95,7 +104,7 @@ func genResults(llPath string, dotPaths []string) error {
 		funcName := pathutil.FileName(dotPath)
 		dbg.Printf("structuring %q", funcName)
 		//fmt.Println("funcName:", funcName)
-		prims, err := restructure(dotPath)
+		prims, err := restructure(dotPath, method)
 		if err != nil {
 			return errors.WithStack(err)
 		}
@@ -107,13 +116,18 @@ func genResults(llPath string, dotPaths []string) error {
 	}
 	pretty.Println("results", results)
 	// Compare results against truth table.
-	if err := compareResults(truth, results); err != nil {
+	stats := compareResults(truth, results)
+
+	basePath := pathutil.TrimExt(llPath)
+	jsonPath := fmt.Sprintf("%s.cfa_stats_%s.json", basePath, method)
+	dbg.Printf("creating file %q", jsonPath)
+	if err := jsonutil.WriteFile(jsonPath, stats); err != nil {
 		return errors.WithStack(err)
 	}
 	return nil
 }
 
-func compareResults(truth map[string]*SourceFunc, results map[string][]*primitive.Primitive) error {
+func compareResults(truth map[string]*SourceFunc, results map[string][]*primitive.Primitive) []*cfastats.CFAStats {
 	if len(truth) != len(results) {
 		log.Printf("mismatch between number of results (%d) and number of entities in truth table (%d)", len(results), len(truth))
 	}
@@ -122,7 +136,7 @@ func compareResults(truth map[string]*SourceFunc, results map[string][]*primitiv
 		funcNames = append(funcNames, funcName)
 	}
 	sort.Strings(funcNames)
-	var stats []*CFAStats
+	var stats []*cfastats.CFAStats
 	for _, funcName := range funcNames {
 		stat := compareFunc(truth[funcName], results[funcName])
 		stats = append(stats, stat)
@@ -131,23 +145,23 @@ func compareResults(truth map[string]*SourceFunc, results map[string][]*primitiv
 	fmt.Println("=== [ False negatives ] =====================================")
 	fmt.Println()
 	for _, stat := range stats {
-		if stat.falseNegative2WayConditional() != 0 {
-			fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.got2WayConditional, stat.want2WayConditional)
+		if stat.FalseNegative2WayConditional() != 0 {
+			fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.Got2WayConditional, stat.Want2WayConditional)
 		}
 	}
 	for _, stat := range stats {
-		if stat.falseNegativeNWayConditional() != 0 {
-			fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.gotNWayConditional, stat.wantNWayConditional)
+		if stat.FalseNegativeNWayConditional() != 0 {
+			fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.GotNWayConditional, stat.WantNWayConditional)
 		}
 	}
 	for _, stat := range stats {
-		if stat.falseNegativePreTestLoop() != 0 {
-			fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPreTestLoop, stat.wantPreTestLoop)
+		if stat.FalseNegativePreTestLoop() != 0 {
+			fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.GotPreTestLoop, stat.WantPreTestLoop)
 		}
 	}
 	for _, stat := range stats {
-		if stat.falseNegativePostTestLoop() != 0 {
-			fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPostTestLoop, stat.wantPostTestLoop)
+		if stat.FalseNegativePostTestLoop() != 0 {
+			fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.GotPostTestLoop, stat.WantPostTestLoop)
 		}
 	}
 	fmt.Println()
@@ -155,23 +169,23 @@ func compareResults(truth map[string]*SourceFunc, results map[string][]*primitiv
 	fmt.Println("=== [ False positives ] =====================================")
 	fmt.Println()
 	for _, stat := range stats {
-		if stat.falsePositive2WayConditional() != 0 {
-			fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.got2WayConditional, stat.want2WayConditional)
+		if stat.FalsePositive2WayConditional() != 0 {
+			fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.Got2WayConditional, stat.Want2WayConditional)
 		}
 	}
 	for _, stat := range stats {
-		if stat.falsePositiveNWayConditional() != 0 {
-			fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.gotNWayConditional, stat.wantNWayConditional)
+		if stat.FalsePositiveNWayConditional() != 0 {
+			fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.GotNWayConditional, stat.WantNWayConditional)
 		}
 	}
 	for _, stat := range stats {
-		if stat.falsePositivePreTestLoop() != 0 {
-			fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPreTestLoop, stat.wantPreTestLoop)
+		if stat.FalsePositivePreTestLoop() != 0 {
+			fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.GotPreTestLoop, stat.WantPreTestLoop)
 		}
 	}
 	for _, stat := range stats {
-		if stat.falsePositivePostTestLoop() != 0 {
-			fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPostTestLoop, stat.wantPostTestLoop)
+		if stat.FalsePositivePostTestLoop() != 0 {
+			fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.GotPostTestLoop, stat.WantPostTestLoop)
 		}
 	}
 	fmt.Println()
@@ -179,136 +193,58 @@ func compareResults(truth map[string]*SourceFunc, results map[string][]*primitiv
 	fmt.Println("=== [ True positives ] =====================================")
 	fmt.Println()
 	for _, stat := range stats {
-		if stat.got2WayConditional == stat.want2WayConditional && stat.got2WayConditional > 0 {
-			fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.got2WayConditional, stat.want2WayConditional)
+		if stat.Got2WayConditional == stat.Want2WayConditional && stat.Got2WayConditional > 0 {
+			fmt.Printf("2-way %q: (%d/%d) (got/want)\n", stat.Name, stat.Got2WayConditional, stat.Want2WayConditional)
 		}
 	}
 	for _, stat := range stats {
-		if stat.gotNWayConditional == stat.wantNWayConditional && stat.gotNWayConditional > 0 {
-			fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.gotNWayConditional, stat.wantNWayConditional)
+		if stat.GotNWayConditional == stat.WantNWayConditional && stat.GotNWayConditional > 0 {
+			fmt.Printf("n-way %q: (%d/%d) (got/want)\n", stat.Name, stat.GotNWayConditional, stat.WantNWayConditional)
 		}
 	}
 	for _, stat := range stats {
-		if stat.gotPreTestLoop == stat.wantPreTestLoop && stat.gotPreTestLoop > 0 {
-			fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPreTestLoop, stat.wantPreTestLoop)
+		if stat.GotPreTestLoop == stat.WantPreTestLoop && stat.GotPreTestLoop > 0 {
+			fmt.Printf("pre-test %q: (%d/%d) (got/want)\n", stat.Name, stat.GotPreTestLoop, stat.WantPreTestLoop)
 		}
 	}
 	for _, stat := range stats {
-		if stat.gotPostTestLoop == stat.wantPostTestLoop && stat.gotPostTestLoop > 0 {
-			fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.gotPostTestLoop, stat.wantPostTestLoop)
+		if stat.GotPostTestLoop == stat.WantPostTestLoop && stat.GotPostTestLoop > 0 {
+			fmt.Printf("post-test %q: (%d/%d) (got/want)\n", stat.Name, stat.GotPostTestLoop, stat.WantPostTestLoop)
 		}
 	}
 	fmt.Println()
 
-	return nil
+	return stats
 }
 
-type CFAStats struct {
-	Name                string // function name
-	want2WayConditional int    // if_stmts + if_else_stmts
-	got2WayConditional  int    // ifs
-	wantNWayConditional int    // switch_stmts
-	gotNWayConditional  int    // switches
-	wantPreTestLoop     int    // loops (type=pre-test_loop)
-	gotPreTestLoop      int    // loops (type=pre-test_loop)
-	wantPostTestLoop    int    // do_while_loops
-	gotPostTestLoop     int    // loops (type=post-test_loop)
-}
-
-// false negatives.
-
-func (stats *CFAStats) falseNegative2WayConditional() int {
-	x := stats.want2WayConditional - stats.got2WayConditional
-	if x < 0 {
-		return 0
-	}
-	return x
-}
-
-func (stats *CFAStats) falseNegativeNWayConditional() int {
-	x := stats.wantNWayConditional - stats.gotNWayConditional
-	if x < 0 {
-		return 0
-	}
-	return x
-}
-
-func (stats *CFAStats) falseNegativePreTestLoop() int {
-	x := stats.wantPreTestLoop - stats.gotPreTestLoop
-	if x < 0 {
-		return 0
-	}
-	return x
-}
-
-func (stats *CFAStats) falseNegativePostTestLoop() int {
-	x := stats.wantPostTestLoop - stats.gotPostTestLoop
-	if x < 0 {
-		return 0
-	}
-	return x
-}
-
-// false positives.
-
-func (stats *CFAStats) falsePositive2WayConditional() int {
-	x := stats.got2WayConditional - stats.want2WayConditional
-	if x < 0 {
-		return 0
-	}
-	return x
-}
-
-func (stats *CFAStats) falsePositiveNWayConditional() int {
-	x := stats.gotNWayConditional - stats.wantNWayConditional
-	if x < 0 {
-		return 0
-	}
-	return x
-}
-
-func (stats *CFAStats) falsePositivePreTestLoop() int {
-	x := stats.gotPreTestLoop - stats.wantPreTestLoop
-	if x < 0 {
-		return 0
-	}
-	return x
-}
-
-func (stats *CFAStats) falsePositivePostTestLoop() int {
-	x := stats.gotPostTestLoop - stats.wantPostTestLoop
-	if x < 0 {
-		return 0
-	}
-	return x
-}
-
-func compareFunc(truth *SourceFunc, result []*primitive.Primitive) *CFAStats {
-	stats := &CFAStats{
+func compareFunc(truth *SourceFunc, result []*primitive.Primitive) *cfastats.CFAStats {
+	stats := &cfastats.CFAStats{
 		Name: truth.Name,
 	}
-	stats.want2WayConditional = truth.Stats.IfStmts + truth.Stats.IfElseStmts
+	stats.Want2WayConditional = truth.Stats.IfStmts + truth.Stats.IfElseStmts
 	for _, prim := range result {
 		switch prim.Prim {
-		case "if":
-			stats.got2WayConditional++
+		case "if", "if_else", "if_return":
+			stats.Got2WayConditional++
 		case "switch":
-			stats.gotNWayConditional++
+			stats.GotNWayConditional++
 		case "pre_loop":
-			stats.gotPreTestLoop++
+			stats.GotPreTestLoop++
 		case "post_loop":
-			stats.gotPostTestLoop++
+			stats.GotPostTestLoop++
 		case "inf_loop":
 			// TODO: Check whether to consider endless loops as pre-test or post-
 			// test, or another category altogether? Consider as pre-test for now.
-			stats.gotPreTestLoop++
+			stats.GotPreTestLoop++
+		case "seq":
+			// nothing to do.
 		default:
 			panic(fmt.Errorf("support for primitive %q not yet implemented", prim.Prim))
 		}
 	}
-	stats.wantNWayConditional = truth.Stats.SwitchStmts
-	stats.wantPreTestLoop = truth.Stats.ForLoops + truth.Stats.WhileLoops
-	stats.wantPostTestLoop = truth.Stats.DoWhileLoops
+	stats.WantNWayConditional = truth.Stats.SwitchStmts
+	stats.WantPreTestLoop = truth.Stats.ForLoops + truth.Stats.WhileLoops
+	stats.WantPostTestLoop = truth.Stats.DoWhileLoops
 	return stats
 }
 
@@ -397,9 +333,10 @@ type Stats struct {
 //       ]
 //    }
 
-func restructure(dotPath string) ([]*primitive.Primitive, error) {
+func restructure(dotPath, method string) ([]*primitive.Primitive, error) {
 	// Load JSON files if present.
-	jsonPath := pathutil.TrimExt(dotPath) + ".restructure_interval.json"
+	basePath := pathutil.TrimExt(dotPath)
+	jsonPath := fmt.Sprintf("%s.restructure_%s.json", basePath, method)
 	if osutil.Exists(jsonPath) {
 		dbg.Printf("loading `restructure2` output from %q.", jsonPath)
 		buf, err := ioutil.ReadFile(jsonPath)
@@ -415,7 +352,7 @@ func restructure(dotPath string) ([]*primitive.Primitive, error) {
 
 	// Restructure DOT file.
 	buf := &bytes.Buffer{}
-	cmd := exec.Command("restructure2", "-method", "interval", dotPath)
+	cmd := exec.Command("restructure2", "-method", method, dotPath)
 	cmd.Stdout = buf
 	cmd.Stderr = os.Stderr
 	if err := cmd.Run(); err != nil {
