@@ -91,13 +91,32 @@ func genPlot(hammockPath, intervalPath string) error {
 	if err := outputPlot("post_loop", data); err != nil {
 		return errors.WithStack(err)
 	}
+	// Render plot of combined results.
+	data = make(map[string]int)
+	hammockTruePositive := hammockResult.TruePositive2WayConditional + hammockResult.TruePositiveNWayConditional + hammockResult.TruePositivePreTestLoop + hammockResult.TruePositivePostTestLoop
+	hammockFalseNegative := hammockResult.FalseNegative2WayConditional + hammockResult.FalseNegativeNWayConditional + hammockResult.FalseNegativePreTestLoop + hammockResult.FalseNegativePostTestLoop
+	hammockFalsePositive := hammockResult.FalsePositive2WayConditional + hammockResult.FalsePositiveNWayConditional + hammockResult.FalsePositivePreTestLoop + hammockResult.FalsePositivePostTestLoop
+	intervalTruePositive := intervalResult.TruePositive2WayConditional + intervalResult.TruePositiveNWayConditional + intervalResult.TruePositivePreTestLoop + intervalResult.TruePositivePostTestLoop
+	intervalFalseNegative := intervalResult.FalseNegative2WayConditional + intervalResult.FalseNegativeNWayConditional + intervalResult.FalseNegativePreTestLoop + intervalResult.FalseNegativePostTestLoop
+	intervalFalsePositive := intervalResult.FalsePositive2WayConditional + intervalResult.FalsePositiveNWayConditional + intervalResult.FalsePositivePreTestLoop + intervalResult.FalsePositivePostTestLoop
+	optimumTruePositive := hammockResult.Total2WayConditional + hammockResult.TotalNWayConditional + hammockResult.TotalPreTestLoop + hammockResult.TotalPostTestLoop
+	data["HammockTruePositive"] = hammockTruePositive
+	data["HammockFalseNegative"] = hammockFalseNegative
+	data["HammockFalsePositive"] = hammockFalsePositive
+	data["IntervalTruePositive"] = intervalTruePositive
+	data["IntervalFalseNegative"] = intervalFalseNegative
+	data["IntervalFalsePositive"] = intervalFalsePositive
+	data["OptimumTruePositive"] = optimumTruePositive
+	if err := outputPlot("combined", data); err != nil {
+		return errors.WithStack(err)
+	}
 	return nil
 }
 
 const tmpl = `
 # Method name	True positive	False negative	False positive
-Hammock	{{ .HammockTruePositive }}	{{ .HammockFalseNegative }}	{{ .HammockFalsePositive }}
-Interval	{{ .IntervalTruePositive }}	{{ .IntervalFalseNegative }}	{{ .IntervalFalsePositive }}
+"Hammock method"	{{ .HammockTruePositive }}	{{ .HammockFalseNegative }}	{{ .HammockFalsePositive }}
+"Interval method"	{{ .IntervalTruePositive }}	{{ .IntervalFalseNegative }}	{{ .IntervalFalsePositive }}
 "Theoretical optimum"	{{ .OptimumTruePositive }}	0	0
 `
 

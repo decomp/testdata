@@ -134,9 +134,7 @@ SQLite version 3.20.0.
 
 ## Public domain
 
-The test data generation scripts and any original content of this repository is hereby released into the [public domain].
-
-[public domain]: https://creativecommons.org/publicdomain/zero/1.0/
+The test data generation scripts and any original content of this repository is hereby released into the [public domain](UNLICENSE).
 
 ## Third-party licenses
 
