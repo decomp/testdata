@@ -4,7 +4,7 @@ This repository contains test data for the decompilation pipeline.
 
 # Coreutils
 
-GNU Coreutils version 8.27.
+GNU Coreutils version 8.30.
 
 * [`[.ll`](coreutils/testdata/[.ll)
 * [b2sum.ll](coreutils/testdata/b2sum.ll)
@@ -116,7 +116,7 @@ GNU Coreutils version 8.27.
 
 ## SQLite
 
-SQLite version 3.20.0.
+SQLite version 3.25.0.
 
 * [shell.ll](sqlite/testdata/shell.ll)
 
